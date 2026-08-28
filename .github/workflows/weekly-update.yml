@@ -1,0 +1,74 @@
+name: Weekly KodeKloud Notes Update
+
+on:
+  schedule:
+    # Every Monday at 03:00 UTC
+    - cron: '0 3 * * 1'
+  workflow_dispatch:  # Allow manual trigger
+
+permissions:
+  contents: write  # Required to push commits
+
+jobs:
+  update-notes:
+    name: Update KodeKloud Notes
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # Need full history for push
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          python3 -m pip install --upgrade pip requests
+
+      - name: Run KodeKloud parser
+        run: |
+          cd ${{ github.workspace }}
+          python3 scripts/kodekloud-parser.py
+
+      - name: Configure Git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      - name: Check for changes
+        id: changes
+        run: |
+          if git diff --quiet; then
+            echo "changed=false" >> $GITHUB_OUTPUT
+            echo "No changes detected"
+          else
+            echo "changed=true" >> $GITHUB_OUTPUT
+            echo "Changes detected"
+            git status --short
+          fi
+
+      - name: Commit and push changes
+        if: steps.changes.outputs.changed == 'true'
+        run: |
+          git add -A
+          git commit -m "chore: weekly KodeKloud notes update ($(date +'%Y-%m-%d'))"
+          git push origin main
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Summary
+        run: |
+          echo "## Weekly Update Complete" >> $GITHUB_STEP_SUMMARY
+          echo "- **Repository**: ${{ github.repository }}" >> $GITHUB_STEP_SUMMARY
+          echo "- **Run time**: $(date -u)" >> $GITHUB_STEP_SUMMARY
+          if [ "${{ steps.changes.outputs.changed }}" = "true" ]; then
+            echo "- **Status**: Changes committed and pushed" >> $GITHUB_STEP_SUMMARY
+            echo "- **Files modified**: $(git diff --name-only HEAD~1 | wc -l)" >> $GITHUB_STEP_SUMMARY
+          else
+            echo "- **Status**: No changes, already up to date" >> $GITHUB_STEP_SUMMARY
+          fi

@@ -161,7 +161,7 @@ References and further reading
 
 * Azure CLI documentation: [https://learn.microsoft.com/cli/azure/](https://learn.microsoft.com/cli/azure/)
 * AzureRM Provider (Terraform): [https://registry.terraform.io/providers/hashicorp/azurerm/latest](https://registry.terraform.io/providers/hashicorp/azurerm/latest)
-* Authenticating with the Azure Provider: [https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/guides/azure\_cli](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/guides/azure_cli)
+* Authenticating with the Azure Provider: [https://registry.terraform.io[AWS_SECRET_ACCESS_KEY]/guides/azure\_cli](https://registry.terraform.io[AWS_SECRET_ACCESS_KEY]/guides/azure_cli)
 
 That’s it — authenticate with `az login`, set the subscription (via environment variable or `az account set`), then use `terraform plan` and `terraform apply` to manage your Azure resources.
 

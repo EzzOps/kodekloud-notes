@@ -78,8 +78,8 @@ REMOTE:
 LOCAL:
 Stack:
   Base Image:
-    Reference: d5f7d132c2f196de58bb1ca4fb041fa9a5829587f3cb9c01aed442f79d9b8e
-    Top Layer: sha256:8460bddda3ad232a2e8af998246486378f5c3df30c499a08b58a89fb71
+    Reference: [SECRET_REDACTED]
+    Top Layer: sha256:[SECRET_REDACTED]
 
   Run Images:
     run-base:v21
@@ -87,9 +87,9 @@ Rebasable: true
 
 Buildpacks:
   ID                      VERSION  HOMEPAGE
-  my-js-buildpack         0.0.1    https://github.com/buildpacks/samples/tree/main/buildpacks/hello-world
-  samples/hello-world     0.0.1    https://github.com/buildpacks/samples/tree/main/buildpacks/hello-world
-  samples/hello-moon      0.0.1    https://github.com/buildpacks/samples/tree/main/buildpacks/hello-moon
+  my-js-buildpack         0.0.1    https://github.com[AWS_SECRET_ACCESS_KEY]/hello-world
+  samples/hello-world     0.0.1    https://github.com[AWS_SECRET_ACCESS_KEY]/hello-world
+  samples/hello-moon      0.0.1    https://github.com[AWS_SECRET_ACCESS_KEY]/hello-moon
 ```
 
 This demonstrates that only the base image layer was replaced, while the application layer remains unchanged.
@@ -145,8 +145,8 @@ LOCAL:
 Stack:
 
 Base Image:
-  Reference: 36862ffaa256b69f1c92251e433dbe12c522f8d6d1476e792599f20c9fcb532c
-  Top Layer: sha256:130264b17d64b99aa2091e0664a5e0dbf6ead305d43cd674073311917390ed48
+  Reference: [SECRET_REDACTED]
+  Top Layer: sha256:[SECRET_REDACTED]
 
 Run Images:
   run-base:v1
@@ -156,8 +156,8 @@ Rebasable: true
 Buildpacks:
   ID                     VERSION   HOMEPAGE
   my-js-buildpack       0.0.1     -
-  samples/hello-world   0.0.1     https://github.com/buildpacks/samples/tree/main/buildpacks/hello-world
-  samples/hello-moon    0.0.1     https://github.com/buildpacks/samples/tree/main/buildpacks/hello-moon
+  samples/hello-world   0.0.1     https://github.com[AWS_SECRET_ACCESS_KEY]/hello-world
+  samples/hello-moon    0.0.1     https://github.com[AWS_SECRET_ACCESS_KEY]/hello-moon
 
 Processes:
   TYPE          SHELL      COMMAND        ARGS       WORK DIR
@@ -199,8 +199,8 @@ REMOTE:
 LOCAL:
 Stack:
   Base Image:
-    Reference: 36862ffaa256b69f1c92251e433dbe12c522f8d6d1476e792599f20c9fcb532c
-    Top Layer: sha256:130264b17d64b99aa2091ee0664a5e0dbf6ead305d43cd67407331191739e0d48
+    Reference: [SECRET_REDACTED]
+    Top Layer: sha256:[SECRET_REDACTED]
 
 Run Images:
   run-base:v2
@@ -210,8 +210,8 @@ Rebasable: true
 Buildpacks:
   ID                      VERSION  HOMEPAGE
   my-js-buildpack        0.0.1    -
-  samples/hello-world    0.0.1    https://github.com/buildpacks/samples/tree/main/buildpacks/hello-world
-  samples/hello-moon     0.0.1    https://github.com/buildpacks/samples/tree/main/buildpacks/hello-moon
+  samples/hello-world    0.0.1    https://github.com[AWS_SECRET_ACCESS_KEY]/hello-world
+  samples/hello-moon     0.0.1    https://github.com[AWS_SECRET_ACCESS_KEY]/hello-moon
 ```
 
 This confirms that the new base image (run-base:v2) is now active, highlighting the efficiency and convenience of using Buildpacks for rebasing.

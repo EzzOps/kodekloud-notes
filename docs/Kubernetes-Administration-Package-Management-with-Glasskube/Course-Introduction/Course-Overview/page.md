@@ -171,7 +171,7 @@ kube-node-lease   Active   82s
 kube-public       Active   82s
 kube-system       Active   82s
 
-controlplane ~ ➜ curl -LO https://github.com/glasskube/glasskube/releases/download/v0.17.0/glasskube_v0.17.0.deb
+controlplane ~ ➜ curl -LO https://github.com/[AWS_SECRET_ACCESS_KEY].17.0/glasskube_v0.17.0.deb
 controlplane ~ ➜ sudo dpkg -i glasskube_v0.17.0.deb
 (Reading database ... 21876 files and directories currently installed.)
 Preparing to unpack glasskube (0.17.0) ...

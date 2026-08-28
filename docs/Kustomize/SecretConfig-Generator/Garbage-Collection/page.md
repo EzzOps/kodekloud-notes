@@ -163,9 +163,9 @@ If there’s no `kustomization.yaml` in your current directory, you’ll see an 
 * [GitHub: kustomize](https://github.com/kubernetes-sigs/kustomize)
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kustomize/module/060e95ac-e56c-42ed-be87-8701328432c3/lesson/e18c8a87-99db-439e-a8bc-bff7cc658853" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[SECRET_REDACTED]-e56c-42ed-be87-8701328432c3/lesson/e18c8a87-99db-439e-a8bc-bff7cc658853" />
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/kustomize/module/060e95ac-e56c-42ed-be87-8701328432c3/lesson/f83fd542-9130-4e60-8e67-ed2d7548d895" />
+  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.[SECRET_REDACTED]-e56c-42ed-be87-8701328432c3/lesson/f83fd542-9130-4e60-8e67-ed2d7548d895" />
 </CardGroup>
 
 

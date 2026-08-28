@@ -206,8 +206,8 @@ Next steps
 
 Links and references
 
-* [AWS CodePipeline documentation](https://docs.aws.amazon.com/codepipeline/latest/userguide/welcome.html)
-* [Amazon ECS deployment types and options](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/deployment-types.html)
+* [AWS CodePipeline documentation](https://docs.aws.amazon.[SECRET_REDACTED].html)
+* [Amazon ECS deployment types and options](https://docs.aws.amazon.[SECRET_REDACTED]-types.html)
 * [Buildspec reference for AWS CodeBuild](https://docs.aws.amazon.com/codebuild/latest/userguide/build-spec-ref.html)
 * [Amazon ECR user guide](https://docs.aws.amazon.com/AmazonECR/latest/userguide/what-is-ecr.html)
 

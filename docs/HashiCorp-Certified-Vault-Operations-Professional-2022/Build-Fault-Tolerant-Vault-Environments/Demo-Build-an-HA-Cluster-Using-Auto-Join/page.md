@@ -114,9 +114,9 @@ On the **first** node:
    ```
    Sample output:
    ```plaintext theme={null}
-   Recovery Key 1: AvXqLmtQ3JjHrMkboSx8+d1xlUuilntB9WeqWUrSk
+   Recovery Key 1: [SECRET_REDACTED]
    …
-   Initial Root Token: hvs.S9xE9tx4Ydk8p2mVfjid2d
+   Initial Root Token: [VAULT_TOKEN]
 
    Success! Vault is initialized
    ```

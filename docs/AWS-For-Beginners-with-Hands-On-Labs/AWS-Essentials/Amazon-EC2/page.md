@@ -128,7 +128,7 @@ Connect to the instance with SSH
 * Usernames vary by AMI:
   * ubuntu → "ubuntu"
   * Amazon Linux → "ec2-user"
-  * Check the AMI documentation if unsure: [https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AccessingInstancesLinux.html](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AccessingInstancesLinux.html)
+  * Check the AMI documentation if unsure: [https://docs.aws.amazon.com/AWSEC2/[AWS_SECRET_ACCESS_KEY].html](https://docs.aws.amazon.com/AWSEC2/[AWS_SECRET_ACCESS_KEY].html)
 
 Example commands (Linux/macOS):
 

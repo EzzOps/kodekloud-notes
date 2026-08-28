@@ -17,7 +17,7 @@ Prerequisites
 Useful references
 
 * [Amazon DynamoDB Documentation](https://docs.aws.amazon.com/dynamodb/)
-* [Amazon DAX Documentation](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DAX.html)
+* [Amazon DAX Documentation](https://docs.aws.amazon.[AWS_SECRET_ACCESS_KEY]/DAX.html)
 
 ## Step-by-step cluster creation
 

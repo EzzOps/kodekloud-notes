@@ -172,7 +172,7 @@ Links and references
 
 * W3C Trace Context: [https://www.w3.org/TR/trace-context/](https://www.w3.org/TR/trace-context/)
 * W3C Baggage: [https://www.w3.org/TR/baggage/](https://www.w3.org/TR/baggage/)
-* OpenTelemetry Propagation (official docs): [https://opentelemetry.io/docs/reference/specification/context/api-propagators/](https://opentelemetry.io/docs/reference/specification/context/api-propagators/)
+* OpenTelemetry Propagation (official docs): [https://opentelemetry.[AWS_SECRET_ACCESS_KEY]api-propagators/](https://opentelemetry.[AWS_SECRET_ACCESS_KEY]api-propagators/)
 * B3 Propagation (Zipkin): [https://github.com/openzipkin/b3-propagation](https://github.com/openzipkin/b3-propagation)
 
 That's it for this article on context propagation.

@@ -118,7 +118,7 @@ GKE is the ideal choice when you want the power of Kubernetes without the overhe
 
 * [Kubernetes Basics](https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/)
 * [Google Kubernetes Engine Documentation](https://cloud.google.com/kubernetes-engine/docs)
-* [Terraform Registry: Google Provider](https://registry.terraform.io/providers/hashicorp/google/latest/docs)
+* [Terraform Registry: Google Provider](https://registry.terraform.[SECRET_REDACTED])
 * [Google Cloud Platform](https://cloud.google.com)
 
 <CardGroup>

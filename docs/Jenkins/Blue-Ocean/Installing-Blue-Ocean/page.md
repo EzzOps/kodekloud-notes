@@ -36,5 +36,5 @@ If you need to return to the standard Jenkins portal, click on **Administration*
 This article covers the installation and access procedures for Blue Ocean. Stay tuned for further discussions on Jenkins pipelines and additional advanced configurations.
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins/module/77db3006-93f7-42b0-90d0-6fd961631d1f/lesson/8c68182c-d48c-413c-ab5e-a66494f5f6c0" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[AWS_SECRET_ACCESS_KEY]-93f7-42b0-90d0-6fd961631d1f/lesson/8c68182c-d48c-413c-ab5e-a66494f5f6c0" />
 </CardGroup>

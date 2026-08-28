@@ -189,7 +189,7 @@ Edit the file to add a node affinity section under the pod spec:
 spec:
   affinity:
     nodeAffinity:
-      requiredDuringSchedulingIgnoredDuringExecution:
+      [SECRET_REDACTED]:
       - matchExpressions:
         - key: app_type
           operator: In
@@ -218,7 +218,7 @@ spec:
     spec:
       affinity:
         nodeAffinity:
-          requiredDuringSchedulingIgnoredDuringExecution:
+          [SECRET_REDACTED]:
           - matchExpressions:
             - key: app_type
               operator: In

@@ -45,7 +45,7 @@ Further reading and references:
 
 * [Amazon S3 Documentation](https://docs.aws.amazon.com/s3/index.html)
 * [AWS CloudFormation Documentation](https://docs.aws.amazon.com/cloudformation/index.html)
-* [Managing CloudFormation templates in S3 (best practices)](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-template-urls.html)
+* [Managing CloudFormation templates in S3 (best practices)](https://docs.aws.amazon.com/[AWS_SECRET_ACCESS_KEY]-cfn-template-urls.html)
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/aws-cloud-formation/module/c7bfde08-7ccf-44bc-aa61-9949db5c41f3/lesson/92b85b94-d437-47c3-9d8a-95dcad5ea4f7" />

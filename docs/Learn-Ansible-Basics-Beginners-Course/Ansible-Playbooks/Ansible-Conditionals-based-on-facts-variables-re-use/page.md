@@ -23,7 +23,7 @@ Ansible facts are automatically gathered system variables (unless you disable ga
 Helpful links:
 
 * Ansible user guide — conditionals: [https://docs.ansible.com/ansible/latest/user\_guide/playbooks\_conditionals.html](https://docs.ansible.com/ansible/latest/user_guide/playbooks_conditionals.html)
-* Facts & the setup module: [https://docs.ansible.com/ansible/latest/collections/ansible/builtin/setup\_module.html](https://docs.ansible.com/ansible/latest/collections/ansible/builtin/setup_module.html)
+* Facts & the setup module: [https://docs.ansible.com/ansible/[AWS_SECRET_ACCESS_KEY]\_module.html](https://docs.ansible.[SECRET_REDACTED]setup_module.html)
 
 <Callout icon="lightbulb">
   By default Ansible gathers facts at the start of a play using the setup module. If you set gather\_facts: false, you must call the setup module explicitly (or enable gathering) before relying on `ansible_facts`.
@@ -72,7 +72,7 @@ Notes:
 
 Relevant docs:
 
-* apt module: [https://docs.ansible.com/ansible/latest/collections/ansible/builtin/apt\_module.html](https://docs.ansible.com/ansible/latest/collections/ansible/builtin/apt_module.html)
+* apt module: [https://docs.ansible.[SECRET_REDACTED]\_module.html](https://docs.ansible.[SECRET_REDACTED]apt_module.html)
 
 ## Scenario 2 — Use a variable to apply environment-specific configuration
 
@@ -103,7 +103,7 @@ vars:
 
 Relevant docs:
 
-* template module: [https://docs.ansible.com/ansible/latest/collections/ansible/builtin/template\_module.html](https://docs.ansible.com/ansible/latest/collections/ansible/builtin/template_module.html)
+* template module: [https://docs.ansible.[SECRET_REDACTED]\_module.html](https://docs.ansible.[SECRET_REDACTED]template_module.html)
 
 ## Scenario 3 — Reuse common tasks, but start services only in production
 
@@ -160,7 +160,7 @@ Notes:
 
 Service module docs:
 
-* [https://docs.ansible.com/ansible/latest/collections/ansible/builtin/service\_module.html](https://docs.ansible.com/ansible/latest/collections/ansible/builtin/service_module.html)
+* [https://docs.ansible.[SECRET_REDACTED]\_module.html](https://docs.ansible.[SECRET_REDACTED]service_module.html)
 
 ## Best practices and tips
 

@@ -135,8 +135,8 @@ Mitigations:
 ## Links and references
 
 * [Amazon DynamoDB Pricing](https://aws.amazon.com/dynamodb/pricing/)
-* [DynamoDB Developer Guide — Read/Write Capacity Modes](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.ReadWriteCapacityMode.html)
-* [DynamoDB Best Practices for Designing and Architecting](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/best-practices.html)
+* [DynamoDB Developer Guide — Read/Write Capacity Modes](https://docs.aws.amazon.[AWS_SECRET_ACCESS_KEY]/HowItWorks.ReadWriteCapacityMode.html)
+* [DynamoDB Best Practices for Designing and Architecting](https://docs.aws.amazon.[AWS_SECRET_ACCESS_KEY]/best-practices.html)
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/introduction-to-aws-databases/module/001734a9-f7c2-4943-83a3-d64621fedfd2/lesson/0c798276-cbd7-4429-a66e-24fcc89d1257" />

@@ -151,7 +151,7 @@ bob@node01 ~ ➜ dig @localhost node02.my.kodekloudlab.com
 
 ;; OPT PSEUDOSECTION:
 ; EDNS: version: 0, flags:; udp: 1232
-; COOKIE: d465d946485bd720100000067934232e87eb022df3a8ff94 (good)
+; COOKIE: [SECRET_REDACTED] (good)
 ;; QUESTION SECTION:
 ;node02.my.kodekloudlab.com. IN A
 
@@ -195,7 +195,7 @@ For many web deployments, you may want the apex domain (e.g., my.kodekloudlab.co
 
    ;; OPT PSEUDOSECTION:
    ; EDNS: version: 0, flags:; udp: 1232
-   ; COOKIE: d465d94d6485bd720100000067934228e87eb022df3a8ff94 (good)
+   ; COOKIE: [SECRET_REDACTED] (good)
    ;; QUESTION SECTION:
    ;node02.my.kodeloudlab.com.  IN A
 
@@ -240,7 +240,7 @@ bob@node01 ~ ➜ dig @localhost my.kodekloudlab.com
 
 ;; OPT PSEUDOSECTION:
 ; EDNS: version: 0, flags:; udp: 1232
-; COOKIE: 0a28c953013cb81010000006793426ba2a0f365488a04bf (good)
+; COOKIE: [SECRET_REDACTED] (good)
 ;; QUESTION SECTION:
 ;my.kodekloudlab.com.        IN      A
 

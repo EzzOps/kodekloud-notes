@@ -146,7 +146,7 @@ Treat summarization as a first-class architectural component. By modeling memory
 </Frame>
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langgraph/module/372c4db3-b58a-4c3e-9e5e-851e67d45b06/lesson/e69446b9-3d1f-444b-bb90-d153546aa669" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[SECRET_REDACTED]-b58a-4c3e-9e5e-851e67d45b06/lesson/e69446b9-3d1f-444b-bb90-d153546aa669" />
 </CardGroup>
 
 
@@ -290,5 +290,5 @@ Context overflow is inevitable in real-world LLM apps. The goal is to design pol
 Like someone deciding which packages to keep on a crowded cart, choose the context you can't live without and discard or compress the rest.
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langgraph/module/372c4db3-b58a-4c3e-9e5e-851e67d45b06/lesson/ba89c994-703e-4cf1-b8fb-adbb6560a2a9" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[SECRET_REDACTED]-b58a-4c3e-9e5e-851e67d45b06/lesson/ba89c994-703e-4cf1-b8fb-adbb6560a2a9" />
 </CardGroup>

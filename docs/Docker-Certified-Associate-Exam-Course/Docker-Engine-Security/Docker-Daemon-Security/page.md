@@ -153,7 +153,7 @@ docker --tlscacert=/path/to/cacert.pem \
 ## References
 
 * [Docker Engine Security](https://docs.docker.com/engine/security/)
-* [Docker Daemon CLI options](https://docs.docker.com/engine/reference/commandline/dockerd/)
+* [Docker Daemon CLI options](https://docs.docker.[AWS_SECRET_ACCESS_KEY]/)
 * [OpenSSL Tutorial](https://www.openssl.org/docs/)
 
 <CardGroup>

@@ -117,7 +117,7 @@ Security and operational considerations
 
 References and further reading
 
-* AWS CloudFormation Conditions: [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/conditions-section-structure.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/conditions-section-structure.html)
+* AWS CloudFormation Conditions: [https://docs.aws.amazon.[SECRET_REDACTED]-section-structure.html](https://docs.aws.amazon.[SECRET_REDACTED]-section-structure.html)
 * S3 Bucket Policy examples: [https://docs.aws.amazon.com/AmazonS3/latest/userguide/example-bucket-policies.html](https://docs.aws.amazon.com/AmazonS3/latest/userguide/example-bucket-policies.html)
 * Amazon S3 Block Public Access: [https://docs.aws.amazon.com/AmazonS3/latest/userguide/block-public-access.html](https://docs.aws.amazon.com/AmazonS3/latest/userguide/block-public-access.html)
 

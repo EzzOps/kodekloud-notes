@@ -1,6 +1,6 @@
 # Evaluating LLM Bias Across Demographic Groups
 
-Source: https://notes.kodekloud.com/docs/NVIDIA-Generative-AI-LLMs-Associate-Certification/Experimentation/Evaluating-LLM-Bias-Across-Demographic-Groups/page
+Source: https://notes.kodekloud.com/docs/NVIDIA-Generative-AI-LLMs-Associate-[AWS_SECRET_ACCESS_KEY]-LLM-Bias-Across-Demographic-Groups/page
 
 Guidelines for detecting and measuring LLM performance disparities across demographic groups via stratified evaluations, group-level metrics, statistical testing, and privacy-aware practices.
 

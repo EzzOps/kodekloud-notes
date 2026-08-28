@@ -153,9 +153,9 @@ And inspect metrics & traffic:
 * [Istio VirtualService API][istio-virtualservice]
 * [Kiali Documentation](https://www.kiali.io/documentation/)
 
-[istio-gateway]: https://istio.io/latest/docs/reference/config/networking/gateway/
+[istio-gateway]: https://istio.io[AWS_SECRET_ACCESS_KEY]/gateway/
 
-[istio-virtualservice]: https://istio.io/latest/docs/reference/config/networking/virtual-service/
+[istio-virtualservice]: https://istio.io[AWS_SECRET_ACCESS_KEY]/virtual-service/
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/devsecops-kubernetes-devops-security/module/fc1733bc-1e9c-4e38-ae86-84e6bd9af04d/lesson/5989174f-a567-4767-af9c-4d614153c883" />

@@ -72,7 +72,7 @@ Login Succeeded
 Successful push output:
 
 ```plaintext theme={null}
-... latest: digest: sha256:573b0a9049137d606c681c973b197727ace46f6ebbed4bff7eb2e61f0f1 size: 2205
+... latest: digest: sha256:[SECRET_REDACTED] size: 2205
 ```
 
 Refresh the ECR console to verify the **latest** tag.

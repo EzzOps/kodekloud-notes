@@ -310,9 +310,9 @@ That completes this lesson on OpenTofu data sources. In upcoming modules, you’
 
 [opentofu-docs]: https://docs.opentofu.org
 
-[aws-ebs-docs]: https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/ebs_volume
+[aws-ebs-docs]: https://registry.terraform.io/[AWS_SECRET_ACCESS_KEY]-sources/ebs_volume
 
-[aws-s3-docs]: https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/s3_bucket
+[aws-s3-docs]: https://registry.terraform.io/[AWS_SECRET_ACCESS_KEY]-sources/s3_bucket
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/69432d48-55d0-4340-a56d-9f9a7819d26c/lesson/420e1e82-8822-4b98-b49c-feff9ec4c1c2" />

@@ -188,8 +188,8 @@ Selected sanitized log excerpts
 ```bash theme={null}
 # Docker build layers and outputs
 #11 exporting to image
-#11 writing image sha256:23477645c2700016966e753711f30f266d39258e8699e503fceb1cc7c91836ad done
-#11 naming to docker.io/siddharth67/solar-system:d0cb7fad07e69cb5ea62c886e785aabb86e72349 done
+#11 writing image sha256:[SECRET_REDACTED] done
+#11 naming to docker.io/siddharth67/solar-system:[AWS_SECRET_ACCESS_KEY] done
 
 1 warning found (use docker --debug to expand):
 - SecretsUsedInArgOrEnv: Do not use ARG or ENV instructions for sensitive data (ENV "MONGO_PASSWORD") (line 13)
@@ -201,7 +201,7 @@ Run docker/login-action@v3
 
 # docker/build-push-action process
 Run docker/build-push-action@v6
-/usr/bin/docker buildx build --iidfile /home/runner/work/_temp/.../build-iidfile.txt --tag siddharth67/solar-system:d0cb7fad07e69cb5ea62c886e785aabb86e72349 --push https://github.com/jenkins-demo-org/solar-system.git#d0cb7fad07e69cb5ea62c886e785aabb86e72349
+/usr/bin/docker buildx build --iidfile /home/runner/work/_temp/.../build-iidfile.txt --tag siddharth67/solar-system:[AWS_SECRET_ACCESS_KEY] --push https://github.com/jenkins-demo-org/solar-system.git#[AWS_SECRET_ACCESS_KEY]
 #10 pushing layer ... done
 #10 DONE 5.7s
 ```

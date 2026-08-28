@@ -94,7 +94,7 @@ After the deployment finished, the login button consistently showed "Application
 
 ## Links and references
 
-* [AWS CodePipeline documentation](https://docs.aws.amazon.com/codepipeline/latest/userguide/welcome.html)
+* [AWS CodePipeline documentation](https://docs.aws.amazon.[SECRET_REDACTED].html)
 * [Amazon ECS documentation](https://docs.aws.amazon.com/ecs/latest/developerguide/what-is-ecs.html)
 * [AWS CodeCommit documentation](https://docs.aws.amazon.com/codecommit/latest/userguide/welcome.html)
 

@@ -75,7 +75,7 @@ You now have an IAM role configured with the necessary permissions to run AWS FI
 
 * [AWS Fault Injection Simulator Documentation](https://docs.aws.amazon.com/fis/latest/userguide/what-is-fis.html)
 * [IAM Roles in AWS](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles.html)
-* [Amazon CloudWatch Logs](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/WhatIsCloudWatchLogs.html)
+* [Amazon CloudWatch Logs](https://docs.aws.amazon.[SECRET_REDACTED].html)
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/chaos-engineering/module/d49a2b6d-60a1-4603-965d-7e8292688875/lesson/885fd9f4-7a60-4009-ada3-8f4a70e0abe9" />

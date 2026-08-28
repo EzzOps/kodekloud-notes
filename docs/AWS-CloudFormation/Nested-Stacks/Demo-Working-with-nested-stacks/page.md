@@ -140,7 +140,7 @@ This pattern demonstrates how a parent template orchestrates nested stacks and d
 
 Links and references
 
-* AWS CloudFormation — Nested Stacks: [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-nested-stacks.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-nested-stacks.html)
+* AWS CloudFormation — Nested Stacks: [https://docs.aws.amazon.com/[AWS_SECRET_ACCESS_KEY]-cfn-nested-stacks.html](https://docs.aws.amazon.com/[AWS_SECRET_ACCESS_KEY]-cfn-nested-stacks.html)
 * AWS CloudFormation documentation: [https://docs.aws.amazon.com/cloudformation/](https://docs.aws.amazon.com/cloudformation/)
 * Amazon S3 documentation: [https://docs.aws.amazon.com/s3/](https://docs.aws.amazon.com/s3/)
 * EC2 AMI locator: [https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/finding-an-ami.html](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/finding-an-ami.html)

@@ -74,7 +74,7 @@ Vault will initialize DR replication in seconds and show the status panel, which
 </Frame>
 
 ```text theme={null}
-eyJhbGciOiJFUzUxMlsInR5c6IkpXVCJ9.eyJhY2Nlc3Nlc3NfdHlwZSI6ImFkZGl0aW9uIiwic2Vjb25kYXJ5X3Rva2VuIjoiJodHRwOitYrR1hY2J2stcHJgyMDAiLCJleHBpcmF0aW9uIjoxMjM0NTY3ODkwMH19
+eyJhbGciOiJFUzUxMlsInR5c6IkpXVCJ9.[SECRET_REDACTED]
 ```
 
 <Callout icon="triangle-alert">

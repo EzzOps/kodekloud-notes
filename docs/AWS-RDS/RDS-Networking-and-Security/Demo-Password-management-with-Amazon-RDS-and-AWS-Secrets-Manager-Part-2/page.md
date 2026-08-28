@@ -8,7 +8,7 @@ Welcome back. In the previous lesson we stored an RDS username and password manu
 
 Note: this integration is not available for all RDS engines and deployment types — check the AWS documentation for engine/version support and limitations:
 
-* [https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/UsingWithRDS.SecretsManager.html](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/UsingWithRDS.SecretsManager.html)
+* [https://docs.aws.amazon.com[AWS_SECRET_ACCESS_KEY].SecretsManager.html](https://docs.aws.amazon.com[AWS_SECRET_ACCESS_KEY].SecretsManager.html)
 
 ## Quick overview
 

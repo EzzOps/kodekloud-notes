@@ -95,7 +95,7 @@ vault operator generate-root -dr-token \
 Output:
 
 ```text theme={null}
-hvs.e5ANKEwwEC5KJDKA6cbDdLAB
+[VAULT_TOKEN]
 ```
 
 This string is your DR operation token.
@@ -106,7 +106,7 @@ With either the batch token or generated DR operation token, run:
 
 ```bash theme={null}
 vault write sys/replication/dr/secondary/promote \
-  dr_operation_token="hvs.e5ANKEwwEC5KJDKA6cbDdLAB"
+  dr_operation_token="[VAULT_TOKEN]"
 ```
 
 Example warning:

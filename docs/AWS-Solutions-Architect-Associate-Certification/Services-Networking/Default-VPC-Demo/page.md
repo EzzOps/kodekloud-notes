@@ -113,7 +113,7 @@ To confirm internet connectivity, establish an SSH connection to the EC2 instanc
 ```plaintext theme={null}
 C:\Users\sanje\Documents\scratch\aws-demo>ssh -i aws-demo.pem ec2-user@34.201.6.109
 The authenticity of host '34.201.6.109 (34.201.6.109)' can't be established.
-ECDSA key fingerprint is SHA256:fa0CPuuMP2Fvn9aHeAw56Eei94znaTnFefIDRg1mE.
+ECDSA key fingerprint is SHA256:[SECRET_REDACTED].
 Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
 Warning: Permanently added '34.201.6.109' (ECDSA) to the list of known hosts.
 ```

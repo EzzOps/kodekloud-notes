@@ -57,8 +57,8 @@ Defining your pipeline in YAML unlocks version control, peer reviews, and automa
 | Feature          | Benefit                                        | Reference                                                                                    |
 | ---------------- | ---------------------------------------------- | -------------------------------------------------------------------------------------------- |
 | Pipeline-as-code | Full integration with your Git repo            | [YAML schema](https://docs.microsoft.com/azure/devops/pipelines/yaml-schema)                 |
-| Templates        | Reusable components for uniform practices      | [Template syntax](https://docs.microsoft.com/azure/devops/pipelines/process/templates)       |
-| Variable Groups  | Centralized management of secrets and settings | [Variable groups](https://docs.microsoft.com/azure/devops/pipelines/library/variable-groups) |
+| Templates        | Reusable components for uniform practices      | [Template syntax](https://docs.microsoft.com/[AWS_SECRET_ACCESS_KEY])       |
+| Variable Groups  | Centralized management of secrets and settings | [Variable groups](https://docs.microsoft.com[AWS_SECRET_ACCESS_KEY]-groups) |
 
 ```yaml theme={null}
 trigger:
@@ -203,8 +203,8 @@ jobs:
 
 * [Azure Pipelines Documentation](https://docs.microsoft.com/azure/devops/pipelines/)
 * [YAML Schema Reference](https://docs.microsoft.com/azure/devops/pipelines/yaml-schema)
-* [Templates in Azure Pipelines](https://docs.microsoft.com/azure/devops/pipelines/process/templates)
-* [Variable Groups](https://docs.microsoft.com/azure/devops/pipelines/library/variable-groups)
+* [Templates in Azure Pipelines](https://docs.microsoft.com/[AWS_SECRET_ACCESS_KEY])
+* [Variable Groups](https://docs.microsoft.com[AWS_SECRET_ACCESS_KEY]-groups)
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/az-400/module/55cf24db-89bc-4b93-bb75-7350d1593073/lesson/5b01f695-592d-4b46-a55c-eb2a3e7c833e" />

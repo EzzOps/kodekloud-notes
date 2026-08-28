@@ -22,8 +22,8 @@ Below is an excerpt from the Falco logs confirming the configuration file in use
 -- Logs begin at Tue 2021-04-13 21:45:35 UTC, end at Tue 2021-04-13 21:51:31 UTC. --
 Apr 13 21:45:36 node01 systemd[1]: Starting Falco: Container Native Runtime Security...
 Apr 13 21:45:36 node01 systemd[1]: Started Falco: Container Native Runtime Security.
-Apr 13 21:45:36 node01 falco[9817]: Falco version 0.28.0 (driver version 5c0b863ddade7a45568c0ac97d037422c9efb750)
-Apr 13 21:45:36 node01 falco[9817]: Tue Apr 13 21:45:36 2021: Falco version 0.28.0 (driver version 5c0b863ddade7a45568c0ac97d037422c9efb750)
+Apr 13 21:45:36 node01 falco[9817]: Falco version 0.28.0 (driver version [AWS_SECRET_ACCESS_KEY])
+Apr 13 21:45:36 node01 falco[9817]: Tue Apr 13 21:45:36 2021: Falco version 0.28.0 (driver version [AWS_SECRET_ACCESS_KEY])
 Apr 13 21:45:36 node01 falco[9817]: Falco initialized with configuration file /etc/falco/falco.yaml
 Apr 13 21:45:36 node01 falco[9817]: Tue Apr 13 21:45:36 2021: Falco initialized with configuration file /etc/falco/falco.yaml
 ```

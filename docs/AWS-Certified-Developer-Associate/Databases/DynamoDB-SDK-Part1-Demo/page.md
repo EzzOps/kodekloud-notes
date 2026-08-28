@@ -77,7 +77,7 @@ For optimal performance and cost-efficiency when using provisioned mode:
   ![The image is a summary slide about DynamoDB's capacity modes, explaining provisioned and on-demand modes, temporary burst capacity, and strategies for throttling.](https://kodekloud.com/kk-media/image/upload/v1752858791/notes-assets/images/AWS-Certified-Developer-Associate-DynamoDB-Pricing-Throughput/dynamodb-capacity-modes-summary.jpg)
 </Frame>
 
-For more detailed information, refer to the [official DynamoDB documentation](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Introduction.html).
+For more detailed information, refer to the [official DynamoDB documentation](https://docs.aws.amazon.[AWS_SECRET_ACCESS_KEY]/Introduction.html).
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/aws-certified-developer-associate/module/a1267c00-fc48-4a9b-8d41-fd642fa743ea/lesson/0c798276-cbd7-4429-a66e-24fcc89d1257" />
@@ -130,8 +130,8 @@ import { DynamoDBClient } from "@aws-sdk/client-dynamodb";
 const client = new DynamoDBClient({
   region: "us-east-1",
   credentials: {
-    accessKeyId: "AKIA4IAWSJ5UZT3W7PEN",
-    secretAccessKey: "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",
+    accessKeyId: "[AWS_ACCESS_KEY_ID]",
+    secretAccessKey: "[AWS_SECRET_ACCESS_KEY]",
   },
 });
 ```
@@ -183,7 +183,7 @@ Node.js v20.12.1
 {
   $metadata: {
     httpStatusCode: 200,
-    requestId: 'Q46HIT95LVKPO8HB708JFS47VV4KQNSO5AEMVJF66Q9ASUAAJG',
+    requestId: '[SECRET_REDACTED]',
     extendedRequestId: undefined,
     cfId: undefined,
     attempts: 1,
@@ -214,8 +214,8 @@ import { DynamoDBClient, GetItemCommand, PutItemCommand } from "@aws-sdk/client-
 const client = new DynamoDBClient({
   region: "us-east-1",
   credentials: {
-    accessKeyId: "AKIAI4AWSJ5UZT3W7PEN",
-    secretAccessKey: "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",
+    accessKeyId: "[AWS_ACCESS_KEY_ID]",
+    secretAccessKey: "[AWS_SECRET_ACCESS_KEY]",
   },
 });
 
@@ -264,8 +264,8 @@ import { DynamoDBDocumentClient } from "@aws-sdk/lib-dynamodb";
 const client = new DynamoDBClient({
   region: "us-east-1",
   credentials: {
-    accessKeyId: "AKIA4IAWSJ5UZT3W7PEN",
-    secretAccessKey: "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",
+    accessKeyId: "[AWS_ACCESS_KEY_ID]",
+    secretAccessKey: "[AWS_SECRET_ACCESS_KEY]",
   },
 });
 

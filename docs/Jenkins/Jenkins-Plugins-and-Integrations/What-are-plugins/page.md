@@ -17,5 +17,5 @@ That's it for this lesson. We'll see you in the next one.
 Thank you.
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins/module/34e95998-38e2-4735-a378-b466e6a5851c/lesson/c524b145-3cb2-418a-837e-8654af64b227" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[AWS_SECRET_ACCESS_KEY]-38e2-4735-a378-b466e6a5851c/lesson/c524b145-3cb2-418a-837e-8654af64b227" />
 </CardGroup>

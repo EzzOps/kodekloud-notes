@@ -115,7 +115,7 @@ Summary
 
 Links and references
 
-* [AWS CloudFormation Concepts](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html)
+* [AWS CloudFormation Concepts](https://docs.aws.amazon.[SECRET_REDACTED].html)
 * [IAM Best Practices](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html)
 * [Amazon S3 Documentation](https://docs.aws.amazon.com/s3/index.html)
 

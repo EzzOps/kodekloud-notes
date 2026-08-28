@@ -102,8 +102,8 @@ Choose the right mix for your team’s needs and integrate with AWS IAM for secu
 ## Links and References
 
 * [EKS Overview](https://docs.aws.amazon.com/eks/latest/userguide/what-is-eks.html)
-* [CloudWatch Logs](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/WhatIsCloudWatchLogs.html)
-* [CloudWatch Logs Agent Reference](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/AgentReference.html)
+* [CloudWatch Logs](https://docs.aws.amazon.[SECRET_REDACTED].html)
+* [CloudWatch Logs Agent Reference](https://docs.aws.amazon.[SECRET_REDACTED].html)
 * [EKS Observability Add-on](https://docs.aws.amazon.com/eks/latest/userguide/eks-observability.html)
 * [AWS Distro for OpenTelemetry](https://aws.amazon.com/otel/)
 * [AWS X-Ray Developer Guide](https://docs.aws.amazon.com/xray/latest/devguide/aws-xray.html)

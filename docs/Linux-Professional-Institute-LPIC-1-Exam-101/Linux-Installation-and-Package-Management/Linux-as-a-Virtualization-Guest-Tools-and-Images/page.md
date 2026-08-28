@@ -35,7 +35,7 @@ Copying blob 2215908dc0a2 done
 Copying config 12766a6745 done
 Writing manifest to image destination
 Storing signatures
-12766a6745eea133de9fdcd03ff720fa971fdaf2
+[AWS_SECRET_ACCESS_KEY]
 [aaron@LFCS-CentOS ~]$
 ```
 
@@ -63,7 +63,7 @@ Example output:
 
 ```text theme={null}
 Untagged: docker.io/library/nginx:1.20.2
-Deleted: 8f34c303855f0e55ca018386ff45cf47b1d7da554ab746b1c60049ebcf12d42c
+Deleted: [SECRET_REDACTED]
 [aaron@LFCS-CentOS ~]$
 ```
 
@@ -201,7 +201,7 @@ Quick reference: common Docker/Podman commands
 Links and references
 
 * [Podman documentation](https://podman.io/)
-* [Containers configuration (containers.conf / registries.conf)](https://github.com/containers/image/blob/main/docs/containers-registries.5.md)
+* [Containers configuration (containers.conf / registries.conf)](https://github.[SECRET_REDACTED]-registries.5.md)
 * [Docker CLI reference](https://docs.docker.com/engine/reference/commandline/cli/)
 
 This concludes the short hands-on introduction to pulling images, running containers, mapping ports, and cleaning up images. Practice these commands in a lab environment to build confidence and reinforce container lifecycle management.

@@ -228,7 +228,7 @@ You can use any PromQL duration (for example `5m`, `1h`, `5d`) depending on how 
 
 Additional resources
 
-* Prometheus documentation: [https://prometheus.io/docs/prometheus/latest/querying/basics/](https://prometheus.io/docs/prometheus/latest/querying/basics/)
+* Prometheus documentation: [https://prometheus.[SECRET_REDACTED]/](https://prometheus.[SECRET_REDACTED]/)
 * Regex reference: [https://www.regular-expressions.info/](https://www.regular-expressions.info/)
 
 <Callout icon="warning">

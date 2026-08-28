@@ -486,7 +486,7 @@ Example mirrored request log in v2:
 
 Links and references:
 
-* [Istio Traffic Management — VirtualService & DestinationRule](https://istio.io/latest/docs/reference/config/networking/)
+* [Istio Traffic Management — VirtualService & DestinationRule](https://istio.io[AWS_SECRET_ACCESS_KEY]/)
 * [Istio: Traffic Mirroring Documentation](https://istio.io/latest/docs/tasks/traffic-management/mirroring/)
 * [Kubernetes Documentation](https://kubernetes.io/docs/)
 

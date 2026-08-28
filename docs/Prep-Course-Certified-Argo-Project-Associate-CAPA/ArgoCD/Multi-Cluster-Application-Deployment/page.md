@@ -150,7 +150,7 @@ server: 21 bytes      # server url
 
 * [Argo CD documentation — multi-cluster setup](https://argo-cd.readthedocs.io/en/stable/)
 * [Kubernetes kubeconfig documentation](https://kubernetes.io/docs/concepts/configuration/organize-cluster-access-kubeconfig/)
-* [kubectl config command reference](https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands#config)
+* [kubectl config command reference](https://kubernetes.io/[AWS_SECRET_ACCESS_KEY]-commands#config)
 * [Kubernetes ServiceAccount concept](https://kubernetes.io/docs/tasks/configure-pod-container/configure-service-account/)
 * [Kubernetes Secrets](https://kubernetes.io/docs/concepts/configuration/secret/)
 

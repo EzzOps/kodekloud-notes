@@ -197,7 +197,7 @@ const user = userResult.rows[0];
 
 // Dummy bcrypt hash (cost appropriate for your environment)
 // You can generate a dummy hash once and store it in config; use the same hash for timing normalization.
-const DUMMY_HASH = '$2b$10$C6UzMDM.H6dfI/f/IKcDReW1Z8G9YfnmY0g8b6KQ/7Qk7Yb1r6l6a'; // example bcrypt hash
+const DUMMY_HASH = '$2b$10$C6UzMDM.H6dfI[AWS_SECRET_ACCESS_KEY]'; // example bcrypt hash
 
 // Use the real password hash if user exists, otherwise the dummy hash.
 // This prevents response time differences between “user exists” and “user does not exist”.

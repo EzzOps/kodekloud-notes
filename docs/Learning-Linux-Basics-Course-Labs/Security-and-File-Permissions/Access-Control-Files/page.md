@@ -53,7 +53,7 @@ The `/etc/shadow` file securely stores users' encrypted passwords, along with cr
 
 ```bash theme={null}
 [~]$ grep -i ^bob /etc/shadow
-bob:$6$h0u0tOt0$5JcuRxR7y72LLQk4Kdog7u09LsNFS0yZPkIC8pV9tgD0wXCHutYcWF/7.eJ3TfGfG0lj4JF63PyuPwKC18tJS.:18188:0:99999:7:::
+bob:$6$h0u0tOt0$[SECRET_REDACTED].eJ3TfGfG0lj4JF63PyuPwKC18tJS.:18188:0:99999:7:::
 ```
 
 The fields in `/etc/shadow` are arranged as follows:

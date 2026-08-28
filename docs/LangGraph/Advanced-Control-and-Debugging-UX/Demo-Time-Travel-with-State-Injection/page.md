@@ -144,7 +144,7 @@ Links and references
 </Callout>
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langgraph/module/2e37c751-0429-43c9-8ecf-2df222ce0663/lesson/dc7a3746-fc97-46fd-b06e-0a82d5760404" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[SECRET_REDACTED]-0429-43c9-8ecf-2df222ce0663/lesson/dc7a3746-fc97-46fd-b06e-0a82d5760404" />
 </CardGroup>
 
 

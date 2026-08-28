@@ -75,10 +75,10 @@ redis-cred-c6k6d6bh64     1      2m7s
 ## Further Reading
 
 * [Kustomize Documentation](https://kubectl.docs.kubernetes.io/references/kustomize/)
-* [Prune Flag Guide](https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands#apply)
+* [Prune Flag Guide](https://kubernetes.io/[AWS_SECRET_ACCESS_KEY]-commands#apply)
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kustomize/module/51823d3e-7be4-4792-836a-2c4690c0c547/lesson/f2d30e37-cef9-4725-97e9-69f2380e9a2d" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[SECRET_REDACTED]-7be4-4792-836a-2c4690c0c547/lesson/f2d30e37-cef9-4725-97e9-69f2380e9a2d" />
 </CardGroup>
 
 

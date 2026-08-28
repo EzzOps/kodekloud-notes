@@ -200,7 +200,7 @@ SageMaker Endpoints are the native, managed option for real-time inference. Key 
 
 ## Further reading and references
 
-* Boto3 SageMaker client documentation: [https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html)
+* Boto3 SageMaker client documentation: [https://boto3.amazonaws.com/v1/documentation[AWS_SECRET_ACCESS_KEY].html](https://boto3.amazonaws.com/v1/documentation[AWS_SECRET_ACCESS_KEY].html)
 * SageMaker Python SDK docs: [https://sagemaker.readthedocs.io/en/stable/](https://sagemaker.readthedocs.io/en/stable/)
 * SageMaker real-time endpoints overview: [https://docs.aws.amazon.com/sagemaker/latest/dg/realtime-endpoints.html](https://docs.aws.amazon.com/sagemaker/latest/dg/realtime-endpoints.html)
 * SageMaker Studio: [https://docs.aws.amazon.com/sagemaker/latest/dg/studio.html](https://docs.aws.amazon.com/sagemaker/latest/dg/studio.html)

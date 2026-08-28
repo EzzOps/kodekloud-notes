@@ -41,7 +41,7 @@ For sophisticated, production-grade dashboards, third-party tools like Grafana a
 
 ## Links and references
 
-* [Prometheus Documentation — Querying Prometheus](https://prometheus.io/docs/prometheus/latest/querying/basics/)
+* [Prometheus Documentation — Querying Prometheus](https://prometheus.[SECRET_REDACTED]/)
 * [Grafana](https://grafana.com)
 * [Prometheus Console Templates](https://prometheus.io/docs/visualization/console_templates/)
 

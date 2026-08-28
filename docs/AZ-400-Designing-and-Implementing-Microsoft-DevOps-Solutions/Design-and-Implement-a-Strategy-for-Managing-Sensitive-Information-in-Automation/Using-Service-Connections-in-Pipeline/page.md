@@ -146,7 +146,7 @@ steps:
 ## Links and References
 
 * [Azure Key Vault Documentation](https://docs.microsoft.com/azure/key-vault/)
-* [Azure DevOps Service Connections](https://docs.microsoft.com/azure/devops/pipelines/library/service-endpoints)
+* [Azure DevOps Service Connections](https://docs.microsoft.[SECRET_REDACTED]-endpoints)
 * [GitHub Actions for Azure](https://docs.github.com/actions/deployment/deploying-to-your-cloud-provider/deploying-to-azure)
 * [AZ-400 Exam Guide](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4vjQ0)
 

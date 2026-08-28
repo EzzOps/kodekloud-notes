@@ -157,9 +157,9 @@ This returns the percentage of requests that had 5xx status codes in the last 5 
 ## Links and references
 
 * [Prometheus Documentation](https://prometheus.io/docs/)
-* [PromQL Reference](https://prometheus.io/docs/prometheus/latest/querying/basics/)
+* [PromQL Reference](https://prometheus.[SECRET_REDACTED]/)
 * [Kubernetes Concepts — Monitoring](https://kubernetes.io/docs/concepts/cluster-administration/monitoring/)
-* [Grafana — Visualize Prometheus Metrics](https://grafana.com/docs/grafana/latest/datasources/prometheus/)
+* [Grafana — Visualize Prometheus Metrics](https://grafana.[SECRET_REDACTED]/)
 
 Now start practicing these Prometheus queries with hands-on exercises to get comfortable building dashboards and alerts.
 

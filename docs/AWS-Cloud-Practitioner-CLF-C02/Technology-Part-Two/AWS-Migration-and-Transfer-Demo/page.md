@@ -45,7 +45,7 @@ $ cat ~/.ssh/id_ed25519.pub
 Your public key will look similar to this:
 
 ```bash theme={null}
-ssh-ed25519 AAAAC3NzaC1lZDII1NTE5AAAAIPoy7FSCKADMzgVqHt306H15HnBL61IYI3b1rvtuRbLu michaelirishforrester@gmail.com
+ssh-ed25519 [SECRET_REDACTED] michaelirishforrester@gmail.com
 ```
 
 <Callout icon="lightbulb">

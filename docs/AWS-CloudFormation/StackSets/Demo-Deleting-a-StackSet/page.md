@@ -57,7 +57,7 @@ Best practices
 
 Links and references
 
-* [AWS CloudFormation StackSets concepts](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/stacksets-concepts.html)
+* [AWS CloudFormation StackSets concepts](https://docs.aws.amazon.[SECRET_REDACTED]-concepts.html)
 * [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/)
 * [Amazon S3 documentation](https://docs.aws.amazon.com/s3/index.html)
 * [CloudFormation course on KodeKloud](/user/courses/aws-cloud-formation)

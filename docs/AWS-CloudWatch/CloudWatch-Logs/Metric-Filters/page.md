@@ -51,7 +51,7 @@ This structured approach avoids sifting through unrelated logs and accelerates r
 ## Links and References
 
 * [AWS CloudWatch Logs Documentation](https://docs.aws.amazon.com/cloudwatch/latest/logs/)
-* [Installing the CloudWatch Agent](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/install-CloudWatch-Agent.html)
+* [Installing the CloudWatch Agent](https://docs.aws.amazon.[SECRET_REDACTED]-CloudWatch-Agent.html)
 * [AWS CLI Command Reference](https://docs.aws.amazon.com/cli/latest/reference/)
 
 <CardGroup>
@@ -157,9 +157,9 @@ By converting logs into metrics, you gain precise, real-time insight into system
 
 ## Links and References
 
-* [CloudWatch Logs Metric Filters](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/MonitoringLogData.html)
+* [CloudWatch Logs Metric Filters](https://docs.aws.amazon.[SECRET_REDACTED].html)
 * [AWS CLI put-metric-filter](https://docs.aws.amazon.com/cli/latest/reference/logs/put-metric-filter.html)
-* [Creating AWS CloudWatch Alarms](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/AlarmThatSendsEmail.html)
+* [Creating AWS CloudWatch Alarms](https://docs.aws.amazon.[SECRET_REDACTED].html)
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/aws-cloudwatch/module/9fa50074-5184-4ea1-a0fb-233788bf9666/lesson/95e88558-1264-4bc9-9fc0-560f4fe81b34" />

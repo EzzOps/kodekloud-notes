@@ -122,8 +122,8 @@ Validate the commit hash in CodeCommit by viewing the repository’s commits:
 
 Further reading and references:
 
-* [AWS CodePipeline Documentation](https://docs.aws.amazon.com/codepipeline/latest/userguide/welcome.html)
-* [Amazon ECS Deploy Action in CodePipeline](https://docs.aws.amazon.com/codepipeline/latest/userguide/action-reference-ECS.html)
+* [AWS CodePipeline Documentation](https://docs.aws.amazon.[SECRET_REDACTED].html)
+* [Amazon ECS Deploy Action in CodePipeline](https://docs.aws.amazon.[AWS_SECRET_ACCESS_KEY]-reference-ECS.html)
 * [AWS CodeBuild Buildspec Reference](https://docs.aws.amazon.com/codebuild/latest/userguide/build-spec-ref.html)
 
 Congratulations — you now have an end-to-end automated deployment pipeline for your crypto-app using CodeCommit, CodeBuild, CodePipeline, ECR, and ECS.
@@ -200,7 +200,7 @@ Next steps
 
 Links and references
 
-* [AWS CodePipeline Documentation](https://docs.aws.amazon.com/codepipeline/latest/userguide/welcome.html)
+* [AWS CodePipeline Documentation](https://docs.aws.amazon.[SECRET_REDACTED].html)
 * [AWS CodeBuild Documentation](https://docs.aws.amazon.com/codebuild/latest/userguide/welcome.html)
 * [Amazon ECS Documentation](https://docs.aws.amazon.com/ecs/latest/developerguide/)
 

@@ -296,7 +296,7 @@ Group=sanjeev
 WorkingDirectory=/home/sanjeev/app/src/
 Environment="PATH=/home/sanjeev/app/venv/bin"
 EnvironmentFile=/home/sanjeev/.env
-ExecStart=/home/sanjeev/app/venv/bin/gunicorn -w 4 -k uvicorn.workers.UvicornWorker app.main:app --bind 0.0.0.0:8000
+[SECRET_REDACTED] -w 4 -k uvicorn.workers.UvicornWorker app.main:app --bind 0.0.0.0:8000
 
 [Install]
 WantedBy=multi-user.target
@@ -327,7 +327,7 @@ DATABASE_PORT=5432
 DATABASE_PASSWORD=password123
 DATABASE_NAME=fastapi
 DATABASE_USERNAME=postgres
-SECRET_KEY=09d25e094faa6ca2556c818166b7a9563b93f7099f6f0f4caa6cf63b88e8d3e7
+SECRET_KEY[SECRET_REDACTED]
 ALGORITHM=HS256
 ACCESS_TOKEN_EXPIRE_MINUTES=300
 ```

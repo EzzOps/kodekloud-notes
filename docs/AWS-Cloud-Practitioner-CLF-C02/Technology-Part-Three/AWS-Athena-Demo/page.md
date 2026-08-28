@@ -20,7 +20,7 @@ Begin by opening Cloud Shell in the AWS Management Console. Make sure you are wo
 cloudshell-user@ip-10-4-58-25:~$ accountid=$(aws sts get-caller-identity --query "Account" --output text)
 cloudshell-user@ip-10-4-58-25:~$ aws s3 cp s3://ws-assets-prod-1d-ra-id-ed80455c21aebee/9981fa1b-abdc-49b5-8387-cbd12d238b78/v1/csv/customers.csv ./customers.csv
 cloudshell-user@ip-10-4-58-25:~$ aws s3 cp s3://ws-assets-prod-1d-ra-id-ed80455c21aebee/9981fa1b-abdc-49b5-8387-cbd12d238b78/v1/csv/sales.csv ./sales.csv
-cloudshell-user@ip-10-4-58-25:~$ aws s3 cp customers.csv s3://athena-workshop$accountid/basics/csv/customers/customers.csv
+cloudshell-user@ip-10-4-58-25:~$ aws s3 cp customers.csv s3://athena-workshop$[AWS_SECRET_ACCESS_KEY].csv
 ```
 
 These commands ensure your account is properly set up and that the required CSV files are available in your S3 bucket.

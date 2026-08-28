@@ -55,8 +55,8 @@ controlplane ~ % curl -fsSL https://get.pulumi.com | sh
 
 === Pulumi is now installed! ===
 + Get started with Pulumi: https://www.pulumi.com/docs/quickstart
-controlplane ~ % export AWS_ACCESS_KEY_ID=AKIAUKDIID0FAHDLZUQR
-controlplane ~ % export AWS_SECRET_ACCESS_KEY=/AdLO962uQaA56sSYaelVLSXNRyWhxti+IdErin
+controlplane ~ % export AWS_ACCESS_KEY_ID=[AWS_ACCESS_KEY_ID]
+controlplane ~ % export AWS_SECRET_ACCESS_KEY[AWS_SECRET_ACCESS_KEY]
 controlplane ~ % export
 ```
 
@@ -75,7 +75,7 @@ The session below demonstrates environment variable exports and project initiali
 
 ```bash theme={null}
 controlplane ~ export AWS_ACCESS_KEY_ID=AKIAUKDIIOFAAHDLZQR
-controlplane ~ export AWS_SECRET_ACCESS_KEY=/Ad+LO962uQkA56sSYaleVLSXNRyWhxti+idEri
+controlplane ~ export AWS_SECRET_ACCESS_KEY[AWS_SECRET_ACCESS_KEY]
 controlplane ~ export PULUMI_ACCESS_TOKEN=pul-c471c52451fb2638f64f6bbc8d8a9ffef1394c2
 controlplane ~ mkdir quickstart && cd quickstart && pulumi new aws-yaml
 Login using access token from PULUMI_ACCESS_TOKEN

@@ -155,7 +155,7 @@ After logging in, list your resource groups and create a new one. For example, t
 ```plaintext theme={null}
 ResourceGroupName         Value
 -------------------------  ------------------------
-ResourceId                /subscriptions/1b228746-75fd-46ed-8a6b-6a9066d3a3a/resourceGroups/NetworkWatcherRG
+ResourceId                /subscriptions/1b228746-75fd-46ed-8a6b-[SECRET_REDACTED]
 ResourceGroupName         az900-vm-rg
 Location                  eastus
 ProvisioningState         Succeeded

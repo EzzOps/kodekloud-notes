@@ -244,7 +244,7 @@ Enter same passphrase again:
 Your identification has been saved in /home/mark/.ssh/id_rsa.
 Your public key has been saved in /home/mark/.ssh/id_rsa.pub.
 The key fingerprint is:
-SHA256:PCRTdbxxzffzmi8uunjn5V/1LZCG0BvhVJYXBr9gYsE mark@localhost
+SHA256:[SECRET_REDACTED] mark@localhost
 The key's randomart image is:
 +---[RSA 2048]----+
 |      .o=oo+    |

@@ -58,9 +58,9 @@ This lesson includes practical examples and configuration patterns for several o
 
 Links and references:
 
-* [Prometheus Service Discovery official docs](https://prometheus.io/docs/prometheus/latest/configuration/configuration/#service_discovery_configs)
-* [Prometheus relabeling documentation](https://prometheus.io/docs/prometheus/latest/configuration/relabel_config/)
-* [Prometheus file\_sd documentation](https://prometheus.io/docs/prometheus/latest/configuration/configuration/#file_sd_config)
+* [Prometheus Service Discovery official docs](https://prometheus.[AWS_SECRET_ACCESS_KEY]configuration/#service_discovery_configs)
+* [Prometheus relabeling documentation](https://prometheus.[AWS_SECRET_ACCESS_KEY]relabel_config/)
+* [Prometheus file\_sd documentation](https://prometheus.[AWS_SECRET_ACCESS_KEY]configuration/#file_sd_config)
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prometheus-certified-associate-pca/module/20a3a57d-ee2d-4096-888e-de1166cf7e3a/lesson/08a265d2-d48c-4c8a-b523-f8195cce9741" />

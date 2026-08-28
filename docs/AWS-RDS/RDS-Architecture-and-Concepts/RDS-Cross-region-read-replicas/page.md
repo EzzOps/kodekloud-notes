@@ -32,7 +32,7 @@ Operational characteristics
 * Asynchronous replication: expect eventual consistency for replica reads.
 * Read‑only by default: replicas cannot process writes until promoted to a standalone primary.
 * Promotion: you can promote a read replica to read/write, but promotion changes topology and can result in downtime during switchover.
-* Engine differences: features and cross‑region behaviors vary by engine. For example, Amazon Aurora provides a dedicated Global Database feature optimized for low‑latency global reads: [https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-global-database.html](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-global-database.html).
+* Engine differences: features and cross‑region behaviors vary by engine. For example, Amazon Aurora provides a dedicated Global Database feature optimized for low‑latency global reads: [https://docs.aws.amazon.com[AWS_SECRET_ACCESS_KEY]-global-database.html](https://docs.aws.amazon.com[AWS_SECRET_ACCESS_KEY]-global-database.html).
 
 <Callout icon="lightbulb">
   Cross‑region read replicas are designed to improve read latency and scale reads for geographically distributed users. They are asynchronous and intended for read scaling and geographic locality — not for synchronous cross‑region writes or instant failover.
@@ -68,7 +68,7 @@ Promotion and failover
 
 Alternatives and engine‑specific options
 
-* Amazon Aurora Global Database is optimized for low‑latency global reads and can be preferable for Aurora workloads: [https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-global-database.html](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-global-database.html)
+* Amazon Aurora Global Database is optimized for low‑latency global reads and can be preferable for Aurora workloads: [https://docs.aws.amazon.com[AWS_SECRET_ACCESS_KEY]-global-database.html](https://docs.aws.amazon.com[AWS_SECRET_ACCESS_KEY]-global-database.html)
 * For non‑Aurora engines, cross‑region read replicas are the common approach to provide regional read endpoints.
 
 <Callout icon="warning">
@@ -79,7 +79,7 @@ Links and references
 
 * Amazon RDS Read Replicas documentation: [https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER\_ReadRepl.html](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_ReadRepl.html)
 * AWS Key Management Service (KMS) guide: [https://docs.aws.amazon.com/kms/latest/developerguide/](https://docs.aws.amazon.com/kms/latest/developerguide/)
-* Amazon Aurora Global Database: [https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-global-database.html](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-global-database.html)
+* Amazon Aurora Global Database: [https://docs.aws.amazon.com[AWS_SECRET_ACCESS_KEY]-global-database.html](https://docs.aws.amazon.com[AWS_SECRET_ACCESS_KEY]-global-database.html)
 * AWS Data Transfer Pricing (inter‑region): [https://aws.amazon.com/ec2/pricing/on-demand/#Data\_Transfer](https://aws.amazon.com/ec2/pricing/on-demand/#Data_Transfer)
 
 Summary

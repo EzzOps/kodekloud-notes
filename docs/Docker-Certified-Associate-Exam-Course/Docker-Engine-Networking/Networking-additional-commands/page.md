@@ -312,7 +312,7 @@ Sample output (abridged):
 [
   {
     "Name": "bridge",
-    "Id": "599dcaf4e85648c3a111baa52b7530f097853b96485a8a3ffcd9088b20f0cb",
+    "Id": "[SECRET_REDACTED]",
     "Scope": "local",
     "Driver": "bridge",
     "IPAM": {

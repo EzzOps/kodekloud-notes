@@ -12,9 +12,9 @@ kubectl describe node node-1 | grep Taints
 ## Links and References
 
 * [GKE Node Taints and Tolerations](https://cloud.google.com/kubernetes-engine/docs/concepts/node-taints)
-* [Kubectl Taint Documentation](https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands#taint)
+* [Kubectl Taint Documentation](https://kubernetes.io/[AWS_SECRET_ACCESS_KEY]-commands#taint)
 * [Kubernetes Official Documentation](https://kubernetes.io/docs/)
-* [Terraform GKE Cluster](https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/container_cluster)
+* [Terraform GKE Cluster](https://registry.terraform.io[AWS_SECRET_ACCESS_KEY]resources/container_cluster)
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/gke-google-kubernetes-engine/module/12020a5d-e2fd-46b5-82fb-35aa9cd57ad6/lesson/7e79587d-7913-49d7-a388-9df682f12d57" />

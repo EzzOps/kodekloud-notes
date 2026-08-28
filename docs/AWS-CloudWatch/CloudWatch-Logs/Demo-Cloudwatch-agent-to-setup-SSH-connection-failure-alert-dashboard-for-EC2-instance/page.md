@@ -105,7 +105,7 @@ Download and install the agent package:
 
 ```bash theme={null}
 cd ~
-wget https://s3.amazonaws.com/amazoncloudwatch-agent/linux/amd64/latest/AmazonCloudWatchAgent.zip
+wget https://s3.amazonaws.com/amazoncloudwatch-agent/[AWS_SECRET_ACCESS_KEY].zip
 unzip AmazonCloudWatchAgent.zip
 sudo ./install.sh
 ```
@@ -226,7 +226,7 @@ Click your instance’s log stream to inspect log events:
 
 ## References
 
-* [AWS CloudWatch Logs Documentation](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/WhatIsCloudWatchLogs.html)
+* [AWS CloudWatch Logs Documentation](https://docs.aws.amazon.[SECRET_REDACTED].html)
 * [Amazon EC2 User Guide](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/concepts.html)
 * [AWS CLI Command Reference](https://docs.aws.amazon.com/cli/latest/index.html)
 

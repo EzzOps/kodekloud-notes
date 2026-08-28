@@ -40,7 +40,7 @@ Best practices
 Chains are a foundational capability in LangChain. For implementation details and API-specific examples, see the official LangChain documentation: [LangChain — Chains](https://langchain.readthedocs.io/) and related guides for retrieval, memory, and output parsers.
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langchain/module/5bedac05-3eaa-4d0d-9892-e05b80c528fb/lesson/79d145d4-21fc-49e3-af36-4616e469466f" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[SECRET_REDACTED]-3eaa-4d0d-9892-e05b80c528fb/lesson/79d145d4-21fc-49e3-af36-4616e469466f" />
 </CardGroup>
 
 

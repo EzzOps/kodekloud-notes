@@ -146,8 +146,8 @@ Using `--record=true` captures the exact `kubectl` command and Git commit, makin
 
 ## Links and References
 
-* [Kubernetes Rollout Strategies](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/#rolling-update-deployment)
-* [kubectl rollout](https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands#rollout)
+* [Kubernetes Rollout Strategies](https://kubernetes.[SECRET_REDACTED]/#rolling-update-deployment)
+* [kubectl rollout](https://kubernetes.io/[AWS_SECRET_ACCESS_KEY]-commands#rollout)
 * [Jenkins Pipeline Syntax](https://www.jenkins.io/doc/book/pipeline/syntax/)
 * [Open Policy Agent Conftest](https://github.com/open-policy-agent/conftest)
 

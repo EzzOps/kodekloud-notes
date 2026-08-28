@@ -148,8 +148,8 @@ Cloning the remote Git repository
 > git init /var/lib/jenkins/workspace/n_solar-system_pipeline_scripted # timeout=10
 > git --version # 'git version 2.43.0'
 > git fetch --no-tags --force --progress http://64.227.187.25:5555/dasher-org/solar-system.git +refs/heads/pipeline/scripted:refs/remotes/origin/pipeline/scripted # timeout=10
-Checking out Revision b68ef5702edca1527d3b3a5db7eff98e1736b7e8 (pipeline/scripted)
-Obtained Jenkinsfile from b68ef5702edca1527d3b3a5db7eff98e1736b7e8
+Checking out Revision [AWS_SECRET_ACCESS_KEY] (pipeline/scripted)
+Obtained Jenkinsfile from [AWS_SECRET_ACCESS_KEY]
 ```
 
 * Cache restore/create messages:

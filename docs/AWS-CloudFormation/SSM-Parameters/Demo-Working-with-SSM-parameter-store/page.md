@@ -13,7 +13,7 @@ This demo shows how to store an AMI ID in AWS Systems Manager (SSM) Parameter St
 Useful references:
 
 * [AWS Systems Manager Parameter Store](https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-parameter-store.html)
-* [AWS CloudFormation Parameters](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/parameters-section-structure.html)
+* [AWS CloudFormation Parameters](https://docs.aws.amazon.[SECRET_REDACTED]-section-structure.html)
 
 ## 1) Create an SSM parameter
 

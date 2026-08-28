@@ -26,8 +26,8 @@ Quick reference: parameter type behavior
 References:
 
 * [AWS CloudFormation documentation](https://docs.aws.amazon.com/cloudformation/index.html)
-* [AWS::EC2::VPC::Id parameter type details](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/parameters-section-structure.html#aws-specific-parameter-types)
-* [EC2 Security Group properties](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-security-group.html)
+* [AWS::EC2::VPC::Id parameter type details](https://docs.aws.amazon.[SECRET_REDACTED]-section-structure.html#aws-specific-parameter-types)
+* [EC2 Security Group properties](https://docs.aws.amazon.[SECRET_REDACTED]-properties-ec2-security-group.html)
 
 Initial template excerpt — instance type parameter and a resource placeholder:
 

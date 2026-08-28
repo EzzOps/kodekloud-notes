@@ -42,8 +42,8 @@ REMOTE:
 LOCAL:
   Stack:
     Base Image:
-      Reference: 36862ffaa256b69f1c92251e433dbe12c522f8d6d1476e792599f20c9fcb532c
-      Top Layer: sha256:130264b1764b99aa2091ee0664a5e8dbf6ead305d43cd67407331191739e0d48
+      Reference: [SECRET_REDACTED]
+      Top Layer: sha256:[SECRET_REDACTED]
 
   Run Images:
     run-base:v1

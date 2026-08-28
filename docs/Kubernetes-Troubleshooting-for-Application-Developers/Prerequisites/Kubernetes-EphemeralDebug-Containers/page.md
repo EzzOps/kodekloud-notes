@@ -34,7 +34,7 @@ Since the container does not have a shell, attempting to exec into it yields an 
 
 ```bash theme={null}
 controlplane ~ ➜ k exec -it distroless-debug-pod -- /bin/sh
-error: Internal error occurred: error executing command in container: failed to exec in container: failed to start exec "a440c2551da537883eb4edeb625e96a14336e895cac4ffbcd5801e21561c7": OCI runtime exec failed: exec failed: unable to start container process: exec "/bin/sh": stat /bin/sh: no such file or directory: unknown
+error: Internal error occurred: error executing command in container: failed to exec in container: failed to start exec "[SECRET_REDACTED]": OCI runtime exec failed: exec failed: unable to start container process: exec "/bin/sh": stat /bin/sh: no such file or directory: unknown
 ```
 
 <Callout icon="lightbulb">

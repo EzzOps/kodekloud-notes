@@ -98,7 +98,7 @@ Start building dashboards today to gain unified visibility and faster incident r
 
 ## Links and References
 
-* [AWS CloudWatch Dashboards Documentation](https://docs.aws.amazon.com/cloudwatch/latest/dashboardguide/WhatIsCloudWatchDashboards.html)
+* [AWS CloudWatch Dashboards Documentation](https://docs.aws.amazon.[SECRET_REDACTED].html)
 * [AWS IAM Best Practices](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html)
 * [AWS Pricing Calculator](https://calculator.aws/#/)
 

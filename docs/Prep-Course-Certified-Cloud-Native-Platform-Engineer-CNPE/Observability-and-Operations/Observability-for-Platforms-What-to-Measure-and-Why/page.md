@@ -91,7 +91,7 @@ histogram_quantile(0.95, sum by (le) (rate(request_duration_seconds_bucket[5m]))
 ## Links and further reading
 
 * Prometheus docs: [https://prometheus.io/docs/](https://prometheus.io/docs/)
-* PromQL basics: [https://prometheus.io/docs/prometheus/latest/querying/basics/](https://prometheus.io/docs/prometheus/latest/querying/basics/)
+* PromQL basics: [https://prometheus.[SECRET_REDACTED]/](https://prometheus.[SECRET_REDACTED]/)
 * Prometheus Operator and ServiceMonitor: [https://github.com/prometheus-operator/prometheus-operator](https://github.com/prometheus-operator/prometheus-operator)
 * kube-state-metrics: [https://github.com/kubernetes/kube-state-metrics](https://github.com/kubernetes/kube-state-metrics)
 * node-exporter: [https://github.com/prometheus/node\_exporter](https://github.com/prometheus/node_exporter)

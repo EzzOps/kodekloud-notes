@@ -109,7 +109,7 @@ Next steps
 Further reading
 
 * [AWS IAM best practices](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html)
-* [CloudFormation security and access control](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/security.html)
+* [CloudFormation security and access control](https://docs.aws.amazon.[SECRET_REDACTED].html)
 
 You should now have a base IAM user and be ready to continue with CloudFormation exercises.
 

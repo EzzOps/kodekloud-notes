@@ -56,7 +56,7 @@ At this stage, you have both the packaged chart (`.tgz`) and its provenance file
          appVersion: 1.16.0
          created: "2021-12-01T15:29:35.073405539Z"
          description: A Helm chart for Kubernetes
-         digest: 2c83c29dc4c56d20c45c3de8ef521fbfbe6f6c0b66854a6f4b5339bebcff879
+         digest: [SECRET_REDACTED]
          maintainers:
            - email: john@example.com
              name: john smith

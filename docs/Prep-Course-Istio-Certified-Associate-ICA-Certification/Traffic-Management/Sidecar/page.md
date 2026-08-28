@@ -136,8 +136,8 @@ This configuration:
 
 ## Where to find more details
 
-* Istio Sidecar reference: [https://istio.io/latest/docs/reference/config/networking/sidecar/](https://istio.io/latest/docs/reference/config/networking/sidecar/)
-* Istio PeerAuthentication reference: [https://istio.io/latest/docs/reference/config/security/peer\_authentication/](https://istio.io/latest/docs/reference/config/security/peer_authentication/)
+* Istio Sidecar reference: [https://istio.io[AWS_SECRET_ACCESS_KEY]/sidecar/](https://istio.io[AWS_SECRET_ACCESS_KEY]/sidecar/)
+* Istio PeerAuthentication reference: [https://istio.[AWS_SECRET_ACCESS_KEY]/peer\_authentication/](https://istio.[AWS_SECRET_ACCESS_KEY]/peer_authentication/)
 
 This is an important topic for the exam—know how to:
 

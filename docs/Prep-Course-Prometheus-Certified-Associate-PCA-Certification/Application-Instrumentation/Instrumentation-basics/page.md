@@ -67,7 +67,7 @@ LATENCY_SUMMARY.labels(request.path, request.method).observe(request_latency)
 ## Links and references
 
 * [Prometheus Python client](https://github.com/prometheus/client_python)
-* [PromQL histogram\_quantile()](https://prometheus.io/docs/prometheus/latest/querying/functions/#histogram_quantile)
+* [PromQL histogram\_quantile()](https://prometheus.[SECRET_REDACTED]/#histogram_quantile)
 * [Flask request lifecycle (before\_request/after\_request)](https://flask.palletsprojects.com/en/latest/api/#flask.Flask.before_request)
 
 Use the examples above to add latency instrumentation to your Flask app, tune bucket boundaries to your observed latency distribution, and choose between Histogram and Summary depending on your quantile needs and client library support.

@@ -425,7 +425,7 @@ That wraps up ServiceEntry and egress gateway basics. Practice creating these ma
 Links and references:
 
 * [Istio Networking Concepts](https://istio.io/latest/docs/concepts/traffic-management/)
-* [Istio ServiceEntry docs](https://istio.io/latest/docs/reference/config/networking/service-entry/)
+* [Istio ServiceEntry docs](https://istio.io[AWS_SECRET_ACCESS_KEY]/service-entry/)
 * [Istio Egress Gateway example](https://istio.io/latest/docs/tasks/traffic-management/egress/egress-gateway/)
 
 <CardGroup>
@@ -663,8 +663,8 @@ You should now receive the expected NGINX default page served from the externall
 ## Links and references
 
 * [Istio Networking Concepts](https://istio.io/latest/docs/concepts/traffic-management/)
-* [ServiceEntry API reference](https://istio.io/latest/docs/reference/config/networking/service-entry/)
-* [VirtualService API reference](https://istio.io/latest/docs/reference/config/networking/virtual-service/)
+* [ServiceEntry API reference](https://istio.io[AWS_SECRET_ACCESS_KEY]/service-entry/)
+* [VirtualService API reference](https://istio.io[AWS_SECRET_ACCESS_KEY]/virtual-service/)
 
 Give this a try in the labs to get hands-on experience bringing external workloads into the mesh.
 

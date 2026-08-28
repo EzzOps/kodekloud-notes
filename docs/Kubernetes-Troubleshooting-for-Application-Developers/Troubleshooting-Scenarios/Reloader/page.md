@@ -38,7 +38,7 @@ You can configure Reloader to monitor all associated ConfigMaps and Secrets or r
 Deploy the Reloader controller to your Kubernetes cluster using the vanilla manifest. While Helm is available for more complex deployments, the default manifest installation is straightforward:
 
 ```bash theme={null}
-kubectl apply -f https://raw.githubusercontent.com/stakater/Reloader/master/deployments/kubernetes
+kubectl apply -f https://raw.githubusercontent.[AWS_SECRET_ACCESS_KEY]/kubernetes
 ```
 
 Once deployed (by default in the `default` namespace), verify its status using:
@@ -63,7 +63,7 @@ reloader-reloader-d88cf475-bbqhh   1/1     Running   0          3m12s
 Consider a scenario where a web application relies on a ConfigMap named "web-message". This ConfigMap provides a greeting message for the application. Use the following command to deploy the Reloader components:
 
 ```bash theme={null}
-kubectl apply -f https://raw.githubusercontent.com/stakater/Reloaders/master/deployments/kubernetes/reloader.yaml
+kubectl apply -f https://raw.githubusercontent.com/stakater[AWS_SECRET_ACCESS_KEY]/reloader.yaml
 ```
 
 A sample output might be:

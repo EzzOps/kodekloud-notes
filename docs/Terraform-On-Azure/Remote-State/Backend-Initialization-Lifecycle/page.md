@@ -84,7 +84,7 @@ Backend initialization is the first and most critical step in any Terraform work
 
 Links and references
 
-* [Terraform Backend Documentation](https://developer.hashicorp.com/terraform/language/settings/backends)
+* [Terraform Backend Documentation](https://developer.hashicorp.[AWS_SECRET_ACCESS_KEY])
 * [Terraform CLI Commands — init](https://developer.hashicorp.com/terraform/cli/commands/init)
 * [Terraform State](https://developer.hashicorp.com/terraform/language/state)
 

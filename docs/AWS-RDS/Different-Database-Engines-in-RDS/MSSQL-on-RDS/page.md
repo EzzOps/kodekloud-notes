@@ -24,7 +24,7 @@ Key strengths when running Microsoft SQL Server (including on Amazon RDS):
 |  Managed operations | Teams who want automated backups, patching, and simplified administrative operations.                              |
 |  Flexible licensing | Organizations that need License Included or Bring Your Own License (BYOL) options for cost control.                |
 
-RDS for SQL Server supports common enterprise requirements: managed backups, automated software patching, [Multi-AZ deployments for high availability](https://aws.amazon.com/rds/features/multi-az/), and encryption at rest using [AWS KMS](https://aws.amazon.com/kms/). SQL Server itself also provides features such as [Transparent Data Encryption (TDE)](https://learn.microsoft.com/en-us/sql/relational-databases/security/encryption/transparent-data-encryption?view=sql-server-ver16), column-level encryption, and [Always Encrypted](https://learn.microsoft.com/en-us/sql/relational-databases/security/encryption/always-encrypted-database-engine?view=sql-server-ver16) for stronger data protection.
+RDS for SQL Server supports common enterprise requirements: managed backups, automated software patching, [Multi-AZ deployments for high availability](https://aws.amazon.com/rds/features/multi-az/), and encryption at rest using [AWS KMS](https://aws.amazon.com/kms/). SQL Server itself also provides features such as [Transparent Data Encryption (TDE)](https://learn.microsoft.com/en-us/sql/relational-[SECRET_REDACTED]-data-encryption?view=sql-server-ver16), column-level encryption, and [Always Encrypted](https://learn.microsoft.com/en-us/sql/relational-databases/security/encryption/always-encrypted-database-engine?view=sql-server-ver16) for stronger data protection.
 
 <Frame>
   <img alt="A slide showing four rounded cards that list reasons to pick a Microsoft/commercial database: working in a Windows environment, needing strong Microsoft integration, requiring enterprise-level features (security/high availability), and having a larger budget. Each card has a colored circular icon beneath (Windows, muscle, stars/check, and calculator/money)." />
@@ -89,7 +89,7 @@ SQL Server on RDS is a strong fit when:
 * [RDS for SQL Server — Amazon RDS](https://aws.amazon.com/rds/sql-server/)
 * [AWS Directory Service (Microsoft AD)](https://docs.aws.amazon.com/directoryservice/latest/admin-guide/ms_ad.html)
 * [AWS KMS — Key Management Service](https://aws.amazon.com/kms/)
-* [Transparent Data Encryption (TDE) — Microsoft Docs](https://learn.microsoft.com/en-us/sql/relational-databases/security/encryption/transparent-data-encryption?view=sql-server-ver16)
+* [Transparent Data Encryption (TDE) — Microsoft Docs](https://learn.microsoft.com/en-us/sql/relational-[SECRET_REDACTED]-data-encryption?view=sql-server-ver16)
 * [Always Encrypted — Microsoft Docs](https://learn.microsoft.com/en-us/sql/relational-databases/security/encryption/always-encrypted-database-engine?view=sql-server-ver16)
 * [Amazon RDS Licensing — AWS Documentation](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_License.html)
 

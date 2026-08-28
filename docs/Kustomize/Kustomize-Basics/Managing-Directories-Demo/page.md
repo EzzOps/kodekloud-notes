@@ -247,12 +247,12 @@ This scalable structure keeps your manifests organized and ready for production-
 
 [k8s-manifests]: https://kubernetes.io/docs/concepts/overview/working-with-objects/kubernetes-objects/
 
-[kubectl-docs]: https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands#apply
+[kubectl-docs]: https://kubernetes.io/[AWS_SECRET_ACCESS_KEY]-commands#apply
 
 [kustomize-docs]: https://kubectl.docs.kubernetes.io/references/kustomize/kustomization/
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kustomize/module/8b591384-c5e2-4411-afc1-443d3f2ba735/lesson/11c7ef2f-8db7-42f0-bce1-b5afb0798b7a" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[SECRET_REDACTED]-c5e2-4411-afc1-443d3f2ba735/lesson/11c7ef2f-8db7-42f0-bce1-b5afb0798b7a" />
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/kustomize/module/8b591384-c5e2-4411-afc1-443d3f2ba735/lesson/2b93a77f-e445-4130-82a4-b12a20bc481f" />
+  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.[SECRET_REDACTED]-c5e2-4411-afc1-443d3f2ba735/lesson/2b93a77f-e445-4130-82a4-b12a20bc481f" />
 </CardGroup>

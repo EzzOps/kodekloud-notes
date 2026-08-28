@@ -156,8 +156,8 @@ Completion
 
 Links and references
 
-* AWS CloudFormation nested stacks overview: [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-nested-stacks.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-nested-stacks.html)
-* AWS CloudFormation Update Stack: [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks.html)
+* AWS CloudFormation nested stacks overview: [https://docs.aws.amazon.com/[AWS_SECRET_ACCESS_KEY]-cfn-nested-stacks.html](https://docs.aws.amazon.com/[AWS_SECRET_ACCESS_KEY]-cfn-nested-stacks.html)
+* AWS CloudFormation Update Stack: [https://docs.aws.amazon.com/[AWS_SECRET_ACCESS_KEY]-cfn-updating-stacks.html](https://docs.aws.amazon.com/[AWS_SECRET_ACCESS_KEY]-cfn-updating-stacks.html)
 * AWS EC2 Instance Types: [https://aws.amazon.com/ec2/instance-types/](https://aws.amazon.com/ec2/instance-types/)
 * AWS S3 Bucket Tagging: [https://docs.aws.amazon.com/AmazonS3/latest/userguide/object-tagging.html](https://docs.aws.amazon.com/AmazonS3/latest/userguide/object-tagging.html)
 

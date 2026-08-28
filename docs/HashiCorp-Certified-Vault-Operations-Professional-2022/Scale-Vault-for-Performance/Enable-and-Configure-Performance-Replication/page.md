@@ -27,7 +27,7 @@ With performance replication enabled, your secondary cluster stays in near real-
 
 ## Links and References
 
-* [Vault Performance Replication](https://www.vaultproject.io/docs/enterprise/replication/performance)
+* [Vault Performance Replication](https://www.vaultproject.io[AWS_SECRET_ACCESS_KEY])
 * [HashiCorp Vault Replication Concepts](https://www.vaultproject.io/docs/concepts/replication)
 * [HashiCorp Vault Documentation](https://www.vaultproject.io/docs)
 

@@ -468,7 +468,7 @@ spec:
 | `outlierDetection.interval`                    | How often to run ejection analysis                         | `5s`                     |
 | `outlierDetection.baseEjectionTime`            | How long an ejected host stays out of the pool             | `10m`                    |
 
-All of these options (and more) are documented under DestinationRule connection pool and outlier detection settings. Review the official docs for the complete list of options and real-world examples: [https://istio.io/latest/docs/reference/config/networking/destination-rule/](https://istio.io/latest/docs/reference/config/networking/destination-rule/)
+All of these options (and more) are documented under DestinationRule connection pool and outlier detection settings. Review the official docs for the complete list of options and real-world examples: [https://istio.io[AWS_SECRET_ACCESS_KEY]/destination-rule/](https://istio.io[AWS_SECRET_ACCESS_KEY]/destination-rule/)
 
 Another example for a reviews service:
 
@@ -493,7 +493,7 @@ spec:
 ```
 
 <Callout icon="lightbulb">
-  Circuit breaking (connection pool settings and outlier detection) is configured in `DestinationRule`. The exam often asks about these settings—review the DestinationRule documentation and examples: [https://istio.io/latest/docs/reference/config/networking/destination-rule/](https://istio.io/latest/docs/reference/config/networking/destination-rule/).
+  Circuit breaking (connection pool settings and outlier detection) is configured in `DestinationRule`. The exam often asks about these settings—review the DestinationRule documentation and examples: [https://istio.io[AWS_SECRET_ACCESS_KEY]/destination-rule/](https://istio.io[AWS_SECRET_ACCESS_KEY]/destination-rule/).
 </Callout>
 
 ## Quick troubleshooting checklist
@@ -507,7 +507,7 @@ That covers the theory of circuit breaking in Istio. A demo will show these conf
 
 ## Links and references
 
-* Istio DestinationRule docs: [https://istio.io/latest/docs/reference/config/networking/destination-rule/](https://istio.io/latest/docs/reference/config/networking/destination-rule/)
+* Istio DestinationRule docs: [https://istio.io[AWS_SECRET_ACCESS_KEY]/destination-rule/](https://istio.io[AWS_SECRET_ACCESS_KEY]/destination-rule/)
 * Istio Traffic Management overview: [https://istio.io/latest/docs/concepts/traffic-management/](https://istio.io/latest/docs/concepts/traffic-management/)
 
 <CardGroup>

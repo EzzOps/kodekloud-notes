@@ -94,5 +94,5 @@ Agents orchestrated by LangChain can combine reasoning with tool usage to perfor
 This article will continue with concrete examples and a tutorial on building agents using LangChain—showing how the framework helps you build robust, production-ready intelligent applications.
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langchain/module/ab7ff6ea-63e2-4d3b-af7c-ed22616cc3b6/lesson/a1b0bfdd-c32b-4575-b19d-ce8a6985abe2" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[SECRET_REDACTED]-63e2-4d3b-af7c-ed22616cc3b6/lesson/a1b0bfdd-c32b-4575-b19d-ce8a6985abe2" />
 </CardGroup>

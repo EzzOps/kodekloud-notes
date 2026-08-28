@@ -191,7 +191,7 @@ By following best practices—optimizing containers, monitoring resources, emplo
 Let's now load up a Kubernetes cluster and deploy our model application using these best practices and real-world strategies.
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/pytorch/module/a958efa1-845c-4cdf-9261-7688050bd96c/lesson/254f1dc1-743a-495f-b990-c6aa13a334d6" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[AWS_SECRET_ACCESS_KEY]-845c-4cdf-9261-7688050bd96c/lesson/254f1dc1-743a-495f-b990-c6aa13a334d6" />
 </CardGroup>
 
 
@@ -363,5 +363,5 @@ Deploying models effectively requires a well-rounded approach that considers mod
 Let's move on to the demo where we will see some of these concepts in action.
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/pytorch/module/a958efa1-845c-4cdf-9261-7688050bd96c/lesson/20d94f6c-8b89-4682-9878-3a3fcbc2c768" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[AWS_SECRET_ACCESS_KEY]-845c-4cdf-9261-7688050bd96c/lesson/20d94f6c-8b89-4682-9878-3a3fcbc2c768" />
 </CardGroup>

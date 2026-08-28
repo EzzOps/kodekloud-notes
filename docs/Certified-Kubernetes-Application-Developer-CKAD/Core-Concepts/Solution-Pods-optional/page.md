@@ -81,9 +81,9 @@ Labels:       tier=busybox
 ...
 Containers:
   busybox:
-    Container ID:   containerd://b05cd692af1f3b433883f9a8ece19ec2e8c4fcf861aa97ae6a82857ed6037a6d
+    Container ID:   containerd://[SECRET_REDACTED]
     Image:          busybox
-    Image ID:       docker.io/library/busybox@sha256:d2b533584f580310186df7a2055ce3ff83cc0df6caacf1e3489bf
+    Image ID:       docker.io/library/busybox@sha256:[SECRET_REDACTED]
     Command:
       sleep
       1000
@@ -126,7 +126,7 @@ Start Time: Fri, 15 Apr 2022 18:14:22 +0000
 ...
 Containers:
   nginx:
-    Container ID: containerd://42fc9932fb07a3047ea1902a6255e75139e981a37426e0d31ea5ec7a833481d
+    Container ID: containerd://[SECRET_REDACTED]
     Image: nginx
     State: Running
     Ready: True

@@ -75,5 +75,5 @@ Links and references
 * [Kubernetes Basics](https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/)
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langchain/module/bb8afda8-9de9-4865-aabf-bc71786440b2/lesson/cdbda88c-a83b-4ffa-a209-1ab62aaa00f7" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[SECRET_REDACTED]-9de9-4865-aabf-bc71786440b2/lesson/cdbda88c-a83b-4ffa-a209-1ab62aaa00f7" />
 </CardGroup>

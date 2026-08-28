@@ -26,8 +26,8 @@ A parameter entry defines the input name, its Type, and optional validation and 
 
 Useful references:
 
-* [AWS CloudFormation parameters](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/parameters-section-structure.html)
-* [CloudFormation intrinsic functions (!Ref, !Sub, etc.)](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference.html)
+* [AWS CloudFormation parameters](https://docs.aws.amazon.[SECRET_REDACTED]-section-structure.html)
+* [CloudFormation intrinsic functions (!Ref, !Sub, etc.)](https://docs.aws.amazon.[SECRET_REDACTED]-function-reference.html)
 * [cfn-lint repository (template validation tool)](https://github.com/aws-cloudformation/cfn-lint)
 
 Simple example — referencing a parameter in an S3 bucket
@@ -169,8 +169,8 @@ Resources:
 
 Further reading and references
 
-* [AWS CloudFormation Parameters documentation](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/parameters-section-structure.html)
-* [CloudFormation intrinsic functions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference.html)
+* [AWS CloudFormation Parameters documentation](https://docs.aws.amazon.[SECRET_REDACTED]-section-structure.html)
+* [CloudFormation intrinsic functions](https://docs.aws.amazon.[SECRET_REDACTED]-function-reference.html)
 * [cfn-lint (YAML/JSON CloudFormation linter)](https://github.com/aws-cloudformation/cfn-lint)
 
 <CardGroup>

@@ -107,7 +107,7 @@ Key takeaways
 
 Further reading and references
 
-* OpenTelemetry Spec — Span Kind semantic conventions: [https://opentelemetry.io/docs/reference/specification/trace/semantic\_conventions/span-kind/](https://opentelemetry.io/docs/reference/specification/trace/semantic_conventions/span-kind/)
+* OpenTelemetry Spec — Span Kind semantic conventions: [https://opentelemetry.[SECRET_REDACTED]\_conventions/span-kind/](https://opentelemetry.io/docs/reference/specification/trace/semantic_conventions/span-kind/)
 * Kafka documentation (example messaging system): [https://kafka.apache.org/documentation/](https://kafka.apache.org/documentation/)
 
 That's it for this lesson.

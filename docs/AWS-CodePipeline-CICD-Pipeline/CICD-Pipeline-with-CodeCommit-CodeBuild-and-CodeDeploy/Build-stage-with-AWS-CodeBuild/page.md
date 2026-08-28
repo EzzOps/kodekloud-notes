@@ -122,7 +122,7 @@ A hands-on demonstration—setting up a CodeBuild project, configuring a buildsp
 ## Links and References
 
 * [AWS CodeBuild Documentation](https://docs.aws.amazon.com/codebuild/latest/userguide/welcome.html)
-* [AWS CodePipeline Documentation](https://docs.aws.amazon.com/codepipeline/latest/userguide/welcome.html)
+* [AWS CodePipeline Documentation](https://docs.aws.amazon.[SECRET_REDACTED].html)
 * [Amazon CloudWatch Logs](https://docs.aws.amazon.com/cloudwatch/index.html)
 * [Amazon SNS](https://aws.amazon.com/sns/)
 

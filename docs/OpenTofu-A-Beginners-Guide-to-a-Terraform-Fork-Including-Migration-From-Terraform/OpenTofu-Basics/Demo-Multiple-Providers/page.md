@@ -218,7 +218,7 @@ Further reading:
 
 * [OpenTofu Documentation](https://opentofu.io/docs/)
 * [Terraform Provider Development](https://www.terraform.io/docs/plugin/providers.html)
-* [Kubernetes Namespace Resource](https://registry.terraform.io/providers/hashicorp/kubernetes/latest/docs/resources/namespace)
+* [Kubernetes Namespace Resource](https://registry.terraform.[AWS_SECRET_ACCESS_KEY]/docs/resources/namespace)
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/c3586b29-e450-4c95-bad9-91bdf332eb24/lesson/50f68e10-25e8-4dbe-845f-6cb237db9dc9" />

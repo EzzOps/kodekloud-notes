@@ -84,7 +84,7 @@ Each AppRole has a unique `Role ID`. Retrieve it:
 
 ```bash theme={null}
 curl --header "X-Vault-Token: $VAULT_TOKEN" \
-     http://127.0.0.1:8200/v1/auth/approle/role/vaultcourse/role-id | jq
+     http://127.0.0.1:[SECRET_REDACTED]-id | jq
 ```
 
 Inspect `data.role_id` in the JSON response.
@@ -96,7 +96,7 @@ Generate the `Secret ID` needed alongside the `Role ID`:
 ```bash theme={null}
 curl --header "X-Vault-Token: $VAULT_TOKEN" \
      --request POST \
-     http://127.0.0.1:8200/v1/auth/approle/role/vaultcourse/secret-id | jq
+     http://127.0.0.1:8200[AWS_SECRET_ACCESS_KEY]-id | jq
 ```
 
 The response returns:

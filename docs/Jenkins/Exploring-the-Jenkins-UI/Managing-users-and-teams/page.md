@@ -71,5 +71,5 @@ Finally, click **Save** to apply these changes, completing the role assignment p
 This concludes our guide on managing users and teams in Jenkins. We hope you found this tutorial useful. Stay tuned for more insights and best practices in managing your Jenkins environment.
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins/module/a04dd614-ac4a-452f-b42a-c7f7086c5897/lesson/53199597-97c4-442d-a9b5-3213f2982ba2" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[AWS_SECRET_ACCESS_KEY]-ac4a-452f-b42a-c7f7086c5897/lesson/53199597-97c4-442d-a9b5-3213f2982ba2" />
 </CardGroup>

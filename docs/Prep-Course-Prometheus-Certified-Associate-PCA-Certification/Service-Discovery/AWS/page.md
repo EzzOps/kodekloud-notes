@@ -210,7 +210,7 @@ scrape_configs:
     ec2_sd_configs:
       - region: us-east-1
         access_key: AKIAQS0UAYMSDJI177
-        secret_key: G2y3/xjKr0m0sWmA0SWh/VCWCBr/ShmqMJHRJkoX1h
+        secret_key: [SECRET_REDACTED]
 ```
 
 Notes:
@@ -288,7 +288,7 @@ If targets are Down, verify:
 
 ## Additional references
 
-* Prometheus EC2 SD docs: [https://prometheus.io/docs/prometheus/latest/configuration/configuration/#ec2\_sd\_config](https://prometheus.io/docs/prometheus/latest/configuration/configuration/#ec2_sd_config)
+* Prometheus EC2 SD docs: [https://prometheus.[AWS_SECRET_ACCESS_KEY]configuration/#ec2\_sd\_config](https://prometheus.[AWS_SECRET_ACCESS_KEY]configuration/#ec2_sd_config)
 * AWS IAM docs: [https://docs.aws.amazon.com/iam/](https://docs.aws.amazon.com/iam/)
 * AWS EC2 docs: [https://docs.aws.amazon.com/ec2/](https://docs.aws.amazon.com/ec2/)
 

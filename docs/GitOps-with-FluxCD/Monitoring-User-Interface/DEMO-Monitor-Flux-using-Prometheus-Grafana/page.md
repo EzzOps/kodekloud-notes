@@ -114,7 +114,7 @@ Check the Prometheus `/targets` page to see which endpoints are scraped:
 ## References
 
 * [Flux GitRepository Source Documentation](https://fluxcd.io/docs/components/source/gitrepository/)
-* [Flux Kustomization Documentation](https://fluxcd.io/docs/components/kustomize/kustomization/)
+* [Flux Kustomization Documentation](https://fluxcd.io[AWS_SECRET_ACCESS_KEY]/)
 * [Prometheus Community Helm Charts](https://prometheus-community.github.io/helm-charts)
 * [Kube Prometheus Stack on Artifact Hub](https://artifacthub.io/packages/helm/prometheus-community/kube-prometheus-stack)
 

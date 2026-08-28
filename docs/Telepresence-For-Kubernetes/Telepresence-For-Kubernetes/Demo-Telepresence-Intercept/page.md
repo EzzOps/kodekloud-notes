@@ -1,6 +1,6 @@
 # 1. Download Telepresence (~50 MB)
 Invoke-WebRequest `
-  https://app.getambassador.io/download/telzoss/releases/download/v2.20.0/telepresence-windows-amd64.zip `
+  https://app.getambassador.[AWS_SECRET_ACCESS_KEY].20.0/telepresence-windows-amd64.zip `
   -OutFile telepresence.zip
 
 # 2. Extract and remove archive

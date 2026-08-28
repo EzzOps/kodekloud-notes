@@ -27,7 +27,7 @@ Below is an example of the Terraform plan output:
 ```bash theme={null}
 $ terraform plan
 local_file.pet: Refreshing state...
-[id=5f8fb950ac60f7f23ef968097cda0a1fd3c11bdf]
+[id=[AWS_SECRET_ACCESS_KEY]]
 
 An execution plan has been generated and is shown below.
 Resource actions are indicated with the following symbols:

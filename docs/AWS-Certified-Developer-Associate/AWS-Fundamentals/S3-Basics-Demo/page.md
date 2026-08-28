@@ -128,7 +128,7 @@ When you click the file’s URL as a public (unauthenticated) user, you will see
     <Code>AccessDenied</Code>
     <Message>Access Denied</Message>
     <RequestId>PYW004S2RAZJBVDC</RequestId>
-    <HostId>ibsVnlokTmiJkuXW/MjiamVADURSB1TvwBq2LKvw9e5u/RyLkNqAWF+xtbFDK[iu]</HostId>
+    <HostId>[SECRET_REDACTED][iu]</HostId>
 </Error>
 ```
 

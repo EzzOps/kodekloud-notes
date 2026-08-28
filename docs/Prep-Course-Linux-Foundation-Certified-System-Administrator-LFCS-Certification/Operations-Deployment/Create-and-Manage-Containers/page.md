@@ -206,7 +206,7 @@ a97d90a43bc9: Pull complete
 24436767f2de: Pull complete
 928c92caef0: Pull complete
 ca6f48c6db4: Pull complete
-Digest: sha256:0acab7c2237e052dc5adf1694ebce0b374063a62b2a1b7f2b3bc9cd3fb8c1ff
+Digest: sha256:[SECRET_REDACTED]
 Status: Downloaded newer image for nginx:latest
 docker.io/library/nginx:latest
 ```
@@ -245,8 +245,8 @@ To delete a specific image, such as the `nginx:1.22.1` image, use the `rmi` comm
 ```bash theme={null}
 $ docker rmi nginx:1.22.1
 Untagged: nginx:1.22.1
-Untagged: nginx@sha256:fc5f5b747575c306aaf884566ebfe0b006240a184d52b923d2f0197108f6b7
-Deleted: sha256:0f8498f13fadef3c82cdf069ecc880b01189be63491631d44eeaa5fb29...
+Untagged: nginx@sha256:[SECRET_REDACTED]
+Deleted: sha256:[SECRET_REDACTED]...
 ```
 
 After deletion, verifying your images again should show only the remaining ones:

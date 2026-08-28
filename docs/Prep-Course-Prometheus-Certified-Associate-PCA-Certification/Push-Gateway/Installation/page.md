@@ -80,7 +80,7 @@ Download the latest Pushgateway release from the official GitHub Releases page:
 After downloading the release tarball on your server, extract it and change into the extracted directory:
 
 ```bash theme={null}
-wget https://github.com/prometheus/pushgateway/releases/download/v1.4.3/pushgateway-1.4.3.linux-amd64.tar.gz
+wget https://github.com/[AWS_SECRET_ACCESS_KEY]/v1.4.3/pushgateway-1.4.3.linux-amd64.tar.gz
 tar xvzf pushgateway-1.4.3.linux-amd64.tar.gz
 cd pushgateway-1.4.3.linux-amd64
 ```

@@ -106,7 +106,7 @@ spec:
 
 * KEDA Cron scaler: [https://keda.sh/docs/latest/scalers/cron/](https://keda.sh/docs/latest/scalers/cron/)
 * IANA Time Zone Database: [https://www.iana.org/time-zones](https://www.iana.org/time-zones)
-* Kubernetes Deployments: [https://kubernetes.io/docs/concepts/workloads/controllers/deployment/](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/)
+* Kubernetes Deployments: [https://kubernetes.[SECRET_REDACTED]/](https://kubernetes.[SECRET_REDACTED]/)
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-autoscaling/module/c218f836-7d7e-425b-a8b7-0148914eb040/lesson/9e740c2e-e6fe-4358-9ad6-710868c57124" />

@@ -211,9 +211,9 @@ Because we injected a higher confidence before routing, the resumed execution fo
 Key takeaway: State injection (time travel) lets you rewind a workflow to a chosen checkpoint, modify the saved state, and continue execution from there—making debugging, testing, and scenario exploration faster and more targeted.
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langgraph/module/74df2352-cf65-40d3-a3c3-70fdfb767635/lesson/77331c58-962b-4d72-b4b9-8f3454463d05" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[SECRET_REDACTED]-cf65-40d3-a3c3-70fdfb767635/lesson/77331c58-962b-4d72-b4b9-8f3454463d05" />
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/langgraph/module/74df2352-cf65-40d3-a3c3-70fdfb767635/lesson/3cbdd6a6-88fb-4072-bede-10fc0e692056" />
+  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.[SECRET_REDACTED]-cf65-40d3-a3c3-70fdfb767635/lesson/3cbdd6a6-88fb-4072-bede-10fc0e692056" />
 </CardGroup>
 
 
@@ -332,5 +332,5 @@ Links and references
 * Best practices for secure webhooks: [https://owasp.org/www-project-secure-headers/](https://owasp.org/www-project-secure-headers/)
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langgraph/module/74df2352-cf65-40d3-a3c3-70fdfb767635/lesson/b6dd0044-d18d-4c7e-8f5b-2d04a729d0ad" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[SECRET_REDACTED]-cf65-40d3-a3c3-70fdfb767635/lesson/b6dd0044-d18d-4c7e-8f5b-2d04a729d0ad" />
 </CardGroup>

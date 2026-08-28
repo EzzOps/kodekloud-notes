@@ -164,7 +164,7 @@ By isolating state and chaining workspaces with run triggers, you can build modu
 ## Links and References
 
 * [Terraform Cloud Documentation](https://www.terraform.io/cloud)
-* [tfe\_outputs Data Source](https://registry.terraform.io/providers/hashicorp/tfe/latest/docs/data-sources/outputs)
+* [tfe\_outputs Data Source](https://registry.terraform.io/[AWS_SECRET_ACCESS_KEY]-sources/outputs)
 * [Remote State Sharing](https://www.terraform.io/docs/cloud/workspaces/remote-state-sharing.html)
 * [Terraform Login Command](https://developer.hashicorp.com/terraform/cli/commands/login)
 

@@ -1,6 +1,6 @@
 # Introduction
 
-Source: https://notes.kodekloud.com/docs/Introduction-to-Sealed-Secrets-in-Kubernetes/Introduction/Introduction/page
+Source: https://notes.kodekloud.com/docs/Introduction-to-Sealed-Secrets-in-[SECRET_REDACTED]
 
 This article explains Sealed Secrets, an open-source tool for securely managing sensitive data in Kubernetes and Terraform environments.
 

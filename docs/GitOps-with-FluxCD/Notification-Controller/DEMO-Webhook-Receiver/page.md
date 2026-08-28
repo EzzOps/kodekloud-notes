@@ -27,7 +27,7 @@ Congratulations! You have successfully configured Flux Notification Controller t
 
 ## Links and References
 
-* [Flux Notification Providers](https://fluxcd.io/docs/components/notification/providers/)
+* [Flux Notification Providers](https://fluxcd.[SECRET_REDACTED]/)
 * [Flux CLI](https://fluxcd.io/docs/cmd/flux/)
 * [Kubernetes kubectl Reference](https://kubernetes.io/docs/reference/kubectl/overview/)
 * [Slack API Documentation](https://api.slack.com/)

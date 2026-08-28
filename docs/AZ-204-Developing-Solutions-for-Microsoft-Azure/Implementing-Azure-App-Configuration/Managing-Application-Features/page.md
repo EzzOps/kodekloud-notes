@@ -78,7 +78,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Connect to Azure App Configuration
 builder.Configuration.AddAzureAppConfiguration(options =>
 {
-    options.Connect("endpoint=https://appconfig1990.azconfig.io;Id=Id4;Secret=3cs9faC4e3CeJ3nSL2s7Y6dftGdjJhxM6rBm7UQAJQ8eyjIBTyAggEJfTt5BAACZACM30T")
+    options.Connect("endpoint=https://appconfig1990.azconfig.io;Id=Id4;[SECRET_REDACTED]")
            .ConfigureRefresh(refresh =>
            {
                refresh.Register("LandingPageMessage", refreshAll: true)
@@ -164,7 +164,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Connect to Azure App Configuration and set refresh options
 builder.Configuration.AddAzureAppConfiguration(options =>
 {
-    options.Connect("Endpoint=https://az204appconfig919.azconfig.io;Id=Id14;Secret=3cs9faCe4Jesd3J2sLksfVdjyJhxN6G7B7mBFL7JQ0A1JYCEjbFLTvBvSAAACAZCM30T")
+    options.Connect("Endpoint=https://az204appconfig919.azconfig.io;Id=Id14;[SECRET_REDACTED]")
            .ConfigureRefresh(refresh =>
            {
                refresh.Register("LandingPageMessage", refreshAll: true)
@@ -289,7 +289,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Connect to Azure App Configuration with feature flag support
 builder.Configuration.AddAzureAppConfiguration(options =>
 {
-    options.Connect("Endpoint=https://az204appconfig019.azconfig.io;Id=Id;Secret=3cs9faC4e2Jc3E3r3nS1z2lSkdfwdjxHn6ER7Bm7U7JQQ9AIAcygBEFiTvD5AAACAZCM30T")
+    options.Connect("Endpoint=https://az204appconfig019.azconfig.io;Id=Id;[SECRET_REDACTED]")
            .UseFeatureFlags()
            .ConfigureRefresh(refresh =>
            {

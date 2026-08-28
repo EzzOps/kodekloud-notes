@@ -81,13 +81,13 @@ Below is an example of the build output:
 [internal] load metadata for docker.io/library/ubuntu:jammy
 [internal] load .dockerignore
 => transferring context: 2B
-[1/4] FROM docker.io/library/ubuntu:jammy@sha256:0e5a45c72499249aafc340fcd541e9a456aab7296681a3994d613587203f97
+[1/4] FROM docker.io/library/ubuntu:jammy@sha256:[SECRET_REDACTED]
 CACHED [2/4] RUN apt-get update && apt-get install -y xz-utils ca-certificates jq wget curl && rm -rf /var/lib/apt/lists/*
 CACHED [3/4] RUN curl -Lo yj https://github.com/schleini/yj/releases/download/v5.1.0/yj-linux-amd64 && chmod +x yj && mv yj /usr/local/bin/
 CACHED [4/4] RUN groupadd cnb --gid 1000 && useradd --uid 1000 --gid 1000 -m -s /bin/bash cnb
 => exporting to image
 => exporting layers
-=> writing image sha256:04d2c2afe9e7360523a8dcdafc299e868e624a42e6c2e4de309
+=> writing image sha256:[SECRET_REDACTED]
 ```
 
 ─────────────────────────────
@@ -129,12 +129,12 @@ A sample build log for the runtime image may look like this:
 [internal] load metadata for docker.io/library/ubuntu:jammy
 [internal] load .dockerignore
 => transferring context: 2B
-[1/4] FROM docker.io/library/ubuntu:jammy@sha256:0e5a475c249294aafc340fcd541e9a456aab7296681a3994d613587203f97
+[1/4] FROM docker.io/library/ubuntu:jammy@sha256:[SECRET_REDACTED]
 CACHED [2/4] RUN apt-get update && ...
 CACHED [3/4] RUN curl -Lo yj https://github.com/sclevine/yj/releases/download/v5.1.0/yj-linux-amd64 && chmod +x yj &&
 CACHED [4/4] RUN groupadd cnb --gid 1000 && ...
 exporting to image
-writing image sha256:04d2c26afe940c736053a38dc4dcfa12c299e68624a42e6c2e4de309
+writing image sha256:[SECRET_REDACTED]
 ```
 
 ### Building the Runtime Image
@@ -240,7 +240,7 @@ An excerpt of the build logs could include:
 
 ```plaintext theme={null}
 0.20.0: Pulling from buildpacksio/lifecycle
-Digest: sha256:bald717ec095f94eb75a667a2fe4178f6f5de6430c89c7168cd04fcfd3
+Digest: sha256:[SECRET_REDACTED]
 Status: Image is up to date for buildpacksio/lifecycle:0.20.0
 === ANALYZING
 [analyzer] Image with name "my-image" not found

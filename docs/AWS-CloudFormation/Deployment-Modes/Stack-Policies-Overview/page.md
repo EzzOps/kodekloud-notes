@@ -66,7 +66,7 @@ Quick CLI reference
 | ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | Set a stack policy | `aws cloudformation set-stack-policy --stack-name my-stack --stack-policy-body file://stack-policy.json`                                                     |
 | Get a stack policy | `aws cloudformation get-stack-policy --stack-name my-stack`                                                                                                  |
-| Use change sets    | See AWS CloudFormation [change sets documentation](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-changesets.html) |
+| Use change sets    | See AWS CloudFormation [change sets documentation](https://docs.aws.amazon.com/[AWS_SECRET_ACCESS_KEY]-cfn-updating-stacks-changesets.html) |
 
 Best practices
 
@@ -85,9 +85,9 @@ Best practices
 
 Links and references
 
-* [AWS CloudFormation — Update stacks and change sets](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-changesets.html)
-* [CloudFormation DeletionPolicy attribute](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-attribute-deletionpolicy.html)
-* [AWS CLI — cloudformation set-stack-policy](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/set-stack-policy.html)
+* [AWS CloudFormation — Update stacks and change sets](https://docs.aws.amazon.com/[AWS_SECRET_ACCESS_KEY]-cfn-updating-stacks-changesets.html)
+* [CloudFormation DeletionPolicy attribute](https://docs.aws.amazon.[SECRET_REDACTED]-attribute-deletionpolicy.html)
+* [AWS CLI — cloudformation set-stack-policy](https://docs.aws.amazon.[AWS_SECRET_ACCESS_KEY]set-stack-policy.html)
 * [Kubernetes Documentation](https://kubernetes.io/docs/) (related infrastructure best practices)
 
 <CardGroup>

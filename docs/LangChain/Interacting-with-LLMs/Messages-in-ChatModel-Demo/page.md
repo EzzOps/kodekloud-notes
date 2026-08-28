@@ -162,7 +162,7 @@ Recommended reading and references:
 * Google Generative AI docs: [https://developers.generativeai.google/](https://developers.generativeai.google/)
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langchain/module/ae260750-791b-496c-991f-0d0333f61e40/lesson/9e76504b-2c1a-48b2-a099-b53c1c5bf71b" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[SECRET_REDACTED]-791b-496c-991f-0d0333f61e40/lesson/9e76504b-2c1a-48b2-a099-b53c1c5bf71b" />
 </CardGroup>
 
 

@@ -1,6 +1,6 @@
 # Conclusion
 
-Source: https://notes.kodekloud.com/docs/AWS-CloudFormation/Conclusion/Conclusion/page
+Source: https://notes.kodekloud.com/docs/AWS-[SECRET_REDACTED]
 
 Summary of AWS CloudFormation course covering templates, parameters, nested stacks, StackSets, CI/CD with CodePipeline, S3 bucket tips, and practice guidance
 
@@ -53,7 +53,7 @@ Links and references
 
 * [AWS CloudFormation Documentation](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/)
 * [AWS CodePipeline (CI/CD Pipeline) — KodeKloud course](https://learn.kodekloud.com/user/courses/aws-codepipeline-ci-cd-pipeline)
-* [S3 Bucket Naming Rules (AWS)](https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucketnamingrules.html)
+* [S3 Bucket Naming Rules (AWS)](https://docs.aws.amazon.[SECRET_REDACTED].html)
 
 The KodeKloud community is here to support you — ask questions, share your progress, and keep building. Thank you for joining me on this journey. Best of luck applying what you've learned.
 

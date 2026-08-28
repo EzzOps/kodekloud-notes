@@ -39,7 +39,7 @@ Kafka supports two main rebalancing protocols: eager (stop-the-world) and cooper
 | Cooperative (incremental) | Only the minimal set of partitions required for a safe transition are revoked and reassigned               | Less disruptive — most partitions continue to be processed during reassignment; implemented via KIPs such as `KIP-429` |
 
 <Callout icon="lightbulb">
-  Cooperative rebalancing (introduced via KIPs such as [KIP-429](https://cwiki.apache.org/confluence/display/KAFKA/KIP-429%3A+Cooperative+Rebalancing+for+Kafka+Consumers)) reduces the scope of the pause by moving partitions incrementally. Eager rebalancing is simpler but causes a short “stop-the-world” pause for all consumers in the group.
+  Cooperative rebalancing (introduced via KIPs such as [KIP-429](https://cwiki.apache.org/confluence/display/KAFKA/KIP-429%[SECRET_REDACTED])) reduces the scope of the pause by moving partitions incrementally. Eager rebalancing is simpler but causes a short “stop-the-world” pause for all consumers in the group.
 </Callout>
 
 Why the brief pause exists
@@ -75,7 +75,7 @@ Best practices and operational tips
 Links and references
 
 * [Kafka documentation](https://kafka.apache.org/)
-* [KIP-429: Cooperative Rebalancing for Kafka Consumers](https://cwiki.apache.org/confluence/display/KAFKA/KIP-429%3A+Cooperative+Rebalancing+for+Kafka+Consumers)
+* [KIP-429: Cooperative Rebalancing for Kafka Consumers](https://cwiki.apache.org/confluence/display/KAFKA/KIP-429%[SECRET_REDACTED])
 
 Understanding consumer rebalancing — how partitions are reassigned, what triggers membership changes, and why consumption is paused — is essential for building resilient, scalable Kafka consumer applications and for efficient debugging at scale.
 

@@ -119,5 +119,5 @@ Your Ubuntu build agent is now configured and ready to execute Jenkins jobs. Thi
 We hope this guide has been helpful. Keep exploring to further optimize your Jenkins environment!
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins/module/1abff4aa-214c-48a2-98f1-2188e2e446bd/lesson/274b4587-e0a1-4425-ae4e-8ce8948b1a8b" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[AWS_SECRET_ACCESS_KEY]-214c-48a2-98f1-2188e2e446bd/lesson/274b4587-e0a1-4425-ae4e-8ce8948b1a8b" />
 </CardGroup>

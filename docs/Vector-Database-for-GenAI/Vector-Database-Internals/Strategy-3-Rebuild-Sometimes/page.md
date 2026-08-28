@@ -52,7 +52,7 @@ That covers the "rebuild sometimes" approach — strategy number three for maint
 
 Links and references
 
-* [Elasticsearch Reindex API & Reindexing Guidance](https://www.elastic.co/guide/en/elasticsearch/reference/current/docs-reindex.html)
+* [Elasticsearch Reindex API & Reindexing Guidance](https://www.elastic.co/[AWS_SECRET_ACCESS_KEY]/docs-reindex.html)
 * [Pinecone Documentation](https://www.pinecone.io/docs/)
 
 <CardGroup>

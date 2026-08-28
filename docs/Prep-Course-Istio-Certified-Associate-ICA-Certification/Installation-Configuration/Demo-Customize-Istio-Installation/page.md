@@ -270,4 +270,4 @@ kubectl label namespace default istio-injection=enabled
 Delete any existing Bookinfo resources, then re-apply the sample manifest so the pods are recreated with the Istio sidecar:
 
 ```bash theme={null}
-kubectl delete -f https://raw.githubusercontent.com/istio/istio/release-1.11/samples/bookinfo/platform/kube/bookinfo.yaml
+kubectl delete -f https://raw.githubusercontent.com/istio/istio/release-1.11[AWS_SECRET_ACCESS_KEY].yaml

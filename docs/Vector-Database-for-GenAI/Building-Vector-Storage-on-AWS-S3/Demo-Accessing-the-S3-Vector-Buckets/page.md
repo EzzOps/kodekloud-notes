@@ -27,7 +27,7 @@ S3 Vector Buckets use a dedicated Boto3 client, typically exposed as `s3vectors`
 
 Helpful references:
 
-* Boto3 s3vectors API: [https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3vectors.html](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3vectors.html)
+* Boto3 s3vectors API: [https://boto3.amazonaws.com/v1/documentation[AWS_SECRET_ACCESS_KEY].html](https://boto3.amazonaws.com/v1/documentation[AWS_SECRET_ACCESS_KEY].html)
 * AWS credentials and configuration: [https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-files.html](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-files.html)
 
 ## Step 1 — Import and configure

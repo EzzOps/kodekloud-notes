@@ -15,7 +15,7 @@ Fetch the chart's default values into a local `values.yaml` so you can edit the 
 helm show values open-telemetry/opentelemetry-collector > values.yaml
 ```
 
-Open `values.yaml` in your editor/IDE and edit the sections you need: `mode`, `image`, `presets`, and `config` (receivers/processors/exporters/pipelines). I prefer editing locally for clarity and versioning.
+Open `values.yaml` in your editor/IDE and edit the sections you need: `mode`, `image`, `presets`, and `config` ([AWS_SECRET_ACCESS_KEY]). I prefer editing locally for clarity and versioning.
 
 <Frame>
   <img alt="The image shows a Visual Studio Code workspace with a terminal open, displaying a Kubernetes configuration script related to OpenTelemetry collector settings." />

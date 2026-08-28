@@ -99,7 +99,7 @@ CI=true
 …  
 GIT_COMMIT=0bb4c412562f4f1db4c2149f834e29f3
 BUILD_URL=http://jenkins.example.com/job/.../28/
-WORKSPACE=/var/lib/jenkins/workspace/solar-system_feature_enabling-cicd
+[SECRET_REDACTED]-system_feature_enabling-cicd
 STAGE_NAME=Build Docker Image
 GIT_BRANCH=feature/enabling-cicd
 BUILD_TAG=jenkins-Gitea-Organization-solar-system-feature%252Fenabling-cicd-28

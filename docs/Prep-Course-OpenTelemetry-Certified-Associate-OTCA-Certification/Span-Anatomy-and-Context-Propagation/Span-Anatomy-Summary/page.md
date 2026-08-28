@@ -98,7 +98,7 @@ We’ll next take a deep dive into instrumentation: starting with manual instrum
 
 * OpenTelemetry: [https://opentelemetry.io/](https://opentelemetry.io/)
 * W3C Trace Context: [https://www.w3.org/TR/trace-context/](https://www.w3.org/TR/trace-context/)
-* OpenTelemetry Specification (Tracing): [https://github.com/open-telemetry/opentelemetry-specification/tree/main/specification/trace](https://github.com/open-telemetry/opentelemetry-specification/tree/main/specification/trace)
+* OpenTelemetry Specification (Tracing): [https://github.com/open-telemetry/opentelemetry-[SECRET_REDACTED]](https://github.com/open-telemetry/opentelemetry-[SECRET_REDACTED])
 
 Well done completing the span anatomy section.
 

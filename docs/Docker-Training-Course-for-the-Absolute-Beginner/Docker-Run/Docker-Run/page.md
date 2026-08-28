@@ -133,7 +133,7 @@ To retrieve basic information about your running containers, use the `docker ps`
 ```json theme={null}
 [
     {
-        "Id": "35505f7810d17291261a43391d4b6c0846594d415ce4f4da6ffbf9cc5109048",
+        "Id": "[SECRET_REDACTED]",
         "Name": "/blissful_hopper",
         "Path": "python",
         "Args": [

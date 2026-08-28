@@ -50,7 +50,7 @@ Time travel improves resilience and developer productivity in LangGraph by letti
 </Frame>
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langgraph/module/74df2352-cf65-40d3-a3c3-70fdfb767635/lesson/0fd7dd32-af2b-4937-9e7f-52ae07d707cc" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[SECRET_REDACTED]-cf65-40d3-a3c3-70fdfb767635/lesson/0fd7dd32-af2b-4937-9e7f-52ae07d707cc" />
 </CardGroup>
 
 
@@ -107,5 +107,5 @@ Next steps and resources
 On behalf of the entire team, thank you. We hope you walk away with a refreshed way of thinking about software, agents, and intelligence. Stay curious, keep building, and we look forward to seeing what you create.
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langgraph/module/fba2d122-092f-42c8-bc27-0955ffaf786b/lesson/f29ba7ed-6610-40f6-b467-f8f7a3f0991a" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[SECRET_REDACTED]-092f-42c8-bc27-0955ffaf786b/lesson/f29ba7ed-6610-40f6-b467-f8f7a3f0991a" />
 </CardGroup>

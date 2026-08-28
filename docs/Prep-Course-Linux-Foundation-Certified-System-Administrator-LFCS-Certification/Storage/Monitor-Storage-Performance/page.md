@@ -237,7 +237,7 @@ Open count:        1
 Event number:      0
 Major, minor:      252, 0
 Number of targets: 1
-UUID:              LVM-gAAfKzeoxfbviBTqNm3tActzQkhA7naII91DKxXBFhbSArz3azVx1ioaauFTXxCR
+UUID:              LVM-[SECRET_REDACTED]
 ```
 
 Next, verify the relationship between dm-0 and the physical devices with lsblk:

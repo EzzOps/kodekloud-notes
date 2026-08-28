@@ -27,7 +27,7 @@ Links and references
 * [python-dotenv (for local dev secrets)](https://pypi.org/project/python-dotenv/)
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langchain/module/ae260750-791b-496c-991f-0d0333f61e40/lesson/5f40ca43-ec72-4c68-a0df-06085674863e" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[SECRET_REDACTED]-791b-496c-991f-0d0333f61e40/lesson/5f40ca43-ec72-4c68-a0df-06085674863e" />
 </CardGroup>
 
 
@@ -133,5 +133,5 @@ Use cases:
 In this lesson, you will learn how to interact with both Base LLMs and Chat models, and select the pattern that best fits your use case.
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langchain/module/ae260750-791b-496c-991f-0d0333f61e40/lesson/46332dc3-f81b-4b21-bd67-574c6a4de70a" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[SECRET_REDACTED]-791b-496c-991f-0d0333f61e40/lesson/46332dc3-f81b-4b21-bd67-574c6a4de70a" />
 </CardGroup>

@@ -89,13 +89,13 @@ $ crictl ps -a
 To execute a command inside a container:
 
 ```bash theme={null}
-$ crictl exec -i -t 3e025dd50a72d956c4f14881fbb5b1080c9275674e95fb67f965f6478a957d60 ls
+$ crictl exec -i -t [SECRET_REDACTED] ls
 ```
 
 To view logs from a container:
 
 ```bash theme={null}
-$ crictl logs 3e025dd50a72d956c4f14881fbb5b1080c9275674e95fb67f965f6478a957d60
+$ crictl logs [SECRET_REDACTED]
 ```
 
 And for managing pods:

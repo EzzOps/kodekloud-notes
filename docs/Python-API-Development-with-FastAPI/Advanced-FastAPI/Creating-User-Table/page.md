@@ -1,6 +1,6 @@
 # to get a string like this run:
 # openssl rand -hex 32
-SECRET_KEY = "09d25e094faa6ca2556c818166b7a9563b93f7099f6f0f4caa6cf63b88e8d3e7"
+SECRET_KEY = "[SECRET_REDACTED]"
 ALGORITHM = "HS256"
 ACCESS_TOKEN_EXPIRE_MINUTES = 30
 
@@ -9,7 +9,7 @@ fake_users_db = {
         "username": "johndoe",
         "full_name": "John Doe",
         "email": "johndoe@example.com",
-        "hashed_password": "$2b$12$E2SxE1ZElStv1bvfx5v1kb6ZTb9v6Qoe6LruJ3vIPGmAmOQhnY4iK",
+        "hashed_password": "$2b$12$[SECRET_REDACTED]",
         "disabled": False,
     }
 }

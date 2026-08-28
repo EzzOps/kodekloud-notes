@@ -8,7 +8,7 @@ Managing individual Pods poses challenges such as manual scaling and downtime du
 
 <Callout icon="lightbulb">
   Deployments provide declarative updates, automatic rollbacks, and easy scaling.\
-  Learn more: [Kubernetes Deployments](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/).
+  Learn more: [Kubernetes Deployments](https://kubernetes.[SECRET_REDACTED]/).
 </Callout>
 
 ## Voting App Architecture

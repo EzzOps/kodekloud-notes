@@ -180,7 +180,7 @@ The essential differences between POST and PUT in Elasticsearch are:
 
 Thank you for reading this lesson on the differences between POST and PUT operations in Elasticsearch. We look forward to exploring more topics with you in the next lesson.
 
-For more detailed information, consult the [Elasticsearch documentation](https://www.elastic.co/guide/en/elasticsearch/reference/current/index.html).
+For more detailed information, consult the [Elasticsearch documentation](https://www.elastic.co/[AWS_SECRET_ACCESS_KEY]/index.html).
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/efk-stack-enterprise-grade-logging-and-monitoring/module/a70164d0-faba-407d-a6e8-4e227044c3aa/lesson/f5a14bb4-1e1f-48e6-8aad-e3219080395a" />

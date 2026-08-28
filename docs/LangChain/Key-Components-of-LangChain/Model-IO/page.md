@@ -52,7 +52,7 @@ When designing memory for your application, consider:
 These resources will help you choose the right memory pattern and persistence mechanism for your LLM application.
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langchain/module/5bedac05-3eaa-4d0d-9892-e05b80c528fb/lesson/87a18942-f7f0-43fa-a0c4-ceed571b426d" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[SECRET_REDACTED]-3eaa-4d0d-9892-e05b80c528fb/lesson/87a18942-f7f0-43fa-a0c4-ceed571b426d" />
 </CardGroup>
 
 

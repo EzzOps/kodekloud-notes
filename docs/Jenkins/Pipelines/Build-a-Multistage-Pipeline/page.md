@@ -42,5 +42,5 @@ Stay tuned for the next lesson where we dive deeper into advanced pipeline confi
 For more details on pipeline management, visit our [Configuration Guide](/docs/configuration).
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins/module/4eff829b-dd2c-4051-8090-35e8525b8874/lesson/e9c7f9aa-e455-4c77-ab8d-0f5c8dfc0b95" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[AWS_SECRET_ACCESS_KEY]-dd2c-4051-8090-35e8525b8874/lesson/e9c7f9aa-e455-4c77-ab8d-0f5c8dfc0b95" />
 </CardGroup>

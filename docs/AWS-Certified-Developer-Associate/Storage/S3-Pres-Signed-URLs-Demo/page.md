@@ -88,7 +88,7 @@ The following error messages illustrate what users might encounter when attempti
   <Code>AccessDenied</Code>
   <Message>Access Denied</Message>
   <RequestId>6N568V6R6BMW15B7ST</RequestId>
-  <HostId>UqNVbn6v7cfaDGJ1WeCRjdmc5z7f5EJHBD9PA9nX3fjdwyq4UZR8BshfFLeZag==</HostId>
+  <HostId>[SECRET_REDACTED]==</HostId>
 </Error>
 ```
 
@@ -97,7 +97,7 @@ The following error messages illustrate what users might encounter when attempti
   <Code>AccessDenied</Code>
   <Message>Access Denied</Message>
   <RequestId>NGD68V3R1B52S18T</RequestId>
-  <HostId>UoYlZ1vN6v2rcT6R1WcaRjdms5f6jE1JFB0PAvn1xTjhy4I/2Z8Rf1eFo/2gE=</HostId>
+  <HostId>[SECRET_REDACTED]=</HostId>
 </Error>
 ```
 

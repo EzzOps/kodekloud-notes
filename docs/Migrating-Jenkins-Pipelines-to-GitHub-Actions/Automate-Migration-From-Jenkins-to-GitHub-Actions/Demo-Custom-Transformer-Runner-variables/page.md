@@ -56,7 +56,7 @@ Sample logs (trimmed):
 # Upload Artifacts
 Uploaded bytes 209207
 Finished uploading artifact content to blob storage!
-SHA256 hash of uploaded artifact .zip is a71f06a5ae4d09e7be41f18401a6a577ba0635a86cecfa2f13cad1376a0a1c5f
+SHA256 hash of uploaded artifact .zip is [SECRET_REDACTED]
 Finished artifact upload
 ```
 

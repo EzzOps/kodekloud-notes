@@ -1,6 +1,6 @@
 # Conclusion
 
-Source: https://notes.kodekloud.com/docs/Prep-Course-Istio-Certified-Associate-ICA-Certification/Conclusion/Conclusion/page
+Source: https://notes.kodekloud.com/docs/Prep-Course-Istio-Certified-Associate-ICA-[AWS_SECRET_ACCESS_KEY]
 
 Summary of Istio Certified Associate course covering installation, traffic management, security mTLS, fault injection, observability, hands‑on labs and exam preparation for managing Istio on Kubernetes
 

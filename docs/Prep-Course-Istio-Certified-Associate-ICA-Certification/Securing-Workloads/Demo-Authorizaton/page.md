@@ -20,4 +20,4 @@ Prerequisites: an Istio-enabled cluster with `istio-system` installed and workin
 Apply the httpbin sample used throughout this lesson:
 
 ```bash theme={null}
-kubectl apply -f https://raw.githubusercontent.com/istio/istio/refs/heads/master/samples/httpbin/httpbin.yaml
+kubectl apply -f https://raw.githubusercontent.com/istio[AWS_SECRET_ACCESS_KEY]/httpbin.yaml

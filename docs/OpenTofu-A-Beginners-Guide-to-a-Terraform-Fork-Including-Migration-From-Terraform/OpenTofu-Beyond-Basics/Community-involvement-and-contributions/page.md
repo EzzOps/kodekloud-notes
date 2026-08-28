@@ -10,7 +10,7 @@ Contributing to OpenTofu is a great way to join an active open-source community.
 
 ### 1. Review the Contribution Guidelines
 
-Begin by reading the official [CONTRIBUTING guide](https://github.com/OpenTofu/OpenTofu/blob/main/CONTRIBUTING.md). This document covers:
+Begin by reading the official [CONTRIBUTING guide](https://github.com/[AWS_SECRET_ACCESS_KEY].md). This document covers:
 
 * Coding standards and style conventions
 * Branching and commit message requirements
@@ -48,7 +48,7 @@ OpenTofu celebrates every contribution. As your work is reviewed and merged, you
 
 | Contribution Area | How to Get Started                                       | Link                                                                                                                             |
 | ----------------- | -------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
-| Code              | Fork the repo, follow the \[CONTRIBUTING guide]          | [https://github.com/OpenTofu/OpenTofu/blob/main/CONTRIBUTING.md](https://github.com/OpenTofu/OpenTofu/blob/main/CONTRIBUTING.md) |
+| Code              | Fork the repo, follow the \[CONTRIBUTING guide]          | [https://github.com/[AWS_SECRET_ACCESS_KEY].md](https://github.com/[AWS_SECRET_ACCESS_KEY].md) |
 | Discussions       | Share ideas and gather feedback on GitHub Discussions    | [https://github.com/OpenTofu/OpenTofu/discussions](https://github.com/OpenTofu/OpenTofu/discussions)                             |
 | Documentation     | Improve or expand the `/docs` folder                     | [https://github.com/OpenTofu/OpenTofu/tree/main/docs](https://github.com/OpenTofu/OpenTofu/tree/main/docs)                       |
 | Bug Reporting     | Report issues or request features via the Issues tracker | [https://github.com/OpenTofu/OpenTofu/issues](https://github.com/OpenTofu/OpenTofu/issues)                                       |

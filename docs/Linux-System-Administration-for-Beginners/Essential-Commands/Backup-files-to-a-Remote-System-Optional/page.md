@@ -73,7 +73,7 @@ sudo tar -xf archive.tar -C /desired/path
 ## References
 
 * [GNU tar Manual](https://www.gnu.org/software/tar/manual/tar.html)
-* [Linux File Permissions](https://www.kernel.org/doc/html/latest/filesystems/permissions.html)
+* [Linux File Permissions](https://www.kernel.org[AWS_SECRET_ACCESS_KEY].html)
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linux-system-administration-for-beginners/module/cc1949d1-8171-4c8c-b69f-86f96cad0bbe/lesson/22512b65-d060-43a4-926c-d161e0fa3a66" />

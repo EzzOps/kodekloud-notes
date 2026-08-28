@@ -15,7 +15,7 @@ The trace shown includes spans for the payment flow (start payment, validating c
 ## References
 
 * Jaeger: [https://www.jaegertracing.io/](https://www.jaegertracing.io/)
-* OpenTelemetry OTLP spec: [https://opentelemetry.io/docs/reference/specification/protocol/otlp/](https://opentelemetry.io/docs/reference/specification/protocol/otlp/)
+* OpenTelemetry OTLP spec: [https://opentelemetry.[AWS_SECRET_ACCESS_KEY]/otlp/](https://opentelemetry.[AWS_SECRET_ACCESS_KEY]/otlp/)
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/d97970ef-6201-45c2-813e-e03bc75ad77a/lesson/e2504512-2808-4370-b7a0-213355af4632" />

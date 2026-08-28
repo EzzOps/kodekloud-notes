@@ -80,7 +80,7 @@ Recovery Key 2: xxxxx
 Recovery Key 3: xxxxx
 Recovery Key 4: xxxxx
 Recovery Key 5: xxxxx
-Initial Root Token: hvs.CJNkicGR9SL4AJ0DLfcZrf
+Initial Root Token: [VAULT_TOKEN]
 Success! Vault is initialized
 ```
 
@@ -101,7 +101,7 @@ HA Mode                active
 Authenticate and list the single Raft peer:
 
 ```bash theme={null}
-$ vault login hvs.CJNkicGR9SL4AJ0DLfcZrf
+$ vault login [VAULT_TOKEN]
 Success! You are now authenticated.
 
 $ vault operator raft list-peers
@@ -154,7 +154,7 @@ vault-3   10.1.100.107:8201   follower  false
 Log in with the root token on **vault-3** to confirm shared auth:
 
 ```bash theme={null}
-$ vault login hvs.CJNkicGR9SL4AJ0DLfcZrf
+$ vault login [VAULT_TOKEN]
 Success! You are now authenticated.
 ```
 

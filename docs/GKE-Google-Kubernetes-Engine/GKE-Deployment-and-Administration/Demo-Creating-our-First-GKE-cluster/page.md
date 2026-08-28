@@ -119,7 +119,7 @@ Congratulations! You’ve successfully created and verified your first GKE clust
 ## References
 
 * [Google Kubernetes Engine Documentation](https://cloud.google.com/kubernetes-engine/docs)
-* [gcloud container clusters create](https://cloud.google.com/sdk/gcloud/reference/container/clusters/create)
+* [gcloud container clusters create](https://cloud.google.com[AWS_SECRET_ACCESS_KEY]/create)
 * [Cloud Shell Overview](https://cloud.google.com/shell/docs/overview)
 
 <CardGroup>

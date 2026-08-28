@@ -44,7 +44,7 @@ Next demo: we’ll start with the simplest gauge — ready replicas — and show
 
 Links and further reading
 
-* [Kubernetes API Conventions: Conditions](https://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api-conventions.md#condition-typing)
+* [Kubernetes API Conventions: Conditions](https://github.com/kubernetes/[AWS_SECRET_ACCESS_KEY]/sig-architecture/api-conventions.md#condition-typing)
 * [metav1.Condition Go type reference](https://pkg.go.dev/k8s.io/apimachinery@v0.29.0/pkg/apis/meta/v1#Condition)
 * [Golang course reference used above](https://learn.kodekloud.com/user/courses/golang)
 
@@ -246,7 +246,7 @@ These events appear in `kubectl describe webapp <name>` and similar tooling, hel
 
 ## References
 
-* [kubectl describe — Documentation](https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands#describe)
+* [kubectl describe — Documentation](https://kubernetes.io/[AWS_SECRET_ACCESS_KEY]-commands#describe)
 * controller-runtime: `controllerutil.CreateOrUpdate` and `SetControllerReference` methods
 * client-go: `tools/record.EventRecorder` for emitting events
 

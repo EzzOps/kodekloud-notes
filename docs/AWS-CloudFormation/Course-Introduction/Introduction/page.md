@@ -157,10 +157,10 @@ Tools, validation, and CI/CD integration
 Recommended tools and links
 
 * AWS CloudFormation User Guide: [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/)
-* Template reference (intrinsic functions): [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference.html)
+* Template reference (intrinsic functions): [https://docs.aws.amazon.[SECRET_REDACTED]-function-reference.html](https://docs.aws.amazon.[SECRET_REDACTED]-function-reference.html)
 * cfn-lint (linting tool): [https://github.com/aws-cloudformation/cfn-lint](https://github.com/aws-cloudformation/cfn-lint)
-* AWS CLI (CloudFormation commands): [https://docs.aws.amazon.com/cli/latest/reference/cloudformation/index.html](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/index.html)
-* StackSets documentation: [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/what-is-cfnstacksets.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/what-is-cfnstacksets.html)
+* AWS CLI (CloudFormation commands): [https://docs.aws.amazon.[AWS_SECRET_ACCESS_KEY]index.html](https://docs.aws.amazon.[AWS_SECRET_ACCESS_KEY]index.html)
+* StackSets documentation: [https://docs.aws.amazon.com[AWS_SECRET_ACCESS_KEY]-is-cfnstacksets.html](https://docs.aws.amazon.com[AWS_SECRET_ACCESS_KEY]-is-cfnstacksets.html)
 
 Hands-on labs and community
 This course includes labs, demos, and real-world scenarios so you can apply concepts and build job-ready skills. Engage with the KodeKloud community to ask questions, share solutions, and collaborate with other learners.

@@ -95,7 +95,7 @@ kodekLOUD@vm-eus:~$ ip address
 
 kodekLOUD@vm-eus:~$ ssh kodekLOUD@192.168.1.4
 The authenticity of host '192.168.1.4 (192.168.1.4)' can't be established.
-ED25519 key fingerprint is SHA256:gwSm0n3l4fYqCQVYGHYMN0wFbduhdUwJ4K/9Co9Gs.
+ED25519 key fingerprint is SHA256:[SECRET_REDACTED].
 This key is not known by any other names.
 Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
 Warning: Permanently added '192.168.1.4' (ED25519) to the list of known hosts.
@@ -107,7 +107,7 @@ A similar process can be executed in a Windows environment using PowerShell. Use
 ```bash theme={null}
 PS C:\> ssh kodekloud@192.168.0.4
 The authenticity of host '192.168.0.4 (192.168.0.4)' can't be established.
-ED25519 key fingerprint is SHA256:tQXst535TmKurM5PHX5ZTozvQskMiiJ4VLnFdjy/70.
+ED25519 key fingerprint is SHA256:[AWS_SECRET_ACCESS_KEY]70.
 This host key is known by the following other names/addresses:
     C:\Users\RithinSkaria\.ssh\known_hosts:54: 172.191.37.104
 Are you sure you want to continue connecting (yes/no/[fingerprint])? yes

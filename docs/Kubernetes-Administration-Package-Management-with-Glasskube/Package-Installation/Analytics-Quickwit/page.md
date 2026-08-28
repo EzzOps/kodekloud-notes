@@ -42,7 +42,7 @@ For most installations (including the demo) you will supply the following core v
 | `defaultIndexUri`   | S3 URI used as the default index storage location                        | `s3://quickwit-indexes`                    |
 | `metastoreUri`      | Metastore URI (can point to the same S3 bucket as the index)             | `s3://quickwit-indexes`                    |
 | `s3AccessKeyId`     | S3 access key ID (or temporary/IAM-backed credentials)                   | `AKIA...`                                  |
-| `s3SecretAccessKey` | S3 secret access key                                                     | `wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY` |
+| `s3SecretAccessKey` | S3 secret access key                                                     | `[AWS_SECRET_ACCESS_KEY]` |
 | `s3Region`          | AWS region for the S3 bucket (or region for your S3-compatible provider) | `us-east-1`                                |
 
 Optional values commonly used:

@@ -84,7 +84,7 @@ When you move beyond local testing, replace `ConsoleSpanExporter` with an export
 
 | Exporter | Use case                                                         | Docs                                                                                                                                         |
 | -------- | ---------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
-| OTLP     | Send traces to the OpenTelemetry Collector or supported backends | [https://opentelemetry.io/docs/instrumentation/python/exporters/otlp/](https://opentelemetry.io/docs/instrumentation/python/exporters/otlp/) |
+| OTLP     | Send traces to the OpenTelemetry Collector or supported backends | [https://opentelemetry.[AWS_SECRET_ACCESS_KEY]/otlp/](https://opentelemetry.[AWS_SECRET_ACCESS_KEY]/otlp/) |
 | Jaeger   | Send traces directly to a Jaeger backend                         | [https://www.jaegertracing.io/](https://www.jaegertracing.io/)                                                                               |
 | Zipkin   | Send traces directly to Zipkin                                   | [https://zipkin.io/](https://zipkin.io/)                                                                                                     |
 
@@ -105,7 +105,7 @@ Links and references
 
 * OpenTelemetry: [https://opentelemetry.io/](https://opentelemetry.io/)
 * OpenTelemetry Python instrumentation: [https://opentelemetry.io/docs/instrumentation/python/](https://opentelemetry.io/docs/instrumentation/python/)
-* OTLP exporter docs: [https://opentelemetry.io/docs/instrumentation/python/exporters/otlp/](https://opentelemetry.io/docs/instrumentation/python/exporters/otlp/)
+* OTLP exporter docs: [https://opentelemetry.[AWS_SECRET_ACCESS_KEY]/otlp/](https://opentelemetry.[AWS_SECRET_ACCESS_KEY]/otlp/)
 * OpenTelemetry Collector: [https://opentelemetry.io/docs/collector/](https://opentelemetry.io/docs/collector/)
 * Jaeger: [https://www.jaegertracing.io/](https://www.jaegertracing.io/)
 * Zipkin: [https://zipkin.io/](https://zipkin.io/)

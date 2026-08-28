@@ -150,11 +150,11 @@ vault operator init
 Sample output:
 
 ```text theme={null}
-Unseal Key 1: 4jyBl2CBIV6SpkKj6Hos9iD32k5RfGkLzlosrrq/JgOm
-Unseal Key 2: B05G1DRtfyKFV5BbDbVqQwkk5HFgB9g2jCmnNfTQiS
-Unseal Key 3: Ariq09Nf9ezkTRo74gTBg5IZDaonOc35He803FhCa
+Unseal Key 1: [AWS_SECRET_ACCESS_KEY]JgOm
+Unseal Key 2: [SECRET_REDACTED]
+Unseal Key 3: [SECRET_REDACTED]
 Unseal Key 4: 0cZEOC/gEk3YHaKjIwxyfS8REhRqk/CXtmniLv+
-Unseal Key 5: fyhZ0seRgxmJcmiqUdXmE9C3jB5027AoER9w4FC2ck
+Unseal Key 5: [SECRET_REDACTED]
 Initial Root Token: s.KhNJWF5g0pomcCLEmDb0VCW
 ```
 

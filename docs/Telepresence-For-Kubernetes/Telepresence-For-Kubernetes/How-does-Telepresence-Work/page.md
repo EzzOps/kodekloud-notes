@@ -91,7 +91,7 @@ Download the latest Telepresence binary and make it executable:
 
 ```bash theme={null}
 sudo curl -FL \
-  https://app.getambassador.io/download/tel2oss/releases/download/v2.20.0/telepresence-linux-amd64 \
+  https://app.getambassador.[AWS_SECRET_ACCESS_KEY].20.0/telepresence-linux-amd64 \
   -o /usr/local/bin/telepresence
 sudo chmod a+x /usr/local/bin/telepresence
 ```

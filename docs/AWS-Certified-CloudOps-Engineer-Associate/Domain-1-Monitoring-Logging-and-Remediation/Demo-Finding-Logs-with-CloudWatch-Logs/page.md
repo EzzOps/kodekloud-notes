@@ -169,7 +169,7 @@ CloudWatch Logs organizes log data into log groups and log streams. Whether you 
 
 This guide provides a comprehensive overview of how to find and manage logs within AWS CloudWatch Logs, empowering you to streamline troubleshooting and performance analysis in your AWS environment.
 
-For additional information, check out the [AWS CloudWatch Documentation](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/WhatIsCloudWatchLogs.html).
+For additional information, check out the [AWS CloudWatch Documentation](https://docs.aws.amazon.[SECRET_REDACTED].html).
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/aws-certified-sysops-administrator-associate/module/e7f728df-5d8d-4dbb-80f6-33c15cde3034/lesson/49cbf451-1ee9-4641-b346-4f148ea0362c" />

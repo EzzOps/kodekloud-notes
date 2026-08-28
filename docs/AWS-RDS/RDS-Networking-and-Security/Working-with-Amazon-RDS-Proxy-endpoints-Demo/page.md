@@ -91,7 +91,7 @@ proxy endpoint:
 proxy-1693971320810-database-1.proxy-caywlfxrbtml.eu-central-1.rds.amazonaws.com
 
 Secrets Manager ARN:
-arn:aws:secretsmanager:eu-central-1:666234783044:secret:rds-db-credentials/db-WNV6FXXFQPL24QBBXY7IFP7CPEY/admin/1693971319353-fVh629
+arn:aws:secretsmanager:eu-central-1:666234783044:secret:rds-db-credentials/db-[SECRET_REDACTED]-fVh629
 ```
 
 Connect to MySQL through the proxy from the EC2 instance. Use host = proxy endpoint, port = 3306, user = admin, and the password retrieved from Secrets Manager:
@@ -126,7 +126,7 @@ That completes this demo of creating an RDS DB, enabling an RDS Proxy, and conne
 ## Links and references
 
 * [Amazon RDS Proxy - Developer Guide](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/rds-proxy.html)
-* [AWS Secrets Manager](https://docs.aws.amazon.com/secretsmanager/latest/userguide/intro.html)
+* [AWS Secrets Manager](https://docs.aws.amazon.[SECRET_REDACTED].html)
 * [Amazon RDS documentation](https://docs.aws.amazon.com/rds/index.html)
 * [MySQL client documentation](https://dev.mysql.com/doc/refman/en/mysql.html)
 

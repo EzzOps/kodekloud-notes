@@ -323,7 +323,7 @@ Run jakejarvis/s3-sync-action@master
 /usr/bin/docker run --name e8d... \
   --workdir /github/workspace --rm ... \
   --follow-symlinks --delete
-upload: reports-1374785c0a9719be70ed2e7ba3481dabd72429c6/test-results.xml to s3://solar-system-reports-bucket/reports-1374785c0a9719be70ed2e7ba3481dabd72429c6/test-results.xml
+upload: reports-[AWS_SECRET_ACCESS_KEY]/test-results.xml to s3://solar-system-reports-bucket/reports-[AWS_SECRET_ACCESS_KEY]/test-results.xml
 ```
 
 Once complete, the AWS S3 upload step shows success:

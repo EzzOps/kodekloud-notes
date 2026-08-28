@@ -30,7 +30,7 @@ Typical console/network error:
 
 ```text theme={null}
 GET http://localhost:3000/script.js net::ERR_ABORTED 404 (Not Found)
-WebSocket connection to 'ws://127.0.0.1:3000/02441247d92323efa697b17597644feb273ad' failed:
+WebSocket connection to 'ws://127.0.0.1:[SECRET_REDACTED]' failed:
 ```
 
 Consequences

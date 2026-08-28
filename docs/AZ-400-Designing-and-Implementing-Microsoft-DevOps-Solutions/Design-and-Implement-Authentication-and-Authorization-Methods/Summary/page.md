@@ -106,8 +106,8 @@ Azure DevOps pipelines and services require secure authentication to interact wi
 
 ### Further Reading
 
-* [Azure DevOps Service Connections](https://docs.microsoft.com/azure/devops/pipelines/library/service-endpoints)
-* [PATs in Azure DevOps](https://docs.microsoft.com/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate)
+* [Azure DevOps Service Connections](https://docs.microsoft.[SECRET_REDACTED]-endpoints)
+* [PATs in Azure DevOps](https://docs.microsoft.[AWS_SECRET_ACCESS_KEY]use-personal-access-tokens-to-authenticate)
 
 ***
 

@@ -85,8 +85,8 @@ Important considerations and best practices
 Quick links and references
 
 * [AWS CloudFormation Documentation](https://docs.aws.amazon.com/cloudformation/)
-* [AWS CLI reference: update-termination-protection](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/update-termination-protection.html)
-* [boto3 CloudFormation client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html)
+* [AWS CLI reference: update-termination-protection](https://docs.aws.amazon.[AWS_SECRET_ACCESS_KEY]update-termination-protection.html)
+* [boto3 CloudFormation client](https://boto3.amazonaws.com/v1/documentation/api/[AWS_SECRET_ACCESS_KEY].html)
 
 By combining termination protection with strict IAM rules, auditing, and automated checks, you can significantly reduce the risk of accidental or unauthorized stack deletions while keeping stacks manageable for authorized operations.
 

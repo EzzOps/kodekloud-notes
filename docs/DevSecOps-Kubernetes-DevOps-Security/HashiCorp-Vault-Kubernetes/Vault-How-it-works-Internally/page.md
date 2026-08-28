@@ -34,7 +34,7 @@ Kubernetes supports encrypting Secrets in etcd with an `EncryptionConfiguration`
          - aescbc:
              keys:
                - name: key1
-                 secret: RSYzZbCmZbshlScWcjm+zAbB83coDIJ47HTRLOOW4=
+                 secret: [SECRET_REDACTED]=
          - identity: {}
    ```
 

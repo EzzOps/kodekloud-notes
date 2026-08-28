@@ -40,12 +40,12 @@ After signing in, select **Copy Token** from the user menu:
 Include the token in the `X-Vault-Token` header or as a Bearer token:
 
 ```bash theme={null}
-curl --header "X-Vault-Token: hvs.cDIPyitdJKSm46ydTXJOsaQR" \
+curl --header "X-Vault-Token: [VAULT_TOKEN]" \
      --request POST \
      --data '{"apikey":"3230sc$832d"}' \
      https://vault.example.com:8200/v1/secret/data/apikey/splunk
 
-curl --header "Authorization: Bearer hvs.cDIPyitdJKSm46ydTXJOsaQR" \
+curl --header "Authorization: Bearer [VAULT_TOKEN]" \
      --request GET \
      https://vault.example.com:8200/v1/secret/data/apikey/splunk
 ```
@@ -62,7 +62,7 @@ vault login
 Or pass the token directly (it will appear in your shell history):
 
 ```bash theme={null}
-vault login hvs.cDIPyitdJKSm46ydTXJOsaQR
+vault login [VAULT_TOKEN]
 ```
 
 <Callout icon="triangle-alert">
@@ -76,7 +76,7 @@ vault login hvs.cDIPyitdJKSm46ydTXJOsaQR
 Revoke any token, including root, with:
 
 ```bash theme={null}
-vault token revoke hvs.cDIPyitdJKSm46ydTXJOsaQR
+vault token revoke [VAULT_TOKEN]
 ```
 
 ***

@@ -70,7 +70,7 @@ Below is an example of an XML error response that might be returned if access is
 <error>
    <Code>AccessDenied</Code>
    <Message>Access Denied</Message>
-   <RequestId>18H5T95E1I8G5E1G9B4W1X5T0G9W1I8G9B4W1I8G9B4W1I8G</RequestId>
+   <RequestId>[SECRET_REDACTED]</RequestId>
 </error>
 ```
 

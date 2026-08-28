@@ -79,7 +79,7 @@ Vault replaces `{{identity.entity.id}}` at runtime, generating per-user policies
 
    ***
 
-   token                   hvs.7uBlZwXSxOg31uGXIUetEdXD
+   token                   [VAULT_TOKEN]
    token\_accessor          18r88muoe3x1xEqVqXdlTMwJ
    token\_duration          8h
    token\_renewable         true

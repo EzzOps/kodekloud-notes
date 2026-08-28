@@ -33,7 +33,7 @@ spec:
     - --etcd-certfile=/etc/kubernetes/pki/apiserver-etcd-client.crt
     - --etcd-keyfile=/etc/kubernetes/pki/apiserver-etcd-client.key
     - --etcd-servers=https://127.0.0.1:2379
-    - --kubelet-client-certificate=/etc/kubernetes/pki/apiserver-kubelet-client.crt
+    - --kubelet-client-[SECRET_REDACTED]-kubelet-client.crt
     - --kubelet-client-key=/etc/kubernetes/pki/apiserver-kubelet-client.key
     - --kubelet-preferred-address-types=InternalIP,ExternalIP,Hostname
     - --proxy-client-cert-file=/etc/kubernetes/pki/front-proxy-client.crt
@@ -60,7 +60,7 @@ An alternative verification method is to inspect the running processes on the co
 root@controlplane ~ ps aux | grep authorization
 root      3403  0.0  0.0  830588 115420 ?        Ssl  22:54   0:55 kube-controller-manager --allocate-node-authorization-kubeconfig=/etc/kubernetes/controller-manager.conf --authorization-kubeconfig=/etc/kubernetes/controller-manager.conf --bind-address=127.0.0.1 --client-ca-file=/etc/kubernetes/pki/ca.crt --cluster-cidr=10.244.0.0/16 --kubelet-client-certificate=/etc/kubernetes/pki/ca.key --controllers=*,bootstrapsigner,tokens --kubelet-client-key=/etc/kubernetes/pki/front-proxy-client.key --service-account-privileged=false --service-cluster-ip-range=10.96.0.0/12 --use-service-account-credentials=true
 root      3614  0.0  0.0  759136  55292 ?        Ssl  22:55   0:10 kube-scheduler --authentication-kubeconfig=/etc/kubernetes/scheduler.conf --bind-address=127.0.0.1 --kubeconfig=/etc/kubernetes/scheduler.conf --leader-elect=true
-root      3630  0.0  0.1 111896  316984 ?        S    22:55   2:07 kube-apiserver --advertise-address=10.4.8.174.6 --allow-privileged=true --authorization-mode=Node,RBAC --client-ca-file=/etc/kubernetes/pki/ca.crt --enable-admission-plugins=NodeRestriction --etcd-certfile=/etc/kubernetes/pki/apiserver-etcd-client.crt --etcd-keyfile=/etc/kubernetes/pki/apiserver-etcd-client.key --kubelet-client-certificate=/etc/kubernetes/pki/apiserver-kubelet-client.crt --kubelet-client-key=/etc/kubernetes/pki/apiserver-kubelet-client.key --kubelet-preferred-address-types=InternalIP,ExternalIP,Hostname --proxy-client-cert-file=/etc/kubernetes/pki/front-proxy-client.crt --proxy-client-key-file=/etc/kubernetes/pki/front-proxy-client.key --requestheader-allowed-names=X-Remote-Group --requestheader-client-ca-file=/etc/kubernetes/pki/front-proxy-client-ca.crt --requestheader-headers-prefix=X-Remote-Extra --requestheader-group-headers=X-Remote-Group --requestheader-username-headers=X-Remote-User --secure-port=6443 --service-account-issuer=https://kubernetes.default.svc.cluster.local --service-account-key-file=/etc/kubernetes/pki/sa.key --service-cluster-ip-range=10.96.0.0/12 --tls-cert-file=/etc/kubernetes/pki/apiserver.crt --tls-private-key-file=/etc/kubernetes/pki/apiserver.key
+root      3630  0.0  0.1 111896  316984 ?        S    22:55   2:07 kube-apiserver --advertise-address=10.4.8.174.6 --allow-privileged=true --authorization-mode=Node,RBAC --client-ca-file=/etc/kubernetes/pki/ca.crt --enable-admission-plugins=NodeRestriction --etcd-certfile=/etc/kubernetes/pki/apiserver-etcd-client.crt --etcd-keyfile=/etc/kubernetes/pki/apiserver-etcd-client.key --kubelet-client-[SECRET_REDACTED]-kubelet-client.crt --kubelet-client-key=/etc/kubernetes/pki/apiserver-kubelet-client.key --kubelet-preferred-address-types=InternalIP,ExternalIP,Hostname --proxy-client-cert-file=/etc/kubernetes/pki/front-proxy-client.crt --proxy-client-key-file=/etc/kubernetes/pki/front-proxy-client.key --requestheader-allowed-names=X-Remote-Group --requestheader-client-ca-file=/etc/kubernetes/pki/front-proxy-client-ca.crt --requestheader-headers-prefix=X-Remote-Extra --requestheader-group-headers=X-Remote-Group --requestheader-username-headers=X-Remote-User --secure-port=6443 --service-account-issuer=https://kubernetes.default.svc.cluster.local --service-account-key-file=/etc/kubernetes/pki/sa.key --service-cluster-ip-range=10.96.0.0/12 --tls-cert-file=/etc/kubernetes/pki/apiserver.crt --tls-private-key-file=/etc/kubernetes/pki/apiserver.key
 root      25283  0.0  0.0  13444  1068 pts/0    S+   23:40   0:00 grep --color=auto authorization
 ```
 
@@ -98,7 +98,7 @@ spec:
     - --etcd-certfile=/etc/kubernetes/pki/apiserver-etcd-client.crt
     - --etcd-keyfile=/etc/kubernetes/pki/apiserver-etcd-client.key
     - --etcd-servers=https://127.0.0.1:2379
-    - --kubelet-client-certificate=/etc/kubernetes/pki/apiserver-kubelet-client.crt
+    - --kubelet-client-[SECRET_REDACTED]-kubelet-client.crt
     - --kubelet-client-key=/etc/kubernetes/pki/apiserver-kubelet-client.key
     - --kubelet-preferred-address-types=InternalIP,ExternalIP,Hostname
     - --proxy-client-cert-file=/etc/kubernetes/pki/front-proxy-client.crt

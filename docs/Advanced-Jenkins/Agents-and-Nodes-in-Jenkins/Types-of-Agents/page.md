@@ -48,14 +48,14 @@ On the agent machine, Jenkins provides `agent.jar`. The UI shows platform-specif
 ```bash theme={null}
 curl -sO http://64.227.187.25:8080/jnlpJars/agent.jar
 java -jar agent.jar -url http://64.227.187.25:8080/ \
-  -secret 687ec2b79cfc3ab015d0eb8e4d1baac7b71890d99f0dc32297b3251d5c4a6f41 \
+  -secret [SECRET_REDACTED] \
   -name "ubuntu-agent" -workDir "/home/jenkins-agent"
 ```
 
 * (Safer) store the secret in a file and reference it:
 
 ```bash theme={null}
-echo 687ec2b79cfc3ab015d0eb8e4d1baac7b71890d99f0dc32297b3251d5c4a6f41 > secret-file
+echo [SECRET_REDACTED] > secret-file
 curl -sO http://64.227.187.25:8080/jnlpJars/agent.jar
 java -jar agent.jar -url http://64.227.187.25:8080/ \
   -secret @secret-file -name "ubuntu-agent" -workDir "/home/jenkins-agent"

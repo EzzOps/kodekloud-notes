@@ -144,9 +144,9 @@ Persistent memory is essential for realistic conversational AI. LangGraph implem
 This pattern — shared state, checkpoint after each invocation, and restore by conversation identifier — forms the foundation for assistants that maintain continuity across sessions.
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langgraph/module/e0cd494a-00a7-4c52-88e9-b3932b03ff9f/lesson/5d61391b-1eed-4ca1-9333-2ef0a43d6d7b" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[SECRET_REDACTED]-00a7-4c52-88e9-b3932b03ff9f/lesson/5d61391b-1eed-4ca1-9333-2ef0a43d6d7b" />
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/langgraph/module/e0cd494a-00a7-4c52-88e9-b3932b03ff9f/lesson/7caa0f21-eaee-4ff3-9f8c-291e75424b05" />
+  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.[SECRET_REDACTED]-00a7-4c52-88e9-b3932b03ff9f/lesson/7caa0f21-eaee-4ff3-9f8c-291e75424b05" />
 </CardGroup>
 
 

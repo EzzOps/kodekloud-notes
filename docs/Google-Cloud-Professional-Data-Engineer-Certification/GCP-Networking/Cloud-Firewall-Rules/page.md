@@ -184,7 +184,7 @@ Troubleshooting checklist
 References and further reading
 
 * [VPC firewall rules — GCP Documentation](https://cloud.google.com/vpc/docs/firewalls)
-* [gcloud compute firewall-rules](https://cloud.google.com/sdk/gcloud/reference/compute/firewall-rules)
+* [gcloud compute firewall-rules](https://cloud.google.[SECRET_REDACTED]-rules)
 
 That covers the essentials of VPC firewall rules and why they matter for data engineers. Understanding these elements will help you design secure connections between your data sources and sinks.
 

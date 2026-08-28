@@ -122,7 +122,7 @@ Ready to begin? Open the first lab, read the Overview tab, then follow the Tasks
 Links and references
 
 * [Kubernetes Documentation](https://kubernetes.io/docs/)
-* [Elasticsearch (Elastic)](https://www.elastic.co/guide/en/elasticsearch/reference/current/index.html)
+* [Elasticsearch (Elastic)](https://www.elastic.co/[AWS_SECRET_ACCESS_KEY]/index.html)
 * [Fluentd Documentation](https://docs.fluentd.org/)
 * [Kibana Documentation](https://www.elastic.co/guide/en/kibana/current/index.html)
 

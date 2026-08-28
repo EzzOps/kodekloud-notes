@@ -168,7 +168,7 @@ Release gates are essential for delivering high-quality, compliant, and reliable
 ## Links and References
 
 * [Azure Pipelines Documentation](https://docs.microsoft.com/azure/devops/pipelines/)
-* [Define Environments in Azure Pipelines](https://docs.microsoft.com/azure/devops/pipelines/process/environments)
+* [Define Environments in Azure Pipelines](https://docs.microsoft.[SECRET_REDACTED])
 * [YAML schema for Azure Pipelines](https://docs.microsoft.com/azure/devops/pipelines/yaml-schema)
 
 <CardGroup>

@@ -65,7 +65,7 @@ Example SSH session to a Spoke B VM public IP (sanitized):
 ```bash theme={null}
 PS C:\Users\RithinSkaria> ssh kodekloud@20.232.104.106
 The authenticity of host '20.232.104.106 (20.232.104.106)' can't be established.
-ED25519 key fingerprint is SHA256:MbBAYg1XPD5Qb/TfWbzHMV8OPMbAQlMdgOnRJyFfEXk0.
+ED25519 key fingerprint is SHA256:[SECRET_REDACTED].
 Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
 Warning: Permanently added '20.232.104.106' (ED25519) to the list of known hosts.
 kodekloud@20.232.104.106's password:

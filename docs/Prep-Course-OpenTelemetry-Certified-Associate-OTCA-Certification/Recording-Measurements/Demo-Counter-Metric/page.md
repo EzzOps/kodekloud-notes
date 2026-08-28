@@ -162,7 +162,7 @@ The ConsoleMetricExporter prints resource and scope metrics as JSON-like structu
 * OpenTelemetry metrics SDK: [https://opentelemetry.io/docs/reference/specification/metrics/](https://opentelemetry.io/docs/reference/specification/metrics/)
 * psutil (process utilities for Python): [https://pypi.org/project/psutil/](https://pypi.org/project/psutil/)
 * Flask documentation: [https://flask.palletsprojects.com/](https://flask.palletsprojects.com/)
-* OTLP exporter information: [https://github.com/open-telemetry/opentelemetry-specification/tree/main/specification/protocol/otlp](https://github.com/open-telemetry/opentelemetry-specification/tree/main/specification/protocol/otlp)
+* OTLP exporter information: [https://github.com/open-telemetry/opentelemetry-[SECRET_REDACTED]](https://github.com/open-telemetry/opentelemetry-[SECRET_REDACTED])
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/6fce855c-4275-48c0-9297-a7f98a292285/lesson/e7a4e55e-dafc-4c51-b19f-f20e08b0eaee" />

@@ -144,5 +144,5 @@ Click **Save** and then **Build Now**. The build will run again, and you will se
 </Callout>
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins/module/4eff829b-dd2c-4051-8090-35e8525b8874/lesson/7eb2850a-fe15-47ab-90cc-975d6d284e45" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[AWS_SECRET_ACCESS_KEY]-dd2c-4051-8090-35e8525b8874/lesson/7eb2850a-fe15-47ab-90cc-975d6d284e45" />
 </CardGroup>

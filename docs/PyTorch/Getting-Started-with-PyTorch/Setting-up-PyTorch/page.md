@@ -147,5 +147,5 @@ For more detailed information on PyTorch and related technologies, consider expl
 Happy coding!
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/pytorch/module/5a59db15-2490-4be0-a894-4b3d3cc78fac/lesson/1cd89ed5-28a1-40c3-839a-37908e24724f" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[AWS_SECRET_ACCESS_KEY]-2490-4be0-a894-4b3d3cc78fac/lesson/1cd89ed5-28a1-40c3-839a-37908e24724f" />
 </CardGroup>

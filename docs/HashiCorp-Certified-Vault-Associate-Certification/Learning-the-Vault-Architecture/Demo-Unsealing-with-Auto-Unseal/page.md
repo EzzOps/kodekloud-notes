@@ -174,9 +174,9 @@ vault operator init
 Example output:
 
 ```text theme={null}
-Recovery Key 1:  qDfLTvJNhT3Dgj8UWaep9o2qgQZcVq/+w6QXQ4Tq+
+Recovery Key 1:  [AWS_SECRET_ACCESS_KEY]+
 ...
-Recovery Key 5:  2/FshgVlCzLhqhG+C0M0azU3ry82c2KhmKSUpelv
+Recovery Key 5:  [AWS_SECRET_ACCESS_KEY]
 
 Initial Root Token: s.7gu7dshRlK1KNoq8B9dFme
 

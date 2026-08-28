@@ -35,5 +35,5 @@ Let’s dive in and get started with Blue Ocean. We'll see you in the next lesso
 For additional details on Jenkins and CI/CD best practices, visit the [Jenkins Documentation](https://www.jenkins.io/doc/).
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins/module/77db3006-93f7-42b0-90d0-6fd961631d1f/lesson/64d44be8-67a9-4f74-b0b1-36a853eb41eb" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[AWS_SECRET_ACCESS_KEY]-93f7-42b0-90d0-6fd961631d1f/lesson/64d44be8-67a9-4f74-b0b1-36a853eb41eb" />
 </CardGroup>

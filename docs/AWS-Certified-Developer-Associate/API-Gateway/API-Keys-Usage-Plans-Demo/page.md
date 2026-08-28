@@ -107,7 +107,7 @@ This response confirms that the usage plan effectively controls the volume of AP
 
 In this lesson, you learned how to enhance your API security by enforcing API key requirements and implementing usage plans with throttling and quota options. By taking these steps, you can ensure that only authenticated users access your API while effectively managing API call volumes to protect your services.
 
-For more info on securing your APIs, explore the [AWS API Gateway Documentation](https://docs.aws.amazon.com/apigateway/latest/developerguide/welcome.html).
+For more info on securing your APIs, explore the [AWS API Gateway Documentation](https://docs.aws.amazon.com/[AWS_SECRET_ACCESS_KEY].html).
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/aws-certified-developer-associate/module/628f3688-9475-4368-90bb-89dc572f86d0/lesson/c1f1c6d4-dc6a-4854-bfcd-e04e2e5c5c51" />

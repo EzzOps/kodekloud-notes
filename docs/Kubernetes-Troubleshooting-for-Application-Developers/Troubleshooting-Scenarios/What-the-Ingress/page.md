@@ -86,7 +86,7 @@ controlplane ~ ➜ curl 10.109.243.168
     text-align: center;
     height: 90px;
     vertical-align: middle;">
-<img src="https://res.cloudinary.com/cloudusthad/image/upload/v1547053817/error_404.png">
+<img src="https://res.cloudinary.[AWS_SECRET_ACCESS_KEY]/error_404.png">
 </div>
 </body>
 </html>

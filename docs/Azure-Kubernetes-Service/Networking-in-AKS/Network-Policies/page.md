@@ -104,7 +104,7 @@ az network vnet peering create \
   --name VNet1-to-VNet2 \
   --resource-group MyResourceGroup \
   --vnet-name VNet1 \
-  --remote-vnet /subscriptions/.../resourceGroups/MyResourceGroup/providers/Microsoft.Network/virtualNetworks/VNet2 \
+  --remote-vnet /subscriptions/.../[AWS_SECRET_ACCESS_KEY]/Microsoft.Network/virtualNetworks/VNet2 \
   --allow-vnet-access
 ```
 

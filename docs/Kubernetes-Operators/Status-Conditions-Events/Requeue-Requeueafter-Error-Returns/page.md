@@ -99,7 +99,7 @@ Treat the `Reconcile` return value as part of your operator's behavior, not as a
 Links and references
 
 * [controller-runtime: Manager and Reconciler patterns](https://pkg.go.dev/sigs.k8s.io/controller-runtime)
-* [Kubernetes: Controllers and operator patterns](https://kubernetes.io/docs/concepts/architecture/controller/)
+* [Kubernetes: Controllers and operator patterns](https://kubernetes.[AWS_SECRET_ACCESS_KEY]/)
 * Best practices for operator status, events, and requeue behavior are covered across operator frameworks and Kubernetes docs — prefer documentation that matches your controller-runtime version and operator SDK.
 
 <CardGroup>

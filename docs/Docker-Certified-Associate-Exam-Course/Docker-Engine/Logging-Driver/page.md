@@ -59,7 +59,7 @@ By default, log files are stored under `/var/lib/docker/containers/<container-id
 docker ps
 cd /var/lib/docker/containers
 ls
-cat f3997637c0df66becf4dd4662d3c172bf16f916a3b9289b95f0994675102de17-json.log
+cat [SECRET_REDACTED]-json.log
 ```
 
 <Callout icon="lightbulb">
@@ -72,7 +72,7 @@ Beyond `json-file`, Docker integrates with multiple logging backends. Choose the
 
 | Driver   | Use Case                            | More Info                                                                                                 |
 | -------- | ----------------------------------- | --------------------------------------------------------------------------------------------------------- |
-| awslogs  | Send logs to Amazon CloudWatch Logs | [AWS CloudWatch Logs](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/WhatIsCloudWatchLogs.html) |
+| awslogs  | Send logs to Amazon CloudWatch Logs | [AWS CloudWatch Logs](https://docs.aws.amazon.[SECRET_REDACTED].html) |
 | fluentd  | Forward logs to a Fluentd collector | [Fluentd](https://www.fluentd.org/)                                                                       |
 | gcplogs  | Ship logs to Google Cloud Logging   | [Google Cloud Logging](https://cloud.google.com/logging)                                                  |
 | gelf     | Graylog Extended Log Format         | [GELF Specs](https://docs.graylog.org/docs/gelf)                                                          |
@@ -173,7 +173,7 @@ This prints only the driver name.
 
 * [Docker Logging Drivers](https://docs.docker.com/config/containers/logging/configure/)
 * [Kubernetes Logging with json-file](https://kubernetes.io/docs/concepts/cluster-administration/logging/#json-file)
-* [AWS CloudWatch Logs](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/WhatIsCloudWatchLogs.html)
+* [AWS CloudWatch Logs](https://docs.aws.amazon.[SECRET_REDACTED].html)
 * [Fluentd Official Website](https://www.fluentd.org/)
 * [Google Cloud Logging Overview](https://cloud.google.com/logging)
 * [Splunk Container Logging](https://docs.splunk.com/)

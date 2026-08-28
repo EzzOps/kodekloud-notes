@@ -42,7 +42,7 @@ These APIs not only ensure that your operations maintain consistency but also he
   ![The image is a diagram explaining DynamoDB transactions, showing two types of API calls: "TransactGetItems" for GetItem operations and "TransactWriteItems" for DeleteItem, PutItem, and UpdateItem operations.](https://kodekloud.com/kk-media/image/upload/v1752858818/notes-assets/images/AWS-Certified-Developer-Associate-DynamoDB-Transactions/dynamodb-transactions-api-calls-diagram.jpg)
 </Frame>
 
-For more information on best practices when using DynamoDB transactions, consider exploring additional resources such as [DynamoDB Documentation](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Introduction.html).
+For more information on best practices when using DynamoDB transactions, consider exploring additional resources such as [DynamoDB Documentation](https://docs.aws.amazon.[AWS_SECRET_ACCESS_KEY]/Introduction.html).
 
 Transcribed by [https://otter.ai](https://otter.ai)
 

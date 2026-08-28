@@ -116,14 +116,14 @@ vault operator generate-root \
 ```
 
 ```text theme={null}
-Root token: hvs.gXtT3uq9teYf0ZnFQH6hOiw8
+Root token: [VAULT_TOKEN]
 ```
 
 Authenticate and then revoke promptly:
 
 ```bash theme={null}
-vault login hvs.gXtT3uq9teYf0ZnFQH6hOiw8
-vault token revoke hvs.gXtT3uq9teYf0ZnFQH6hOiw8
+vault login [VAULT_TOKEN]
+vault token revoke [VAULT_TOKEN]
 # Success! Revoked token (if it existed)
 ```
 
@@ -221,11 +221,11 @@ vault operator rekey -target=recovery
 ```
 
 ```bash theme={null}
-Key 1: DwCpPnsbvUMqBtXJcAewCHgYr4b+5C56036mWDpX7d7r
-Key 2: roNCdtdoK+Z7crwZvprYsrXm7ZkIzj7lwm6gq8LkP
-Key 3: 5BYFqW/PT1TXtFmzXft10XwqIt6v/gQjWF8srMbx7Luo
-Key 4: eD6gKkcdM5TmsnSSk5kOogI5KksdH2GzvguyBFungPS
-Key 5: HtFsHfCvYsICEeTguouhqr4K9ehXAoJm8ktxdT0EJl
+Key 1: [SECRET_REDACTED]
+Key 2: [SECRET_REDACTED]
+Key 3: [SECRET_REDACTED]
+Key 4: [SECRET_REDACTED]
+Key 5: [SECRET_REDACTED]
 
 Vault rekeyed with 5 key shares and a key threshold of 3. Please securely distribute the key shares printed above. When Vault is re-sealed, restarted, or stopped, you must supply at least 3 of these keys to unseal it before it can start servicing requests.
 ```

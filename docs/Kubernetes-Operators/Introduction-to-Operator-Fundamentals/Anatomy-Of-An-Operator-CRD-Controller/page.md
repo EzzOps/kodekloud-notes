@@ -108,7 +108,7 @@ A few practical tips and resources
 Links and references
 
 * Kubernetes CustomResourceDefinition (CRD) docs: [https://kubernetes.io/docs/tasks/extend-kubernetes/custom-resources/custom-resource-definitions/](https://kubernetes.io/docs/tasks/extend-kubernetes/custom-resources/custom-resource-definitions/)
-* Controller pattern and reconciliation: [https://kubernetes.io/docs/concepts/architecture/controller/](https://kubernetes.io/docs/concepts/architecture/controller/)
+* Controller pattern and reconciliation: [https://kubernetes.[AWS_SECRET_ACCESS_KEY]/](https://kubernetes.[AWS_SECRET_ACCESS_KEY]/)
 * controller-runtime and operator SDK: [https://github.com/kubernetes-sigs/controller-runtime](https://github.com/kubernetes-sigs/controller-runtime)
 
 Once you internalize this shape—the CRD as the interface and the controller as the reconciler—the larger project layout and generated files become much easier to navigate and reason about.

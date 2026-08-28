@@ -98,7 +98,7 @@ The next step is to test API calls using a service principal and [Postman](https
   "expires_on": "1696671520",
   "not_before": "1696667620",
   "resource": "https://graph.microsoft.com/",
-  "access_token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiIxOTU3MDc1Ny0zZGZhLTQ2MjMtYjllMS02ZWM0NTdjZmU3M2IiLCJ1c2VyX2lkIjoiYzEyZmY5ZmYtZjAxYy00ODRkLTg4ZDUtZDA1NWRmMzYyYTE1Iiwic3ViX3R5cGUiOiJ0b2tlbiIsInNjb3BlIjpbImFsbCJdLCJleHBpcmF0aW9uX3N0YWdlcyI6Ii9zcGFjZXMvaW50ZWdyYXRpb24vY3VzdG9tZXIvc2hhcmUvbm9kZXMvYWN0cy9hbGxhdGFnZTEifQ.sD_ntVBj0oWg9qgPcbzB21n7JH1OiId=15n6k6Nh2SE7G6u_Dx-Nq-dr-xC5fh-1-chcFu2wCxd49yY06hS2=THx_XcB_4wGmFWgEHA6wE6VqyYoYV2Elz7sn0=Cl0sHB5YDFHylFmBzYg8Xg85YzB2Wg2Y"
+  "access_token": "[SECRET_REDACTED].[SECRET_REDACTED].sD_ntVBj0oWg9qgPcbzB21n7JH1OiId=15n6k6Nh2SE7G6u_Dx-Nq-dr-xC5fh-1-chcFu2wCxd49yY06hS2=THx_XcB_4wGmFWgEHA6wE6VqyYoYV2Elz7sn0=Cl0sHB5YDFHylFmBzYg8Xg85YzB2Wg2Y"
 }
 ```
 

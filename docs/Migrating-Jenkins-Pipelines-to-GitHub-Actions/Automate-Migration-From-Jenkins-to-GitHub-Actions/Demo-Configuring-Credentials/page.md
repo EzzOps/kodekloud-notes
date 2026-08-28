@@ -56,7 +56,7 @@ The updated audit summary now includes the new multi-branch job and the secret b
 ```markdown theme={null}
 Summary for [Jenkins instance](http://139.84.149.83:8080/)
 
-- GitHub Actions Importer version: **1.3.22397 (b4d19e0745a2d2c3db575188f98101dd1f9b4a53)**
+- GitHub Actions Importer version: **1.3.22397 ([AWS_SECRET_ACCESS_KEY])**
 - Performed at: **5/22/25 at 09:25**
 
 ## Pipelines

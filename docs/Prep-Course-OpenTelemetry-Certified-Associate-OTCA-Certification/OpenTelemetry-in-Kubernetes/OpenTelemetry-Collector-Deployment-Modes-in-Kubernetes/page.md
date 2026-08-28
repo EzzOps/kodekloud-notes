@@ -188,9 +188,9 @@ Links and References
 
 * [OpenTelemetry Collector (official)](https://opentelemetry.io/docs/collector/)
 * [OpenTelemetry Operator](https://github.com/open-telemetry/opentelemetry-operator)
-* [Kubernetes DaemonSet Documentation](https://kubernetes.io/docs/concepts/workloads/controllers/daemonset/)
-* [Kubernetes StatefulSet Documentation](https://kubernetes.io/docs/concepts/workloads/controllers/statefulset/)
-* [Prometheus Target Allocation Patterns](https://prometheus.io/docs/prometheus/latest/configuration/configuration/)
+* [Kubernetes DaemonSet Documentation](https://kubernetes.io/docs/[AWS_SECRET_ACCESS_KEY]/)
+* [Kubernetes StatefulSet Documentation](https://kubernetes.[SECRET_REDACTED]/)
+* [Prometheus Target Allocation Patterns](https://prometheus.[AWS_SECRET_ACCESS_KEY]configuration/)
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/09e46ae9-895f-4e3f-98dd-c7be94303a09/lesson/0caf0713-b2cc-4703-8b45-eb32430de424" />

@@ -177,7 +177,7 @@ Nov 10, 2024 17:35:34 FINEST io.fabric8.kubernetes.client.http.HttpLoggingInterc
   "major": "1",
   "minor": "29",
   "gitVersion": "v1.29.9",
-  "gitCommit": "114a1f58037bd70f90d9e630e591c5e52dd9b298",
+  "gitCommit": "[AWS_SECRET_ACCESS_KEY]",
   "gitTreeState": "clean",
   "buildDate": "2024-09-11T20:19:54Z",
   "goVersion": "go1.22.6",

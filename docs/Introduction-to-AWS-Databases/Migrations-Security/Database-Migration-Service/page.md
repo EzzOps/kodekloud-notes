@@ -119,7 +119,7 @@ Plan a migration by discovering with Fleet Advisor, convert schemas with SCT whe
 ## Links and references
 
 * [AWS Database Migration Service documentation](https://docs.aws.amazon.com/dms/)
-* [AWS Schema Conversion Tool documentation](https://docs.aws.amazon.com/SchemaConversionTool/latest/userguide/Welcome.html)
+* [AWS Schema Conversion Tool documentation](https://docs.aws.amazon.[SECRET_REDACTED].html)
 * [AWS DMS Fleet Advisor overview](https://docs.aws.amazon.com/dms/latest/userguide/CHAP_FleetAdvisor.html)
 * [Amazon Redshift](https://aws.amazon.com/redshift/)
 * [Amazon S3](https://aws.amazon.com/s3/)

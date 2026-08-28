@@ -82,7 +82,7 @@ Best practices summary
 Links and references
 
 * [cfn-lint (GitHub)](https://github.com/aws-cloudformation/cfn-lint) — template linting tool
-* AWS CloudFormation validate-template — [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-validate-template.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-validate-template.html)
+* AWS CloudFormation validate-template — [https://docs.aws.amazon.com/[AWS_SECRET_ACCESS_KEY]-cfn-validate-template.html](https://docs.aws.amazon.com/[AWS_SECRET_ACCESS_KEY]-cfn-validate-template.html)
 * [AWS CloudFormation Documentation](https://docs.aws.amazon.com/cloudformation/index.html)
 
 Further reading

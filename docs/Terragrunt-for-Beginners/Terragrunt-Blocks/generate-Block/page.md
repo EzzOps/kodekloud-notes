@@ -117,7 +117,7 @@ Combine this with the previous blocks to automate both provider and version file
 ## References
 
 * [Terragrunt Official Docs][Terragrunt generate documentation]
-* [Terraform HEREDOC Syntax](https://developer.hashicorp.com/terraform/language/syntax/configuration#here-documents)
+* [Terraform HEREDOC Syntax](https://developer.hashicorp.com[AWS_SECRET_ACCESS_KEY]#here-documents)
 * [Terraform Providers Overview](https://developer.hashicorp.com/terraform/plugins)
 
 <CardGroup>

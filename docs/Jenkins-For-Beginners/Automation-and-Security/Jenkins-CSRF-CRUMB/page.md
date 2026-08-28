@@ -58,7 +58,7 @@ This command outputs a JSON object similar to:
 ```json theme={null}
 {
   "_class": "hudson.security.csrf.DefaultCrumbIssuer",
-  "crumb": "6286e7b759cb388daec3a4d4e4f1fcde5da95edcb779d8b9967c1239de5cff",
+  "crumb": "[SECRET_REDACTED]",
   "crumbRequestField": "Jenkins-Crumb"
 }
 ```
@@ -83,7 +83,7 @@ X-Jenkins: 2.462.1
 X-Jenkins-Session: a52c1ba5
 X-Frame-Options: deny
 Content-Type: application/json;charset=utf-8
-Set-Cookie: JSESSIONID.ffaa3adf=node01y1zmgr6pjx6019wb8x60kmbp0384.node0; Path=/; HttpOnly
+Set-Cookie: JSESSIONID.[SECRET_REDACTED].node0; Path=/; HttpOnly
 Expires: Thu, 01 Jan 1970 00:00:00 GMT
 Content-Length: 163
 Server: Jetty(10.0.20)
@@ -102,7 +102,7 @@ This command saves the session cookies to `/tmp/cookies` and displays the JSON r
 ```json theme={null}
 {
   "_class": "hudson.security.csrf.DefaultCrumbIssuer",
-  "crumb": "28791665a0a7f47ecf03510ae3b0b2695e01d3e3f2d0ba96d1d230898051059a",
+  "crumb": "[SECRET_REDACTED]",
   "crumbRequestField": "Jenkins-Crumb"
 }
 ```

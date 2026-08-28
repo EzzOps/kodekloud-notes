@@ -122,5 +122,5 @@ This guide has walked you through setting up a CI/CD pipeline with Jenkins and D
 Happy building and see you in the next article!
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins/module/4eff829b-dd2c-4051-8090-35e8525b8874/lesson/41e3958b-2e37-47f1-85f8-d7e18d5157b3" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[AWS_SECRET_ACCESS_KEY]-dd2c-4051-8090-35e8525b8874/lesson/41e3958b-2e37-47f1-85f8-d7e18d5157b3" />
 </CardGroup>

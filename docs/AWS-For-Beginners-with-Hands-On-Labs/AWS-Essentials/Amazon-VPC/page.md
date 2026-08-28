@@ -108,7 +108,7 @@ Example: SSH into a launched instance (Windows CMD/PowerShell shown)
 ```bash theme={null}
 C:\Users\me\Downloads> ssh -i aws-demo.pem ec2-user@34.201.6.109
 The authenticity of host '34.201.6.109 (34.201.6.109)' can't be established.
-ECDSA key fingerprint is SHA256:fa0CPuUMP2Fvn9aHeAewW56Eei94znaTnFefIDRDg1mE.
+ECDSA key fingerprint is SHA256:[SECRET_REDACTED].
 Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
 Warning: Permanently added '34.201.6.109' (ECDSA) to the list of known hosts.
 

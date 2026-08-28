@@ -65,7 +65,7 @@ Cloning repository http://64.227.187.25:5555/dasher-org/declarative-vs-scripted-
 Fetching upstream changes from http://64.227.187.25:5555/dasher-org/declarative-vs-scripted-pipeline/
  > git --version # 'git version 2.43.0'
  > git fetch --tags --force --progress -- http://64.227.187.25:5555/dasher-org/declarative-vs-scripted-pipeline/ +refs/heads/*:refs/remotes/origin/* # timeout=10
-Checking out Revision 358a90b9adc0a92234fbfa182a1ae444ef3c6418 (origin/demo-1)
+Checking out Revision [AWS_SECRET_ACCESS_KEY] (origin/demo-1)
 [Pipeline] }
 [Pipeline] stage
 [Pipeline] { (Echo Message)
@@ -181,7 +181,7 @@ No credentials specified
 Fetching changes from the remote Git repository
 > git --version # 'git version 2.43.0'
 > git fetch --tags --force --progress -- http://64.227.187.25:5555/dasher-org/declarative-vs-scripted-pipeline/ +refs/heads/*:refs/remotes/origin/* # timeout=10
-Checking out Revision 56a90de414e1595dff9d5388cfd1f8b98fc0f866 (origin/demo-1)
+Checking out Revision [AWS_SECRET_ACCESS_KEY] (origin/demo-1)
 [Pipeline] sh
 + ls -ltr
 total 8

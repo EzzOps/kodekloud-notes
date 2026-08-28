@@ -48,7 +48,7 @@ The command outputs a JSON structure containing temporary credentials. A typical
   "Credentials": {
     "AccessKeyId": "ASI4IAWSJ5U4LQZBLVM",
     "SecretAccessKey": "p6H40tU7Jza2Xptv5yFDoK6y9qiT34ouhaeU7!",
-    "SessionToken": "IQoJbJpZ2LuX2VjE///////wEaaCXZLvwchQTMjSGMEQCIFA2tQMSSmEd5zWhLxZ3KZbAYfH9dDUuahH0fz+BTV0AiTi8g+auLQ0WibNV57TepezBiKGqCrQ4haM+yKeJeoGiqnAgj/////////88BEaEaD0Mg2MbkyNzMyMlHtr0lYjBp3igDuwCKvsBGSJwZlFUlNjk/1vbWmgpnUOpPW/24XILGsz02+LM5oXNlzNGEXBH8ok7SXvRceyKkHdLcp3/MNU464LP2ShCaQukrTWGTv8R4tb42LITlZIExjHWrifDA9RSkFtLylsJXPKYypfUO0fr0C6JUrhQis6dAifRVCl3ylHkLFxpsK3G1otEw6ZHJxk02EkxFZOGdSMboTHuscoFpguzU0jpJq4Q2c/duvUBpIYfY76B6FmcRn/8YSCbEhtTbg2EC5apXdqGagg4vRehRvFU4k5i26h4gUkpSeKRAIselsIZgQZ0qwocO8sQYkngFn+Z/5zU2SuVd/bpiQeFrntaD6BlcZ560KPYRDocMRCaD0WaD0Z2GbF+HmLaeBIdhDuTyUq3oqMtXw3nTFYo+B4L2vN2kH3ID0K3wzoilhpnGpKvwD2bGZLtronkVGC42RFoVDhARhy+ipSzhmQ4a+6/7M218JNtssy5GXTQkWejRzT7d7NtP5G+4tgMFF7j1BpsuUBuCkw==",
+    "SessionToken": "[SECRET_REDACTED]+[AWS_SECRET_ACCESS_KEY]+[SECRET_REDACTED]==",
     "Expiration": "2024-04-29T05:27:21+00:00"
   },
   "AssumedRoleUser": {

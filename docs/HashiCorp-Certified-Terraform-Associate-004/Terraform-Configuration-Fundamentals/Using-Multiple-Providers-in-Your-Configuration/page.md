@@ -46,8 +46,8 @@ Links and references
 
 * Terraform Registry: [https://registry.terraform.io/](https://registry.terraform.io/)
 * AWS Provider documentation: [https://registry.terraform.io/providers/hashicorp/aws/latest/docs](https://registry.terraform.io/providers/hashicorp/aws/latest/docs)
-* AzureRM Provider documentation: [https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs)
-* Kubernetes Provider documentation: [https://registry.terraform.io/providers/hashicorp/kubernetes/latest/docs](https://registry.terraform.io/providers/hashicorp/kubernetes/latest/docs)
+* AzureRM Provider documentation: [https://registry.terraform.io[AWS_SECRET_ACCESS_KEY]](https://registry.terraform.io[AWS_SECRET_ACCESS_KEY])
+* Kubernetes Provider documentation: [https://registry.terraform.[AWS_SECRET_ACCESS_KEY]/docs](https://registry.terraform.[AWS_SECRET_ACCESS_KEY]/docs)
 
 You'll practice using data sources in hands-on exercises to gain practical experience working with real-world Terraform configurations.
 
@@ -140,7 +140,7 @@ Explanation:
 
 ## Use cases (expanded)
 
-* Cross-region replication: create a source [S3 bucket](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/s3_bucket) in one region and a destination bucket in another, then configure replication.
+* Cross-region replication: create a source [S3 bucket](https://registry.terraform.[SECRET_REDACTED]s3_bucket) in one region and a destination bucket in another, then configure replication.
 * Multi-account deployments: assign different credentials to each provider block (via environment variables, credentials blocks, or `assume_role`) and use aliases to deploy resources into the intended account.
 * Mixed environments: deploy some resources to a default/dev account and others to production without splitting into multiple Terraform configurations—use aliases and the `provider` meta-argument to control placement.
 
@@ -149,7 +149,7 @@ Explanation:
 * [Terraform: Provider meta-argument](https://developer.hashicorp.com/terraform/language/meta-arguments/provider)
 * [Terraform Docs](https://developer.hashicorp.com/terraform)
 * [AWS Provider Documentation](https://registry.terraform.io/providers/hashicorp/aws/latest/docs)
-* [S3 Bucket Resource (AWS)](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/s3_bucket)
+* [S3 Bucket Resource (AWS)](https://registry.terraform.[SECRET_REDACTED]s3_bucket)
 
 That's the core idea behind the provider meta-argument: it allows precise selection of which provider configuration Terraform uses per resource, enabling flexible multi-account, multi-region, and multi-cloud workflows.
 

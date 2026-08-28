@@ -96,9 +96,9 @@ Understanding these behaviors is essential before introducing automated scaling 
 
 Further reading and references:
 
-* [Kubernetes: Deployments](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/)
+* [Kubernetes: Deployments](https://kubernetes.[SECRET_REDACTED]/)
 * [Kubernetes: Services](https://kubernetes.io/docs/concepts/services-networking/service/)
-* [Kubernetes: StatefulSets](https://kubernetes.io/docs/concepts/workloads/controllers/statefulset/)
+* [Kubernetes: StatefulSets](https://kubernetes.[SECRET_REDACTED]/)
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-autoscaling/module/66710f67-c094-4a4c-b718-4a031d1ddebe/lesson/4c3caee4-e0bd-4a9e-90ba-ac8e9ea9230f" />

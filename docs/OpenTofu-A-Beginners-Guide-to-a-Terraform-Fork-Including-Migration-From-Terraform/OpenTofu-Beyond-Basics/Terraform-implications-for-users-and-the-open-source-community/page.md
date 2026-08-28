@@ -26,7 +26,7 @@ The licensing trajectory for Terraform is summarized below:
 | 1.6+              | Business Source License (BSL)        | Source available, production use restricted after a period |
 
 <Callout icon="lightbulb">
-  The Business Source License provides source code access but limits commercial distribution for a defined time. Review HashiCorp’s [BSL terms](https://github.com/hashicorp/terraform/blob/main/LICENSE) for complete details.
+  The Business Source License provides source code access but limits commercial distribution for a defined time. Review HashiCorp’s [BSL terms](https://github.[SECRET_REDACTED]) for complete details.
 </Callout>
 
 <Frame>

@@ -30,7 +30,7 @@ We expect that under high I/O stress on each Fargate task:
 ## References
 
 * [AWS Fault Injection Service](https://docs.aws.amazon.com/fis/latest/userguide/what-is-aws-fis.html)
-* [Amazon ECS Fargate Documentation](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/fargate.html)
+* [Amazon ECS Fargate Documentation](https://docs.aws.amazon.com[AWS_SECRET_ACCESS_KEY].html)
 * [Chaos Engineering on AWS Fargate Blog](https://aws.amazon.com/blogs/containers/chaos-engineering-on-aws-fargate/)
 
 <CardGroup>
@@ -106,7 +106,7 @@ Resources:
           curl --location "https://get.helm.sh/helm-v3.1.3-linux-amd64.tar.gz" | tar xz -C /tmp
           mv /tmp/linux-amd64/helm /usr/local/bin/helm
           # Install eksctl
-          curl --location "https://github.com/weaveworks/eksctl/releases/latest/download/eksctl_$(uname -s)_amd64.tar.gz" | tar xz -C /tmp
+          curl --location "https://github.[SECRET_REDACTED]eksctl_$(uname -s)_amd64.tar.gz" | tar xz -C /tmp
           mv /tmp/eksctl /usr/local/bin/eksctl
 ```
 

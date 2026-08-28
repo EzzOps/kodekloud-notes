@@ -86,7 +86,7 @@ A **Service** exposes a set of Pods as a network service. It provides stable IPs
 
 ### LoadBalancer
 
-A **LoadBalancer** service automatically provisions and configures an external load balancer—e.g., [AWS ELB](https://docs.aws.amazon.com/elasticloadbalancing/latest/userguide/what-is-load-balancer.html) or [GCP Load Balancing](https://cloud.google.com/load-balancing/docs). This simplifies external traffic routing but may incur additional costs for each exposed service.
+A **LoadBalancer** service automatically provisions and configures an external load balancer—e.g., [AWS ELB](https://docs.aws.amazon.[SECRET_REDACTED]-is-load-balancer.html) or [GCP Load Balancing](https://cloud.google.com/load-balancing/docs). This simplifies external traffic routing but may incur additional costs for each exposed service.
 
 <Callout icon="triangle-alert">
   LoadBalancer services often incur per-hour or per-GB data processing fees. Review your cloud provider’s pricing before use.

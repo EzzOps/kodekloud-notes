@@ -232,7 +232,7 @@ AWS FIS will publish all experiment activity to CloudWatch Logs. Create a dedica
 | --------------------------- | ------------------------------------------------------------- |
 | Log group: `FIS-Experiment` | Captures AWS FIS experiment logs from your Auto Scaling Group |
 
-For more details, refer to the [Amazon CloudWatch Logs documentation](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/WhatIsCloudWatchLogs.html).
+For more details, refer to the [Amazon CloudWatch Logs documentation](https://docs.aws.amazon.[SECRET_REDACTED].html).
 
 ***
 

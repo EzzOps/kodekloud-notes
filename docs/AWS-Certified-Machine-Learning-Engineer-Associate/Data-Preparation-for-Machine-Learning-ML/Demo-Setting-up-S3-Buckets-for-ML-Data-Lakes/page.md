@@ -142,7 +142,7 @@ Links and references
 
 * [Amazon S3 — Overview](https://aws.amazon.com/s3/)
 * [S3 Object Ownership and ACLs](https://docs.aws.amazon.com/AmazonS3/latest/userguide/about-object-ownership.html)
-* [S3 Versioning](https://docs.aws.amazon.com/AmazonS3/latest/userguide/Versioning.html)
+* [S3 Versioning](https://docs.aws.amazon.[AWS_SECRET_ACCESS_KEY].html)
 * [Titanic dataset on Kaggle](https://www.kaggle.com/competitions/titanic/data)
 
 <CardGroup>

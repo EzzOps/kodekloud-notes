@@ -152,7 +152,7 @@ Enable **Allow Blob anonymous access** if you want public, read-only access to y
 
 * Explore [Azure Storage documentation](https://docs.microsoft.com/azure/storage/) for advanced scenarios.
 * Learn about [RBAC roles for Azure Storage](https://docs.microsoft.com/azure/storage/common/storage-auth-aad-rbac) to secure your data.
-* Automate deployments with [Azure CLI](https://docs.microsoft.com/cli/azure/storage/account) or [Terraform](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/storage_account).
+* Automate deployments with [Azure CLI](https://docs.microsoft.com/cli/azure/storage/account) or [Terraform](https://registry.terraform.io[AWS_SECRET_ACCESS_KEY]/resources/storage_account).
 
 That completes the walkthrough for creating a storage account, configuring blob containers, and managing blobs in Azure Storage.
 

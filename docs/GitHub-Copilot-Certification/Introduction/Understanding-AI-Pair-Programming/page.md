@@ -1,6 +1,6 @@
 # Understanding AI Pair Programming
 
-Source: https://notes.kodekloud.com/docs/GitHub-Copilot-Certification/Introduction/Understanding-AI-Pair-Programming/page
+Source: https://notes.kodekloud.com/docs/GitHub-Copilot-[AWS_SECRET_ACCESS_KEY]-AI-Pair-Programming/page
 
 This guide explores how GitHub Copilot enhances development workflows as an AI-powered pair programming assistant.
 

@@ -203,7 +203,7 @@ We will also explore different hosting options—real-time endpoints and batch t
 
 * SageMaker Model Registry: [https://docs.aws.amazon.com/sagemaker/latest/dg/model-registry.html](https://docs.aws.amazon.com/sagemaker/latest/dg/model-registry.html)
 * SageMaker Python SDK: [https://sagemaker.readthedocs.io/](https://sagemaker.readthedocs.io/)
-* Boto3 SageMaker client: [https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html)
+* Boto3 SageMaker client: [https://boto3.amazonaws.com/v1/documentation[AWS_SECRET_ACCESS_KEY].html](https://boto3.amazonaws.com/v1/documentation[AWS_SECRET_ACCESS_KEY].html)
 * SageMaker Hosting (endpoints and batch transforms): [https://docs.aws.amazon.com/sagemaker/latest/dg/deploy-model.html](https://docs.aws.amazon.com/sagemaker/latest/dg/deploy-model.html)
 
 <CardGroup>

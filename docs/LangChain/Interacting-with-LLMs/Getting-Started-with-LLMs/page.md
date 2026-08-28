@@ -131,9 +131,9 @@ Links and references:
 * [OpenAI API Documentation](https://platform.openai.com/docs)
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langchain/module/ae260750-791b-496c-991f-0d0333f61e40/lesson/e2f5f01a-0ea8-4905-8b0b-29d174baedb8" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[SECRET_REDACTED]-791b-496c-991f-0d0333f61e40/lesson/e2f5f01a-0ea8-4905-8b0b-29d174baedb8" />
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/langchain/module/ae260750-791b-496c-991f-0d0333f61e40/lesson/c6cfbec7-d94d-4eaa-990e-4845b4b0ab5b" />
+  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.[SECRET_REDACTED]-791b-496c-991f-0d0333f61e40/lesson/c6cfbec7-d94d-4eaa-990e-4845b4b0ab5b" />
 </CardGroup>
 
 

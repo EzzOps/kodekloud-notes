@@ -13,7 +13,7 @@ An API key is an alphanumeric string provided to application developers or users
 ```python theme={null}
 GET /resource
 Host: api.example.com
-X-API-Key: 1a2b3c4d5e6f7g8h9i0j11k12l13m14n15o16p17q18r19s20t21u22v
+X-API-Key: [SECRET_REDACTED]
 ```
 
 The header `X-API-Key` is commonly used and is expected by API Gateway to authenticate requests.

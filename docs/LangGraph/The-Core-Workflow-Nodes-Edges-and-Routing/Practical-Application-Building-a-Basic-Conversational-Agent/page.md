@@ -201,9 +201,9 @@ Conclusion
 This pattern scales naturally to more complex agentic systems. You can add more routes, tool calls, validation steps, or memory writes while keeping the same state-driven routing model. Conditional edges keep control flow explicit and make branching logic easy to reason about during orchestration.
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langgraph/module/2e37c751-0429-43c9-8ecf-2df222ce0663/lesson/e59ee1a7-b8ca-447f-aa47-1ada8a61726d" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[SECRET_REDACTED]-0429-43c9-8ecf-2df222ce0663/lesson/e59ee1a7-b8ca-447f-aa47-1ada8a61726d" />
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/langgraph/module/2e37c751-0429-43c9-8ecf-2df222ce0663/lesson/f2a854da-14d2-4b37-9457-bfaa786c3d20" />
+  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.[SECRET_REDACTED]-0429-43c9-8ecf-2df222ce0663/lesson/f2a854da-14d2-4b37-9457-bfaa786c3d20" />
 </CardGroup>
 
 
@@ -337,5 +337,5 @@ This minimal but powerful conversational agent pattern is a solid foundation. Fr
 * [Best practices for prompt design and LLM safety](https://platform.openai.com/docs/guides/prompting)
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langgraph/module/2e37c751-0429-43c9-8ecf-2df222ce0663/lesson/a87d8e60-a7cd-4290-9a07-9fbe3ce00d05" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[SECRET_REDACTED]-0429-43c9-8ecf-2df222ce0663/lesson/a87d8e60-a7cd-4290-9a07-9fbe3ce00d05" />
 </CardGroup>

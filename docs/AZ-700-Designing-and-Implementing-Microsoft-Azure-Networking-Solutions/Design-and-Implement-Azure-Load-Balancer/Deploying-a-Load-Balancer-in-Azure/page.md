@@ -247,7 +247,7 @@ You will likely see a host authenticity prompt similar to:
 
 ```bash theme={null}
 The authenticity of host '20.12.96.233:9090' can't be established.
-ED25519 key fingerprint is SHA256:RocidCMQg4adTewDLIo6h41Ze/8iqG12WaMRvIDCUJM.
+ED25519 key fingerprint is SHA256:[SECRET_REDACTED].
 This key is not known by any other names.
 Are you sure you want to continue connecting (yes/no/[fingerprint])?
 ```

@@ -1,6 +1,6 @@
 # Run a container that sleeps
 $ docker run -d --name sleeping-container busybox sleep 1000
-e2fd5090c9a51eb7cc91a466cf2e18c5468871f84adbb55c2e6c1cf4ea0028a8
+[SECRET_REDACTED]
 
 # Inside the container: PID 1 is the sleep process
 $ docker exec -ti sleeping-container ps -ef

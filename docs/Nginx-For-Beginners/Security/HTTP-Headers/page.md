@@ -396,7 +396,7 @@ Content-Encoding: gzip
 Content-Length: 44549
 Content-Type: text/html; charset=UTF-8
 Date: Sat, 18 Jan 2025 18:31:33 GMT
-Etag: W/"e971e162bb5ef8926a2284952c25053292be8cdd"
+Etag: W/"[AWS_SECRET_ACCESS_KEY]"
 Set-Cookie: edition-view=espn-en-us; Path=/; Expires=Sat, 25 Jan 2025 18:31:33 GMT
 Vary: Accept-Encoding
 Via: 1.1 varnish (Varnish/6.0), 1.1 cloudfront

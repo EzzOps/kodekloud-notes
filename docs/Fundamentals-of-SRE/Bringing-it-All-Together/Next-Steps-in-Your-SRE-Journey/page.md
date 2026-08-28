@@ -54,7 +54,7 @@ To keep progressing, concentrate on these parallel tracks:
    * Share lessons learned, attend conferences, subscribe to newsletters, and join online forums to gain diverse perspectives and practical tips.
 
 <Callout icon="lightbulb">
-  Recommended reading and learning paths: start with the [Google SRE books](https://sre.google/books/) to ground yourself in core principles. Then specialize with titles on database reliability, chaos engineering, observability, and operational leadership. Explore publishers like [O'Reilly](https://www.oreilly.com/) and [Packt](https://www.packtpub.com/). For organizational and leadership insight, consider books such as [Accelerate](https://www.oreilly.com/library/view/accelerate/9781492030037/) and [The Manager's Path](https://www.oreilly.com/library/view/the-managers-path/9781491973882/).
+  Recommended reading and learning paths: start with the [Google SRE books](https://sre.google/books/) to ground yourself in core principles. Then specialize with titles on database reliability, chaos engineering, observability, and operational leadership. Explore publishers like [O'Reilly](https://www.oreilly.com/) and [Packt](https://www.packtpub.com/). For organizational and leadership insight, consider books such as [Accelerate](https://www.oreilly.[SECRET_REDACTED]/) and [The Manager's Path](https://www.oreilly.com/library/view/the-managers-path/9781491973882/).
 </Callout>
 
 ## Communities, conferences, and ongoing learning

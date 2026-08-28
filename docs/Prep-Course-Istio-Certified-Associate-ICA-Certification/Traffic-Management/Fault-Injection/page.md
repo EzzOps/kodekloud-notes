@@ -205,8 +205,8 @@ Istio may load-balance traffic across the registered endpoints.
 
 Further reading and references:
 
-* Istio: WorkloadEntry reference: [https://istio.io/latest/docs/reference/config/networking/workload-entry/](https://istio.io/latest/docs/reference/config/networking/workload-entry/)
-* Istio: ServiceEntry reference: [https://istio.io/latest/docs/reference/config/networking/service-entry/](https://istio.io/latest/docs/reference/config/networking/service-entry/)
+* Istio: WorkloadEntry reference: [https://istio.io[AWS_SECRET_ACCESS_KEY]/workload-entry/](https://istio.io[AWS_SECRET_ACCESS_KEY]/workload-entry/)
+* Istio: ServiceEntry reference: [https://istio.io[AWS_SECRET_ACCESS_KEY]/service-entry/](https://istio.io[AWS_SECRET_ACCESS_KEY]/service-entry/)
 * Istio Traffic Management: [https://istio.io/latest/docs/concepts/traffic-management/](https://istio.io/latest/docs/concepts/traffic-management/)
 
 Example concise references (for copy/paste):

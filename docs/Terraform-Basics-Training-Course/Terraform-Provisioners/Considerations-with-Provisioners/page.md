@@ -11,7 +11,7 @@
         + "Name"        = "webserver"
       }
     + tenancy                = (known after apply)
-    + user_data              = "527516162d9d8675a26b6ca97664226e6e2bff82"
+    + user_data              = "[AWS_SECRET_ACCESS_KEY]"
     + volume_tags            = (known after apply)
     + vpc_security_group_ids = (known after apply)
 }

@@ -131,8 +131,8 @@ This pattern allows you to control resource creation based on input parameters a
 
 Links and references
 
-* [AWS CloudFormation — Conditions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/conditions-section-structure.html)
-* [AWS CloudFormation — Intrinsic Functions (!FindInMap, !Equals)](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference.html)
+* [AWS CloudFormation — Conditions](https://docs.aws.amazon.[SECRET_REDACTED]-section-structure.html)
+* [AWS CloudFormation — Intrinsic Functions (!FindInMap, !Equals)](https://docs.aws.amazon.[SECRET_REDACTED]-function-reference.html)
 * [Amazon S3 Bucket Policies](https://docs.aws.amazon.com/AmazonS3/latest/userguide/example-bucket-policies.html)
 
 <CardGroup>

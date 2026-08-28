@@ -53,7 +53,7 @@ When reviewing the output on the EC2 instance, you may see details similar to th
 ```javascript theme={null}
 httpStatusCode: 200,
 requestId: 'NQD565DPGF96PYED',
-extendedRequestId: 'IBXYtkvqkHkOS/Zx2W+qSv/Cl18Jbb+I1TuIwDOBHpUrSNxkIW7gPVk/azYQphZkl+gyeJriLA=',
+extendedRequestId: '[SECRET_REDACTED]=',
 cfId: undefined,
 attempts: 1,
 totalRetryDelay: 0,
@@ -136,7 +136,7 @@ const {
 
 // Set the region
 const accessKeyId = "AKIAIAWSJ5U7MTRXX52";
-const secretAccessKey = "WW1UN1SS/bIaEf+VlqYpXRlc4vQpNbQEOGKRg7D73";
+const secretAccessKey = "[SECRET_REDACTED]";
 
 const s3Config = { region: "us-east-1" };
 
@@ -173,7 +173,7 @@ A successful bucket creation produces an output similar to:
   $metadata: {
     httpStatusCode: 200,
     requestId: '3G23256RKWZ23NH',
-    extendedRequestId: 'ybXkufnGsdQX1DoM5/GdVQ+uImphU7RaqxludjBuzIMDxSqiPmJP8XiTNWZC+C2+x2fk1Gjhfno=',
+    extendedRequestId: 'ybXkufnGsdQX1DoM5/GdVQ+[AWS_SECRET_ACCESS_KEY]+x2fk1Gjhfno=',
     cfId: undefined,
     attempts: 1,
     totalRetryDelay: 0
@@ -202,7 +202,7 @@ InvalidAccessKeyId: The AWS Access Key ID you provided does not exist in our rec
     Code: 'InvalidAccessKeyId',
     AWSAccessKeyId: 'ASIAIAWSJ5JUYPMTDGI',
     RequestId: 'F6T0F9WQRS8BTV4',
-    HostId: 'WtZX27Bif8wIk+wfmF9ISEeo2BdC8ER4TsWCVBLJfwtjI1mC8WqNwruenGSYzgS08CMaX6xA='
+    HostId: '[SECRET_REDACTED]='
 ```
 
 Next, create an IAM role that allows EC2 instances to interact with S3 without the need for explicit credentials:

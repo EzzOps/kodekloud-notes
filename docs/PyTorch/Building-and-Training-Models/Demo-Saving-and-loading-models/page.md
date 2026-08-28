@@ -277,9 +277,9 @@ While the demonstration produced an accuracy of around 49%—likely due to limit
 Happy evaluating!
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/pytorch/module/b8cb82ae-a284-41d1-8469-7e60705bbab8/lesson/89b22e08-20d4-4dfe-ac58-c224dde76741" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[AWS_SECRET_ACCESS_KEY]-a284-41d1-8469-7e60705bbab8/lesson/89b22e08-20d4-4dfe-ac58-c224dde76741" />
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/pytorch/module/b8cb82ae-a284-41d1-8469-7e60705bbab8/lesson/6eeceb16-b6d3-4172-993c-6ce4c60c0f7f" />
+  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.[AWS_SECRET_ACCESS_KEY]-a284-41d1-8469-7e60705bbab8/lesson/6eeceb16-b6d3-4172-993c-6ce4c60c0f7f" />
 </CardGroup>
 
 

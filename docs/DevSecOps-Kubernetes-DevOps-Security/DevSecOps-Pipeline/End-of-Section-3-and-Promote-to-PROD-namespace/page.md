@@ -91,7 +91,7 @@ After the Tomcat upgrade, rerun Trivy to confirm no vulnerabilities remain:
 
 ```bash theme={null}
 bash trivy-k8s-scan.sh
-siddharth67/numeric-app:68e6b5f456a28d3615ea1406c1b959f36c334cf6 (alpine 3.13.5)
+siddharth67/numeric-app:[AWS_SECRET_ACCESS_KEY] (alpine 3.13.5)
 
 ==========================================
 Total: 0 (LOW: 0, MEDIUM: 0, HIGH: 0)

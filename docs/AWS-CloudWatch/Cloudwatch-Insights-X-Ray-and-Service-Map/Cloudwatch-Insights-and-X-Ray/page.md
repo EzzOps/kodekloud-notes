@@ -21,7 +21,7 @@ CloudWatch Insights provides granular visibility into your application stack. Wi
 
 <Callout icon="lightbulb">
   Use CloudWatch Logs Insights queries to filter, aggregate, and visualize log data in seconds.\
-  For more details, see [CloudWatch Logs Insights](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/Analytics.html).
+  For more details, see [CloudWatch Logs Insights](https://docs.aws.amazon.[SECRET_REDACTED].html).
 </Callout>
 
 ***

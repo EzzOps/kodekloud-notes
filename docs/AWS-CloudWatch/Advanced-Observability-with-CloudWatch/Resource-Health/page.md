@@ -47,8 +47,8 @@ AWS CloudWatch Resource Health provides an automated, unified solution for disco
 
 ## References
 
-* [AWS CloudWatch Resource Health Documentation](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-ResourceHealth.html)
-* [Installing and Configuring the CloudWatch Agent](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/install-CloudWatch-Agent.html)
+* [AWS CloudWatch Resource Health Documentation](https://docs.aws.amazon.[SECRET_REDACTED]-ResourceHealth.html)
+* [Installing and Configuring the CloudWatch Agent](https://docs.aws.amazon.[SECRET_REDACTED]-CloudWatch-Agent.html)
 * [AWS Identity and Access Management User Guide](https://docs.aws.amazon.com/IAM/latest/UserGuide/)
 
 <CardGroup>

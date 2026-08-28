@@ -105,7 +105,7 @@ Example Inspector output (truncated):
 
 ```console theme={null}
 ⚙️ Proxy server listening on 127.0.0.1:6277
-🔑 Session token: 0be785d11375863681ffb7f833b31887ce1a75ae37920bc62f438343214b8b0e
+🔑 Session token: [SECRET_REDACTED]
 🔍 MCP Inspector is up and running at http://127.0.0.1:6274 🚀
 ```
 

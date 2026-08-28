@@ -87,7 +87,7 @@ Links and references
 
 * Kubernetes owner/dependent docs: [https://kubernetes.io/docs/concepts/overview/working-with-objects/owners-dependents/](https://kubernetes.io/docs/concepts/overview/working-with-objects/owners-dependents/)
 * Kubernetes UIDs: [https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#uids](https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#uids)
-* Garbage collection in Kubernetes: [https://kubernetes.io/docs/concepts/workloads/controllers/garbage-collection/](https://kubernetes.io/docs/concepts/workloads/controllers/garbage-collection/)
+* Garbage collection in Kubernetes: [https://kubernetes.[SECRET_REDACTED]-collection/](https://kubernetes.[SECRET_REDACTED]-collection/)
 * controller-runtime `SetControllerReference`: [https://pkg.go.dev/sigs.k8s.io/controller-runtime/pkg/controller/controllerutil#SetControllerReference](https://pkg.go.dev/sigs.k8s.io/controller-runtime/pkg/controller/controllerutil#SetControllerReference)
 
 <CardGroup>

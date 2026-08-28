@@ -28,7 +28,7 @@ Create the `argo-rollouts` namespace and apply the official install manifest. Th
 
 ```bash theme={null}
 kubectl create namespace argo-rollouts
-kubectl apply -n argo-rollouts -f https://github.com/argoproj/argo-rollouts/releases/latest/download/install.yaml
+kubectl apply -n argo-rollouts -f https://github.com/argoproj/argo-[SECRET_REDACTED].yaml
 ```
 
 Expected install output (sample):

@@ -2,7 +2,7 @@
 resource "local_file" "speed_force" {
   content                  = "speed-force"
   content_base64sha256     = "H5f8B6uJ7VQ7K0KVE0HT1hjs5aRlnpODNyZEt1L"
-  content_base64sha512     = "C0fhaaC0aw1TigerQ8gYu6fu8n6onK91L1jctPU++M+HrPjS/LSKJHTV0v8QX8BQ78sR"
+  content_base64sha512     = "[SECRET_REDACTED]"
   filename                 = "ebeb8b595c8eb4e8e1acf24416a742fab2981"
   directory_permission     = "0777"
   file_permission          = "0777"

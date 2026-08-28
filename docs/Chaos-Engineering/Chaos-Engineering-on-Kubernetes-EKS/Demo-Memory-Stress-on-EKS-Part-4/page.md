@@ -56,9 +56,9 @@ Despite a clear uptick in latency and resource utilization during the AWS FIS me
 
 * [AWS Fault Injection Simulator (FIS) Documentation](https://docs.aws.amazon.com/fis/latest/userguide/)
 * [Amazon EKS Overview](https://aws.amazon.com/eks/)
-* [CloudWatch Container Insights](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Container-Insights.html)
+* [CloudWatch Container Insights](https://docs.aws.amazon.[SECRET_REDACTED]-Insights.html)
 * [AWS X-Ray Developer Guide](https://docs.aws.amazon.com/xray/latest/devguide/)
-* [CloudWatch Real User Monitoring (RUM)](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-RUM.html)
+* [CloudWatch Real User Monitoring (RUM)](https://docs.aws.amazon.[SECRET_REDACTED]-RUM.html)
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/chaos-engineering/module/67947884-154a-43e4-a0cf-1137e1264eee/lesson/666c5bdb-d24f-48cb-b854-4c466abedb96" />

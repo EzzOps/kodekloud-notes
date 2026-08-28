@@ -125,7 +125,7 @@ This Swagger UI displays detailed information about each API endpoint such as GE
 That concludes this article. Now, it's time to practice what you've learned and enhance your development workflow.
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins/module/5a828d07-ced8-44a3-8b8d-f2467f247360/lesson/14d43374-e4d6-42bf-9c2f-968d2f26e985" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[AWS_SECRET_ACCESS_KEY]-ced8-44a3-8b8d-f2467f247360/lesson/14d43374-e4d6-42bf-9c2f-968d2f26e985" />
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/jenkins/module/5a828d07-ced8-44a3-8b8d-f2467f247360/lesson/676b9040-7278-403f-a1a4-8de0fa5dc83c" />
+  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.[AWS_SECRET_ACCESS_KEY]-ced8-44a3-8b8d-f2467f247360/lesson/676b9040-7278-403f-a1a4-8de0fa5dc83c" />
 </CardGroup>

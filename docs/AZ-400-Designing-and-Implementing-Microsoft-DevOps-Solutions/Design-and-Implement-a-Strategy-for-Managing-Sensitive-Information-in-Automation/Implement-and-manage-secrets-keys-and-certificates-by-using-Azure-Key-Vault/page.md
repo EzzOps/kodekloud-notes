@@ -150,9 +150,9 @@ Avoid these issues by centralizing secrets in GitHub Secrets, Azure Key Vault, o
 ## References
 
 * [GitHub Actions: Encrypting secrets](https://docs.github.com/actions/security-guides/encrypted-secrets)
-* [Azure Pipelines: Variables](https://docs.microsoft.com/azure/devops/pipelines/process/variables)
+* [Azure Pipelines: Variables](https://docs.microsoft.com/[AWS_SECRET_ACCESS_KEY])
 * [Azure Key Vault Documentation](https://docs.microsoft.com/azure/key-vault/)
-* [Azure DevOps: Service connections](https://docs.microsoft.com/azure/devops/pipelines/library/service-endpoints)
+* [Azure DevOps: Service connections](https://docs.microsoft.[SECRET_REDACTED]-endpoints)
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/az-400/module/2f8974b7-9aa9-46b8-a562-d7ed568269af/lesson/e7ae2ff7-6486-4b98-8500-46471399a8bb" />

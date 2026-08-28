@@ -110,7 +110,7 @@ In summary, model evaluation is critical for ensuring that a machine learning mo
 This concludes our discussion on model evaluation. In the next demo, we will walk through the complete process—from running the test loop to computing the final metrics—to further solidify these concepts in practice.
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/pytorch/module/b8cb82ae-a284-41d1-8469-7e60705bbab8/lesson/509a2f12-7aeb-44cc-991f-231471c819a2" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[AWS_SECRET_ACCESS_KEY]-a284-41d1-8469-7e60705bbab8/lesson/509a2f12-7aeb-44cc-991f-231471c819a2" />
 </CardGroup>
 
 

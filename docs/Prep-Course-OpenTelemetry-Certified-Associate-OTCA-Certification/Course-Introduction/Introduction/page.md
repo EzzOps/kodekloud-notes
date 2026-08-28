@@ -110,7 +110,7 @@ If you're ready to advance your observability expertise, improve reliability eng
 
 * OpenTelemetry project: [https://opentelemetry.io/](https://opentelemetry.io/)
 * OTLP (OpenTelemetry Protocol) docs: [https://opentelemetry.io/docs/specs/otel/protocol/](https://opentelemetry.io/docs/specs/otel/protocol/)
-* Collector zPages extension: [https://opentelemetry.io/docs/collector/configuration/extensions/zpages/](https://opentelemetry.io/docs/collector/configuration/extensions/zpages/)
+* Collector zPages extension: [https://opentelemetry.io[AWS_SECRET_ACCESS_KEY]/zpages/](https://opentelemetry.io[AWS_SECRET_ACCESS_KEY]/zpages/)
 * OpenTelemetry Operator for Kubernetes: [https://github.com/open-telemetry/opentelemetry-operator](https://github.com/open-telemetry/opentelemetry-operator)
 
 <CardGroup>

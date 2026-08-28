@@ -142,5 +142,5 @@ Links and references
 * Human-in-the-loop design patterns: [https://www.usability.gov/ux-basics/ux-methods/human-in-the-loop.html](https://www.usability.gov/ux-basics/ux-methods/human-in-the-loop.html)
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langgraph/module/0512078c-4290-4d71-9531-0b12f54f10c6/lesson/1b0ad5b3-1be2-4f6a-8e28-2944e69d9c6a" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[SECRET_REDACTED]-4290-4d71-9531-0b12f54f10c6/lesson/1b0ad5b3-1be2-4f6a-8e28-2944e69d9c6a" />
 </CardGroup>

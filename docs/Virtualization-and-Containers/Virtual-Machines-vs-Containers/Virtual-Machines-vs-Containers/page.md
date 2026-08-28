@@ -153,7 +153,7 @@ Choose the tool that matches your workload requirements:
 
 Further reading and references:
 
-* [Virtualization overview — VMware](https://www.vmware.com/topics/glossary/content/virtualization)
+* [Virtualization overview — VMware](https://www.vmware.[SECRET_REDACTED])
 * [Getting started with containers — Docker Docs](https://docs.docker.com/get-started/)
 * [Kubernetes basics — Kubernetes Documentation](https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/)
 

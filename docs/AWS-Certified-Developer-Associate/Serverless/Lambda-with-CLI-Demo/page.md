@@ -70,7 +70,7 @@ This command outputs a JSON with details about each function. A sample output is
             "Timeout": 3,
             "MemorySize": 128,
             "LastModified": "2024-04-04T23:55:45.000+0000",
-            "CodeSha256": "OziJva6DXkgm2GmBvd2GIkZc7+KLotei0VgJEYYc=",
+            "CodeSha256": "[AWS_SECRET_ACCESS_KEY]=",
             "Version": "$LATEST",
             "TracingConfig": {
                 "Mode": "PassThrough"

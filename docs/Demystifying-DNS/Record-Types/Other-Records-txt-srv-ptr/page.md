@@ -27,7 +27,7 @@ $ dig kubernetes.io TXT
 
 ;; ANSWER SECTION:
 kubernetes.io. 3600 IN TXT "1password-site-verification=SOZCTQ66DFFXVGPOWOHMVDIBVI"
-kubernetes.io. 3600 IN TXT "google-site-verification=qmfdQyHjWJBL78F9saApyW0VFRyymuSMpqMn8gtGmd0"
+kubernetes.io. 3600 IN TXT "google-site-[SECRET_REDACTED]"
 kubernetes.io. 3600 IN TXT "google-site-verification=oPORCoq9XU6CmaR7G_bV00CLmEz-wLGOL7XpeEuTt8"
 kubernetes.io. 3600 IN TXT "v=spf1 include:_spf.google.com mail.kubernetes.io ~all"
 

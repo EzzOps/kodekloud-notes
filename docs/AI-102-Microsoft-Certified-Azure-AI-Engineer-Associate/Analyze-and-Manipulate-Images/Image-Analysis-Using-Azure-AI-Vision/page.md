@@ -76,7 +76,7 @@ Source: https://notes.kodekloud.com/index
           Learn to integrate AI into your coding workflow for smarter, faster, and more efficient software development solutions.
         </Card>
 
-        <Card icon="send" title="AWS Certified AI Practitioner" href="/docs/AWS-Certified-AI-Practitioner/Introduction/Introduction/page">
+        <Card icon="send" title="AWS Certified AI Practitioner" href="/docs/AWS-Certified-AI-[SECRET_REDACTED]">
           This article introduces a comprehensive AWS Certified AI Practitioner course covering AI concepts, practical applications, and exam preparation.
         </Card>
 
@@ -88,7 +88,7 @@ Source: https://notes.kodekloud.com/index
           This article introduces a course designed to advance skills in AWS development and prepare for the AWS Certified Developer Associate exam.
         </Card>
 
-        <Card icon="send" title="AWS Certified Machine Learning Engineer - Associate" href="/docs/AWS-Certified-Machine-Learning-Engineer-Associate/Prerequisites/Introduction/page">
+        <Card icon="send" title="AWS Certified Machine Learning Engineer - Associate" href="/docs/AWS-Certified-Machine-Learning-Engineer-[SECRET_REDACTED]">
           Overview of an AWS Machine Learning Associate course teaching production-ready ML on AWS, covering data processing, model development, deployment, monitoring, security, and exam-focused hands-on labs.
         </Card>
 
@@ -100,7 +100,7 @@ Source: https://notes.kodekloud.com/index
           A KodeKloud course teaching AWS CloudFormation infrastructure as code, covering templates, stacks, parameters, policies, drift detection, automation, and hands-on labs for practical DevOps skills.
         </Card>
 
-        <Card icon="send" title="AWS CloudWatch" href="/docs/AWS-CloudWatch/Introduction/Introduction/page">
+        <Card icon="send" title="AWS CloudWatch" href="/docs/AWS-[SECRET_REDACTED]">
           AWS CloudWatch is a monitoring and observability service for AWS resources and applications, enabling real-time metrics, logs, and event analysis.
         </Card>
 
@@ -268,7 +268,7 @@ Source: https://notes.kodekloud.com/index
           Hands-on course teaching deployment, management, and observability of AI agents on Kubernetes with KAgent, KMCP/MCP, system prompts, and integrations like Slack and AWS
         </Card>
 
-        <Card icon="send" title="KServe Fundamentals: Serving ML Models on Kubernetes" href="/docs/KServe-Fundamentals-Serving-ML-Models-on-Kubernetes/Foundations/Introduction/page">
+        <Card icon="send" title="KServe Fundamentals: Serving ML Models on Kubernetes" href="/docs/KServe-Fundamentals-Serving-ML-Models-on-[AWS_SECRET_ACCESS_KEY]">
           Guide to deploying and operating generative and predictive ML models on Kubernetes using KServe, including installation, InferenceService and LLMISvc, serving patterns, and troubleshooting
         </Card>
 
@@ -528,7 +528,7 @@ Source: https://notes.kodekloud.com/index
           This course teaches how to use OpenAI's platform for artificial intelligence applications through hands-on learning and practical projects.
         </Card>
 
-        <Card icon="send" title="Introduction to Sealed Secrets in Kubernetes" href="/docs/Introduction-to-Sealed-Secrets-in-Kubernetes/Introduction/Introduction/page">
+        <Card icon="send" title="Introduction to Sealed Secrets in Kubernetes" href="/docs/Introduction-to-Sealed-Secrets-in-[SECRET_REDACTED]">
           This article explains Sealed Secrets, an open-source tool for securely managing sensitive data in Kubernetes and Terraform environments.
         </Card>
 
@@ -620,7 +620,7 @@ Source: https://notes.kodekloud.com/index
           Practical hands-on GitOps course teaching principles and patterns, Argo CD and tooling, secrets management, CI integration, observability, release strategies, labs, and certification preparation.
         </Card>
 
-        <Card icon="send" title="Prep Course - Istio Certified Associate (ICA) Certification" href="/docs/Prep-Course-Istio-Certified-Associate-ICA-Certification/Introduction/Introduction/page">
+        <Card icon="send" title="Prep Course - Istio Certified Associate (ICA) Certification" href="/docs/Prep-Course-Istio-Certified-Associate-ICA-[AWS_SECRET_ACCESS_KEY]page">
           Hands-on course preparing learners for the Istio Certified Associate exam with labs, traffic management, security, resilience, installation, advanced scenarios, and mock exams
         </Card>
 
@@ -636,7 +636,7 @@ Source: https://notes.kodekloud.com/index
           Comprehensive LPIC-1 101 exam prep covering system architecture, Linux installation, GNU/Unix commands, and filesystem management. Includes practice quizzes and mock exams.
         </Card>
 
-        <Card icon="send" title="Linux System Administration for Beginners" href="/docs/Linux-System-Administration-for-Beginners/Introduction/Introduction/page">
+        <Card icon="send" title="Linux System Administration for Beginners" href="/docs/Linux-System-Administration-for-[AWS_SECRET_ACCESS_KEY]">
           This course teaches essential Linux skills through hands-on labs and interactive articles for beginners in system administration.
         </Card>
 

@@ -22,7 +22,7 @@ This guide walks through a calm, methodical diagnosis you can follow to find the
 
 Useful references:
 
-* [Kubernetes: Describe Resources](https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands#describe)
+* [Kubernetes: Describe Resources](https://kubernetes.io/[AWS_SECRET_ACCESS_KEY]-commands#describe)
 * [Kubernetes: Pods and Containers](https://kubernetes.io/docs/concepts/workloads/pods/)
 
 ## Step 1 — Describe the Deployment

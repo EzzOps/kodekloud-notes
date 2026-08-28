@@ -21,13 +21,13 @@ At first glance, that might look like a job for a [Helm chart](https://helm.sh/)
 
 The important question is not only: can we create the initial objects? The bigger one is: who looks after the application after it is running?
 
-To make this concrete, in this lesson you'll build a small tool called the WebApp Operator. Its custom resource is intentionally minimal: the user supplies only an image and a replica count. The moment a developer applies that single, simple object, the operator’s controller goes to work. It automatically generates, wires up, and manages the entire stack for them — a [Deployment](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/) to run the containers, a [Service](https://kubernetes.io/docs/concepts/services-networking/service/) to route traffic, and a [ConfigMap](https://kubernetes.io/docs/concepts/configuration/configmap/) for configuration. The operator keeps these resources in sync over time.
+To make this concrete, in this lesson you'll build a small tool called the WebApp Operator. Its custom resource is intentionally minimal: the user supplies only an image and a replica count. The moment a developer applies that single, simple object, the operator’s controller goes to work. It automatically generates, wires up, and manages the entire stack for them — a [Deployment](https://kubernetes.[SECRET_REDACTED]/) to run the containers, a [Service](https://kubernetes.io/docs/concepts/services-networking/service/) to route traffic, and a [ConfigMap](https://kubernetes.[AWS_SECRET_ACCESS_KEY]/) for configuration. The operator keeps these resources in sync over time.
 
 <Frame>
   <img alt="The image illustrates a Kubernetes architecture stack, showing a &#x22;WebApp&#x22; with interconnected components: Deployment, Service, and ConfigMap, all kept synchronized." />
 </Frame>
 
-If an exhausted engineer accidentally deletes the underlying [Deployment](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/) at two a.m., the operator will detect the difference during its next reconciliation loop and recreate what’s missing. That is the operational value an operator provides.
+If an exhausted engineer accidentally deletes the underlying [Deployment](https://kubernetes.[SECRET_REDACTED]/) at two a.m., the operator will detect the difference during its next reconciliation loop and recreate what’s missing. That is the operational value an operator provides.
 
 Think of how an operator works like ordering at a restaurant. The customer places an order; they don't run the oven, assign the cook, or plate the food. The manager knows the recipe and the steps needed to fulfill the order and watches for problems — a missing ingredient, a stalled table, a food-safety issue — and fixes them so the customer gets the expected result. The operator plays the manager’s role for applications on Kubernetes.
 

@@ -120,13 +120,13 @@ The following diagram illustrates the automated process:
      username: kubernetes-admin
    status:
      certificate: |
-       L$0tS1CRUdJTiBDRVJUSUZJQ09FURS0tL0tCk1SURDakNDQWL
-       Z0F3SUJBZ0lVRmwyQ2wxyXYoawl5M3JNVisreFRQUW0uJ3dnd0R
-       Wplb1JaHZjTkFRRUkQlfBd0ZURVRNQkVHQTlRVU4FUtHMlZpw
-       lKdVpMjkE9UQX1NVE14TmpNeU1QmFGd1dnY0ZFEl2ajNuSyX
-       2dFsD1IRmS5u041c0tS0Z0vXUwzTFM5VZ96hlZ0dWCmIEZ2F
-       OMWVRMFBXThJ9N0FvNjVwJclWk1weEVHTkVRU5tdulB1NiwH
-       S1h6a61d9DwMEd1MGUQYFKWK1WkVmjbVRfcY3dd2xi0C1i9Dk
+       L$[SECRET_REDACTED]
+       [SECRET_REDACTED]
+       [SECRET_REDACTED]
+       [SECRET_REDACTED]
+       [SECRET_REDACTED]
+       [SECRET_REDACTED]
+       [SECRET_REDACTED]
        L0tLS0tL1FkTQgOVSVELG5UNVE8=
      conditions:
      - lastUpdateTime: 2019-02-13T16:37:21Z

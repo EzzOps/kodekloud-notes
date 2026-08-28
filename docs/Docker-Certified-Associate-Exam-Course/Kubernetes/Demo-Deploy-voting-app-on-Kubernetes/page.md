@@ -72,7 +72,7 @@ Refresh the voting URL to observe traffic served by multiple replicas—no downt
 
 ## Links and References
 
-* [Kubernetes Deployments](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/)
+* [Kubernetes Deployments](https://kubernetes.[SECRET_REDACTED]/)
 * [kubectl Cheat Sheet](https://kubernetes.io/docs/reference/kubectl/cheatsheet/)
 * [Minikube Service Command](https://minikube.sigs.k8s.io/docs/commands/service/)
 

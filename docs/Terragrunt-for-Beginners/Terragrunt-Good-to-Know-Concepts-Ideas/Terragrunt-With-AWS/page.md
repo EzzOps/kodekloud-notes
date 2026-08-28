@@ -157,7 +157,7 @@ Adopt a modular layout and separate environments for scalable, maintainable Terr
 * [Terraform AWS Provider](https://registry.terraform.io/providers/hashicorp/aws/latest/docs)
 * [Terragrunt Documentation](https://terragrunt.gruntwork.io/docs/)
 * [AWS Well-Architected Framework](https://aws.amazon.com/architecture/well-architected/)
-* [DynamoDB State Locking](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Introduction.html)
+* [DynamoDB State Locking](https://docs.aws.amazon.[AWS_SECRET_ACCESS_KEY]/Introduction.html)
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terragrunt-for-beginners/module/c2ee1192-4547-4149-82dc-d7e2940cb844/lesson/d1d8ffe3-5aaa-450f-a343-30867f62eb1a" />

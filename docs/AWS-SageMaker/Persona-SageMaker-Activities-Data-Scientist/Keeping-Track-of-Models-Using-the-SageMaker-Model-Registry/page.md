@@ -121,7 +121,7 @@ Further reading and references
 
 * [SageMaker Model Registry documentation](https://docs.aws.amazon.com/sagemaker/latest/dg/model-registry.html)
 * [SageMaker Python SDK](https://sagemaker.readthedocs.io/)
-* [Boto3 SageMaker client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html)
+* [Boto3 SageMaker client](https://boto3.amazonaws.com/v1/documentation[AWS_SECRET_ACCESS_KEY].html)
 * [MLflow project and model registry](https://mlflow.org/)
 * [AWS DynamoDB overview](https://aws.amazon.com/dynamodb/)
 

@@ -17,7 +17,7 @@ Fetch the pre-built Block Buster image from the original repository:
 ```bash theme={null}
 docker pull siddharth67/block-buster-dev:7.8.0
 # 7.8.0: Pulling from siddharth67/block-buster-dev
-# Digest: sha256:cf54e2a9efad47898d8ae12a3956b2ce7dbc69f239a22804ee78f691
+# Digest: sha256:[SECRET_REDACTED]
 # Status: Image is up to date for docker.io/siddharth67/block-buster-dev:7.8.0
 ```
 
@@ -34,7 +34,7 @@ docker tag \
 
 docker push <your-username>/bb-app-flex-demo:7.8.0
 # Pushing layers to <your-username>/bb-app-flex-demo
-# latest: digest: sha256:cfc54e2a396562b2ce7dbc69f239a22804e78f691 size: 3662
+# latest: digest: sha256:[SECRET_REDACTED] size: 3662
 ```
 
 <Callout icon="triangle-alert">

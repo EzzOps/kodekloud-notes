@@ -59,7 +59,7 @@ Summary
 
 Links and references
 
-* [Kubernetes Rollouts](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/#rolling-back-a-deployment)
+* [Kubernetes Rollouts](https://kubernetes.[SECRET_REDACTED]/#rolling-back-a-deployment)
 * [Helm Rollbacks](https://helm.sh/docs/helm/helm_rollback/)
 * [CI/CD best practices for safe deployments](https://www.redhat.com/en/topics/devops/what-is-ci-cd)
 

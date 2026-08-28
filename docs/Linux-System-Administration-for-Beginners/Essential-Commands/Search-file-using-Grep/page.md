@@ -41,7 +41,7 @@ The sticky bit ensures that only the file owner (or root) can delete or rename f
 
 ## Links and References
 
-* [Linux File Permissions](https://www.kernel.org/doc/html/latest/filesystems/permissions.html)
+* [Linux File Permissions](https://www.kernel.org[AWS_SECRET_ACCESS_KEY].html)
 * [chmod Manual Page](https://man7.org/linux/man-pages/man1/chmod.1.html)
 * [Understanding Linux File System Permissions](https://www.redhat.com/en/topics/linux/what-is-linux-file-permissions)
 

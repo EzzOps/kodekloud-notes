@@ -89,7 +89,7 @@ The output should indicate that Docker did not find the image locally, pulled it
 ```bash theme={null}
 Unable to find image '841860927337.dkr.ecr.us-west-1.amazonaws.com/ecrdemo:latest' locally
 latest: Pulling from ecrdemo
-Digest: sha256:d5708e91c8580819a91fba467c25662a4f6ff55e7929341baaf0c9ab84cd822
+Digest: sha256:[SECRET_REDACTED]
 Status: Downloaded newer image for 841860927337.dkr.ecr.us-west-1.amazonaws.com/ecrdemo:latest
 Server is running on port 3000
 ```

@@ -44,7 +44,7 @@ First, verify the presence of the Loki-Grafana secret and retrieve the admin pas
 kubectl get secret loki-grafana -o jsonpath="{.data.admin-password}"
 Error from server (NotFound): secrets "loki-grafana" not found
 kubectl get secret loki-grafana -o jsonpath="{.data.admin-password}"
-VH5YTD0UdVkVHRXVuZCVJQUSoThqZ1g2QnlxblM3cUZRjV5Tg==
+[SECRET_REDACTED]==
 kubectl get secret loki-grafana -o jsonpath="{.data.admin-password}" | base64 --decode
 Tqya7NQdWDGUuvqRANHE8jXByqan5g7FkN5yN
 ```
@@ -71,9 +71,9 @@ IP: 172.17.0.3
 Controlled By: DaemonSet/loki-promtail
 Containers:
   promtail:
-    Container ID: docker://45bf8093b9c0cc175903ad18322dbfc52107e3f115ef2473913f6ab89eec576c
+    Container ID: docker://[SECRET_REDACTED]
     Image: docker.io/grafana/promtail:2.8.3
-    Image ID: docker-pullable://grafana/promtail@sha256:48e658500dd2107c1fa08c674472ad199b8dec220c1283fb6c9b990c49ae6f0
+    Image ID: docker-pullable://grafana/promtail@sha256:[SECRET_REDACTED]
     Port: 3101/TCP
     Host Port: 0/TCP
     Args:

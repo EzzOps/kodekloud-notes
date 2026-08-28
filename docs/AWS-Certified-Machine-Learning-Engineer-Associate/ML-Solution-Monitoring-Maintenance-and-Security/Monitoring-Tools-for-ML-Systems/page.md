@@ -166,7 +166,7 @@ Monitoring helps control costs by informing placement, scaling, and storage poli
 * [Amazon SageMaker documentation](https://docs.aws.amazon.com/sagemaker/latest/dg/whatis.html)
 * [SageMaker Model Monitor overview](https://docs.aws.amazon.com/sagemaker/latest/dg/model-monitor.html)
 * [SageMaker Clarify overview](https://docs.aws.amazon.com/sagemaker/latest/dg/clarify.html)
-* [AWS CodePipeline documentation](https://docs.aws.amazon.com/codepipeline/latest/userguide/welcome.html)
+* [AWS CodePipeline documentation](https://docs.aws.amazon.[SECRET_REDACTED].html)
 * [AWS Lambda documentation](https://docs.aws.amazon.com/lambda/latest/dg/welcome.html)
 * [AWS IAM best practices](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html)
 

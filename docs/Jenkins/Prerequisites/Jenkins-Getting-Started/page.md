@@ -88,5 +88,5 @@ Whether you’re aiming to boost your CI/CD pipeline or exploring automation too
 Happy automating, and see you in the next article!
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins/module/bdecbf7a-016d-4b60-9731-1cdaaddb3e3c/lesson/7f063a61-a24f-48d4-ac44-7163c42ea752" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[AWS_SECRET_ACCESS_KEY]-016d-4b60-9731-1cdaaddb3e3c/lesson/7f063a61-a24f-48d4-ac44-7163c42ea752" />
 </CardGroup>

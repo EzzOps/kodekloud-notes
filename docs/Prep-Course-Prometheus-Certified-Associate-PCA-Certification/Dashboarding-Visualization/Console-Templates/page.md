@@ -65,7 +65,7 @@ Use labels to keep metrics organized and queryable, but be mindful of cardinalit
 Links and references
 
 * [Prometheus — Overview](https://prometheus.io/docs/introduction/overview/)
-* [Prometheus — Querying basics (PromQL)](https://prometheus.io/docs/prometheus/latest/querying/basics/)
+* [Prometheus — Querying basics (PromQL)](https://prometheus.[SECRET_REDACTED]/)
 * [prometheus\_client (Python) documentation](https://github.com/prometheus/client_python)
 
 <CardGroup>

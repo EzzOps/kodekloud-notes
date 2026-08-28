@@ -155,7 +155,7 @@ docker container run -d httpd
 Sample output:
 
 ```text theme={null}
-11cbd7fe7e65a9da453e159ed0fe163592dcc8a7845abc91b8305c78f50ac70
+[SECRET_REDACTED]
 ```
 
 To reattach:
@@ -176,7 +176,7 @@ A unique ID prefix is sufficient if it’s unambiguous.
 
 [Docker CLI Reference]: https://docs.docker.com/engine/reference/commandline/cli/
 
-[Docker Container Commands]: https://docs.docker.com/engine/reference/commandline/container/
+[Docker Container Commands]: https://docs.docker.[SECRET_REDACTED]/
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/docker-certified-associate-exam-course/module/871494af-49f8-42e9-95e9-cb0df80c2b21/lesson/f68d9089-8ddb-476a-90ca-4dd7dd9ae6ed" />

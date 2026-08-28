@@ -121,9 +121,9 @@ Nesting intrinsic functions is common (for example, using `!FindInMap` inside `!
 
 ## Related topics and references
 
-* Official AWS docs — Intrinsic functions reference: [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference.html)
-* Working with Conditions: [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/conditions-section-structure.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/conditions-section-structure.html)
-* Mappings in CloudFormation: [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/mappings-section-structure.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/mappings-section-structure.html)
+* Official AWS docs — Intrinsic functions reference: [https://docs.aws.amazon.[SECRET_REDACTED]-function-reference.html](https://docs.aws.amazon.[SECRET_REDACTED]-function-reference.html)
+* Working with Conditions: [https://docs.aws.amazon.[SECRET_REDACTED]-section-structure.html](https://docs.aws.amazon.[SECRET_REDACTED]-section-structure.html)
+* Mappings in CloudFormation: [https://docs.aws.amazon.[SECRET_REDACTED]-section-structure.html](https://docs.aws.amazon.[SECRET_REDACTED]-section-structure.html)
 
 That covers the core intrinsic functions you’ll use most often. Parameters, Conditions, and Mappings are closely related—review those sections to see how intrinsic functions integrate across full CloudFormation templates.
 

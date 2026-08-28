@@ -66,8 +66,8 @@ With enough concurrent connections, DatabaseConnections will exceed the threshol
 Links and references:
 
 * Amazon RDS (overview): [https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Welcome.html](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Welcome.html)
-* Aurora User Guide: [https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/CHAP\_Aurora.html](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/CHAP_Aurora.html)
-* CloudWatch alarms: [https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/AlarmThatSendsEmail.html](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/AlarmThatSendsEmail.html)
+* Aurora User Guide: [https://docs.aws.amazon.[SECRET_REDACTED]\_Aurora.html](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/CHAP_Aurora.html)
+* CloudWatch alarms: [https://docs.aws.amazon.[SECRET_REDACTED].html](https://docs.aws.amazon.[SECRET_REDACTED].html)
 * Performance Insights: [https://docs.aws.amazon.com/performance-insights/latest/userguide/what-is-pi.html](https://docs.aws.amazon.com/performance-insights/latest/userguide/what-is-pi.html)
 * SNS documentation: [https://docs.aws.amazon.com/sns/latest/dg/welcome.html](https://docs.aws.amazon.com/sns/latest/dg/welcome.html)
 * Lambda documentation: [https://docs.aws.amazon.com/lambda/latest/dg/welcome.html](https://docs.aws.amazon.com/lambda/latest/dg/welcome.html)
@@ -119,7 +119,7 @@ Track a mix of infrastructure and database-specific metrics, plus logs and query
 ## AWS tools for monitoring RDS
 
 * Amazon CloudWatch\
-  Collects core RDS metrics (CPU, IOPS, latency, free storage, DB connections). Use CloudWatch Alarms and Dashboards for alerting and visual summaries. See CloudWatch metrics for Amazon RDS: [https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/monitoring-cloudwatch.html](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/monitoring-cloudwatch.html)
+  Collects core RDS metrics (CPU, IOPS, latency, free storage, DB connections). Use CloudWatch Alarms and Dashboards for alerting and visual summaries. See CloudWatch metrics for Amazon RDS: [https://docs.aws.amazon.[SECRET_REDACTED]-cloudwatch.html](https://docs.aws.amazon.[SECRET_REDACTED]-cloudwatch.html)
 
 * RDS Enhanced Monitoring\
   Provides host-level (OS) metrics such as memory and swap. These metrics are published to CloudWatch Logs and are useful for diagnosing memory pressure and OS-level signals. More: [https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER\_Monitoring.OS.html](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_Monitoring.OS.html)
@@ -195,10 +195,10 @@ To practice these concepts, run hands-on labs that:
 
 ## Links and references
 
-* Amazon RDS Monitoring with Amazon CloudWatch: [https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/monitoring-cloudwatch.html](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/monitoring-cloudwatch.html)
+* Amazon RDS Monitoring with Amazon CloudWatch: [https://docs.aws.amazon.[SECRET_REDACTED]-cloudwatch.html](https://docs.aws.amazon.[SECRET_REDACTED]-cloudwatch.html)
 * RDS Enhanced Monitoring: [https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER\_Monitoring.OS.html](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_Monitoring.OS.html)
 * RDS Performance Insights: [https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER\_PerfInsights.html](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_PerfInsights.html)
-* CloudWatch Logs: [https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/WhatIsCloudWatchLogs.html](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/WhatIsCloudWatchLogs.html)
+* CloudWatch Logs: [https://docs.aws.amazon.[SECRET_REDACTED].html](https://docs.aws.amazon.[SECRET_REDACTED].html)
 
 Next steps: enable monitoring on a test instance, create a dashboard and alerts, and review slow query reports to build a prioritized remediation list.
 

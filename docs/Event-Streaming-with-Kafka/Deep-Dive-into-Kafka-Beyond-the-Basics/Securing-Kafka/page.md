@@ -91,7 +91,7 @@ Quick checklist
 Further reading and references
 
 * [Apache Kafka Security Documentation](https://kafka.apache.org/documentation/#security)
-* [AWS EBS Encryption](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSEncryption.html)
+* [AWS EBS Encryption](https://docs.aws.amazon.[SECRET_REDACTED].html)
 * [Confluent: Authentication and Authorization](https://docs.confluent.io/platform/current/security/index.html)
 
 That is it for this lesson.

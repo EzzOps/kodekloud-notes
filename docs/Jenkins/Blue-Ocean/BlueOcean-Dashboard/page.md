@@ -77,7 +77,7 @@ For additional resources and detailed documentation, consider visiting [Jenkins 
 Keep exploring to master the intricacies of Jenkins pipelines and optimize your continuous integration and delivery processes.
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins/module/77db3006-93f7-42b0-90d0-6fd961631d1f/lesson/09a6d832-daca-4cb4-a15d-8bf3364284bd" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[AWS_SECRET_ACCESS_KEY]-93f7-42b0-90d0-6fd961631d1f/lesson/09a6d832-daca-4cb4-a15d-8bf3364284bd" />
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/jenkins/module/77db3006-93f7-42b0-90d0-6fd961631d1f/lesson/71f84523-dd37-48c0-81e1-0b0d3e5e620f" />
+  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.[AWS_SECRET_ACCESS_KEY]-93f7-42b0-90d0-6fd961631d1f/lesson/71f84523-dd37-48c0-81e1-0b0d3e5e620f" />
 </CardGroup>

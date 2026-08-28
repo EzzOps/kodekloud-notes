@@ -52,8 +52,8 @@ Best practices and quick reference
 
 Links and references
 
-* [CloudFormation Rollback Triggers documentation](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-rollback-triggers.html)
-* [CloudWatch Alarms documentation](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/AlarmThatSendsEmail.html)
+* [CloudFormation Rollback Triggers documentation](https://docs.aws.amazon.com/[AWS_SECRET_ACCESS_KEY]-rollback-triggers.html)
+* [CloudWatch Alarms documentation](https://docs.aws.amazon.[SECRET_REDACTED].html)
 * [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/)
 
 This workflow helps you protect deployments by tying CloudFormation operations to CloudWatch alarm states so that metric-driven failures automatically prevent or roll back unsafe changes.

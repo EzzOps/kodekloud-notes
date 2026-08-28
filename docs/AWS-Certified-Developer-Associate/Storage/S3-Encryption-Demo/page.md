@@ -154,7 +154,7 @@ However, if a secondary user with only S3 permissions tries to decrypt the file,
   <Message>The ciphertext refers to a customer master key that does not exist, does not exist in this region, or you are not allowed to access.</Message>
   <RequestId>45V16V31G01JFASB</RequestId>
   <HostId>
-    kW0M7+PFX6X0wxcmlK7pXmxFkeBHM2zYJWFgU8iBKgPqHyb6YBUOzViWIrk8bDtk=
+    [SECRET_REDACTED]=
   </HostId>
 </Error>
 ```

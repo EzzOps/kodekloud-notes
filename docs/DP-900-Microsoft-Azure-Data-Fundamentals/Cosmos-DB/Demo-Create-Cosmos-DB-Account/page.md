@@ -148,7 +148,7 @@ with:
   "LastName": "Vogel",
   "id": "3a0585fd-1202-4855-91ef-5077ca6c263c",
   "_rid": "VRJWANGK1u0BAAAAAAAAAA==",
-  "_self": "dbs/VRJWAA==/colls/VRJWANGK1u0=/docs/VRJWANGK1u0BAAAAAAAAAA==/",
+  "_self": "dbs/VRJWAA==/colls/[AWS_SECRET_ACCESS_KEY]==/",
   "_etag": "\"b002c1f-0000-0100-0000-64fcd0bf0000\"",
   "_attachments": "attachments/",
   "_ts": 1694292751

@@ -28,7 +28,7 @@ If you click the Object URL in a browser, whether the object is accessible depen
   <Code>AccessDenied</Code>
   <Message>Access Denied</Message>
   <RequestId>PVYKMASZ2ZWJBJDYG</RequestId>
-  <HostId>tbsBVn1oKgtTnNieuKKNWYw7HpjawADtURSBtTVrvB4pQ2LkuWwg6+Su/RyLNKawfMtxhFOXTyU=</HostId>
+  <HostId>[SECRET_REDACTED]=</HostId>
 </Error>
 ```
 
@@ -104,7 +104,7 @@ When you trigger an empty operation via the console you’ll typically need to c
 
 Links and references
 
-* [Amazon S3 documentation — Overview](https://docs.aws.amazon.com/AmazonS3/latest/userguide/UsingBucket.html)
+* [Amazon S3 documentation — Overview](https://docs.aws.amazon.[SECRET_REDACTED].html)
 * [Amazon S3 object key name considerations](https://docs.aws.amazon.com/AmazonS3/latest/userguide/object-keys.html)
 * [Controlling access to Amazon S3 resources (IAM policies, bucket policies, ACLs)](https://docs.aws.amazon.com/AmazonS3/latest/userguide/security-controls.html)
 

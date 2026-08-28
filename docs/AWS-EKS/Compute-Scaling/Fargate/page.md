@@ -91,7 +91,7 @@ Use Fargate for critical system workloads—metrics-server, cluster-autoscaler, 
 ## Links and References
 
 * [Amazon EKS on AWS Fargate](https://docs.aws.amazon.com/eks/latest/userguide/fargate.html)
-* [Kubernetes DaemonSet Documentation](https://kubernetes.io/docs/concepts/workloads/controllers/daemonset/)
+* [Kubernetes DaemonSet Documentation](https://kubernetes.io/docs/[AWS_SECRET_ACCESS_KEY]/)
 * [AWS EFS CSI Driver](https://docs.aws.amazon.com/eks/latest/userguide/efs-csi.html)
 * [Karpenter Autoscaling](https://karpenter.sh/)
 

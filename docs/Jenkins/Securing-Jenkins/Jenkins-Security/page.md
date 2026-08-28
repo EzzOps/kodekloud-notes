@@ -58,5 +58,5 @@ In summary, securing Jenkins involves multiple layers—from safeguarding the se
 Let's now dive into hands-on practices. In the following sections, we will walk through various Jenkins security concerns, implement the necessary fixes, and explain the rationale behind each solution.
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins/module/7c4c28a9-3607-46d4-920a-3f94ed6a7d5b/lesson/da3dcdbe-0453-4f67-8140-f65edd5ef86f" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[AWS_SECRET_ACCESS_KEY]-3607-46d4-920a-3f94ed6a7d5b/lesson/da3dcdbe-0453-4f67-8140-f65edd5ef86f" />
 </CardGroup>

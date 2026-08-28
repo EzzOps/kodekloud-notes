@@ -16,7 +16,7 @@ kube-system       Active   21m   kubernetes.io/metadata.name=kube-system
 2. Deploy the helloworld sample application
 
 ```bash theme={null}
-kubectl apply -f https://raw.githubusercontent.com/istio/istio/refs/heads/master/samples/helloworld/helloworld.yaml
+kubectl apply -f https://raw.githubusercontent.[SECRET_REDACTED].yaml
 ```
 
 Expected response:
@@ -264,7 +264,7 @@ This injects a 7s delay only for requests where `end-user: jason` is present.
 
 11. References and next steps
 
-* Istio VirtualService reference: [https://istio.io/latest/docs/reference/config/networking/virtual-service/](https://istio.io/latest/docs/reference/config/networking/virtual-service/)
+* Istio VirtualService reference: [https://istio.io[AWS_SECRET_ACCESS_KEY]/virtual-service/](https://istio.io[AWS_SECRET_ACCESS_KEY]/virtual-service/)
 * Fault injection task guide: [https://istio.io/latest/docs/tasks/traffic-management/fault-injection/](https://istio.io/latest/docs/tasks/traffic-management/fault-injection/)
 * Next steps: configure client-side retries and timeouts in Istio to make your clients resilient to transient faults.
 
@@ -294,7 +294,7 @@ kubectl get ns --show-labels
 2. Deploy httpbin and create a test pod with curl installed (image: `curlimages/curl`):
 
 ```bash theme={null}
-kubectl apply -f https://raw.githubusercontent.com/istio/istio/refs/heads/master/samples/httpbin/httpbin.yaml
+kubectl apply -f https://raw.githubusercontent.com/istio[AWS_SECRET_ACCESS_KEY]/httpbin.yaml
 kubectl run test --image=curlimages/curl --restart=Never --command -- sleep 1d
 ```
 

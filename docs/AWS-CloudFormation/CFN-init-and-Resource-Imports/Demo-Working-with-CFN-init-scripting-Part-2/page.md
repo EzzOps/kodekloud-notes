@@ -114,8 +114,8 @@ When the demo is complete, delete the stack using CloudFormation's "Delete stack
 
 Further reading
 
-* [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html)
-* [cfn-init documentation and examples](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-helper-scripts-reference.html)
+* [AWS CloudFormation User Guide](https://docs.aws.amazon.[SECRET_REDACTED].html)
+* [cfn-init documentation and examples](https://docs.aws.amazon.[SECRET_REDACTED]-helper-scripts-reference.html)
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/aws-cloud-formation/module/026ceaf9-07b6-4964-b49d-7190c136ea2b/lesson/8564edeb-1cfe-4964-8ddc-6465997dcbcf" />

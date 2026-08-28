@@ -102,7 +102,7 @@ You’ve successfully managed upgrades and rollbacks in AKS. Next, explore Azure
 * [Azure Kubernetes Service (AKS) Overview](https://docs.microsoft.com/azure/aks/overview)
 * [Azure Container Registry Documentation](https://docs.microsoft.com/azure/container-registry/)
 * [kubectl Cheat Sheet](https://kubernetes.io/docs/reference/kubectl/cheatsheet/)
-* [Kubernetes Deployments](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/)
+* [Kubernetes Deployments](https://kubernetes.[SECRET_REDACTED]/)
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/azure-kubernetes-service/module/2e4891fe-2f53-4239-9ab9-8b15ba4c6369/lesson/56e5b535-f62c-4bfe-ab3e-5d8b5602012c" />

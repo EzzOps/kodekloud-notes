@@ -49,7 +49,7 @@ You should see an HCL block similar to:
   "retry_join": ["10.0.101.248"],
   "bootstrap_expect": 2,
   "enable_syslog": true,
-  "encrypt": "62qhd/DH15Axr01MRUpMkvt53p4FAvu+FgARDUaMzA=",
+  "encrypt": "[SECRET_REDACTED]=",
   "encrypt_verify_incoming": false,
   "encrypt_verify_outgoing": false,
   "connect": { "enabled": true },
@@ -84,7 +84,7 @@ Confirm the `encrypt` value matches Node A and that both verification flags are 
 {
   "node_name": "consul-node-b",
   // ...
-  "encrypt": "62qhd/DH15Axr01MRUpMkvt53p4FAvu+FgARDUaMzA=",
+  "encrypt": "[SECRET_REDACTED]=",
   "encrypt_verify_incoming": false,
   "encrypt_verify_outgoing": false,
   // ...

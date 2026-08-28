@@ -52,7 +52,7 @@ Example output:
 2024/09/14 16:16:51 The following dependencies were found:
   registry: acraz204kodekloud.azurecr.io
   repository: webapp
-  tag: sha256:2f44bd0f2c9d2303a4cd1c15b7bf489649e01718e21
+  tag: sha256:[SECRET_REDACTED]
 ...
 Run ID: ca2 was successful after 52s
 ```

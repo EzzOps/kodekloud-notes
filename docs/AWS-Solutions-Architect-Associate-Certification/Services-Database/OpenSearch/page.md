@@ -70,7 +70,7 @@ OpenSearch is a community-driven search and analytics suite that originated as a
 For more detailed information and best practices, consider visiting the following links:
 
 * [AWS OpenSearch Documentation](https://docs.aws.amazon.com/opensearch-service/index.html)
-* [Elasticsearch Overview](https://www.elastic.co/guide/en/elasticsearch/reference/current/index.html)
+* [Elasticsearch Overview](https://www.elastic.co/[AWS_SECRET_ACCESS_KEY]/index.html)
 * [AWS CloudWatch Monitoring](https://aws.amazon.com/cloudwatch/)
 
 <Callout icon="triangle-alert">

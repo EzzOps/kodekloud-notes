@@ -120,7 +120,7 @@ jobs:
 
 ## Links and References
 
-* [Azure Pipelines Retention Policies](https://learn.microsoft.com/azure/devops/pipelines/policies/retention)
+* [Azure Pipelines Retention Policies](https://learn.microsoft.[SECRET_REDACTED])
 * [Retention Leases REST API](https://learn.microsoft.com/rest/api/azure/devops/build/leases)
 * [Azure CLI for Pipelines](https://learn.microsoft.com/cli/azure/pipelines)
 

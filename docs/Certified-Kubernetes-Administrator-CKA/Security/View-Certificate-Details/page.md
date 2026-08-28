@@ -63,7 +63,7 @@ spec:
       - --etcd-certfile=/etc/kubernetes/pki/apiserver-etcd-client.crt
       - --etcd-keyfile=/etc/kubernetes/pki/apiserver-etcd-client.key
       - --insecure-port=0
-      - --kubelet-client-certificate=/etc/kubernetes/pki/apiserver-kubelet-client.crt
+      - --kubelet-client-[SECRET_REDACTED]-kubelet-client.crt
       - --kubelet-client-key=/etc/kubernetes/pki/apiserver-kubelet-client.key
       - --proxy-client-certfile=/etc/kubernetes/pki/apiserver-kubelet-client.crt
       - --proxy-client-key=/etc/kubernetes/pki/apiserver-kubelet-client.key
@@ -102,7 +102,7 @@ spec:
       - --etcd-keyfile=/etc/kubernetes/pki/apiserver-etcd-client.key
       - --etcd-servers=https://127.0.0.1:2379
       - --insecure-port=0
-      - --kubelet-client-certificate=/etc/kubernetes/pki/apiserver-kubelet-client.crt
+      - --kubelet-client-[SECRET_REDACTED]-kubelet-client.crt
       - --kubelet-client-key=/etc/kubernetes/pki/apiserver-kubelet-client.key
       - --kubelet-preferred-address-types=InternalIP,ExternalIP,Hostname
       - --proxy-client-cert-file=/etc/kubernetes/pki/front-proxy-client.crt

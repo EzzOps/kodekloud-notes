@@ -84,7 +84,7 @@ The output will be similar to:
     {
       "Name": "/backend/dev/db/password",
       "Type": "SecureString",
-      "Value": "AQICAHhH/gWQoHeUigMnSIqcs+2nIv6fFCZ4g7Faeb8fjlKsgGlKgZ08RyMINYvZXIwhQSAAAAAbTBrBgkqhkiG9w0BBwa gXjBcAgEAMFcGCSqGSIb3DQEHATAeBglhgkBzQMEAS4wEQQMj1sLWI5sxB+hIB3uAgEgoCos6djLFYsI6D901zq1nGCKuaDdHE4uIaRGs/duVI1YmnU jJMu2tJDMmI=",
+      "Value": "[SECRET_REDACTED] [SECRET_REDACTED] jJMu2tJDMmI=",
       "Version": 1,
       "LastModifiedDate": "2024-04-13T20:38:22.994000-06:00",
       "ARN": "arn:aws:ssm:us-east-1:841860927337:parameter/backend/dev/db/password",
@@ -164,7 +164,7 @@ Example output:
     {
       "Name": "/backend/dev/db/password",
       "Type": "SecureString",
-      "Value": "AQICAhHh/gWQOHeUigMnSIqcs+2nIv6fFCZ4g7Faeb8fjlKsgGlkGZ08RyMINYxZIwQSQAAAbTBrBgkqhkI9w0BBwagXjBcAgEAMfcGCSqGSI3BQEQMjl1SWI5sxB+hIB3uAgEqCos6djLFYSi6D901zq1nGCKuaDdHE4uIaRGs/duVI1YmnhUjMu2tJDMmI=",
+      "Value": "[SECRET_REDACTED]=",
       "Version": 1,
       "LastModifiedDate": "2024-04-13T20:38:22.994000-06:00",
       "ARN": "arn:aws:ssm:us-east-1:841860927373:parameter/backend/dev/db/password",

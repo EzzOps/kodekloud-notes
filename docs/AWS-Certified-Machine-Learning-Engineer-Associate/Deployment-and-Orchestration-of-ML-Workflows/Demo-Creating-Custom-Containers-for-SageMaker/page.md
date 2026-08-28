@@ -141,7 +141,7 @@ After creation
 Additional resources
 
 * [Create a model using a custom container (SageMaker Developer Guide)](https://docs.aws.amazon.com/sagemaker/latest/dg/your-algorithms.html)
-* [Amazon ECR: authentication and authorization](https://docs.aws.amazon.com/AmazonECR/latest/userguide/repository-policy-examples.html)
+* [Amazon ECR: authentication and authorization](https://docs.aws.amazon.[SECRET_REDACTED]-policy-examples.html)
 * [Amazon S3 access control](https://docs.aws.amazon.com/AmazonS3/latest/userguide/using-with-s3-actions.html)
 
 That’s it — after the model is created you can proceed to deploy it as an endpoint for real-time inference or run a batch transform job for offline scoring.

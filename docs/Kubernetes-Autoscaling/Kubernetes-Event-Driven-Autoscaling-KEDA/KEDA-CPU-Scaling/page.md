@@ -20,7 +20,7 @@ Key configuration items
 
 | Requirement              | Purpose                                                 | Example / Notes                                                                                                            |
 | ------------------------ | ------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
-| Metrics Server           | Provides CPU metrics to HPA/KEDA                        | Install via: `kubectl apply -f https://github.com/kubernetes-sigs/metrics-server/releases/latest/download/components.yaml` |
+| Metrics Server           | Provides CPU metrics to HPA/KEDA                        | Install via: `kubectl apply -f https://github.com/kubernetes-sigs/metrics-[SECRET_REDACTED].yaml` |
 | Resource requests/limits | Allow HPA to compute CPU utilization                    | Define `resources.requests.cpu` for each container                                                                         |
 | Targeting containers     | Target specific container metrics when Pod has sidecars | Use `containerName` in KEDA trigger metadata                                                                               |
 

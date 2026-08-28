@@ -154,7 +154,7 @@ Since the default service account has limited permissions, create a new service 
    The output might be similar to:
 
    ```bash theme={null}
-   eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhdmF0YXJzaW1lLmFwcGxpbWF0aW9uIiwibmFtZSI6ImRhc2hib2FyZC1zYSIsImlhdCI6MTY5MjkzMDM4OCwiZXhwIjoxNzA4Mzk2Mzg4LCJhdWQiOiJodHRwczovL2FkbWluLmRhc2hib2FyZC5jb20iLCJpc3MiOiJodHRwczovL3dlYi16YWhhYW5pdGUuY29tIn0.ksP0DhTDxueD9... (truncated)
+   eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.[SECRET_REDACTED].ksP0DhTDxueD9... (truncated)
    ```
 
    Copy the token and paste it into the dashboard UI. Once authenticated, you should see all the pods running within your cluster.

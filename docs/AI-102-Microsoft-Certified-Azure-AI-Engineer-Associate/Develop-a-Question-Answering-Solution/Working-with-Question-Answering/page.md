@@ -166,7 +166,7 @@ Python example (REST call, no SDK):
 import requests
 
 endpoint = "https://ai102cogservices909.cognitiveservices.azure.com"
-prediction_key = "G1aq1ewXYO4eorr2AJEXObg4OCKluhVh9ze6rCqNrdowlsPVNiNY8JQQJ99BDACYeBjFXJ3wAAAaACOGPOnn"
+prediction_key = "[SECRET_REDACTED]"
 project_name = "AI102CustomQnA"
 deployment_name = "production"
 

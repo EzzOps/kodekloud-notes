@@ -165,9 +165,9 @@ Containers:
 If you prefer to recreate the Bookinfo app so that all pods are freshly created with the proxy already injected, delete and reapply the Bookinfo manifest:
 
 ```bash theme={null}
-root@controlplane:~/istio-1.26.3# kubectl delete -f https://raw.githubusercontent.com/istio/istio/release-1.11/samples/bookinfo/platform/kube/bookinfo.yaml
+root@controlplane:~/istio-1.26.3# kubectl delete -f https://raw.githubusercontent.com/istio/istio/release-1.11[AWS_SECRET_ACCESS_KEY].yaml
 # ... deletion output ...
-root@controlplane:~/istio-1.26.3# kubectl apply -f https://raw.githubusercontent.com/istio/istio/release-1.11/samples/bookinfo/platform/kube/bookinfo.yaml
+root@controlplane:~/istio-1.26.3# kubectl apply -f https://raw.githubusercontent.com/istio/istio/release-1.11[AWS_SECRET_ACCESS_KEY].yaml
 # ... creation output ...
 ```
 
@@ -281,7 +281,7 @@ This concludes the demo of installing Istio via the CLI and injecting sidecars b
 ## Links and references
 
 * [Istio Installation Guide](https://istio.io/latest/docs/setup/install/)
-* [istioctl reference](https://istio.io/latest/docs/reference/commands/istioctl/)
+* [istioctl reference](https://istio.io[AWS_SECRET_ACCESS_KEY]/)
 * [Bookinfo sample manifests (Istio GitHub)](https://github.com/istio/istio/tree/release-1.11/samples/bookinfo)
 * [Kubernetes kubectl documentation](https://kubernetes.io/docs/reference/kubectl/overview/)
 

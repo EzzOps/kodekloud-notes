@@ -86,12 +86,12 @@ Example trimmed console output from a successful run:
 Running on ubuntu-docker-jdk17-node20 in /home/jenkins-agent/workspace/n_solar-system_pipeline_scripted
 [Pipeline] {
 [Pipeline] tool
-Installing NodeJS from /var/lib/jenkins/caches/nodejs/LINUX/amd64/22.6.0.tar.gz to /home/jenkins-agent/tools/jenkins.plugins.nodejs.tools.NodeJSInstallation/nodejs-22-6-0 on ubuntu-docker-jdk17-node20
+Installing NodeJS from /var/[AWS_SECRET_ACCESS_KEY].6.0.tar.gz to /home/jenkins-agent/tools/jenkins.plugins.nodejs.tools.NodeJSInstallation/nodejs-22-6-0 on ubuntu-docker-jdk17-node20
 [Pipeline] stage
 [Pipeline] { (Checkout)
 [Pipeline] checkout
 Cloning the remote Git repository
-Checking out Revision a012a80153207ffb757c966314d750dce9709fbe (pipeline/scripted)
+Checking out Revision [AWS_SECRET_ACCESS_KEY] (pipeline/scripted)
 [Pipeline] }
 [Pipeline] // stage
 [Pipeline] stage

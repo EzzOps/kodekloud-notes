@@ -371,7 +371,7 @@ The Istio AuthorizationPolicy API supports:
 
 For authoritative documentation and examples, see the Istio Authorization Policy reference:
 
-* [https://istio.io/latest/docs/reference/config/security/authorization-policy/](https://istio.io/latest/docs/reference/config/security/authorization-policy/)
+* [https://istio.[AWS_SECRET_ACCESS_KEY]/authorization-policy/](https://istio.[AWS_SECRET_ACCESS_KEY]/authorization-policy/)
 
 <Frame>
   <img alt="The image shows a webpage from Istio's documentation discussing the &#x22;Authorization Policy,&#x22; which involves access control on workloads in the mesh. It outlines the use of CUSTOM, DENY, and ALLOW actions for access control." />
@@ -432,8 +432,8 @@ Quick reference table of core resources:
 
 | Resource              | Purpose                                                                                     | Where to learn more                                                                                            |
 | --------------------- | ------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- |
-| `PeerAuthentication`  | Configure peer (client-to-server) authentication and mTLS modes for workloads               | [Istio PeerAuthentication docs](https://istio.io/latest/docs/reference/config/security/peer_authentication/)   |
-| `AuthorizationPolicy` | Define allow/deny rules for workload access based on identity, request attributes, and more | [Istio AuthorizationPolicy docs](https://istio.io/latest/docs/reference/config/security/authorization-policy/) |
+| `PeerAuthentication`  | Configure peer (client-to-server) authentication and mTLS modes for workloads               | [Istio PeerAuthentication docs](https://istio.[AWS_SECRET_ACCESS_KEY]/peer_authentication/)   |
+| `AuthorizationPolicy` | Define allow/deny rules for workload access based on identity, request attributes, and more | [Istio AuthorizationPolicy docs](https://istio.[AWS_SECRET_ACCESS_KEY]/authorization-policy/) |
 
 Expect to answer these three core questions by the end of this lesson:
 

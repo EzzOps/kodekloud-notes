@@ -81,7 +81,7 @@ You should see output similar to the example below:
 Started by user sanjeev
 [Pipeline] Start of Pipeline
 [Pipeline] node
-Running on Jenkins in /var/lib/jenkins/workspace/HelloWorldPipeline
+Running on Jenkins in /var/[AWS_SECRET_ACCESS_KEY]
 [Pipeline] {
 [Pipeline] stage
 [Pipeline] { (Hello)

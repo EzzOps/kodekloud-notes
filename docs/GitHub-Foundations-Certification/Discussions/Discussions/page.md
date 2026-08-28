@@ -1,6 +1,6 @@
 # Discussions
 
-Source: https://notes.kodekloud.com/docs/GitHub-Foundations-Certification/Discussions/Discussions/page
+Source: https://notes.kodekloud.com/docs/GitHub-Foundations-[SECRET_REDACTED]
 
 Guidance on using GitHub Discussions including purpose, enabling and configuration steps, use cases, moderation roles, conversion between issues and discussions, and best practices for community engagement.
 

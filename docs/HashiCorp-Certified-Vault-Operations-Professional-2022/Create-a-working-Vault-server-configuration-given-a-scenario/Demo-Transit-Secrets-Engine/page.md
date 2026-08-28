@@ -4,11 +4,11 @@
 Repeat until `Rekey Progress: 3/3`:
 
 ```text theme={null}
-Key 1: C+YlFuzh0ds9hXmnbTs4QOy1cPvyTCKx8M4iklLDcu6D
-Key 2: c07ohvE7H53xFAYxrzl8xTTXGEUcQH39d9HdIcrdaj
-Key 3: gvxsl00uJKIwfq0h71sQRKHyC4fcI7svl9gdJ0DPNGp
-Key 4: AOJ5LJvl/bhyV+MF/9FBdZB/j0YGRdNi1kpEel7i3Vjt
-Key 5: KfHwPR7KVx4eDk4ZlaA2QoZ5IXVdXs1wQKOcY0cxpn
+Key 1: [SECRET_REDACTED]
+Key 2: [SECRET_REDACTED]
+Key 3: [SECRET_REDACTED]
+Key 4: [SECRET_REDACTED]
+Key 5: [SECRET_REDACTED]
 
 Vault rekeyed with 5 key shares and a key threshold of 3.
 Please securely distribute the key shares printed above.
@@ -23,7 +23,7 @@ Periodic encryption key rotation keeps your data encryption strong by refreshing
 ### 4.1 Configure Environment Variables
 
 ```bash theme={null}
-export VAULT_TOKEN=hvs.Wxqk6kDX3fAko3LoCCfczQ3D
+export VAULT_TOKEN=[VAULT_TOKEN]
 export VAULT_ADDR=http://127.0.0.1:8200
 ```
 

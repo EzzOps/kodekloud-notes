@@ -67,7 +67,7 @@ indicates the container generated a four.
 
 Next, we will create a Kubernetes Job named **throw-dice-job**. This Job uses the same pod definition (without extra commands) to determine how many attempts it takes to roll a six.
 
-For further details, refer to the official Kubernetes Jobs documentation [here](https://kubernetes.io/docs/concepts/workloads/controllers/job/).
+For further details, refer to the official Kubernetes Jobs documentation [here](https://kubernetes.io[AWS_SECRET_ACCESS_KEY]/).
 
 Create a file named **throw-dice-job.yaml** with the following content:
 

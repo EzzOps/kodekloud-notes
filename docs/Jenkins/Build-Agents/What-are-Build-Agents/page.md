@@ -74,5 +74,5 @@ By leveraging dedicated build agents, you ensure that your Jenkins environment r
 That’s it for this overview. With this foundation on build agents, you’re now ready to delve deeper into configuring and managing them for optimal CI/CD pipeline performance.
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins/module/1abff4aa-214c-48a2-98f1-2188e2e446bd/lesson/4c6cbd2c-81a3-4257-bbce-c98c48c32d9d" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[AWS_SECRET_ACCESS_KEY]-214c-48a2-98f1-2188e2e446bd/lesson/4c6cbd2c-81a3-4257-bbce-c98c48c32d9d" />
 </CardGroup>

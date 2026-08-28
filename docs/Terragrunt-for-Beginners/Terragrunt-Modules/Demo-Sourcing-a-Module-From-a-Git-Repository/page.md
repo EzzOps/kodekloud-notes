@@ -82,7 +82,7 @@ Example:
 ## Links and References
 
 * [Terraform Modules](https://www.terraform.io/language/modules)
-* [AWS S3 Bucket Resource](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/s3_bucket)
+* [AWS S3 Bucket Resource](https://registry.terraform.[SECRET_REDACTED]s3_bucket)
 * [Terragrunt Documentation](https://terragrunt.gruntwork.io/)
 * [Terraform Registry](https://registry.terraform.io/)
 

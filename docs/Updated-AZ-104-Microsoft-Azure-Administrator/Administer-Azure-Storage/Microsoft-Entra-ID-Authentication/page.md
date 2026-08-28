@@ -91,7 +91,7 @@ After configuring the service principal with the appropriate RBAC role, you can 
 
    ```json theme={null}
    {
-     "access_token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6ImYzYTA4MjJjZWVkZTc5Y2ExOWM3ZTA5MjcyYTY2MGE2MTA1YzBiYTciLCJ4NXAiOiJhbGciOiJSUzI1NiIsImtpZCI6ImYzYTA4MjJjZWVkZTc5Y2ExOWM3ZTA5MjcyYTY2MGE2MTA1YzBiYTci... (truncated for brevity)"
+     "access_token": "[SECRET_REDACTED]... (truncated for brevity)"
    }
    ```
 

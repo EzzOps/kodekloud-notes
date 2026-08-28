@@ -149,8 +149,8 @@ With logs centralized, you gain visibility into who accessed which service and w
 ## Links and References
 
 * [Istio Security Concepts](https://istio.io/latest/docs/concepts/security/)
-* [Mutual TLS Migration](https://istio.io/latest/docs/tasks/security/authentication/mtls-migration/)
-* [Authorization Policy Reference](https://istio.io/latest/docs/reference/config/security/authorization-policy/)
+* [Mutual TLS Migration](https://istio.io/latest[AWS_SECRET_ACCESS_KEY]-migration/)
+* [Authorization Policy Reference](https://istio.[AWS_SECRET_ACCESS_KEY]/authorization-policy/)
 * [Envoy Logging Configuration](https://istio.io/latest/docs/reference/config/istio.mesh.v1beta1/#MeshConfig)
 * [Kubernetes Documentation](https://kubernetes.io/docs/)
 

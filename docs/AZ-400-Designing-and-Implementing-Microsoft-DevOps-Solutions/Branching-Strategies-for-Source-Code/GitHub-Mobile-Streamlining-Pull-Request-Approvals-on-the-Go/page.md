@@ -87,7 +87,7 @@ Task          : Copy files
 Description   : Copy files from a source folder to a target folder using patterns matching file paths (not folder paths)
 Version       : 2.238.0
 Author        : Microsoft Corporation
-Help          : https://docs.microsoft.com/azure/devops/pipelines/tasks/utility/copy-files
+Help          : https://docs.microsoft.[AWS_SECRET_ACCESS_KEY]/copy-files
 =====================================================
 found 1 files
 Cleaning target folder: C:\agent\_work\5\wiki
@@ -118,8 +118,8 @@ Experiment with `--pretty=format` to tailor the output for your team’s workflo
 ## References
 
 * [Git Log Pretty Formats](https://git-scm.com/docs/git-log#_pretty_formats)
-* [Azure Pipelines Copy Files Task](https://docs.microsoft.com/azure/devops/pipelines/tasks/utility/copy-files)
-* [Azure Pipelines PowerShell Task](https://docs.microsoft.com/azure/devops/pipelines/tasks/utility/powershell)
+* [Azure Pipelines Copy Files Task](https://docs.microsoft.[AWS_SECRET_ACCESS_KEY]/copy-files)
+* [Azure Pipelines PowerShell Task](https://docs.microsoft.[AWS_SECRET_ACCESS_KEY]/powershell)
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/az-400/module/8e033a7f-4740-4d37-9f97-54ebc9c54fd1/lesson/b5253067-4499-43dc-abe9-bedad64639a1" />

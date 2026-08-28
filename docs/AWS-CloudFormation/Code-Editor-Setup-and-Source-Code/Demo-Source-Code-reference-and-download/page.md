@@ -55,7 +55,7 @@ Quick start recommendations
 Links and references
 
 * [AWS CloudFormation Documentation](https://docs.aws.amazon.com/cloudformation/index.html)
-* [AWS CLI CloudFormation commands](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/index.html)
+* [AWS CLI CloudFormation commands](https://docs.aws.amazon.[AWS_SECRET_ACCESS_KEY]index.html)
 * GitHub repo: [https://github.com/kodekloudhub/AWS-CloudFormation](https://github.com/kodekloudhub/AWS-CloudFormation)
 
 <CardGroup>

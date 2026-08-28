@@ -57,7 +57,7 @@ Common tag values you might use include:
 
 ## Links and references
 
-* [AWS CloudFormation — Working with stacks and stack updates](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks.html)
+* [AWS CloudFormation — Working with stacks and stack updates](https://docs.aws.amazon.com/[AWS_SECRET_ACCESS_KEY]-cfn-updating-stacks.html)
 * [AWS Tagging Best Practices](https://aws.amazon.com/answers/account-management/aws-tagging-strategies/)
 * [Amazon S3 — Using tags to manage access and billing](https://docs.aws.amazon.com/AmazonS3/latest/userguide/object-tagging.html)
 

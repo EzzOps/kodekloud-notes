@@ -106,7 +106,7 @@ The refactor reduces stage count (from \~20 to \~4–5), which is ideal for demo
 Sample console excerpt showing a Trivy DB download rate-limit error:
 
 ```text theme={null}
-+ trivy image siddharth67/solar-system:23ac3d5c61f666daf3f8795cc229693d3e3af78e \
++ trivy image siddharth67/solar-system:[AWS_SECRET_ACCESS_KEY] \
   --severity LOW,MEDIUM,HIGH --exit-code 0 --quiet --format json -o trivy-image-MEDIUM-results.json
 2024-11-10T03:03:22Z        FATAL    Fatal error   init error: DB error: failed to download vulnerability DB: database download error: oci download error: failed to fetch the layer: GET https://ghcr.io/v2/aquasecurity/trivy-db/blobs/sha256:...: TOOMANYREQUESTS: retry-after: 160.753µs, allowed: 44000/minute
 script returned exit code 1

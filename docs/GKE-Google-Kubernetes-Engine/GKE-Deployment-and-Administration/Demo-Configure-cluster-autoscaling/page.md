@@ -168,7 +168,7 @@ Congratulations! You’ve successfully configured cluster-level and node-pool–
 ## Links and References
 
 * [GKE Cluster Autoscaler Overview](https://cloud.google.com/kubernetes-engine/docs/concepts/cluster-autoscaler)
-* [gcloud container clusters create](https://cloud.google.com/sdk/gcloud/reference/container/clusters/create)
+* [gcloud container clusters create](https://cloud.google.com[AWS_SECRET_ACCESS_KEY]/create)
 * [Google Kubernetes Engine Documentation](https://cloud.google.com/kubernetes-engine/docs)
 
 <CardGroup>

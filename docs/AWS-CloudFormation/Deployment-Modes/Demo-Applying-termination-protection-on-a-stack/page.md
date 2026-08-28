@@ -61,8 +61,8 @@ Quick reference
 
 Further reading
 
-* [AWS CloudFormation — Stack deletion and termination protection](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-delete.html)
-* [AWS CloudFormation API: UpdateTerminationProtection](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_UpdateTerminationProtection.html)
+* [AWS CloudFormation — Stack deletion and termination protection](https://docs.aws.amazon.com/[AWS_SECRET_ACCESS_KEY]-cfn-delete.html)
+* [AWS CloudFormation API: UpdateTerminationProtection](https://docs.aws.amazon.[SECRET_REDACTED]API_UpdateTerminationProtection.html)
 
 Summary
 

@@ -91,7 +91,7 @@ In this setup, your local proxy forwards requests to the Kubernetes API server u
 Using kubectl proxy, you can also access services deployed within the cluster. For example, suppose you have an Nginx service running on a ClusterIP in the default namespace. Although not exposed externally via NodePort or LoadBalancer, you can access it locally by constructing the appropriate URL through the proxy:
 
 ```bash theme={null}
-curl http://localhost:8001/api/v1/namespaces/default/services/nginx/proxy/
+curl http://localhost:[AWS_SECRET_ACCESS_KEY]nginx/proxy/
 ```
 
 The response might look like the following HTML page:

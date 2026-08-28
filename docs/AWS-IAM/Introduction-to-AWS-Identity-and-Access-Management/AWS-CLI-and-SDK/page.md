@@ -54,7 +54,7 @@ Example:
 ```bash theme={null}
 $ aws configure
 AWS Access Key ID [None]: AKIAS7790KQGK63WUK6T5
-AWS Secret Access Key [None]: kkQEiBjSKrDkWBLO9G/JJKQWIOKL/CpHjMGyoiJWW
+AWS Secret Access Key [None]: [SECRET_REDACTED]
 Default region name [None]: us-east-1
 Default output format [None]: json
 ```
@@ -146,7 +146,7 @@ Once created, every user in the group inherits the attached policies automatical
 
 * [AWS CLI Documentation](https://docs.aws.amazon.com/cli/latest/userguide/)
 * [AWS SDK for JavaScript v3 Developer Guide](https://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/)
-* [Amazon Cognito Documentation](https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-identity-pools.html)
+* [Amazon Cognito Documentation](https://docs.aws.amazon.[SECRET_REDACTED]-user-identity-pools.html)
 * [Amazon Polly Documentation](https://docs.aws.amazon.com/polly/latest/dg/what-is.html)
 
 <CardGroup>

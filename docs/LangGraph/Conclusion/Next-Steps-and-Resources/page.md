@@ -69,5 +69,5 @@ Share your work to get feedback and inspire others. Use a project hashtag like `
 You’ve acquired valuable skills in designing, debugging, and scaling agentic systems. This is a fast-moving field — keep building, keep learning, and contribute when you can. You’re now part of a pioneering community shaping the future of intelligent workflows.
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langgraph/module/fba2d122-092f-42c8-bc27-0955ffaf786b/lesson/8b3bd0d4-c779-4d96-b9a0-bba83da47087" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[SECRET_REDACTED]-092f-42c8-bc27-0955ffaf786b/lesson/8b3bd0d4-c779-4d96-b9a0-bba83da47087" />
 </CardGroup>

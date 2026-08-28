@@ -318,7 +318,7 @@ Inspecting individual traces in Jaeger will show the attached resource attribute
 
 Links and references
 
-* [OpenTelemetry — Resources](https://opentelemetry.io/docs/reference/specification/resource/semantic_conventions/)
+* [OpenTelemetry — Resources](https://opentelemetry.[AWS_SECRET_ACCESS_KEY]/semantic_conventions/)
 * [Jaeger Tracing](https://www.jaegertracing.io/)
 * [OpenTelemetry Python SDK](https://opentelemetry.io/docs/instrumentation/python/)
 

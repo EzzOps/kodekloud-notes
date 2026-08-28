@@ -29,7 +29,7 @@ kubeadm init --apiserver-advertise-address $(hostname -i)
 
 kubectl apply -n kube-system -f "https://cloud.weave.works/k8s/net?k8s-version=$(kubectl version | base64 | tr -d '\n')"
 
-curl -L -s https://raw.githubusercontent.com/kubernetes/dashboard/master/src/deploy/recommended/kubernetes-dashboard.yaml | sed 's/targetPort: 8443/targetPort: 8443\n  type: LoadBalancer/' | kubectl apply -f -
+curl -L -s https://raw.githubusercontent.com[AWS_SECRET_ACCESS_KEY]recommended/kubernetes-dashboard.yaml | sed 's/targetPort: 8443/targetPort: 8443\n  type: LoadBalancer/' | kubectl apply -f -
 ```
 
 After executing these commands, you should see output similar to the snippet below:

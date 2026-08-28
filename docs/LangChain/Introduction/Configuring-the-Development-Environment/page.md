@@ -45,19 +45,19 @@ In the next section, we’ll introduce config generators to automate this proces
 
 ## References
 
-* [Kubernetes ConfigMap](https://kubernetes.io/docs/concepts/configuration/configmap/)
+* [Kubernetes ConfigMap](https://kubernetes.[AWS_SECRET_ACCESS_KEY]/)
 * [Kubernetes Secret](https://kubernetes.io/docs/concepts/configuration/secret/)
-* [kubectl rollout restart](https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands#rollout)
+* [kubectl rollout restart](https://kubernetes.io/[AWS_SECRET_ACCESS_KEY]-commands#rollout)
 * [Kubernetes Documentation](https://kubernetes.io/docs/)
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kustomize/module/51823d3e-7be4-4792-836a-2c4690c0c547/lesson/1481509c-b71c-4836-8e1b-d55117f5c673" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[SECRET_REDACTED]-7be4-4792-836a-2c4690c0c547/lesson/1481509c-b71c-4836-8e1b-d55117f5c673" />
 </CardGroup>
 
 
 # Configuring the Development Environment
 
-Source: https://notes.kodekloud.com/docs/LangChain/Introduction/Configuring-the-Development-Environment/page
+Source: https://notes.kodekloud.com[AWS_SECRET_ACCESS_KEY]-the-Development-Environment/page
 
 Guide to configuring a local Python environment for using the OpenAI API including installing Python and packages, creating and exporting an API key, and testing with curl and Jupyter
 

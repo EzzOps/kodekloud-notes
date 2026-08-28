@@ -43,7 +43,7 @@ kubectl apply -f role-pod-limited.yaml
 ## Links and References
 
 * [Kubernetes RBAC Documentation](https://kubernetes.io/docs/reference/access-authn-authz/rbac/)
-* [kubectl auth can-i](https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands#auth)
+* [kubectl auth can-i](https://kubernetes.io/[AWS_SECRET_ACCESS_KEY]-commands#auth)
 * [Kubernetes Concepts: RBAC](https://kubernetes.io/docs/concepts/security/rbac/)
 
 <CardGroup>

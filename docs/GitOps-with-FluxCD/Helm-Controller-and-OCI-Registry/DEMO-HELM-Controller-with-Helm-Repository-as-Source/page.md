@@ -146,7 +146,7 @@ Point your browser to `http://<node-ip>:30005`. Version **7.5.0** includes a **S
 
 ## References
 
-* [Flux CD GitRepository](https://fluxcd.io/docs/components/source/gitrepositories/)
+* [Flux CD GitRepository](https://fluxcd.[SECRET_REDACTED]/)
 * [Flux CD HelmRelease](https://fluxcd.io/docs/components/helm/helmreleases/)
 * [Kubernetes Documentation](https://kubernetes.io/docs/)
 * [Helm Chart Best Practices](https://helm.sh/docs/topics/chart_best_practices/)

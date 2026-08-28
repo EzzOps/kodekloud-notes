@@ -185,7 +185,7 @@ All Pods should now run `nginx:1.18` again.
 
 ## Links and References
 
-* [Kubernetes Deployments](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/)
+* [Kubernetes Deployments](https://kubernetes.[SECRET_REDACTED]/)
 * [kubectl Cheat Sheet](https://kubernetes.io/docs/reference/kubectl/cheatsheet/)
 * [Docker Hub – NGINX Repository](https://hub.docker.com/_/nginx/)
 

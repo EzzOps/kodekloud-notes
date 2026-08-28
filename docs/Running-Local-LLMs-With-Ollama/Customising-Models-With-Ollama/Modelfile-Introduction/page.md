@@ -1,5 +1,5 @@
 # Example output:
-# ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIH7Ief2QY2HB3PsazsapAGID8hBSf7rc3is9C/0ldmR
+# ssh-ed25519 [SECRET_REDACTED]
 ```
 
 5. Paste the key into your Ollama **Ollama Key** field and save.

@@ -153,7 +153,7 @@ Task                : Download pipeline artifact
 Description         : Download a named artifact from a pipeline to a local path
 Version             : 1.230.0
 Author              : Microsoft Corporation
-Help                : https://docs.microsoft.com/azure/devops/pipelines/tasks/utility/download-pipeline-artifact
+Help                : https://docs.microsoft.[AWS_SECRET_ACCESS_KEY]/download-pipeline-artifact
 =================================================================
 Download from the specified build: #7
 Download artifact to: /home/azureuser/myagent/_work/1/
@@ -175,7 +175,7 @@ azurerm_resource_group.example: Still creating... [00s elapsed]
 azurerm_resource_group.example: Still creating... [20s elapsed]
 azurerm_resource_group.example: Creation complete after 25s [id=/subscriptions/.../resourceGroups/example-pipeline-resources]
 azurerm_storage_account.example: Creating...
-azurerm_storage_account.example: Creation complete after 15s [id=/subscriptions/.../storageAccounts/examplestorageacc4765746]
+azurerm_storage_account.example: Creation complete after 15s [id=/subscriptions/.../[AWS_SECRET_ACCESS_KEY]]
 ```
 
 Disabling automatic runs
@@ -195,9 +195,9 @@ Links and references
 
 * Azure DevOps Pipelines: [https://docs.microsoft.com/azure/devops/pipelines/](https://docs.microsoft.com/azure/devops/pipelines/)
 * Terraform CLI docs: [https://www.terraform.io/docs/cli/index.html](https://www.terraform.io/docs/cli/index.html)
-* Azure Provider docs: [https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs)
-* PublishPipelineArtifact: [https://docs.microsoft.com/azure/devops/pipelines/tasks/utility/publish-pipeline-artifact](https://docs.microsoft.com/azure/devops/pipelines/tasks/utility/publish-pipeline-artifact)
-* DownloadPipelineArtifact: [https://docs.microsoft.com/azure/devops/pipelines/tasks/utility/download-pipeline-artifact](https://docs.microsoft.com/azure/devops/pipelines/tasks/utility/download-pipeline-artifact)
+* Azure Provider docs: [https://registry.terraform.io[AWS_SECRET_ACCESS_KEY]](https://registry.terraform.io[AWS_SECRET_ACCESS_KEY])
+* PublishPipelineArtifact: [https://docs.microsoft.[AWS_SECRET_ACCESS_KEY]/publish-pipeline-artifact](https://docs.microsoft.[AWS_SECRET_ACCESS_KEY]/publish-pipeline-artifact)
+* DownloadPipelineArtifact: [https://docs.microsoft.[AWS_SECRET_ACCESS_KEY]/download-pipeline-artifact](https://docs.microsoft.[AWS_SECRET_ACCESS_KEY]/download-pipeline-artifact)
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-on-azure/module/66c0006d-c716-4381-8b15-e4edb4f4fbe5/lesson/58e3a969-870c-4bb0-98bd-7ba796c58a54" />

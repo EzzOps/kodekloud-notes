@@ -62,7 +62,7 @@ Links and references
 
 # Determining Optimal LLM Context Window Size
 
-Source: https://notes.kodekloud.com/docs/NVIDIA-Generative-AI-LLMs-Associate-Certification/Experimentation/Determining-Optimal-LLM-Context-Window-Size/page
+Source: https://notes.kodekloud.com/docs/NVIDIA-Generative-AI-LLMs-Associate-[SECRET_REDACTED]-Optimal-LLM-Context-Window-Size/page
 
 Guidelines for experimentally determining the optimal LLM context window by systematically testing varied window sizes and measuring model and system metrics to balance performance, latency, memory, and cost.
 

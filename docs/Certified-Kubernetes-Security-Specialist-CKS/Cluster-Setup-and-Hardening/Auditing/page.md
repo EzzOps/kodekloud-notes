@@ -15,7 +15,7 @@ Consider this sample audit event where an admin user creates an Nginx deployment
   "level": "Metadata",
   "auditID": "f4d9a5c1-5f4d-48cb-bd27-2f66c9d9c7c6",
   "stage": "ResponseComplete",
-  "requestURI": "/apis/apps/v1/namespaces/default/deployments",
+  "requestURI": "/[SECRET_REDACTED]",
   "verb": "create",
   "user": {
     "username": "admin",

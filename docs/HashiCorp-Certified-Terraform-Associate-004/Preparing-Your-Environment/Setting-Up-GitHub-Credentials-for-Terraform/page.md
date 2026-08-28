@@ -98,7 +98,7 @@ provider "github" {
 }
 ```
 
-Provider documentation: [https://registry.terraform.io/providers/integrations/github/latest/docs](https://registry.terraform.io/providers/integrations/github/latest/docs)
+Provider documentation: [https://registry.terraform.[AWS_SECRET_ACCESS_KEY]docs](https://registry.terraform.[AWS_SECRET_ACCESS_KEY]docs)
 
 ## Troubleshooting & best practices
 
@@ -110,7 +110,7 @@ Provider documentation: [https://registry.terraform.io/providers/integrations/gi
 ## Links and references
 
 * [GitHub: Create a personal access token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token)
-* [Terraform GitHub provider documentation](https://registry.terraform.io/providers/integrations/github/latest/docs)
+* [Terraform GitHub provider documentation](https://registry.terraform.[AWS_SECRET_ACCESS_KEY]docs)
 * [GitHub fine-grained personal access tokens overview](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token)
 
 <CardGroup>

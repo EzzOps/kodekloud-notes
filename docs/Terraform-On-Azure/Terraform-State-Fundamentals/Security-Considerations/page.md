@@ -34,7 +34,7 @@ Summary — Key takeaways
 Further reading and references
 
 * Terraform state and remote backends: [https://www.terraform.io/docs/language/state/index.html](https://www.terraform.io/docs/language/state/index.html)
-* AzureRM provider documentation: [https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs)
+* AzureRM provider documentation: [https://registry.terraform.io[AWS_SECRET_ACCESS_KEY]](https://registry.terraform.io[AWS_SECRET_ACCESS_KEY])
 * Azure Storage Account networking docs: [https://learn.microsoft.com/azure/storage/common/storage-network-security-overview](https://learn.microsoft.com/azure/storage/common/storage-network-security-overview)
 
 <CardGroup>
@@ -145,7 +145,7 @@ Terraform state is both powerful and sensitive. Mishandling state can expose sec
 
 References and further reading
 
-* Terraform backends: [https://www.terraform.io/docs/language/settings/backends/index.html](https://www.terraform.io/docs/language/settings/backends/index.html)
+* Terraform backends: [https://www.terraform.[AWS_SECRET_ACCESS_KEY].html](https://www.terraform.[AWS_SECRET_ACCESS_KEY].html)
 * Terraform state documentation: [https://www.terraform.io/docs/state/index.html](https://www.terraform.io/docs/state/index.html)
 * Azure Storage security best practices: [https://learn.microsoft.com/azure/storage/common/storage-security-guide](https://learn.microsoft.com/azure/storage/common/storage-security-guide)
 * Terraform Cloud: [https://www.hashicorp.com/products/terraform/cloud](https://www.hashicorp.com/products/terraform/cloud)

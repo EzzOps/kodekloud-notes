@@ -38,7 +38,7 @@ When your API returns a response, it might look something like this:
   "user": {
     "id": 1,
     "email": "test@gmail.com",
-    "password": "$2a$10$2S2oB0vMagbEkDnaUfRM3u0sVaP5j8kt/XXXXwFuVJSERBkl6mmWC",
+    "password": "$2a$10$[SECRET_REDACTED]",
     "updatedAt": "2023-04-14T04:52:17.967Z",
     "createdAt": "2023-04-14T04:52:17.967Z"
   }
@@ -58,7 +58,7 @@ To reference variables in your requests, Postman uses the double curly braces sy
   "user": {
     "id": 1,
     "email": "{{email}}",
-    "password": "$2a$10$obV0dAgbEkDnaUlfRN3U0o5aVpSjktx/XXAViwFuVJ5ERHkL6mmWC",
+    "password": "$2a$10$[SECRET_REDACTED]",
     "updatedAt": "2023-04-14T04:52:17.962Z",
     "createdAt": "2023-04-14T04:52:17.962Z"
   }
@@ -96,7 +96,7 @@ If you wish to see how the API call is implemented in another language, such as 
 
 ```javascript theme={null}
 var myHeaders = new Headers();
-myHeaders.append("Cookie", "connect.sid=s%3AN3cYacsskyU8JuDOnpV1LWhX0W.pinNstEVnByodB4HSrstUsTASl5XIt2wCoZgudFk");
+myHeaders.append("Cookie", "connect.sid=s%3AN3cYacsskyU8JuDOnpV1LWhX0W.[AWS_SECRET_ACCESS_KEY]");
 
 var requestOptions = {
   method: 'GET',

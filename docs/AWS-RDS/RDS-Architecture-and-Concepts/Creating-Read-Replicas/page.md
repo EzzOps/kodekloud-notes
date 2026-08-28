@@ -101,7 +101,7 @@ When creating an Aurora cluster you can choose a Multi-AZ DB cluster option to p
 ## Links and references
 
 * [Amazon RDS - Read Replicas](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_ReadRepl.html)
-* [Amazon Aurora overview](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/what-is-Amazon-Aurora.html)
+* [Amazon Aurora overview](https://docs.aws.amazon.[SECRET_REDACTED]-is-Amazon-Aurora.html)
 * [AWS RDS Documentation](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Welcome.html)
 
 I hope this guide clarifies how to create and manage read replicas for Amazon RDS and how to choose the right deployment pattern for read scaling.

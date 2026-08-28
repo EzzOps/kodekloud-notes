@@ -115,7 +115,7 @@ After deploying, test the function again. You should receive a response similar 
 ```json theme={null}
 {
   "statusCode": 200,
-  "body": "\"Hashed Password: $2a$08$572qij5n5l9C9txulrmmOSoi2/a9/EHKyDjnThkA2bUjEic\""
+  "body": "\"Hashed Password: $2a$08$[SECRET_REDACTED]\""
 }
 ```
 

@@ -122,7 +122,7 @@ That wraps up our overview of the AWS CloudWatch Agent. In the next hands-on sec
 
 ## Links and References
 
-* [AWS CloudWatch Agent Documentation](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Install-CloudWatch-Agent.html)
+* [AWS CloudWatch Agent Documentation](https://docs.aws.amazon.[SECRET_REDACTED]-CloudWatch-Agent.html)
 * [CloudWatch Logs Insights](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CWL_QuerySyntax.html)
 * [AWS Systems Manager Agent](https://docs.aws.amazon.com/systems-manager/latest/userguide/ssm-agent.html)
 * [AWS CloudWatch Pricing](https://aws.amazon.com/cloudwatch/pricing/)

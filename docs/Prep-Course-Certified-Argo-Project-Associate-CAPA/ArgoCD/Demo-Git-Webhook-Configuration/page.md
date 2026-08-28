@@ -559,7 +559,7 @@ Example push notification payload (snippet)
 {
   "total_commits": 1,
   "head_commit": {
-    "id": "46585fdf428be401234aecb18b1931f34d51a009",
+    "id": "[AWS_SECRET_ACCESS_KEY]",
     "message": "Update nginx-app/deployment.yml",
     "timestamp": "2025-10-23T11:35:55Z",
     "modified": ["nginx-app/deployment.yml"]

@@ -160,5 +160,5 @@ Links and references
 * [Fundamentals of RAG (KodeKloud)](https://learn.kodekloud.com/user/courses/fundamentals-of-rag)
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langgraph/module/2e37c751-0429-43c9-8ecf-2df222ce0663/lesson/ea1e518a-33cd-4753-8635-5852a265b51b" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[SECRET_REDACTED]-0429-43c9-8ecf-2df222ce0663/lesson/ea1e518a-33cd-4753-8635-5852a265b51b" />
 </CardGroup>

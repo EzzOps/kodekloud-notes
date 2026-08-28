@@ -71,7 +71,7 @@ Traceback example:
 ```bash theme={null}
 (venv) jeremy@Jeremys-Mac-Studio fakedatagenerator % python3 main.py
 Traceback (most recent call last):
-  File "/Users/jeremy/Projects/fakedatagenerator/main.py", line 3, in <module>
+  File "/[AWS_SECRET_ACCESS_KEY]main.py", line 3, in <module>
     response = requests.test("https://api.github.com")
                    ^^^^^^^^^^^
 AttributeError: module 'requests' has no attribute 'test'

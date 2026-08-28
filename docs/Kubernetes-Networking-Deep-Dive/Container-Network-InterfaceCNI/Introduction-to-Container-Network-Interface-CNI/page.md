@@ -263,7 +263,7 @@ CNI delivers a standardized, extensible framework that streamlines Kubernetes ne
 ## References
 
 * [Kubernetes Networking Concepts](https://kubernetes.io/docs/concepts/cluster-administration/networking/)
-* [CNI Specification on GitHub](https://github.com/containernetworking/cni/blob/main/SPEC.md)
+* [CNI Specification on GitHub](https://github.[SECRET_REDACTED].md)
 * [Container Network Interface (CNI) Project](https://www.cncf.io/projects/container-network-interface/)
 
 <CardGroup>

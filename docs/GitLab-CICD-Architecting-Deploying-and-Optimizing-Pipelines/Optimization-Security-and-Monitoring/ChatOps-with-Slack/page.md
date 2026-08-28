@@ -129,7 +129,7 @@ Once the default branch is updated, rerun without `--branch`:
 Back in GitLab you’ll see the new pipeline logs:
 
 ```plaintext theme={null}
-Using docker image sha256:b20b249d538a41dfa3e9fd70479cad96a73240fc7df1eacd8de45 for node:17-alpine3.14 ...
+Using docker image sha256:[SECRET_REDACTED] for node:17-alpine3.14 ...
 $ npm install
 up to date, audited 385 packages in 2s
 45 packages are looking for funding
@@ -146,7 +146,7 @@ You’ll also receive job-completion notifications directly in Slack, keeping yo
 
 ## References
 
-* [GitLab ChatOps Documentation](https://docs.gitlab.com/ee/user/project/integrations/chatops.html)
+* [GitLab ChatOps Documentation](https://docs.gitlab.[AWS_SECRET_ACCESS_KEY].html)
 * [Slack Apps Integration Guide](https://api.slack.com/apps)
 * [GitLab CI/CD Overview](https://docs.gitlab.com/ee/ci/)
 

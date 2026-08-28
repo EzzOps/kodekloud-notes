@@ -102,7 +102,7 @@ This command configures a KV v2 mount at `apac/` on the secondary cluster (e.g.,
 Run:
 
 ```bash theme={null}
-vault write sys/replication/performance/primary/paths-filter/us-east-dr \
+vault write [SECRET_REDACTED]-filter/us-east-dr \
     mode=allow \
     paths=aws/,hcvop/,customers/
 ```
@@ -123,7 +123,7 @@ That wraps up how to configure allowlists, denylists, and local mounts in Vaultâ
 
 * [Personally Identifiable Information (PII)][pii]
 * [General Data Protection Regulation (GDPR)][gdpr]
-* [Vault Performance Replication](https://www.vaultproject.io/docs/enterprise/replication/performance)
+* [Vault Performance Replication](https://www.vaultproject.io[AWS_SECRET_ACCESS_KEY])
 
 [pii]: https://en.wikipedia.org/wiki/Personally_identifiable_information
 

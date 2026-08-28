@@ -270,7 +270,7 @@ For further reading, consider exploring:
 Enhance your model management workflows by integrating these saving and loading strategies into your projects. Happy coding!
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/pytorch/module/b8cb82ae-a284-41d1-8469-7e60705bbab8/lesson/34b3e0de-921b-4b2d-aad4-3467732ea1cf" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[AWS_SECRET_ACCESS_KEY]-a284-41d1-8469-7e60705bbab8/lesson/34b3e0de-921b-4b2d-aad4-3467732ea1cf" />
 </CardGroup>
 
 
@@ -376,5 +376,5 @@ For more detailed guidance on neural network implementations and advanced techni
 Happy coding and learning!
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/pytorch/module/b8cb82ae-a284-41d1-8469-7e60705bbab8/lesson/4d48093e-84ad-4187-894c-ed7ba631f898" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[AWS_SECRET_ACCESS_KEY]-a284-41d1-8469-7e60705bbab8/lesson/4d48093e-84ad-4187-894c-ed7ba631f898" />
 </CardGroup>

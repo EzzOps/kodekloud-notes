@@ -26,7 +26,7 @@ Terraform will perform the following actions:
       directory_permission = "0777"
       file_permission      = "0777"
       filename            = "/root/pet.txt"
-      ~ id                 = "bc9cabef1d8b0071d3c4ae9959a9c328f35fe697" -> (known after apply)
+      ~ id                 = "[AWS_SECRET_ACCESS_KEY]" -> (known after apply)
 }
 
 # random_pet.my-pet must be replaced
@@ -40,7 +40,7 @@ Terraform will perform the following actions:
 Plan: 2 to add, 0 to change, 2 to destroy.
 random_pet.my-pet: Destroying... [id=Mrs.hen]
 random_pet.my-pet: Destruction complete after 0s
-local_file.pet: Destroying... [id=bc9cabef1d8b0071d3c4ae9959a9c328f35fe697]
+local_file.pet: Destroying... [id=[AWS_SECRET_ACCESS_KEY]]
 local_file.pet: Destruction complete after 0s
 random_pet.my-pet: Creating...
 local_file.pet: Creating...

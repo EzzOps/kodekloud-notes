@@ -58,8 +58,8 @@ $ node_filesystem_avail_bytes < 6000000 or node_filesystem_avail_bytes > 1000000
 
 Further reading and references:
 
-* Prometheus PromQL documentation: [https://prometheus.io/docs/prometheus/latest/querying/basics/](https://prometheus.io/docs/prometheus/latest/querying/basics/)
-* PromQL operators and expressions: [https://prometheus.io/docs/prometheus/latest/querying/operators/](https://prometheus.io/docs/prometheus/latest/querying/operators/)
+* Prometheus PromQL documentation: [https://prometheus.[SECRET_REDACTED]/](https://prometheus.[SECRET_REDACTED]/)
+* PromQL operators and expressions: [https://prometheus.[SECRET_REDACTED]/](https://prometheus.[SECRET_REDACTED]/)
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prometheus-certified-associate-pca/module/b4de09eb-de60-4a9d-a193-b6f74f9889a3/lesson/d8a05d2c-75ff-489e-b5c8-5b9de1d1156a" />
@@ -223,8 +223,8 @@ Tip: Use an online Unix epoch converter, such as [https://www.epochconverter.com
 
 ## Links and references
 
-* [Prometheus query basics](https://prometheus.io/docs/prometheus/latest/querying/basics/)
-* [PromQL operators and functions](https://prometheus.io/docs/prometheus/latest/querying/operators/)
+* [Prometheus query basics](https://prometheus.[SECRET_REDACTED]/)
+* [PromQL operators and functions](https://prometheus.[SECRET_REDACTED]/)
 * [Grafana documentation](https://grafana.com/docs/grafana/latest/)
 * [Unix epoch converter](https://www.epochconverter.com/)
 

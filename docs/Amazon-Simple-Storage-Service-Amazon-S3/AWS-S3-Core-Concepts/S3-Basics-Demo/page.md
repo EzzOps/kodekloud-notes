@@ -37,7 +37,7 @@ Otherwise, you’ll see your existing buckets and the **Create bucket** option:
 </Frame>
 
 <Callout icon="lightbulb">
-  For bucket naming rules (character limits, allowed characters, and examples), see the [Bucket Naming Rules](https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucketnamingrules.html).
+  For bucket naming rules (character limits, allowed characters, and examples), see the [Bucket Naming Rules](https://docs.aws.amazon.[SECRET_REDACTED].html).
 </Callout>
 
 3. Choose a unique name (for example, `kodekloud-demo-123`):
@@ -139,7 +139,7 @@ Attempting to GET the object URL anonymously returns:
   <Code>AccessDenied</Code>
   <Message>Access Denied</Message>
   <RequestId>PXX0A25XAZ252WZ0</RequestId>
-  <HostId>Rh0s1Dk51BtkU1N0BXY4j2p2KLvWeg5eSu/Ry1NkxAMXFtbFQKTg=</HostId>
+  <HostId>[SECRET_REDACTED]=</HostId>
 </Error>
 ```
 
@@ -208,7 +208,7 @@ To delete an S3 bucket, it must be empty:
 ## Links and References
 
 * [Amazon S3 Documentation](https://docs.aws.amazon.com/s3/index.html)
-* [Bucket Naming Rules](https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucketnamingrules.html)
+* [Bucket Naming Rules](https://docs.aws.amazon.[SECRET_REDACTED].html)
 * [AWS Management Console](https://aws.amazon.com/console/)
 
 <CardGroup>

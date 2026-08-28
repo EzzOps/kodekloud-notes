@@ -165,7 +165,7 @@ When you send the signup request, the API responds with user information similar
   "user": {
     "id": 1,
     "email": "test@gmail.com",
-    "password": "$2b$12$S0vD0WgEbDNuUfRMJ0UsaVgPsJbkIkt/XXAiuwfuVJ5ERBKl6mmHC",
+    "password": "$2b$12$[SECRET_REDACTED]",
     "updatedAt": "2023-04-14T04:52:17.962Z",
     "createdAt": "2023-04-14T04:52:17.962Z"
   }

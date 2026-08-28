@@ -83,9 +83,9 @@ Quick checklist before importing an S3 bucket
 
 Links and references
 
-* AWS CloudFormation Import Resources: [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/resource-import.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/resource-import.html)
-* AWS CloudFormation resource type: AWS::S3::Bucket: [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket.html)
-* Amazon S3 documentation: [https://docs.aws.amazon.com/AmazonS3/latest/userguide/UsingBucket.html](https://docs.aws.amazon.com/AmazonS3/latest/userguide/UsingBucket.html)
+* AWS CloudFormation Import Resources: [https://docs.aws.amazon.[SECRET_REDACTED]-import.html](https://docs.aws.amazon.[SECRET_REDACTED]-import.html)
+* AWS CloudFormation resource type: AWS::S3::Bucket: [https://docs.aws.amazon.[SECRET_REDACTED]-properties-s3-bucket.html](https://docs.aws.amazon.[SECRET_REDACTED]-properties-s3-bucket.html)
+* Amazon S3 documentation: [https://docs.aws.amazon.[SECRET_REDACTED].html](https://docs.aws.amazon.[SECRET_REDACTED].html)
 
 That’s the basic workflow for importing an existing S3 bucket into a CloudFormation stack and ensuring it’s retained if the stack is removed.
 

@@ -129,22 +129,22 @@ Example filtered console output (trimmed for clarity):
 Push event to branch feature/advanced-demo
 Looking up repository dasher-org/solar-system
 Querying the current revision of branch feature/advanced-demo...
-Current revision of branch feature/advanced-demo is be7046f8afc8f0d94abe5087385a795d8058c870
-Obtained Jenkinsfile from be7046f8afc8f0d94abe5087385a795d8058c870
+Current revision of branch feature/advanced-demo is [AWS_SECRET_ACCESS_KEY]
+Obtained Jenkinsfile from [AWS_SECRET_ACCESS_KEY]
 Resume disabled by user, switching to high-performance, low-durability mode.
 Loading library dasher-trusted-shared-library@main
 Attempting to resolve main from remote references...
 > git --version # timeout=10
 > git --version # 'git version 2.43.0'
 > git ls-remote -h - http://64.227.187.25:5555/dasher-org/shared-libraries # timeout=10
-Found match: refs/heads/main revision 7f3b5364988c4b8e2225fa98b35a723f8df64543
+Found match: refs/heads/main revision [AWS_SECRET_ACCESS_KEY]
 No credentials specified
 Cloning the remote Git repository
 Cloning repository http://64.227.187.25:5555/dasher-org/shared-libraries
 > git init /var/lib/jenkins/workspace/solar-system_feature_advanced-demo@libs/... # timeout=10
 Fetching upstream changes from http://64.227.187.25:5555/dasher-org/shared-libraries
 > git fetch --no-tags --force --progress -- http://64.227.187.25:5555/dasher-org/shared-libraries +refs/heads/*:refs/remotes/origin/* # timeout=10
-Found revision 7f3b5364988c4b8e2225fa98b35a723f8df64543
+Found revision [AWS_SECRET_ACCESS_KEY]
 ```
 
 Later in the log you should also see the Slack send step showing the values provided by the shared library:

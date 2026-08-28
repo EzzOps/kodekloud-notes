@@ -143,7 +143,7 @@ Below is a trimmed example of the JSON GitHub sends on a push:
 {
   "ref": "refs/heads/main",
   "before": "45be219a25dfe24f251196152de6df004b7c02e",
-  "after": "2d66f5307c8f2d0d9ea1e6b1982ef187f8b33a21",
+  "after": "[AWS_SECRET_ACCESS_KEY]",
   "repository": {
     "id": 376897057,
     "name": "devsecops-k8s-demo",

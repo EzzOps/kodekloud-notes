@@ -178,7 +178,7 @@ During the Jenkins build, multiple stages are executed. Here’s an overview:
 * **Image Tagging:** The newly built image is tagged to include the build ID and commit details:
 
   ```bash theme={null}
-  docker tag solar-system:latest siddharth67/solar-system:1-f42550fcabef2842074ee16fa005fec3e4d5e8e4
+  docker tag solar-system:latest siddharth67/solar-system:1-[AWS_SECRET_ACCESS_KEY]
   ```
 
 * **Push Stage:** The image is pushed to Docker Hub with layered progress shown in the logs.

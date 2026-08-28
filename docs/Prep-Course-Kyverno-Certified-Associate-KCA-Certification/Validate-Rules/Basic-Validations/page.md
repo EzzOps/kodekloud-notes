@@ -223,7 +223,7 @@ Further reading and references
 
 * Kyverno Documentation — Policies and Autogen (see Kyverno docs for the latest details).
 * Kubernetes API conventions and controller patterns:
-  * [Kubernetes Controllers](https://kubernetes.io/docs/concepts/architecture/controller/)
+  * [Kubernetes Controllers](https://kubernetes.[AWS_SECRET_ACCESS_KEY]/)
   * [Pod Template spec paths](https://kubernetes.io/docs/concepts/workloads/controllers/)
 
 Using autogen will dramatically simplify your policy set and make it more robust and maintainable.

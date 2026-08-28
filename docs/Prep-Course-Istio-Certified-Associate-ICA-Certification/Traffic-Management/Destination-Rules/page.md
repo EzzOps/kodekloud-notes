@@ -491,8 +491,8 @@ DestinationRules enable resilience and fine-grained control of service-to-servic
 
 References:
 
-* [Istio DestinationRule reference](https://istio.io/latest/docs/reference/config/networking/destination-rule/)
-* [Istio VirtualService reference](https://istio.io/latest/docs/reference/config/networking/virtual-service/)
+* [Istio DestinationRule reference](https://istio.io[AWS_SECRET_ACCESS_KEY]/destination-rule/)
+* [Istio VirtualService reference](https://istio.io[AWS_SECRET_ACCESS_KEY]/virtual-service/)
 * [Kubernetes Services](https://kubernetes.io/docs/concepts/services-networking/service/)
 
 <Frame>

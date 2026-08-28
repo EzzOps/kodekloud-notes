@@ -158,7 +158,7 @@ After writing your configuration files, use the following steps to provision you
    Enter a value: yes
    local_file.pet: Creating...
    local_file.pet: Creation complete after 0s
-   [id=521c5c732c78cb42cc9513ecc7c0638c4a115b55]
+   [id=[AWS_SECRET_ACCESS_KEY]]
    Apply complete! Resources: 1 added, 0 changed, 0 destroyed.
    ```
 
@@ -172,7 +172,7 @@ After writing your configuration files, use the following steps to provision you
      directory_permission = "0777"
      file_permission      = "0777"
      filename             = "/root/pets.txt"
-     id                   = "cba595b7d9f94ba1107a46f3f731912d95fb3d2c"
+     id                   = "[AWS_SECRET_ACCESS_KEY]"
    }
    ```
 

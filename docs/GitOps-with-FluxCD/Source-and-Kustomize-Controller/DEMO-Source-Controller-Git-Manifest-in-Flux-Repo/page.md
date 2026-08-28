@@ -160,8 +160,8 @@ Open your browser at `http://<NODE_IP>:<NODE_PORT>`. You’ll see the updated �
 
 ## Links and References
 
-* [FluxCD Source Toolkit – GitRepository](https://fluxcd.io/docs/components/source/gitrepositories/)
-* [FluxCD Kustomize Toolkit – Kustomization](https://fluxcd.io/docs/components/kustomize/kustomization/)
+* [FluxCD Source Toolkit – GitRepository](https://fluxcd.[SECRET_REDACTED]/)
+* [FluxCD Kustomize Toolkit – Kustomization](https://fluxcd.io[AWS_SECRET_ACCESS_KEY]/)
 * [Kubernetes Documentation](https://kubernetes.io/docs/)
 * [GitOps with FluxCD](https://fluxcd.io/)
 * [Docker Hub – block-buster-dev Image](https://hub.docker.com/)

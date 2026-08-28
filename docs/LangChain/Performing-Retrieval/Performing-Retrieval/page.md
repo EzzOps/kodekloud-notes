@@ -59,7 +59,7 @@ Links and references:
 This completes loading a webpage and preparing it for chunking and embedding. From here, you can proceed to create embeddings, insert into a vector store (e.g., Pinecone, FAISS, Milvus), and build retrieval-augmented prompts for downstream applications.
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langchain/module/e47b44c9-65c3-46f8-8bed-b075a18ab12b/lesson/c29062bc-7d53-4855-b98e-c9cb5ae6cbe3" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[SECRET_REDACTED]-65c3-46f8-8bed-b075a18ab12b/lesson/c29062bc-7d53-4855-b98e-c9cb5ae6cbe3" />
 </CardGroup>
 
 

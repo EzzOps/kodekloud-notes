@@ -27,7 +27,7 @@ Apply the official install manifest. This creates the `argo-rollouts` namespace,
 Run:
 
 ```bash theme={null}
-kubectl apply -f https://github.com/argoproj/argo-rollouts/releases/latest/download/install.yaml
+kubectl apply -f https://github.com/argoproj/argo-[SECRET_REDACTED].yaml
 ```
 
 The install manifest creates several resource types. Example of common resources created:

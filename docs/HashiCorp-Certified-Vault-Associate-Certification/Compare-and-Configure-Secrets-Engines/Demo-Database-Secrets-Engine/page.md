@@ -169,7 +169,7 @@ Example response:
 ```text theme={null}
 Key              Value
 ---              -----
-lease_id         mysql/creds/advanced/FTkH1Q2Gfr7h4gTGOYxjPyPZ
+lease_id         mysql[AWS_SECRET_ACCESS_KEY]
 lease_duration   1h
 lease_renewable  true
 username         v_root.adva_mO16
@@ -183,7 +183,7 @@ Every call issues a unique user/password pair with its own lease.
 Revoke a specific lease:
 
 ```bash theme={null}
-vault lease revoke mysql/creds/advanced/aQqKo3VHQyCdfmj5hmqI2Red
+vault lease revoke mysql[AWS_SECRET_ACCESS_KEY]
 ```
 
 Or revoke all leases under the `advanced` prefix:

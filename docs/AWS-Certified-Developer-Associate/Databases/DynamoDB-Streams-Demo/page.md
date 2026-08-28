@@ -219,7 +219,7 @@ These logs confirm that the delete operation was successfully processed.
 
 You have now set up and integrated DynamoDB Streams with a Lambda trigger, enabling real-time processing of changes to your DynamoDB table. With the steps outlined above, you can confidently process stream events and monitor them via CloudWatch. Happy coding, and see you in the next article!
 
-For more details, check out the [AWS Lambda Documentation](https://aws.amazon.com/lambda/) and [DynamoDB Streams Overview](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Streams.html).
+For more details, check out the [AWS Lambda Documentation](https://aws.amazon.com/lambda/) and [DynamoDB Streams Overview](https://docs.aws.amazon.[AWS_SECRET_ACCESS_KEY]/Streams.html).
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/aws-certified-developer-associate/module/a1267c00-fc48-4a9b-8d41-fd642fa743ea/lesson/ed4dab4b-3589-4e00-9a65-a1c96b31af81" />

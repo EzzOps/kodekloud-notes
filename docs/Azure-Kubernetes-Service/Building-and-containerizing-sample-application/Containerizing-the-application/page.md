@@ -113,7 +113,7 @@ docker rm -f corecloudapp
 
 * [Docker run reference](https://docs.docker.com/engine/reference/commandline/run/)
 * [Docker exec reference](https://docs.docker.com/engine/reference/commandline/exec/)
-* [ASP.NET Core Configuration](https://docs.microsoft.com/aspnet/core/fundamentals/configuration/)
+* [ASP.NET Core Configuration](https://docs.microsoft.[SECRET_REDACTED]/)
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/azure-kubernetes-service/module/20789863-851c-44c5-a251-8cb7f78f60b5/lesson/842663e4-cc03-45d9-bdf3-5990500de60b" />

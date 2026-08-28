@@ -110,7 +110,7 @@ Example console output:
 </Callout>
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langchain/module/ae260750-791b-496c-991f-0d0333f61e40/lesson/0a72e0ca-6e2c-41db-b741-2a1763894c11" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[SECRET_REDACTED]-791b-496c-991f-0d0333f61e40/lesson/0a72e0ca-6e2c-41db-b741-2a1763894c11" />
 </CardGroup>
 
 

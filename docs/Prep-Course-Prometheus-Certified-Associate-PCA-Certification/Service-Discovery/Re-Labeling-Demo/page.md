@@ -276,8 +276,8 @@ After applying and reloading, the `path` label will appear in metric output:
 
 Useful references
 
-* Prometheus relabeling documentation: [https://prometheus.io/docs/prometheus/latest/configuration/relabeling/](https://prometheus.io/docs/prometheus/latest/configuration/relabeling/)
-* Prometheus scrape configuration: [https://prometheus.io/docs/prometheus/latest/configuration/configuration/#scrape\_configurations](https://prometheus.io/docs/prometheus/latest/configuration/configuration/#scrape_configurations)
+* Prometheus relabeling documentation: [https://prometheus.[AWS_SECRET_ACCESS_KEY]relabeling/](https://prometheus.[AWS_SECRET_ACCESS_KEY]relabeling/)
+* Prometheus scrape configuration: [https://prometheus.[AWS_SECRET_ACCESS_KEY]configuration/#scrape\_configurations](https://prometheus.[AWS_SECRET_ACCESS_KEY]configuration/#scrape_configurations)
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prometheus-certified-associate-pca/module/20a3a57d-ee2d-4096-888e-de1166cf7e3a/lesson/18126b6c-f0b9-473c-8a63-87c4243942fd" />

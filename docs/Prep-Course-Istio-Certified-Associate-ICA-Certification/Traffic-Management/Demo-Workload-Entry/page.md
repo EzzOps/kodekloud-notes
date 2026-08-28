@@ -79,7 +79,7 @@ spec:
 
 ## Links and References
 
-* [Istio VirtualService API reference](https://istio.io/latest/docs/reference/config/networking/virtual-service/)
+* [Istio VirtualService API reference](https://istio.io[AWS_SECRET_ACCESS_KEY]/virtual-service/)
 * [Envoy retry and timeout behavior](https://www.envoyproxy.io/docs/envoy/latest/intro/arch_overview/upstream/retry)
 * [Kubernetes Documentation](https://kubernetes.io/docs/)
 

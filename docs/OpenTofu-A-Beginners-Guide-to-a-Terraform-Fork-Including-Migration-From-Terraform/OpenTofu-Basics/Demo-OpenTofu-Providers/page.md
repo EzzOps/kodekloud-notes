@@ -161,7 +161,7 @@ terraform {
 
 * [OpenTofu Documentation](https://docs.opentofu.org/)
 * [Terraform Language Configuration](https://www.terraform.io/docs/language/index.html)
-* [Local File Provider](https://registry.terraform.io/providers/hashicorp/local/latest/docs/resources/file)
+* [Local File Provider](https://registry.terraform.[AWS_SECRET_ACCESS_KEY]/resources/file)
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/c3586b29-e450-4c95-bad9-91bdf332eb24/lesson/be7c20bb-e42e-44fc-b48a-316bbc5c0c05" />

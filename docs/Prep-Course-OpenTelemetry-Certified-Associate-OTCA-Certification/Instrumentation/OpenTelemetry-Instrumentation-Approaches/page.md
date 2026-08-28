@@ -292,7 +292,7 @@ This article covered instrumentation libraries.
 
 # OpenTelemetry Instrumentation Approaches
 
-Source: https://notes.kodekloud.com/docs/Prep-Course-OpenTelemetry-Certified-Associate-OTCA-Certification/Instrumentation/OpenTelemetry-Instrumentation-Approaches/page
+Source: https://notes.kodekloud.com/docs/Prep-Course-OpenTelemetry-Certified-Associate-OTCA-[SECRET_REDACTED]-Instrumentation-Approaches/page
 
 Overview of OpenTelemetry instrumentation approaches including manual, library-based, and auto-instrumentation, how to create custom spans, evaluate trade-offs, and practical recommendations for application observability
 

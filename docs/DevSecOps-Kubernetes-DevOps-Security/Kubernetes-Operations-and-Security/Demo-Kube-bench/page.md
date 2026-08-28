@@ -145,11 +145,11 @@ Open the resulting PCAP in [Wireshark](https://www.wireshark.org/) and inspect T
 
 ***
 
-In this lesson, you learned how to manage mTLS modes with Istio’s [PeerAuthentication API](https://istio.io/latest/docs/reference/config/security/peer_authentication/) and verify traffic encryption. Next, explore securing ingress traffic using the [Istio ingress gateway](https://istio.io/latest/docs/tasks/traffic-management/ingress/ingress-control/).
+In this lesson, you learned how to manage mTLS modes with Istio’s [PeerAuthentication API](https://istio.[AWS_SECRET_ACCESS_KEY]/peer_authentication/) and verify traffic encryption. Next, explore securing ingress traffic using the [Istio ingress gateway](https://istio.io/latest/docs/tasks/traffic-management/ingress/ingress-control/).
 
 ## Links and References
 
-* [Istio PeerAuthentication API](https://istio.io/latest/docs/reference/config/security/peer_authentication/)
+* [Istio PeerAuthentication API](https://istio.[AWS_SECRET_ACCESS_KEY]/peer_authentication/)
 * [Kiali Documentation](https://www.kiali.io/documentation/)
 * [Wireshark](https://www.wireshark.org/)
 * [ksniff Plugin](https://krew.sigs.k8s.io/plugins/ksniff)

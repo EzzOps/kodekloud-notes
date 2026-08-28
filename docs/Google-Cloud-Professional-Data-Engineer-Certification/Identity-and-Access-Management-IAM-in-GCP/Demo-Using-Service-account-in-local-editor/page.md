@@ -109,7 +109,7 @@ Below is an example of the JSON key file you download from the Cloud Console. Yo
 {
   "type": "service_account",
   "project_id": "kodekloud-gcp-training",
-  "private_key_id": "79980d36ed10010b4098be95fcf3ccdbf36bc404",
+  "private_key_id": "[AWS_SECRET_ACCESS_KEY]",
   "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASC...\n-----END PRIVATE KEY-----\n",
   "client_email": "kodekloud-test-sa@kodekloud-gcp-training.iam.gserviceaccount.com",
   "client_id": "115919895903955568351",

@@ -4,15 +4,15 @@
     directory_permission = "0777"
   ~ file_permission       = "0777" -> "0700" # forces replacement
     filename             = "/root/pet.txt"
-  ~ id                   = "5f8fb950ac60f7f23ef968097cda0a1fd3c11bdf" -> (known after apply)
+  ~ id                   = "[AWS_SECRET_ACCESS_KEY]" -> (known after apply)
 }
 Plan: 1 to add, 0 to change, 1 to destroy.
 
 local_file.pet: Destroying...
-[id=5f8fb950ac60f7f23ef968097cda0a1fd3c11bdf]
+[id=[AWS_SECRET_ACCESS_KEY]]
 local_file.pet: Destruction complete after 0s
 local_file.pet: Creating...
-[id=5f8fb950ac60f7f23ef968097cda0a1fd3c11bdf]
+[id=[AWS_SECRET_ACCESS_KEY]]
 
 Apply complete! Resources: 1 added, 0 changed, 1 destroyed.
 ```
@@ -53,9 +53,9 @@ $ terraform apply
 Plan: 1 to add, 0 to change, 1 to destroy.
 ...
 local_file.pet: Creating...
-local_file.pet: Creation complete after 0s [id=5f8fb950ac60f723ef968097cda0a1fd3c11bdf]
+local_file.pet: Creation complete after 0s [id[AWS_SECRET_ACCESS_KEY]]
 local_file.pet: Destroying...
-local_file.pet: Destruction complete after 0s [id=5f8fb950ac60f723ef968097cda0a1fd3c11bdf]
+local_file.pet: Destruction complete after 0s [id[AWS_SECRET_ACCESS_KEY]]
 Apply complete! Resources: 1 added, 0 changed, 1 destroyed.
 ```
 
@@ -80,7 +80,7 @@ If you run `terraform apply` and the plan includes destroying the resource, Terr
 ```bash theme={null}
 $ terraform apply
 local_file.my-pet: Refreshing state...
-[id=cba595b7d9f94ba1107a46f731912d95fb3d2c]
+[[SECRET_REDACTED]]
 Error: Instance cannot be destroyed
 
 on main.tf line 1:

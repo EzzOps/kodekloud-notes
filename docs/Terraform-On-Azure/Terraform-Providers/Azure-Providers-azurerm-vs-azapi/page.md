@@ -26,7 +26,7 @@ Best practices and considerations
 | Topic             | Recommendation                                                                                                           | Example / Notes                                                                                                                  |
 | ----------------- | ------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------- |
 | Default provider  | If you want a fallback, configure a non-aliased `azurerm` provider block.                                                | `provider "azurerm" { features {} }`                                                                                             |
-| Credentials       | Avoid hard-coding secrets. Use environment variables, service principals, or managed identities.                         | See [Azure authentication for Terraform](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/guides/azure_cli) |
+| Credentials       | Avoid hard-coding secrets. Use environment variables, service principals, or managed identities.                         | See [Azure authentication for Terraform](https://registry.terraform.io[AWS_SECRET_ACCESS_KEY]/guides/azure_cli) |
 | Modules           | Pass providers into modules using the `providers` argument if module resources must target a specific provider instance. | `module "x" { source = "./module" providers = { azurerm = azurerm.weu } }`                                                       |
 | Naming            | Use concise alias names that indicate region or purpose (e.g., `weu`, `qc`, `prod`, `stg`).                              | Clear aliases reduce configuration confusion.                                                                                    |
 | Secret management | Store subscription IDs and sensitive variables in secure storage (Key Vault, secrets manager, or CI secret stores).      | Avoid committing secrets to VCS.                                                                                                 |
@@ -55,9 +55,9 @@ Provider aliases enable safe, maintainable multi-region and multi-subscription d
 
 Further reading and references
 
-* [Terraform Providers — Multiple Provider Configurations](https://www.terraform.io/docs/language/providers/configuration.html)
-* [AzureRM Provider Documentation](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs)
-* [Azure authentication options for Terraform](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/guides/azure_cli)
+* [Terraform Providers — Multiple Provider Configurations](https://www.terraform.[AWS_SECRET_ACCESS_KEY].html)
+* [AzureRM Provider Documentation](https://registry.terraform.io[AWS_SECRET_ACCESS_KEY])
+* [Azure authentication options for Terraform](https://registry.terraform.io[AWS_SECRET_ACCESS_KEY]/guides/azure_cli)
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-on-azure/module/eeac3f53-157e-493c-a726-7e5d9190c4c3/lesson/d9f29a5c-d620-4796-98b5-2a3fbf90c981" />

@@ -259,7 +259,7 @@ Then add `rg_name2` to `variables.tf` / `terraform.tfvars` to provide the second
 Links and references
 
 * [Terraform Registry](https://registry.terraform.io/)
-* [Azure Provider (azurerm) documentation](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs)
+* [Azure Provider (azurerm) documentation](https://registry.terraform.io[AWS_SECRET_ACCESS_KEY])
 * [Azure CLI docs](https://learn.microsoft.com/cli/azure/)
 
 <CardGroup>

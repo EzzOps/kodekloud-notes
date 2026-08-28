@@ -167,14 +167,14 @@ Refer to the RDS Proxy documentation for full options and best practices.
 ## Links and references
 
 * RDS Proxy: [https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/rds-proxy.html](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/rds-proxy.html)
-* IAM database authentication: [https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/UsingWithRDS.IAMDBAuth.html](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/UsingWithRDS.IAMDBAuth.html)
-* AWS Secrets Manager: [https://docs.aws.amazon.com/secretsmanager/latest/userguide/intro.html](https://docs.aws.amazon.com/secretsmanager/latest/userguide/intro.html)
+* IAM database authentication: [https://docs.aws.amazon.com[AWS_SECRET_ACCESS_KEY].IAMDBAuth.html](https://docs.aws.amazon.com[AWS_SECRET_ACCESS_KEY].IAMDBAuth.html)
+* AWS Secrets Manager: [https://docs.aws.amazon.[SECRET_REDACTED].html](https://docs.aws.amazon.[SECRET_REDACTED].html)
 * Amazon VPC: [https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html](https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html)
 * Security groups: [https://docs.aws.amazon.com/vpc/latest/userguide/VPC\_SecurityGroups.html](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_SecurityGroups.html)
 * RDS encryption overview: [https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Overview.Encryption.html](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Overview.Encryption.html)
-* RDS SSL/TLS: [https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/UsingWithRDS.SSL.html](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/UsingWithRDS.SSL.html)
-* CloudWatch: [https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html)
-* CloudTrail: [https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html)
+* RDS SSL/TLS: [https://docs.aws.amazon.com[AWS_SECRET_ACCESS_KEY].SSL.html](https://docs.aws.amazon.com[AWS_SECRET_ACCESS_KEY].SSL.html)
+* CloudWatch: [https://docs.aws.amazon.[SECRET_REDACTED].html](https://docs.aws.amazon.[SECRET_REDACTED].html)
+* CloudTrail: [https://docs.aws.amazon.[SECRET_REDACTED]-user-guide.html](https://docs.aws.amazon.[SECRET_REDACTED]-user-guide.html)
 
 This lesson provides the high-level concepts needed to design and operate secure RDS deployments. For hands-on implementation, follow the individual AWS service guides above and build configurations that reflect your security, availability, and compliance requirements.
 

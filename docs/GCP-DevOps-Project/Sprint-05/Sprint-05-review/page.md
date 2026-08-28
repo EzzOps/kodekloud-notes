@@ -56,7 +56,7 @@ In Sprint 05, our team focused on extending our Google Kubernetes Engine (GKE) c
 ## References
 
 * [GKE Documentation](https://cloud.google.com/kubernetes-engine/docs)
-* [Kubernetes Deployments](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/)
+* [Kubernetes Deployments](https://kubernetes.[SECRET_REDACTED]/)
 * [Cloud Build Overview](https://cloud.google.com/build/docs)
 
 <CardGroup>

@@ -222,7 +222,7 @@ Logs often include trace context so you can pivot from a log line into a Jaeger 
 ```json theme={null}
 {
   "log":"{\"message\":\"http_error\",\"level\":\"ERROR\",\"trace_id\":\"7392f0da7857dbb33b493e4be7a9ba21\",\"span_id\":\"08d85bde2a104cf7\",\"method\":\"GET\",\"route\":\"/products/{id}\",\"status_code\":404,\"error_class\":\"4xx\",\"duration_ms\":5.0}",
-  "container_id":"b9b82e5e5af0b6794b809f86c44953f3fbf08344c322dc58c371997d3d87576",
+  "container_id":"[SECRET_REDACTED]",
   "container_name":"/kodekloud-records"
 }
 ```
@@ -270,10 +270,10 @@ Explore the provisioning folder, copy panels into your own dashboards, tweak uni
 Links and references
 
 * Prometheus: [https://prometheus.io](https://prometheus.io)
-* Grafana docs — Provisioning: [https://grafana.com/docs/grafana/latest/administration/provisioning/](https://grafana.com/docs/grafana/latest/administration/provisioning/)
+* Grafana docs — Provisioning: [https://grafana.[SECRET_REDACTED]/](https://grafana.[SECRET_REDACTED]/)
 * Loki: [https://grafana.com/oss/loki/](https://grafana.com/oss/loki/)
 * Jaeger: [https://www.jaegertracing.io](https://www.jaegertracing.io)
-* PromQL basics: [https://prometheus.io/docs/prometheus/latest/querying/basics/](https://prometheus.io/docs/prometheus/latest/querying/basics/)
+* PromQL basics: [https://prometheus.[SECRET_REDACTED]/](https://prometheus.[SECRET_REDACTED]/)
 
 Further reading and examples:
 

@@ -1,5 +1,5 @@
 # then re-apply
-kubectl apply -f https://raw.githubusercontent.com/istio/istio/release-1.11/samples/bookinfo/platform/kube/bookinfo.yaml
+kubectl apply -f https://raw.githubusercontent.com/istio/istio/release-1.11[AWS_SECRET_ACCESS_KEY].yaml
 ```
 
 During startup you will observe pods initializing and the init container running for proxy injection (READY changes from 0/2 to 2/2 once injection completes):
@@ -50,7 +50,7 @@ Use the Operator API and the Istio documentation to find profile defaults, avail
 | Install/upgrade Istio via Operator    | `istioctl install -f demo.yaml -y` or `istioctl upgrade -f demo.yaml`                                                      |
 | Analyze namespace for Istio issues    | `istioctl analyze -n <namespace>`                                                                                          |
 | Label namespace for sidecar injection | `kubectl label namespace <ns> istio-injection=enabled`                                                                     |
-| (Re)deploy Bookinfo sample            | `kubectl apply -f https://raw.githubusercontent.com/istio/istio/release-1.11/samples/bookinfo/platform/kube/bookinfo.yaml` |
+| (Re)deploy Bookinfo sample            | `kubectl apply -f https://raw.githubusercontent.com/istio/istio/release-1.11[AWS_SECRET_ACCESS_KEY].yaml` |
 
 ***
 

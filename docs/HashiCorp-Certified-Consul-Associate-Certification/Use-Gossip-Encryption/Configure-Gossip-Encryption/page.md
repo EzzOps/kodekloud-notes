@@ -27,7 +27,7 @@ To activate gossip encryption on a new Consul agent, add the `encrypt` key to yo
   "verify_incoming": true,
   "verify_outgoing": true,
   "verify_server_hostname": true,
-  "encrypt": "HdQYxqepkYRADn4Zn+uD9vLge8WM+LpFAPLGhtco=",
+  "encrypt": "[AWS_SECRET_ACCESS_KEY]=",
   "leave_on_terminate": true
 }
 ```
@@ -48,7 +48,7 @@ Alternatively, you can pass the key on the command line:
 consul agent \
   -server \
   -data-dir=/opt/consul/data \
-  -encrypt=HdQYxqepkYRADn4Zn+uD9vLge8WM+LpFAPLGhtco= \
+  -encrypt=[AWS_SECRET_ACCESS_KEY]= \
   [...]
 ```
 
@@ -82,14 +82,14 @@ Follow these steps:
 1. **Generate a new encryption key**
    ```bash theme={null}
    consul keygen
-   # encrypt: hqYxqeqpkYrADn4Zn+u+D9vLge8Wm+LpFAPLGhtco=
+   # encrypt: [SECRET_REDACTED]=
    ```
 
 2. **Distribute the key and disable enforcement**\
    Update each agent’s config:
    ```json theme={null}
    {
-     "encrypt": "hqYxqeqpkYrADn4Zn+u+D9vLge8Wm+LpFAPLGhtco=",
+     "encrypt": "[SECRET_REDACTED]=",
      "encrypt_verify_incoming": false,
      "encrypt_verify_outgoing": false
    }

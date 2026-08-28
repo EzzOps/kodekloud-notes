@@ -39,7 +39,7 @@ In this chapter, we’ll design and execute our first AWS Fault Injection Simula
 
 * [AWS Fault Injection Simulator User Guide](https://docs.aws.amazon.com/fis/latest/userguide/)
 * [Amazon EC2 Auto Scaling User Guide](https://docs.aws.amazon.com/autoscaling/ec2/userguide/what-is-amazon-ec2-auto-scaling.html)
-* [Defining FIS Experiment Templates](https://docs.aws.amazon.com/fis/latest/userguide/experimentation-templates.html)
+* [Defining FIS Experiment Templates](https://docs.aws.amazon.[AWS_SECRET_ACCESS_KEY]-templates.html)
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/chaos-engineering/module/d49a2b6d-60a1-4603-965d-7e8292688875/lesson/27610f4a-e273-4507-9382-c41aa18c06e9" />

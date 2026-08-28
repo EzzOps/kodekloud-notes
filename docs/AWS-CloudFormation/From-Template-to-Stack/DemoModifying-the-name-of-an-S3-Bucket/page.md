@@ -71,9 +71,9 @@ Quick checklist before giving an explicit `BucketName`:
 
 Links and references
 
-* [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html)
+* [AWS CloudFormation User Guide](https://docs.aws.amazon.[SECRET_REDACTED].html)
 * [Amazon S3 bucket restrictions and limitations](https://docs.aws.amazon.com/AmazonS3/latest/userguide/using-buckets.html)
-* [CloudFormation resource and property types reference](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-template-resource-type-ref.html)
+* [CloudFormation resource and property types reference](https://docs.aws.amazon.[SECRET_REDACTED]-template-resource-type-ref.html)
 
 That’s all you need to specify a custom S3 bucket name in your CloudFormation template.
 

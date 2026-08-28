@@ -140,7 +140,7 @@ Design guidance: aim for small, single-responsibility modules with clear input/o
 ## Related topics and references
 
 * [Terraform Modules Documentation](https://www.terraform.io/docs/language/modules/index.html)
-* [Azure Provider for Terraform](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs)
+* [Azure Provider for Terraform](https://registry.terraform.io[AWS_SECRET_ACCESS_KEY])
 * [Terraform Registry](https://registry.terraform.io/)
 * [Best practices for module design](https://www.terraform.io/docs/language/modules/develop/index.html)
 
@@ -392,7 +392,7 @@ This pattern demonstrates:
 ## Links and references
 
 * Terraform Modules: [https://www.terraform.io/docs/language/modules/index.html](https://www.terraform.io/docs/language/modules/index.html)
-* Azure Provider for Terraform: [https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs)
+* Azure Provider for Terraform: [https://registry.terraform.io[AWS_SECRET_ACCESS_KEY]](https://registry.terraform.io[AWS_SECRET_ACCESS_KEY])
 * Azure Resource Manager documentation: [https://docs.microsoft.com/azure/azure-resource-manager/](https://docs.microsoft.com/azure/azure-resource-manager/)
 
 These resources will help deepen your understanding of modules and provider-specific resources.

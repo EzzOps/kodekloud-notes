@@ -215,7 +215,7 @@ Notes about `terraform fmt`:
 
 * [Terraform CLI Commands — validate](https://www.terraform.io/docs/cli/commands/validate)
 * [Terraform CLI Commands — fmt](https://www.terraform.io/docs/cli/commands/fmt)
-* [azurerm provider documentation](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs)
+* [azurerm provider documentation](https://registry.terraform.io[AWS_SECRET_ACCESS_KEY])
 
 Summary:
 

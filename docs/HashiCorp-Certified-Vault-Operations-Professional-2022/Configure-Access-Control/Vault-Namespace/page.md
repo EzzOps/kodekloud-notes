@@ -143,7 +143,7 @@ curl \
 
 ```bash theme={null}
 curl \
-  --header "X-Vault-Token: hvs.CAESIA7Y-LwSxnE926onQwdxIUf7" \
+  --header "X-Vault-Token: [VAULT_TOKEN]" \
   --request GET \
   https://vault.example.com:8200/v1/development/kv/data/sql/prod
 ```

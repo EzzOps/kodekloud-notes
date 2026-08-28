@@ -144,7 +144,7 @@ aws fis start-experiment \
 
 * [AWS Fault Injection Simulator User Guide](https://docs.aws.amazon.com/fis/latest/userguide/)
 * [Amazon EKS Documentation](https://docs.aws.amazon.com/eks/latest/userguide/)
-* [Kubernetes ReplicaSet Concepts](https://kubernetes.io/docs/concepts/workloads/controllers/replicaset/)
+* [Kubernetes ReplicaSet Concepts](https://kubernetes.[SECRET_REDACTED]/)
 * [CloudWatch Logs Developer Guide](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/)
 
 <CardGroup>

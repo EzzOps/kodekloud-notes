@@ -83,9 +83,9 @@ Use one or more of the following features and practices to prevent or reduce the
 
 | Feature / Practice             | Purpose                                                         | Example / How-to                                                                                                                                                                                             |
 | ------------------------------ | --------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| ECS Deployment Circuit Breaker | Automatically stop a failing deployment and optionally rollback | Enable `deploymentConfiguration` with `deploymentCircuitBreaker` set to `enable: true` and `rollback: true` ([docs](https://docs.aws.amazon.com/ecs/latest/developerguide/deployment-type-replacement.html)) |
+| ECS Deployment Circuit Breaker | Automatically stop a failing deployment and optionally rollback | Enable `deploymentConfiguration` with `deploymentCircuitBreaker` set to `enable: true` and `rollback: true` ([docs](https://docs.aws.amazon.[AWS_SECRET_ACCESS_KEY]-type-replacement.html)) |
 | Container & LB health checks   | Detect unhealthy tasks quickly so ECS can respond               | Define `healthCheck` in the task definition and configure target group health checks in the load balancer                                                                                                    |
-| AWS CodeDeploy (Blue/Green)    | Safer traffic shifting and automated rollback for ECS           | Use CodeDeploy blue/green deployments to perform controlled traffic shifting and automatic rollback on failure ([docs](https://docs.aws.amazon.com/codedeploy/latest/userguide/deployment-steps.html))       |
+| AWS CodeDeploy (Blue/Green)    | Safer traffic shifting and automated rollback for ECS           | Use CodeDeploy blue/green deployments to perform controlled traffic shifting and automatic rollback on failure ([docs](https://docs.aws.amazon.[SECRET_REDACTED]-steps.html))       |
 | CI/CD gates and testing        | Catch application-level defects before images are published     | Add unit/integration tests, static analysis, and end-to-end checks in CodeBuild pipelines                                                                                                                    |
 | CloudWatch alarms + automation | Trigger alerts or automated remediation/rollback                | Configure CloudWatch alarms on task failures or target group unhealthy counts and tie to Lambda or Systems Manager Automation runbooks                                                                       |
 
@@ -98,11 +98,11 @@ We will next examine ECS deployment circuit breaker settings in detail and demon
 
 Links and references
 
-* Amazon ECS deployments and the deployment circuit breaker: [https://docs.aws.amazon.com/ecs/latest/developerguide/deployment-type-replacement.html](https://docs.aws.amazon.com/ecs/latest/developerguide/deployment-type-replacement.html)
+* Amazon ECS deployments and the deployment circuit breaker: [https://docs.aws.amazon.[AWS_SECRET_ACCESS_KEY]-type-replacement.html](https://docs.aws.amazon.[AWS_SECRET_ACCESS_KEY]-type-replacement.html)
 * AWS CodeBuild: [https://docs.aws.amazon.com/codebuild/latest/userguide/welcome.html](https://docs.aws.amazon.com/codebuild/latest/userguide/welcome.html)
 * Amazon ECR: [https://docs.aws.amazon.com/ecr/](https://docs.aws.amazon.com/ecr/)
-* AWS CodeDeploy blue/green deployments: [https://docs.aws.amazon.com/codedeploy/latest/userguide/deployment-steps.html](https://docs.aws.amazon.com/codedeploy/latest/userguide/deployment-steps.html)
-* Amazon CloudWatch alarms: [https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/AlarmThatSendsEmail.html](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/AlarmThatSendsEmail.html)
+* AWS CodeDeploy blue/green deployments: [https://docs.aws.amazon.[SECRET_REDACTED]-steps.html](https://docs.aws.amazon.[SECRET_REDACTED]-steps.html)
+* Amazon CloudWatch alarms: [https://docs.aws.amazon.[SECRET_REDACTED].html](https://docs.aws.amazon.[SECRET_REDACTED].html)
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/building-scalable-microservices-on-aws-deploy-a-crypto-app/module/acc69333-5a37-4353-a880-a86823fb1e93/lesson/0c91d33d-b137-4756-823d-f5f750526a1e" />

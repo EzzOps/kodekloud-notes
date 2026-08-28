@@ -76,7 +76,7 @@ Below is a sample of search results highlighting various system messages:
 2024-05-07T00:34:30.894843+00:00 kodekloud systemd[1]: systemd-hwdb-update.service - Rebuild Hardware Database was skipped because no trigger condition checks were met.
 2024-05-07T00:34:30.894847+00:00 kodekloud systemd-modules-load[379]: Inserted module 'dm_multipath'
 2024-05-07T00:34:30.894855+00:00 kodekloud systemd[1]: Starting systemd-journal-flush.service - Flush Journal to Persistent Storage...
-2024-05-07T00:34:30.894862+00:00 kodekloud systemd[1]: systemd-pstore.service - Platform Persistent Storage Archival was skipped because of an unmet condition check (ConditionDirectoryNotEmpty=/sys/fs/pstore).
+2024-05-07T00:34:30.894862+00:00 kodekloud systemd[1]: systemd-pstore.service - Platform Persistent Storage Archival was skipped because of an unmet condition check ([SECRET_REDACTED]).
 2024-05-07T00:34:30.894867+00:00 kodekloud systemd[1]: Starting systemd-random-seed.service - Load/Save Random Seed.
 2024-05-07T00:34:30.894862+00:00 kodekloud systemd[1]: systemd-tpm2-setup.service - TPM2 SRK Setup was skipped because of an unmet condition check (ConditionSecurity-measured-uki).
 2024-05-07T00:34:30.894867+00:00 kodekloud systemd[1]: Activated swap swap.img.swap - /swap.img.
@@ -96,7 +96,7 @@ By default, searches are case sensitive. To perform a case-insensitive search, a
 2024-05-07T00:34:30.894843+00:00 kodekloud systemd[1]: systemd-hwdb-update.service - Rebuild Hardware Database was skipped because no trigger condition checks were met.
 2024-05-07T00:34:30.894847+00:00 kodekloud systemd-modules-load[379]: Inserted module 'msr'
 2024-05-07T00:34:30.894855+00:00 kodekloud systemd[1]: systemd-journal-flush.service - Flush Journal to Persistent Storage...
-2024-05-07T00:34:30.894861+00:00 kodekloud systemd[1]: systemd-pstore.service - Platform Persistent Storage Archival was skipped because of an unmet condition check (ConditionDirectoryNotEmpty=/sys/fs/pstore).
+2024-05-07T00:34:30.894861+00:00 kodekloud systemd[1]: systemd-pstore.service - Platform Persistent Storage Archival was skipped because of an unmet condition check ([SECRET_REDACTED]).
 2024-05-07T00:34:30.894867+00:00 kodekloud systemd[1]: Starting systemd-random-seed.service - Load/Save Random Seed...
 2024-05-07T00:34:30.894872+00:00 kodekloud systemd[1]: systemd-tpm2-setup.service - TPM2 SRK Setup was skipped because of an unmet condition check (ConditionSecurity=measured-uki).
 2024-05-07T00:34:30.894878+00:00 kodekloud systemd[1]: Reached target swap.target - Swaps.

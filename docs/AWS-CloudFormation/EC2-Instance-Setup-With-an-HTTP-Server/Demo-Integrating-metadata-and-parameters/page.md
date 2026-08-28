@@ -119,7 +119,7 @@ Resources:
 
 Useful references:
 
-* [AWS CloudFormation Parameters](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/parameters-section-structure.html)
+* [AWS CloudFormation Parameters](https://docs.aws.amazon.[SECRET_REDACTED]-section-structure.html)
 * [Amazon EC2 Instance Types](https://aws.amazon.com/ec2/instance-types/)
 
 ## Deploying or updating the stack
@@ -170,7 +170,7 @@ Auditors and operators can view the template and the Metadata you added from the
 
 Further reading:
 
-* [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html)
+* [AWS CloudFormation User Guide](https://docs.aws.amazon.[SECRET_REDACTED].html)
 * [Amazon EC2 Documentation](https://docs.aws.amazon.com/ec2/index.html)
 
 <CardGroup>

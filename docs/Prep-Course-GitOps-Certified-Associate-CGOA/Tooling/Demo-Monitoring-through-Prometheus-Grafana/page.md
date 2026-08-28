@@ -170,7 +170,7 @@ spec:
 Apply the manifests into your Argo CD namespace. In this demo I applied them directly from a Gist:
 
 ```bash theme={null}
-kubectl -n argocd apply -f https://gist.githubusercontent.com/sidd-harth/e21ee180c39e6ecef659066120dcd8ef/raw/3cf7b3b5ebda888e3a4069fe61dff01eb1329617/argocd-servicemonitors.yml
+kubectl -n argocd apply -f https://gist.githubusercontent.com/sidd-[SECRET_REDACTED]/[AWS_SECRET_ACCESS_KEY]/argocd-servicemonitors.yml
 ```
 
 Expected output:
@@ -245,7 +245,7 @@ Links and references
 * Argo CD metrics documentation: [https://argo-cd.readthedocs.io/en/stable/operator-manual/metrics/](https://argo-cd.readthedocs.io/en/stable/operator-manual/metrics/)
 * Prometheus Operator / kube-prometheus-stack: [https://github.com/prometheus-operator/kube-prometheus](https://github.com/prometheus-operator/kube-prometheus)
 * kube-prometheus-stack Helm chart: [https://artifacthub.io/packages/helm/prometheus-community/kube-prometheus-stack](https://artifacthub.io/packages/helm/prometheus-community/kube-prometheus-stack)
-* Grafana dashboard import docs: [https://grafana.com/docs/grafana/latest/dashboards/manage-dashboards/import-export/](https://grafana.com/docs/grafana/latest/dashboards/manage-dashboards/import-export/)
+* Grafana dashboard import docs: [https://grafana.[SECRET_REDACTED]-dashboards/import-export/](https://grafana.[SECRET_REDACTED]-dashboards/import-export/)
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/gitops-certified-associate-cgoa/module/24630e6a-9f49-42d1-abd0-75bafc02ce01/lesson/435dde8c-4c02-4304-b42d-f52509af2071" />

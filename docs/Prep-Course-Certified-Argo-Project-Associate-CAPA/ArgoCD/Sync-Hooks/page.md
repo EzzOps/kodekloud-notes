@@ -38,7 +38,7 @@ Links and references
 
 * [Argo CD documentation — Configuration](https://argo-cd.readthedocs.io/en/stable/operator-manual/config-management/)
 * [Kubernetes kubectl reference](https://kubernetes.io/docs/reference/kubectl/)
-* Git provider docs: [GitHub Webhooks](https://docs.github.com/en/developers/webhooks-and-events/creating-webhooks), [GitLab Webhooks](https://docs.gitlab.com/ee/user/project/integrations/webhooks/)
+* Git provider docs: [GitHub Webhooks](https://docs.github.com/en/developers/webhooks-and-events/creating-webhooks), [GitLab Webhooks](https://docs.gitlab.[SECRET_REDACTED]/)
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/9facbd04-7a3f-4200-9d6e-53936e93d875/lesson/197dd1cb-9df3-4352-ada6-e62e5ca364f8" />
@@ -232,7 +232,7 @@ In this setup:
 ## Links and references
 
 * [Argo CD Sync Hooks (official docs)](https://argo-cd.readthedocs.io/en/stable/user-guide/sync-hooks/)
-* [Kubernetes Jobs](https://kubernetes.io/docs/concepts/workloads/controllers/job/)
+* [Kubernetes Jobs](https://kubernetes.io[AWS_SECRET_ACCESS_KEY]/)
 * [Argo CD Application health and sync](https://argo-cd.readthedocs.io/en/stable/user-guide/health/)
 
 <CardGroup>

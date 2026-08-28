@@ -98,9 +98,9 @@ Links and references
 * [LangChain documentation](https://langchain.readthedocs.io/)
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langgraph/module/e0cd494a-00a7-4c52-88e9-b3932b03ff9f/lesson/32b29c2b-a9e8-427d-94d5-cded50b77f6a" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[SECRET_REDACTED]-00a7-4c52-88e9-b3932b03ff9f/lesson/32b29c2b-a9e8-427d-94d5-cded50b77f6a" />
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/langgraph/module/e0cd494a-00a7-4c52-88e9-b3932b03ff9f/lesson/f8153413-b11a-4e16-9ff0-bfe795bfe05e" />
+  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.[SECRET_REDACTED]-00a7-4c52-88e9-b3932b03ff9f/lesson/f8153413-b11a-4e16-9ff0-bfe795bfe05e" />
 </CardGroup>
 
 

@@ -43,7 +43,7 @@ controlplane ~/quickstart $ pulumi up
 Please choose a stack, or create a new one: dev
 Previewing update (dev)
 
-View in Browser (Ctrl+L): https://app.pulumi.com/trungkodekloud/quickstart/dev/preview
+View in Browser (Ctrl+L): https://app.pulumi.[SECRET_REDACTED]
 Type                 Name                   Plan
 pulumi:pulumi:Stack  quickstart-dev        create
 aws:s3:Bucket      my-bucket             create
@@ -56,7 +56,7 @@ Resources:
     + 3 to create
 
 Do you want to perform this update? yes
-View in Browser (Ctrl+L): https://app.pulumi.com/trungkodekloud/quickstart/dev/updates/1
+View in Browser (Ctrl+L): https://app.pulumi.com[AWS_SECRET_ACCESS_KEY]
 type                 name                   status
 pulumi:pulumi:Stack  quickstart-dev        creating (0s)
 ```

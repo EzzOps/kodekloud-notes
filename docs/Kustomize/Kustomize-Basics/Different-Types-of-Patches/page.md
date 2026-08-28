@@ -152,5 +152,5 @@ spec:
 * [Kubernetes Strategic Merge Patches](https://kubernetes.io/docs/tasks/manage-kubernetes-objects/update-api-object-kubectl-patch/)
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kustomize/module/8b591384-c5e2-4411-afc1-443d3f2ba735/lesson/3143d106-366c-4cec-95d5-b7f9b3e890cf" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[SECRET_REDACTED]-c5e2-4411-afc1-443d3f2ba735/lesson/3143d106-366c-4cec-95d5-b7f9b3e890cf" />
 </CardGroup>

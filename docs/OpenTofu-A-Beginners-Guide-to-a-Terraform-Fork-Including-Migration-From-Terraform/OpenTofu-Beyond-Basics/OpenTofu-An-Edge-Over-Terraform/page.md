@@ -8,7 +8,7 @@ OpenTofu delivers a fully open-source, vendor-neutral Terraform fork designed to
 
 ## Licensing and Governance
 
-OpenTofu is published under the permissive [MIT License](https://opensource.org/licenses/MIT), ensuring that users retain full freedom to inspect, modify, and distribute the code. In contrast, Terraform is governed by HashiCorp under the [Mozilla Public License 2.0](https://github.com/hashicorp/terraform/blob/main/LICENSE), which enforces certain copyleft requirements.
+OpenTofu is published under the permissive [MIT License](https://opensource.org/licenses/MIT), ensuring that users retain full freedom to inspect, modify, and distribute the code. In contrast, Terraform is governed by HashiCorp under the [Mozilla Public License 2.0](https://github.[SECRET_REDACTED]), which enforces certain copyleft requirements.
 
 | Project   | License     | Governance Model                                   |
 | --------- | ----------- | -------------------------------------------------- |
@@ -71,7 +71,7 @@ This modularity fosters innovation: independent teams can focus on specialized m
 * GitHub: [OpenTofu Repository](https://github.com/opentofu/opentofu)
 * Terraform Official Site: [https://www.terraform.io/](https://www.terraform.io/)
 * OpenTofu License: [https://github.com/opentofu/opentofu/blob/main/LICENSE](https://github.com/opentofu/opentofu/blob/main/LICENSE)
-* Terraform License: [https://github.com/hashicorp/terraform/blob/main/LICENSE](https://github.com/hashicorp/terraform/blob/main/LICENSE)
+* Terraform License: [https://github.[SECRET_REDACTED]](https://github.[SECRET_REDACTED])
 * Kubernetes Basics: [https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/](https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/)
 
 <CardGroup>

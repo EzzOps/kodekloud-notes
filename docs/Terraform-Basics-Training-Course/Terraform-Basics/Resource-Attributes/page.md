@@ -35,7 +35,7 @@ When you run `terraform apply`, the output might look like this:
 random_pet.my-pet: Creating...
 local_file.pet: Creating...
 random_pet.my-pet: Creation complete after 0s [id=Mr.bull]
-local_file.pet: Creation complete after 0s [id=059090e865890f9b6debfd7aebf48fdce2220a6]
+local_file.pet: Creation complete after 0s [id[AWS_SECRET_ACCESS_KEY]]
 Apply complete! Resources: 2 added, 0 changed, 0 destroyed.
 ```
 
@@ -62,7 +62,7 @@ After running `terraform apply` with this updated configuration, you should see 
 random_pet.my-pet: Creating...
 local_file.pet: Creating...
 random_pet.my-pet: Creation complete after 0s [id=Mr.bull]
-local_file.pet: Creation complete after 0s [id=059090e865809f9b6debfd7aebf48fdce2220a6]
+local_file.pet: Creation complete after 0s [id[AWS_SECRET_ACCESS_KEY]]
 Apply complete! Resources: 2 added, 0 changed, 0 destroyed.
 ```
 

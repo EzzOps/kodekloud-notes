@@ -132,8 +132,8 @@ Regularly update your agent binaries, monitor performance metrics, and audit acc
 
 ## References
 
-* [Azure DevOps Agent Pools](https://docs.microsoft.com/azure/devops/pipelines/agents/agents)
-* [Create and Use Personal Access Tokens](https://docs.microsoft.com/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate)
+* [Azure DevOps Agent Pools](https://docs.microsoft.[AWS_SECRET_ACCESS_KEY])
+* [Create and Use Personal Access Tokens](https://docs.microsoft.[AWS_SECRET_ACCESS_KEY]use-personal-access-tokens-to-authenticate)
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/az-400/module/55cf24db-89bc-4b93-bb75-7350d1593073/lesson/49f39473-9a65-46bd-bd33-b57cfe383b25" />

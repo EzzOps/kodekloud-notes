@@ -65,9 +65,9 @@ Quick reference (one-line)
 
 Links and references
 
-* [AWS CloudFormation Fn::FindInMap documentation](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-findinmap.html)
-* [CloudFormation Intrinsic Functions overview](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference.html)
-* [AWS CloudFormation Mappings section](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/mappings-section-structure.html)
+* [AWS CloudFormation Fn::FindInMap documentation](https://docs.aws.amazon.[SECRET_REDACTED]-function-reference-findinmap.html)
+* [CloudFormation Intrinsic Functions overview](https://docs.aws.amazon.[SECRET_REDACTED]-function-reference.html)
+* [AWS CloudFormation Mappings section](https://docs.aws.amazon.[SECRET_REDACTED]-section-structure.html)
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/aws-cloud-formation/module/4e0caf18-41ee-4499-8c83-b0dc280c537a/lesson/745550ff-7de7-4a8f-a572-55f1707a43d7" />
@@ -206,10 +206,10 @@ Summary
 
 Links and references
 
-* [CloudFormation Overview](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html)
-* [Intrinsic function: !FindInMap](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-findinmap.html)
-* [Mappings section structure](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/mappings-section-structure.html)
-* [Update a stack (CloudFormation)](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks.html)
+* [CloudFormation Overview](https://docs.aws.amazon.[SECRET_REDACTED].html)
+* [Intrinsic function: !FindInMap](https://docs.aws.amazon.[SECRET_REDACTED]-function-reference-findinmap.html)
+* [Mappings section structure](https://docs.aws.amazon.[SECRET_REDACTED]-section-structure.html)
+* [Update a stack (CloudFormation)](https://docs.aws.amazon.com/[AWS_SECRET_ACCESS_KEY]-cfn-updating-stacks.html)
 * [Amazon S3 Documentation](https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html)
 
 <CardGroup>

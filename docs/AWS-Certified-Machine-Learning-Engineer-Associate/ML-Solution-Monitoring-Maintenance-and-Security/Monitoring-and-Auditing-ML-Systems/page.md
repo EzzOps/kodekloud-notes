@@ -78,7 +78,7 @@ Further reading and references
 * [AWS CodePipeline](https://docs.aws.amazon.com/codepipeline/)
 * [AWS Lambda](https://docs.aws.amazon.com/lambda/)
 * [AWS IoT Jobs](https://docs.aws.amazon.com/iot/latest/developerguide/iot-jobs.html)
-* [CloudFormation StackSets](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/what-is-cfnstacksets.html)
+* [CloudFormation StackSets](https://docs.aws.amazon.com[AWS_SECRET_ACCESS_KEY]-is-cfnstacksets.html)
 
 <Callout icon="lightbulb">
   Design monitoring as a feedback loop: detect → analyze → remediate → learn. Automate where possible and keep humans focused on high-impact investigations.

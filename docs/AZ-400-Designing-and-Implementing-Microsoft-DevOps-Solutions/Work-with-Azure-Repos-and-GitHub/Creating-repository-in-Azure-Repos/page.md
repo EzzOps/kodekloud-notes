@@ -15,7 +15,7 @@ In this guide, you will:
 
 ## 1. Create an Azure DevOps Project
 
-First, sign in to Azure DevOps and [create a new project](https://docs.microsoft.com/azure/devops/organizations/projects/create-project?view=azure-devops) named **CoolWebsite**. We’ll use GitHub as the primary source control.
+First, sign in to Azure DevOps and [create a new project](https://docs.microsoft.[AWS_SECRET_ACCESS_KEY]create-project?view=azure-devops) named **CoolWebsite**. We’ll use GitHub as the primary source control.
 
 <Callout icon="lightbulb">
   If you prefer to host code in Azure Repos, add it as a remote:

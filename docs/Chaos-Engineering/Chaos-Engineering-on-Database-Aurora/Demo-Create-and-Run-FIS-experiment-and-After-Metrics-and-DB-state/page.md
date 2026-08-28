@@ -12,7 +12,7 @@ In this tutorial, you’ll learn how to build an AWS Fault Injection Simulator (
 | ----------------------------------- | --------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | Amazon RDS                          | Host Aurora reader & writer instances         | [https://docs.aws.amazon.com/rds/latest/Concepts/Welcome.html](https://docs.aws.amazon.com/rds/latest/Concepts/Welcome.html)                                       |
 | AWS Fault Injection Simulator (FIS) | Inject faults into AWS resources              | [https://docs.aws.amazon.com/fis/latest/userguide/what-is-fis.html](https://docs.aws.amazon.com/fis/latest/userguide/what-is-fis.html)                             |
-| Amazon CloudWatch                   | Collect metrics, logs, and ServiceLens traces | [https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/ServiceLens.html](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/ServiceLens.html) |
+| Amazon CloudWatch                   | Collect metrics, logs, and ServiceLens traces | [https://docs.aws.amazon.[SECRET_REDACTED].html](https://docs.aws.amazon.[SECRET_REDACTED].html) |
 
 <Callout icon="lightbulb">
   Ensure you have an IAM role with the managed policy `AWSFISFullAccess` and permissions to reboot RDS instances. Assign this role when you create the FIS experiment template.

@@ -90,8 +90,8 @@ type=SERVICE_START msg=audit(1701131497.703:128): pid=1 uid=0 ... UID="root" AUD
 On your EC2 instance, use the wget command to download the CloudWatch agent package:
 
 ```bash theme={null}
-[root@ip-172-31-27-251 ~]# wget https://s3.amazonaws.com/amazoncloudwatch-agent/linux/amd64/latest/AmazonCloudWatchAgent.zip
---2023-11-30 01:37:40--  https://s3.amazonaws.com/amazoncloudwatch-agent/linux/amd64/latest/AmazonCloudWatchAgent.zip
+[root@ip-172-31-27-251 ~]# wget https://s3.amazonaws.com/amazoncloudwatch-agent/[AWS_SECRET_ACCESS_KEY].zip
+--2023-11-30 01:37:40--  https://s3.amazonaws.com/amazoncloudwatch-agent/[AWS_SECRET_ACCESS_KEY].zip
 Resolving s3.amazonaws.com (s3.amazonaws.com)... [IP Addresses...]
 Connecting to s3.amazonaws.com... connected.
 ```

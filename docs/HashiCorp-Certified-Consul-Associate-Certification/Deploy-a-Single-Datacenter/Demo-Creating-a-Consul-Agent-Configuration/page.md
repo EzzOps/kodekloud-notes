@@ -167,7 +167,7 @@ This guide explains how to configure a HashiCorp Consul agent in server and clie
 
 In this guide, you’ll learn how to configure a **HashiCorp Consul** agent—both server and client modes—using example files hosted on GitHub. Follow along by visiting the Consul folder in the repository:
 
-[https://github.com/btkrausen/hashicorp/tree/main/Consul](https://github.com/btkrausen/hashicorp/tree/main/Consul)
+[https://github.[AWS_SECRET_ACCESS_KEY]](https://github.[AWS_SECRET_ACCESS_KEY])
 
 ## Consul Server Agent Configuration (JSON)
 

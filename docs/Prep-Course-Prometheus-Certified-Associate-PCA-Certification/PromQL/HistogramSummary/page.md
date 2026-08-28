@@ -1,6 +1,6 @@
 # HistogramSummary
 
-Source: https://notes.kodekloud.com/docs/Prep-Course-Prometheus-Certified-Associate-PCA-Certification/PromQL/HistogramSummary/page
+Source: https://notes.kodekloud.com/docs/Prep-Course-Prometheus-Certified-Associate-PCA-[SECRET_REDACTED]
 
 Explains Prometheus histograms and summaries, meaning of _count/_sum/_bucket, PromQL queries, estimating quantiles with histogram_quantile, SLO checks, and bucket design tradeoffs
 
@@ -217,7 +217,7 @@ Keep these trade-offs in mind when designing metrics and SLO checks.
 ## References and further reading
 
 * [Prometheus: Histogram and Summary](https://prometheus.io/docs/practices/histograms/)
-* [PromQL: histogram\_quantile() documentation](https://prometheus.io/docs/prometheus/latest/querying/functions/#histogram_quantile)
+* [PromQL: histogram\_quantile() documentation](https://prometheus.[SECRET_REDACTED]/#histogram_quantile)
 
 Keep bucket cardinality focused on the thresholds and percentiles that matter for your SLOs to balance accuracy and resource usage.
 

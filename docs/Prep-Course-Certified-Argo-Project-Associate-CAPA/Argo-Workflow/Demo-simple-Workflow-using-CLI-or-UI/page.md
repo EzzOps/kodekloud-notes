@@ -84,7 +84,7 @@ workflow-controller-5bb95ffc45-rp2fz 1/1     Running     0          3m59s
 Submit the workflow from a remote URL and stream progress with `--watch`:
 
 ```bash theme={null}
-argo submit https://gist.githubusercontent.com/sidd-harth/54c1c6e16682ae281650a7d67bf0bf01/raw/7cae878eaad64b84a486841bb9ee484cea83ca45/workflow-1.yml -n argo --watch
+argo submit https://gist.githubusercontent.com/sidd-[SECRET_REDACTED]/[AWS_SECRET_ACCESS_KEY]/workflow-1.yml -n argo --watch
 ```
 
 When you submit a workflow using `generateName`, Argo assigns a unique name (for example, `cowsay-nzs5t`). The CLI will stream the workflow progress and show the final status.
@@ -189,7 +189,7 @@ At this point you should see two workflows in the UI (one created from the UI an
 * Argo Workflows documentation: [https://argoproj.github.io/argo-workflows/](https://argoproj.github.io/argo-workflows/)
 * Kubernetes documentation: [https://kubernetes.io/docs/](https://kubernetes.io/docs/)
 * Argo CLI reference: [https://argoproj.github.io/argo-workflows/argo/commands/argo/](https://argoproj.github.io/argo-workflows/argo/commands/argo/)
-* Example workflow used above (gist): [https://gist.githubusercontent.com/sidd-harth/54c1c6e16682ae281650a7d67bf0bf01/raw/7cae878eaad64b84a486841bb9ee484cea83ca45/workflow-1.yml](https://gist.githubusercontent.com/sidd-harth/54c1c6e16682ae281650a7d67bf0bf01/raw/7cae878eaad64b84a486841bb9ee484cea83ca45/workflow-1.yml)
+* Example workflow used above (gist): [https://gist.githubusercontent.com/sidd-[SECRET_REDACTED]/[AWS_SECRET_ACCESS_KEY]/workflow-1.yml](https://gist.githubusercontent.com/sidd-[SECRET_REDACTED]/[AWS_SECRET_ACCESS_KEY]/workflow-1.yml)
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/44223b5d-ccc3-4dcb-8292-66036e2ea023/lesson/77dc197c-4d03-45dc-9c93-0688683151e8" />

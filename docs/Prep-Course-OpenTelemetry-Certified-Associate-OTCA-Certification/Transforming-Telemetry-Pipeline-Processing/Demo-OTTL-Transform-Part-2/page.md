@@ -131,7 +131,7 @@ This lesson covered basic `set` operations and scoping with contexts and conditi
 ## Links and references
 
 * [OpenTelemetry Collector Documentation](https://opentelemetry.io/docs/collector/)
-* [OTTL specification and examples](https://github.com/open-telemetry/opentelemetry-collector-contrib/tree/main/processor/transformprocessor)
+* [OTTL specification and examples](https://github.com/open-telemetry/opentelemetry-collector-[SECRET_REDACTED])
 * [OpenTelemetry Python instrumentation](https://opentelemetry-python.readthedocs.io/)
 
 <CardGroup>
@@ -490,7 +490,7 @@ If you applied `keep_keys(attributes, ["username", "account_number"])`, other ke
 
 ## Links and references
 
-* [OpenTelemetry Collector Transform Processor](https://opentelemetry.io/docs/collector/configuration/processors/transformprocessor/)
+* [OpenTelemetry Collector Transform Processor](https://opentelemetry.io[AWS_SECRET_ACCESS_KEY]/transformprocessor/)
 * [OTTL (OpenTelemetry Transformation Language) Reference](https://opentelemetry.io/docs/reference/specification/otel-otl/)
 * [Kubernetes Documentation](https://kubernetes.io/docs/)
 

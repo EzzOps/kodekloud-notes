@@ -25,7 +25,7 @@ Stop vs Terminate
 References
 
 * AWS EC2 documentation: [https://docs.aws.amazon.com/ec2/](https://docs.aws.amazon.com/ec2/)
-* Accessing instances (SSH): [https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AccessingInstancesLinux.html](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AccessingInstancesLinux.html)
+* Accessing instances (SSH): [https://docs.aws.amazon.com/AWSEC2/[AWS_SECRET_ACCESS_KEY].html](https://docs.aws.amazon.com/AWSEC2/[AWS_SECRET_ACCESS_KEY].html)
 * PuTTY and PuTTYgen: [https://www.putty.org/](https://www.putty.org/)
 * Windows Subsystem for Linux: [https://learn.microsoft.com/windows/wsl/](https://learn.microsoft.com/windows/wsl/)
 
@@ -202,7 +202,7 @@ This completes the basic flow: creating a bucket and uploading an object. From h
 Useful references:
 
 * AWS S3 Documentation: [https://docs.aws.amazon.com/s3/](https://docs.aws.amazon.com/s3/)
-* S3 Bucket Naming Rules: [https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucketnamingrules.html](https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucketnamingrules.html)
+* S3 Bucket Naming Rules: [https://docs.aws.amazon.[SECRET_REDACTED].html](https://docs.aws.amazon.[SECRET_REDACTED].html)
 * Working with Objects (S3 docs): [https://docs.aws.amazon.com/AmazonS3/latest/userguide/using-objects.html](https://docs.aws.amazon.com/AmazonS3/latest/userguide/using-objects.html)
 
 <Callout icon="lightbulb">

@@ -323,7 +323,7 @@ In this article, we have covered:
 This foundational knowledge paves the way for exploring more advanced topics and practical demonstrations of neural networks in action.
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/pytorch/module/b8cb82ae-a284-41d1-8469-7e60705bbab8/lesson/9c822dcd-3b71-4c90-9dc3-c1729b4ae61c" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[AWS_SECRET_ACCESS_KEY]-a284-41d1-8469-7e60705bbab8/lesson/9c822dcd-3b71-4c90-9dc3-c1729b4ae61c" />
 </CardGroup>
 
 

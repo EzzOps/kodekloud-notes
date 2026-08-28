@@ -204,7 +204,7 @@ This ensures all external requests pass through the ALB, improving security and 
 
 ## Links and References
 
-* [AWS Documentation: Application Load Balancers](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/introduction.html)
+* [AWS Documentation: Application Load Balancers](https://docs.aws.amazon.com[AWS_SECRET_ACCESS_KEY]/introduction.html)
 * [Nginx Official Documentation](https://nginx.org/en/docs/)
 * [AWS VPC User Guide](https://docs.aws.amazon.com/vpc/latest/userguide/)
 

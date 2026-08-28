@@ -108,7 +108,7 @@ When an email is received, the recipient's mail server checks the SPF record to 
 DKIM adds a unique digital signature to each outgoing email. This signature is created using a private key held by your mail server, while the corresponding public key is published in a TXT record within your DNS:
 
 ```bash theme={null}
-default._domainkey.example.com. 300 IN TXT "v=DKIM1; k=rsa; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgCQA4JICUYrYG/UjtGhK4PIZx0Ii8zWfgLeE1Slc14jL91Raja9m8F6D2DyqMB+xrIrHR/2xCXgNWEFw0fqQmWGRcpxdBlvAkCu9oHzqiDnXEBg98PUN9x7yFqoVuTAFM6H0Uv5ChCwbmXXn2mwQFu..."
+default._domainkey.example.com. 300 IN TXT "v=DKIM1; k=rsa; [SECRET_REDACTED]..."
 ```
 
 Receiving servers use this public key to validate the digital signature, ensuring the email content remains unchanged during transit.

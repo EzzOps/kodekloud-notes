@@ -300,7 +300,7 @@ Tips:
 
 ## Summary
 
-* Push-based (OTLP): App pushes metrics to the Collector using an OTLP exporter (often HTTP to `/v1/metrics`). See the OTLP protocol docs: [https://opentelemetry.io/docs/reference/specification/protocol/otlp/](https://opentelemetry.io/docs/reference/specification/protocol/otlp/)
+* Push-based (OTLP): App pushes metrics to the Collector using an OTLP exporter (often HTTP to `/v1/metrics`). See the OTLP protocol docs: [https://opentelemetry.[AWS_SECRET_ACCESS_KEY]/otlp/](https://opentelemetry.[AWS_SECRET_ACCESS_KEY]/otlp/)
 * Pull-based (Prometheus): App exposes a `/metrics` endpoint and the Collector scrapes it via the Prometheus receiver. See Prometheus: [https://prometheus.io/](https://prometheus.io/)
 * The Collector can accept both approaches simultaneously—configure both receivers and add them to `service.pipelines.metrics.receivers`.
 
@@ -309,7 +309,7 @@ With the configuration and code snippets above you can validate both ingestion m
 ## Links and References
 
 * OpenTelemetry Collector: [https://opentelemetry.io/docs/collector/](https://opentelemetry.io/docs/collector/)
-* OTLP protocol: [https://opentelemetry.io/docs/reference/specification/protocol/otlp/](https://opentelemetry.io/docs/reference/specification/protocol/otlp/)
+* OTLP protocol: [https://opentelemetry.[AWS_SECRET_ACCESS_KEY]/otlp/](https://opentelemetry.[AWS_SECRET_ACCESS_KEY]/otlp/)
 * Prometheus docs: [https://prometheus.io/](https://prometheus.io/)
 * Python prometheus\_client: [https://github.com/prometheus/client\_python](https://github.com/prometheus/client_python)
 * OpenTelemetry Python metrics: [https://opentelemetry.io/docs/instrumentation/python/metrics/](https://opentelemetry.io/docs/instrumentation/python/metrics/)

@@ -257,7 +257,7 @@ To manage SSH keys for user accounts, use the `authorized_keys` module. This mod
         user: maria
         state: present
         key: |
-          ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABQC4WKn4K2G3iWg9HdCGo34gh+......root@97a1b9c3a
+          ssh-rsa [SECRET_REDACTED]+......root@97a1b9c3a
 ```
 
 ***

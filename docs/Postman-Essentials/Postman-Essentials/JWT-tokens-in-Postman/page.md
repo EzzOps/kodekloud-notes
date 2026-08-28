@@ -41,7 +41,7 @@ And the server’s response will include the token:
 
 ```json theme={null}
 {
-  "token": "eyJhbc6iIDU1Ni1rS6C1IpXvC39.eyJpZCOi6RlniC3RAZ2hlaWwvY29tYyLC1HAoJE2D0BENTIXkJ39.#K_1.CQiFtvom1c3D4aseyYnql4RNZ2m8kBQMwg0"
+  "token": "eyJhbc6iIDU1Ni1rS6C1IpXvC39.[SECRET_REDACTED].#K_1.CQiFtvom1c3D4aseyYnql4RNZ2m8kBQMwg0"
 }
 ```
 

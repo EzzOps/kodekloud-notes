@@ -1,6 +1,6 @@
 # Introduction
 
-Source: https://notes.kodekloud.com/docs/AWS-Certified-AI-Practitioner/Introduction/Introduction/page
+Source: https://notes.kodekloud.com/docs/AWS-Certified-AI-[SECRET_REDACTED]
 
 This article introduces a comprehensive AWS Certified AI Practitioner course covering AI concepts, practical applications, and exam preparation.
 

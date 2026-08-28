@@ -82,7 +82,7 @@ In this tutorial, you’ll learn how to secure your AWS environment by enabling 
 
 * [AWS IAM User Guide: Managing MFA Devices](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_mfa_manage.html)
 * [AWS IAM: Password Policy](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_passwords_account-policy.html)
-* [AWS Security Best Practices](https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-standards.html)
+* [AWS Security Best Practices](https://docs.aws.amazon.com/[AWS_SECRET_ACCESS_KEY]-standards.html)
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/aws-iam/module/8ffebc04-c194-403a-ac2e-2a2f0a6221ce/lesson/375879f4-c1ae-4165-837d-69d3892ce0cd" />

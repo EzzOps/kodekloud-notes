@@ -76,9 +76,9 @@ Key integration points: Clarify, Model Monitor, and CloudWatch
 Helpful references:
 
 * [SageMaker Clarify documentation](https://docs.aws.amazon.com/sagemaker/latest/dg/clarify.html)
-* [Amazon CloudWatch Alarms](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/AlarmThatSendsEmail.html)
+* [Amazon CloudWatch Alarms](https://docs.aws.amazon.[SECRET_REDACTED].html)
 * [AWS Lambda](https://docs.aws.amazon.com/lambda/latest/dg/welcome.html)
-* [AWS CodePipeline](https://docs.aws.amazon.com/codepipeline/latest/userguide/welcome.html)
+* [AWS CodePipeline](https://docs.aws.amazon.[SECRET_REDACTED].html)
 
 Example monitoring flow
 

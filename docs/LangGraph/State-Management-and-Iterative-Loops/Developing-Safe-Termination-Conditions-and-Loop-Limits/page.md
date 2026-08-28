@@ -293,7 +293,7 @@ References and further reading:
 * [Tavily (search API)](https://tavily.ai/) &#x20;
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langgraph/module/7a80b285-b366-4c4d-95d0-bce0c24aaf58/lesson/59a2609f-b3cc-4ec4-836c-342af3155b7e" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[SECRET_REDACTED]-b366-4c4d-95d0-bce0c24aaf58/lesson/59a2609f-b3cc-4ec4-836c-342af3155b7e" />
 </CardGroup>
 
 
@@ -515,7 +515,7 @@ Links and references
 Implement these patterns in your routers and state management to keep LangGraph flows responsive, predictable, and safe.
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langgraph/module/7a80b285-b366-4c4d-95d0-bce0c24aaf58/lesson/b125b0f3-0de9-467e-a15d-d41957c4cb81" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[SECRET_REDACTED]-b366-4c4d-95d0-bce0c24aaf58/lesson/b125b0f3-0de9-467e-a15d-d41957c4cb81" />
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/langgraph/module/7a80b285-b366-4c4d-95d0-bce0c24aaf58/lesson/2e2dc1e6-ba1c-4dba-8390-ad105ce7cedd" />
+  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.[SECRET_REDACTED]-b366-4c4d-95d0-bce0c24aaf58/lesson/2e2dc1e6-ba1c-4dba-8390-ad105ce7cedd" />
 </CardGroup>

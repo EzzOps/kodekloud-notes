@@ -11,7 +11,7 @@ The application deployment is now complete. To verify, open the AWS CloudFormati
 </Frame>
 
 <Callout icon="lightbulb">
-  If any stack is still in progress, refresh the console after a few moments or check the [AWS CloudFormation Troubleshooting guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/troubleshooting.html).
+  If any stack is still in progress, refresh the console after a few moments or check the [AWS CloudFormation Troubleshooting guide](https://docs.aws.amazon.[SECRET_REDACTED].html).
 </Callout>
 
 ## Accessing the Pet Site Application
@@ -94,7 +94,7 @@ We’ll use k6’s browser extension with Chromium in Docker to generate realist
 3. Download the Docker seccomp profile and run the test:
    ```bash theme={null}
    curl -o chrome.json \
-     https://raw.githubusercontent.com/jfrazelle/dotfiles/master/etc/docker/seccomp.json
+     https://raw.githubusercontent.[AWS_SECRET_ACCESS_KEY]/seccomp.json
    ```
    After downloading, launch k6 in Docker (approximately 10 minutes):
    ```bash theme={null}
@@ -122,7 +122,7 @@ We’ll use k6’s browser extension with Chromium in Docker to generate realist
 * [AWS CloudFormation Documentation](https://docs.aws.amazon.com/cloudformation/)
 * [Amazon ECS Developer Guide](https://docs.aws.amazon.com/ecs/latest/developerguide/)
 * [k6 Browser Extension](https://k6.io/docs/browser-bundling/)
-* [AWS CloudWatch Real User Monitoring](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-RUM.html)
+* [AWS CloudWatch Real User Monitoring](https://docs.aws.amazon.[SECRET_REDACTED]-RUM.html)
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/chaos-engineering/module/a6b84b48-a401-48a4-8278-0be5a8bb0d38/lesson/601ecf5d-d4cc-47f1-bec4-3fface7ee24f" />

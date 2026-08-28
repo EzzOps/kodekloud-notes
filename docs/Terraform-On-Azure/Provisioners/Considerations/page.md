@@ -71,7 +71,7 @@ With that, we have completed the provisioners section.
 
 ## Links and references
 
-* [Terraform Provisioners (HashiCorp docs)](https://developer.hashicorp.com/terraform/language/resources/provisioners)
+* [Terraform Provisioners (HashiCorp docs)](https://developer.hashicorp.[SECRET_REDACTED])
 * [Azure VM Custom Script Extension](https://learn.microsoft.com/azure/virtual-machines/extensions/custom-script-extension)
 * [Ansible Documentation](https://docs.ansible.com/ansible/latest/)
 * [Chef Documentation](https://docs.chef.io/)

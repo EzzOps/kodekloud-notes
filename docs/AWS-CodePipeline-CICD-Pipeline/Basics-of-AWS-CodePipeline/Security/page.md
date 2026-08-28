@@ -142,7 +142,7 @@ Avoid hard-coding credentials such as API keys or passwords in your pipeline. In
 </Frame>
 
 <Callout icon="lightbulb">
-  Use the [AWS SDK](https://docs.aws.amazon.com/secretsmanager/latest/userguide/intro.html) or AWS CLI to fetch secrets at runtime:
+  Use the [AWS SDK](https://docs.aws.amazon.[SECRET_REDACTED].html) or AWS CLI to fetch secrets at runtime:
 
   ```bash theme={null}
   aws secretsmanager get-secret-value --secret-id my-pipeline-secret
@@ -169,10 +169,10 @@ We’ve covered the critical security controls for AWS CodePipeline:
 
 ## Links and References
 
-* [AWS CodePipeline Documentation](https://docs.aws.amazon.com/codepipeline/latest/userguide/welcome.html)
+* [AWS CodePipeline Documentation](https://docs.aws.amazon.[SECRET_REDACTED].html)
 * [IAM Best Practices](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html)
 * [AWS KMS Developer Guide](https://docs.aws.amazon.com/kms/latest/developerguide/)
-* [AWS Secrets Manager User Guide](https://docs.aws.amazon.com/secretsmanager/latest/userguide/intro.html)
+* [AWS Secrets Manager User Guide](https://docs.aws.amazon.[SECRET_REDACTED].html)
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/aws-codepipeline-ci-cd-pipeline/module/d9d0a786-1e14-426c-a9c6-7fe75f543824/lesson/8c570552-1b08-4a00-a607-6c0a3218e3db" />

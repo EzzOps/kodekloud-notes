@@ -4,16 +4,16 @@ resource "local_file" "pet" {
   directory_permission = "0777"
   file_permission      = "0777"
   filename             = "/roots/pets.txt"
-  id                   = "98af5244e23508cffd4a0c3c46546821c4ccbbd0" -> (known after apply)
+  id                   = "[AWS_SECRET_ACCESS_KEY]" -> (known after apply)
 }
 .
 .
 local_file.pet: Destroying...
-  [id=98af5244e23508cffd4a0c3c46546821c4ccbbd0]
+  [id=[AWS_SECRET_ACCESS_KEY]]
 local_file.pet: Destruction complete after 0s
 local_file.pet: Creating...
 local_file.pet: Creation complete after 0s
-  [id=e56101d304de7cf1b1001120923c6bdeaaa60c523]
+  [[SECRET_REDACTED]]
 Apply complete! Resources: 1 added, 0 changed, 1 destroyed.
 ```
 

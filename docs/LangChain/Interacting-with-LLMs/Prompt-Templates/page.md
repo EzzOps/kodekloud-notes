@@ -83,9 +83,9 @@ Example approaches:
 This concise walkthrough covers building prompt templates, populating them at runtime, and invoking a chat model with LangChain. You can expand this pattern into pipelines for parsing, validation, or integrating with downstream applications.
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langchain/module/ae260750-791b-496c-991f-0d0333f61e40/lesson/857f3912-4a8e-4594-bb30-479d5f303cc8" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[SECRET_REDACTED]-791b-496c-991f-0d0333f61e40/lesson/857f3912-4a8e-4594-bb30-479d5f303cc8" />
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/langchain/module/ae260750-791b-496c-991f-0d0333f61e40/lesson/0c1c660e-6569-4b29-b3da-790d279553ff" />
+  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.[SECRET_REDACTED]-791b-496c-991f-0d0333f61e40/lesson/0c1c660e-6569-4b29-b3da-790d279553ff" />
 </CardGroup>
 
 

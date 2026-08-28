@@ -30,12 +30,12 @@ vault operator init
 Sample output:
 
 ```plaintext theme={null}
-Recovery Key 1: Sr90rdG3SEEz8pEmUd1HJhWmoDzMLiHwBay4EpD82Duy
-Recovery Key 2: Mjk+TZO/p4sm36KTaZFXNuPuCMjdn6Y/Qvm65DLX2e8
-Recovery Key 3: 6WltKoVAf8J4yTHVfMt/Ky9txhJL5P3XIlf9W6Baz93
-Recovery Key 4: aDy61n4SezTFZFVtfkD6jiUTse16BG4BH4Cx1GRUPjm
-Recovery Key 5: +xb/S9Sb4S2poactdbwzjl9zGpH7qB25YmyIOAJ2Yjx
-Initial Root Token: hvs.jtEqNjivmy2aw9d30RRpt71
+Recovery Key 1: [SECRET_REDACTED]
+Recovery Key 2: Mjk[AWS_SECRET_ACCESS_KEY]
+Recovery Key 3: [SECRET_REDACTED]
+Recovery Key 4: [SECRET_REDACTED]
+Recovery Key 5: +xb[AWS_SECRET_ACCESS_KEY]
+Initial Root Token: [VAULT_TOKEN]
 Success! Vault is initialized.
 ```
 
@@ -48,14 +48,14 @@ Success! Vault is initialized.
 Log in using the root token you just received:
 
 ```bash theme={null}
-vault login hvs.jtEqNjivmy2aw9d30RRpt71
+vault login [VAULT_TOKEN]
 ```
 
 You should see:
 
 ```plaintext theme={null}
 Success! You are now authenticated.
-token                 hvs.jtEqNjivmy2aw9d30RRpt71
+token                 [VAULT_TOKEN]
 token_policies        ["root"]
 ```
 
@@ -64,7 +64,7 @@ token_policies        ["root"]
 Revoking the root token simulates loss of access:
 
 ```bash theme={null}
-vault token revoke hvs.jtEqNjivmy2aw9d30RRpt71
+vault token revoke [VAULT_TOKEN]
 ```
 
 After revocation, any Vault API call will return a `403 permission denied`:
@@ -133,7 +133,7 @@ vault operator generate-root \
 Result:
 
 ```plaintext theme={null}
-hvs.jMupJyUlV5DxCYB0c9CMdPj
+[VAULT_TOKEN]
 ```
 
 ## 8. Authenticate with the New Root Token
@@ -141,14 +141,14 @@ hvs.jMupJyUlV5DxCYB0c9CMdPj
 Log in with your newly generated root token:
 
 ```bash theme={null}
-vault login hvs.jMupJyUlV5DxCYB0c9CMdPj
+vault login [VAULT_TOKEN]
 ```
 
 Expected output:
 
 ```plaintext theme={null}
 Success! You are now authenticated.
-token                 hvs.jMupJyUlV5DxCYB0c9CMdPj
+token                 [VAULT_TOKEN]
 token_policies        ["root"]
 ```
 
@@ -242,13 +242,13 @@ cat init.txt
 Sample output:
 
 ```text theme={null}
-Recovery Key 1: yILFH1+RnXAWfkwDjPZGfpj2PtChxLHmcCzdBV2dBzhd
-Recovery Key 2: XpdyFUPwzNviwcFttS2+fb5/7tiJCaKxgLdZcWr5JPL
-Recovery Key 3: 7bNyeKbRz+kkKo3vtlPpcIXGObJcCFaEQL+IUJ5J9BXA
-Recovery Key 4: qaFHQJwdMfIDaTcJwltHFDC+/hPjy91StnbZSOCWUKin
-Recovery Key 5: FHjem7Hsw0TPkEyvdOvsh8Pp2JymJr6Aa74sajj40/yr
+Recovery Key 1: [SECRET_REDACTED]
+Recovery Key 2: [SECRET_REDACTED]
+Recovery Key 3: [SECRET_REDACTED]
+Recovery Key 4: [SECRET_REDACTED]
+Recovery Key 5: [SECRET_REDACTED]
 
-Initial Root Token: hvs.Wxqk6kDX3fAko3LoCCfczQ3D
+Initial Root Token: [VAULT_TOKEN]
 Success! Vault is initialized.
 Recovery key initialized with 5 key shares and a key threshold of 3.
 ```

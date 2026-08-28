@@ -306,7 +306,7 @@ Below is an example of the Kubernetes secret after decryption:
 apiVersion: v1
 data:
   MONGO_PASSWORD: U3VxZXJYQXNmd29yZA==
-  MONGO_URI: bW9uZ29kYjYtY2l0Z2F6moubW9uZ29kYi5uZXQvc3VwZXJYUh
+  MONGO_URI: [SECRET_REDACTED]
   MONGO_USERNAME: c3VwZXI2Y
 kind: Secret
 metadata:

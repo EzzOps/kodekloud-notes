@@ -238,7 +238,7 @@ Terraform will perform the following actions:
 
 Plan: 1 to add, 0 to change, 0 to destroy.
 azurerm_resource_group.example: Creating...
-azurerm_resource_group.example: Creation complete after 2s [id=/subscriptions/xxxx/resourceGroups/example-pipeline-resources]
+azurerm_resource_group.example: Creation complete after 2s [[SECRET_REDACTED]-pipeline-resources]
 Apply complete! Resources: 1 added, 0 changed, 0 destroyed.
 ```
 

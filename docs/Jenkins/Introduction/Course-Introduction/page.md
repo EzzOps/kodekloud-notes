@@ -34,5 +34,5 @@ The solution is Jenkins. Jenkins streamlines the software development lifecycle 
 With these tools and techniques at your disposal, you're well on your way to becoming a Jenkins expert. Let's dive in and start building your mastery of Jenkins!
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins/module/5a828d07-ced8-44a3-8b8d-f2467f247360/lesson/6bd24ce6-701b-48b8-87af-5718de4ed290" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[AWS_SECRET_ACCESS_KEY]-ced8-44a3-8b8d-f2467f247360/lesson/6bd24ce6-701b-48b8-87af-5718de4ed290" />
 </CardGroup>

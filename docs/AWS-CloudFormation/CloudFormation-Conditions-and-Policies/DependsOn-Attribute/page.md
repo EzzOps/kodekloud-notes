@@ -26,7 +26,7 @@ What DependsOn does:
 
 For more details, see the AWS CloudFormation documentation:
 
-* [AWS CloudFormation: Resource creation order and DependsOn](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-attribute-dependson.html)
+* [AWS CloudFormation: Resource creation order and DependsOn](https://docs.aws.amazon.[SECRET_REDACTED]-attribute-dependson.html)
 * [AWS S3 documentation](https://docs.aws.amazon.com/s3/index.html)
 
 Below is a simple CloudFormation YAML example that creates an S3 bucket and a bucket policy. The BucketPolicy resource uses DependsOn to ensure it is created only after the bucket exists.
@@ -66,8 +66,8 @@ Key points in the example:
 
 Links and references
 
-* [AWS CloudFormation documentation: DependsOn attribute](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-attribute-dependson.html)
-* [AWS CloudFormation best practices](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/best-practices.html)
+* [AWS CloudFormation documentation: DependsOn attribute](https://docs.aws.amazon.[SECRET_REDACTED]-attribute-dependson.html)
+* [AWS CloudFormation best practices](https://docs.aws.amazon.com[AWS_SECRET_ACCESS_KEY]-practices.html)
 * [Amazon S3 documentation](https://docs.aws.amazon.com/s3/index.html)
 
 <CardGroup>

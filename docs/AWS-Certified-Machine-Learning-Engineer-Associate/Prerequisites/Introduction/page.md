@@ -1,6 +1,6 @@
 # Introduction
 
-Source: https://notes.kodekloud.com/docs/AWS-Certified-Machine-Learning-Engineer-Associate/Prerequisites/Introduction/page
+Source: https://notes.kodekloud.com/docs/AWS-Certified-Machine-Learning-Engineer-[SECRET_REDACTED]
 
 Overview of an AWS Machine Learning Associate course teaching production-ready ML on AWS, covering data processing, model development, deployment, monitoring, security, and exam-focused hands-on labs.
 

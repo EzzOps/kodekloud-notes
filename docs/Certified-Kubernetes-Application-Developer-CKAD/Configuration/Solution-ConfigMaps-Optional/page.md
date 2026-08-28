@@ -38,9 +38,9 @@ IP:
   10.42.0.9
 Containers:
   webapp-color:
-    Container ID:   containerd://750b751f5351c7edbaaaaf33e77d8f9709ed85ea4862914bbe4d79c1254b54fb7
+    Container ID:   containerd://[SECRET_REDACTED]
     Image:          kodekloud/webapp-color
-    Image ID:       docker.io/kodekloud/webapp-color@sha256:99c3821ea49b89c7a22d3eebab5c2e1ec651452e7675af2434850
+    Image ID:       docker.io/kodekloud/webapp-color@sha256:[SECRET_REDACTED]
     Port:           <none>
     Host Port:      <none>
     State:          Running

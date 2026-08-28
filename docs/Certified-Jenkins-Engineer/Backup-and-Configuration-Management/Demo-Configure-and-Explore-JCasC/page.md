@@ -110,12 +110,12 @@ credentials:
               id: "gitea-server-creds"
               description: "Gitea Server Credentials"
               username: "gitea-admin"
-              password: "{AAABAAAAQ4e7IwFYLRu0yZlNsLqahKkpJFtDGTyKUsxQCU=}"
+              password: "{[SECRET_REDACTED]=}"
               scope: GLOBAL
           - string:
               id: "sonar-qube-token"
               description: "SonarQube Server Token"
-              secret: "{AAABAAAAQpXMpOkYc2h9v0KshvCkdK8c9207YLPcYZ3ot64=}"
+              secret: "{[SECRET_REDACTED]=}"
               scope: GLOBAL
 ```
 

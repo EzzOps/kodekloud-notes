@@ -91,7 +91,7 @@ Use Docker Engine metrics to monitor the health and behavior of the Docker daemo
 
 * Prometheus documentation: [https://prometheus.io/docs/](https://prometheus.io/docs/)
 * cAdvisor GitHub: `https://github.com/google/cadvisor`
-* Docker daemon docs: [https://docs.docker.com/engine/reference/commandline/dockerd/#daemon-configuration-file](https://docs.docker.com/engine/reference/commandline/dockerd/#daemon-configuration-file)
+* Docker daemon docs: [https://docs.docker.[AWS_SECRET_ACCESS_KEY]/#daemon-configuration-file](https://docs.docker.[AWS_SECRET_ACCESS_KEY]/#daemon-configuration-file)
 
 <Frame>
   <img alt="The image compares Docker Engine metrics with cAdvisor metrics, highlighting the differences in CPU/memory usage, process information, and container-specific metrics." />

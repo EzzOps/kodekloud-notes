@@ -134,7 +134,7 @@ On the dump service, the secret appears in the POST payload:
 
 ```text theme={null}
 POST /dumps/c2a7d181-5768-4cb5-a930-4d016c38d7d2
-anything=kwIvBBZ1Mlyap7XzquB/ScxFPlD0uINVszfF+q
+[SECRET_REDACTED]
 ```
 
 <Callout icon="triangle-alert">

@@ -180,7 +180,7 @@ Follow these steps to set up an incoming webhook in Slack.
 4. Click **Add New Webhook to Workspace**, select `#falco`, and authorize. Copy the generated URL:
 
    ```text theme={null}
-   https://hooks.slack.com/services/T00000000/B00000000/XXXXXXXXXXXXXXXXXXXXXXXX
+   https://hooks.slack.[SECRET_REDACTED]
    ```
 
 <Callout icon="triangle-alert">
@@ -192,7 +192,7 @@ Follow these steps to set up an incoming webhook in Slack.
    ```bash theme={null}
    curl -X POST -H 'Content-type: application/json' \
      --data '{"text":"Hello, Falco!"}' \
-     https://hooks.slack.com/services/T00000000/B00000000/XXXXXXXXXXXXXXXXXXXXXXXX
+     https://hooks.slack.[SECRET_REDACTED]
    ```
 
 You should see **“Hello, Falco!”** in the `#falco` channel.
@@ -205,7 +205,7 @@ Use Helm to enable Falco Sidekick and configure Slack:
 helm upgrade falco falcosecurity/falco \
   --set falcosidekick.enabled=true \
   --set falcosidekick.webui.enabled=true \
-  --set falcosidekick.config.slack.webhookurl="https://hooks.slack.com/services/T00000000/B00000000/XXXXXXXXXXXXXXXXXXXXXXXX" \
+  --set falcosidekick.config.slack.webhookurl="https://hooks.slack.[SECRET_REDACTED]" \
   --set falcosidekick.config.customfields="environment:production,datacenter:paris" \
   -n falco
 ```

@@ -123,14 +123,14 @@ Many teams prefer UTC for consistency across global deployments, but local time 
 ## Next Steps
 
 * Use this SNS topic ARN when you create CloudWatch alarms in our next lesson.
-* Explore [CloudWatch Alarms](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/AlarmThatSendsEmail.html) to set up threshold-based notifications.
+* Explore [CloudWatch Alarms](https://docs.aws.amazon.[SECRET_REDACTED].html) to set up threshold-based notifications.
 * Dive into [SNS Documentation](https://docs.aws.amazon.com/sns/latest/dg/welcome.html) for advanced delivery options.
 
 ***
 
 ## Links and References
 
-* [AWS CloudWatch Overview](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html)
+* [AWS CloudWatch Overview](https://docs.aws.amazon.[SECRET_REDACTED].html)
 * [Amazon SNS Developer Guide](https://docs.aws.amazon.com/sns/latest/dg/welcome.html)
 * [AWS Free Tier Details](https://aws.amazon.com/free/)
 

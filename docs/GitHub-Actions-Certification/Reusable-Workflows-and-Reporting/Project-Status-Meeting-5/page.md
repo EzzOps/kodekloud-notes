@@ -101,7 +101,7 @@ jobs:
 ## Links and References
 
 * [GitHub Actions Documentation](https://docs.github.com/actions)
-* [Kubernetes Deployments](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/)
+* [Kubernetes Deployments](https://kubernetes.[SECRET_REDACTED]/)
 * [Docker Hub](https://hub.docker.com/)
 
 <CardGroup>

@@ -140,7 +140,7 @@ To remove an item, select it and choose Delete item(s), then confirm the deletio
 
 DynamoDB supports PartiQL, a SQL-compatible language that lets you run familiar INSERT/SELECT/UPDATE/DELETE statements against DynamoDB tables. PartiQL statements are translated into native DynamoDB operations. For automation and production use, prefer the AWS CLI or SDKs.
 
-* PartiQL reference: [https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/ql-reference.html](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/ql-reference.html)
+* PartiQL reference: [https://docs.aws.amazon.[AWS_SECRET_ACCESS_KEY]/ql-reference.html](https://docs.aws.amazon.[AWS_SECRET_ACCESS_KEY]/ql-reference.html)
 
 ## 8. Summary and cleanup
 
@@ -156,7 +156,7 @@ When you finish the demo, delete the table from the console to avoid ongoing cos
 
 ## Links and references
 
-* [DynamoDB Developer Guide — PartiQL](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/ql-reference.html)
+* [DynamoDB Developer Guide — PartiQL](https://docs.aws.amazon.[AWS_SECRET_ACCESS_KEY]/ql-reference.html)
 * [AWS CloudWatch documentation](https://learn.kodekloud.com/user/courses/aws-cloudwatch)
 * [Amazon DynamoDB documentation](https://docs.aws.amazon.com/dynamodb/)
 

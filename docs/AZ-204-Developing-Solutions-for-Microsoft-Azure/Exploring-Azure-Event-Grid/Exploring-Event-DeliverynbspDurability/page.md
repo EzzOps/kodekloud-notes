@@ -134,7 +134,7 @@ To ensure that your event subscription is working as expected, follow these test
 ```json theme={null}
 {
   "topic": "/subscriptions/5487d26-5b51-468b-ad45-ee1e2cacf77e/resourceGroups/rg-az204-evgird/providers/Microsoft.Storage/storageAccounts/a224steyg",
-  "subject": "/blobServices/default/containers/events/blobs/objects.json",
+  "subject": "/blobServices[AWS_SECRET_ACCESS_KEY].json",
   "eventType": "Microsoft.Storage.BlobCreated",
   "id": "185f21a7-71ee-8043-72c2-de126c868f71"
 }

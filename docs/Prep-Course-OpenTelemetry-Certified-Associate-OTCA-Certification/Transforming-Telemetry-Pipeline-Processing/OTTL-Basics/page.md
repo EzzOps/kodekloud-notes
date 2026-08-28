@@ -339,7 +339,7 @@ This command helps catch syntax errors and common configuration problems before 
 Further reading and references
 
 * OpenTelemetry Collector: [https://opentelemetry.io/docs/collector/](https://opentelemetry.io/docs/collector/)
-* OTTL overview and syntax (Collector docs): [https://opentelemetry.io/docs/collector/configuration/processor/transform/](https://opentelemetry.io/docs/collector/configuration/processor/transform/)
+* OTTL overview and syntax (Collector docs): [https://opentelemetry.io[AWS_SECRET_ACCESS_KEY]transform/](https://opentelemetry.io[AWS_SECRET_ACCESS_KEY]transform/)
 
 That covers the core OTTL concepts: purpose, placement in the Collector pipeline, common use cases, hands-on examples for enrichment/redaction/filtering, error handling options, and validation tips.
 

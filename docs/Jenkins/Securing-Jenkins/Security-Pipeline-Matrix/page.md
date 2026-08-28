@@ -56,5 +56,5 @@ After updating Bob's permissions, log out of the administrator account and log i
 Thank you for reading this guide on Jenkins security. We hope this exploration has been valuable in strengthening your Jenkins deployment. For more detailed information and best practices, explore the [Jenkins Documentation](https://www.jenkins.io/doc/).
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins/module/7c4c28a9-3607-46d4-920a-3f94ed6a7d5b/lesson/e44511d1-04bc-4dc5-9966-ee7b1daa0461" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[AWS_SECRET_ACCESS_KEY]-3607-46d4-920a-3f94ed6a7d5b/lesson/e44511d1-04bc-4dc5-9966-ee7b1daa0461" />
 </CardGroup>

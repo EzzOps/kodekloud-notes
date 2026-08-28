@@ -77,9 +77,9 @@ Links and references
 Try replacing the `URL` with your own webpages or switching to `PyPDFLoader` to use PDFs. You can also plug this retrieval step into higher-level prebuilt chains for summarization, QA, or citation-aware responses.
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langchain/module/e47b44c9-65c3-46f8-8bed-b075a18ab12b/lesson/9b858443-cf1c-4573-b52f-7a1740cd473c" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[SECRET_REDACTED]-65c3-46f8-8bed-b075a18ab12b/lesson/9b858443-cf1c-4573-b52f-7a1740cd473c" />
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/langchain/module/e47b44c9-65c3-46f8-8bed-b075a18ab12b/lesson/124c59d6-584f-4ab5-8190-8f83f35a14ab" />
+  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.[SECRET_REDACTED]-65c3-46f8-8bed-b075a18ab12b/lesson/124c59d6-584f-4ab5-8190-8f83f35a14ab" />
 </CardGroup>
 
 

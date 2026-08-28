@@ -58,7 +58,7 @@ Follow these steps to register and activate your AWS account:
 
 * [AWS Organizations Overview](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_introduction.html)
 * [AWS Identity and Access Management](https://docs.aws.amazon.com/iam/latest/UserGuide/introduction.html)
-* [AWS Billing and Cost Management](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-what-is.html)
+* [AWS Billing and Cost Management](https://docs.aws.amazon.com/[AWS_SECRET_ACCESS_KEY]-what-is.html)
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/aws-iam/module/84a65700-7455-4ad8-aeb5-27dfaf07b8cc/lesson/422916ee-00b6-45d4-8ae5-acd8f5245b89" />

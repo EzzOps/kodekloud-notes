@@ -26,7 +26,7 @@ vault write transit/decrypt/training \
   ciphertext="vault:v1:FYpph6C7r5MUILIiEiFhCoJBxelQbsGe..."
 # Key       Value
 # ---       -----
-# plaintext R2V0dGluZyBTdGFydGVkIHdpdGggSGFzaGlDb3JwIFZhdWx0Cg==
+# plaintext [SECRET_REDACTED]==
 ```
 
 ***

@@ -1,6 +1,6 @@
 # Conclusion
 
-Source: https://notes.kodekloud.com/docs/LangChain/Conclusion/Conclusion/page
+Source: https://notes.kodekloud.[AWS_SECRET_ACCESS_KEY]/page
 
 Course conclusion summarizing LangChain fundamentals, key components, practical takeaways, and recommended next steps for prototyping, iterating, and hardening generative AI applications.
 
@@ -47,5 +47,5 @@ Final thoughts
 The generative AI landscape moves quickly. Use this course as a foundation: keep experimenting, iterate on designs, and combine the core concepts you learned to build more capable systems. I look forward to seeing the applications you create—congratulations again on completing the course.
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langchain/module/58477604-1ae6-41d6-9bd6-07c46720831b/lesson/4032908a-07f5-4835-8566-72a407861e44" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[SECRET_REDACTED]-1ae6-41d6-9bd6-07c46720831b/lesson/4032908a-07f5-4835-8566-72a407861e44" />
 </CardGroup>

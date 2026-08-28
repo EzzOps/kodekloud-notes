@@ -79,7 +79,7 @@ Observability is your competitive advantage in cloud-native environments. By har
 
 * [AWS CloudWatch Documentation](https://docs.aws.amazon.com/cloudwatch/)
 * [AWS X-Ray Developer Guide](https://docs.aws.amazon.com/xray/latest/devguide/)
-* [Amazon CloudWatch Logs Insights](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/AnalyzingLogData.html)
+* [Amazon CloudWatch Logs Insights](https://docs.aws.amazon.[SECRET_REDACTED].html)
 * [Kubernetes Logging and Monitoring](https://kubernetes.io/docs/concepts/cluster-administration/logging/)
 
 <CardGroup>

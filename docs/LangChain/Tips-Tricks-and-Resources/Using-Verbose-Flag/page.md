@@ -79,7 +79,7 @@ def persist_event(event, filename="langchain_trace.jsonl"):
 By combining verbose runtime flags with custom callback handlers and a standardized persistence pattern for traces, you can quickly locate the source of errors, validate prompt formats, and build a robust observability workflow around LangChain applications.
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langchain/module/b5f7771a-fdbc-45b1-a786-6c84bb7ffc76/lesson/873344b7-d6b4-4c2f-86ad-82ae24246258" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[SECRET_REDACTED]-fdbc-45b1-a786-6c84bb7ffc76/lesson/873344b7-d6b4-4c2f-86ad-82ae24246258" />
 </CardGroup>
 
 
@@ -197,5 +197,5 @@ For more details, see:
 * ChatOpenAI: [https://pypi.org/project/langchain-openai/](https://pypi.org/project/langchain-openai/)
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langchain/module/b5f7771a-fdbc-45b1-a786-6c84bb7ffc76/lesson/ea0b058a-7c2d-4b17-81e6-fb4026f5a6fe" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[SECRET_REDACTED]-fdbc-45b1-a786-6c84bb7ffc76/lesson/ea0b058a-7c2d-4b17-81e6-fb4026f5a6fe" />
 </CardGroup>

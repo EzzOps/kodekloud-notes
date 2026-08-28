@@ -4,7 +4,7 @@ resource "aws_key_pair" "alpha" {
   fingerprint = "d7:ff:a6:63:18:64:9c:57:a1:ee:ca:a4:ad:c2:81:62"
   id          = "alpha"
   key_name    = "alpha"
-  public_key  = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDJ3F6tyPEFEzV0LX3X8BsXdMsQz1x2CeikKDEY0aIj41qgxMCP/iteneqXSIFZBp5vizPvaoIR3Um9xK7PGoW8giupGn+EPuxIA4cDM4VzOQoikMhz5XK0WhEjkVzTo4+S0puvDZuWIsdiW9mxhJc7tgBNL0cV1WSYVkz4G/fs1NfRPW5mYAM49f4fhtxPb5ok4Q2Lg9dPKVHO/Bgeu5woMc7RY0p1ej6D4CKF61ymSDJpw0HYX/wqE9+cfEauh7xZcG0q9t2ta6F6fmX0agvFyZo8aFbXeUBr7osSCJNgvavlWbM/06niWr0vYX2xwW"
+  public_key  = "ssh-rsa [SECRET_REDACTED][AWS_SECRET_ACCESS_KEY][SECRET_REDACTED]"
   tags_all    = {}
 }
 
@@ -14,7 +14,7 @@ resource "aws_key_pair" "beta" {
   fingerprint = "d7:ff:a6:63:18:64:9c:57:a1:ee:ca:a4:ad:c2:81:62"
   id          = "beta"
   key_name    = "beta"
-  public_key  = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDJ3F6tyPEFEzV0LX3X8BsXdMsQz1x2CeikKDEY0aIj41qgxMCP/iteneqXSIFZBp5vizPvaoIR3Um9xK7PGoW8giupGn+EPuxIA4cDM4VzOQoikMhz5XK0WhEjkVzTo4+S0puvDZuWIsdiW9mxhJc7tgBNL0cV1WSYVkz4G/fs1NfRPW5mYAM49f4fhtxPb5ok4Q2Lg9dPKVHO/Bgeu5woMc7RY0p1ej6D4CKF61ymSDJpw0HYX/wqE9+cfEauh7xZcG0q9t2ta6F6fmX0agvFyZo8aFbXeUBr7osSCJNgvavlWbM/06niWr0vYX2xwW"
+  public_key  = "ssh-rsa [SECRET_REDACTED][AWS_SECRET_ACCESS_KEY][SECRET_REDACTED]"
   tags_all    = {}
 }
 ```
@@ -97,7 +97,7 @@ When applying the configuration, Terraform refreshes the state of existing resou
 
 ```plaintext theme={null}
 $ terraform apply
-local_file.pet: Refreshing state... [id=d1a31467f206d6ea8ab1cad382bc106bf46df69]
+local_file.pet: Refreshing state... [id[AWS_SECRET_ACCESS_KEY]]
 
 An execution plan has been generated and is shown below.
 Resource actions are indicated with the following symbols:

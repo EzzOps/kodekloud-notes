@@ -62,9 +62,9 @@ IPs:
   IP:        172.17.0.3
 Containers:
   nginx:
-    Container ID:   docker://987785b312ad2e38c77132300f8709b8a027566462c2d18634ff13b34de25479
+    Container ID:   docker://[SECRET_REDACTED]
     Image:          nginx
-    Image ID:       docker-pullable://nginx@sha256:a93c8a0b0974c967aebe868a186e5c205f4d3bcb5423a56559f2f9599074bbcd
+    Image ID:       docker-pullable://nginx@sha256:[SECRET_REDACTED]
     Port:           <none>
     Host Port:      <none>
     State:          Running

@@ -139,7 +139,7 @@ Below is an example JSON snippet that displays details of the policy violation w
     }
   ],
   "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/8c3da23-7156-49ed-b145-24f95f9dcbd6",
-  "policySetDefinitionId": "/providers/Microsoft.Authorization/policySetDefinitions/b54394e980747e8983764e"
+  "policySetDefinitionId": "/providers/Microsoft.[SECRET_REDACTED]"
 }
 ```
 

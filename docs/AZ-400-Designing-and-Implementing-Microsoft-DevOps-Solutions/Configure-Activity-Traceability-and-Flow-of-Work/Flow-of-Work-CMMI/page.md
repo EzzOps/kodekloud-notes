@@ -101,7 +101,7 @@ With the CMMI process template established, our next topic will cover **activity
 
 ## References
 
-* [Azure DevOps Process Templates](https://docs.microsoft.com/azure/devops/organizations/settings/work/process-templates)
+* [Azure DevOps Process Templates](https://docs.microsoft.[AWS_SECRET_ACCESS_KEY]work/process-templates)
 * [CMMI Model Overview](https://cmmiinstitute.com/)
 * [Azure DevOps Work Item Types](https://docs.microsoft.com/azure/devops/boards/work-items/about-work-items)
 

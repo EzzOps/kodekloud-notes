@@ -13,7 +13,7 @@ This guide explains:
 * How to exclude labels using `without(...)`
 * Practical examples with `http_requests` and `node_cpu_seconds_total`
 
-See also: [Prometheus Aggregation Operators](https://prometheus.io/docs/prometheus/latest/querying/operators/#aggregation-operators)
+See also: [Prometheus Aggregation Operators](https://prometheus.[SECRET_REDACTED]/#aggregation-operators)
 
 ## Aggregation operators overview
 
@@ -196,7 +196,7 @@ This drops `cpu` and `mode` from the result, leaving the aggregation keyed by th
 
 ## Links and references
 
-* [Prometheus Querying: Aggregation Operators](https://prometheus.io/docs/prometheus/latest/querying/operators/#aggregation-operators)
+* [Prometheus Querying: Aggregation Operators](https://prometheus.[SECRET_REDACTED]/#aggregation-operators)
 * [Prometheus Documentation](https://prometheus.io/docs/)
 
 <CardGroup>

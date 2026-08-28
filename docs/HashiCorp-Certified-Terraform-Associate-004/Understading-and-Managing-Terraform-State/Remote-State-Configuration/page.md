@@ -55,7 +55,7 @@ Fields explained:
 * `key`: path/file name inside the bucket for your state (e.g., `prod/terraform.tfstate` helps organize multiple environments).
 * `region`: AWS region for the bucket.
 * `encrypt`: enable server-side encryption for the state object.
-* `dynamodb_table`: used to enable state locking with S3 by pointing to a DynamoDB table. Check the official docs for supported locking behavior for your Terraform and provider versions: [https://developer.hashicorp.com/terraform/language/settings/backends/s3](https://developer.hashicorp.com/terraform/language/settings/backends/s3)
+* `dynamodb_table`: used to enable state locking with S3 by pointing to a DynamoDB table. Check the official docs for supported locking behavior for your Terraform and provider versions: [https://developer.hashicorp.[AWS_SECRET_ACCESS_KEY]/s3](https://developer.hashicorp.[AWS_SECRET_ACCESS_KEY]/s3)
 
 Azure Blob Storage backend (azurerm)
 Azure backends follow the same pattern but use Azure-specific configuration fields. Authentication typically relies on Azure AD credentials or managed identities — avoid hard-coded secrets.
@@ -132,8 +132,8 @@ When to recommend local vs remote
 Links and references
 
 * Terraform init docs: [https://developer.hashicorp.com/terraform/cli/commands/init](https://developer.hashicorp.com/terraform/cli/commands/init)
-* S3 backend docs: [https://developer.hashicorp.com/terraform/language/settings/backends/s3](https://developer.hashicorp.com/terraform/language/settings/backends/s3)
-* Azure backend docs: [https://developer.hashicorp.com/terraform/language/settings/backends/azurerm](https://developer.hashicorp.com/terraform/language/settings/backends/azurerm)
+* S3 backend docs: [https://developer.hashicorp.[AWS_SECRET_ACCESS_KEY]/s3](https://developer.hashicorp.[AWS_SECRET_ACCESS_KEY]/s3)
+* Azure backend docs: [https://developer.hashicorp.[AWS_SECRET_ACCESS_KEY]/azurerm](https://developer.hashicorp.[AWS_SECRET_ACCESS_KEY]/azurerm)
 * HCP Terraform Cloud: [https://developer.hashicorp.com/terraform/cloud](https://developer.hashicorp.com/terraform/cloud)
 
 <CardGroup>

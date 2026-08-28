@@ -26,7 +26,7 @@ Using default tag: latest
 9f1d71d7577d: Pushed
 083ec4401539: Mounted from sanjeevkt720/promexample
 ...
-latest: digest: sha256:cd9b462d575ea589122c44e0a16a928b60eefdc9e29b2019159e35992c size: 2.40 kB
+latest: digest: sha256:[SECRET_REDACTED] size: 2.40 kB
 ```
 
 ## 3) Kubernetes manifest (Deployment + Service)

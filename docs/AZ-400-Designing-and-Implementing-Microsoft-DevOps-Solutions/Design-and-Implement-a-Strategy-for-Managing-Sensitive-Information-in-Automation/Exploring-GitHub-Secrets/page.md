@@ -123,8 +123,8 @@ steps:
 
 * [Azure Key Vault Documentation](https://docs.microsoft.com/azure/key-vault/)
 * [Azure Pipelines YAML Schema](https://docs.microsoft.com/azure/devops/pipelines/yaml-schema)
-* [Azure DevOps Service Connections](https://docs.microsoft.com/azure/devops/pipelines/library/service-endpoints)
-* [Managing Secrets with Azure Key Vault](https://docs.microsoft.com/azure/devops/pipelines/tasks/deploy/azure-key-vault)
+* [Azure DevOps Service Connections](https://docs.microsoft.[SECRET_REDACTED]-endpoints)
+* [Managing Secrets with Azure Key Vault](https://docs.microsoft.[AWS_SECRET_ACCESS_KEY]azure-key-vault)
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/az-400/module/2f8974b7-9aa9-46b8-a562-d7ed568269af/lesson/84b2e01a-665b-40aa-a5e2-d2c583106b18" />

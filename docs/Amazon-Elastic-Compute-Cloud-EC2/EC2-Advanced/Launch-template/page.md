@@ -85,7 +85,7 @@ aws ec2 create-launch-template \
     "ImageId":"ami-0123456789abcdef0",
     "InstanceType":"t3.micro",
     "SecurityGroupIds":["sg-0123456789abcdef0"],
-    "UserData":"IyEvYmluL2Jhc2gKZWNobyAiSGVsbG8sIEFTVycgQ0wiCg=="
+    "UserData":"[SECRET_REDACTED]=="
   }'
 ```
 
@@ -93,7 +93,7 @@ aws ec2 create-launch-template \
 
 * [AWS EC2 Launch Templates Documentation](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-launch-templates.html)
 * [AWS CLI Command Reference](https://docs.aws.amazon.com/cli/latest/reference/ec2/index.html)
-* [Terraform AWS Launch Template Resource](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/launch_template)
+* [Terraform AWS Launch Template Resource](https://registry.terraform.[SECRET_REDACTED]launch_template)
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/amazon-elastic-compute-cloud-ec2/module/fe995ae2-a50f-4c70-9d50-3f2e017bd207/lesson/4d276c58-8a42-428a-945c-5c827448f45a" />

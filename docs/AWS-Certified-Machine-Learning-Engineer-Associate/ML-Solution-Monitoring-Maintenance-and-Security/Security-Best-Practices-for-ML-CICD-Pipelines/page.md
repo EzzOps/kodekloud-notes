@@ -216,7 +216,7 @@ References and further reading
 * [AWS Identity and Access Management (IAM)](https://docs.aws.amazon.com/iam/latest/UserGuide/introduction.html)
 * [AWS Key Management Service (KMS)](https://docs.aws.amazon.com/kms/latest/developerguide/overview.html)
 * [Amazon VPC endpoints (Interface and Gateway)](https://docs.aws.amazon.com/vpc/latest/privatelink/endpoint-services-overview.html)
-* [AWS CloudTrail user guide](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html)
+* [AWS CloudTrail user guide](https://docs.aws.amazon.[SECRET_REDACTED]-user-guide.html)
 * [AWS Config developer guide](https://docs.aws.amazon.com/config/latest/developerguide/what-is-aws-config.html)
 * [Amazon GuardDuty](https://docs.aws.amazon.com/guardduty/latest/ug/what-is-guardduty.html)
 

@@ -65,7 +65,7 @@ REST call pattern example
 Below is a minimal REST POST to the prebuilt layout analyze endpoint. Note the Operation-Location header returned after submission — you poll that URL to check the status and fetch results.
 
 ```http theme={null}
-POST {endpoint}/documentintelligence/documentModels/prebuilt-layout:analyze?api-version={version}
+POST {endpoint}/[SECRET_REDACTED]-layout:analyze?api-version={version}
 Ocp-Apim-Subscription-Key: {key}
 Content-Type: application/json
 
@@ -78,7 +78,7 @@ Example Operation-Location response header:
 
 ```text theme={null}
 Operation-Location:
-{endpoint}/documentintelligence/documentModels/prebuilt-layout/analyzeResults/ab12345c-12ab-23cd-b19c-2322a7f11034?api-version={version}
+{endpoint}/[SECRET_REDACTED]-layout/analyzeResults/ab12345c-12ab-23cd-b19c-2322a7f11034?api-version={version}
 ```
 
 The api-version parameter in the request and operation URL selects which API behavior/version you want to use when Microsoft introduces changes.

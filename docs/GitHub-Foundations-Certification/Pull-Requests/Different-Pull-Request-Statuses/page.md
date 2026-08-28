@@ -91,7 +91,7 @@ Links and references
 * [Git documentation](https://git-scm.com/doc)
 * [GitHub docs: Creating a pull request](https://docs.github.com/en/pull-requests)
 * [MDN: Array.prototype.slice()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice)
-* [MDN: Spread syntax](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax)
+* [MDN: Spread syntax](https://developer.mozilla.org/en-US[AWS_SECRET_ACCESS_KEY]/Spread_syntax)
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/github-foundation-certification/module/d1fa4e43-2a65-4de9-8da8-dc9ea7cede8e/lesson/cd01762a-d490-4310-b50c-e1b357a7dc03" />

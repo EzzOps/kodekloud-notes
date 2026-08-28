@@ -57,7 +57,7 @@ After adding the rule, you should be able to SSH to the VMs in that subnet:
 ssh kodeloud@172.191.36.135
 # SSH server fingerprint prompt:
 # The authenticity of host '172.191.36.135 (172.191.36.135)' can't be established.
-# ED25519 key fingerprint is SHA256:vdKNh1gNzy8gUjET7o7oJz+sVIl/TQxmTtrRV6kwBQ.
+# ED25519 key fingerprint is SHA256:[SECRET_REDACTED].
 # Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
 # kodeloud@vm-nsg-lab-1's password:
 # Last login: Sun Aug 24 19:08:57 on pts/0

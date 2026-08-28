@@ -195,7 +195,7 @@ This architecture makes KEDA an excellent choice when you need:
 * KEDA project: [https://keda.sh/](https://keda.sh/)
 * Kubernetes HPA documentation: [https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale/](https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale/)
 * Prometheus: [https://prometheus.io/](https://prometheus.io/)
-* Cluster Autoscaler (useful when autoscaling nodes): [https://github.com/kubernetes/autoscaler/tree/master/cluster-autoscaler](https://github.com/kubernetes/autoscaler/tree/master/cluster-autoscaler)
+* Cluster Autoscaler (useful when autoscaling nodes): [https://github.[SECRET_REDACTED]-autoscaler](https://github.[SECRET_REDACTED]-autoscaler)
 
 Thanks for reading this lesson.
 

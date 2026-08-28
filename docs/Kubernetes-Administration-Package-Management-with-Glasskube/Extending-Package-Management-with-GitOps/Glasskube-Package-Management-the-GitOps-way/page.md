@@ -78,7 +78,7 @@ Files to update
 
 | File                                            |                                                                   Purpose | Snippet to edit                                                                               |
 | ----------------------------------------------- | ------------------------------------------------------------------------: | --------------------------------------------------------------------------------------------- |
-| `bootstrap/glasskube/glasskubeapplication.yaml` |                  Argo CD Application that deploys the Glasskube bootstrap | Update `spec.source.repoURL` to your repo URL.                                                |
+| `[AWS_SECRET_ACCESS_KEY].yaml` |                  Argo CD Application that deploys the Glasskube bootstrap | Update `spec.source.repoURL` to your repo URL.                                                |
 | `bootstrap/glasskube/applicationset.yaml`       | ApplicationSet generator that points Argo CD at `apps/*` and `packages/*` | Update each `repoURL` entry used by the git generator and the `template.spec.source.repoURL`. |
 
 Example excerpt (update `https://github.com/TODO/TODO` to your repo URL):

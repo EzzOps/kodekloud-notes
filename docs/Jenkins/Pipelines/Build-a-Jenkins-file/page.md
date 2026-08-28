@@ -117,5 +117,5 @@ Now that we've covered the basics of creating and structuring Jenkinsfiles—fro
 That’s it for this lesson. We'll see you in the next one!
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins/module/4eff829b-dd2c-4051-8090-35e8525b8874/lesson/2a3d25b1-320f-460d-ad4f-65625e3d05d3" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[AWS_SECRET_ACCESS_KEY]-dd2c-4051-8090-35e8525b8874/lesson/2a3d25b1-320f-460d-ad4f-65625e3d05d3" />
 </CardGroup>

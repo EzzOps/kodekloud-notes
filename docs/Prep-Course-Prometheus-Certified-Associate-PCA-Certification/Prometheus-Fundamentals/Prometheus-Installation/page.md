@@ -22,7 +22,7 @@ sudo chown -R prometheus:prometheus /etc/prometheus /var/lib/prometheus
 Download the Prometheus release and extract it.
 
 ```bash theme={null}
-wget https://github.com/prometheus/prometheus/releases/download/v2.37.0/prometheus-2.37.0.linux-amd64.tar.gz
+wget https://github.com[AWS_SECRET_ACCESS_KEY]/v2.37.0/prometheus-2.37.0.linux-amd64.tar.gz
 tar xzf prometheus-2.37.0.linux-amd64.tar.gz
 cd prometheus-2.37.0.linux-amd64
 ```

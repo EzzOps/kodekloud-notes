@@ -174,9 +174,9 @@ After the configuration is complete, Jenkins checks out your repository and exec
 > git version 2.43.0
 > git fetch --tags --force --progress -- https://139.84.159.194:5555/dasher-org/jenkins-hello-world.git +refs/heads/*:refs/remotes/origin/*
 > git rev-parse refs/remotes/origin/main^{commit} # timeout=10
-Checking out Revision 6b4e37284084c62a896135672cac165263406b25 (refs/remotes/origin/main)
+Checking out Revision [AWS_SECRET_ACCESS_KEY] (refs/remotes/origin/main)
 > git config core.sparsecheckout # timeout=10
-> git checkout -f 6b4e37284084c62a896135672cac165263406b25 # timeout=10
+> git checkout -f [AWS_SECRET_ACCESS_KEY] # timeout=10
 Commit message: "Add Jenkinsfile"
 > git rev-list --no-walk a05dbf36e7307e735bac28687c6464cb3ef6 # timeout=10
 ```
@@ -187,7 +187,7 @@ After the checkout, the pipeline moves on to subsequent stages. For instance, th
 + echo Print Maven Version
 Print Maven Version
 + mvn -version
-Apache Maven 3.9.8 (36645f6c9b5079805ea5009217e36f2cffd34256)
+Apache Maven 3.9.8 ([AWS_SECRET_ACCESS_KEY])
 Maven home: /var/lib/jenkins/tools/hudson.tasks.Maven_MavenInstallation/M398
 Java version: 17.0.12, vendor: Ubuntu, runtime: /usr/lib/jvm/java-17-openjdk-amd64
 Default locale: en_US, platform encoding: UTF-8

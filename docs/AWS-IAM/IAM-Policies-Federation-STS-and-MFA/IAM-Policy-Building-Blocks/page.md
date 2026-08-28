@@ -76,7 +76,7 @@ Now, any API call outside 09:00–17:00 UTC or from unapproved IP ranges will be
 
 * [AWS Identity and Access Management Documentation](https://docs.aws.amazon.com/iam/)
 * [AWS Lambda](https://aws.amazon.com/lambda/)
-* [Amazon CloudWatch Events](https://docs.aws.amazon.com/AmazonCloudWatch/latest/events/WhatIsCloudWatchEvents.html)
+* [Amazon CloudWatch Events](https://docs.aws.amazon.[SECRET_REDACTED].html)
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/aws-iam/module/8ffebc04-c194-403a-ac2e-2a2f0a6221ce/lesson/be4cba67-e583-47b0-98df-1599fb302a9f" />

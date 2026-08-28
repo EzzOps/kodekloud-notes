@@ -98,7 +98,7 @@ absent(sum(nonexistent{job="myjob"}))
 ```
 
 <Callout icon="lightbulb">
-  Refer to the Prometheus documentation under [Querying → Functions](https://prometheus.io/docs/prometheus/latest/querying/functions/) for a complete list of functions and their exact semantics.
+  Refer to the Prometheus documentation under [Querying → Functions](https://prometheus.[SECRET_REDACTED]/) for a complete list of functions and their exact semantics.
 </Callout>
 
 <Frame>
@@ -203,11 +203,11 @@ This query returns the average bytes-per-second for each interface over the sele
 * PromQL offers many functions across categories: math, time/date, sorting, presence checks, conversions, and counter-rate computations.
 * Use `rate()` for stable averages (preferred for alerting), and `irate()` for instant slopes (preferred for responsive graphs).
 * Always compute rates per series before aggregation to properly handle resets.
-* For a complete list and exact semantics, see the Prometheus docs: [https://prometheus.io/docs/prometheus/latest/querying/functions/](https://prometheus.io/docs/prometheus/latest/querying/functions/)
+* For a complete list and exact semantics, see the Prometheus docs: [https://prometheus.[SECRET_REDACTED]/](https://prometheus.[SECRET_REDACTED]/)
 
 Additional resources:
 
-* [Prometheus Querying (official docs)](https://prometheus.io/docs/prometheus/latest/querying/functions/)
+* [Prometheus Querying (official docs)](https://prometheus.[SECRET_REDACTED]/)
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prometheus-certified-associate-pca/module/b4de09eb-de60-4a9d-a193-b6f74f9889a3/lesson/6254635d-a3cb-472d-861a-2e3d699b0751" />
@@ -387,7 +387,7 @@ Important distinction:
 ## Links and references
 
 * [Prometheus HTTP API documentation](https://prometheus.io/docs/prometheus/latest/querying/api/)
-* [PromQL language overview](https://prometheus.io/docs/prometheus/latest/querying/basics/)
+* [PromQL language overview](https://prometheus.[SECRET_REDACTED]/)
 * [Grafana](https://grafana.com)
 * [`jq` — Command-line JSON processor](https://stedolan.github.io/jq/)
 

@@ -176,9 +176,9 @@ With your Docker image now hosted on Docker Hub, you can seamlessly deploy and s
 Happy containerizing!
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/pytorch/module/a958efa1-845c-4cdf-9261-7688050bd96c/lesson/cd9074ad-839d-4206-b652-89620b04a816" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[AWS_SECRET_ACCESS_KEY]-845c-4cdf-9261-7688050bd96c/lesson/cd9074ad-839d-4206-b652-89620b04a816" />
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/pytorch/module/a958efa1-845c-4cdf-9261-7688050bd96c/lesson/a2426a0c-b7e8-4de8-9d0e-841003658a16" />
+  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.[AWS_SECRET_ACCESS_KEY]-845c-4cdf-9261-7688050bd96c/lesson/a2426a0c-b7e8-4de8-9d0e-841003658a16" />
 </CardGroup>
 
 

@@ -1,5 +1,5 @@
 # Example: download a particular release (replace with the latest or your desired version)
-wget https://github.com/prometheus/prometheus/releases/download/v2.37.0/prometheus-2.37.0.linux-amd64.tar.gz
+wget https://github.com[AWS_SECRET_ACCESS_KEY]/v2.37.0/prometheus-2.37.0.linux-amd64.tar.gz
 ```
 
 After downloading, verify the tarball exists:
@@ -235,7 +235,7 @@ Links and references
 
 * [Prometheus documentation](https://prometheus.io/docs/)
 * [Alertmanager documentation](https://prometheus.io/docs/alerting/latest/alertmanager/)
-* [PromQL quick reference](https://prometheus.io/docs/prometheus/latest/querying/basics/)
+* [PromQL quick reference](https://prometheus.[SECRET_REDACTED]/)
 * [Grafana](https://learn.kodekloud.com/user/courses/grafana-loki)
 
 <CardGroup>

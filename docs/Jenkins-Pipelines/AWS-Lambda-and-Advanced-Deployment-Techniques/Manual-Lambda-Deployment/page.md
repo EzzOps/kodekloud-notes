@@ -66,7 +66,7 @@ Important: the deployed Lambda currently has MongoDB credentials stored as plain
 </Callout>
 
 <Callout icon="lightbulb">
-  For production deployments, avoid hardcoding sensitive values. Use [AWS Secrets Manager](https://docs.aws.amazon.com/secretsmanager/latest/userguide/intro.html) or [AWS Systems Manager Parameter Store (SSM)](https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-parameter-store.html) and grant the Lambda role least privilege to retrieve secrets.
+  For production deployments, avoid hardcoding sensitive values. Use [AWS Secrets Manager](https://docs.aws.amazon.[SECRET_REDACTED].html) or [AWS Systems Manager Parameter Store (SSM)](https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-parameter-store.html) and grant the Lambda role least privilege to retrieve secrets.
 </Callout>
 
 The Lambda function is exposed with a Function URL (you can view and test this in the Lambda console).

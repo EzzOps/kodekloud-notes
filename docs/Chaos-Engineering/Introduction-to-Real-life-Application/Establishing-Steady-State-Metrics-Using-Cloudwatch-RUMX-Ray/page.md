@@ -69,8 +69,8 @@ By capturing steady-state metrics from CloudWatch RUM, Container Insights, and X
 
 ## Links and References
 
-* [AWS CloudWatch RUM](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-RUM.html)
-* [Container Insights in CloudWatch](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/ContainerInsights.html)
+* [AWS CloudWatch RUM](https://docs.aws.amazon.[SECRET_REDACTED]-RUM.html)
+* [Container Insights in CloudWatch](https://docs.aws.amazon.[SECRET_REDACTED].html)
 * [AWS X-Ray Developer Guide](https://docs.aws.amazon.com/xray/latest/devguide/aws-xray.html)
 * [Chaos Engineering on AWS](https://aws.amazon.com/chaos-engineering/)
 

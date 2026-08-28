@@ -155,7 +155,7 @@ In summary, this article has covered several advanced training methods in PyTorc
 These techniques are invaluable for building complex models with enhanced accuracy and efficiency. Next, let's move on to the demonstration section to see these methods in action.
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/pytorch/module/b8cb82ae-a284-41d1-8469-7e60705bbab8/lesson/090bd418-7634-499a-bfd2-bf8bee0a8c46" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[AWS_SECRET_ACCESS_KEY]-a284-41d1-8469-7e60705bbab8/lesson/090bd418-7634-499a-bfd2-bf8bee0a8c46" />
 </CardGroup>
 
 

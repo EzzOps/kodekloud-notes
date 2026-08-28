@@ -91,7 +91,7 @@ This article has provided a detailed overview of various backup strategies for J
 For further details on Jenkins and its capabilities, visit the [Jenkins Documentation](https://www.jenkins.io/doc/). Happy backing up!
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins/module/22de6dac-d594-40dc-a3fb-1cc8d20b8a61/lesson/3fa36943-55fe-48d9-a4b8-b1a170a0cc3d" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[AWS_SECRET_ACCESS_KEY]-d594-40dc-a3fb-1cc8d20b8a61/lesson/3fa36943-55fe-48d9-a4b8-b1a170a0cc3d" />
 </CardGroup>
 
 
@@ -139,5 +139,5 @@ That concludes this article. We look forward to sharing more insights in the nex
 * [Continuous Integration and Continuous Delivery (CI/CD)](https://www.redhat.com/en/topics/devops/what-is-ci-cd)
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins/module/22de6dac-d594-40dc-a3fb-1cc8d20b8a61/lesson/b18fefbe-dcc3-4a4c-bc60-d9585c9343de" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[AWS_SECRET_ACCESS_KEY]-d594-40dc-a3fb-1cc8d20b8a61/lesson/b18fefbe-dcc3-4a4c-bc60-d9585c9343de" />
 </CardGroup>

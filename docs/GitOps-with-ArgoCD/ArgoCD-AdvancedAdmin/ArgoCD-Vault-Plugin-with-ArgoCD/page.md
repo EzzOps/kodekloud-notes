@@ -124,7 +124,7 @@ For local testing outside of ArgoCD, follow these steps to install the ArgoCD Va
    ```bash theme={null}
    argocd-vault-plugin version
    # Expected output:
-   # argocd-vault-plugin v1.12.0 (9c7288a5b2d395fea19c1100f2cd07b547cc1ee2) BuildDate: 2022-07-08T13:27:45Z
+   # argocd-vault-plugin v1.12.0 ([AWS_SECRET_ACCESS_KEY]) BuildDate: 2022-07-08T13:27:45Z
    ```
 
 The plugin supports commands such as `generate`, `completion`, and `help`. The `generate` command is used to replace placeholder values in your secret manifest with actual data from Vault.

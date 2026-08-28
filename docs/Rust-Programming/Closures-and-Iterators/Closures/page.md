@@ -348,7 +348,7 @@ cargo run -- --help
 cargo run -- list containers
 # Example output:
 Printing containers:
-f38a4319459bb201b0875fb9c5b13f91913f3d2e160029b77217cbfe7589da23    /my_nginx    Up 36 seconds
+[SECRET_REDACTED]    /my_nginx    Up 36 seconds
 ```
 
 * List all containers, including stopped:
@@ -364,7 +364,7 @@ cargo run -- list containers -a
 ```bash theme={null}
 cargo run -- list images
 # Example output:
-sha256:0c86dddac19f2ce4fd716ac58c0fd87bf69bfd4edabfd6971fb885bafd12a00b    nginx:latest
+sha256:[SECRET_REDACTED]    nginx:latest
 ```
 
 * Start a container:

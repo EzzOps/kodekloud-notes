@@ -121,7 +121,7 @@ For instance, you can create a post with the title "favorite foods" and the cont
 curl -X 'POST' \
   'http://127.0.0.1:8000/posts/' \
   -H 'accept: application/json' \
-  -H 'Authorization: Bearer eyJhbcG1OiJ1I2iInlIsInRsCC16kpVC39.eyJ1c2VyX2lkIjoxNjIwNjYxNjoxMjk1MjEzNDgzMTg3Mzg3MjI2MzQwMjMxMjY4IjoicmFyb2N1c2IifQ.4Xex2p9938/Z1188sIHk8PI' \
+  -H 'Authorization: Bearer eyJhbcG1OiJ1I2iInlIsInRsCC16kpVC39.[SECRET_REDACTED].4Xex2p9938/Z1188sIHk8PI' \
   -H 'Content-Type: application/json' \
   -d '{
   "title": "favorite foods",

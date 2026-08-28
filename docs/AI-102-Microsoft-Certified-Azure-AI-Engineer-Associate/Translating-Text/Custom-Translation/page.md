@@ -157,12 +157,12 @@ Tips and best practices
 Additional resources
 
 * Microsoft Docs: Custom Translator — [https://learn.microsoft.com/azure/cognitive-services/translator/custom-translator/](https://learn.microsoft.com/azure/cognitive-services/translator/custom-translator/)
-* Sample datasets (English↔German): [https://github.com/MicrosoftTranslator/CustomTranslatorSampleDatasets](https://github.com/MicrosoftTranslator/CustomTranslatorSampleDatasets)
+* Sample datasets (English↔German): [https://github.[SECRET_REDACTED]](https://github.[SECRET_REDACTED])
 
 For a hands-on starting point, the sample dataset repository on GitHub contains example parallel corpora you can upload to the Custom Translator portal to experiment with training and evaluation.
 
 <Frame>
-  <img alt="A screenshot of a GitHub repository page for &#x22;MicrosoftTranslator/CustomTranslatorSampleDatasets&#x22; showing a list of files in the main branch and an About sidebar with repository details." />
+  <img alt="A screenshot of a GitHub repository page for &#x22;[SECRET_REDACTED]&#x22; showing a list of files in the main branch and an About sidebar with repository details." />
 </Frame>
 
 <CardGroup>

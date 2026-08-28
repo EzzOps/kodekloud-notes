@@ -65,7 +65,7 @@ This command outputs detailed JSON information including network settings, inter
 ```json theme={null}
 [
   {
-    "Id": "35505f7810d17291261a43391d4b6c0846594d415ce4f4d0a6ffbf9cc5109048",
+    "Id": "[SECRET_REDACTED]",
     "Name": "/blissful_hopper",
     "NetworkSettings": {
       "Bridge": "",

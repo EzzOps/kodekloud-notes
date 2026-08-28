@@ -27,7 +27,7 @@ Best practices and operational notes
 * The bind mount keeps the container's Prometheus configuration in sync with the host file: editing the host `prometheus.yml` will immediately update the file inside the container. Prometheus, however, needs to reload the configuration for changes to take effect.
 
 <Callout icon="warning">
-  Prometheus will not automatically apply edited configs unless it reloads them. Either restart the container or trigger a config reload via Prometheus' reload mechanism (for example, POST to `/-/reload` if available). Check the Prometheus configuration reloading docs: [https://prometheus.io/docs/prometheus/latest/configuration/configuration/#reloading-configuration](https://prometheus.io/docs/prometheus/latest/configuration/configuration/#reloading-configuration)
+  Prometheus will not automatically apply edited configs unless it reloads them. Either restart the container or trigger a config reload via Prometheus' reload mechanism (for example, POST to `/-/reload` if available). Check the Prometheus configuration reloading docs: [https://prometheus.[AWS_SECRET_ACCESS_KEY]configuration/#reloading-configuration](https://prometheus.[AWS_SECRET_ACCESS_KEY]configuration/#reloading-configuration)
 </Callout>
 
 Accessing the Prometheus UI
@@ -40,7 +40,7 @@ This opens the Prometheus expression browser, status pages, and API endpoints.
 
 Links and references
 
-* Prometheus configuration and reloading: [https://prometheus.io/docs/prometheus/latest/configuration/configuration/](https://prometheus.io/docs/prometheus/latest/configuration/configuration/)
+* Prometheus configuration and reloading: [https://prometheus.[AWS_SECRET_ACCESS_KEY]configuration/](https://prometheus.[AWS_SECRET_ACCESS_KEY]configuration/)
 * Docker networking (host.docker.internal, networking details): [https://docs.docker.com/desktop/networking/](https://docs.docker.com/desktop/networking/)
 * Official Prometheus Docker image on Docker Hub: [https://hub.docker.com/r/prom/prometheus](https://hub.docker.com/r/prom/prometheus)
 

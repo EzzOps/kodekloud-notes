@@ -1,6 +1,6 @@
 # Relationships
 
-Source: https://notes.kodekloud.com/docs/Prep-Course-Certified-Backstage-Associate-CBA-Certification/Catalog/Relationships/page
+Source: https://notes.kodekloud.com/docs/Prep-Course-Certified-Backstage-Associate-CBA-[AWS_SECRET_ACCESS_KEY]
 
 How to model and declare relationships between Backstage catalog entities to express ownership, memberships, dependencies, APIs, systems, and domain hierarchies for visualization and impact analysis
 

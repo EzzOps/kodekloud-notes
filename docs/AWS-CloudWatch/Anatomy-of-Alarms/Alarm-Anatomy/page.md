@@ -50,7 +50,7 @@ aws cloudwatch put-metric-alarm \
 </Frame>
 
 <Callout icon="lightbulb">
-  Consider using [anomaly detection thresholds](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/AlarmThatSendsEmail.html#features-anomaly-detection) for dynamic baselines instead of static thresholds.
+  Consider using [anomaly detection thresholds](https://docs.aws.amazon.[SECRET_REDACTED].html#features-anomaly-detection) for dynamic baselines instead of static thresholds.
 </Callout>
 
 <Callout icon="triangle-alert">
@@ -78,8 +78,8 @@ Define how CloudWatch alerts you when the alarm state changes:
 
 ## Links and References
 
-* [Amazon CloudWatch Alarms](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/AlarmThatSendsEmail.html)
-* [AWS/RDS Monitoring Overview](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/MonitoringOverview.html)
+* [Amazon CloudWatch Alarms](https://docs.aws.amazon.[SECRET_REDACTED].html)
+* [AWS/RDS Monitoring Overview](https://docs.aws.amazon.[SECRET_REDACTED].html)
 * [AWS CLI `put-metric-alarm`](https://docs.aws.amazon.com/cli/latest/reference/cloudwatch/put-metric-alarm.html)
 * [Amazon SNS Topics](https://docs.aws.amazon.com/sns/latest/dg/sns-create-topic.html)
 

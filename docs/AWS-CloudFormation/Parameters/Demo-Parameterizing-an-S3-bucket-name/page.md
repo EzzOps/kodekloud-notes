@@ -7,7 +7,7 @@ Explains how to parameterize an AWS CloudFormation template to supply an S3 buck
 This demo shows how to make an AWS CloudFormation template reusable by parameterizing the S3 bucket name. Instead of hard-coding values in the template, use CloudFormation parameters so you can supply inputs when creating or updating a stack.
 
 * What you'll learn: how to add a parameter for a bucket name, reference it from a resource using `!Ref`, validate the template locally, and update a stack in the console.
-* Useful reference: [CloudFormation parameters documentation](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/parameters-section-structure.html).
+* Useful reference: [CloudFormation parameters documentation](https://docs.aws.amazon.[SECRET_REDACTED]-section-structure.html).
 
 Why use parameters?
 
@@ -83,7 +83,7 @@ Resources:
 S3 bucket naming constraints
 
 <Callout icon="lightbulb">
-  [S3 bucket names](https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucketnamingrules.html) must be globally unique and conform to naming rules. Typical constraints include:
+  [S3 bucket names](https://docs.aws.amazon.[SECRET_REDACTED].html) must be globally unique and conform to naming rules. Typical constraints include:
 
   * 3–63 characters
   * Lowercase letters, numbers, hyphens, and dots allowed (no underscores)
@@ -164,10 +164,10 @@ Links and references
 
 | Resource                  | Purpose                                 | Link                                                                                                                                                                                                 |
 | ------------------------- | --------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| CloudFormation parameters | Reference and details                   | [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/parameters-section-structure.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/parameters-section-structure.html) |
-| S3 bucket naming rules    | Naming constraints and guidance         | [https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucketnamingrules.html](https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucketnamingrules.html)                                         |
+| CloudFormation parameters | Reference and details                   | [https://docs.aws.amazon.[SECRET_REDACTED]-section-structure.html](https://docs.aws.amazon.[SECRET_REDACTED]-section-structure.html) |
+| S3 bucket naming rules    | Naming constraints and guidance         | [https://docs.aws.amazon.[SECRET_REDACTED].html](https://docs.aws.amazon.[SECRET_REDACTED].html)                                         |
 | cfn-lint                  | Template validation tool                | [https://github.com/aws-cloudformation/cfn-lint](https://github.com/aws-cloudformation/cfn-lint)                                                                                                     |
-| Updating stacks           | Update stack workflow in CloudFormation | [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/updating-stacks.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/updating-stacks.html)                           |
+| Updating stacks           | Update stack workflow in CloudFormation | [https://docs.aws.amazon.[SECRET_REDACTED]-stacks.html](https://docs.aws.amazon.[SECRET_REDACTED]-stacks.html)                           |
 
 Extending this pattern
 

@@ -127,13 +127,13 @@ kubectl -n default apply -f k8s_deployment_service.yaml
 | --------------- | --------------------------------------------- | --------------------------------------------------------------------------------------------- |
 | securityContext | Enforce container security policies           | [Kubernetes Docs](https://kubernetes.io/docs/tasks/configure-pod-container/security-context/) |
 | emptyDir volume | Provide ephemeral writable storage            | [emptyDir Volume](https://kubernetes.io/docs/concepts/storage/volumes/#emptydir)              |
-| Rolling Updates | Minimize downtime when applying new manifests | [Deployments](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/)          |
+| Rolling Updates | Minimize downtime when applying new manifests | [Deployments](https://kubernetes.[SECRET_REDACTED]/)          |
 
 ## References
 
 * [Kubernetes Documentation](https://kubernetes.io/docs/)
 * [Spring Boot Reference Guide](https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/)
-* [Deployments in Kubernetes](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/)
+* [Deployments in Kubernetes](https://kubernetes.[SECRET_REDACTED]/)
 * [emptyDir Volume](https://kubernetes.io/docs/concepts/storage/volumes/#emptydir)
 
 <CardGroup>

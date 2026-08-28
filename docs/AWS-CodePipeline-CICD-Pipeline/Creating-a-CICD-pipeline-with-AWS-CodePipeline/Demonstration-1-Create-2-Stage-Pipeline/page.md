@@ -4,7 +4,7 @@ Source: https://notes.kodekloud.com/docs/AWS-CodePipeline-CICD-Pipeline/Creating
 
 This tutorial guides you in building a two-stage CI/CD pipeline using AWS services for application deployment.
 
-In this step-by-step tutorial, you’ll build a basic two-stage pipeline using **Amazon S3** for source storage and **AWS CodeDeploy** for deployment. We’ll follow the [AWS CodePipeline tutorial: Deploying from Amazon S3 to AWS CodeDeploy](https://docs.aws.amazon.com/codepipeline/latest/userguide/tutorials-s3-codedeploy.html) and use your [AWS Free Tier account](https://aws.amazon.com/free/). By the end, you’ll have a working CI/CD flow that pushes a sample application to EC2 Windows instances.
+In this step-by-step tutorial, you’ll build a basic two-stage pipeline using **Amazon S3** for source storage and **AWS CodeDeploy** for deployment. We’ll follow the [AWS CodePipeline tutorial: Deploying from Amazon S3 to AWS CodeDeploy](https://docs.aws.amazon.com[AWS_SECRET_ACCESS_KEY]-s3-codedeploy.html) and use your [AWS Free Tier account](https://aws.amazon.com/free/). By the end, you’ll have a working CI/CD flow that pushes a sample application to EC2 Windows instances.
 
 If you’re ready, let’s get started!
 

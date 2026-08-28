@@ -99,7 +99,7 @@ Note on user identity: OpenTelemetry prefers `enduser.*` attributes (for example
 
 Where to find the official list
 
-* OpenTelemetry semantic conventions docs: [https://opentelemetry.io/docs/reference/specification/semantic\_conventions/](https://opentelemetry.io/docs/reference/specification/semantic_conventions/)
+* OpenTelemetry semantic conventions docs: [https://opentelemetry.[AWS_SECRET_ACCESS_KEY]\_conventions/](https://opentelemetry.io/docs/reference/specification/semantic_conventions/)
 * GitHub repository (semantic\_conventions folder): [https://github.com/open-telemetry/opentelemetry-specification/tree/main/semantic\_conventions](https://github.com/open-telemetry/opentelemetry-specification/tree/main/semantic_conventions)
 
 The documentation covers many domains (HTTP, databases, messaging, cloud providers, CI/CD, GraphQL, and more) and specifies attribute names, types, and semantics.
@@ -126,7 +126,7 @@ Summary — key takeaways
 
 Further reading and references
 
-* OpenTelemetry specification — semantic conventions: [https://opentelemetry.io/docs/reference/specification/semantic\_conventions/](https://opentelemetry.io/docs/reference/specification/semantic_conventions/)
+* OpenTelemetry specification — semantic conventions: [https://opentelemetry.[AWS_SECRET_ACCESS_KEY]\_conventions/](https://opentelemetry.io/docs/reference/specification/semantic_conventions/)
 * OpenTelemetry instrumentation: [https://opentelemetry.io/docs/instrumentation/](https://opentelemetry.io/docs/instrumentation/)
 * OpenTelemetry GitHub — semantic\_conventions folder: [https://github.com/open-telemetry/opentelemetry-specification/tree/main/semantic\_conventions](https://github.com/open-telemetry/opentelemetry-specification/tree/main/semantic_conventions)
 

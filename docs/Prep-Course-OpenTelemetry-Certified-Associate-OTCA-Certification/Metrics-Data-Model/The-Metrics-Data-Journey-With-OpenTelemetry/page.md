@@ -49,7 +49,7 @@ The SDK converts recorded events into a structured OTLP stream. OTLP (OpenTeleme
 
 Useful links:
 
-* OTLP spec: [https://opentelemetry.io/docs/reference/specification/protocol/otlp/](https://opentelemetry.io/docs/reference/specification/protocol/otlp/)
+* OTLP spec: [https://opentelemetry.[AWS_SECRET_ACCESS_KEY]/otlp/](https://opentelemetry.[AWS_SECRET_ACCESS_KEY]/otlp/)
 * SDK overview: [https://opentelemetry.io/docs/concepts/sdk/](https://opentelemetry.io/docs/concepts/sdk/)
 * gRPC: [https://grpc.io](https://grpc.io)
 * Protobuf: [https://developers.google.com/protocol-buffers](https://developers.google.com/protocol-buffers)
@@ -116,7 +116,7 @@ Recap and practical implications
 Further reading and references
 
 * OpenTelemetry Collector: [https://opentelemetry.io/docs/collector/](https://opentelemetry.io/docs/collector/)
-* OTLP protocol: [https://opentelemetry.io/docs/reference/specification/protocol/otlp/](https://opentelemetry.io/docs/reference/specification/protocol/otlp/)
+* OTLP protocol: [https://opentelemetry.[AWS_SECRET_ACCESS_KEY]/otlp/](https://opentelemetry.[AWS_SECRET_ACCESS_KEY]/otlp/)
 * OpenTelemetry concepts and SDKs: [https://opentelemetry.io/docs/concepts/](https://opentelemetry.io/docs/concepts/)
 * Prometheus (for integration considerations): [https://prometheus.io/](https://prometheus.io/)
 

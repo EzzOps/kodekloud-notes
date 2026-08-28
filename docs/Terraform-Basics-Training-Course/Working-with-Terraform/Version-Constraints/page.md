@@ -4,7 +4,7 @@ resource "local_file" "pet" {
   directory_permission = "0777"
   file_permission      = "0777"
   filename             = "/root/pets.txt"
-  id                   = "cba595b7d9f94ba1107a46f3f731912d95fb3d2c"
+  id                   = "[AWS_SECRET_ACCESS_KEY]"
 }
 ```
 
@@ -12,7 +12,7 @@ To view this state in JSON format, use the `-json` flag:
 
 ```plaintext theme={null}
 $ terraform show -json
-{"format_version":"0.1","terraform_version":"0.13.0","values":{"root_module":{"resources":[{"address":"local_file.pet","mode":"managed","type":"local_file","name":"pet","provider_name":"registry.terraform.io/hashicorp/local","schema_version":0,"values":{"content":"We love pets!","content_base64":null,"directory_permission":"0777","file_permission":"0777","filename":"/root/pets.txt","id":"cba595b7d9f94ba1107a46f3f731912d95fb3d2c","sensitive_content":null}}]}}}
+{"format_version":"0.1","terraform_version":"0.13.0","values":{"root_module":{"resources":[{"address":"local_file.pet","mode":"managed","type":"local_file","name":"pet","provider_name":"registry.terraform.io/hashicorp/local","schema_version":0,"values":{"content":"We love pets!","content_base64":null,"directory_permission":"0777","file_permission":"0777","filename":"/root/pets.txt","id":"[AWS_SECRET_ACCESS_KEY]","sensitive_content":null}}]}}}
 ```
 
 ***
@@ -112,7 +112,7 @@ Refreshing Terraform state in-memory prior to plan...
 The refreshed state will be used to calculate this plan, but will not be persisted to local or remote state storage.
 
 random_pet.cat: Refreshing state... [id=huge-owl]
-local_file.pet: Refreshing state... [id=cba595b7d9f94ba1107a46f3f731912d95fb3d2c]
+local_file.pet: Refreshing state... [id=[AWS_SECRET_ACCESS_KEY]]
 --------------------------------------------------------------------
 No changes. Infrastructure is up-to-date.
 ```
@@ -122,7 +122,7 @@ You can also update the state file without changing any infrastructure by using 
 ```bash theme={null}
 $ terraform apply -refresh-only
 random_pet.cat: Refreshing state... [id=huge-owl]
-local_file.pet: Refreshing state... [id=cba595b7d9f94ba1107a46f3f731912d95fb3d2c]
+local_file.pet: Refreshing state... [id=[AWS_SECRET_ACCESS_KEY]]
 ```
 
 To prevent automatic refreshing during plan or apply, use the `-refresh=false` option.

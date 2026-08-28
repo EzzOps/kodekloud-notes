@@ -68,9 +68,9 @@ Kubernetes will detect the new image tag, pull `myrepo/api:abcdef123`, and perfo
 * [Docker Hub](https://hub.docker.com/)
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kustomize/module/060e95ac-e56c-42ed-be87-8701328432c3/lesson/9d6dc297-8f5d-497d-8991-a80c05acaef1" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[SECRET_REDACTED]-e56c-42ed-be87-8701328432c3/lesson/9d6dc297-8f5d-497d-8991-a80c05acaef1" />
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/kustomize/module/8ee78739-877b-4e11-a7a6-82ef7210468b/lesson/3dabb285-4658-4e1f-913a-eed08b1ca049" />
+  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.[SECRET_REDACTED]-877b-4e11-a7a6-82ef7210468b/lesson/3dabb285-4658-4e1f-913a-eed08b1ca049" />
 </CardGroup>
 
 

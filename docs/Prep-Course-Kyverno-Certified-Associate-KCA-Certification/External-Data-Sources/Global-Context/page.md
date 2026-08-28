@@ -247,7 +247,7 @@ metadata:
   name: blue-deployments
 spec:
   apiCall:
-    urlPath: "/apis/apps/v1/namespaces/fitness/deployments?labelSelector=app=blue"
+    urlPath: "/[SECRET_REDACTED]?labelSelector=app=blue"
     refreshInterval: 10s
 ```
 

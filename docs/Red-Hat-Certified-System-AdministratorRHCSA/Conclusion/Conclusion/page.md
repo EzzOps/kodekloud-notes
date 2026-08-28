@@ -1,6 +1,6 @@
 # Conclusion
 
-Source: https://notes.kodekloud.com/docs/Red-Hat-Certified-System-AdministratorRHCSA/Conclusion/Conclusion/page
+Source: https://notes.kodekloud.com/docs/Red-Hat-Certified-System-[AWS_SECRET_ACCESS_KEY]/page
 
 This article provides guidance on preparing for the RHCSA exam and tips for ensuring a smooth testing experience.
 

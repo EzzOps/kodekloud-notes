@@ -78,7 +78,7 @@ Each SAST job outputs a `gl-sast-report.json`. Download and inspect it with any 
   "version": "15.0.7",
   "vulnerabilities": [
     {
-      "id": "2d92ba5c9c2e73c14c5a0da201ba74110e14c4ec9640dbf1becfcb05c5295b",
+      "id": "[SECRET_REDACTED]",
       "name": "node_nosqli_injection",
       "description": "Untrusted user input in findOne() can result in NoSQL Injection.",
       "severity": "High",

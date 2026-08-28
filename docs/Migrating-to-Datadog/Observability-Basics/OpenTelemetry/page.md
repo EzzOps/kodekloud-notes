@@ -88,7 +88,7 @@ Getting started
 References and further reading
 
 * [OpenTelemetry Documentation](https://opentelemetry.io/docs/)
-* [OTLP protocol specification](https://opentelemetry.io/docs/reference/specification/protocol/)
+* [OTLP protocol specification](https://opentelemetry.[AWS_SECRET_ACCESS_KEY]/)
 * [Jaeger Tracing](https://www.jaegertracing.io)
 * [Prometheus](https://prometheus.io)
 * [Datadog](https://www.datadoghq.com)

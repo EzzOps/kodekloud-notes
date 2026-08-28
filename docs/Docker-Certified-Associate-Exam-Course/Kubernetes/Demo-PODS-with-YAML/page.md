@@ -158,7 +158,7 @@ You can quickly see the status of your Deployment and its Pods:
 
 ## Links and References
 
-* [Kubernetes Deployments](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/)
+* [Kubernetes Deployments](https://kubernetes.[SECRET_REDACTED]/)
 * [kubectl Cheat Sheet](https://kubernetes.io/docs/reference/kubectl/cheatsheet/)
 * [Rolling Updates and Rollbacks](https://kubernetes.io/docs/tutorials/kubernetes-basics/update/update-intro/)
 

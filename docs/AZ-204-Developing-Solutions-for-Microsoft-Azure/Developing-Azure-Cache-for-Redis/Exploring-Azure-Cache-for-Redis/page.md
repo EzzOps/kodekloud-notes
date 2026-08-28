@@ -109,7 +109,7 @@ Once validation passes, click on "Review and Create" followed by "Create." After
    Open your terminal and connect to your instance using the Redis CLI. If TLS is enabled (which is the default for Azure Cache for Redis), use the following command by replacing the hostname and access key with your resource’s specific details:
 
    ```bash theme={null}
-   redis-cli -h az204rediscache09.redis.cache.windows.net -a pqtzSgrxbqWWWIp9uh0xHG1gEuDjImDwzAzCaIkfKZU= -p 6380 --tls
+   redis-cli -h az204rediscache09.redis.cache.windows.net -a [SECRET_REDACTED]= -p 6380 --tls
    ```
 
    Verify connectivity by issuing a `ping` command:

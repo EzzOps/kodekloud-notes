@@ -94,7 +94,7 @@ This article covered image classification with Custom Vision — dataset prepara
 
 * [Azure Custom Vision documentation](https://learn.microsoft.com/azure/cognitive-services/custom-vision-service/)
 * [Quickstart: Train and export a model (Custom Vision)](https://learn.microsoft.com/azure/cognitive-services/custom-vision-service/quickstarts/)
-* [Custom Vision REST API reference](https://learn.microsoft.com/rest/api/cognitiveservices/customvision/)
+* [Custom Vision REST API reference](https://learn.microsoft.com[AWS_SECRET_ACCESS_KEY]/)
 
 If you want sample code (Python, C#, or Node.js) for training or predictions, use the SDK examples in the Azure docs and replace placeholders with your project ID, iteration name, endpoint, and prediction key.
 

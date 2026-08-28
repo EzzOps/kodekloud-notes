@@ -202,7 +202,7 @@ That’s all for this lesson.
 
 # Introduction
 
-Source: https://notes.kodekloud.com/docs/Linux-System-Administration-for-Beginners/Introduction/Introduction/page
+Source: https://notes.kodekloud.com/docs/Linux-System-Administration-for-[AWS_SECRET_ACCESS_KEY]
 
 This course teaches essential Linux skills through hands-on labs and interactive articles for beginners in system administration.
 

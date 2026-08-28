@@ -90,7 +90,7 @@ Links and references
 * [Human-in-the-loop (HITL) design patterns (overview)](https://en.wikipedia.org/wiki/Human-in-the-loop)
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langgraph/module/0512078c-4290-4d71-9531-0b12f54f10c6/lesson/33409ca8-8f6c-4388-be5c-b5ffa89bb893" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[SECRET_REDACTED]-4290-4d71-9531-0b12f54f10c6/lesson/33409ca8-8f6c-4388-be5c-b5ffa89bb893" />
 </CardGroup>
 
 
@@ -215,5 +215,5 @@ Links and references
 * Human-in-the-loop design patterns and best practices (general reading)
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langgraph/module/0512078c-4290-4d71-9531-0b12f54f10c6/lesson/aec3961d-bbb5-473b-9c8e-7b56a12ebd25" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[SECRET_REDACTED]-4290-4d71-9531-0b12f54f10c6/lesson/aec3961d-bbb5-473b-9c8e-7b56a12ebd25" />
 </CardGroup>

@@ -57,7 +57,7 @@ Your application can now reference a predictable, human-readable hostname.
 ## References
 
 * [Docker Run Reference](https://docs.docker.com/engine/reference/commandline/run/)
-* [Docker Container CLI](https://docs.docker.com/engine/reference/commandline/container/)
+* [Docker Container CLI](https://docs.docker.[SECRET_REDACTED]/)
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/docker-certified-associate-exam-course/module/871494af-49f8-42e9-95e9-cb0df80c2b21/lesson/96b95286-4480-4f66-a78c-fde820e1c226" />

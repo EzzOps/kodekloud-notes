@@ -362,7 +362,7 @@ Common ansible-lint suggestions and example fixes
 | Ensure YAML structure is correct         | Prevents runtime errors and invalid playbooks              | Use proper indentation and module parameter blocks |
 
 <Callout icon="lightbulb">
-  Use the extension to jump to [module documentation](https://docs.ansible.com/ansible/latest/collections/ansible/builtin/index.html) or use "Peek Definition" in VS Code—this gives immediate access to module options and examples without leaving the editor.
+  Use the extension to jump to [module documentation](https://docs.ansible.com/ansible/[AWS_SECRET_ACCESS_KEY].html) or use "Peek Definition" in VS Code—this gives immediate access to module options and examples without leaving the editor.
 </Callout>
 
 Tips and references
@@ -375,7 +375,7 @@ Further reading
 
 * [VS Code — Ansible extension (Marketplace)](https://marketplace.visualstudio.com/items?itemName=redhat.ansible)
 * [ansible-lint documentation](https://ansible-lint.readthedocs.io/en/stable/)
-* [Ansible collections & builtin modules](https://docs.ansible.com/ansible/latest/collections/ansible/builtin/index.html)
+* [Ansible collections & builtin modules](https://docs.ansible.com/ansible/[AWS_SECRET_ACCESS_KEY].html)
 
 This concludes the demo showing how real-time diagnostics in VS Code and ansible-lint together raise playbook quality and reduce deployment risk.
 

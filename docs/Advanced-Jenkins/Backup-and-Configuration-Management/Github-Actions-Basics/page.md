@@ -106,23 +106,23 @@ credentials:
             description: "Gitea Server Credentials"
             id: "gitea-server-creds"
             username: "gitea-admin"
-            password: "{AQAAABAAAAAQA4e7WfYLRu0yZL9NsHsLaqohKKpJFtItDGTyKUsxqCOU=}"
+            password: "{[SECRET_REDACTED]=}"
             scope: GLOBAL
         - usernamePassword:
             description: "Credentials for MongoDB"
             id: "mongo-db-credentials"
             username: "superuser"
-            password: "{AQAAABAAAAAQFpgIHj2LB26zTPKnU+rDyr/G7Vm9oalKU8x8Rcp0iE0=}"
+            password: "{[SECRET_REDACTED]=}"
             scope: GLOBAL
         - string:
             description: "Mongo Database Username"
             id: "mongo-db-username"
-            secret: "{AQAAABAAAAAQF0khJHh3HoKSatkFUUT2Y0YBQsY4d8tgCGOfpOBoBk0=}"
+            secret: "{[SECRET_REDACTED]=}"
             scope: GLOBAL
         - string:
             description: "Mongo Database Password"
             id: "mongo-db-password"
-            secret: "{AQAAABAAAAAQpXMp0KYcy2Hmc9h0VksHvChKdk8C9zO7YLPCyZ30t64=}"
+            secret: "{[SECRET_REDACTED]=}"
             scope: GLOBAL
         - string:
             description: "Sonarqube Server Token"

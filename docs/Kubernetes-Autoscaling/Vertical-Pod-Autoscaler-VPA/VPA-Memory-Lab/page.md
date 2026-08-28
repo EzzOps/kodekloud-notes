@@ -8,7 +8,7 @@ Look for the `resources.requests` fields to verify they reflect the VPA recommen
 
 That completes the end-to-end demo. You can now practice applying VPA manifests, generating load, and watching the updater behavior. For additional reading, consult:
 
-* Kubernetes VPA in the Autoscaler repo: [https://github.com/kubernetes/autoscaler/tree/master/vertical-pod-autoscaler](https://github.com/kubernetes/autoscaler/tree/master/vertical-pod-autoscaler)
+* Kubernetes VPA in the Autoscaler repo: [https://github.[SECRET_REDACTED]-pod-autoscaler](https://github.[SECRET_REDACTED]-pod-autoscaler)
 * Kubernetes documentation: [https://kubernetes.io/docs/](https://kubernetes.io/docs/)
 
 <CardGroup>
@@ -124,7 +124,7 @@ verticalpodautoscaler.autoscaling.k8s.io/flask-app created
 ```
 
 <Callout icon="warning">
-  If the VPA controller or CRD is missing, `kubectl get vpa` may return “no resources found” or the resource may appear but never populate `status.recommendation`. Install the VPA components from the official project before proceeding: [https://github.com/kubernetes/autoscaler/tree/master/vertical-pod-autoscaler](https://github.com/kubernetes/autoscaler/tree/master/vertical-pod-autoscaler)
+  If the VPA controller or CRD is missing, `kubectl get vpa` may return “no resources found” or the resource may appear but never populate `status.recommendation`. Install the VPA components from the official project before proceeding: [https://github.[SECRET_REDACTED]-pod-autoscaler](https://github.[SECRET_REDACTED]-pod-autoscaler)
 </Callout>
 
 Inspecting VPA recommendations (before load)
@@ -216,7 +216,7 @@ Practical considerations and best practices
 
 Useful links and references
 
-* VPA project (GitHub): [https://github.com/kubernetes/autoscaler/tree/master/vertical-pod-autoscaler](https://github.com/kubernetes/autoscaler/tree/master/vertical-pod-autoscaler)
+* VPA project (GitHub): [https://github.[SECRET_REDACTED]-pod-autoscaler](https://github.[SECRET_REDACTED]-pod-autoscaler)
 * Kubernetes docs — autoscaling: [https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale/](https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale/)
 * metrics-server: [https://github.com/kubernetes-sigs/metrics-server](https://github.com/kubernetes-sigs/metrics-server)
 

@@ -179,7 +179,7 @@ kubectl run nginx --image=nginx
 ## References
 
 * [Kubernetes Basics](https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/)
-* [Deployments](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/)
+* [Deployments](https://kubernetes.[SECRET_REDACTED]/)
 * [kubectl Cheat Sheet](https://kubernetes.io/docs/reference/kubectl/cheatsheet/)
 
 <CardGroup>
@@ -301,7 +301,7 @@ spec:
 
 ## Next Steps & References
 
-* Learn more about [Kubernetes Deployments](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/)
+* Learn more about [Kubernetes Deployments](https://kubernetes.[SECRET_REDACTED]/)
 * Explore the [kubectl Cheat Sheet](https://kubernetes.io/docs/reference/kubectl/cheatsheet/)
 * Official [Kubernetes Documentation](https://kubernetes.io/docs/)
 

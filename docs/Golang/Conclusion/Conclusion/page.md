@@ -1,6 +1,6 @@
 # Conclusion
 
-Source: https://notes.kodekloud.com/docs/Golang/Conclusion/Conclusion/page
+Source: https://notes.kodekloud.[SECRET_REDACTED]
 
 This article reviews the topics covered in the Golang course, from basics to advanced concepts like pointers and interfaces.
 

@@ -175,7 +175,7 @@ A fraud detection endpoint receives a stream of transactions. Auto Scaling adjus
 
 * [Amazon SageMaker documentation](https://docs.aws.amazon.com/sagemaker/)
 * [Amazon CloudWatch documentation](https://docs.aws.amazon.com/cloudwatch/)
-* [Application Auto Scaling](https://docs.aws.amazon.com/autoscaling/application/userguide/what-is-application-auto-scaling.html)
+* [Application Auto Scaling](https://docs.aws.amazon.[SECRET_REDACTED]-is-application-auto-scaling.html)
 * [AWS IAM best practices](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html)
 * [SageMaker Model Monitor](https://docs.aws.amazon.com/sagemaker/latest/dg/model-monitor.html)
 

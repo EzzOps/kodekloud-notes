@@ -76,9 +76,9 @@ By default, RDS can delete the Secrets Manager secret it created as part of the 
 
 ## Links and references
 
-* AWS RDS + Secrets Manager integration: [https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/UsingWithRDS.SecretsManager.html](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/UsingWithRDS.SecretsManager.html)
-* Secrets Manager GetSecretValue API: [https://docs.aws.amazon.com/secretsmanager/latest/apireference/API\_GetSecretValue.html](https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_GetSecretValue.html)
-* boto3 Secrets Manager client: [https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html)
+* AWS RDS + Secrets Manager integration: [https://docs.aws.amazon.com[AWS_SECRET_ACCESS_KEY].SecretsManager.html](https://docs.aws.amazon.com[AWS_SECRET_ACCESS_KEY].SecretsManager.html)
+* Secrets Manager GetSecretValue API: [https://docs.aws.amazon.[SECRET_REDACTED]\_GetSecretValue.html](https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_GetSecretValue.html)
+* boto3 Secrets Manager client: [https://boto3.amazonaws.com/v1/documentation/api/[AWS_SECRET_ACCESS_KEY].html](https://boto3.amazonaws.com/v1/documentation/api/[AWS_SECRET_ACCESS_KEY].html)
 * AWS SDK for Java v2: [https://sdk.amazonaws.com/java/api/latest/index.html](https://sdk.amazonaws.com/java/api/latest/index.html)
 * psycopg2 PostgreSQL adapter: [https://www.psycopg.org/](https://www.psycopg.org/)
 
@@ -129,7 +129,7 @@ Wait for the database to finish provisioning (typically 10–15 minutes). When c
 
 Store the credential in AWS Secrets Manager
 
-1. In the AWS Console search bar open [AWS Secrets Manager](https://docs.aws.amazon.com/secretsmanager/latest/userguide/intro.html).
+1. In the AWS Console search bar open [AWS Secrets Manager](https://docs.aws.amazon.[SECRET_REDACTED].html).
 2. Click "Store a new secret".
 3. Choose the secret type: "Credentials for RDS database".
 4. Enter the DB username (admin) and paste the master password you copied from the RDS banner.
@@ -151,12 +151,12 @@ After storing the secret you will see it listed in the Secrets Manager console (
 </Frame>
 
 Using Secrets Manager from your application
-Best practice: retrieve the secret at application startup (or immediately before creating database connections) so the application uses credentials returned by [Secrets Manager](https://docs.aws.amazon.com/secretsmanager/latest/userguide/intro.html) instead of hard-coded values. The AWS console includes snippets for many languages; below are ready-to-use examples for Python (boto3) and Java (AWS SDK v2).
+Best practice: retrieve the secret at application startup (or immediately before creating database connections) so the application uses credentials returned by [Secrets Manager](https://docs.aws.amazon.[SECRET_REDACTED].html) instead of hard-coded values. The AWS console includes snippets for many languages; below are ready-to-use examples for Python (boto3) and Java (AWS SDK v2).
 
 Python (boto3)
 
 * Install boto3: pip install boto3
-* Ensure the application's IAM role or IAM user has permission to call GetSecretValue: [https://docs.aws.amazon.com/secretsmanager/latest/apireference/API\_GetSecretValue.html](https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_GetSecretValue.html)
+* Ensure the application's IAM role or IAM user has permission to call GetSecretValue: [https://docs.aws.amazon.[SECRET_REDACTED]\_GetSecretValue.html](https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_GetSecretValue.html)
 
 ```python theme={null}
 import json
@@ -232,21 +232,21 @@ Integration and operational notes
 
 | Topic              | Recommendation                                                                                                        | Reference                                                                                                                                                                                                                                                                                                                        |
 | ------------------ | --------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Retrieval timing   | Fetch secrets at startup or immediately before DB connections to avoid long-lived secrets in memory                   | [https://docs.aws.amazon.com/secretsmanager/latest/userguide/intro.html](https://docs.aws.amazon.com/secretsmanager/latest/userguide/intro.html)                                                                                                                                                                                 |
-| Permissions        | Grant minimal IAM permissions (GetSecretValue) to the application role; include kms:Decrypt if using a custom KMS key | [https://docs.aws.amazon.com/secretsmanager/latest/apireference/API\_GetSecretValue.html](https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_GetSecretValue.html) and [https://docs.aws.amazon.com/kms/latest/developerguide/overview.html](https://docs.aws.amazon.com/kms/latest/developerguide/overview.html) |
-| Automatic rotation | Enable Secrets Manager rotation for supported engines to rotate and update DB credentials automatically               | [https://docs.aws.amazon.com/secretsmanager/latest/userguide/rotating-secrets.html](https://docs.aws.amazon.com/secretsmanager/latest/userguide/rotating-secrets.html)                                                                                                                                                           |
+| Retrieval timing   | Fetch secrets at startup or immediately before DB connections to avoid long-lived secrets in memory                   | [https://docs.aws.amazon.[SECRET_REDACTED].html](https://docs.aws.amazon.[SECRET_REDACTED].html)                                                                                                                                                                                 |
+| Permissions        | Grant minimal IAM permissions (GetSecretValue) to the application role; include kms:Decrypt if using a custom KMS key | [https://docs.aws.amazon.[SECRET_REDACTED]\_GetSecretValue.html](https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_GetSecretValue.html) and [https://docs.aws.amazon.com/kms/latest/developerguide/overview.html](https://docs.aws.amazon.com/kms/latest/developerguide/overview.html) |
+| Automatic rotation | Enable Secrets Manager rotation for supported engines to rotate and update DB credentials automatically               | [https://docs.aws.amazon.com/[AWS_SECRET_ACCESS_KEY]-secrets.html](https://docs.aws.amazon.com/[AWS_SECRET_ACCESS_KEY]-secrets.html)                                                                                                                                                           |
 | Secret format      | Store RDS secrets as JSON (username, password, host, port) to simplify parsing in apps                                | Console samples and SDK examples                                                                                                                                                                                                                                                                                                 |
 
 <Callout icon="lightbulb">
-  AWS provides sample snippets for many languages in the [Secrets Manager console](https://docs.aws.amazon.com/secretsmanager/latest/userguide/intro.html). Use those samples as a starting point and adapt them to your application's error handling, caching, and refresh strategy.
+  AWS provides sample snippets for many languages in the [Secrets Manager console](https://docs.aws.amazon.[SECRET_REDACTED].html). Use those samples as a starting point and adapt them to your application's error handling, caching, and refresh strategy.
 </Callout>
 
 Additional resources
 
 * [Amazon RDS Documentation](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Welcome.html)
-* [AWS Secrets Manager Documentation](https://docs.aws.amazon.com/secretsmanager/latest/userguide/intro.html)
+* [AWS Secrets Manager Documentation](https://docs.aws.amazon.[SECRET_REDACTED].html)
 * [Secrets Manager API - GetSecretValue](https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_GetSecretValue.html)
-* [Secrets rotation with AWS Secrets Manager](https://docs.aws.amazon.com/secretsmanager/latest/userguide/rotating-secrets.html)
+* [Secrets rotation with AWS Secrets Manager](https://docs.aws.amazon.com/[AWS_SECRET_ACCESS_KEY]-secrets.html)
 * [AWS KMS overview](https://docs.aws.amazon.com/kms/latest/developerguide/overview.html)
 
 Summary

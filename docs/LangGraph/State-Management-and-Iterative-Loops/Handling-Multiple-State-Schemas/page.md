@@ -151,5 +151,5 @@ Summary
 Treat schemas as local contracts for subgraphs and nodes. Use `TypedDict` and type hints to improve developer experience, introduce adapters to translate state between modules, and protect runtime behavior with explicit type guards. This approach keeps LangGraph workflows modular, easier to reason about, and safer to evolve over time.
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langgraph/module/7a80b285-b366-4c4d-95d0-bce0c24aaf58/lesson/344d3bd4-df92-4548-944b-b60b8d7f0516" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[SECRET_REDACTED]-b366-4c4d-95d0-bce0c24aaf58/lesson/344d3bd4-df92-4548-944b-b60b8d7f0516" />
 </CardGroup>

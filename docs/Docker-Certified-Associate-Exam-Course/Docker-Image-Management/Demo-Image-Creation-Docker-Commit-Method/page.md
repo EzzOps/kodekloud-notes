@@ -157,7 +157,7 @@ You should see output like:
 ```bash theme={null}
 7: Pulling from library/centos
 75f829a71a1c: Pull complete
-Digest: sha256:19a79828ca2505eae0ff38c2f39901f4826737295157cc5212b7a372cd2b
+Digest: sha256:[SECRET_REDACTED]
 Status: Downloaded newer image for centos:7
 docker.io/library/centos:7
 ```

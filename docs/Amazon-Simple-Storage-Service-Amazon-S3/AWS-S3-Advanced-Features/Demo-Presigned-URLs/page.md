@@ -123,7 +123,7 @@ If **user2** generates a pre-signed URL (30-minute expiration) and an anonymous 
   <Code>AccessDenied</Code>
   <Message>Access Denied</Message>
   <RequestId>5648S6RRMZ5F1S5T</RequestId>
-  <HostId>1gXiuD2vm6W7cG7iWcRjdmxisz7sj6FtH8D9ArtnX3i2hdyg42IRzBTrFe0Zmg=</HostId>
+  <HostId>[SECRET_REDACTED]=</HostId>
 </Error>
 ```
 
@@ -137,7 +137,7 @@ Amazon S3 pre-signed URLs offer a secure way to grant temporary, explicit access
 
 ## Links and References
 
-* [Amazon S3 Pre-Signed URLs Documentation](https://docs.aws.amazon.com/AmazonS3/latest/userguide/ShareObjectPreSignedURL.html)
+* [Amazon S3 Pre-Signed URLs Documentation](https://docs.aws.amazon.com/AmazonS3/[AWS_SECRET_ACCESS_KEY].html)
 * [AWS SDKs and Tools](https://aws.amazon.com/tools/)
 * [AWS CLI Reference](https://docs.aws.amazon.com/cli/latest/reference/)
 * [AWS IAM Documentation](https://docs.aws.amazon.com/IAM/latest/UserGuide/)

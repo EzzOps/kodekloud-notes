@@ -95,7 +95,7 @@ After the script is running, open Performance Insights in the AWS Console. Withi
 
 * [AWS Performance Insights documentation](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_PerfInsights.html)
 * [Amazon Aurora (PostgreSQL) documentation](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/CHAP_AuroraOverview.html)
-* [RDS Monitoring and metrics](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/MonitoringOverview.html)
+* [RDS Monitoring and metrics](https://docs.aws.amazon.[SECRET_REDACTED].html)
 
 I hope this lesson clarified how to use AWS RDS Performance Insights to monitor query-level performance on Aurora PostgreSQL. See you in the next lesson.
 
@@ -211,8 +211,8 @@ Troubleshooting tips
 Further reading
 
 * Amazon RDS documentation: [https://docs.aws.amazon.com/rds/](https://docs.aws.amazon.com/rds/)
-* Aurora Serverless & Data API overview: [https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-serverless.html](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-serverless.html)
-* Query Editor in the AWS Console: [https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/QueryEditor.html](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/QueryEditor.html)
+* Aurora Serverless & Data API overview: [https://docs.aws.amazon.com[AWS_SECRET_ACCESS_KEY]-serverless.html](https://docs.aws.amazon.com[AWS_SECRET_ACCESS_KEY]-serverless.html)
+* Query Editor in the AWS Console: [https://docs.aws.amazon.[SECRET_REDACTED].html](https://docs.aws.amazon.[SECRET_REDACTED].html)
 
 That covers the essentials of using the RDS Query Editor with an Aurora PostgreSQL cluster configured for the Data API. See you in the next lesson.
 

@@ -244,7 +244,7 @@ After a successful update, verify any expected resource changes in the service c
 
 ## Links and references
 
-* [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html)
+* [AWS CloudFormation User Guide](https://docs.aws.amazon.[SECRET_REDACTED].html)
 * [IAM JSON Policy Elements: Actions](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_actions-resources-contextkeys.html)
 * [AWS S3 Documentation](https://docs.aws.amazon.com/s3/index.html)
 

@@ -96,7 +96,7 @@ This prints the number of indexes found for the specified vector bucket and a sh
 | `delete_vector_bucket` / `delete_index` | Remove resources when no longer needed                         |
 
 For the full list of methods, parameter shapes, and response structures see the Boto3 s3vectors documentation:
-[https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3vectors.html](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3vectors.html)
+[https://boto3.amazonaws.com/v1/documentation[AWS_SECRET_ACCESS_KEY].html](https://boto3.amazonaws.com/v1/documentation[AWS_SECRET_ACCESS_KEY].html)
 
 <Frame>
   <img alt="The image shows a section of the AWS Boto3 documentation page, listing available methods for managing S3 vectors, alongside navigation links on the left sidebar." />

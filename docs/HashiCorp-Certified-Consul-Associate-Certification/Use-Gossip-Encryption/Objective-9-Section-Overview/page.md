@@ -3,11 +3,11 @@ consul keyring list
 # ==> Gathering installed encryption keys...
 # dc1 (LAN):
 # 2. Install the newly generated key
-consul keyring install VCjCNv+521LNTBcQcdu8rl9pjTHEuw+dhzf2bvici3w=
+consul keyring install [SECRET_REDACTED]=
 # 3. Activate the new key
-consul keyring use VCjCNv+521LNTBcQcdu8rl9pjTHEuw+dhzf2bvici3w=
+consul keyring use [SECRET_REDACTED]=
 # 4. Remove the old key (optional once no longer used)
-consul keyring remove hDqYxqQepkYyRADn4Zn+u+D9vLgE8WM+LpFAPLGhtco=
+consul keyring remove [SECRET_REDACTED]=
 # ==> Removing gossip encryption key...
 ```
 

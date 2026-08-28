@@ -24,7 +24,7 @@ When you run this command, Docker Swarm outputs a join command for the worker no
 root@osboxes:/root/simple-webapp-docker # docker swarm init --advertise-addr 192.168.1.12
 Swarm initialized: current node (0j76dum2r56p1xfn4u1pls2c) is now a manager.
 To add a worker to this swarm, run the following command:
-    docker swarm join --token SWMTKN-1-35va8b3fi5krpdkefqxgtmulw3z828daucri7y526ne0sgu-2ee3g7q1g9d5j632a1yvmc4t 8.1.12:2377
+    docker swarm join --token SWMTKN-1-[SECRET_REDACTED]-2ee3g7q1g9d5j632a1yvmc4t 8.1.12:2377
 To add a manager to this swarm, run 'docker swarm join-token manager' and follow the instructions.
 ```
 

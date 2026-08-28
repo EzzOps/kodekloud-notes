@@ -118,7 +118,7 @@ Next steps
 Links and references
 
 * [Amazon ECS — Getting started](https://docs.aws.amazon.com/ecs/latest/developerguide/what-is-ecs.html)
-* [ECS Capacity Providers](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/cluster-capacity-providers.html)
+* [ECS Capacity Providers](https://docs.aws.amazon.com[AWS_SECRET_ACCESS_KEY]-capacity-providers.html)
 * [AWS CloudFormation](https://docs.aws.amazon.com/cloudformation/index.html)
 * [Amazon EC2 Auto Scaling](https://docs.aws.amazon.com/autoscaling/ec2/userguide/what-is-amazon-ec2-auto-scaling.html)
 

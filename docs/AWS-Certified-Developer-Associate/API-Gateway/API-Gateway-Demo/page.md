@@ -269,7 +269,7 @@ Calling the nested endpoint returns:
 
 ## Links and references
 
-* [API Gateway Documentation](https://docs.aws.amazon.com/apigateway/latest/developerguide/welcome.html)
+* [API Gateway Documentation](https://docs.aws.amazon.com/[AWS_SECRET_ACCESS_KEY].html)
 * [AWS Lambda Documentation](https://docs.aws.amazon.com/lambda/latest/dg/welcome.html)
 * [OpenAPI Specification](https://www.openapis.org)
 * [Postman](https://www.postman.com/)

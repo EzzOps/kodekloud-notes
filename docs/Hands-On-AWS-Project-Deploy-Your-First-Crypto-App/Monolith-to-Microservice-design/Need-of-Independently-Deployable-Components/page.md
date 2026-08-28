@@ -104,7 +104,7 @@ That is it for this lesson. Speak with you in the next lesson.
 
 * [Amazon ECS documentation](https://docs.aws.amazon.com/ecs/)
 * [AWS CodePipeline documentation](https://docs.aws.amazon.com/codepipeline/)
-* [Application Load Balancer overview](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/introduction.html)
+* [Application Load Balancer overview](https://docs.aws.amazon.com[AWS_SECRET_ACCESS_KEY]/introduction.html)
 * [Microservices architecture patterns](https://martinfowler.com/articles/microservices.html)
 
 <CardGroup>

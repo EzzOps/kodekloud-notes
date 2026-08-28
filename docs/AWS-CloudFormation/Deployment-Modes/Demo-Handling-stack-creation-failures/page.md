@@ -87,7 +87,7 @@ Quick checklist when you encounter ROLLBACK\_COMPLETE:
 Useful references:
 
 * [AWS CloudFormation User Guide](https://docs.aws.amazon.com/cloudformation/index.html)
-* [Amazon S3 Bucket Naming Rules](https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucketnamingrules.html)
+* [Amazon S3 Bucket Naming Rules](https://docs.aws.amazon.[SECRET_REDACTED].html)
 
 That covers the standard workflow for handling CloudFormation stack creation failures: diagnose via Events, choose between delete-and-retry or disable-rollback for debugging, and always clean up any leftover resources.
 

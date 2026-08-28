@@ -36,5 +36,5 @@ By leveraging the wide range of available Pipeline plugins, you can establish ro
 Now, let's apply these concepts through hands-on exercises.
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins/module/7c4c28a9-3607-46d4-920a-3f94ed6a7d5b/lesson/bce419ee-1cc4-4608-bfb7-a1c061119064" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[AWS_SECRET_ACCESS_KEY]-3607-46d4-920a-3f94ed6a7d5b/lesson/bce419ee-1cc4-4608-bfb7-a1c061119064" />
 </CardGroup>

@@ -23,7 +23,7 @@ If the model registration is successful, you'll see output similar to the follow
 Train Anomaly Percentage: 5.29%
 Test Anomaly Percentage: 4.29%
 Model metrics logged to MLflow.
-View run bidi-... at http://127.0.0.1:5000/#/experiments/199595116865516564/runs/t8d3fcbfd4496503aeb75f4feeb7f
+View run bidi-... at http://127.0.0.1:5000/#/[SECRET_REDACTED]
 ✅ Experiment at: http://127.0.0.1:5000/#/experiments/199595116865516564
 Model registered with BentoML: health_insurance_anomaly_detector:your_model_tag_here
 ```

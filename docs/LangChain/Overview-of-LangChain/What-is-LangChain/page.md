@@ -71,5 +71,5 @@ Further reading and references
 * If you’re new to OpenAI, consider the [Introduction to OpenAI](https://learn.kodekloud.com/user/courses/introduction-to-openai) course on KodeKloud.
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langchain/module/ab7ff6ea-63e2-4d3b-af7c-ed22616cc3b6/lesson/185f55c8-b528-4016-a4ea-e35690c295f4" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[SECRET_REDACTED]-63e2-4d3b-af7c-ed22616cc3b6/lesson/185f55c8-b528-4016-a4ea-e35690c295f4" />
 </CardGroup>

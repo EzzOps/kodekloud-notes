@@ -64,7 +64,7 @@ Creating spoke-b-vm-2
 ...
 PS C:\Users\RiithinSkeria\Documents\kodekoud-az500\070-Perimeter Security> ssh kodekoud@20.172.243.161
 The authenticity of host '20.172.243.161 (20.172.243.161)' can't be established.
-ED25519 key fingerprint is SHA256:nhhXsJuBmDbTsF0uwexxQ/dosrj53n4uBks2sBQN0.
+ED25519 key fingerprint is SHA256:[SECRET_REDACTED].
 Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
 Warning: Permanently added '20.172.243.161' (ED25519) to the list of known hosts.
 kodekoud@20.172.243.161's password:

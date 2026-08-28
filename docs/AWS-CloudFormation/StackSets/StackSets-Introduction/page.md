@@ -19,8 +19,8 @@ For detailed per-instance drift results and remediation steps, consult the Cloud
 
 ## Where to learn more
 
-* AWS CloudFormation drift detection: [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-stack-drift.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-stack-drift.html)
-* AWS CloudFormation StackSets: [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/what-is-cfnstacksets.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/what-is-cfnstacksets.html)
+* AWS CloudFormation drift detection: [https://docs.aws.amazon.com/[AWS_SECRET_ACCESS_KEY]-cfn-stack-drift.html](https://docs.aws.amazon.com/[AWS_SECRET_ACCESS_KEY]-cfn-stack-drift.html)
+* AWS CloudFormation StackSets: [https://docs.aws.amazon.com[AWS_SECRET_ACCESS_KEY]-is-cfnstacksets.html](https://docs.aws.amazon.com[AWS_SECRET_ACCESS_KEY]-is-cfnstacksets.html)
 
 This extends CloudFormation’s drift model from individual stacks to the distributed footprint created by StackSets, helping you detect and manage manual changes across organizational units, accounts, and regions.
 
@@ -94,7 +94,7 @@ Quick operational checklist
 
 Further reading and references
 
-* [AWS CloudFormation — StackSets (AWS Docs)](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/what-is-cfnstacksets.html)
+* [AWS CloudFormation — StackSets (AWS Docs)](https://docs.aws.amazon.com[AWS_SECRET_ACCESS_KEY]-is-cfnstacksets.html)
 * [AWS Organizations (overview)](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_introduction.html)
 * [AWS IAM documentation](https://docs.aws.amazon.com/iam/latest/UserGuide/introduction.html)
 * [CloudFormation course on KodeKloud](https://learn.kodekloud.com/user/courses/aws-cloud-formation)

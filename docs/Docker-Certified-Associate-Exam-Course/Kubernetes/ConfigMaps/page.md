@@ -195,7 +195,7 @@ Each key in `app-config` appears as a separate file in `/etc/config`.
 
 ## Further Reading
 
-* [Kubernetes ConfigMaps](https://kubernetes.io/docs/concepts/configuration/configmap/)
+* [Kubernetes ConfigMaps](https://kubernetes.[AWS_SECRET_ACCESS_KEY]/)
 * [Managing Resources in Kubernetes](https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/)
 * [Kubernetes Secrets vs ConfigMaps](https://kubernetes.io/docs/concepts/configuration/secret/#difference-between-configmap-and-secret)
 

@@ -1,6 +1,6 @@
 # Introduction
 
-Source: https://notes.kodekloud.com/docs/AWS-CloudWatch/Introduction/Introduction/page
+Source: https://notes.kodekloud.com/docs/AWS-[SECRET_REDACTED]
 
 AWS CloudWatch is a monitoring and observability service for AWS resources and applications, enabling real-time metrics, logs, and event analysis.
 
@@ -37,7 +37,7 @@ Have questions or want to dive deeper? Join our [AWS CloudWatch Community Forum]
 
 ## Links and References
 
-* [AWS CloudWatch User Guide](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html)
+* [AWS CloudWatch User Guide](https://docs.aws.amazon.[SECRET_REDACTED].html)
 * [AWS CLI Installation](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html)
 * [AWS CloudWatch Pricing](https://aws.amazon.com/cloudwatch/pricing/)
 

@@ -240,7 +240,7 @@ In this demo, we explored the end-to-end process of working with ONNX and ONNX R
 Thank you for reading this demonstration on exporting and using ONNX models for inference in real-world applications.
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/pytorch/module/a958efa1-845c-4cdf-9261-7688050bd96c/lesson/35e334ea-9ad5-4570-b988-6562dd95a5a8" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[AWS_SECRET_ACCESS_KEY]-845c-4cdf-9261-7688050bd96c/lesson/35e334ea-9ad5-4570-b988-6562dd95a5a8" />
 </CardGroup>
 
 

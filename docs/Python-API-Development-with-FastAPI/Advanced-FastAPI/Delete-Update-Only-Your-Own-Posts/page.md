@@ -123,7 +123,7 @@ When testing these endpoints, consider the following scenarios:
 
    ```json theme={null}
    {
-     "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxMjM0NTY3ODkwLCJleHBpcmF0aW9uIjoxNzYwNjg2MTYwfQ.3pw0Pbhb6bJ2kMo_KmhB2MwTfqfZtrRnsdZo",
+     "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.[SECRET_REDACTED].3pw0Pbhb6bJ2kMo_KmhB2MwTfqfZtrRnsdZo",
      "token_type": "bearer"
    }
    ```

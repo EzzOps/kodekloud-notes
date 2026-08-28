@@ -144,7 +144,7 @@ This concludes the SSM parameter types overview. In short:
 
 * AWS Systems Manager Parameter Store: [https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-parameter-store.html](https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-parameter-store.html)
 * AWS KMS overview: [https://docs.aws.amazon.com/kms/latest/developerguide/overview.html](https://docs.aws.amazon.com/kms/latest/developerguide/overview.html)
-* AWS Secrets Manager: [https://docs.aws.amazon.com/secretsmanager/latest/userguide/intro.html](https://docs.aws.amazon.com/secretsmanager/latest/userguide/intro.html)
+* AWS Secrets Manager: [https://docs.aws.amazon.[SECRET_REDACTED].html](https://docs.aws.amazon.[SECRET_REDACTED].html)
 * Amazon S3: [https://aws.amazon.com/s3/](https://aws.amazon.com/s3/)
 * AWS IAM documentation: [https://docs.aws.amazon.com/iam/latest/UserGuide/introduction.html](https://docs.aws.amazon.com/iam/latest/UserGuide/introduction.html)
 

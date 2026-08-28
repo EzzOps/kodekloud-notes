@@ -131,7 +131,7 @@ ec2.pem kubeseal-windows-installer/ main.pem main2.pem test.code-workspace test.
 Documents\scratch\aws-demo
   ssh -i ec2.pem ec2-user@3.88.162.255
 The authenticity of host '3.88.162.255 (3.88.162.255)' can't be established. 
-ED25519 key fingerprint is SHA256:kaXd1AucPPazbXb3o4W61zUjj1Qsh/zcHpchoQKuo. 
+ED25519 key fingerprint is SHA256:[SECRET_REDACTED]. 
 This key is not known by any other names. 
 Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
 Warning: Permanently added '3.88.162.255' (ED25519) to the list of known hosts.

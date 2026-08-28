@@ -65,7 +65,7 @@ Example SPDX excerpt:
 FileName: bin/linux/amd64/kube-controller-manager
 SPDXID: SPDXRef-File-kube-controller-manager-v1.31.2
 FileChecksum: SHA1: c5e8da214abd18e96aabe7d1bab6addf76455
-FileChecksum: SHA256: b16b6becee2bc76af97384ca611d8e972aa7ed213ea75255
+FileChecksum: SHA256: [SECRET_REDACTED]
 LicenseConcluded: Apache-2.0
 ```
 

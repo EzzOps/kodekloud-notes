@@ -122,7 +122,7 @@ Flux will now periodically reconcile and apply the contents of `app-A` to your c
 
 [Bucket Source]: https://fluxcd.io/docs/components/source/bucket/
 
-[Kustomization]: https://fluxcd.io/docs/components/kustomize/kustomization/
+[Kustomization]: https://fluxcd.io[AWS_SECRET_ACCESS_KEY]/
 
 [Kubernetes Secrets]: https://kubernetes.io/docs/concepts/configuration/secret/
 

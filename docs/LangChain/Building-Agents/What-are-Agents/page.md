@@ -165,7 +165,7 @@ Next steps:
 * [OpenAI API and Chat Models](https://platform.openai.com/docs/models)
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langchain/module/530ad7de-8948-4806-8824-19eb10923d1d/lesson/cb8e55e0-21b4-4980-8418-ece887303e7a" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[SECRET_REDACTED]-8948-4806-8824-19eb10923d1d/lesson/cb8e55e0-21b4-4980-8418-ece887303e7a" />
 </CardGroup>
 
 
@@ -324,5 +324,5 @@ This lesson will be followed by demos that build end-to-end agents so you can se
 * [Python](https://www.python.org/)
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langchain/module/530ad7de-8948-4806-8824-19eb10923d1d/lesson/6321298e-ef4e-4acd-b383-4745a68eee9c" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[SECRET_REDACTED]-8948-4806-8824-19eb10923d1d/lesson/6321298e-ef4e-4acd-b383-4745a68eee9c" />
 </CardGroup>

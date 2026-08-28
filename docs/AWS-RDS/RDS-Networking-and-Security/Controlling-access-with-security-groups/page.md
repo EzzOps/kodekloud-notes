@@ -83,7 +83,7 @@ Links and references
 * AWS Security Groups: [https://docs.aws.amazon.com/vpc/latest/userguide/VPC\_SecurityGroups.html](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_SecurityGroups.html)
 * AWS RDS networking: [https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Overview.RDSSecurity.html](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Overview.RDSSecurity.html)
 * AWS Config: [https://docs.aws.amazon.com/config/latest/developerguide/](https://docs.aws.amazon.com/config/latest/developerguide/)
-* AWS CloudTrail: [https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html)
+* AWS CloudTrail: [https://docs.aws.amazon.[SECRET_REDACTED]-user-guide.html](https://docs.aws.amazon.[SECRET_REDACTED]-user-guide.html)
 * IaC resources: Terraform, AWS CloudFormation, CDK
 
 Speak with you in the next lesson.

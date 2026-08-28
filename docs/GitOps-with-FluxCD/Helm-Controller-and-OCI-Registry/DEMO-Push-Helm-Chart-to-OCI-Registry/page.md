@@ -368,7 +368,7 @@ Push the packaged chart to your GHCR repository under your namespace:
 ```bash theme={null}
 $ helm push block-buster-helm-app-7.7.1.tgz oci://ghcr.io/YOUR_GITHUB_USERNAME/bb-app
 Pushed: ghcr.io/YOUR_GITHUB_USERNAME/bb-app:7.7.1
-Digest: sha256:87b78637863479fa843cd7c2951911285eacd089ff10e6a
+Digest: sha256:[SECRET_REDACTED]
 ```
 
 ## Step 4: Verify the Package in GitHub

@@ -76,5 +76,5 @@ Further reading and references
 * Consider resources on distributed systems and observability (tracing, metrics) to complement the course material.
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langgraph/module/fba2d122-092f-42c8-bc27-0955ffaf786b/lesson/36726025-bd04-4ff5-9b00-e47eeb8da03f" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[SECRET_REDACTED]-092f-42c8-bc27-0955ffaf786b/lesson/36726025-bd04-4ff5-9b00-e47eeb8da03f" />
 </CardGroup>

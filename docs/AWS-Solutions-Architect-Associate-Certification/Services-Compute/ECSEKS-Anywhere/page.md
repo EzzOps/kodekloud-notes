@@ -65,7 +65,7 @@ For more detailed information, consider exploring the following resources:
 
 * [Kubernetes Basics](https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/)
 * [AWS Documentation](https://aws.amazon.com/documentation/)
-* [ECS Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/Welcome.html)
+* [ECS Developer Guide](https://docs.aws.amazon.com[AWS_SECRET_ACCESS_KEY].html)
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/aws-solutions-architect-associate-certification/module/afe0c951-fe76-47f2-9fc4-18858721be70/lesson/10324147-a339-47e5-82f4-2d4f24c44a1c" />

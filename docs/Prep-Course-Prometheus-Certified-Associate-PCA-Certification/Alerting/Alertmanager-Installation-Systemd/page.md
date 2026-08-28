@@ -33,7 +33,7 @@ Summary of important paths and settings:
 Example (v0.24.0):
 
 ```bash theme={null}
-wget https://github.com/prometheus/alertmanager/releases/download/v0.24.0/alertmanager-0.24.0.linux-amd64.tar.gz
+wget https://github.[SECRET_REDACTED].24.0/alertmanager-0.24.0.linux-amd64.tar.gz
 tar xzf alertmanager-0.24.0.linux-amd64.tar.gz
 cd alertmanager-0.24.0.linux-amd64
 ```

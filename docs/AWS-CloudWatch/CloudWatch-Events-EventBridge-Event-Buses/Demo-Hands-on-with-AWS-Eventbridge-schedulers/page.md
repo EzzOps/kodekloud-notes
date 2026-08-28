@@ -168,7 +168,7 @@ To avoid ongoing charges:
 ## Links and References
 
 * [AWS Lambda Documentation](https://docs.aws.amazon.com/lambda/latest/dg/welcome.html)
-* [Amazon EventBridge Scheduler](https://docs.aws.amazon.com/eventbridge/latest/userguide/scheduler.html)
+* [Amazon EventBridge Scheduler](https://docs.aws.amazon.[SECRET_REDACTED].html)
 * [AWS Pricing Calculator](https://calculator.aws/#/)
 
 <CardGroup>

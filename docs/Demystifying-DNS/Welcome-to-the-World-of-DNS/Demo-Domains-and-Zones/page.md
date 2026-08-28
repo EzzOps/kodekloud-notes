@@ -100,7 +100,7 @@ io.                  172800    IN      NS      a0.nic.io.
 io.                  172800    IN      NS      a1.nic.io.
 io.                  172800    IN      NS      b0.nic.io.
 io.                  172800    IN      NS      c0.nic.io.
-io.                  86400     IN      DS      57355 8 2 95A57C3BAB7849DBCDDF7C72ADA71A88146B14111
+io.                  86400     IN      DS      57355 8 2 [SECRET_REDACTED]
 ...
 jcroyolan.io.       3600     IN      NS      ns-427.awsdns-53.com.
 jcroyolan.io.       3600     IN      NS      ns-1067.awsdns-05.org.

@@ -89,7 +89,7 @@ Links and references
 * [Prometheus](https://prometheus.io/)
 * [PostgreSQL](https://www.postgresql.org/)
 * [Strimzi for Kafka](https://strimzi.io/)
-* [Kubernetes concepts: StatefulSet](https://kubernetes.io/docs/concepts/workloads/controllers/statefulset/)
+* [Kubernetes concepts: StatefulSet](https://kubernetes.[SECRET_REDACTED]/)
 
 <Callout icon="warning">
   When designing operators, be careful with permissions and automated actions: reconciliations that modify persistent state (databases, storage, certificates) require thorough testing, RBAC scoping, and clear upgrade/backup strategies.

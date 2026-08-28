@@ -37,7 +37,7 @@ Further reading and references
 A dedicated section follows with concrete prompt template examples, formatting strategies, and common output-parsing patterns for this library.
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langchain/module/5bedac05-3eaa-4d0d-9892-e05b80c528fb/lesson/b1501cbe-c6d4-4305-ace8-1bdea97918d0" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[SECRET_REDACTED]-3eaa-4d0d-9892-e05b80c528fb/lesson/b1501cbe-c6d4-4305-ace8-1bdea97918d0" />
 </CardGroup>
 
 
@@ -107,5 +107,5 @@ Links and references
 * [Kubernetes Documentation — for deploying retrieval infra](https://kubernetes.io/docs/)
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langchain/module/5bedac05-3eaa-4d0d-9892-e05b80c528fb/lesson/82db88eb-654f-49a7-a8cb-ac4e95238331" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[SECRET_REDACTED]-3eaa-4d0d-9892-e05b80c528fb/lesson/82db88eb-654f-49a7-a8cb-ac4e95238331" />
 </CardGroup>

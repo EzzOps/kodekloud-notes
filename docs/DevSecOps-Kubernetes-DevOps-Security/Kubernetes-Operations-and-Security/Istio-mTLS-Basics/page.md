@@ -105,9 +105,9 @@ spec:
 
 ## Links and References
 
-* [Istio mTLS Migration Guide](https://istio.io/latest/docs/tasks/security/authentication/mtls-migration/)
+* [Istio mTLS Migration Guide](https://istio.io/latest[AWS_SECRET_ACCESS_KEY]-migration/)
 * [Kubernetes Documentation](https://kubernetes.io/docs/)
-* [Istio Security Concepts](https://istio.io/latest/docs/concepts/security/overview/)
+* [Istio Security Concepts](https://istio.[SECRET_REDACTED]/)
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/devsecops-kubernetes-devops-security/module/fc1733bc-1e9c-4e38-ae86-84e6bd9af04d/lesson/468738c7-5bb9-42d8-91fd-c6aabf6c7bc2" />

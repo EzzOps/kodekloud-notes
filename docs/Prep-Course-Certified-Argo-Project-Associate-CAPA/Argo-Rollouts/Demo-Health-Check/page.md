@@ -13,7 +13,7 @@ deployment.apps/highway-animation-1          4/4     4            4           4h
 2. Apply the Rollout manifest (example uses a public gist). This creates the Rollout and the blue/green services:
 
 ```bash theme={null}
-kubectl -n beta apply -f https://gist.github.com/sidd-harth/5dedab96d94373e4f1f1317f33d3781f/raw/dcf228b4e2e8b12c912fb4f1fbb3f858e435fd0f/rollout-1-demo.yml
+kubectl -n beta apply -f https://gist.github.com/sidd-[SECRET_REDACTED]/[AWS_SECRET_ACCESS_KEY]/rollout-1-demo.yml
 # Expected output:
 # rollout.argoproj.io/highway-animation-rollout created
 # service/highway-bluegreen-active created
@@ -62,7 +62,7 @@ At this point the Rollout resource controls the application; the original Deploy
 Links and references
 
 * Argo Rollouts documentation: [https://argoproj.github.io/argo-rollouts/](https://argoproj.github.io/argo-rollouts/)
-* Kubernetes Deployments: [https://kubernetes.io/docs/concepts/workloads/controllers/deployment/](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/)
+* Kubernetes Deployments: [https://kubernetes.[SECRET_REDACTED]/](https://kubernetes.[SECRET_REDACTED]/)
 * Example manifest used in this demo: [https://gist.github.com/sidd-harth/5dedab96d94373e4f1f1317f33d3781f](https://gist.github.com/sidd-harth/5dedab96d94373e4f1f1317f33d3781f)
 
 That's all for now.

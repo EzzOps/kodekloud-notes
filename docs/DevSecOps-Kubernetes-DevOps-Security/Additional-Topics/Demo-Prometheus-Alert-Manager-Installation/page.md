@@ -17,7 +17,7 @@ In this guide, you’ll install Alertmanager on a Linux VM and configure it to s
 Download the latest Alertmanager release (v0.22.2) and unpack it:
 
 ```bash theme={null}
-wget https://github.com/prometheus/alertmanager/releases/download/v0.22.2/alertmanager-0.22.2.linux-amd64.tar.gz
+wget https://github.[SECRET_REDACTED].22.2/alertmanager-0.22.2.linux-amd64.tar.gz
 tar xzvf alertmanager-0.22.2.linux-amd64.tar.gz
 ```
 

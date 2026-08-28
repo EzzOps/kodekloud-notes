@@ -158,7 +158,7 @@ Guidance:
 * Terraform CLI environment variables: [https://developer.hashicorp.com/terraform/cli/config/environment-variables#tf\_log](https://developer.hashicorp.com/terraform/cli/config/environment-variables#tf_log)
 * Azure Monitor Agent: [https://learn.microsoft.com/azure/azure-monitor/agents/azure-monitor-agent](https://learn.microsoft.com/azure/azure-monitor/agents/azure-monitor-agent)
 * Log Analytics workspace: [https://learn.microsoft.com/azure/azure-monitor/logs/log-analytics-workspace](https://learn.microsoft.com/azure/azure-monitor/logs/log-analytics-workspace)
-* azurerm provider docs: [https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs)
+* azurerm provider docs: [https://registry.terraform.io[AWS_SECRET_ACCESS_KEY]](https://registry.terraform.io[AWS_SECRET_ACCESS_KEY])
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-on-azure/module/8eb2a0b5-4324-4bba-9e4e-c01dd765911d/lesson/bca84dc3-abf2-4bdc-bbd5-e192250c830e" />
@@ -275,9 +275,9 @@ Now that you understand how a Terraform resource block maps to provider resource
 Useful references:
 
 * [Terraform Documentation: Configuration Language](https://www.terraform.io/docs/language/index.html)
-* [Azure Provider Docs (azurerm)](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs)
+* [Azure Provider Docs (azurerm)](https://registry.terraform.io[AWS_SECRET_ACCESS_KEY])
 * [AWS Provider Docs (aws)](https://registry.terraform.io/providers/hashicorp/aws/latest/docs)
-* [Google Cloud Provider Docs (google)](https://registry.terraform.io/providers/hashicorp/google/latest/docs)
+* [Google Cloud Provider Docs (google)](https://registry.terraform.[SECRET_REDACTED])
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-on-azure/module/2dc00bf7-fa00-41df-a4e0-bce9fb23c19d/lesson/395f553f-0b72-44c1-a15a-ad90a71e6a93" />

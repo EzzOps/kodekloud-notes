@@ -46,7 +46,7 @@ Further reading and references
 * LangChain message types: [https://python.langchain.com/en/latest/](https://python.langchain.com/en/latest/)
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langgraph/module/7a80b285-b366-4c4d-95d0-bce0c24aaf58/lesson/da3e22f3-9144-425a-bc83-4715c077857c" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[SECRET_REDACTED]-b366-4c4d-95d0-bce0c24aaf58/lesson/da3e22f3-9144-425a-bc83-4715c077857c" />
 </CardGroup>
 
 
@@ -147,5 +147,5 @@ Further reading and references
 * For practical designs, search for "conversational memory patterns", "agent tool logging", and "execution tracing best practices" to find implementation examples and community patterns.
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langgraph/module/7a80b285-b366-4c4d-95d0-bce0c24aaf58/lesson/4ed8f20e-852a-442b-b728-7ab22f616b13" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[SECRET_REDACTED]-b366-4c4d-95d0-bce0c24aaf58/lesson/4ed8f20e-852a-442b-b728-7ab22f616b13" />
 </CardGroup>

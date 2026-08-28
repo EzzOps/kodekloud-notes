@@ -84,7 +84,7 @@ Your application is now accessible at `http://34.68.12.34`.
 
 * [Kubernetes Services](https://kubernetes.io/docs/concepts/services-networking/service/)
 * [GKE LoadBalancer Service Guide](https://cloud.google.com/kubernetes-engine/docs/how-to/service-parameters#loadbalancer)
-* [kubectl apply Documentation](https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands#apply)
+* [kubectl apply Documentation](https://kubernetes.io/[AWS_SECRET_ACCESS_KEY]-commands#apply)
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/gcp-devops-project/module/001eaf30-3cc6-4d71-8b48-c59ac4e5e0f8/lesson/0e2c7a41-3d34-40b1-9898-55bbd9801cc4" />

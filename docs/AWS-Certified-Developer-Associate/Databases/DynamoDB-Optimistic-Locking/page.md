@@ -61,7 +61,7 @@ Under the hood, DynamoDB uses conditional writes to enforce version checks. The 
 
 ## Conclusion
 
-By utilizing optimistic locking, DynamoDB offers a robust mechanism to ensure data consistency and avoid conflicts caused by simultaneous updates. This technique is especially useful in distributed systems where race conditions are common. For further in-depth learning, check out the [DynamoDB Developer Guide](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/).
+By utilizing optimistic locking, DynamoDB offers a robust mechanism to ensure data consistency and avoid conflicts caused by simultaneous updates. This technique is especially useful in distributed systems where race conditions are common. For further in-depth learning, check out the [DynamoDB Developer Guide](https://docs.aws.amazon.[AWS_SECRET_ACCESS_KEY]/).
 
 Understanding and properly implementing optimistic locking can significantly enhance the reliability and scalability of your applications dealing with high concurrency and complex data operations.
 

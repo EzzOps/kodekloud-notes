@@ -32,7 +32,7 @@ While Kubernetes has officially deprecated Docker as its runtime, Docker remains
   Even though Kubernetes doesn’t require Docker for container orchestration, using Docker to understand container fundamentals remains beneficial. Once these basics are mastered, shifting focus to Kubernetes and containerd becomes more intuitive.
 </Callout>
 
-Throughout the course, Docker is used as a primary example to explain container concepts. This strategy allows learners to grasp fundamental ideas before transitioning to Kubernetes-specific orchestration. If Docker is not installed on your system or if you prefer using containerd, you can convert Docker commands to their equivalent [kubectl](https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands) commands as needed.
+Throughout the course, Docker is used as a primary example to explain container concepts. This strategy allows learners to grasp fundamental ideas before transitioning to Kubernetes-specific orchestration. If Docker is not installed on your system or if you prefer using containerd, you can convert Docker commands to their equivalent [kubectl](https://kubernetes.io/[AWS_SECRET_ACCESS_KEY]-commands) commands as needed.
 
 This clarification sets the context for the remainder of the course and ensures a smooth transition from understanding container concepts with Docker to applying them within Kubernetes environments.
 

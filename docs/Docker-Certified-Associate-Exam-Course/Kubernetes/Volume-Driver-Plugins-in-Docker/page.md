@@ -204,7 +204,7 @@ When you create a PVC, just set `storageClassName` to select your tier. Kubernet
 * [Kubernetes StorageClass Documentation](https://kubernetes.io/docs/concepts/storage/storage-classes/)
 * [Persistent Volumes](https://kubernetes.io/docs/concepts/storage/persistent-volumes/)
 * [GCE PD Provisioner](https://kubernetes.io/docs/concepts/storage/volumes/#gcepersistentdisk)
-* [gcloud compute disks create](https://cloud.google.com/sdk/gcloud/reference/compute/disks/create)
+* [gcloud compute disks create](https://cloud.google.[SECRET_REDACTED])
 
 ***
 

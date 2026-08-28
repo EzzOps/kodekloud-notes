@@ -83,10 +83,10 @@ Since the command redirected output to `vaultinit.txt`, your console is blank. D
 
 ```bash theme={null}
 $ cat vaultinit.txt
-Recovery Key 1: wcFMA4Z9h7N72NGARAAzMm1xOnYclitFpuA07AOUVKDPOx03mKT0RyPQgRzsgVhs+748139se3DUAkprZx/...
-Recovery Key 2: ZlXab7mVy0sR8b4JHJL0T2G9gC0KpLmYrKvWUkiFZ1...
-Recovery Key 3: qW8/E7u5OzLmZk3R2H4jXn1a9vK5mCuXbJ9pR0gLZ2...
-Initial Root Token: hvs.8CSU02a1xcS21iehKawiqWN
+Recovery Key 1: [SECRET_REDACTED]/...
+Recovery Key 2: [SECRET_REDACTED]...
+Recovery Key 3: [SECRET_REDACTED]...
+Initial Root Token: [VAULT_TOKEN]
 Success! Vault is initialized
 ```
 
@@ -101,7 +101,7 @@ To decrypt the share encrypted for Susan:
 </Callout>
 
 ```bash theme={null}
-$ echo "qW8/E7u5OzLmZk3R2H4jXn1a9vK5mCuXbJ9pR0gLZ2..." \
+$ echo "[SECRET_REDACTED]..." \
   | base64 --decode \
   | gpg --decrypt
 ```

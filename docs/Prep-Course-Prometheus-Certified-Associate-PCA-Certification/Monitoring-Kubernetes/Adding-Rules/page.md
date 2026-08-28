@@ -129,7 +129,7 @@ yaml
     severity: critical
   annotations:
     description: Configuration has failed to load for {{ $labels.namespace }} / {{ $labels.pod }}.
-    runbook_url: https://runbooks.prometheus-operator.dev/runbooks/alertmanager/alertmanagerfailedreload
+    runbook_url: https://runbooks.prometheus-operator.[SECRET_REDACTED]
     summary: Reloading an Alertmanager configuration has failed.
 ```
 
@@ -148,7 +148,7 @@ yaml
 References
 
 * Prometheus Operator (GitHub): [https://github.com/prometheus-operator/prometheus-operator](https://github.com/prometheus-operator/prometheus-operator)
-* Prometheus rules documentation: [https://prometheus.io/docs/prometheus/latest/configuration/alerting\_rules/](https://prometheus.io/docs/prometheus/latest/configuration/alerting_rules/)
+* Prometheus rules documentation: [https://prometheus.[AWS_SECRET_ACCESS_KEY]alerting\_rules/](https://prometheus.[AWS_SECRET_ACCESS_KEY]alerting_rules/)
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prometheus-certified-associate-pca/module/bb958f66-38c3-41ed-ae2f-7a4ee96c4d66/lesson/fa87266e-e72e-4431-b165-c99a30ec1a33" />

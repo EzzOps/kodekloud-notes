@@ -60,5 +60,5 @@ On **workerone**, run the join command displayed by the manager:
 
 ```bash theme={null}
 docker swarm join \
-  --token SWMTKN-1-3fdj9fgrjcrrj5t0pekb42n45tj96zgwxodtwd4ujv4qnhl-cop40spyhgc1tmzythfss49xn \
+  --token SWMTKN-1-[SECRET_REDACTED]-cop40spyhgc1tmzythfss49xn \
   172.31.42.232:2377

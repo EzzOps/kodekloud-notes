@@ -31,7 +31,7 @@ Inspect your existing gossip encryption key in `consul.d/config.hcl`:
   "retry_join": ["10.0.101.110"],
   "bootstrap_expect": 2,
   "enable_syslog": true,
-  "encrypt": "62qD/DH15Ax0lMRUpMKvttP53p4FAvu+FgARDU4MzA=",
+  "encrypt": "[SECRET_REDACTED]=",
   "encrypt_verify_incoming": true,
   "encrypt_verify_outgoing": true,
   "connect": {

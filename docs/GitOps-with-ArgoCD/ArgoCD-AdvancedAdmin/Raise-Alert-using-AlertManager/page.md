@@ -64,7 +64,7 @@ labels:
   severity: critical
 annotations:
   description: Configuration has failed to load for {{ $labels.namespace }}{{ $labels.pod }}.
-  runbook_url: https://runbooks.prometheus-operator.dev/runbooks/alertmanager/alertmanagerfailedreload
+  runbook_url: https://runbooks.prometheus-operator.[SECRET_REDACTED]
   summary: Reloading an Alertmanager configuration has failed.
 
 alert: AlertmanagerMembersInconsistent
@@ -74,7 +74,7 @@ labels:
   severity: critical
 annotations:
   description: Alertmanager {{ $labels.namespace }}{{ $labels.pod }} has only found {{ $value }} members of the {{ $labels.job }} cluster.
-  runbook_url: https://runbooks.prometheus-operator.dev/runbooks/alertmanager/alertmanagermembersinconsistent
+  runbook_url: https://runbooks.prometheus-operator.[SECRET_REDACTED]
   summary: A member of an Alertmanager cluster has not found all other cluster members.
 
 alert: AlertmanagerFailedToSendAlerts
@@ -104,7 +104,7 @@ Append the following configuration at the end of the file:
 - alert: AlertmanagerClusterCrashlooping
   annotations:
     description: '{{ $value | humanizePercentage }} of Alertmanager instances within the {{ $labels.job }} cluster have restarted at least 5 times in the last 10m.'
-    runbook_url: https://runbooks.prometheus-operator.dev/runbooks/alertmanager/alertmanagerclustercrashlooping
+    runbook_url: https://runbooks.prometheus-operator.[SECRET_REDACTED]
   expr: |
     (
       count by (namespace, service) (
@@ -156,7 +156,7 @@ labels:
   severity: critical
 annotations:
   description: Configuration has failed to load for {{ $labels.namespace }}{{ $labels.pod }}.
-  runbook_url: https://runbooks.prometheus-operator.dev/runbooks/alertmanager/alertmanagerfailedreload
+  runbook_url: https://runbooks.prometheus-operator.[SECRET_REDACTED]
   summary: Reloading an Alertmanager configuration has failed.
 ---
 alert: AlertmanagerMembersInconsistent
@@ -166,7 +166,7 @@ labels:
   severity: critical
 annotations:
   description: Alertmanager {{ $labels.namespace }}{{ $labels.pod }} has only found {{ $value }} members of the {{ $labels.job }} cluster.
-  runbook_url: https://runbooks.prometheus-operator.dev/runbooks/alertmanager/alertmanagermembersinconsistent
+  runbook_url: https://runbooks.prometheus-operator.[SECRET_REDACTED]
   summary: A member of an Alertmanager cluster has not found all other cluster members.
 ---
 alert: AlertmanagerFailedToSendAlerts

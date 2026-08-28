@@ -80,7 +80,7 @@ In Route 53, create an Alias record (or CNAME) that maps `bestcars.com` to your 
 ## Further Reading
 
 * [Amazon S3 Static Website Hosting](https://docs.aws.amazon.com/AmazonS3/latest/dev/WebsiteHosting.html)
-* [Route 53 Routing to Static Website](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-to-static-site.html)
+* [Route 53 Routing to Static Website](https://docs.aws.amazon.[SECRET_REDACTED]-to-static-site.html)
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/amazon-simple-storage-service-amazon-s3/module/64c3572f-57b6-4263-8818-9809392a98a1/lesson/4f726d76-5917-4962-bf81-262106e3e36a" />

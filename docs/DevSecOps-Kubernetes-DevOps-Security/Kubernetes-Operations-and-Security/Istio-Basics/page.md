@@ -39,7 +39,7 @@ Envoy is a high-performance proxy written in C++ that mediates all service-to-se
 | Component | Responsibility                                     | Reference                                                                   |
 | --------- | -------------------------------------------------- | --------------------------------------------------------------------------- |
 | Pilot     | Service discovery, traffic management & routing    | [Pilot Docs](https://istio.io/latest/docs/reference/commands/pilot/)        |
-| Citadel   | mTLS-based authentication & certificate issuance   | [Citadel Docs](https://istio.io/latest/docs/tasks/security/authentication/) |
+| Citadel   | mTLS-based authentication & certificate issuance   | [Citadel Docs](https://istio.[SECRET_REDACTED]/) |
 | Galley    | Configuration ingestion, validation & distribution | [Galley Docs](https://istio.io/latest/docs/reference/config/galley/)        |
 
 <Callout icon="triangle-alert">
@@ -82,7 +82,7 @@ Istio’s sidecar-based approach offloads critical infrastructure concerns from 
 * [Istio Official Website](https://istio.io/)
 * [Envoy Proxy](https://www.envoyproxy.io/)
 * [Kubernetes Service Mesh Concepts](https://kubernetes.io/docs/concepts/services-networking/service/)
-* [Mutual TLS in Istio](https://istio.io/latest/docs/tasks/security/authentication/authn-policy/)
+* [Mutual TLS in Istio](https://istio.io/latest/[AWS_SECRET_ACCESS_KEY]-policy/)
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/devsecops-kubernetes-devops-security/module/fc1733bc-1e9c-4e38-ae86-84e6bd9af04d/lesson/da1538db-b4c3-49c1-af36-c434927cda4d" />

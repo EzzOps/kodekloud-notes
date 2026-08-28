@@ -109,7 +109,7 @@ fi
 
 ## References
 
-* [POSIX printf documentation](https://pubs.opengroup.org/onlinepubs/9699919799/utilities/printf.html)
+* [POSIX printf documentation](https://pubs.opengroup.[SECRET_REDACTED].html)
 * [GNU Coreutils printf manual](https://www.gnu.org/software/coreutils/manual/html_node/printf-invocation.html)
 * [Bash Shell Builtins](https://www.gnu.org/software/bash/manual/html_node/Bash-Builtins.html)
 

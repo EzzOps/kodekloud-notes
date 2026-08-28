@@ -26,4 +26,4 @@ Example output:
 Next, retrieve the initial admin password for API authentication:
 
 ```bash theme={null}
-sudo cat /var/lib/jenkins/secrets/initialAdminPassword
+sudo cat /var/[AWS_SECRET_ACCESS_KEY]

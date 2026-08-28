@@ -136,5 +136,5 @@ Further reading and references
 * Tokenizer libraries and guides (Byte Pair Encoding, GPT tokenizers)
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langgraph/module/372c4db3-b58a-4c3e-9e5e-851e67d45b06/lesson/05995ed3-9e58-46e9-bf8c-2ae90b212ba8" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[SECRET_REDACTED]-b58a-4c3e-9e5e-851e67d45b06/lesson/05995ed3-9e58-46e9-bf8c-2ae90b212ba8" />
 </CardGroup>

@@ -52,7 +52,7 @@ Export the returned credentials into your environment:
 ```bash theme={null}
 export AWS_ACCESS_KEY_ID=ASIAXXXXXXXXXXXXXXXX
 export AWS_SECRET_ACCESS_KEY=XXXXXXXXXXXXXXXXXXXXXXXXXXXX
-export AWS_SESSION_TOKEN=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+export AWS_SESSION_TOKEN[SECRET_REDACTED]
 ```
 
 Now you can run S3 operations with least-privilege access:

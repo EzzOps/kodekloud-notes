@@ -41,5 +41,5 @@ Links and references
 * [LangChain community integrations and adapters](https://learn.kodekloud.com/user/courses/langchain)
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langchain/module/b5f7771a-fdbc-45b1-a786-6c84bb7ffc76/lesson/f16a86c1-c3fa-45fe-b348-31f0f35783cb" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[SECRET_REDACTED]-fdbc-45b1-a786-6c84bb7ffc76/lesson/f16a86c1-c3fa-45fe-b348-31f0f35783cb" />
 </CardGroup>

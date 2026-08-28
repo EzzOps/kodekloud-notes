@@ -63,7 +63,7 @@ Using environment variables enforces consistent resource attributes across deplo
 Links and references
 
 * OpenTelemetry: [https://opentelemetry.io/](https://opentelemetry.io/)
-* Semantic Conventions for Resources: [https://opentelemetry.io/docs/reference/specification/resource/semantic\_conventions/](https://opentelemetry.io/docs/reference/specification/resource/semantic_conventions/)
+* Semantic Conventions for Resources: [https://opentelemetry.[AWS_SECRET_ACCESS_KEY]/semantic\_conventions/](https://opentelemetry.[AWS_SECRET_ACCESS_KEY]/semantic_conventions/)
 
 That's it for this section.
 
@@ -144,7 +144,7 @@ Tracing instrumentation commonly creates exception events on spans and sets the 
 ```
 
 <Callout icon="lightbulb">
-  The attributes `exception.type`, `exception.message`, and `exception.stacktrace` follow the OpenTelemetry semantic conventions for exceptions. These attributes let observability tools display error details and group similar errors. See the OpenTelemetry spec for exceptions for more details: [https://opentelemetry.io/docs/reference/specification/semantic\_conventions/exceptions/](https://opentelemetry.io/docs/reference/specification/semantic_conventions/exceptions/)
+  The attributes `exception.type`, `exception.message`, and `exception.stacktrace` follow the OpenTelemetry semantic conventions for exceptions. These attributes let observability tools display error details and group similar errors. See the OpenTelemetry spec for exceptions for more details: [https://opentelemetry.[AWS_SECRET_ACCESS_KEY]\_conventions/exceptions/](https://opentelemetry.io/docs/reference/specification/semantic_conventions/exceptions/)
 </Callout>
 
 When a span contains an exception event like the example above, the tracing SDK or instrumentation typically sets `status` to `ERROR` and includes a summary description. This makes it straightforward to filter traces for failures and inspect the associated exception attributes.
@@ -173,7 +173,7 @@ Recap
 Further reading and references
 
 * OpenTelemetry Tracing: [https://opentelemetry.io/docs/](https://opentelemetry.io/docs/)
-* OpenTelemetry Semantic Conventions — Exceptions: [https://opentelemetry.io/docs/reference/specification/semantic\_conventions/exceptions/](https://opentelemetry.io/docs/reference/specification/semantic_conventions/exceptions/)
+* OpenTelemetry Semantic Conventions — Exceptions: [https://opentelemetry.[AWS_SECRET_ACCESS_KEY]\_conventions/exceptions/](https://opentelemetry.io/docs/reference/specification/semantic_conventions/exceptions/)
 
 That covers span status and how exceptions affect it.
 

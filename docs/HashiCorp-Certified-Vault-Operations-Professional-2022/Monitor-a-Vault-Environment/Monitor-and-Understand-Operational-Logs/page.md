@@ -38,7 +38,7 @@ cat /var/log/vault_audit.log | jq
   "time": "2022-12-25T21:20:12.40607Z",
   "type": "response",
   "auth": {
-    "client_token": "hmac-sha256:c134d4c72a6cd891102c654b0b897f3b747a3366e88b6b2fc25247bd977ec949",
+    "client_token": "hmac-sha256:[SECRET_REDACTED]",
     "display_name":"root",
     "policies":    ["root"],
     "token_type":  "service",

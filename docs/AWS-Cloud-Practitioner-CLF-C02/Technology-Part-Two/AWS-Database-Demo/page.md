@@ -129,7 +129,7 @@ If you have any questions, please feel free to reach out in the forums. We look 
 ## Further Reading
 
 * [AWS RDS Documentation](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Welcome.html)
-* [Amazon Aurora User Guide](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Welcome.html)
+* [Amazon Aurora User Guide](https://docs.aws.amazon.com/[AWS_SECRET_ACCESS_KEY].html)
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/aws-cloud-practitioner-clf-c02/module/f47a1e6e-5593-4fac-bc8b-f24ef6e6f418/lesson/a1770e51-2e63-4545-b255-cdb179eb8d8b" />

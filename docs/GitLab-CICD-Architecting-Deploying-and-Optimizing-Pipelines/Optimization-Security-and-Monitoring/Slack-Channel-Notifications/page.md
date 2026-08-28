@@ -42,8 +42,8 @@ services:
       GF_AUTH_ANONYMOUS_ENABLED: 'true'
       GF_INSTALL_PLUGINS: grafana-polystat-panel,yesoreyeram-boomtable-panel
     volumes:
-      - ./grafana/dashboards.yml:/etc/grafana/provisioning/dashboards/default.yml
-      - ./grafana/datasources.yml:/etc/grafana/provisioning/datasources/default.yml
+      - ./grafana/dashboards.yml:/etc[AWS_SECRET_ACCESS_KEY].yml
+      - ./grafana/datasources.yml:/etc/[AWS_SECRET_ACCESS_KEY].yml
 ```
 
 ### 3.4 Prometheus Scraping Config

@@ -47,7 +47,7 @@ Terminate or stop unused instances to avoid unexpected charges.
 * [Amazon EC2 overview](https://learn.kodekloud.com/user/courses/amazon-elastic-compute-cloud-ec2)
 * [EC2 key pairs documentation](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-key-pairs.html)
 * [EC2 AMIs](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AMIs.html)
-* [EBS volumes](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSEncryption.html)
+* [EBS volumes](https://docs.aws.amazon.[SECRET_REDACTED].html)
 * [AWS CloudWatch](https://learn.kodekloud.com/user/courses/aws-cloudwatch)
 
 Follow these steps to quickly launch and access an EC2 instance; for production environments apply hardened security group rules, use IAM roles, and enable monitoring and backups.
@@ -93,7 +93,7 @@ Example of the Create bucket page showing a chosen name and region:
 
 For full naming requirements, see the S3 documentation:
 
-* [Bucket naming rules — AWS S3 Documentation](https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucketnamingrules.html)
+* [Bucket naming rules — AWS S3 Documentation](https://docs.aws.amazon.[SECRET_REDACTED].html)
 
 <Frame>
   <img alt="A screenshot of the Amazon S3 User Guide showing the &#x22;Bucket naming rules&#x22; page, with a list of bullet-point rules for naming S3 buckets and a navigation menu on the left. The page includes notes about character limits, allowed characters, and suffix/prefix restrictions." />
@@ -195,7 +195,7 @@ Now that you’ve created a bucket and uploaded an object, consider these follow
 References:
 
 * Amazon S3 documentation: [https://docs.aws.amazon.com/s3/](https://docs.aws.amazon.com/s3/)
-* S3 bucket naming rules: [https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucketnamingrules.html](https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucketnamingrules.html)
+* S3 bucket naming rules: [https://docs.aws.amazon.[SECRET_REDACTED].html](https://docs.aws.amazon.[SECRET_REDACTED].html)
 
 This completes the basics: creating an S3 bucket, inspecting its properties and permissions, and uploading your first object. Future lessons will dive deeper into versioning, lifecycle rules, encryption, replication, and advanced access patterns.
 

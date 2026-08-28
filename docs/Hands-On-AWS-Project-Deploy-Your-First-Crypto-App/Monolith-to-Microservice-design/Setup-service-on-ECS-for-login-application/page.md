@@ -160,7 +160,7 @@ Refer to the documentation for detailed deployment steps for your chosen platfor
 
 Links and References
 
-* [AWS CodePipeline User Guide](https://docs.aws.amazon.com/codepipeline/latest/userguide/welcome.html)
+* [AWS CodePipeline User Guide](https://docs.aws.amazon.[SECRET_REDACTED].html)
 * [AWS CodeBuild User Guide](https://docs.aws.amazon.com/codebuild/latest/userguide/welcome.html)
 * [Amazon ECR User Guide](https://docs.aws.amazon.com/AmazonECR/latest/userguide/what-is-ecr.html)
 * [Flask Documentation](https://flask.palletsprojects.com/)
@@ -298,7 +298,7 @@ Useful references:
 
 * [Amazon ECS documentation](https://docs.aws.amazon.com/ecs/latest/developerguide/what-is-ecs.html)
 * [Amazon ECR documentation](https://docs.aws.amazon.com/AmazonECR/latest/userguide/what-is-ecr.html)
-* [ALB documentation and target groups](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/introduction.html)
+* [ALB documentation and target groups](https://docs.aws.amazon.com[AWS_SECRET_ACCESS_KEY]/introduction.html)
 * [Flask documentation](https://flask.palletsprojects.com/)
 
 We will cover connecting the product page and login page across services and discuss best practices for environment variables and service discovery in a deployed environment in the next lesson.

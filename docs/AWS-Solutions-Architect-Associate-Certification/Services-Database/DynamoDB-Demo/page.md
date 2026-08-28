@@ -193,7 +193,7 @@ To delete an item, select it and choose **Actions** > **Delete item**. This will
 
 DynamoDB supports PartiQL, an SQL-compatible query language that allows you to interact with your table using familiar SQL-like syntax. PartiQL translates SQL commands into DynamoDB queries, making it a useful alternative if you are more comfortable with SQL.
 
-For further details on PartiQL, check out the [DynamoDB Documentation](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/QL-reference.html).
+For further details on PartiQL, check out the [DynamoDB Documentation](https://docs.aws.amazon.[AWS_SECRET_ACCESS_KEY]/QL-reference.html).
 
 ***
 

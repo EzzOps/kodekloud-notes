@@ -49,7 +49,7 @@ Agents are the workers that execute your pipeline jobs. You group them into pool
 
 ## References
 
-* [Parallel jobs and agent pools in Azure Pipelines](https://learn.microsoft.com/azure/devops/pipelines/process/concurrency)
+* [Parallel jobs and agent pools in Azure Pipelines](https://learn.microsoft.[SECRET_REDACTED])
 * [AZ-400: Designing and Implementing Microsoft DevOps Solutions](https://learn.microsoft.com/en-us/certifications/exams/az-400)
 * [Azure DevOps Documentation](https://learn.microsoft.com/azure/devops/)
 

@@ -16,7 +16,7 @@ Vertex AI uses Google OAuth2 for authentication and accepts a JSON request body 
 curl -X POST \
   -H "Authorization: Bearer $(gcloud auth print-access-token)" \
   -H "Content-Type: application/json" \
-  "https://LOCATION-aiplatform.googleapis.com/v1/projects/PROJECT_ID/locations/LOCATION/publishers/google/models/MODEL_ID:generateText" \
+  "https://LOCATION-aiplatform.googleapis.com/v1/projects/PROJECT_ID[SECRET_REDACTED]MODEL_ID:generateText" \
   -d '{
     "instances": [
       {
@@ -111,7 +111,7 @@ After you authorize, n8n will show the connected account. Toggle the credential 
 Minimum settings for the POST node:
 
 * Method: POST
-* URL: `https://LOCATION-aiplatform.googleapis.com/v1/projects/PROJECT_ID/locations/LOCATION/publishers/google/models/MODEL_ID:generateText`
+* URL: `https://LOCATION-aiplatform.googleapis.com/v1/projects/PROJECT_ID[SECRET_REDACTED]MODEL_ID:generateText`
 * Authentication: Predefined Credential Type → Google OAuth
 * Send Body: Use JSON Body
 * Body: paste the JSON request shown earlier

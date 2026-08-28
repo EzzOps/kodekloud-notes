@@ -55,7 +55,7 @@ response = chain.invoke("How many sick leaves are allowed in a year?")
 * OpenAI embeddings & models: [https://platform.openai.com/docs/models](https://platform.openai.com/docs/models)
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langchain/module/e47b44c9-65c3-46f8-8bed-b075a18ab12b/lesson/01cbeda2-251d-4e7b-bf85-cac00fdf40d6" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[SECRET_REDACTED]-65c3-46f8-8bed-b075a18ab12b/lesson/01cbeda2-251d-4e7b-bf85-cac00fdf40d6" />
 </CardGroup>
 
 

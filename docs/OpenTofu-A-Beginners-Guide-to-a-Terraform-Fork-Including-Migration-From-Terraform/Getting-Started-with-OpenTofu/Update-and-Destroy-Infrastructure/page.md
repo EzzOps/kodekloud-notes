@@ -136,7 +136,7 @@ You used `file` instead of `filename` and omitted `filename`.
 
 ## Q9: Identify the Unsupported Argument
 
-Referring to the [Local Provider Documentation](https://registry.opentofu.dev/hashicorp/local/latest/docs/resources/file), `file` is not supported.\
+Referring to the [Local Provider Documentation](https://registry.opentofu.[SECRET_REDACTED]), `file` is not supported.\
 **Answer:** `file`
 
 ***
@@ -273,7 +273,7 @@ tofu plan
 Output (truncated):
 
 ```bash theme={null}
-local_file.pet: Refreshing state... [id=cba595b7d9f94ba11074a6f3f731912d95fb3d2c]
+local_file.pet: Refreshing state... [id=[AWS_SECRET_ACCESS_KEY]]
 OpenTofu used the selected providers to generate the following execution plan.
 Resource actions are indicated with these symbols:
   -/+ destroy and then create replacement
@@ -281,7 +281,7 @@ Resource actions are indicated with these symbols:
   # local_file.pet must be replaced
   -/+ resource "local_file" "pet" {
       ~ file_permission = "0777" -> "0700" # forces replacement
-      ~ id              = "cba595b7d9f94ba11074a6f3f731912d95fb3d2c" -> (known after apply)
+      ~ id              = "[AWS_SECRET_ACCESS_KEY]" -> (known after apply)
       ... (other attributes hidden)
     }
 

@@ -70,7 +70,7 @@ Thank you for reading this detailed exploration of the inverted index in Elastic
 
 For further insights into Elasticsearch and related technologies, check out:
 
-* [Elasticsearch Documentation](https://www.elastic.co/guide/en/elasticsearch/reference/current/index.html)
+* [Elasticsearch Documentation](https://www.elastic.co/[AWS_SECRET_ACCESS_KEY]/index.html)
 * [Kibana Guide](https://www.elastic.co/guide/en/kibana/current/index.html)
 
 <CardGroup>

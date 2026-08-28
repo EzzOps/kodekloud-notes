@@ -145,7 +145,7 @@ aws fis create-experiment-template \
 * [AWS Fault Injection Simulator Documentation](https://docs.aws.amazon.com/fis/latest/userguide/what-is-fis.html)
 * [Amazon EC2 Auto Scaling](https://docs.aws.amazon.com/autoscaling/ec2/userguide/what-is-amazon-ec2-auto-scaling.html)
 * [Amazon EKS Best Practices](https://docs.aws.amazon.com/eks/latest/userguide/best-practices.html)
-* [Amazon Aurora Failover](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Aurora.Managing.html#Aurora.Managing.Failover)
+* [Amazon Aurora Failover](https://docs.aws.amazon.com[AWS_SECRET_ACCESS_KEY].Managing.html#Aurora.Managing.Failover)
 * [Amazon ECS Task Definitions](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task_definitions.html)
 * [Kubernetes Pod Lifecycle](https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/)
 

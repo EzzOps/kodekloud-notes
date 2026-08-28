@@ -59,7 +59,7 @@ Links and references
 * [Terraform Language: Variables](https://www.terraform.io/docs/language/values/variables.html)
 * [Terraform Data Sources](https://www.terraform.io/docs/language/data-sources/index.html)
 * [Terraform Locals](https://www.terraform.io/docs/language/values/locals.html)
-* [AWS S3 Naming Guidelines](https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucketnamingrules.html)
+* [AWS S3 Naming Guidelines](https://docs.aws.amazon.[SECRET_REDACTED].html)
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-terraform-associate-004/module/34148477-db36-4c58-9d21-b837cf4fd5d6/lesson/67cd2d98-955a-4d03-8271-6896a6ba8560" />

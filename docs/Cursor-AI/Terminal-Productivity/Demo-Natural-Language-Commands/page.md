@@ -109,7 +109,7 @@ Example output:
 ```plaintext theme={null}
 =================================== test session starts ====================================
 platform darwin -- Python 3.13.1, pytest-8.3.5, pluggy-1.5.0
-rootdir: /Users/jeremy/Projects/KodeKloudTaskManager
+rootdir: /[SECRET_REDACTED]
 collected 6 items
 
 tests/test_app.py .....F.                                                        [100%]

@@ -61,7 +61,7 @@ By integrating FluxCD’s Notification Controller with GitHub webhooks, you gain
 * [FluxCD Notification Controller](https://fluxcd.io/docs/components/notification/)
 * [GitHub Webhooks Guide](https://docs.github.com/en/developers/webhooks-and-events/webhooks)
 * [FluxCD CLI Reference](https://fluxcd.io/docs/cmd/)
-* [Kubernetes Deployments](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/)
+* [Kubernetes Deployments](https://kubernetes.[SECRET_REDACTED]/)
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/gitops-with-fluxcd/module/6f4f2854-e5a5-4f3e-8910-85c47c018029/lesson/12051a70-33b7-49bf-bbce-50145d3fe4c7" />
@@ -167,7 +167,7 @@ Expected output:
 
 ```text theme={null}
 NAME             SUSPENDED   READY    MESSAGE
-github-receiver  False       True     Receiver initialized with URL: /hook/be1782fa344b4a24ea458be2dde11f9c289b91e
+github-receiver  False       True     Receiver initialized with URL: /hook[AWS_SECRET_ACCESS_KEY]
 ```
 
 ***

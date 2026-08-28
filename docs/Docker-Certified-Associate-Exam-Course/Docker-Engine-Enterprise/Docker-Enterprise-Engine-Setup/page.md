@@ -90,7 +90,7 @@ Server: Docker Engine - Enterprise
   GitCommit:        b34a5c8af56e510852c35414db4c1f4a6172339
  runc:
   Version:          1.0.0-rc8+dev
-  GitCommit:        3e425f80a8c931f88e6d94a8c831b9d5aa481657
+  GitCommit:        [AWS_SECRET_ACCESS_KEY]
  docker-init:
   Version:          0.18.0
   GitCommit:        fec3683

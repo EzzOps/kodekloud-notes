@@ -382,7 +382,7 @@ This completes the common troubleshooting scenarios covered in this lesson/artic
 
 # Introduction
 
-Source: https://notes.kodekloud.com/docs/Prep-Course-Istio-Certified-Associate-ICA-Certification/Troubleshooting/Introduction/page
+Source: https://notes.kodekloud.com/docs/Prep-Course-Istio-Certified-Associate-ICA-[SECRET_REDACTED]
 
 Exam-focused guide to troubleshooting Istio misconfigurations, demo walkthroughs, checklists, and key kubectl and istioctl commands to prepare for the Istio Certified Associate exam.
 

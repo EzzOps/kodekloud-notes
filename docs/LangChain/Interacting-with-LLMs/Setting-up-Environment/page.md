@@ -38,7 +38,7 @@ messages = prompt.to_messages()  # messages can be sent to a ChatModel/LLM
 Next, we’ll walk through demos showing how to construct these prompt templates and use them inside chains.
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langchain/module/ae260750-791b-496c-991f-0d0333f61e40/lesson/4c4472e9-fd82-4691-860a-55d9fad2f7f5" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[SECRET_REDACTED]-791b-496c-991f-0d0333f61e40/lesson/4c4472e9-fd82-4691-860a-55d9fad2f7f5" />
 </CardGroup>
 
 

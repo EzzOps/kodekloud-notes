@@ -100,7 +100,7 @@ Below is an example of what might be observed during an upstream request timeout
 upstream request timeout
 ```
 
-For more detailed information on managing timeouts and fault injection, consider reviewing the [Istio documentation](https://istio.io/latest/docs/ops/configuration/traffic-management/fault-injection/) and the [Kubernetes documentation](https://kubernetes.io/docs/).
+For more detailed information on managing timeouts and fault injection, consider reviewing the [Istio documentation](https://istio.[AWS_SECRET_ACCESS_KEY]-management/fault-injection/) and the [Kubernetes documentation](https://kubernetes.io/docs/).
 
 By following these steps, you can effectively simulate delays and timeouts in your service mesh, ensuring that your system gracefully handles slow responses while maintaining overall performance.
 

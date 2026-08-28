@@ -73,7 +73,7 @@ Follow these steps to set up a composite alarm via the AWS CLI or Console:
 
 ## Further Reading
 
-* [AWS CloudWatch Alarms](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/AlarmThatSendsEmail.html)
+* [AWS CloudWatch Alarms](https://docs.aws.amazon.[SECRET_REDACTED].html)
 * [Monitoring Auto Scaling with CloudWatch](https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-instance-monitoring.html)
 * [AWS CLI put-composite-alarm](https://docs.aws.amazon.com/cli/latest/reference/cloudwatch/put-composite-alarm.html)
 

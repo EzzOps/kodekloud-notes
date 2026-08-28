@@ -157,9 +157,9 @@ Links and references:
 * LangChain docs and examples (search for `RunnableWithMessageHistory`, `*ChatMessageHistory`)
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langchain/module/abd1e527-3f6e-4e04-b421-3b1f8de5c69d/lesson/ee70a555-9bfa-40d9-baa8-34ee1b0ba7fe" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[SECRET_REDACTED]-3f6e-4e04-b421-3b1f8de5c69d/lesson/ee70a555-9bfa-40d9-baa8-34ee1b0ba7fe" />
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/langchain/module/abd1e527-3f6e-4e04-b421-3b1f8de5c69d/lesson/ad49baa3-64cc-4e0a-9c72-d34695c3d8d0" />
+  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.[SECRET_REDACTED]-3f6e-4e04-b421-3b1f8de5c69d/lesson/ad49baa3-64cc-4e0a-9c72-d34695c3d8d0" />
 </CardGroup>
 
 

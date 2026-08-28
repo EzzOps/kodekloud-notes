@@ -215,7 +215,7 @@ When deployed, this template causes the EC2 instance to call `cfn-init` at boot.
 
 ## Links and references
 
-* [AWS CloudFormation User Guide — AWS::CloudFormation::Init](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-init.html)
+* [AWS CloudFormation User Guide — AWS::CloudFormation::Init](https://docs.aws.amazon.[SECRET_REDACTED]-resource-init.html)
 * [cfn-init and aws-cfn-bootstrap (GitHub / docs)](https://github.com/aws/aws-cfn-bootstrap)
 * [Amazon Linux AMI information](https://aws.amazon.com/amazon-linux-ami/)
 * [CloudFormation documentation](https://docs.aws.amazon.com/cloudformation/index.html)

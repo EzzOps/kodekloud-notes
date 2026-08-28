@@ -32,7 +32,7 @@ Within a log group, open a log stream to inspect timestamped events for that per
 Example Lambda logs (truncated):
 
 ```text theme={null}
-2023-10-18T21:15:24.406-04:00    INIT_START Runtime Version: nodejs:18.v13 Runtime RuntimeARN: arn:aws:lambda:us-east-1:123456789012:runtime:0229ff5ced939264450549058d8f267110e92677c27063e6dcd78
+2023-10-18T21:15:24.406-04:00    INIT_START Runtime Version: nodejs:18.v13 Runtime RuntimeARN: arn:aws:lambda:us-east-1:123456789012:runtime:[SECRET_REDACTED]
 2023-10-18T21:15:24.573-04:00    START RequestId: ece4ff36-0ad6-49a8-bb0e-4da06f561e77 Version: $LATEST
 2023-10-18T21:15:24.574-04:00    2023-10-19T01:15:24.574Z ece4ff36-0ad6-49a8-bb0e-4da06f561e77 INFO {
   Records: [
@@ -43,7 +43,7 @@ Example Lambda logs (truncated):
       eventSource: 'aws:dynamodb',
       awsRegion: 'us-east-1',
       dynamodb: [Object],
-      eventSourceARN: 'arn:aws:dynamodb:us-east-1:123456789012:table/ExampleTableWithStream/stream/2015-06-27T00:48:05.899'
+      eventSourceARN: 'arn:aws:dynamodb:us-east-1:123456789012:[AWS_SECRET_ACCESS_KEY]-06-27T00:48:05.899'
     },
     {
       eventID: 'c81e728d9d4c2f636f067f89cc14862c',
@@ -52,7 +52,7 @@ Example Lambda logs (truncated):
       eventSource: 'aws:dynamodb',
       awsRegion: 'us-east-1',
       dynamodb: [Object],
-      eventSourceARN: 'arn:aws:dynamodb:us-east-1:123456789012:table/ExampleTableWithStream/stream/2015-06-27T00:48:05.899'
+      eventSourceARN: 'arn:aws:dynamodb:us-east-1:123456789012:[AWS_SECRET_ACCESS_KEY]-06-27T00:48:05.899'
     }
   ]
 }

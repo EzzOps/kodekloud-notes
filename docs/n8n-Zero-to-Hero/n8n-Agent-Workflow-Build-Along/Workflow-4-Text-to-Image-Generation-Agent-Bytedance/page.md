@@ -135,10 +135,10 @@ In n8n, toggle the endpoint field to an expression and insert the POST node’s 
     "model": "bytedance/seedream-v3",
     "status": "completed",
     "outputs": {
-      "0": "https://d1q70pf5vjehyc.cloudfront.net/predictions/b9846b17667c74fab8d7ed6a4baf154c/i.jpeg"
+      "0": "https://d1q70pf5vjehyc.cloudfront.[SECRET_REDACTED].jpeg"
     },
     "urls": {
-      "get": "https://api.wavespeed.ai/api/v3/predictions/b9846b17667c74fab8d7ed6a4baf154c/result"
+      "get": "https://api.wavespeed.ai/api/v3/predictions[AWS_SECRET_ACCESS_KEY]"
     },
     "has_nsfw_contents": {
       "status": "created",

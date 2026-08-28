@@ -114,11 +114,11 @@ Enter a value: yes
 
 local_file.cat: Creating...
 random_pet.my-pet: Creating...
-local_file.cat: Creation complete after 0s [id=fe448888891fc40342313bc44a1fa18986520c89]
+local_file.cat: Creation complete after 0s [id=[AWS_SECRET_ACCESS_KEY]]
 random_pet.my-pet: Creation complete after 0s [id=yak]
 
 local_file.pet: Creating...
-local_file.pet: Creation complete after 0s [id=28b373c6c1fa3fce132a518ead0175c98f37f20]
+local_file.pet: Creation complete after 0s [id[AWS_SECRET_ACCESS_KEY]]
 
 Apply complete! Resources: 3 added, 0 changed, 0 destroyed.
 ```
@@ -199,7 +199,7 @@ Terraform will perform the following actions:
     ~ content              = "I like cats too!" -> "Dogs are awesome!" # forces replacement
       directory_permission = "0777"
       filename             = "/root/pets.txt"
-      id                   = "cba595b7d9f94ba1107a46f3f731912d95fb3d2c" -> (known after apply)
+      id                   = "[AWS_SECRET_ACCESS_KEY]" -> (known after apply)
   }
 
 Plan: 1 to add, 0 to change, 1 to destroy.

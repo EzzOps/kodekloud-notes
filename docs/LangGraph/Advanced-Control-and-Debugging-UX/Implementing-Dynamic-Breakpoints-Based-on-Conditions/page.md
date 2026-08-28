@@ -116,5 +116,5 @@ Links and references
 * [Observability best practices](https://12factor.net/) (principles for logging and operational controls)
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langgraph/module/74df2352-cf65-40d3-a3c3-70fdfb767635/lesson/d9ca8c0c-8120-4e39-9eb7-deb4639b592c" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[SECRET_REDACTED]-cf65-40d3-a3c3-70fdfb767635/lesson/d9ca8c0c-8120-4e39-9eb7-deb4639b592c" />
 </CardGroup>

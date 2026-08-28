@@ -50,7 +50,7 @@ State reducers are foundational for predictable state evolution in LangGraph. Th
 * Pattern references: accumulation, idempotence, and cleanup techniques in stateful systems
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langgraph/module/7a80b285-b366-4c4d-95d0-bce0c24aaf58/lesson/d4a0ce6a-78a6-41e5-8802-89f7b76e974c" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[SECRET_REDACTED]-b366-4c4d-95d0-bce0c24aaf58/lesson/d4a0ce6a-78a6-41e5-8802-89f7b76e974c" />
 </CardGroup>
 
 

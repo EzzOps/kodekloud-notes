@@ -149,8 +149,8 @@ Considerations before using provisioners
 
 Further reading and references
 
-* [Terraform Provisioners Documentation](https://developer.hashicorp.com/terraform/language/resources/provisioners)
-* [Azure RM Provider Docs](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs)
+* [Terraform Provisioners Documentation](https://developer.hashicorp.[SECRET_REDACTED])
+* [Azure RM Provider Docs](https://registry.terraform.io[AWS_SECRET_ACCESS_KEY])
 * [Learn Ansible Basics - Beginners Course](https://learn.kodekloud.com/user/courses/learn-ansible-basics-beginners-course)
 * [cloud-init](https://cloud-init.io/)
 

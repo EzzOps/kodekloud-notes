@@ -25,7 +25,7 @@ Useful AWS tools for right-sizing ML instances
 | [SageMaker Inference Recommender](https://docs.aws.amazon.com/sagemaker/latest/dg/inference-recommender.html) | Runs benchmarks across candidate instance types and recommends best-fit configurations    | When evaluating instance families/sizes for a specific model |
 | [Compute Optimizer](https://docs.aws.amazon.com/compute-optimizer/latest/guide/)                              | Analyzes historical utilization across AWS resources and suggests instance families/sizes | For account-level optimization based on past usage           |
 | [Trusted Advisor](https://aws.amazon.com/premiumsupport/trustedadvisor/)                                      | High-level cost and performance guidance across your AWS account                          | For general cost and configuration best practices            |
-| [CloudWatch](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html)            | Collects and visualizes runtime metrics (latency, CPU, memory, invocation count)          | For validating recommendations and creating alerts           |
+| [CloudWatch](https://docs.aws.amazon.[SECRET_REDACTED].html)            | Collects and visualizes runtime metrics (latency, CPU, memory, invocation count)          | For validating recommendations and creating alerts           |
 
 <Frame>
   <img alt="The image lists AWS tools for right-sizing ML instances, including SageMaker Inference Recommender, Compute Optimizer, Trusted Advisor, and CloudWatch, along with their respective functions." />
@@ -108,7 +108,7 @@ Security and compliance controls
 
 * Enforce least-privilege IAM policies for users and service roles interacting with SageMaker and Inference Recommender.
 * Use resource-level permissions and separate roles for benchmarking, deployment, and monitoring.
-* Audit actions and access via [CloudTrail](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html).
+* Audit actions and access via [CloudTrail](https://docs.aws.amazon.[SECRET_REDACTED]-user-guide.html).
 * Ensure encryption in transit and at rest follows organizational data governance standards.
 
 <Frame>
@@ -149,10 +149,10 @@ Links and references
 
 * [SageMaker Inference Recommender Documentation](https://docs.aws.amazon.com/sagemaker/latest/dg/inference-recommender.html)
 * [Amazon EC2 Instance Types](https://aws.amazon.com/ec2/instance-types/)
-* [CloudWatch Monitoring](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html)
+* [CloudWatch Monitoring](https://docs.aws.amazon.[SECRET_REDACTED].html)
 * [Cost Explorer Overview](https://docs.aws.amazon.com/cost-management/latest/userguide/what-is-cost-explorer.html)
 * [Compute Optimizer Guide](https://docs.aws.amazon.com/compute-optimizer/latest/guide/)
-* [AWS CloudTrail User Guide](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html)
+* [AWS CloudTrail User Guide](https://docs.aws.amazon.[SECRET_REDACTED]-user-guide.html)
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/aws-machine-learning-associates/module/e07ceb86-4976-4c8e-a6f8-3518534ec115/lesson/4d706c7c-7b60-4172-8e91-00c20d54a561" />

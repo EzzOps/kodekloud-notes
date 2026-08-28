@@ -104,7 +104,7 @@ bob@node01 ~  └─> dig @localhost my.kodekloudlab.com
 
 ;; OPT PSEUDOSECTION:
 ; EDNS: version: 0, flags:; udp: 1232
-; COOKIE: 3a06ecf5c62daa7d01000000793408a0b6f4274aabb9756 (good)
+; COOKIE: [SECRET_REDACTED] (good)
 ;; QUESTION SECTION:
 ;my.kodekloudlab.com.       IN      A
 

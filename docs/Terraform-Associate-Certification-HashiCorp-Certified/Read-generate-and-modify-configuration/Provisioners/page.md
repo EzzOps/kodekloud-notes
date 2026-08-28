@@ -232,7 +232,7 @@ Now, please head over to the multiple-choice quiz for this section.
 
 ## Additional Resources
 
-* [Terraform Provisioners Documentation](https://www.terraform.io/docs/language/resources/provisioners/syntax.html)
+* [Terraform Provisioners Documentation](https://www.terraform.[AWS_SECRET_ACCESS_KEY]syntax.html)
 * [AWS EC2 User Data](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/user-data.html)
 
 <CardGroup>

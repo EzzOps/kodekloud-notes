@@ -96,7 +96,7 @@ remote_state {
 
 * [Terragrunt Documentation](https://terragrunt.gruntwork.io/docs/)
 * [Terraform State Backends](https://www.terraform.io/language/settings/backends)
-* [AWS S3 Backend for Terraform](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/s3_bucket)
+* [AWS S3 Backend for Terraform](https://registry.terraform.[SECRET_REDACTED]s3_bucket)
 
 By following this layered directory structure and best practices, you’ll build a scalable, maintainable foundation for managing AWS infrastructure with Terragrunt.
 

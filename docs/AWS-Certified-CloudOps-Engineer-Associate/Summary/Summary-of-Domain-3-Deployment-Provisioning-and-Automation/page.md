@@ -151,7 +151,7 @@ Thank you for reading, and stay tuned for the next lesson on Domain 4.
 
 Explore further resources:
 
-* [AWS CloudFormation Documentation](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html)
+* [AWS CloudFormation Documentation](https://docs.aws.amazon.[SECRET_REDACTED].html)
 * [EC2 Image Builder Documentation](https://docs.aws.amazon.com/imagebuilder/)
 * [AWS Resource Access Manager (RAM) Guide](https://docs.aws.amazon.com/ram/)
 

@@ -114,8 +114,8 @@ Resolution quick-reference
 
 References and further reading
 
-* [Istio ServiceEntry reference](https://istio.io/latest/docs/reference/config/networking/service-entry/)
-* [Istio outbound traffic policy (meshConfig)](https://istio.io/latest/docs/ops/configuration/traffic-management/outbound/#outbound-traffic-policy)
+* [Istio ServiceEntry reference](https://istio.io[AWS_SECRET_ACCESS_KEY]/service-entry/)
+* [Istio outbound traffic policy (meshConfig)](https://istio.[AWS_SECRET_ACCESS_KEY]-management/outbound/#outbound-traffic-policy)
 * [Istio Certified Associate (ICA) course](https://learn.kodekloud.com/user/courses/istio-service-mesh)
 
 Summary

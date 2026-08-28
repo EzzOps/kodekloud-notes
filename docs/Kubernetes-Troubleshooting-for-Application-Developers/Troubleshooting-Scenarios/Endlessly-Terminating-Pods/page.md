@@ -186,7 +186,7 @@ status:
       message: All legacy kube types successfully parsed
       reason: ParsedGroupVersions
       status: "False"
-      type: NamespaceDeletionGroupVersionParsingFailure
+      type: [SECRET_REDACTED]
     - lastTransitionTime: "2024-07-07T22:04:40Z"
       message: All content successfully deleted, may be waiting on finalization
       reason: ContentDeleted

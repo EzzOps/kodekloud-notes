@@ -101,7 +101,7 @@ Choose the storage type that matches your workload’s performance profile and b
 
 * [Amazon RDS Documentation](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Welcome.html)
 * [EBS Volume Types (gp2/gp3) — AWS EC2 User Guide](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-volume-types.html)
-* [AWS CloudWatch — Monitoring RDS Metrics](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html)
+* [AWS CloudWatch — Monitoring RDS Metrics](https://docs.aws.amazon.[SECRET_REDACTED].html)
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/aws-rds/module/e87c8f86-0a01-4b91-ad95-23e570a8bb2e/lesson/bbce7821-5c7c-47ff-9ab6-9a086da4c0b0" />

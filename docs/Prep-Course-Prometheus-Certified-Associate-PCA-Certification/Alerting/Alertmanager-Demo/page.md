@@ -226,7 +226,7 @@ receivers:
 
   - name: slack
     slack_configs:
-      - api_url: 'https://hooks.slack.com/services/T04DB7ZS9PS/B04CMGVTYF4/KQy6AyXbfSwc43qAKFzYxJR'
+      - api_url: 'https://hooks.slack.[SECRET_REDACTED]'
         channel: '#alerts'
         title: '{{ .GroupLabels.team }} has alerts in env: {{ .GroupLabels.env }}'
         text: '{{ range .Alerts }}{{ .Annotations.message }}{{ "\n" }}{{ end }}'

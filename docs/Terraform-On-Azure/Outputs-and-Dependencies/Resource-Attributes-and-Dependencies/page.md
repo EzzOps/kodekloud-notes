@@ -125,7 +125,7 @@ resource "azurerm_public_ip" "pip" {
 }
 ```
 
-4. Consult the provider/resource documentation to learn which attributes are exported. For AzureRM `azurerm_public_ip` the exported attributes include `id`, `ip_address`, and (if applicable) `fqdn`. See the AzureRM docs for details: [https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/public\_ip](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/public_ip)
+4. Consult the provider/resource documentation to learn which attributes are exported. For AzureRM `azurerm_public_ip` the exported attributes include `id`, `ip_address`, and (if applicable) `fqdn`. See the AzureRM docs for details: [https://registry.terraform.io[AWS_SECRET_ACCESS_KEY]/resources/public\_ip](https://registry.terraform.io[AWS_SECRET_ACCESS_KEY]/resources/public_ip)
 
 <Frame>
   <img alt="This is a screenshot of the AzureRM documentation for Terraform, focusing on the configuration of a public IP resource. It includes parameter options, notes, and attribute references related to the setup." />
@@ -192,7 +192,7 @@ Terraform outputs let you expose runtime values for humans and automation. Use o
 * Provide connection details or metadata to scripts and CI/CD pipelines.
 * Keep outputs organized in `outputs.tf` for clarity.
 
-Always mark secrets with `sensitive = true` and protect access to your state backend. For more provider-specific exported attributes, consult the provider docs such as the AzureRM `azurerm_public_ip` resource: [https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/public\_ip](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/public_ip).
+Always mark secrets with `sensitive = true` and protect access to your state backend. For more provider-specific exported attributes, consult the provider docs such as the AzureRM `azurerm_public_ip` resource: [https://registry.terraform.io[AWS_SECRET_ACCESS_KEY]/resources/public\_ip](https://registry.terraform.io[AWS_SECRET_ACCESS_KEY]/resources/public_ip).
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-on-azure/module/866718d2-695e-4ee4-b25d-1aab3b014e85/lesson/4f867dbb-d2bf-4977-9131-29ea7d316d0a" />

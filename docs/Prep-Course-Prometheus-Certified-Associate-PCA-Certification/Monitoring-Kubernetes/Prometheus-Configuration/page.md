@@ -202,9 +202,9 @@ Summary
 
 Links and References
 
-* [Prometheus: Service discovery](https://prometheus.io/docs/prometheus/latest/configuration/configuration/#kubernetes_sd_config)
+* [Prometheus: Service discovery](https://prometheus.[AWS_SECRET_ACCESS_KEY]configuration/#kubernetes_sd_config)
 * [Kubernetes: Services, Endpoints and Pods](https://kubernetes.io/docs/concepts/services-networking/service/)
-* [Prometheus relabeling guide](https://prometheus.io/docs/prometheus/latest/configuration/relabel_config/)
+* [Prometheus relabeling guide](https://prometheus.[AWS_SECRET_ACCESS_KEY]relabel_config/)
 * [Helm charts (kube-prometheus-stack)](https://github.com/prometheus-community/helm-charts/tree/main/charts/kube-prometheus-stack)
 
 <CardGroup>

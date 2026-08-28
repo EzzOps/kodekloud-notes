@@ -93,7 +93,7 @@ Next, sign into one of the VMs (assumed to be acting as a web server) and config
 ```bash theme={null}
 PS C:\Users\RithinSkaria\Documents\kodekoud-az500\080-Network Security> ssh kodekloud@172.173.168.151
 The authenticity of host '172.173.168.151 (172.173.168.151)' can't be established.
-ED25519 key fingerprint is SHA256:FgaCDYu+yuqGbyz1R4KhrJTxILYl72KJqg3PZqeLHy0.
+ED25519 key fingerprint is SHA256:[SECRET_REDACTED].
 This key is not known by any other names
 Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
 ```

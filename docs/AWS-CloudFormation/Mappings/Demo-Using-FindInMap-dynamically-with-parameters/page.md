@@ -120,8 +120,8 @@ Best practices and gotchas
 
 Links and References
 
-* [AWS CloudFormation Mappings documentation](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/mappings.html)
-* [AWS CloudFormation intrinsic functions reference](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference.html)
+* [AWS CloudFormation Mappings documentation](https://docs.aws.amazon.[SECRET_REDACTED].html)
+* [AWS CloudFormation intrinsic functions reference](https://docs.aws.amazon.[SECRET_REDACTED]-function-reference.html)
 * [AWS S3 user guide](https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html)
 
 Summary

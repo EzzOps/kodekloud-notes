@@ -26,7 +26,7 @@ Note: Ambient Mode is typically a small part of the [ICA exam objectives](https:
 References:
 
 * [Istio Ambient Mode docs](https://istio.io/latest/docs/ops/deployment/ambient/)
-* [Istio Gateway API support](https://istio.io/latest/docs/reference/config/networking/gateway/)
+* [Istio Gateway API support](https://istio.io[AWS_SECRET_ACCESS_KEY]/gateway/)
 
 ***
 

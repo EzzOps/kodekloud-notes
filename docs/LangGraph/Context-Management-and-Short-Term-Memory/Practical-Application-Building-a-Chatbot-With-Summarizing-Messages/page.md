@@ -101,7 +101,7 @@ Over time, iterate on prompts and summarization cadence so summaries become both
 </Callout>
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langgraph/module/372c4db3-b58a-4c3e-9e5e-851e67d45b06/lesson/8c234f88-7163-4865-9489-a31a37eae7bc" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[SECRET_REDACTED]-b58a-4c3e-9e5e-851e67d45b06/lesson/8c234f88-7163-4865-9489-a31a37eae7bc" />
 </CardGroup>
 
 

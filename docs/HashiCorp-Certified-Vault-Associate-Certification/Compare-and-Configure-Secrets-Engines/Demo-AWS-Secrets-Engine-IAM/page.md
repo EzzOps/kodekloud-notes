@@ -198,7 +198,7 @@ Sample response:
 ```text theme={null}
 Key             Value
 ---             -----
-lease_id        aws/creds/vaultadvanced/DwkGgdaohbFga6Y1Kk4NF9B
+lease_id        [SECRET_REDACTED]
 lease_duration  768h
 lease_renewable true
 access_key      AKIA…NEWACCESSKEY…
@@ -216,7 +216,7 @@ In the AWS Console under **IAM → Users**, you’ll find a user named like `vau
 To delete one credential before it expires:
 
 ```bash theme={null}
-vault lease revoke aws/creds/vaultadvanced/DwkGgdaohbFga6Y1Kk4NF9B
+vault lease revoke [SECRET_REDACTED]
 ```
 
 Vault removes that IAM user and its keys in AWS.

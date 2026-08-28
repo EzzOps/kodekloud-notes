@@ -48,7 +48,7 @@ Attach a policy to your Vault EC2 instances that permits required AWS API action
 | Sid                                         | Effect | Action                                                                                        | Resource                                                           |
 | ------------------------------------------- | ------ | --------------------------------------------------------------------------------------------- | ------------------------------------------------------------------ |
 | PermitEC2ApiAccessForCloudAutoJoin          | Allow  | `ec2:DescribeInstances`                                                                       | `*`                                                                |
-| PermitRoute53AccessForLetsEncryptValidation | Allow  | `route53:GetChange`, `route53:ListHostedZones`                                                | `*`                                                                |
+| [SECRET_REDACTED] | Allow  | `route53:GetChange`, `route53:ListHostedZones`                                                | `*`                                                                |
 | PermitActionsForCloudWatchLogs              | Allow  | `logs:CreateLogGroup`, `logs:CreateLogStream`, `logs:PutLogEvents`, `logs:DescribeLogStreams` | `arn:aws:logs:us-east-1:634211456147:log-group:vault_audit_logs:*` |
 
 ```json theme={null}
@@ -61,7 +61,7 @@ Attach a policy to your Vault EC2 instances that permits required AWS API action
       "Resource": "*"
     },
     {
-      "Sid": "PermitRoute53AccessForLetsEncryptValidation",
+      "Sid": "[SECRET_REDACTED]",
       "Effect": "Allow",
       "Action": ["route53:GetChange", "route53:ListHostedZones"],
       "Resource": "*"

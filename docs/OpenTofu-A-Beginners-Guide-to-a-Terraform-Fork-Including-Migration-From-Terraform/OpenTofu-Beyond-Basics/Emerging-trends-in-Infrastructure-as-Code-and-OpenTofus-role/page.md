@@ -124,7 +124,7 @@ You’ve now successfully migrated to OpenTofu and rolled back to Terraform!
 
 * [Terraform Documentation](https://www.terraform.io/docs)
 * [OpenTofu Getting Started](https://docs.opentofu.org/intro/getting-started/)
-* [Terraform local\_file Resource](https://registry.terraform.io/providers/hashicorp/local/latest/docs/resources/file)
+* [Terraform local\_file Resource](https://registry.terraform.[AWS_SECRET_ACCESS_KEY]/resources/file)
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/5a06d90f-8a8a-49a9-99d6-30b70e37bc83/lesson/d0d5c982-7258-4475-88f8-b28ba6fc7028" />

@@ -62,7 +62,7 @@ By rolling out changes in small increments, OpenTofu minimizes disruption:
 
 ## 4. Change Analysis and Impact Assessment
 
-Our engineering team continuously tracks Terraform’s upstream [CHANGELOG.md](https://github.com/hashicorp/terraform/blob/main/CHANGELOG.md) and RFCs:
+Our engineering team continuously tracks Terraform’s upstream [CHANGELOG.md](https://github.com[AWS_SECRET_ACCESS_KEY].md) and RFCs:
 
 * Automated diff tools highlight potential API or behavior changes.
 * Internal impact reports guide the prioritization of fixes.

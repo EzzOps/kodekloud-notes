@@ -68,7 +68,7 @@ A standard read on a protected path yields wrapping info:
 ```json theme={null}
 {
   "wrap_info": {
-    "token":    "hvs.CAESIPvNkRgluUVNT_ccLsm6aZ-",
+    "token":    "[VAULT_TOKEN]-",
     "accessor": "cql9n3r4kMeIQZekoLrMWMWN",
     "ttl":      300
     // ...
@@ -101,7 +101,7 @@ If the policy requires multiple sign-offs, Vault waits until all approvals are r
 After approvals:
 
 ```bash theme={null}
-vault unwrap hvs.CAESIPvNkRgluUVNT_ccLsm6aZ-
+vault unwrap [VAULT_TOKEN]-
 ```
 
 If approvals are missing, unwrap returns an error:
@@ -166,7 +166,7 @@ Deploy this Sentinel policy to enforce the same approval workflow on your protec
 1. **Authenticate** with a token that has a control-group policy:
 
    ```bash theme={null}
-   vault login hvs.CAESIA7Y-LwSxnE926onQwdxlUF7w7KJ5-
+   vault login [VAULT_TOKEN]-
    ```
 
 2. **Request the secret**:
@@ -180,7 +180,7 @@ Deploy this Sentinel policy to enforce the same approval workflow on your protec
 4. **Unwrap** the token once all approvals are in place:
 
    ```bash theme={null}
-   vault unwrap hvs.H5IATHFed2Aqk5RsW1eEF4d
+   vault unwrap [VAULT_TOKEN]
    ```
 
 ***

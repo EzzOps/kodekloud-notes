@@ -239,11 +239,11 @@ Next, try these transformers hands-on to see how they simplify your Kubernetes d
 ## Links and References
 
 * [Kustomize Official Documentation](https://kubectl.docs.kubernetes.io/references/kustomize/)
-* [Kustomize Transformers Reference](https://kubectl.docs.kubernetes.io/references/kustomize/kustomization/transformers/)
+* [Kustomize Transformers Reference](https://kubectl.docs.kubernetes.[SECRET_REDACTED]/)
 * [Kubernetes Concepts: Labels and Selectors](https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/)
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kustomize/module/8b591384-c5e2-4411-afc1-443d3f2ba735/lesson/b54f75b3-9aa9-4c8d-b7e2-3ac6ac185c8c" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[SECRET_REDACTED]-c5e2-4411-afc1-443d3f2ba735/lesson/b54f75b3-9aa9-4c8d-b7e2-3ac6ac185c8c" />
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/kustomize/module/8b591384-c5e2-4411-afc1-443d3f2ba735/lesson/4d6478a5-0a29-41af-b452-60ef4cbedbaf" />
+  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.[SECRET_REDACTED]-c5e2-4411-afc1-443d3f2ba735/lesson/4d6478a5-0a29-41af-b452-60ef4cbedbaf" />
 </CardGroup>

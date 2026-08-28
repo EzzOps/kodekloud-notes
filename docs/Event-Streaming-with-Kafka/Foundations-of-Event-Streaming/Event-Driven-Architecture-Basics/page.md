@@ -107,7 +107,7 @@ With a durable event log like Kafka, systems can react to events as they occur, 
 Links and references
 
 * [Apache Kafka Documentation](https://kafka.apache.org/documentation/)
-* [Event-Driven Architecture Overview (Martin Fowler)](https://martinfowler.com/articles/enterpriseIntegrationPatterns.html)
+* [Event-Driven Architecture Overview (Martin Fowler)](https://martinfowler.[SECRET_REDACTED].html)
 * [Kafka: The Definitive Guide (Confluent)](https://www.confluent.io/resources/kafka-the-definitive-guide/)
 
 <CardGroup>

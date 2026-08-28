@@ -9,8 +9,8 @@ This lesson demonstrates how to create and apply an AWS CloudFormation stack pol
 Tools and references:
 
 * Visual Studio Code: [https://code.visualstudio.com/](https://code.visualstudio.com/)
-* CloudFormation stack policies: [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/protect-stack-resources.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/protect-stack-resources.html)
-* CloudFormation basics: [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html)
+* CloudFormation stack policies: [https://docs.aws.amazon.[SECRET_REDACTED]-stack-resources.html](https://docs.aws.amazon.[SECRET_REDACTED]-stack-resources.html)
+* CloudFormation basics: [https://docs.aws.amazon.[SECRET_REDACTED].html](https://docs.aws.amazon.[SECRET_REDACTED].html)
 
 Step 1 — Create the stack policy file
 
@@ -113,8 +113,8 @@ Summary
 
 Additional resources and links:
 
-* [CloudFormation stack policies documentation](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/protect-stack-resources.html)
-* [AWS CloudFormation user guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html)
+* [CloudFormation stack policies documentation](https://docs.aws.amazon.[SECRET_REDACTED]-stack-resources.html)
+* [AWS CloudFormation user guide](https://docs.aws.amazon.[SECRET_REDACTED].html)
 * [Visual Studio Code](https://code.visualstudio.com/)
 
 <Callout icon="warning">

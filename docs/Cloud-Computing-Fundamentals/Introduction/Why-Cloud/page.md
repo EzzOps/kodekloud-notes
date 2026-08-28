@@ -174,7 +174,7 @@ We'll dive next into the three service models (IaaS, PaaS, SaaS) to clarify resp
 
 Links and references
 
-* NIST Cloud Definition: [https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-145.pdf](https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-145.pdf)
+* NIST Cloud Definition: [https://nvlpubs.nist.[SECRET_REDACTED]-145.pdf](https://nvlpubs.nist.[SECRET_REDACTED]-145.pdf)
 * [Database Fundamentals — KodeKloud course](https://learn.kodekloud.com/user/courses/database-fundamentals)
 
 <CardGroup>

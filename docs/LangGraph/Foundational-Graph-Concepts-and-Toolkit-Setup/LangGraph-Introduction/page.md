@@ -129,9 +129,9 @@ Each extension is implemented by adding nodes or orchestration logic — you do 
 * OpenAI Python client: [https://github.com/openai/openai-python](https://github.com/openai/openai-python)
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langgraph/module/9ad1c023-6ddf-41fa-9043-b5ed2c4e66d6/lesson/1fe2b2d1-2d71-4bb3-8078-49d514b6dac9" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[SECRET_REDACTED]-6ddf-41fa-9043-b5ed2c4e66d6/lesson/1fe2b2d1-2d71-4bb3-8078-49d514b6dac9" />
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/langgraph/module/9ad1c023-6ddf-41fa-9043-b5ed2c4e66d6/lesson/c890ba0e-262b-4deb-ab58-69bf6f25d269" />
+  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.[SECRET_REDACTED]-6ddf-41fa-9043-b5ed2c4e66d6/lesson/c890ba0e-262b-4deb-ab58-69bf6f25d269" />
 </CardGroup>
 
 
@@ -287,5 +287,5 @@ Further reading and next steps
 * Reuse LangChain components (LLMs, tools, memory) inside LangGraph nodes for faster development.
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langgraph/module/9ad1c023-6ddf-41fa-9043-b5ed2c4e66d6/lesson/9cd71629-d144-4ab6-a82f-730486f4049f" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[SECRET_REDACTED]-6ddf-41fa-9043-b5ed2c4e66d6/lesson/9cd71629-d144-4ab6-a82f-730486f4049f" />
 </CardGroup>

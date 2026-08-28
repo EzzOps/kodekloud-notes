@@ -311,7 +311,7 @@ Terraform has been successfully initialized!
 
    Enter a value: yes
    local_file.pet: Creating...
-   local_file.pet: Creation complete after 0s [id=521c5c732c78cb42cc9531ecc7c0638c4a115b55]
+   local_file.pet: Creation complete after 0s [id=[AWS_SECRET_ACCESS_KEY]]
    Apply complete! Resources: 1 added, 0 changed, 0 destroyed.
    ```
 

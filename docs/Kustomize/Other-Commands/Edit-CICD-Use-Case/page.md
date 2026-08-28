@@ -111,7 +111,7 @@ Balance your project’s complexity and team familiarity when choosing between t
 * [Kubernetes Basics](https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/)
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kustomize/module/414dd6d1-c083-49c0-8003-114e0ce66e15/lesson/3bd51d55-c169-4207-9fcc-70ac7bb0082e" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[SECRET_REDACTED]-c083-49c0-8003-114e0ce66e15/lesson/3bd51d55-c169-4207-9fcc-70ac7bb0082e" />
 </CardGroup>
 
 

@@ -81,7 +81,7 @@ from azure.ai.documentintelligence import DocumentIntelligenceClient
 
 DOCUMENT_URL = "https://azai102imagestore.blob.core.windows.net/us-id-cards/id1.jpeg"
 DOC_INTEL_ENDPOINT = "https://aiservicesai900.cognitiveservices.azure.com/"
-DOC_INTEL_KEY = "2nDOsJoeWNZsci1GmRVpC88rpvMsF3wF5KjGqcrSUqmjAXIN6zrLJQQJ99AKACYeBjFXJ3w3AAAAACOGR0oi"
+DOC_INTEL_KEY = "[SECRET_REDACTED]"
 
 client = DocumentIntelligenceClient(
     endpoint=DOC_INTEL_ENDPOINT,

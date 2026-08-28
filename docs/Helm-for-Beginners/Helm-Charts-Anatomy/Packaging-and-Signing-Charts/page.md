@@ -216,7 +216,7 @@ Continue? (Y/n) Y
 gpg: /home/vagrant/.gnupg/trustdb.gpg: trustdb created
 gpg: key 70D5188339885A0B marked as ultimately trusted
 gpg: directory '/home/vagrant/.gnupg/openpgp-revocs.d' created
-gpg: revocation certificate stored as '/home/vagrant/.gnupg/openpgp-revocs.d/20F2395A3176A22DD33D45470D5188339885A0B.rev'
+gpg: revocation certificate stored as '/home/vagrant/.gnupg/openpgp-revocs.d[AWS_SECRET_ACCESS_KEY].rev'
 public and secret key created and signed.
 
 pub   rsa3072 2021-12-01 [SC] [expires: 2023-12-01]
@@ -270,7 +270,7 @@ name: nginx-chart
 type: application
 version: 0.1.0
 files:
-  nginx-chart-0.1.0.tgz: sha256:b7d0502a9617ab953a3246bc7ba6a9de9d4286b2e78e3ea7975cc54698c4274
+  nginx-chart-0.1.0.tgz: sha256:[SECRET_REDACTED]
 -----BEGIN PGP SIGNATURE-----
 ...
 -----END PGP SIGNATURE-----
@@ -299,7 +299,7 @@ $ gpg --export 'John Smith' > mypublickey
 $ helm verify --keyring ./mypublickey ./nginx-chart-0.1.0.tgz
 Signed by: John Smith
 Using Key With Fingerprint: 20F2395A3176A22DD33DA45470D518839885A0B
-Chart Hash Verified: sha256:b7d5022a9617ab953a3246bc7ba6a9de9d4286b2e78e3ea7975cc54698c4274
+Chart Hash Verified: sha256:[SECRET_REDACTED]
 ```
 
 In real-world usage, users would typically download your public key from a public key server (e.g., [keyserver.ubuntu.com](https://keyserver.ubuntu.com/)) and use the `--verify` parameter during chart installation. If verification fails, the chart installation process is aborted, ensuring that only trusted charts are installed.

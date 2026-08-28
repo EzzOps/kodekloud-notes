@@ -80,7 +80,7 @@ Kubernetes upstream releases minor versions about three times per year, each sup
   ![The image illustrates an "Extended Support" concept for Kubernetes, showing an EKS Cluster with workloads and cluster size, alongside icons representing the number of teams. It mentions that releases occur three times a year.](https://kodekloud.com/kk-media/image/upload/v1752862928/notes-assets/images/AWS-EKS-Upgrade-Cycles/kubernetes-extended-support-eks-cluster.jpg)
 </Frame>
 
-By regularly reviewing Upgrade Insights and scheduling automated version upgrades—using tools like [eksctl](https://eksctl.io/), [Terraform](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/eks_cluster), or AWS CloudFormation—you’ll minimize downtime and avoid surprise charges.
+By regularly reviewing Upgrade Insights and scheduling automated version upgrades—using tools like [eksctl](https://eksctl.io/), [Terraform](https://registry.terraform.[SECRET_REDACTED]eks_cluster), or AWS CloudFormation—you’ll minimize downtime and avoid surprise charges.
 
 ***
 
@@ -89,7 +89,7 @@ By regularly reviewing Upgrade Insights and scheduling automated version upgrade
 * [Amazon EKS Version Lifecycle](https://docs.aws.amazon.com/eks/latest/userguide/kubernetes-versions.html)
 * [AWS EKS Upgrade Best Practices](https://docs.aws.amazon.com/eks/latest/userguide/update-cluster.html)
 * [eksctl — Official CLI for EKS](https://eksctl.io/)
-* [Terraform AWS Provider: eks\_cluster](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/eks_cluster)
+* [Terraform AWS Provider: eks\_cluster](https://registry.terraform.[SECRET_REDACTED]eks_cluster)
 * [Amazon EKS Pricing](https://aws.amazon.com/eks/pricing/)
 
 <CardGroup>

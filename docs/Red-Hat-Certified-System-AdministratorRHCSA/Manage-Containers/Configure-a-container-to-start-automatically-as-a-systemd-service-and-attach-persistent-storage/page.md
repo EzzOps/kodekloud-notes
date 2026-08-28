@@ -95,7 +95,7 @@ podman run -d --name container_service -p 1025:8080 -v ~/container_storage:/var/
 After the command executes, you should see an output similar to:
 
 ```bash theme={null}
-85dda4e2b19510c15a5393c664702850dbe8c56dd745142221a170295341d2b40
+[SECRET_REDACTED]
 ```
 
 5. **Confirm the container is running:**

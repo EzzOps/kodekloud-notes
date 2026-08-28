@@ -120,7 +120,7 @@ Upon connecting, you might see a prompt similar to:
 
 ```bash theme={null}
 The authenticity of host '3.89.97.104 (3.89.97.104)' can't be established.
-ED25519 key fingerprint is SHA256:MD1c0F1cn0pMsnd7TRAe1q3egJomo01RpuGpga4j3ARc.
+ED25519 key fingerprint is SHA256:[SECRET_REDACTED].
 This key is not known by any other names.
 Are you sure you want to continue connecting (yes/no/[fingerprint])? yes.
 Warning: Permanently added '3.89.97.104' to the list of known hosts.

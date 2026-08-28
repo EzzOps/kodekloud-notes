@@ -36,7 +36,7 @@ Conditions add intelligence to your pipeline by allowing stages, jobs, or steps 
 
 <Callout icon="lightbulb">
   Use conditions to optimize build time and resource usage by skipping unnecessary stages.\
-  For more details, see [Variables in Azure Pipelines](https://docs.microsoft.com/azure/devops/pipelines/process/variables).
+  For more details, see [Variables in Azure Pipelines](https://docs.microsoft.com/[AWS_SECRET_ACCESS_KEY]).
 </Callout>
 
 ## Example: Branch-Aware Multi-Stage Pipeline
@@ -102,7 +102,7 @@ In this setup, **Deploy** runs immediately after **Build**, but only when the so
 
 * [Azure DevOps Pipelines Documentation](https://docs.microsoft.com/azure/devops/pipelines/)
 * [Azure Pipelines YAML schema](https://docs.microsoft.com/azure/devops/pipelines/yaml-schema)
-* [Variables in Azure Pipelines](https://docs.microsoft.com/azure/devops/pipelines/process/variables)
+* [Variables in Azure Pipelines](https://docs.microsoft.com/[AWS_SECRET_ACCESS_KEY])
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/az-400/module/84a7da40-1b7f-4dc8-9a4a-0ca15641ea83/lesson/87c38901-f07c-415c-b6f2-a842b49b224a" />

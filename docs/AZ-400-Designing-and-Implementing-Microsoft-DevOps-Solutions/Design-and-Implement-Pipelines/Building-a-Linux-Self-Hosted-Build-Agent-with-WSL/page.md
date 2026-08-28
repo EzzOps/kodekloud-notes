@@ -119,9 +119,9 @@ Choose the appropriate agent in your pipeline YAML or classic editor:
 
 ## Links and References
 
-* [Azure DevOps Agent Pools](https://docs.microsoft.com/azure/devops/pipelines/agents/agents?view=azure-devops)
+* [Azure DevOps Agent Pools](https://docs.microsoft.[AWS_SECRET_ACCESS_KEY]?view=azure-devops)
 * [Windows Subsystem for Linux Documentation](https://docs.microsoft.com/windows/wsl/)
-* [Creating a Personal Access Token](https://docs.microsoft.com/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate)
+* [Creating a Personal Access Token](https://docs.microsoft.[AWS_SECRET_ACCESS_KEY]use-personal-access-tokens-to-authenticate)
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/az-400/module/55cf24db-89bc-4b93-bb75-7350d1593073/lesson/6b9cf8b7-213b-43f5-9115-bdc812d01b0d" />

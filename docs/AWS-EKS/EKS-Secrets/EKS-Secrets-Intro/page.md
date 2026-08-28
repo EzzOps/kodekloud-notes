@@ -90,7 +90,7 @@ In upcoming sections, we’ll explore advanced strategies to secure your Secret 
 ## Links and References
 
 * [Kubernetes Secrets Documentation](https://kubernetes.io/docs/concepts/configuration/secret/)
-* [Kubernetes ConfigMap Documentation](https://kubernetes.io/docs/concepts/configuration/configmap/)
+* [Kubernetes ConfigMap Documentation](https://kubernetes.[AWS_SECRET_ACCESS_KEY]/)
 * [AWS EKS Best Practices](https://docs.aws.amazon.com/eks/latest/userguide/best-practices.html)
 
 <CardGroup>

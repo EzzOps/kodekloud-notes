@@ -175,7 +175,7 @@ module.storage.azurerm_storage_account.this: Still creating... [20s elapsed]
 module.storage.azurerm_storage_account.this: Still creating... [30s elapsed]
 module.storage.azurerm_storage_account.this: Still creating... [40s elapsed]
 module.storage.azurerm_storage_account.this: Still creating... [50s elapsed]
-module.storage.azurerm_storage_account.this: Creation complete after 1m5s [id=/subscriptions/1b282746-75fd-46ed-8a6b-6a90666dd3a3/resourceGroups/kodekloud-tf-rg/providers/Microsoft.Storage/storageAccounts/stdmstorager56535]
+module.storage.azurerm_storage_account.this: Creation complete after 1m5s [id=/subscriptions/1b282746-75fd-46ed-8a6b-6a90666dd3a3/resourceGroups/kodekloud-tf-rg/providers/Microsoft.[SECRET_REDACTED]]
 Apply complete! Resources: 2 added, 0 changed, 0 destroyed.
 Outputs:
 ```

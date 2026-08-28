@@ -129,7 +129,7 @@ To verify that your alert fires correctly, follow these steps:
 1. **Connect to the Linux VM via SSH:**
 
    ```plaintext theme={null}
-   ED25519 key fingerprint is SHA256:5wQadLwZ9EGH97C4SMttl7t6T6GFEnsl20qwhVXz6wQ.
+   ED25519 key fingerprint is SHA256:[SECRET_REDACTED].
    Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
    Warning: Permanently added '20.242.246.105' (ED25519) to the list of known hosts.
    Welcome to Ubuntu 22.04.3 LTS (GNU/Linux 6.2.0-1014-azure x86_64)

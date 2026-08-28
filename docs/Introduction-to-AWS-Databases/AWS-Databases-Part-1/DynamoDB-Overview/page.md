@@ -165,7 +165,7 @@ Summary
 
 Further reading and references
 
-* [DynamoDB Developer Guide — PartiQL reference](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/ql-reference.html)
+* [DynamoDB Developer Guide — PartiQL reference](https://docs.aws.amazon.[AWS_SECRET_ACCESS_KEY]/ql-reference.html)
 * [AWS Lambda documentation](https://learn.kodekloud.com/user/courses/aws-lambda)
 * [Amazon S3 course](https://learn.kodekloud.com/user/courses/amazon-simple-storage-service-amazon-s3)
 * Amazon Redshift: [https://aws.amazon.com/redshift/](https://aws.amazon.com/redshift/)

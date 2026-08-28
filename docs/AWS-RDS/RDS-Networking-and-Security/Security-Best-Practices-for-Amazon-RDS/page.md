@@ -15,8 +15,8 @@ Best practices
 Further reading and references
 
 * [Amazon RDS Proxy documentation](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/rds-proxy.html)
-* [AWS Secrets Manager](https://docs.aws.amazon.com/secretsmanager/latest/userguide/intro.html)
-* [IAM database authentication for MySQL and PostgreSQL on Amazon RDS](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/UsingWithRDS.IAMDBAuth.html)
+* [AWS Secrets Manager](https://docs.aws.amazon.[SECRET_REDACTED].html)
+* [IAM database authentication for MySQL and PostgreSQL on Amazon RDS](https://docs.aws.amazon.com[AWS_SECRET_ACCESS_KEY].IAMDBAuth.html)
 
 Next, lab exercises covering AWS proxies are provided.
 
@@ -84,8 +84,8 @@ References and further reading
 
 * [AWS IAM Best Practices](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html)
 * [Amazon RDS Security Overview](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Overview.Security.html)
-* [AWS Secrets Manager](https://docs.aws.amazon.com/secretsmanager/latest/userguide/intro.html)
-* [AWS CloudTrail User Guide](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html)
+* [AWS Secrets Manager](https://docs.aws.amazon.[SECRET_REDACTED].html)
+* [AWS CloudTrail User Guide](https://docs.aws.amazon.[SECRET_REDACTED]-user-guide.html)
 
 <Frame>
   <img alt="A presentation slide titled &#x22;Security Best Practices for Amazon RDS – Summary&#x22; listing recommendations like creating individual users, granting minimum permissions, using IAM groups, rotating IAM credentials, and configuring AWS Secrets Manager to auto-rotate RDS secrets. The slide shows five gray boxes with those concise best-practice points." />

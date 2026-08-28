@@ -165,7 +165,7 @@ After saving your changes and rebooting, the system will automatically apply you
 
 Mount options are crucial for defining how a filesystem behaves once mounted. They control access permissions, execution capabilities, and a variety of other characteristics. By properly configuring these options, you can improve both the performance and security of your system.
 
-This guide provides a foundation for understanding and applying various mount options. For ongoing system administration, refer to additional resources such as [Mount Options Documentation](https://www.kernel.org/doc/html/latest/filesystems/mountoptions.html) and other related links.
+This guide provides a foundation for understanding and applying various mount options. For ongoing system administration, refer to additional resources such as [Mount Options Documentation](https://www.kernel.org/[AWS_SECRET_ACCESS_KEY].html) and other related links.
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/cfd9ce0f-72d4-40ec-97cd-875899512ff2/lesson/4b024cac-940f-45a5-b56f-54fd7b5d5c2c" />

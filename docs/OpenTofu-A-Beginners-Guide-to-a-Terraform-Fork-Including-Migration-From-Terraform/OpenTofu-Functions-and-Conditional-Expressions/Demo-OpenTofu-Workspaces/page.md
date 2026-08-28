@@ -13,9 +13,9 @@ This completes our walkthrough of OpenTofu functions and conditional expressions
 
 * [OpenTofu Documentation](https://docs.opentofu.org)
 * [Terraform Language - Expressions](https://www.terraform.io/language/expressions)
-* [AWS IAM User Resource](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/iam_user)
-* [AWS S3 Bucket & Object](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/s3_bucket)
-* [AWS EC2 Instance](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/instance)
+* [AWS IAM User Resource](https://registry.terraform.[SECRET_REDACTED]iam_user)
+* [AWS S3 Bucket & Object](https://registry.terraform.[SECRET_REDACTED]s3_bucket)
+* [AWS EC2 Instance](https://registry.terraform.[SECRET_REDACTED])
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/042e7b27-75d9-46fc-8f8c-7357d81923c1/lesson/72ecd9c1-c9d4-4bc2-9687-a54a126a5d00" />

@@ -50,7 +50,7 @@ Further reading and references
 
 * AWS SageMaker Endpoints documentation: [https://docs.aws.amazon.com/sagemaker/latest/dg/ex](https://docs.aws.amazon.com/sagemaker/latest/dg/ex) endpoints.html
 * SageMaker Python SDK: [https://sagemaker.readthedocs.io/](https://sagemaker.readthedocs.io/)
-* boto3 SageMaker client: [https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html)
+* boto3 SageMaker client: [https://boto3.amazonaws.com/v1/documentation[AWS_SECRET_ACCESS_KEY].html](https://boto3.amazonaws.com/v1/documentation[AWS_SECRET_ACCESS_KEY].html)
 * Kubernetes and container orchestration: [https://kubernetes.io/docs/home/](https://kubernetes.io/docs/home/)
 
 <CardGroup>

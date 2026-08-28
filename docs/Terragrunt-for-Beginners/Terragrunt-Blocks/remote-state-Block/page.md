@@ -92,9 +92,9 @@ By following this pattern, you achieve a secure, consistent, and maintainable re
 
 ## Links and References
 
-* [Terraform Remote Backend Configuration](https://www.terraform.io/language/settings/backends/configuration)
+* [Terraform Remote Backend Configuration](https://www.terraform.io/[AWS_SECRET_ACCESS_KEY])
 * [Terragrunt Documentation: remote\_state](https://terragrunt.gruntwork.io/docs/features/keep-your-terraform-code-dry/#remote-state)
-* [AWS S3 Backend Guide](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/s3_bucket)
+* [AWS S3 Backend Guide](https://registry.terraform.[SECRET_REDACTED]s3_bucket)
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terragrunt-for-beginners/module/bab279d4-de1d-4e8d-8376-ea420c71c9e1/lesson/ac68b50d-e420-445b-a51f-6c61aa38c4d6" />

@@ -22,7 +22,7 @@ In this tutorial, we’ll build a complete CI/CD workflow for a Blazor WebAssemb
 2. Clone it locally:
 
    ```bash theme={null}
-   git clone https://jeremymorgankodekloud@dev.azure.com/jeremymorgankodekloud/KodeKloudBlog/_git/KodeKloudBlog
+   git clone https://jeremymorgankodekloud@dev.azure.[AWS_SECRET_ACCESS_KEY]_git/KodeKloudBlog
    cd KodeKloudBlog
    ```
 

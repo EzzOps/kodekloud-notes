@@ -115,7 +115,7 @@ Because **Enable DNS resolution** is turned on, lookups succeed. To see what hap
 
 * [AWS VPC Documentation](https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html)
 * [Amazon EC2 User Guide – Networking](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-instance-addressing.html)
-* [Route 53 Resolver – Amazon VPC DNS](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver.html)
+* [Route 53 Resolver – Amazon VPC DNS](https://docs.aws.amazon.[SECRET_REDACTED].html)
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/aws-networking-fundamentals/module/406e4440-01a6-45f6-ab45-e14485d333c3/lesson/dfa079f3-73e5-4c65-bb7b-15a73836f0e7" />

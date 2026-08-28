@@ -171,7 +171,7 @@ This command restores the previous image and update configuration across all rep
 
 ## References
 
-* [Docker Service Commands](https://docs.docker.com/engine/reference/commandline/service/)
+* [Docker Service Commands](https://docs.docker.[AWS_SECRET_ACCESS_KEY]/)
 * [Docker Swarm Overview](https://docs.docker.com/engine/swarm/)
 * [Docker Rolling Updates](https://docs.docker.com/engine/swarm/manage-services/update-services/)
 

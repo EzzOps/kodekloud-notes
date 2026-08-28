@@ -111,7 +111,7 @@ Here’s an excerpt from a `package-lock.json` file that demonstrates its struct
     "node_modules/accepts": {
       "version": "1.3.8",
       "resolved": "https://registry.npmjs.org/accepts/-/accepts-1.3.8.tgz",
-      "integrity": "sha512-PYAthTa2m2VKxuvSD3DPC/GyU+sO1LAuT8mkmRuvw+NACsaeXEQ+NHcVF7ONl6qaxV3Ueumawk+7+SJlw==",
+      "integrity": "sha512-[SECRET_REDACTED][AWS_SECRET_ACCESS_KEY]==",
       "license": "MIT",
       "dependencies": {
         "mime-types": "~2.1.34",

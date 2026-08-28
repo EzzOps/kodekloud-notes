@@ -45,7 +45,7 @@ Terraform apply reporting no changes:
 $ terraform apply -var "storage_account_name=saqeworkshop0689" -auto-approve
 Acquiring state lock. This may take a few moments...
 azurerm_storage_account.example: Refreshing state...
-[id=/subscriptions/25d172e2-1262-4980-8164-1d2c95eae1ff/resourceGroups/rg-qe-workshop-riskaria/providers/Microsoft.Storage/storageAccounts/saqeworkshop0689]
+[id=/subscriptions/25d172e2-1262-4980-8164-1d2c95eae1ff/resourceGroups/rg-qe-workshop-riskaria/providers/Microsoft.[AWS_SECRET_ACCESS_KEY]]
 No changes. Your infrastructure matches the configuration.
 Releasing state lock. This may take a few moments...
 Apply complete! Resources: 0 added, 0 changed, 0 destroyed.
@@ -243,7 +243,7 @@ azurerm_resource_group.rg: Creating...
 azurerm_storage_account.storage: Creating...
 azurerm_resource_group.rg: Creation complete after 1s [id=/subscriptions/.../resourceGroups/lifecycle-resources]
 azurerm_storage_account.storage: Still creating... [10s elapsed]
-azurerm_storage_account.storage: Creation complete after 1m20s [id=/subscriptions/.../resourceGroups/lifecycle-resources/providers/Microsoft.Storage/storageAccounts/lifestorage75636]
+azurerm_storage_account.storage: Creation complete after 1m20s [id=/subscriptions/.../resourceGroups/lifecycle-resources/providers/Microsoft.[AWS_SECRET_ACCESS_KEY]]
 
 Apply complete! Resources: 2 added, 0 changed, 0 destroyed.
 ```

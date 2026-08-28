@@ -6,7 +6,7 @@ Explains AWS CloudFormation Outputs, how to export and import values, retrieve t
 
 CloudFormation Outputs are the values a stack returns after it creates resources. Outputs let you expose important runtime information—such as resource IDs, ARNs, endpoints, or configuration values—so other people, tools, or stacks can consume them.
 
-Outputs are visible in the [AWS Management Console](https://aws.amazon.com/console/) (the stack's Outputs tab) and can be retrieved programmatically using the [AWS CLI](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/describe-stacks.html) or any AWS [SDKs](https://aws.amazon.com/tools/). They are especially useful for sharing resource metadata between stacks (cross-stack references) or for returning created resource details for automation workflows.
+Outputs are visible in the [AWS Management Console](https://aws.amazon.com/console/) (the stack's Outputs tab) and can be retrieved programmatically using the [AWS CLI](https://docs.aws.amazon.[AWS_SECRET_ACCESS_KEY]describe-stacks.html) or any AWS [SDKs](https://aws.amazon.com/tools/). They are especially useful for sharing resource metadata between stacks (cross-stack references) or for returning created resource details for automation workflows.
 
 <Frame>
   <img alt="A slide titled &#x22;Outputs – Introduction&#x22; showing created resources flowing into a CloudFormation stack which returns outputs as values. It explains outputs are values returned after creating resources and highlights &#x22;Resource IDs&#x22; as an important example." />
@@ -96,9 +96,9 @@ Key considerations and best practices
 
 Links and references
 
-* [CloudFormation Outputs section — AWS Docs](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/outputs-section-structure.html)
-* [CloudFormation describe-stacks — AWS CLI](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/describe-stacks.html)
-* [AWS CloudFormation Concepts](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/what-is-cloudformation.html)
+* [CloudFormation Outputs section — AWS Docs](https://docs.aws.amazon.[SECRET_REDACTED]-section-structure.html)
+* [CloudFormation describe-stacks — AWS CLI](https://docs.aws.amazon.[AWS_SECRET_ACCESS_KEY]describe-stacks.html)
+* [AWS CloudFormation Concepts](https://docs.aws.amazon.com[AWS_SECRET_ACCESS_KEY]-is-cloudformation.html)
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/aws-cloud-formation/module/7c6b8f2b-1dcb-44e5-a584-efcc57f07119/lesson/0995866b-a75c-49a8-b828-92179bf87ca9" />

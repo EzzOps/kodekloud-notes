@@ -53,7 +53,7 @@ Below is a quick learning agenda of the lesson:
 | Topic                                    | Why it matters                                                                    | Example / Command                                                                                      |
 | ---------------------------------------- | --------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------ |
 | What is Kyverno CLI                      | Understand capabilities: validate, mutate, test locally                           | N/A                                                                                                    |
-| Install Kyverno CLI                      | Get the CLI on your workstation for offline checks                                | `curl -sSL https://github.com/kyverno/kyverno/releases/latest/download/kyverno-cli_linux_amd64.tar.gz` |
+| Install Kyverno CLI                      | Get the CLI on your workstation for offline checks                                | `curl -sSL https://github.com/[AWS_SECRET_ACCESS_KEY]/kyverno-cli_linux_amd64.tar.gz` |
 | Validate & Mutate (`kyverno apply`)      | Fast feedback for developers — validate and apply policy-driven mutations locally | `kyverno apply . --resource deployment.yaml`                                                           |
 | Unit tests for policies (`kyverno test`) | CI-friendly tests for policy authors and reviewers                                | `kyverno test ./policies --policy policy.yaml`                                                         |
 

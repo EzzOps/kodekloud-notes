@@ -74,8 +74,8 @@ service reliability are now much easier to guarantee.
 * [AWS CodeCommit](https://docs.aws.amazon.com/codecommit/latest/userguide/welcome.html)
 * [AWS Cloud9](https://docs.aws.amazon.com/cloud9/latest/user-guide/welcome.html)
 * [Amazon ECS](https://docs.aws.amazon.com/ecs/latest/developerguide/what-is-ecs.html)
-* [AWS CodePipeline](https://docs.aws.amazon.com/codepipeline/latest/userguide/welcome.html)
-* [Application Load Balancer (ALB)](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/introduction.html)
+* [AWS CodePipeline](https://docs.aws.amazon.[SECRET_REDACTED].html)
+* [Application Load Balancer (ALB)](https://docs.aws.amazon.com[AWS_SECRET_ACCESS_KEY]/introduction.html)
 
 Congratulations — you’ve moved from understanding requirements and running a monolithic app to refactoring for microservices and applying deployment and operational best practices.
 

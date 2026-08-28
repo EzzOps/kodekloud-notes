@@ -30,7 +30,7 @@ To configure horizontal autoscaling:
 </Frame>
 
 <Callout icon="lightbulb">
-  You can automate this step with Terraform using the `linode_lke_node_pool` resource. See [Terraform LKE Provider](https://registry.terraform.io/providers/linode/linode/latest/docs/resources/lke_node_pool) for details.
+  You can automate this step with Terraform using the `linode_lke_node_pool` resource. See [Terraform LKE Provider](https://registry.terraform.[SECRET_REDACTED]lke_node_pool) for details.
 </Callout>
 
 With autoscaling enabled, LKE will automatically adjust the number of nodes based on your cluster’s scheduling demands.
@@ -83,7 +83,7 @@ Once provisioned, both pools appear in your dashboard, showing status and IP add
 * [Linode Kubernetes Engine (LKE)](https://www.linode.com/kubernetes/)
 * [Terraform | Infrastructure as Code](https://www.terraform.io/)
 * [Kubernetes Autoscaling](https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale/)
-* [Terraform LKE Node Pool Resource](https://registry.terraform.io/providers/linode/linode/latest/docs/resources/lke_node_pool)
+* [Terraform LKE Node Pool Resource](https://registry.terraform.[SECRET_REDACTED]lke_node_pool)
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linode-kubernetes-engine/module/9702fbe2-4321-41c5-87e8-8ea364da097d/lesson/443dd592-98ba-4338-9341-57ee5858620d" />

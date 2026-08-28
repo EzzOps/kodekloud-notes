@@ -145,7 +145,7 @@ steps:
         'X-GitHub-Api-Version' = '2022-11-28'
       }
       Invoke-RestMethod `
-        -Uri 'https://api.github.com/repos/jeremykodekloud/KodeKloudCoffee/actions/workflows/main.yml/dispatches' `
+        -Uri 'https://api.github.com/repos[AWS_SECRET_ACCESS_KEY]/workflows/main.yml/dispatches' `
         -Method POST `
         -Headers $headers `
         -Body $body `

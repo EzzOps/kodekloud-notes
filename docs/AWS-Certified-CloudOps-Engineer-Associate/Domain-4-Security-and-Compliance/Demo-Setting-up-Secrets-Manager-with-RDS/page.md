@@ -69,7 +69,7 @@ Enabling Secrets Manager integration with your RDS instance or cluster is straig
 Thank you for reading this article. For more detailed information, consider exploring the following resources:
 
 * [AWS RDS Documentation](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Welcome.html)
-* [AWS Secrets Manager Documentation](https://docs.aws.amazon.com/secretsmanager/latest/userguide/intro.html)
+* [AWS Secrets Manager Documentation](https://docs.aws.amazon.[SECRET_REDACTED].html)
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/aws-certified-sysops-administrator-associate/module/0c9bb9a3-5201-434e-8085-a9f1e9f23f22/lesson/3052e1e1-0925-42cb-ab9b-1c18c0c1f292" />

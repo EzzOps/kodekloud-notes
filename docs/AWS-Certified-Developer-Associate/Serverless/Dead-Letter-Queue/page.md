@@ -29,7 +29,7 @@ This explanation highlights the importance of dead-letter queues in the context 
 For more information on AWS and SQS best practices, check out the following resources:
 
 * [AWS Lambda Documentation](https://docs.aws.amazon.com/lambda/latest/dg/welcome.html)
-* [Amazon SQS Documentation](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/welcome.html)
+* [Amazon SQS Documentation](https://docs.aws.amazon.[SECRET_REDACTED].html)
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/aws-certified-developer-associate/module/3c842ffc-5841-456d-9fad-7bb3af5fdbfc/lesson/d2c2a8ff-b4e9-4c5c-baf0-6da6c9c9c56e" />

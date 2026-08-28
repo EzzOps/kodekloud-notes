@@ -126,7 +126,7 @@ References and next steps
 
 * When you’ve mastered the local loop, move on to tests that validate controller behavior (unit and integration), then package and deploy the manager as a Pod to exercise ServiceAccount, RBAC, and webhook interactions.
 * Useful links:
-  * [Kubernetes Controllers and Operators](https://kubernetes.io/docs/concepts/architecture/controller/)
+  * [Kubernetes Controllers and Operators](https://kubernetes.[AWS_SECRET_ACCESS_KEY]/)
   * [Writing Kubernetes Controllers](https://book.kubebuilder.io/)
 
 <CardGroup>

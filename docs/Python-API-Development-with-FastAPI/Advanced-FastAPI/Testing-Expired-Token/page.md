@@ -15,7 +15,7 @@ This guide demonstrates how to verify that the JWT expiration mechanism works as
 Below is the Python code that creates an access token with a 30-minute expiration:
 
 ```python theme={null}
-SECRET_KEY = "09d25e094faa6ca2556c818166b7a9563b93f7099f6f0f4caa6cf63b88e8d3e7"
+SECRET_KEY = "[SECRET_REDACTED]"
 ALGORITHM = "HS256"
 ACCESS_TOKEN_EXPIRE_MINUTES = 30
 
@@ -44,7 +44,7 @@ To expedite the testing process without waiting for 30 minutes, you can temporar
 Here's the modified code for testing purposes:
 
 ```python theme={null}
-SECRET_KEY = "09d25e094faa6ca2556c818166b7a9563b93f7099f6f0f4caa6cf63b88e8d3e7"
+SECRET_KEY = "[SECRET_REDACTED]"
 ALGORITHM = "HS256"
 ACCESS_TOKEN_EXPIRE_MINUTES = 1  # Set to one minute for testing
 

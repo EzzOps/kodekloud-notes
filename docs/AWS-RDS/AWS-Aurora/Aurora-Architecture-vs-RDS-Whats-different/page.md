@@ -105,7 +105,7 @@ Which should you choose?
 
 Links and references
 
-* Amazon Aurora documentation: [https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/CHAP\_AuroraOverview.html](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/CHAP_AuroraOverview.html)
+* Amazon Aurora documentation: [https://docs.aws.amazon.[SECRET_REDACTED]\_AuroraOverview.html](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/CHAP_AuroraOverview.html)
 * Amazon RDS documentation: [https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Welcome.html](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Welcome.html)
 * AWS whitepaper: AWS Database Migration & Modernization (for migration considerations)
 

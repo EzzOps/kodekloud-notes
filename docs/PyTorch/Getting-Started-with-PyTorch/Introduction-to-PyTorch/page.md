@@ -148,7 +148,7 @@ This lesson established a strong foundation for understanding and working with P
 Happy coding!
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/pytorch/module/5a59db15-2490-4be0-a894-4b3d3cc78fac/lesson/22db0214-825f-4f68-b444-49e0bc1f7713" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[AWS_SECRET_ACCESS_KEY]-2490-4be0-a894-4b3d3cc78fac/lesson/22db0214-825f-4f68-b444-49e0bc1f7713" />
 </CardGroup>
 
 
@@ -302,5 +302,5 @@ In this article, we introduced the core components and advantages of PyTorch—f
 </Callout>
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/pytorch/module/5a59db15-2490-4be0-a894-4b3d3cc78fac/lesson/b649ab9a-901e-440f-8499-2cfaf7629d3d" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[AWS_SECRET_ACCESS_KEY]-2490-4be0-a894-4b3d3cc78fac/lesson/b649ab9a-901e-440f-8499-2cfaf7629d3d" />
 </CardGroup>

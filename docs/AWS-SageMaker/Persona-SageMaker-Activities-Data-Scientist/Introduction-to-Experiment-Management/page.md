@@ -163,7 +163,7 @@ tuning_job_info = sm_client.describe_hyper_parameter_tuning_job(
 
 best_training_job = tuning_job_info['BestTrainingJob']
 best_model_job_name = best_training_job['TrainingJobName']
-best_model_score = best_training_job['FinalHyperParameterTuningJobObjectiveMetric']['Value']
+best_model_score = best_training_job['[SECRET_REDACTED]']['Value']
 
 print(f"✅ Best model: {best_model_job_name} with score: {best_model_score}")
 ```
@@ -195,7 +195,7 @@ Quick reference and links
 | SageMaker Hyperparameter Tuning | Tuner and strategies                                        | [https://sagemaker.readthedocs.io/en/stable/tuner.html](https://sagemaker.readthedocs.io/en/stable/tuner.html)                                                                                                 |
 | Linear Learner algorithm        | Built-in algorithm overview for regression/classification   | [https://docs.aws.amazon.com/sagemaker/latest/dg/linear-learner.html](https://docs.aws.amazon.com/sagemaker/latest/dg/linear-learner.html)                                                                     |
 | SageMaker Studio                | Studio overview and getting started                         | [https://docs.aws.amazon.com/sagemaker/latest/dg/studio.html](https://docs.aws.amazon.com/sagemaker/latest/dg/studio.html)                                                                                     |
-| Boto3 SageMaker client          | Programmatic access to tuning job metadata                  | [https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html)                         |
+| Boto3 SageMaker client          | Programmatic access to tuning job metadata                  | [https://boto3.amazonaws.com/v1/documentation[AWS_SECRET_ACCESS_KEY].html](https://boto3.amazonaws.com/v1/documentation[AWS_SECRET_ACCESS_KEY].html)                         |
 | Amazon S3 Console guide         | Managing S3 artifacts and objects                           | [https://docs.aws.amazon.com/AmazonS3/latest/userguide/using-console.html](https://docs.aws.amazon.com/AmazonS3/latest/userguide/using-console.html)                                                           |
 
 Recommended next steps

@@ -68,7 +68,7 @@ Once deployed, AWS Config immediately evaluates your resources against the PCI r
 
 * [AWS Config Documentation](https://docs.aws.amazon.com/config/latest/developerguide/)
 * [PCI Security Standards Council](https://www.pcisecuritystandards.org/)
-* [AWS Managed Rules for AWS Config](https://docs.aws.amazon.com/config/latest/developerguide/managed-rules-by-aws-config.html)
+* [AWS Managed Rules for AWS Config](https://docs.aws.amazon.[AWS_SECRET_ACCESS_KEY]-rules-by-aws-config.html)
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/aws-iam/module/586f5114-fd4d-45e3-88ba-6a691fde129c/lesson/bf925c1b-279b-4f09-a1cd-ed1dccefa2ea" />

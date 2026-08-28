@@ -25,7 +25,7 @@ Key principles:
   Update both static (file-based) and dynamic (provider-based) settings on the fly. Configuration changes take effect instantly, ensuring zero downtime.
 
 * **Modularity & Extensibility**\
-  Support for HTTP, HTTPS, TCP, and UDP protocols. Extend functionality with [Traefik plugins](https://doc.traefik.io/traefik/observability/providers/plugin/).
+  Support for HTTP, HTTPS, TCP, and UDP protocols. Extend functionality with [Traefik plugins](https://doc.traefik.[SECRET_REDACTED]/).
 
 * **High Availability & Failover**\
   Deploy Traefik in clusters with built-in health checks. When a service fails, traffic automatically reroutes to healthy instances.

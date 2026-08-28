@@ -36,7 +36,7 @@ This section is concise—just enough to grasp the exam topics and real-world de
 * [HashiCorp Vault Documentation](https://developer.hashicorp.com/vault/docs/)
 * [HSM Concepts and Best Practices](https://en.wikipedia.org/wiki/Hardware_security_module)
 
-[pkcs11-docs]: https://developer.hashicorp.com/vault/docs/configuration/seal/pkcs11
+[pkcs11-docs]: https://developer.hashicorp.[AWS_SECRET_ACCESS_KEY]
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/72879dfa-5358-4743-b2f1-62bdd686d0ea/lesson/0fe86415-4758-45e7-af00-801f19c964ec" />

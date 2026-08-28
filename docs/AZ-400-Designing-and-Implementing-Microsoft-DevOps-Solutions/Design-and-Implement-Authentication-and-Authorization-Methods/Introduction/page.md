@@ -118,7 +118,7 @@ Azure DevOps supports two main non-user authentication patterns:
 ### Security Controls
 
 * Use Azure Key Vault to store secrets:\
-  [Azure Key Vault with Azure DevOps](https://docs.microsoft.com/azure/devops/pipelines/library/secure-variables).
+  [Azure Key Vault with Azure DevOps](https://docs.microsoft.[SECRET_REDACTED]-variables).
 * Limit access by assigning Azure DevOps **security groups** minimal permissions.
 
 ***

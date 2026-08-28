@@ -122,7 +122,7 @@ If you attempt to view the object using its public URL, you might get an "Access
   <Code>AccessDenied</Code>
   <Message>Access Denied</Message>
   <RequestId>PDW0A5Z2R3E2K3J6J0G6</RequestId>
-  <HostId>bsEm1k1oTn3u1kND7MbjamVADURSB1Vw6d2q2LKwRkMExUjBfoxTIgLkS</HostId>
+  <HostId>[SECRET_REDACTED]</HostId>
 </Error>
 ```
 

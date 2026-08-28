@@ -19,7 +19,7 @@ helm version
 Example output (your version/build info may differ):
 
 ```bash theme={null}
-version.BuildInfo{Version:"v3.10.2", GitCommit:"50f003e5ee8704ec937a756c646870227d7c8b58", GitTreeState:"clean", GoVersion:"go1.18.8"}
+version.BuildInfo{Version:"v3.10.2", GitCommit:"[AWS_SECRET_ACCESS_KEY]", GitTreeState:"clean", GoVersion:"go1.18.8"}
 ```
 
 ## 2) Add the Prometheus Helm repository and update

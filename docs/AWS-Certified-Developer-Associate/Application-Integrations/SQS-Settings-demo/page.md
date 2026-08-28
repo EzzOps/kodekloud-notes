@@ -96,7 +96,7 @@ In summary, this lesson has covered several important SQS configuration options:
 
 Fine-tuning these settings can significantly enhance the performance and reliability of your SQS queues. We hope you found this guide informative and that it deepens your understanding of configuring Amazon SQS for optimal results.
 
-For further information, consider visiting the [Amazon SQS Documentation](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/welcome.html).
+For further information, consider visiting the [Amazon SQS Documentation](https://docs.aws.amazon.[SECRET_REDACTED].html).
 
 Happy configuring!
 

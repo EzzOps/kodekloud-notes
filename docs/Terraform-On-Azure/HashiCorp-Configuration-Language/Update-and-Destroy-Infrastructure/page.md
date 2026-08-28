@@ -86,7 +86,7 @@ azurerm_virtual_network.vnet: Creating...
 azurerm_storage_account.sa: Creating...
 azurerm_resource_group.rg: Creation complete after 2s [id=/subscriptions/.../resourceGroups/kodekloud-tf-rg]
 azurerm_virtual_network.vnet: Creation complete after 5s [id=/subscriptions/.../resourceGroups/kodekloud-tf-rg/providers/Microsoft.Network/virtualNetworks/kodekloud-tf-vnet]
-azurerm_storage_account.sa: Creation complete after 41s [id=/subscriptions/.../resourceGroups/kodekloud-tf-rg/providers/Microsoft.Storage/storageAccounts/stkodekloudtfsa45778]
+azurerm_storage_account.sa: Creation complete after 41s [id=/subscriptions/.../resourceGroups/kodekloud-tf-rg/providers/Microsoft.[SECRET_REDACTED]]
 
 Apply complete! Resources: 2 added, 1 changed, 0 destroyed.
 ```
@@ -134,7 +134,7 @@ Below you'll find clear examples showing:
 * how multiple resources interact during updates and removals,
 * and what the state file looks like after a full destroy.
 
-For further reading, see the Terraform documentation: [https://www.terraform.io/docs](https://www.terraform.io/docs) and the Azure Provider docs: [https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs)
+For further reading, see the Terraform documentation: [https://www.terraform.io/docs](https://www.terraform.io/docs) and the Azure Provider docs: [https://registry.terraform.io[AWS_SECRET_ACCESS_KEY]](https://registry.terraform.io[AWS_SECRET_ACCESS_KEY])
 
 <Callout icon="lightbulb">
   Terraform models desired state rather than imperative commands. Always run `terraform plan` before `terraform apply` to review what will change, and keep your state file backed up or versioned.
@@ -315,7 +315,7 @@ Terraform will perform the following actions:
 
   # azurerm_storage_account.sa will be destroyed
   - resource "azurerm_storage_account" "sa" {
-      - id       = "/subscriptions/1b228746-75fd-46ed-8a6b-6a9066d6d3a3/resourceGroups/kodekloud-tf-rg/providers/Microsoft.Storage/storageAccounts/stkodekloudtfsa45778" -> null
+      - id       = "/subscriptions/1b228746-75fd-46ed-8a6b-6a9066d6d3a3/resourceGroups/kodekloud-tf-rg/providers/Microsoft.[SECRET_REDACTED]" -> null
       - name     = "stkodekloudtfsa45778" -> null
       - location = "eastus" -> null
       # (other attributes hidden)
@@ -350,7 +350,7 @@ You can also verify in the Azure portal that the resource group and its related 
 ## Links and references
 
 * Terraform: [https://www.terraform.io/docs](https://www.terraform.io/docs)
-* Azure Provider (azurerm): [https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs)
+* Azure Provider (azurerm): [https://registry.terraform.io[AWS_SECRET_ACCESS_KEY]](https://registry.terraform.io[AWS_SECRET_ACCESS_KEY])
 * Azure Portal: [https://portal.azure.com](https://portal.azure.com)
 
 <CardGroup>

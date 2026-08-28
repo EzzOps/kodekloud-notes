@@ -9,7 +9,7 @@ process_virtual_memory_bytes 7.3271296e+08
 process_virtual_memory_max_bytes 1.8446744073709552e+19
 # HELP pushgateway_build_info A metric with a constant '1' value labeled by version, revision, branch, and goversion from which pushgateway was built.
 # TYPE pushgateway_build_info gauge
-pushgateway_build_info{branch="HEAD",goversion="go1.18.2",revision="f9dc1c8664050edbc75916c3664be1df595a1958",version="1.4.3"} 1
+pushgateway_build_info{branch="HEAD",goversion="go1.18.2",revision="[AWS_SECRET_ACCESS_KEY]",version="1.4.3"} 1
 ```
 
 ## 3) Install as a systemd service (recommended for production)

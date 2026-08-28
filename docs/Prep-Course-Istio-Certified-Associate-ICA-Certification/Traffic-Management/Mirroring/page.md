@@ -96,7 +96,7 @@ spec:
 
 Both deployments share the same `app-svc` Service via the `app: frontend` selector, while each deployment is distinguished by its `version` label.
 
-Istio does not provide a standalone "mirror" resource; mirroring is configured in the [VirtualService](https://istio.io/latest/docs/reference/config/networking/virtual-service/) (with subsets defined in a [DestinationRule](https://istio.io/latest/docs/reference/config/networking/destination-rule/)). Here is an example VirtualService and DestinationRule that send all production traffic to subset `v1` while mirroring it to subset `v2`:
+Istio does not provide a standalone "mirror" resource; mirroring is configured in the [VirtualService](https://istio.io[AWS_SECRET_ACCESS_KEY]/virtual-service/) (with subsets defined in a [DestinationRule](https://istio.io[AWS_SECRET_ACCESS_KEY]/destination-rule/)). Here is an example VirtualService and DestinationRule that send all production traffic to subset `v1` while mirroring it to subset `v2`:
 
 ```yaml theme={null}
 apiVersion: networking.istio.io/v1alpha3
@@ -163,7 +163,7 @@ Important notes:
   Mirrored requests are sent as copies by the sidecar proxy (Envoy). The proxy does not wait for the mirrored response — the client only receives the response from the primary (non-mirrored) route. Because mirrored traffic can still trigger side effects on the mirrored service, avoid mirroring requests that cause irreversible actions (e.g., charging payments) unless the mirrored service is prepared to handle such effects safely.
 </Callout>
 
-Istio mirroring has a compact set of options (destination, subset, port, and mirrorPercent). For complete details and the latest API versions, see the [Istio VirtualService documentation](https://istio.io/latest/docs/reference/config/networking/virtual-service/). Setting up mirroring is straightforward and provides a low-risk way to validate new service versions with live traffic before a full rollout.
+Istio mirroring has a compact set of options (destination, subset, port, and mirrorPercent). For complete details and the latest API versions, see the [Istio VirtualService documentation](https://istio.io[AWS_SECRET_ACCESS_KEY]/virtual-service/). Setting up mirroring is straightforward and provides a low-risk way to validate new service versions with live traffic before a full rollout.
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/istio-certified-associate/module/f3f5ca4b-b8d6-4788-9553-9ed765709933/lesson/40d8a24b-c16f-4781-9c26-20d4b1d5baf3" />

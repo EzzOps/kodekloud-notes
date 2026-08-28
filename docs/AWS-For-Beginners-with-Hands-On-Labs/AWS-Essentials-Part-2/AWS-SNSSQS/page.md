@@ -62,7 +62,7 @@ This completes the basic walkthrough for:
 ## Links and references
 
 * [Auto Scaling Groups - AWS Documentation](https://docs.aws.amazon.com/autoscaling/ec2/userguide/what-is-amazon-ec2-auto-scaling.html)
-* [Application Load Balancer - AWS Documentation](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/introduction.html)
+* [Application Load Balancer - AWS Documentation](https://docs.aws.amazon.com[AWS_SECRET_ACCESS_KEY]/introduction.html)
 * [Launch templates - AWS Documentation](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-launch-templates.html)
 * [Target tracking scaling policies - AWS Documentation](https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-scaling-simple-step.html)
 
@@ -518,9 +518,9 @@ Summary
 
 Further reading and references
 
-* [Amazon S3 Event Notifications](https://docs.aws.amazon.com/AmazonS3/latest/userguide/NotificationHowTo.html)
+* [Amazon S3 Event Notifications](https://docs.aws.amazon.[SECRET_REDACTED].html)
 * [Amazon SNS Developer Guide](https://docs.aws.amazon.com/sns/latest/dg/welcome.html)
-* [Amazon SQS Developer Guide](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/welcome.html)
+* [Amazon SQS Developer Guide](https://docs.aws.amazon.[SECRET_REDACTED].html)
 * [AWS Lambda event source mapping for SQS](https://docs.aws.amazon.com/lambda/latest/dg/with-sqs.html)
 * [AWS SDK for JavaScript v3](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/index.html)
 * [FFmpeg](https://ffmpeg.org/) — packaging options for Lambda: layer vs container

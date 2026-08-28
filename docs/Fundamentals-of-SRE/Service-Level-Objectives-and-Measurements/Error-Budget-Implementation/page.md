@@ -514,7 +514,7 @@ Error budgets convert abstract reliability goals into concrete, actionable data.
 
 For further reading:
 
-* [Prometheus query language basics](https://prometheus.io/docs/prometheus/latest/querying/basics/)
+* [Prometheus query language basics](https://prometheus.[SECRET_REDACTED]/)
 * [Site Reliability Engineering — concepts and practices](https://sre.google/books/)
 
 <CardGroup>

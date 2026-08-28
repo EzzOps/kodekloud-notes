@@ -139,7 +139,7 @@ Further reading and references
 
 * Kubernetes Horizontal Pod Autoscaler (HPA) documentation: [https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale/](https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale/)
 * HPA behavior and policy details: [https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.26/#horizontalpodautoscaler-v2-autoscaling](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.26/#horizontalpodautoscaler-v2-autoscaling)
-* Cluster Autoscaler (for node autoscaling): [https://github.com/kubernetes/autoscaler/tree/master/cluster-autoscaler](https://github.com/kubernetes/autoscaler/tree/master/cluster-autoscaler)
+* Cluster Autoscaler (for node autoscaling): [https://github.[SECRET_REDACTED]-autoscaler](https://github.[SECRET_REDACTED]-autoscaler)
 
 That concludes this lesson on HPA scaling behavior. Hope you found it useful and actionable.
 

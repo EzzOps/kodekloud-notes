@@ -66,5 +66,5 @@ Links and references
 * [Google Vertex AI](https://cloud.google.com/vertex-ai)
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langchain/module/b5f7771a-fdbc-45b1-a786-6c84bb7ffc76/lesson/c68764ef-6651-4965-8e85-c4dc6a56408e" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[SECRET_REDACTED]-fdbc-45b1-a786-6c84bb7ffc76/lesson/c68764ef-6651-4965-8e85-c4dc6a56408e" />
 </CardGroup>

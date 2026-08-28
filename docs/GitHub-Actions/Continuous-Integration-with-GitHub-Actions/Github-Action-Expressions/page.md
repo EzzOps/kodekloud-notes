@@ -2,7 +2,7 @@
 Cache Size: ~7 MB (702593 B)
 /usr/bin/tar -xf .../cache.tzst ...
 Cache restored successfully
-Cache restored from key: Linux-node-modules-6224ef692577e18835ac17794c9dc34656c2d8679585a7255cee00452bc1ef7
+Cache restored from key: Linux-node-modules-[SECRET_REDACTED]
 
 # Run npm install
 up to date, audited 365 packages in 965ms

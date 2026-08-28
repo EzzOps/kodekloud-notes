@@ -19,7 +19,7 @@ Example output:
 ## References
 
 * [Docker CLI Reference](https://docs.docker.com/engine/reference/commandline/cli/)
-* [Docker Inspect](https://docs.docker.com/engine/reference/commandline/inspect/)
+* [Docker Inspect](https://docs.docker.[AWS_SECRET_ACCESS_KEY]/)
 * [JSONPath Guide](https://kubernetes.io/docs/reference/kubectl/jsonpath/)
 
 <CardGroup>

@@ -230,7 +230,7 @@ ELBs integrate with many AWS services to deliver end-to-end, scalable architectu
 
 ## Links and References
 
-* [AWS Elastic Load Balancing User Guide](https://docs.aws.amazon.com/elasticloadbalancing/latest/userguide/)
+* [AWS Elastic Load Balancing User Guide](https://docs.aws.amazon.[SECRET_REDACTED]/)
 * [Amazon EC2 Documentation](https://docs.aws.amazon.com/ec2/)
 * [Amazon VPC Documentation](https://docs.aws.amazon.com/vpc/)
 * [AWS Lambda Developer Guide](https://docs.aws.amazon.com/lambda/latest/dg/)

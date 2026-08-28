@@ -39,7 +39,7 @@ kube-system       Active   2m2s  kubernetes.io/metadata.name=kube-system
 Apply the Bookinfo sample manifest:
 
 ```bash theme={null}
-kubectl apply -f https://raw.githubusercontent.com/istio/istio/release-1.11/samples/bookinfo/platform/kube/bookinfo.yaml
+kubectl apply -f https://raw.githubusercontent.com/istio/istio/release-1.11[AWS_SECRET_ACCESS_KEY].yaml
 ```
 
 You should see resources being created, e.g.:

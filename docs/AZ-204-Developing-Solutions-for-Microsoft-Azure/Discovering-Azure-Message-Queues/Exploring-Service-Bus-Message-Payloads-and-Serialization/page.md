@@ -111,7 +111,7 @@ using Azure.Messaging.ServiceBus;
 
 class Program
 {
-    private const string connectionString = "Endpoint=sb://az204svhub09.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=BbM4cPwJBpThed0w/oQULE5KLR3DvocM";
+    private const string connectionString = "Endpoint=sb://az204svhub09.servicebus.windows.net/;[SECRET_REDACTED];[SECRET_REDACTED]";
     private const string queueName = "queue-01"; // Replace with your Queue name
 
     static async Task Main(string[] args)

@@ -69,7 +69,7 @@ Do:
 * Depend only on the OpenTelemetry API.
 * Obtain tracer/meter from the global provider (safe when SDK is absent).
 * Propagate and respect context across call paths.
-* Use official semantic conventions for spans and attributes: [https://opentelemetry.io/docs/reference/specification/semantic\_conventions/](https://opentelemetry.io/docs/reference/specification/semantic_conventions/)
+* Use official semantic conventions for spans and attributes: [https://opentelemetry.[AWS_SECRET_ACCESS_KEY]\_conventions/](https://opentelemetry.io/docs/reference/specification/semantic_conventions/)
 
 Don't:
 
@@ -175,7 +175,7 @@ Links and references
 
 * OpenTelemetry documentation: [https://opentelemetry.io/docs/](https://opentelemetry.io/docs/)
 * Python instrumentation guide: [https://opentelemetry.io/docs/instrumentation/python/](https://opentelemetry.io/docs/instrumentation/python/)
-* Semantic conventions: [https://opentelemetry.io/docs/reference/specification/semantic\_conventions/](https://opentelemetry.io/docs/reference/specification/semantic_conventions/)
+* Semantic conventions: [https://opentelemetry.[AWS_SECRET_ACCESS_KEY]\_conventions/](https://opentelemetry.io/docs/reference/specification/semantic_conventions/)
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/da1c735f-c606-45b0-9bbf-04fe366fbd23/lesson/81da0512-b628-459a-941a-7ed90b163b3c" />

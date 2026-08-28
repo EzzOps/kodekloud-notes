@@ -191,7 +191,7 @@ resources:
     - aescbc:
         keys:
           - name: key1
-            secret: y0xTt+U6xgRdNxe4nDYYsij0GgRDoUYc+wAwOKeNfPs=
+            secret: [SECRET_REDACTED]=
     - identity: {}
 ```
 

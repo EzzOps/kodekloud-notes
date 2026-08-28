@@ -90,7 +90,7 @@ az container create \
   --image acraz204kodekloud.azurecr.io/webapp:v1 \
   --registry-login-server acraz204kodekloud.azurecr.io \
   --registry-username acraz204kodekloud \
-  --registry-password 'Mazs80JYjET0+Giu34oNe3LrjnrqWxSn860nQ+ACRCPDNYh' \
+  --registry-password '[SECRET_REDACTED]' \
   --ports 8080 \
   --ip-address Public
 ```

@@ -189,7 +189,7 @@ Once your keys have been generated, view your public key:
 
 ```bash theme={null}
 jeremy@kodekloud:~/project$ cat ~/.ssh/id_ed25519.pub
-ssh-ed25519 AAAAC3NzaC1lZDII1NTE5AAAAIBwgR4rMy6jBVr3GUM2OejEiLRHTaRrxgGpgzYWzwtto jeremy@kodekloud
+ssh-ed25519 [SECRET_REDACTED] jeremy@kodekloud
 ```
 
 Copy the displayed key and add it to your GitHub account under Settings → SSH and GPG keys.
@@ -235,7 +235,7 @@ Date:   Thu Jun 13 20:52:23 2024 +0000
 
 removed buggy feature
 
-commit e354e75b4bc7e97bfdaadc45243693218eab83d0e
+commit [SECRET_REDACTED]
 Author: jeremy <jeremy@kodekloud.com>
 Date:   Thu Jun 13 20:47:33 2024 +0000
 

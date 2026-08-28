@@ -251,8 +251,8 @@ REMOTE:
 LOCAL:
   Stack: google.22
   Base Image:
-    Reference: dd99c47037c93572a1ada64bdd4987ff7fa9408f859518f15fa435cadf3fc5b
-    Top Layer: sha256:4064dc542d5199b1bd264ea33ddae9aed13f94c087c99851ccbc21e968f4084
+    Reference: [SECRET_REDACTED]
+    Top Layer: sha256:[SECRET_REDACTED]
 
   Run Images:
     (none)
@@ -316,7 +316,7 @@ Adding label 'io.buildpacks.metadata'
 Adding label 'io.buildpacks.project.metadata'
 Setting default process type='web'
 Timer: Saving sanjeevkt720/myapp... ran for 4.868953308s and ended at 2024-11-04T08:17:46Z
-**** Images (sha256:02579c9bc654798be821ec5d296ae89cfa76bcd345125849a5fd7b40152):
+**** Images (sha256:[SECRET_REDACTED]):
 sanjeevkt720/myapp
 Timer: Cache ran for 195.424539ms
 Successfully built image sanjeevkt720/myapp

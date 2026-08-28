@@ -113,7 +113,7 @@ When you perform a search query, you will see enriched data complete with detect
   "value": [
     {
       "@search.score": 1,
-      "metadata_storage_path": "aHR0cHM6Ly9ic2p2Y2l2ZGZtZ2lzZjMxL3VzbGVuZG9jL3RhbGdlcnNvZi9kZW1v",
+      "metadata_storage_path": "[SECRET_REDACTED]",
       "people": [
         "George Orwell"
       ],
@@ -150,7 +150,7 @@ Another query could yield this result:
   "value": [
     {
       "@search.score": 58.536095,
-      "metadata_storage_path": "AHRcHM6Ly9jc2VydGl2ZGVyNjI6ZG9jcy9qMS9kLnB1YmxpY2F0aW9uL21vYmlsZS8yMDYyMDIwMTY1NDQ0P3ZhbGlkYXRpb24vMDBiMjlhYjY1ZTA1MTRhYjZjZGMwYjA5NTdjMTk2MTNiNWYy",
+      "metadata_storage_path": "[SECRET_REDACTED]",
       "people": [
         "F. Scott Fitzgerald"
       ],
@@ -194,7 +194,7 @@ Consider the following sample output for a final enriched search result:
   "value": [
     {
       "@search.score": 50.536905,
-      "metadata_storage_path": "AHR0CHM6LY9Jc2VYbGZlYj2CtZvGBGIZ6FMDkmWb0L3JdmlLd3MwVGHxLxdydZw",
+      "metadata_storage_path": "[SECRET_REDACTED]",
       "people": [
         "F. Scott Fitzgerald"
       ],

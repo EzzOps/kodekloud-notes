@@ -57,7 +57,7 @@ Data Engineers handle provisioning and configuration tasks without accessing con
 
 * Create and configure storage accounts and file shares
 * Optimize performance tiers based on workload patterns
-* Automate deployments using [Azure CLI](https://learn.microsoft.com/cli/azure/storage) or [Terraform](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/storage_account)
+* Automate deployments using [Azure CLI](https://learn.microsoft.com/cli/azure/storage) or [Terraform](https://registry.terraform.io[AWS_SECRET_ACCESS_KEY]/resources/storage_account)
 
 <Frame>
   ![The image outlines three data roles: Users, Administrators, and Data Engineers, each with specific responsibilities. Users operate in a self-serve environment, Administrators handle permissions and backups, and Data Engineers use Microsoft Purview.](https://kodekloud.com/kk-media/image/upload/v1752873010/notes-assets/images/DP-900-Microsoft-Azure-Data-Fundamentals-Roles-and-Responsibilities/data-roles-users-administrators-engineers.jpg)

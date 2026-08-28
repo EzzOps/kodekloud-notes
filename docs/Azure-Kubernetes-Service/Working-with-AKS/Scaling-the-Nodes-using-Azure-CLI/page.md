@@ -127,7 +127,7 @@ To work around the per-node pod limit, consider:
 
 ## Links and References
 
-* [Kubernetes Scaling Documentation](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/#scaling-a-deployment)
+* [Kubernetes Scaling Documentation](https://kubernetes.[SECRET_REDACTED]/#scaling-a-deployment)
 * [AKS Networking Concepts](https://learn.microsoft.com/azure/aks/concepts-network)
 * [Azure CNI IP Management](https://learn.microsoft.com/azure/aks/configure-azure-cni)
 

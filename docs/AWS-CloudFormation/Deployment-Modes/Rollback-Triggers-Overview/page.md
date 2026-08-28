@@ -73,8 +73,8 @@ Rollback triggers let you couple CloudFormation stack operations with CloudWatch
 
 Links and references
 
-* [AWS CloudFormation RollbackConfiguration docs](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_RollbackConfiguration.html)
-* [Amazon CloudWatch Alarms](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/AlarmThatSendsEmail.html)
+* [AWS CloudFormation RollbackConfiguration docs](https://docs.aws.amazon.[SECRET_REDACTED]API_RollbackConfiguration.html)
+* [Amazon CloudWatch Alarms](https://docs.aws.amazon.[SECRET_REDACTED].html)
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/aws-cloud-formation/module/68ab5c12-a35c-46b7-aef2-2e274c10989c/lesson/91ab42d3-d7dd-4f3d-b442-f1112683b56c" />

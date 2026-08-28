@@ -143,7 +143,7 @@ Community learning and next steps
 Links and references
 
 * Prometheus: [https://prometheus.io](https://prometheus.io)
-* PromQL basics: [https://prometheus.io/docs/prometheus/latest/querying/basics/](https://prometheus.io/docs/prometheus/latest/querying/basics/)
+* PromQL basics: [https://prometheus.[SECRET_REDACTED]/](https://prometheus.[SECRET_REDACTED]/)
 * Node Exporter: [https://github.com/prometheus/node\_exporter](https://github.com/prometheus/node_exporter)
 * Pushgateway: [https://github.com/prometheus/pushgateway](https://github.com/prometheus/pushgateway)
 * Alertmanager: [https://prometheus.io/docs/alerting/latest/alertmanager/](https://prometheus.io/docs/alerting/latest/alertmanager/)

@@ -164,7 +164,7 @@ This minimal configuration allows Prometheus to scrape itself and a Node Exporte
 Links and references
 
 * Prometheus official docs: [https://prometheus.io/docs/](https://prometheus.io/docs/)
-* Prometheus configuration reference: [https://prometheus.io/docs/prometheus/latest/configuration/configuration/](https://prometheus.io/docs/prometheus/latest/configuration/configuration/)
+* Prometheus configuration reference: [https://prometheus.[AWS_SECRET_ACCESS_KEY]configuration/](https://prometheus.[AWS_SECRET_ACCESS_KEY]configuration/)
 * Node Exporter: [https://github.com/prometheus/node\_exporter](https://github.com/prometheus/node_exporter)
 
 <CardGroup>

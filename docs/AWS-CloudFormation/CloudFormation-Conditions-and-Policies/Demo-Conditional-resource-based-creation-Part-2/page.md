@@ -144,7 +144,7 @@ This XML file does not appear to have any style information associated with it. 
   <Code>AccessDenied</Code>
   <Message>Access Denied</Message>
   <RequestId>DTW7YGSFW02AWKKNK</RequestId>
-  <HostId>8EPYHPXyQ0Fv+Kr+xAu03W7LPWQe6qMicevp8S58DRHfKXUXNLiJ9n4QsVBO+tI+y3AewH2bXz1JzZwoRUkyg==</HostId>
+  <HostId>[SECRET_REDACTED]==</HostId>
 </Error>
 ```
 
@@ -172,9 +172,9 @@ Best practices:
 
 ## Links and references
 
-* [AWS CloudFormation Conditions documentation](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/conditions-section-structure.html)
+* [AWS CloudFormation Conditions documentation](https://docs.aws.amazon.[SECRET_REDACTED]-section-structure.html)
 * [AWS S3 Block Public Access documentation](https://docs.aws.amazon.com/AmazonS3/latest/userguide/access-control-block-public-access.html)
-* [AWS::S3::BucketPolicy documentation](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-policy.html)
+* [AWS::S3::BucketPolicy documentation](https://docs.aws.amazon.[SECRET_REDACTED]-properties-s3-policy.html)
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/aws-cloud-formation/module/216ef226-4efe-45ed-b547-b3ab7c5dd29b/lesson/f7398d22-0261-4547-9a9b-35cfa6f19a68" />

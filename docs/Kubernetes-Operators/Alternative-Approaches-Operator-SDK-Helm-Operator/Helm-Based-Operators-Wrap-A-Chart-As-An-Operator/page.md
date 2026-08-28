@@ -22,7 +22,7 @@ Verify the CLI is available and inspect the binary metadata:
 ```bash theme={null}
 operator-sdk version
 # sample output:
-# operator-sdk version: "v1.42.2", commit: "6001c29067051e1a04e829ea033988b904d1845e", kubernetes version: "1.33.1", go version: "go1.25.7", GOOS: "linux", GOARCH: "amd64"
+# operator-sdk version: "v1.42.2", commit: "[AWS_SECRET_ACCESS_KEY]", kubernetes version: "1.33.1", go version: "go1.25.7", GOOS: "linux", GOARCH: "amd64"
 ```
 
 Note: the reported "kubernetes version" refers to the Kubernetes client libraries bundled with the SDK binary, not your cluster version.

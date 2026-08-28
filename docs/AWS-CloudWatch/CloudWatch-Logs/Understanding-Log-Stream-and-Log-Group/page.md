@@ -55,8 +55,8 @@ In upcoming lessons, we’ll explore how to:
 
 ## References
 
-* [AWS CloudWatch Logs Concepts](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/WhatIsCloudWatchLogs.html)
-* [Managing Log Data in Amazon CloudWatch Logs](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/Working-with-log-groups-and-streams.html)
+* [AWS CloudWatch Logs Concepts](https://docs.aws.amazon.[SECRET_REDACTED].html)
+* [Managing Log Data in Amazon CloudWatch Logs](https://docs.aws.amazon.[AWS_SECRET_ACCESS_KEY]-with-log-groups-and-streams.html)
 
 Use these resources to deepen your understanding and streamline your AWS logging architecture.
 

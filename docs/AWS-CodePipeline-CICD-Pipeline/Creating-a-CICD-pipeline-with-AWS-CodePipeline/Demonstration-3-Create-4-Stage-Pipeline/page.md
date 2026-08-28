@@ -525,7 +525,7 @@ Verify the instance is running before proceeding to CodeDeploy.
 
 ## 5. Create the Four-Stage Pipeline
 
-1. Open the [AWS CodePipeline console](https://docs.aws.amazon.com/codepipeline/latest/userguide/welcome.html) and click **Create pipeline**.
+1. Open the [AWS CodePipeline console](https://docs.aws.amazon.[SECRET_REDACTED].html) and click **Create pipeline**.
 2. Name it `KodeKloudCPdemo` and use the default service role.
 
 <Frame>
@@ -610,7 +610,7 @@ Use this template to accelerate your deployments and enforce consistent delivery
 
 ## Links and References
 
-* [AWS CodePipeline Documentation](https://docs.aws.amazon.com/codepipeline/latest/userguide/welcome.html)
+* [AWS CodePipeline Documentation](https://docs.aws.amazon.[SECRET_REDACTED].html)
 * [AWS CodeCommit Documentation](https://docs.aws.amazon.com/codecommit/latest/userguide/welcome.html)
 * [AWS CodeBuild Documentation](https://docs.aws.amazon.com/codebuild/latest/userguide/welcome.html)
 * [AWS CodeDeploy Documentation](https://docs.aws.amazon.com/codedeploy/latest/userguide/welcome.html)

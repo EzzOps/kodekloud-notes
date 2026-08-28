@@ -42,7 +42,7 @@ Now that you've reviewed the key steps, let's dive into the implementation detai
 For further reading and comprehensive documentation:
 
 * [Loki Documentation](https://grafana.com/docs/loki/latest/)
-* [Promtail GitHub Repository](https://github.com/grafana/loki/tree/main/clients/cmd/promtail)
+* [Promtail GitHub Repository](https://github.[SECRET_REDACTED])
 * [Grafana Documentation](https://grafana.com/docs/grafana/latest/)
 
 Happy logging!

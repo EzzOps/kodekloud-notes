@@ -262,7 +262,7 @@ That concludes this lesson. The final summary covers everything learned across t
 * Terraform documentation — [https://www.terraform.io/docs](https://www.terraform.io/docs)
 * AWS Lambda Developer Guide — [https://docs.aws.amazon.com/lambda/latest/dg/welcome.html](https://docs.aws.amazon.com/lambda/latest/dg/welcome.html)
 * S3 documentation — [https://docs.aws.amazon.com/s3/index.html](https://docs.aws.amazon.com/s3/index.html)
-* DynamoDB documentation — [https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Introduction.html](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Introduction.html)
+* DynamoDB documentation — [https://docs.aws.amazon.[AWS_SECRET_ACCESS_KEY]/Introduction.html](https://docs.aws.amazon.[AWS_SECRET_ACCESS_KEY]/Introduction.html)
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/cdk-for-terraform-with-typescript/module/4625ff69-dbd8-42ac-9542-d0e60a85e2ae/lesson/4c12891b-f4d1-42b9-a6d7-855716897e82" />

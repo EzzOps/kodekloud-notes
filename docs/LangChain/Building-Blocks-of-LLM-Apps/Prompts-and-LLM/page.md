@@ -67,7 +67,7 @@ References and further reading
 By specifying explicit output formats, validating responses, and normalizing values, you make LLM-driven applications more robust, predictable, and secure.
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langchain/module/bb8afda8-9de9-4865-aabf-bc71786440b2/lesson/cf17e488-e86d-494b-b410-6e89b4f47212" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[SECRET_REDACTED]-9de9-4865-aabf-bc71786440b2/lesson/cf17e488-e86d-494b-b410-6e89b4f47212" />
 </CardGroup>
 
 
@@ -173,5 +173,5 @@ Summary
 Prompts are the primary interface to LLMs; good prompt engineering combines clear instructions, well-structured context, explicit constraints, and iterative testing. Pair these techniques with rigorous validation to build reliable, useful language applications.
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langchain/module/bb8afda8-9de9-4865-aabf-bc71786440b2/lesson/38ac00b4-6dbd-46dc-981c-4f8e22e3801f" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[SECRET_REDACTED]-9de9-4865-aabf-bc71786440b2/lesson/38ac00b4-6dbd-46dc-981c-4f8e22e3801f" />
 </CardGroup>

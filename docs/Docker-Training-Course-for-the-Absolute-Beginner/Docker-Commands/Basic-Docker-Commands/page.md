@@ -25,7 +25,7 @@ latest: Pulling from library/nginx
 fc71811084d0: Already exists
 d2e987ca2267: Pull complete
 0b760b431b11: Pull complete
-Digest: sha256:96fb261b66270b900ea5a2c17a26abbfabe95506e73c3a3c65869a6dbe83223a
+Digest: sha256:[SECRET_REDACTED]
 Status: Downloaded newer image for nginx:latest
 ```
 
@@ -97,11 +97,11 @@ To delete an image no longer needed, ensure no container is using it and execute
 ```bash theme={null}
 docker rmi nginx
 Untagged: nginx:latest
-Untagged: nginx@sha256:96fb261b66270b900ea5a2c17a26abbfabe95506e73c3a3c65869a6dbe83223a
-Deleted: sha256:f68d6e55e06520f152403e69d6d0de5c9790a89b4cf99f4626f68146faldc
-Deleted: sha256:1b0c768769e2bb66e74a2531437381a78b77feef8ea6fd7e7f4044e1
-Deleted: sha256:34138fb6002a180512485fb96f42e86fbd08c6f1a2506b11ff6b945b03f
-Deleted: sha256:cf5b3c6798f77b1f78b297b27cfa5b6caa982f04caeb5de7d13c255fd7ale
+Untagged: nginx@sha256:[SECRET_REDACTED]
+Deleted: sha256:[SECRET_REDACTED]
+Deleted: sha256:[SECRET_REDACTED]
+Deleted: sha256:[SECRET_REDACTED]
+Deleted: sha256:[SECRET_REDACTED]
 ```
 
 Additionally, if you want to download an image for later use without running a container immediately, use the `docker pull` command:
@@ -113,7 +113,7 @@ latest: Pulling from library/nginx
 fc71811084d0: Pull complete
 d2e987ca2267: Pull complete
 0b760b431b11: Pull complete
-Digest: sha256:96fb261b66270b900ea5a2c17a26abbfabe95506e73c3a3c65869a6dbe83223a
+Digest: sha256:[SECRET_REDACTED]
 Status: Downloaded newer image for nginx:latest
 ```
 
@@ -182,7 +182,7 @@ docker run -d kodekloud/simple-webapp
 This will output a container ID similar to:
 
 ```text theme={null}
-a043d40f85fefa414254e4775f9336ea59e5cf597af5c554e0a35a1631118
+[SECRET_REDACTED]
 ```
 
 You can then check running containers with:

@@ -59,7 +59,7 @@ sudo journalctl -u jenkins | grep 'initialAdminPassword'
 Or directly read the file:
 
 ```bash theme={null}
-sudo cat /var/lib/jenkins/secrets/initialAdminPassword
+sudo cat /var/[AWS_SECRET_ACCESS_KEY]
 ```
 
 Inspect the Jenkins home directory:
@@ -72,7 +72,7 @@ ls /var/lib/jenkins
 ## 9. Complete Setup Wizard
 
 1. Open `http://<YOUR_VM_IP>:8080` in your browser.
-2. **Unlock Jenkins** with the admin password from `/var/lib/jenkins/secrets/initialAdminPassword`.
+2. **Unlock Jenkins** with the admin password from `/var/[AWS_SECRET_ACCESS_KEY]`.
 3. **Select Plugins**
    * Choose **Suggested Plugins** or pick specific ones.
 

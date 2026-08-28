@@ -26,7 +26,7 @@ commonLabels:
 * [Understanding `kustomization.yaml`](https://kubernetes.io/docs/tasks/manage-kubernetes-objects/kustomization/)
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kustomize/module/8b591384-c5e2-4411-afc1-443d3f2ba735/lesson/6e53fad0-8921-4260-8072-8693fc382a77" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[SECRET_REDACTED]-c5e2-4411-afc1-443d3f2ba735/lesson/6e53fad0-8921-4260-8072-8693fc382a77" />
 </CardGroup>
 
 
@@ -125,9 +125,9 @@ To remove the same set of resources you applied, replace `apply` with `delete` i
 ## Further Reading
 
 * [Kustomize Documentation](https://kubectl.docs.kubernetes.io/references/kustomize/)
-* [kubectl apply Overview](https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands#apply)
-* [kubectl delete Overview](https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands#delete)
+* [kubectl apply Overview](https://kubernetes.io/[AWS_SECRET_ACCESS_KEY]-commands#apply)
+* [kubectl delete Overview](https://kubernetes.io/[AWS_SECRET_ACCESS_KEY]-commands#delete)
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kustomize/module/8b591384-c5e2-4411-afc1-443d3f2ba735/lesson/dc9f311c-23c3-4eb8-b8be-3ffaadc1fa12" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[SECRET_REDACTED]-c5e2-4411-afc1-443d3f2ba735/lesson/dc9f311c-23c3-4eb8-b8be-3ffaadc1fa12" />
 </CardGroup>

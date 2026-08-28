@@ -105,7 +105,7 @@ When creating resources, include identifying attributes for your service:
 
 * Console exporter docs: [https://opentelemetry-python.readthedocs.io/en/stable/](https://opentelemetry-python.readthedocs.io/en/stable/)
 * OTLP exporter docs: [https://opentelemetry-python.readthedocs.io/en/stable/exporter/otlp/](https://opentelemetry-python.readthedocs.io/en/stable/exporter/otlp/)
-* OTLP protocol: [https://opentelemetry.io/docs/reference/specification/protocol/otlp/](https://opentelemetry.io/docs/reference/specification/protocol/otlp/)
+* OTLP protocol: [https://opentelemetry.[AWS_SECRET_ACCESS_KEY]/otlp/](https://opentelemetry.[AWS_SECRET_ACCESS_KEY]/otlp/)
 * Flask: [https://flask.palletsprojects.com/](https://flask.palletsprojects.com/)
 
 Using sampling reduces the volume of traces sent to your backend while maintaining a useful subset for observability and debugging. Adjust the sampling strategy to match your telemetry needs and cost constraints.

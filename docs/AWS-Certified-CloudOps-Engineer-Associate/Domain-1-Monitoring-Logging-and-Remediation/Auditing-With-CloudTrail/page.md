@@ -80,7 +80,7 @@ We hope you now have a clear understanding of CloudTrail's auditing capabilities
 
 ## Additional Resources
 
-* [AWS CloudTrail Documentation](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html)
+* [AWS CloudTrail Documentation](https://docs.aws.amazon.[SECRET_REDACTED]-user-guide.html)
 * [AWS Security Best Practices](https://aws.amazon.com/whitepapers/aws-security-best-practices/)
 * [Getting Started with AWS CloudTrail](https://aws.amazon.com/cloudtrail/getting-started/)
 

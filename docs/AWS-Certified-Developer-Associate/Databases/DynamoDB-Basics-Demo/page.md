@@ -181,8 +181,8 @@ Happy learning!
 
 ## Additional Resources
 
-* [AWS DynamoDB Documentation](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Introduction.html)
-* [AWS DynamoDB Developer Guide](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.html)
+* [AWS DynamoDB Documentation](https://docs.aws.amazon.[AWS_SECRET_ACCESS_KEY]/Introduction.html)
+* [AWS DynamoDB Developer Guide](https://docs.aws.amazon.[AWS_SECRET_ACCESS_KEY]/HowItWorks.html)
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/aws-certified-developer-associate/module/a1267c00-fc48-4a9b-8d41-fd642fa743ea/lesson/577d791f-026e-4eed-8a1e-26fb1d66a35b" />

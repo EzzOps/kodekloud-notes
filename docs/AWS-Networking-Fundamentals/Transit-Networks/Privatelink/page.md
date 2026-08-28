@@ -65,7 +65,7 @@ AWS PrivateLink simplifies and secures your network architecture by enabling pri
 ## Links and References
 
 * [AWS PrivateLink Overview](https://docs.aws.amazon.com/vpc/latest/userguide/endpoint-services-overview.html)
-* [Interface Endpoints for Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/privatelink-interface-endpoints.html)
+* [Interface Endpoints for Amazon S3](https://docs.aws.amazon.[SECRET_REDACTED]-interface-endpoints.html)
 * [VPC Endpoint Pricing](https://aws.amazon.com/vpc/pricing/)
 * [AWS Network Security Best Practices](https://docs.aws.amazon.com/whitepapers/latest/aws-security-best-practices/network-security.html)
 

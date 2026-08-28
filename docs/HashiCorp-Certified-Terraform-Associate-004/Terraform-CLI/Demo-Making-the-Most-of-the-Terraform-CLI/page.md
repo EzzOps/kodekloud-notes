@@ -15,7 +15,7 @@ Core pieces to know
 
 * `from` — specifies the resource address to remove from state. Use the resource address exactly as it appears in configuration (for example, `google_sql_database_instance.prd_db_2`).
 * `removed` blocks only need the `from` argument. They instruct Terraform to remove the matching resource from state without destroying the underlying infrastructure.
-* Always validate behavior in your Terraform version and provider. See HashiCorp's refactoring docs for details: [https://developer.hashicorp.com/terraform/language/state/refactoring](https://developer.hashicorp.com/terraform/language/state/refactoring)
+* Always validate behavior in your Terraform version and provider. See HashiCorp's refactoring docs for details: [https://developer.hashicorp.[AWS_SECRET_ACCESS_KEY]](https://developer.hashicorp.[AWS_SECRET_ACCESS_KEY])
 
 Example `removed` blocks for the two databases:
 
@@ -105,7 +105,7 @@ Final notes and references
 
 Useful links
 
-* Terraform state refactoring: [https://developer.hashicorp.com/terraform/language/state/refactoring](https://developer.hashicorp.com/terraform/language/state/refactoring)
+* Terraform state refactoring: [https://developer.hashicorp.[AWS_SECRET_ACCESS_KEY]](https://developer.hashicorp.[AWS_SECRET_ACCESS_KEY])
 * Terraform state commands overview: [https://developer.hashicorp.com/terraform/cli/commands/state](https://developer.hashicorp.com/terraform/cli/commands/state)
 
 That wraps up this lesson on the `removed` block. Use it when you need Terraform to stop tracking a resource without deleting the actual infrastructure.

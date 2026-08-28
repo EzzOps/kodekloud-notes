@@ -150,9 +150,9 @@ Quick reference: mapping usage
 
 Links and references
 
-* CloudFormation Mappings and Intrinsic Functions: [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/mappings-section-structure.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/mappings-section-structure.html)
-* Fn::FindInMap: [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-findinmap.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-findinmap.html)
-* AWS::Region pseudo parameter: [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/pseudo-parameter-reference.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/pseudo-parameter-reference.html)
+* CloudFormation Mappings and Intrinsic Functions: [https://docs.aws.amazon.[SECRET_REDACTED]-section-structure.html](https://docs.aws.amazon.[SECRET_REDACTED]-section-structure.html)
+* Fn::FindInMap: [https://docs.aws.amazon.[SECRET_REDACTED]-function-reference-findinmap.html](https://docs.aws.amazon.[SECRET_REDACTED]-function-reference-findinmap.html)
+* AWS::Region pseudo parameter: [https://docs.aws.amazon.[SECRET_REDACTED]-parameter-reference.html](https://docs.aws.amazon.[SECRET_REDACTED]-parameter-reference.html)
 * EC2 console: [https://console.aws.amazon.com/ec2/](https://console.aws.amazon.com/ec2/)
 * Learn more: [CloudFormation course at KodeKloud](https://learn.kodekloud.com/user/courses/aws-cloud-formation) and [EC2 course at KodeKloud](https://learn.kodekloud.com/user/courses/amazon-elastic-compute-cloud-ec2)
 

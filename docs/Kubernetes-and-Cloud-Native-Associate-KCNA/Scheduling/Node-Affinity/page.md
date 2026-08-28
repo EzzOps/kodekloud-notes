@@ -364,7 +364,7 @@ spec:
       image: data-processor
   affinity:
     nodeAffinity:
-      requiredDuringSchedulingIgnoredDuringExecution:
+      [SECRET_REDACTED]:
         nodeSelectorTerms:
           - matchExpressions:
               - key: size
@@ -378,7 +378,7 @@ spec:
 
   * The `affinity` block is defined under the pod `spec`.
   * `nodeAffinity` specifies the criteria used for node scheduling.
-  * The field `requiredDuringSchedulingIgnoredDuringExecution` indicates a mandatory requirement for scheduling; if no node meets the criteria, the pod is not scheduled.
+  * The field `[SECRET_REDACTED]` indicates a mandatory requirement for scheduling; if no node meets the criteria, the pod is not scheduled.
   * `nodeSelectorTerms` holds an array of conditions—in this case, ensuring that the node label `size` must have a value included in the specified list.
 </Callout>
 
@@ -395,7 +395,7 @@ spec:
       image: data-processor
   affinity:
     nodeAffinity:
-      requiredDuringSchedulingIgnoredDuringExecution:
+      [SECRET_REDACTED]:
         nodeSelectorTerms:
           - matchExpressions:
               - key: size
@@ -418,7 +418,7 @@ spec:
       image: data-processor
   affinity:
     nodeAffinity:
-      requiredDuringSchedulingIgnoredDuringExecution:
+      [SECRET_REDACTED]:
         nodeSelectorTerms:
           - matchExpressions:
               - key: size
@@ -440,7 +440,7 @@ spec:
       image: data-processor
   affinity:
     nodeAffinity:
-      requiredDuringSchedulingIgnoredDuringExecution:
+      [SECRET_REDACTED]:
         nodeSelectorTerms:
           - matchExpressions:
               - key: size
@@ -457,17 +457,17 @@ When a pod is created, the Kubernetes scheduler evaluates its node affinity rule
 
 There are two primary types of node affinity currently supported:
 
-* **requiredDuringSchedulingIgnoredDuringExecution**:\
+* **[SECRET_REDACTED]**:\
   The scheduler enforces that the pod be placed on a node that satisfies the affinity rules. If no matching node is available, the pod remains unscheduled. Once the pod is running, changes to node labels do not impact the running pod.
 
-* **preferredDuringSchedulingIgnoredDuringExecution**:\
+* **[SECRET_REDACTED]**:\
   The scheduler attempts to honor the specified node affinity rules. If a matching node is not found, the pod can be scheduled on a non-matching node. Similarly, node label changes after scheduling are ignored.
 
 <Callout icon="lightbulb">
   Future releases of Kubernetes plan to introduce additional affinity types that enforce rules during both scheduling and execution:
 
-  * requiredDuringSchedulingRequiredDuringExecution
-  * preferredDuringSchedulingRequiredDuringExecution
+  * [SECRET_REDACTED]
+  * [SECRET_REDACTED]
 </Callout>
 
 ### Scheduling vs. Execution

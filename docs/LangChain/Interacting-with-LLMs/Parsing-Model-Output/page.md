@@ -150,9 +150,9 @@ This approach makes it straightforward to work with LLM-generated data in a type
 A future article will cover adding short-term and long-term memory to LLMs.
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langchain/module/ae260750-791b-496c-991f-0d0333f61e40/lesson/31aecd1b-7ea9-4bab-898d-b8bc6b35ab62" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[SECRET_REDACTED]-791b-496c-991f-0d0333f61e40/lesson/31aecd1b-7ea9-4bab-898d-b8bc6b35ab62" />
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/langchain/module/ae260750-791b-496c-991f-0d0333f61e40/lesson/932a32b6-0fa6-445f-b1f6-7db4e21dc369" />
+  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.[SECRET_REDACTED]-791b-496c-991f-0d0333f61e40/lesson/932a32b6-0fa6-445f-b1f6-7db4e21dc369" />
 </CardGroup>
 
 

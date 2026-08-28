@@ -109,7 +109,7 @@ For this lesson we want a small, embeddable component — an AdviceCard — that
 Create the component file:
 
 ```tsx theme={null}
-// plugins/advice/src/components/AdviceCard.tsx
+// [AWS_SECRET_ACCESS_KEY].tsx
 import React, { useEffect, useState } from 'react';
 import { InfoCard } from '@backstage/core-components';
 import { fetchApiRef, useApi } from '@backstage/core-plugin-api';
@@ -216,7 +216,7 @@ and a router entry such as:
 To embed the Advice card on an entity overview, import the provided component extension into the file that composes the entity "Overview". For example:
 
 ```tsx theme={null}
-// packages/app/src/components/catalog/EntityPage.tsx (excerpt)
+// [SECRET_REDACTED].tsx (excerpt)
 import { AdviceCardExtension } from '@internal/backstage-plugin-advice';
 
 // ... inside the Overview grid JSX
@@ -311,7 +311,7 @@ Either command runs a local dev server for the plugin so you can iterate quickly
 For convenience, here is the final `AdviceCard.tsx`:
 
 ```tsx theme={null}
-// plugins/advice/src/components/AdviceCard.tsx
+// [AWS_SECRET_ACCESS_KEY].tsx
 import React, { useEffect, useState } from 'react';
 import { InfoCard } from '@backstage/core-components';
 import { fetchApiRef, useApi } from '@backstage/core-plugin-api';

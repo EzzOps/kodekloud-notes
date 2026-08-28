@@ -123,8 +123,8 @@ You might also see additional CloudFormation-generated tags such as:
 
 ## Links and references
 
-* [AWS CloudFormation documentation — Template anatomy](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/template-anatomy.html)
-* [AWS CloudFormation documentation — Resource metadata](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-attribute-metadata.html)
+* [AWS CloudFormation documentation — Template anatomy](https://docs.aws.amazon.[SECRET_REDACTED]-anatomy.html)
+* [AWS CloudFormation documentation — Resource metadata](https://docs.aws.amazon.[SECRET_REDACTED]-attribute-metadata.html)
 * [Tagging best practices (AWS)](https://docs.aws.amazon.com/whitepapers/latest/tagging-best-practices/tagging-best-practices.html)
 
 <CardGroup>

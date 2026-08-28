@@ -132,7 +132,7 @@ The jobs JSON file contains one object per build record. Each object includes fi
 The generated `forecast_report.md` summarizes totals and statistical metrics that aid capacity planning — such as total execution minutes, median and percentile values, and concurrency distributions.
 
 ```markdown theme={null}
-- GitHub Actions Importer version: **1.3.22397(b4d19e0745a2d2c3db575188f98101dd1f9b4a53)**
+- GitHub Actions Importer version: **1.3.22397([AWS_SECRET_ACCESS_KEY])**
 - Performed at: **5/22/25 at 09:40**
 - Date range: **5/15/25 - 5/22/25**
 

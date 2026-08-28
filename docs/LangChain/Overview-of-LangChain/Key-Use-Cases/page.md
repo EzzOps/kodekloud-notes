@@ -42,7 +42,7 @@ Further reading and references:
 * Google Search: [https://www.google.com](https://www.google.com)
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langchain/module/5bedac05-3eaa-4d0d-9892-e05b80c528fb/lesson/f956bded-e65d-4693-b89d-31cb29adb543" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[SECRET_REDACTED]-3eaa-4d0d-9892-e05b80c528fb/lesson/f956bded-e65d-4693-b89d-31cb29adb543" />
 </CardGroup>
 
 
@@ -101,5 +101,5 @@ Links and references
 * [Best practices for prompt design and reducing hallucinations](https://platform.openai.com/docs/guides/prompt-design)
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langchain/module/ab7ff6ea-63e2-4d3b-af7c-ed22616cc3b6/lesson/74aab9c2-595c-4d0e-9f2d-b4f22d218d87" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[SECRET_REDACTED]-63e2-4d3b-af7c-ed22616cc3b6/lesson/74aab9c2-595c-4d0e-9f2d-b4f22d218d87" />
 </CardGroup>

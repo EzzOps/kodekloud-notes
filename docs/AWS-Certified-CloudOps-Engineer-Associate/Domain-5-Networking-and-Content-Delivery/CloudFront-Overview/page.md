@@ -96,7 +96,7 @@ Whether you are serving static assets from an S3 bucket or dynamic content from 
 Thank you for reading this article. We hope it has provided you with a clear, technically accurate understanding of CloudFront and its powerful capabilities.
 
 <Callout icon="lightbulb">
-  For more detailed information, explore the [AWS Documentation on CloudFront](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Introduction.html) and learn how to customize your distribution settings for optimal performance.
+  For more detailed information, explore the [AWS Documentation on CloudFront](https://docs.aws.amazon.com[AWS_SECRET_ACCESS_KEY]Introduction.html) and learn how to customize your distribution settings for optimal performance.
 </Callout>
 
 <CardGroup>

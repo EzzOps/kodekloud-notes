@@ -85,7 +85,7 @@ Operational notes
 
 Links and references
 
-* [Azure DevOps service connections — Microsoft Docs](https://learn.microsoft.com/azure/devops/pipelines/library/service-endpoints)
+* [Azure DevOps service connections — Microsoft Docs](https://learn.microsoft.[SECRET_REDACTED]-endpoints)
 * [Workload identity federation for Azure AD — Microsoft Docs](https://learn.microsoft.com/azure/active-directory/develop/workload-identity-federation-overview)
 * [Terraform remote backends — Terraform Docs](https://developer.hashicorp.com/terraform/language/state/remote)
 * [Azure RBAC overview — Microsoft Docs](https://learn.microsoft.com/azure/role-based-access-control/overview)

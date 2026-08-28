@@ -309,8 +309,8 @@ kubectl delete -n web namespace/web || true
 ## Links and references
 
 * Istio Ambient Mode overview: [https://istio.io/latest/docs/ops/deployment/ambient/](https://istio.io/latest/docs/ops/deployment/ambient/)
-* AuthorizationPolicy reference: [https://istio.io/latest/docs/reference/config/security/authorization-policy/](https://istio.io/latest/docs/reference/config/security/authorization-policy/)
-* PeerAuthentication reference: [https://istio.io/latest/docs/reference/config/security/peer\_authentication/](https://istio.io/latest/docs/reference/config/security/peer_authentication/)
+* AuthorizationPolicy reference: [https://istio.[AWS_SECRET_ACCESS_KEY]/authorization-policy/](https://istio.[AWS_SECRET_ACCESS_KEY]/authorization-policy/)
+* PeerAuthentication reference: [https://istio.[AWS_SECRET_ACCESS_KEY]/peer\_authentication/](https://istio.[AWS_SECRET_ACCESS_KEY]/peer_authentication/)
 * Kubernetes Basics: [https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/](https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/)
 
 <CardGroup>
@@ -359,7 +359,7 @@ The label `istio-injection=enabled` means pods created in that namespace get the
 Apply the sample manifest to create the hello-world service and workloads:
 
 ```bash theme={null}
-kubectl apply -f https://raw.githubusercontent.com/istio/istio/refs/heads/master/samples/helloworld/helloworld.yaml
+kubectl apply -f https://raw.githubusercontent.[SECRET_REDACTED].yaml
 ```
 
 Verify pods are created and ready:
@@ -632,7 +632,7 @@ Summary: a global `STRICT` enforces mTLS cluster-wide. PeerAuthentication resour
 
 ## Useful references
 
-* [Istio: PeerAuthentication (mTLS)](https://istio.io/latest/docs/tasks/security/authentication/peer_authentication/)
+* [Istio: PeerAuthentication (mTLS)](https://istio.[SECRET_REDACTED]peer_authentication/)
 * `istioctl analyze` — use for policy validation and troubleshooting
 
 <Callout icon="lightbulb">

@@ -105,7 +105,7 @@ spec:
     spec:
       affinity:
         nodeAffinity:
-          requiredDuringSchedulingIgnoredDuringExecution:
+          [SECRET_REDACTED]:
             nodeSelectorTerms:
             - matchExpressions:
               - key: kubernetes.io/hostname
@@ -307,7 +307,7 @@ These techniques empower you to fine-tune your Kubernetes deployments and meet s
 Thanks for reading!
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/pytorch/module/a958efa1-845c-4cdf-9261-7688050bd96c/lesson/caadb2eb-ce72-402b-b576-f8218af04876" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[AWS_SECRET_ACCESS_KEY]-845c-4cdf-9261-7688050bd96c/lesson/caadb2eb-ce72-402b-b576-f8218af04876" />
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/pytorch/module/a958efa1-845c-4cdf-9261-7688050bd96c/lesson/6f914b07-bff5-4511-9a47-72278be78fbf" />
+  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.[AWS_SECRET_ACCESS_KEY]-845c-4cdf-9261-7688050bd96c/lesson/6f914b07-bff5-4511-9a47-72278be78fbf" />
 </CardGroup>

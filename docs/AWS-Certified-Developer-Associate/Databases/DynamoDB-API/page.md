@@ -68,7 +68,7 @@ For example, if you have a user table and only need the user ID and email addres
 
 This lesson explored the key DynamoDB APIs for CRUD operations, data querying, and table management. Additionally, it discussed the use of projection expressions to optimize data retrieval. Understanding these features will enable you to build more efficient and scalable applications with DynamoDB.
 
-For more details on DynamoDB and its applications, visit the [AWS DynamoDB Documentation](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Introduction.html).
+For more details on DynamoDB and its applications, visit the [AWS DynamoDB Documentation](https://docs.aws.amazon.[AWS_SECRET_ACCESS_KEY]/Introduction.html).
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/aws-certified-developer-associate/module/a1267c00-fc48-4a9b-8d41-fd642fa743ea/lesson/9cb66487-1e0e-4ef6-9980-6b8934302d11" />

@@ -147,7 +147,7 @@ Update your `alertmanager.yml`:
 ```yaml theme={null}
 global:
   resolve_timeout: 1m
-  slack_api_url: 'https://hooks.slack.com/services/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'
+  slack_api_url: 'https://hooks.slack.[SECRET_REDACTED]'
 
 route:
   receiver: 'slack-notifications'
@@ -277,7 +277,7 @@ Extend this setup with other receivers such as email, PagerDuty, or OpsGenie.
 
 ## Links and References
 
-* [Istio Prometheus Add-ons](https://istio.io/latest/docs/ops/integrations/prometheus/)
+* [Istio Prometheus Add-ons](https://istio.io[AWS_SECRET_ACCESS_KEY]/)
 * [Alertmanager Slack Integration](https://prometheus.io/docs/alerting/latest/configuration/#slack_config)
 * [Awesome Prometheus Alerts](https://github.com/samber/awesome-prometheus-alerts/)
 * [Kubernetes Documentation](https://kubernetes.io/docs/)

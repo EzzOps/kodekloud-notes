@@ -11,7 +11,7 @@ Argo Rollouts uses a controller-driven model to implement the strategy declared 
 High-level sequence performed by the Rollout controller:
 
 * Create a new canary ReplicaSet containing the updated pod template while retaining the existing stable ReplicaSet.
-* Coordinate traffic splitting between the stable and canary ReplicaSets by integrating with an ingress controller or service mesh (for example, [NGINX Ingress](https://kubernetes.github.io/ingress-nginx/), [Istio VirtualService](https://istio.io/latest/docs/reference/config/networking/virtual-service/), [SMI](https://smi-spec.io/) traffic split providers, [Linkerd](https://linkerd.io/), or other supported controllers).
+* Coordinate traffic splitting between the stable and canary ReplicaSets by integrating with an ingress controller or service mesh (for example, [NGINX Ingress](https://kubernetes.github.io/ingress-nginx/), [Istio VirtualService](https://istio.io[AWS_SECRET_ACCESS_KEY]/virtual-service/), [SMI](https://smi-spec.io/) traffic split providers, [Linkerd](https://linkerd.io/), or other supported controllers).
 * Execute automated analysis by creating an AnalysisRun from an AnalysisTemplate referenced in the Rollout. AnalysisRuns can:
   * Query metrics from providers such as [Prometheus](https://prometheus.io/), [Datadog](https://www.datadoghq.com/), or other metric backends.
   * Launch Kubernetes Jobs to perform custom validation, smoke tests, or synthetic checks.
@@ -56,7 +56,7 @@ Links and references
 * [Argo Rollouts documentation](https://argoproj.github.io/argo-rollouts/)
 * [Kubernetes Documentation](https://kubernetes.io/docs/)
 * [NGINX Ingress Controller](https://kubernetes.github.io/ingress-nginx/)
-* [Istio VirtualService](https://istio.io/latest/docs/reference/config/networking/virtual-service/)
+* [Istio VirtualService](https://istio.io[AWS_SECRET_ACCESS_KEY]/virtual-service/)
 * [Prometheus](https://prometheus.io/)
 * [Datadog](https://www.datadoghq.com/)
 

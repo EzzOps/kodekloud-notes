@@ -195,7 +195,7 @@ Summary
 Further reading and references:
 
 * [Terraform documentation: dynamic blocks](https://www.terraform.io/docs/language/expressions/dynamic-blocks.html)
-* [Azure Provider — Network Security Group](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/network_security_group)
+* [Azure Provider — Network Security Group](https://registry.terraform.io[AWS_SECRET_ACCESS_KEY]/resources/network_security_group)
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-on-azure/module/4fafc188-5a1a-4dbf-8fa0-50e3f00a270d/lesson/eceab11e-90ed-49a4-8453-0320aed507c0" />

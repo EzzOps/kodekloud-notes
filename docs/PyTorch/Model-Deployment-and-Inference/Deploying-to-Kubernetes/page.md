@@ -262,9 +262,9 @@ This concludes our introduction to Flask and model deployment. With Flask, you c
 * [Docker Hub](https://hub.docker.com/)
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/pytorch/module/a958efa1-845c-4cdf-9261-7688050bd96c/lesson/02473255-a571-4ed3-8795-84db13733d23" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[AWS_SECRET_ACCESS_KEY]-845c-4cdf-9261-7688050bd96c/lesson/02473255-a571-4ed3-8795-84db13733d23" />
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/pytorch/module/a958efa1-845c-4cdf-9261-7688050bd96c/lesson/c6f37a93-7ced-4b01-b1d3-de98ad5bef74" />
+  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.[AWS_SECRET_ACCESS_KEY]-845c-4cdf-9261-7688050bd96c/lesson/c6f37a93-7ced-4b01-b1d3-de98ad5bef74" />
 </CardGroup>
 
 
@@ -344,7 +344,7 @@ spec:
           image: my-ml-model:latest
       affinity:
         nodeAffinity:
-          requiredDuringSchedulingIgnoredDuringExecution:
+          [SECRET_REDACTED]:
             nodeSelectorTerms:
               - matchExpressions:
                   - key: gpu

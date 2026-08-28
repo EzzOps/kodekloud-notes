@@ -96,7 +96,7 @@ info: Microsoft.Hosting.Lifetime[0]
 info: Microsoft.Hosting.Lifetime[0]
       Hosting environment: Development
 info: Microsoft.Hosting.Lifetime[0]
-      Content root path: /Users/rithinskaria/Projects/TheBrokenApp
+      Content root path: /[AWS_SECRET_ACCESS_KEY]
 fail: Microsoft.AspNetCore.Hosting.Diagnostics[6]
       Failed to change the HTTP port for redirect.
 ```
@@ -177,7 +177,7 @@ Below is an example run log of the Broken App:
 ```plaintext theme={null}
 TheBrokenApp> dotnet run
 Building...
-/Users/rithinskaria/Projects/TheBrokenApp/Pages/Index.cshtml.cs(16,22): warning CS8602: Dereference of a possibly null reference. [/Users/rithinskaria/Projects/TheBrokenApp/TheBrokenApp.csproj]
+/[AWS_SECRET_ACCESS_KEY]/Pages/Index.cshtml.cs(16,22): warning CS8602: Dereference of a possibly null reference. [/[AWS_SECRET_ACCESS_KEY]/TheBrokenApp.csproj]
 info: Microsoft.Hosting.Lifetime[14]
       Now listening on: http://localhost:5196
 info: Microsoft.Hosting.Lifetime[0]
@@ -185,9 +185,9 @@ info: Microsoft.Hosting.Lifetime[0]
 info: Microsoft.Hosting.Lifetime[0]
       Hosting environment: Development
 info: Microsoft.Hosting.Lifetime[0]
-      Content root path: /Users/rithinskaria/Projects/TheBrokenApp/TheBrokenApp
+      Content root path: /[AWS_SECRET_ACCESS_KEY]/TheBrokenApp
 info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
-      Request starting HTTP/1.1 GET http://localhost:5196/  [/Users/rithinskaria/Projects/TheBrokenApp/TheBrokenApp]
+      Request starting HTTP/1.1 GET http://localhost:5196/  [/[AWS_SECRET_ACCESS_KEY]/TheBrokenApp]
 info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
       Request finished in 16.1776ms 200
 ```

@@ -10,7 +10,7 @@ For example, after logging in, a user might receive a response like this:
 
 ```json theme={null}
 {
-  "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxMjM0NTY3ODkwLCJleHBpcmF0aW9uIjoxNjc4MjEzMzQ0fQ.WeZxYuAkAVEyb8-1A6LhwvpCyexRxQihWJ1IGDT0",
+  "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.[SECRET_REDACTED].WeZxYuAkAVEyb8-1A6LhwvpCyexRxQihWJ1IGDT0",
   "token_type": "bearer"
 }
 ```
@@ -21,7 +21,7 @@ Below is another sample token payload:
 
 ```json theme={null}
 {
-  "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxMjM0NTY3ODkwLCJleHBfdGltZSI6MTYyMzEzMDY1Mn0.6c7HaWhvpcYexRqQlhWJ1IGDT0",
+  "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.[SECRET_REDACTED].6c7HaWhvpcYexRqQlhWJ1IGDT0",
   "token_type": "bearer"
 }
 ```
@@ -63,7 +63,7 @@ A user is expected to include the access token in subsequent requests. For insta
 
 ```json theme={null}
 {
-    "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InNhbmplZXYuY29tIiwiZXhwIjoxNjYzNjA1NDYyfQ.K2RZLh0VgGldA2_P4FykoLUXf6CJc5H6-MFZagE-it4",
+    "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.[SECRET_REDACTED].K2RZLh0VgGldA2_P4FykoLUXf6CJc5H6-MFZagE-it4",
     "token_type": "bearer"
 }
 ```

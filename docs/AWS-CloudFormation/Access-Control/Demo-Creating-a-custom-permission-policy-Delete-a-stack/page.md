@@ -87,7 +87,7 @@ Verification and final notes
 
 Further reading and references
 
-* [AWS CloudFormation User Guide — Deleting a Stack](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-console-delete-stack.html)
+* [AWS CloudFormation User Guide — Deleting a Stack](https://docs.aws.amazon.[SECRET_REDACTED]-console-delete-stack.html)
 * [AWS Identity and Access Management (IAM) Documentation](https://docs.aws.amazon.com/iam/)
 * [S3 Considerations When Deleting Stacks](https://docs.aws.amazon.com/AmazonS3/latest/userguide/delete-objects.html)
 

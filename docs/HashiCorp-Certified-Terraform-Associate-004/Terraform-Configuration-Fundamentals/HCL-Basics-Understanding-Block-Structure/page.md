@@ -113,7 +113,7 @@ Further reading and references:
 
 * [Terraform Outputs Documentation](https://www.terraform.io/docs/cli/commands/output.html)
 * [Terraform State Concepts](https://www.terraform.io/docs/state/index.html)
-* [Azure Provider Documentation](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs)
+* [Azure Provider Documentation](https://registry.terraform.io[AWS_SECRET_ACCESS_KEY])
 * [AWS Provider Documentation](https://registry.terraform.io/providers/hashicorp/aws/latest/docs)
 
 <CardGroup>

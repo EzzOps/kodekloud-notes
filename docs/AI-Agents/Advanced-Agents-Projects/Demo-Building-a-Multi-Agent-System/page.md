@@ -171,7 +171,7 @@ Pass in the full path to your WAV file. In Jupyter or other async-capable REPLs 
 
 ```python theme={null}
 # Replace with the path to your WAV file
-audio_path = "/Users/gavinridgeway/Documents/Anaconda/AiAgent/final_fixed.wav"
+audio_path = "/Users/[AWS_SECRET_ACCESS_KEY]/final_fixed.wav"
 
 await process_audio_translation(audio_path)
 ```
@@ -280,7 +280,7 @@ import openai
 Set the resume directory and other paths (update to suit your environment):
 
 ```python theme={null}
-RESUME_DIR = Path("/Users/gavinridgeway/Documents/Anaconda/AiAgent/Resume")
+RESUME_DIR = Path("/Users/[AWS_SECRET_ACCESS_KEY]/Resume")
 ```
 
 ## Tool 1 — Scan resumes for keywords
@@ -463,7 +463,7 @@ The role involves building scalable services, collaborating with product and des
 Experience with containerization, CI/CD, and monitoring is a plus.
 """
 
-INTERVIEW_AUDIO_PATH = "/Users/gavinridgeway/Documents/Anaconda/AiAgent/Resume/audio_interview.MP3"
+INTERVIEW_AUDIO_PATH = "/Users/[AWS_SECRET_ACCESS_KEY]/Resume/audio_interview.MP3"
 
 prompt = f"""
 Please process this job description:

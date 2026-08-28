@@ -140,7 +140,7 @@ Both variants create a policy that allows public read (s3:GetObject) of all obje
 * [AWS CloudFormation Documentation](https://docs.aws.amazon.com/cloudformation/index.html)
 * [Amazon S3 Documentation](https://docs.aws.amazon.com/s3/index.html)
 * [AWS IAM JSON Policy Elements: Principal](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_principal.html)
-* [CloudFormation intrinsic function !Sub](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-sub.html)
+* [CloudFormation intrinsic function !Sub](https://docs.aws.amazon.[SECRET_REDACTED]-function-reference-sub.html)
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/aws-cloud-formation/module/216ef226-4efe-45ed-b547-b3ab7c5dd29b/lesson/295c1472-5a6d-4fbf-a330-1ca286c848e1" />

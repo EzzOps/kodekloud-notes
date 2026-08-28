@@ -23,7 +23,7 @@ Amazon Aurora is a cloud-native, MySQL- and PostgreSQL-compatible managed engine
 
 Because these engines are first-class RDS offerings, they integrate smoothly with other AWS services. Typical integrations include:
 
-* Secrets storage and rotation using [AWS Secrets Manager](https://docs.aws.amazon.com/secretsmanager/latest/userguide/intro.html)
+* Secrets storage and rotation using [AWS Secrets Manager](https://docs.aws.amazon.[SECRET_REDACTED].html)
 * Metrics, logs, and alerts via [Amazon CloudWatch](https://learn.kodekloud.com/user/courses/aws-cloudwatch)
 * Access control and permissions using [AWS IAM](https://learn.kodekloud.com/user/courses/aws-iam) and VPC networking for secure connectivity
 
@@ -118,7 +118,7 @@ Further reading and resources:
 
 * [Amazon RDS Documentation](https://docs.aws.amazon.com/rds/)
 * [Amazon Aurora](https://docs.aws.amazon.com/aurora/)
-* [AWS Secrets Manager](https://docs.aws.amazon.com/secretsmanager/latest/userguide/intro.html)
+* [AWS Secrets Manager](https://docs.aws.amazon.[SECRET_REDACTED].html)
 * [Amazon CloudWatch](https://docs.aws.amazon.com/cloudwatch/)
 * [AWS IAM](https://docs.aws.amazon.com/iam/)
 

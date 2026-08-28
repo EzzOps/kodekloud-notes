@@ -98,7 +98,7 @@ This combination yields fairer rankings: concise, high-quality documents that ar
 Links and references:
 
 * [BM25 (Wikipedia)](https://en.wikipedia.org/wiki/Okapi_BM25)
-* [Elasticsearch relevance documentation](https://www.elastic.co/guide/en/elasticsearch/guide/current/scoring.html)
+* [Elasticsearch relevance documentation](https://www.elastic.[AWS_SECRET_ACCESS_KEY]scoring.html)
 * Robertson, S., Walker, S. — “Okapi at TREC” (original BM25 research)
 
 <CardGroup>

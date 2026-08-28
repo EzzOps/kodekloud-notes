@@ -66,7 +66,7 @@ The following JSON snippet details the SPDX document for the grep package (versi
     "downloadLocation": "NOASSERTION",
     "filesAnalyzed": true,
     "packageVerificationCode": {
-      "packageVerificationCodeValue": "6da86e7e3a9f53bf5faee3942e2c8e2551ca7d8d"
+      "packageVerificationCodeValue": "[AWS_SECRET_ACCESS_KEY]"
     },
     "sourceInfo": "acquired package info from DPKG DB: /usr/share/doc/grep/copyright, /var/lib/dpkg/info/grep.md5sums, /var/lib/dpkg/status",
     "licenseConcluded": "NOASSERTION",
@@ -103,11 +103,11 @@ This JSON snippet demonstrates file information for a pod namespace service file
     "checksums": [
       {
         "algorithm": "SHA1",
-        "checksumValue": "9b870dae75ff7a0c34eeb85e4c9c42a8cfdc10f8"
+        "checksumValue": "[AWS_SECRET_ACCESS_KEY]"
       },
       {
         "algorithm": "SHA256",
-        "checksumValue": "e4dcd011776e596cbb73dcffde737aa043b5308fobf797a23d4229de54d716"
+        "checksumValue": "[SECRET_REDACTED]"
       }
     ],
     "licenseConcluded": "NOASSERTION",
@@ -115,7 +115,7 @@ This JSON snippet demonstrates file information for a pod namespace service file
       "NOASSERTION"
     ],
     "copyrightText": "",
-    "comment": "layerID: sha256:82e2ab394fabf575000041a8f0801b04e91c7027b7c174fe95332c7ebb6501cb"
+    "comment": "layerID: sha256:[SECRET_REDACTED]"
   }
 }
 ```
@@ -169,7 +169,7 @@ The following JSON snippet illustrates a CycloneDX BOM, showcasing schema inform
     "bom-ref": "eb2d7db1213e6155",
     "type": "container",
     "name": "nginx",
-    "version": "sha256:edf555d07d2ddeb6b616d9024442feac12a91310c9a156fa6f60cd602881a"
+    "version": "sha256:[SECRET_REDACTED]"
   },
   "properties": [
     {

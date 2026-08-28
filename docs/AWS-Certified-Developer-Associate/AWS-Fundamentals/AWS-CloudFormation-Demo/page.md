@@ -23,7 +23,7 @@ Resources:
     Properties:
 ```
 
-For the correct resource type and its properties, refer to the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-instance.html) under the EC2 Basics section. Below is a portion of the documentation example for an EC2 instance:
+For the correct resource type and its properties, refer to the [AWS CloudFormation User Guide](https://docs.aws.amazon.[SECRET_REDACTED]-resource-ec2-instance.html) under the EC2 Basics section. Below is a portion of the documentation example for an EC2 instance:
 
 ```yaml theme={null}
 Type: AWS::EC2::Instance

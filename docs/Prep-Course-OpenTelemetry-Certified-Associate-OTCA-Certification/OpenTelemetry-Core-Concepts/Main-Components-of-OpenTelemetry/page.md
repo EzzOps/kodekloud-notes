@@ -69,7 +69,7 @@ Together, these components form a consistent, extensible pipeline for generating
 
 * OpenTelemetry Specification: [https://opentelemetry.io/docs/reference/specification/](https://opentelemetry.io/docs/reference/specification/)
 * OTLP (Protocol): [https://opentelemetry.io/docs/specs/otel/otlp/](https://opentelemetry.io/docs/specs/otel/otlp/)
-* Semantic Conventions: [https://opentelemetry.io/docs/reference/specification/semantic\_conventions/](https://opentelemetry.io/docs/reference/specification/semantic_conventions/)
+* Semantic Conventions: [https://opentelemetry.[AWS_SECRET_ACCESS_KEY]\_conventions/](https://opentelemetry.io/docs/reference/specification/semantic_conventions/)
 * OpenTelemetry Collector: [https://opentelemetry.io/docs/collector/](https://opentelemetry.io/docs/collector/)
 * Instrumentation: [https://opentelemetry.io/docs/instrumentation/](https://opentelemetry.io/docs/instrumentation/)
 * OpenTelemetry Operator (Kubernetes): [https://github.com/open-telemetry/opentelemetry-operator](https://github.com/open-telemetry/opentelemetry-operator)

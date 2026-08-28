@@ -245,9 +245,9 @@ In this lesson, we explored a variety of image transformation techniques using P
 Thank you for following along, and happy coding!
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/pytorch/module/f9d4b50b-328e-4cf7-a22a-3b236bf0abcd/lesson/be1aae10-5f0d-4206-8781-c7e3b18c9316" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[AWS_SECRET_ACCESS_KEY]-328e-4cf7-a22a-3b236bf0abcd/lesson/be1aae10-5f0d-4206-8781-c7e3b18c9316" />
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/pytorch/module/f9d4b50b-328e-4cf7-a22a-3b236bf0abcd/lesson/94c8b52a-7e06-4689-a5c4-135c09a0e5c7" />
+  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.[AWS_SECRET_ACCESS_KEY]-328e-4cf7-a22a-3b236bf0abcd/lesson/94c8b52a-7e06-4689-a5c4-135c09a0e5c7" />
 </CardGroup>
 
 

@@ -206,8 +206,8 @@ keywords:
 maintainers:
   - email: containers@bitnami.com
     name: Bitnami
-home: https://github.com/bitnami/charts/tree/master/bitnami/wordpress
-icon: https://bitnami.com/assets/stacks/wordpress/img/wordpress-stack-220x234.png
+home: https://github.[SECRET_REDACTED]
+icon: https://bitnami.[SECRET_REDACTED]-stack-220x234.png
 ```
 
 Key elements in the `Chart.yaml` include:

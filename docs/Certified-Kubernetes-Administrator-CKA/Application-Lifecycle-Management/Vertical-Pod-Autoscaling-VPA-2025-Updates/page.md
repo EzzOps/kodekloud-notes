@@ -215,7 +215,7 @@ After saving, Kubernetes will terminate the current pod and create a new one wit
 Kubernetes distinguishes between scaling methods. While the Horizontal Pod Autoscaler (HPA) adds or removes pods based on demand, the VPA continuously monitors metrics and automatically adjusts the CPU and memory allocation of each pod. Since VPA is not enabled by default, you must install it manually. Start by applying the VPA definition file from the autoscaler GitHub repository:
 
 ```bash theme={null}
-$ kubectl apply -f https://github.com/kubernetes/autoscaler/releases/latest/download/vertical-pod-autoscaler.yaml
+$ kubectl apply -f https://github.[SECRET_REDACTED]-pod-autoscaler.yaml
 ```
 
 Verify that the VPA components are running in the kube-system namespace:

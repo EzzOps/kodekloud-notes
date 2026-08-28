@@ -105,7 +105,7 @@ After copying the correct Access Key and Secret Access Key into your code, updat
 const { S3Client, CreateBucketCommand, GetObjectCommand } = require("@aws-sdk/client-s3");
 
 // Set the region and provide valid credentials
-const accessKeyId = "AKIAIAIWSJ5U7MTRXX52";
+const accessKeyId = "[AWS_ACCESS_KEY_ID]";
 const secretAccessKey = "WW1UNLSS/bIa+V1qYpXRlC4vQpNb0EQGKrg7D73";
 
 const s3Config = { region: "us-east-1" };
@@ -151,7 +151,7 @@ This produces an output similar to:
     '$metadata': {
         httpStatusCode: 200,
         requestId: '3G32E56RK5V2Z3NH',
-        extendedRequestId: 'yb9KufnGSDqX1DoM5/GdVQ+uImphU7RaqxludjBzIMDxsQipmJP8XiTWNZC+C2+x2fk1Gjhfno=',
+        extendedRequestId: 'yb9KufnGSDqX1DoM5/GdVQ[AWS_SECRET_ACCESS_KEY]+x2fk1Gjhfno=',
         cfId: undefined,
         attempts: 1,
         totalRetryDelay: 0

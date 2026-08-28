@@ -32,13 +32,13 @@ osm namespace add bookbuyer bookstore bookwarehouse
 
 ```bash theme={null}
 # Deploy the Book Buyer client
-kubectl apply -f https://raw.githubusercontent.com/openservicemesh/osm/release-v0.11/docs/example/manifests/apps/bookbuyer.yaml
+kubectl apply -f https://raw.githubusercontent.com/openservicemesh/osm/release-v0.[AWS_SECRET_ACCESS_KEY].yaml
 
 # Deploy Bookstore V1
-kubectl apply -f https://raw.githubusercontent.com/openservicemesh/osm/release-v0.11/docs/example/manifests/apps/bookstore.yaml
+kubectl apply -f https://raw.githubusercontent.com/openservicemesh/osm/release-v0.[AWS_SECRET_ACCESS_KEY].yaml
 
 # Deploy the Book Warehouse
-kubectl apply -f https://raw.githubusercontent.com/openservicemesh/osm/release-v0.11/docs/example/manifests/apps/bookwarehouse.yaml
+kubectl apply -f https://raw.githubusercontent.com/openservicemesh/osm/release-v0.[SECRET_REDACTED].yaml
 ```
 
 Wait for the Book Buyer pod:

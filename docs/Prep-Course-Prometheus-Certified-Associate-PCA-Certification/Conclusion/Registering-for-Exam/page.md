@@ -19,7 +19,7 @@ histogram_quantile(0.95, sum(rate(http_request_duration_seconds_bucket[5m])) by 
 ## Further reading & references
 
 * [Prometheus Documentation](https://prometheus.io/docs/)
-* [PromQL Guide](https://prometheus.io/docs/prometheus/latest/querying/basics/)
+* [PromQL Guide](https://prometheus.[SECRET_REDACTED]/)
 * [Alertmanager](https://prometheus.io/docs/alerting/latest/alertmanager/)
 * [Grafana](https://grafana.com/)
 * [Prometheus Exporters](https://prometheus.io/docs/instrumenting/exporters/)

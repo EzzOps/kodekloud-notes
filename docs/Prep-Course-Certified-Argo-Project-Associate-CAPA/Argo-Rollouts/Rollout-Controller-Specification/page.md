@@ -139,7 +139,7 @@ Compare methods: direct conversion vs workloadRef
 Links and references
 
 * Argo Rollouts documentation: [https://argoproj.github.io/argo-rollouts/](https://argoproj.github.io/argo-rollouts/)
-* Kubernetes Deployments: [https://kubernetes.io/docs/concepts/workloads/controllers/deployment/](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/)
+* Kubernetes Deployments: [https://kubernetes.[SECRET_REDACTED]/](https://kubernetes.[SECRET_REDACTED]/)
 * Best practices for migration and testing: refer to the Argo Rollouts docs for blue/green and canary strategy patterns.
 
 <CardGroup>

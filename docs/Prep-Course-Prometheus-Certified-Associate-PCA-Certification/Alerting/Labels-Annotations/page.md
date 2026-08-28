@@ -107,9 +107,9 @@ This separation of concerns creates a reliable alerting pipeline: Prometheus for
 
 ## Links and references
 
-* [Prometheus Alerting Rules](https://prometheus.io/docs/prometheus/latest/configuration/alerting_rules/)
+* [Prometheus Alerting Rules](https://prometheus.[AWS_SECRET_ACCESS_KEY]alerting_rules/)
 * [Alertmanager Documentation](https://prometheus.io/docs/alerting/latest/alertmanager/)
-* [PromQL Basics](https://prometheus.io/docs/prometheus/latest/querying/basics/)
+* [PromQL Basics](https://prometheus.[SECRET_REDACTED]/)
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prometheus-certified-associate-pca/module/499d9ac5-c2e0-43fe-b000-f08f33fbf2dc/lesson/91532f0e-a56b-46c5-88fe-57e3ad48b1d4" />
@@ -196,7 +196,7 @@ filesystem `/dev/sda3` on `10.0.0.5:9100` is low on space, current available spa
 ## Links and References
 
 * [Alertmanager — Prometheus Alerting](https://prometheus.io/docs/alerting/latest/alertmanager/)
-* [Prometheus Alerting Rules](https://prometheus.io/docs/prometheus/latest/configuration/alerting_rules/)
+* [Prometheus Alerting Rules](https://prometheus.[AWS_SECRET_ACCESS_KEY]alerting_rules/)
 * [Go text/template package](https://pkg.go.dev/text/template)
 * [MDX Documentation](https://mdxjs.com/)
 

@@ -33,7 +33,7 @@ gsutil -m rsync -r /local/data/path gs://my-bucket/path
 ## Links and references
 
 * Dataproc: [https://cloud.google.com/dataproc](https://cloud.google.com/dataproc)
-* GCS connector and Dataproc: [https://cloud.google.com/dataproc/docs/concepts/connectors/cloud-storage](https://cloud.google.com/dataproc/docs/concepts/connectors/cloud-storage)
+* GCS connector and Dataproc: [https://cloud.google.com[AWS_SECRET_ACCESS_KEY]-storage](https://cloud.google.com[AWS_SECRET_ACCESS_KEY]-storage)
 * gsutil: [https://cloud.google.com/storage/docs/gsutil](https://cloud.google.com/storage/docs/gsutil)
 * Storage Transfer Service: [https://cloud.google.com/storage-transfer-service](https://cloud.google.com/storage-transfer-service)
 * Transfer Appliance: [https://cloud.google.com/transfer-appliance](https://cloud.google.com/transfer-appliance)

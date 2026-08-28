@@ -270,8 +270,8 @@ Notes:
 
 ## Links and references
 
-* [Prometheus relabeling docs](https://prometheus.io/docs/prometheus/latest/configuration/configuration/#relabel_config)
-* [Prometheus metric\_relabel\_configs docs](https://prometheus.io/docs/prometheus/latest/configuration/configuration/#metric_relabel_configs)
+* [Prometheus relabeling docs](https://prometheus.[AWS_SECRET_ACCESS_KEY]configuration/#relabel_config)
+* [Prometheus metric\_relabel\_configs docs](https://prometheus.[AWS_SECRET_ACCESS_KEY]configuration/#metric_relabel_configs)
 * [Kubernetes Service Discovery](https://kubernetes.io/docs/concepts/services-networking/service/)
 * [Amazon EC2 documentation](https://docs.aws.amazon.com/ec2/)
 

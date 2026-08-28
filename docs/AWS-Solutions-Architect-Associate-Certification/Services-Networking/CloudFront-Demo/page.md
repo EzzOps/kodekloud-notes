@@ -28,7 +28,7 @@ Before configuring CloudFront, we need an origin to store our files. Although an
        <Code>AccessDenied</Code>
        <Message>Access Denied</Message>
        <RequestId>LEGJQIT1HU0Z8N1X2P1F6X1H15/Requests15</RequestId>
-       <HostId>86u4cayk5wB7dEFlCkNFnKf2dC5D1E7UY2c0/38Vnty6toGvYwXlP8iM8WnDZe</HostId>
+       <HostId>[SECRET_REDACTED]</HostId>
    </Error>
    ```
 

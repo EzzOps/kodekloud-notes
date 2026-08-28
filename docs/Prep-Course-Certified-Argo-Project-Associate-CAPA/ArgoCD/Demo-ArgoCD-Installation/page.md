@@ -51,8 +51,8 @@ If you attempt to apply an ApplicationSet before the ApplicationSet CRD and cont
 Example failure when CRDs are missing:
 
 ```console theme={null}
-kubectl -n argocd apply -f https://gist.github.com/sidd-harth/e798ef3d63308fcffa72df5a1e8ec5c5/raw/28e91e353b3a96c6e164e8f5243de58a47f15aec/application-set-nginx.yml
-error: resource mapping not found for name: "common-nginx-server" namespace: "argocd" from "https://gist.github.com/sidd-harth/e798ef3d63308fcffa72df5a1e8ec5c5/raw/28e91e353b3a96c6e164e8f5243de58a47f15aec/application-set-nginx.yml": no matches for kind "ApplicationSet" in version "argoproj.io/v1alpha1"
+kubectl -n argocd apply -f https://gist.github.com/sidd-[SECRET_REDACTED]/[AWS_SECRET_ACCESS_KEY]/application-set-nginx.yml
+error: resource mapping not found for name: "common-nginx-server" namespace: "argocd" from "https://gist.github.com/sidd-[SECRET_REDACTED]/[AWS_SECRET_ACCESS_KEY]/application-set-nginx.yml": no matches for kind "ApplicationSet" in version "argoproj.io/v1alpha1"
 ensure CRDs are installed first
 ```
 
@@ -70,7 +70,7 @@ No resources found
 After switching to the correct context and ensuring the CRDs/controller are present, applying the ApplicationSet should succeed and create the ApplicationSet resource:
 
 ```console theme={null}
-kubectl -n argocd apply -f https://gist.github.com/sidd-harth/e798ef3d63308fcffa72df5a1e8ec5c5/raw/28e91e353b3a96c6e164e8f5243de58a47f15aec/application-set-nginx.yml
+kubectl -n argocd apply -f https://gist.github.com/sidd-[SECRET_REDACTED]/[AWS_SECRET_ACCESS_KEY]/application-set-nginx.yml
 applicationset.argoproj.io/common-nginx-server created
 
 kubectl get applicationsets -n argocd

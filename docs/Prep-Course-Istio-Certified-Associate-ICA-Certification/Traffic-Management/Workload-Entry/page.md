@@ -137,7 +137,7 @@ Be prepared to explain
 
 References
 
-* Istio WorkloadEntry reference: [https://istio.io/latest/docs/reference/config/networking/workload-entry/](https://istio.io/latest/docs/reference/config/networking/workload-entry/)
+* Istio WorkloadEntry reference: [https://istio.io[AWS_SECRET_ACCESS_KEY]/workload-entry/](https://istio.io[AWS_SECRET_ACCESS_KEY]/workload-entry/)
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/istio-certified-associate/module/f3f5ca4b-b8d6-4788-9553-9ed765709933/lesson/77292246-0e9e-4099-af8f-5d8578127806" />

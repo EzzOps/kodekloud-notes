@@ -92,7 +92,7 @@ Further topics you may explore: runnable pass-through, more advanced LCEL concep
 * [OpenAI API](https://platform.openai.com/docs)
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langchain/module/754457c5-1386-422b-98ad-3342dfc6aab3/lesson/8dffe6ae-3a79-440a-a04c-7397040ebc9a" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[SECRET_REDACTED]-1386-422b-98ad-3342dfc6aab3/lesson/8dffe6ae-3a79-440a-a04c-7397040ebc9a" />
 </CardGroup>
 
 

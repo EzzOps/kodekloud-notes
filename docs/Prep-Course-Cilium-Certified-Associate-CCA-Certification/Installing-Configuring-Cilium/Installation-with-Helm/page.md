@@ -144,7 +144,7 @@ bpf:
 * Use the table above to quickly reference common cilium CLI commands.
 * Consult the official documentation and Helm chart values:
   * Cilium Documentation: [https://cilium.io/docs/](https://cilium.io/docs/)
-  * Cilium Helm chart / values: [https://github.com/cilium/cilium/tree/main/install/kubernetes/cilium](https://github.com/cilium/cilium/tree/main/install/kubernetes/cilium)
+  * Cilium Helm chart / values: [https://github.[SECRET_REDACTED]](https://github.[SECRET_REDACTED])
   * Cilium CLI releases: [https://github.com/cilium/cilium-cli/releases](https://github.com/cilium/cilium-cli/releases)
 
 With these steps you can install and configure Cilium using the CLI, preview resources before applying changes, and supply Helm values either inline or via a values file.

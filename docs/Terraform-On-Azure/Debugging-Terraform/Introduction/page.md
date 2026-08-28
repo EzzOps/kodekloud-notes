@@ -36,7 +36,7 @@ Summary and best practices
 Links and references
 
 * Terraform documentation: [https://www.terraform.io/docs](https://www.terraform.io/docs)
-* AzureRM provider docs: [https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs)
+* AzureRM provider docs: [https://registry.terraform.io[AWS_SECRET_ACCESS_KEY]](https://registry.terraform.io[AWS_SECRET_ACCESS_KEY])
 * Azure portal: [https://portal.azure.com](https://portal.azure.com)
 
 <CardGroup>

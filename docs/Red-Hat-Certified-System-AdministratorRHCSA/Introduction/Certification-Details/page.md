@@ -1,6 +1,6 @@
 # Certification Details
 
-Source: https://notes.kodekloud.com/docs/Red-Hat-Certified-System-AdministratorRHCSA/Introduction/Certification-Details/page
+Source: https://notes.kodekloud.com/docs/Red-Hat-Certified-System-[SECRET_REDACTED]-Details/page
 
 This article provides information about the RHCSA exam, including objectives, structure, registration details, and preparation strategies for success in Linux administration.
 

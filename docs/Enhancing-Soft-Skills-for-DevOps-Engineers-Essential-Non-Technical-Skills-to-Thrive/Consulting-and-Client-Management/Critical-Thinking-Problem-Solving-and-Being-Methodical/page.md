@@ -117,7 +117,7 @@ Thank you for joining this lesson! Mastering these soft skills will elevate your
 * [Kubernetes Basics](https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/)
 * [Root Cause Analysis (RCA)](https://en.wikipedia.org/wiki/Root_cause_analysis)
 * [Design Thinking Overview](https://www.interaction-design.org/literature/topics/design-thinking)
-* [Value Stream Mapping Guide](https://www.lean.org/WhoWeAre/NewsArticleDocuments/vsmprimer.pdf)
+* [Value Stream Mapping Guide](https://www.lean.org[AWS_SECRET_ACCESS_KEY].pdf)
 * [Continuous Improvement in DevOps](https://azure.microsoft.com/en-us/overview/devops/continuous-improvement/)
 
 <CardGroup>

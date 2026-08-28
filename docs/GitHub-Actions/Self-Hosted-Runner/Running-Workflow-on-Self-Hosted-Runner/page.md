@@ -6,7 +6,7 @@ curl -o actions-runner-linux-x64-2.310.2.tar.gz -L \
   https://github.com/actions/runner/releases/download/v2.310.2/actions-runner-linux-x64-2.310.2.tar.gz
 
 # 3. (Optional) Verify checksum
-echo "fb23a1c715ea0c501fa60beefcf295e26cfbbf849f3  actions-runner-linux-x64-2.310.2.tar.gz" \
+echo "[SECRET_REDACTED]  actions-runner-linux-x64-2.310.2.tar.gz" \
   | sha256sum --check
 
 # 4. Unpack the archive

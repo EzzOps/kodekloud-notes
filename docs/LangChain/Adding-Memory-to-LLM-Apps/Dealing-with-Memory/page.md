@@ -37,7 +37,7 @@ Further reading and references
 * Vector store and embedding solutions (Faiss, Milvus, Pinecone, Weaviate)
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langchain/module/abd1e527-3f6e-4e04-b421-3b1f8de5c69d/lesson/e48e21f4-e63a-4cc1-83b3-5f4d6c5582c3" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[SECRET_REDACTED]-3f6e-4e04-b421-3b1f8de5c69d/lesson/e48e21f4-e63a-4cc1-83b3-5f4d6c5582c3" />
 </CardGroup>
 
 

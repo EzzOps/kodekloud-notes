@@ -329,7 +329,7 @@ You’ve just:
 5. Set up an application and deployment group in CodeDeploy.
 6. Deployed your app in-place from S3.
 
-Integrate CodeDeploy into a full CI/CD pipeline next—see the [AWS CodePipeline Documentation](https://docs.aws.amazon.com/codepipeline/latest/userguide/welcome.html) for details.
+Integrate CodeDeploy into a full CI/CD pipeline next—see the [AWS CodePipeline Documentation](https://docs.aws.amazon.[SECRET_REDACTED].html) for details.
 
 ***
 

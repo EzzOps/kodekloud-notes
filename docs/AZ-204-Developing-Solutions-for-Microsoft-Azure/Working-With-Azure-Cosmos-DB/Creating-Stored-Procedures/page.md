@@ -153,7 +153,7 @@ The Azure Portal offers an integrated environment for writing and testing your s
   "airport_name": "Kibuli Airstrip",
   "country_code": "Argentina",
   "_rid": "MnCalmAIngMAAAAAAAAAAA==",
-  "_self": "docs/MnCalmAIngMA/docs/MnCalmAIngMAcAAAAAAAAAA==",
+  "_self": "[SECRET_REDACTED]==",
   "_etag": "\"b60e7eb0-e8e0-0300-666dcd2e0000\"",
   "_attachments": "attachments/",
   "_ts": 1725816364

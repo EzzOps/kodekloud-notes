@@ -147,7 +147,7 @@ Highlights of this configuration:
 * The `"Host"` section manages settings such as CORS configurations.
 
 <Callout icon="lightbulb">
-  Be sure to secure sensitive information and never commit production secrets to your repository. Refer to [Azure security best practices](https://learn.microsoft.com/azure/security/fundamentals/overview) for more information.
+  Be sure to secure sensitive information and never commit production secrets to your repository. Refer to [Azure security best practices](https://learn.microsoft.[AWS_SECRET_ACCESS_KEY]) for more information.
 </Callout>
 
 ## Summary

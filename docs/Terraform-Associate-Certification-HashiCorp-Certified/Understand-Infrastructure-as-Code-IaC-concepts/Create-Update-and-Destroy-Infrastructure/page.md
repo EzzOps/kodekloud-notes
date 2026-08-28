@@ -344,7 +344,7 @@ Once you have reviewed the changes, apply the updates with:
 ```bash theme={null}
 $ terraform apply
 local_file.pet: Refreshing state...
-[id=feafccdae259f25533749abfb90e27558256459]
+[id[AWS_SECRET_ACCESS_KEY]]
 
 -/+ destroy and then create replacement
 ...
@@ -356,11 +356,11 @@ Only 'yes' will be accepted to approve.
 
 Enter a value: yes
 local_file.pet: Destroying...
-[id=feafccdae259f25533749abfb90e27558256459]
+[id[AWS_SECRET_ACCESS_KEY]]
 local_file.pet: Destruction complete after 0s
 local_file.pet: Creating...
 local_file.pet: Creation complete after 0s
-[id=feafccdae259f25533749abfb90e27558256459]
+[id[AWS_SECRET_ACCESS_KEY]]
 
 Apply complete! Resources: 1 added, 0 changed, 1 destroyed.
 ```
@@ -372,7 +372,7 @@ To remove a resource completely from your infrastructure, use the `terraform des
 ```bash theme={null}
 $ terraform destroy
 local_file.pet: Refreshing state...
-[id=5f8fb950ac60f7f23ef968097cda0a1fd3c11bdf]
+[id=[AWS_SECRET_ACCESS_KEY]]
 
 An execution plan has been generated and is shown below.
 Resource actions are indicated with the following symbols:
@@ -386,7 +386,7 @@ Terraform will perform the following actions:
       - directory_permission = "0777" -> null
       - file_permission     = "0700" -> null
       - filename            = "/root/pet.txt" -> null
-      - id                  = "5f8fb950ac60f7f23ef968097cda0a1fd3c11bdf" -> null
+      - id                  = "[AWS_SECRET_ACCESS_KEY]" -> null
     }
 
 Plan: 0 to add, 0 to change, 1 to destroy.
@@ -396,7 +396,7 @@ Terraform will destroy all your managed infrastructure, as shown above.
 There is no undo. Only 'yes' will be accepted to confirm.
 
 Enter a value: yes
-local_file.pet: Destroying... [id=5f8fb950ac60f7f23ef968097cda0a1fd3c11bdf]
+local_file.pet: Destroying... [id=[AWS_SECRET_ACCESS_KEY]]
 local_file.pet: Destruction complete after 0s
 
 Destroy complete! Resources: 1 destroyed.

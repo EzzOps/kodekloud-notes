@@ -49,7 +49,7 @@ During the **Docker Push** step you’ll see output similar to:
 ```bash theme={null}
 /usr/bin/docker buildx build \
   --iidfile /tmp/docker-actions-toolkit/iidfile \
-  --tag youruser/solar-system:e8095fb98a5b01249548095eaf3a9c371c274430 \
+  --tag youruser/solar-system:[AWS_SECRET_ACCESS_KEY] \
   --push .
 ```
 
@@ -60,7 +60,7 @@ This confirms that Buildx is pushing each layer of your image to Docker Hub.
 Once the workflow completes:
 
 1. Go to your repository on [Docker Hub](https://hub.docker.com/).
-2. Look under **Tags** for the SHA-based tag (e.g., `e8095fb98a5b01249548095eaf3a9c371c274430`).
+2. Look under **Tags** for the SHA-based tag (e.g., `[AWS_SECRET_ACCESS_KEY]`).
 
 <Callout icon="triangle-alert">
   If you see authentication errors, double-check that `DOCKERHUB_TOKEN` is up to date and has the correct permissions.

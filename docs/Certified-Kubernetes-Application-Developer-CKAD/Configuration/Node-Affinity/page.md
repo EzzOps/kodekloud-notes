@@ -40,7 +40,7 @@ spec:
       image: data-processor
   affinity:
     nodeAffinity:
-      requiredDuringSchedulingIgnoredDuringExecution:
+      [SECRET_REDACTED]:
         nodeSelectorTerms:
           - matchExpressions:
               - key: size
@@ -52,7 +52,7 @@ spec:
 ### Explanation of the Configuration
 
 * Under `spec`, the `affinity` field is introduced with a child field named `nodeAffinity`.
-* The property `requiredDuringSchedulingIgnoredDuringExecution` ensures that the scheduler places the Pod on a node that complies with the specified rules. Once the Pod runs, modifications to node labels are ignored.
+* The property `[SECRET_REDACTED]` ensures that the scheduler places the Pod on a node that complies with the specified rules. Once the Pod runs, modifications to node labels are ignored.
 * Inside `nodeSelectorTerms` (an array), you define one or more match expressions. Each match expression includes:
   * A `key` (e.g., "size")
   * An `operator` (e.g., `In`) that specifies how the label's value is evaluated using the provided `values` list. In this case, the Pod will be placed on nodes where the label "size" is set to "Large".
@@ -76,7 +76,7 @@ spec:
       image: data-processor
   affinity:
     nodeAffinity:
-      requiredDuringSchedulingIgnoredDuringExecution:
+      [SECRET_REDACTED]:
         nodeSelectorTerms:
           - matchExpressions:
               - key: size
@@ -102,7 +102,7 @@ spec:
       image: data-processor
   affinity:
     nodeAffinity:
-      requiredDuringSchedulingIgnoredDuringExecution:
+      [SECRET_REDACTED]:
         nodeSelectorTerms:
           - matchExpressions:
               - key: size

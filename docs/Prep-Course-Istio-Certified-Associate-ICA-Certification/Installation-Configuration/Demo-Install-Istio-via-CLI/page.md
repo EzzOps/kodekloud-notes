@@ -196,7 +196,7 @@ kubectl get pods
 
 * Istio Ambient Mode (official docs): [https://istio.io/latest/docs/setup/additional-setup/ambient/](https://istio.io/latest/docs/setup/additional-setup/ambient/)
 * Gateway API (GitHub releases): [https://github.com/kubernetes-sigs/gateway-api](https://github.com/kubernetes-sigs/gateway-api)
-* istioctl documentation: [https://istio.io/latest/docs/reference/commands/istioctl/](https://istio.io/latest/docs/reference/commands/istioctl/)
+* istioctl documentation: [https://istio.io[AWS_SECRET_ACCESS_KEY]/](https://istio.io[AWS_SECRET_ACCESS_KEY]/)
 
 That's the end of the demo — you should now have a working Istio ambient installation, observe L4 traffic handled by ztunnel, and understand when to use waypoint proxies for L7 features.
 

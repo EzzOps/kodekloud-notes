@@ -141,7 +141,7 @@ Resume patterns:
 * AWS S3: [https://aws.amazon.com/s3/](https://aws.amazon.com/s3/)
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langgraph/module/e0cd494a-00a7-4c52-88e9-b3932b03ff9f/lesson/61700334-8d53-4e7a-b8a3-23360d19e653" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[SECRET_REDACTED]-00a7-4c52-88e9-b3932b03ff9f/lesson/61700334-8d53-4e7a-b8a3-23360d19e653" />
 </CardGroup>
 
 

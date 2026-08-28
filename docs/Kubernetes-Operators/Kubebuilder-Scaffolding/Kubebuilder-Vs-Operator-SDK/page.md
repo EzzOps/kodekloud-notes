@@ -327,7 +327,7 @@ Once you have this map, the generated project becomes a set of predictable drawe
 
 * [Kubebuilder book — Project layout and concepts](https://book.kubebuilder.io/)
 * [Controller Runtime (controller-runtime)](https://pkg.go.dev/sigs.k8s.io/controller-runtime)
-* [Kubernetes API conventions](https://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api-conventions.md)
+* [Kubernetes API conventions](https://github.com/kubernetes/[AWS_SECRET_ACCESS_KEY]/sig-architecture/api-conventions.md)
 * [Kustomize](https://kustomize.io/)
 * [controller-gen (controller-tools)](https://github.com/kubernetes-sigs/controller-tools)
 * [Go module docs](https://golang.org/ref/mod)

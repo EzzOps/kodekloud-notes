@@ -12,11 +12,11 @@ Congratulations on completing the AWS S3 course! You should now have a solid und
 
 | Feature                         | Description                                         | Learn More                                                                                                    |
 | ------------------------------- | --------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- |
-| Bucket & Object Management      | Create, list, and organize buckets and objects      | [AWS S3 Buckets](https://docs.aws.amazon.com/AmazonS3/latest/userguide/UsingBucket.html)                      |
+| Bucket & Object Management      | Create, list, and organize buckets and objects      | [AWS S3 Buckets](https://docs.aws.amazon.[SECRET_REDACTED].html)                      |
 | Versioning & Lifecycle Policies | Maintain object versions and automate cleanup rules | [Data Lifecycle](https://docs.aws.amazon.com/AmazonS3/latest/userguide/object-lifecycle-mgmt.html)            |
-| Cross-Region Replication        | Replicate data across AWS Regions for resilience    | [Replication](https://docs.aws.amazon.com/AmazonS3/latest/userguide/replication.html)                         |
+| Cross-Region Replication        | Replicate data across AWS Regions for resilience    | [Replication](https://docs.aws.amazon.[SECRET_REDACTED].html)                         |
 | Encryption & Access Control     | Secure data at rest/in-transit, manage permissions  | [Security Best Practices](https://docs.aws.amazon.com/AmazonS3/latest/userguide/security-best-practices.html) |
-| Static Website Hosting          | Host websites directly from S3                      | [Website Hosting](https://docs.aws.amazon.com/AmazonS3/latest/userguide/WebsiteHosting.html)                  |
+| Static Website Hosting          | Host websites directly from S3                      | [Website Hosting](https://docs.aws.amazon.com/[AWS_SECRET_ACCESS_KEY].html)                  |
 
 <Callout icon="lightbulb">
   Dive deeper into AWS CLI, Terraform provisioning, and Amazon CloudFront to further optimize your applications.\

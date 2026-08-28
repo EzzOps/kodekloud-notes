@@ -171,13 +171,13 @@ pipeline {
 Example console output lines (trimmed):
 
 ```text theme={null}
-+ echo image - siddharth67/solar-system:c9dc5eb9b28147642a87fb0e2c8f9f2845fa4b1d
-image - siddharth67/solar-system:c9dc5eb9b28147642a87fb0e2c8f9f2845fa4b1d
-+ trivy image siddharth67/solar-system:c9dc5eb9b28147642a87fb0e2c8f9f2845fa4b1d --severity LOW,MEDIUM,HIGH --exit-code 0 --quiet --format json -o trivy-image-MEDIUM-results.json
-+ trivy image siddharth67/solar-system:c9dc5eb9b28147642a87fb0e2c8f9f2845fa4b1d --severity CRITICAL --exit-code 1 --quiet --format json -o trivy-image-CRITICAL-results.json
++ echo image - siddharth67/solar-system:[AWS_SECRET_ACCESS_KEY]
+image - siddharth67/solar-system:[AWS_SECRET_ACCESS_KEY]
++ trivy image siddharth67/solar-system:[AWS_SECRET_ACCESS_KEY] --severity LOW,MEDIUM,HIGH --exit-code 0 --quiet --format json -o trivy-image-MEDIUM-results.json
++ trivy image siddharth67/solar-system:[AWS_SECRET_ACCESS_KEY] --severity CRITICAL --exit-code 1 --quiet --format json -o trivy-image-CRITICAL-results.json
 Loading library dasher-trusted-shared-library@featureTrivyScan
-Found match: refs/heads/featureTrivyScan revision 6cbbbd114ce8938745132865995d01431d1b0d31
-Checking out Revision 6cbbbd114ce8938745132865995d01431d1b0d31 (featureTrivyScan)
+Found match: refs/heads/featureTrivyScan revision [AWS_SECRET_ACCESS_KEY]
+Checking out Revision [AWS_SECRET_ACCESS_KEY] (featureTrivyScan)
 ```
 
 ## Reports and artifacts

@@ -20,7 +20,7 @@ Below is an example of a token returned from a login response:
 
 ```json theme={null}
 {
-  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjEyOGM3ZjQ0MzU0NjBiM2E2MTdiMWE2IiwiaWF0IjoxNjg3NjQ5NzY0LCJleHBfc2VyaWVzIjoxNjg3NjUzNTY0fQ.E0DENTIZORD9RAdfHqboxTroapWYBqcW9zAcU99YomB_3u_lP8Rs"
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.[SECRET_REDACTED].E0DENTIZORD9RAdfHqboxTroapWYBqcW9zAcU99YomB_3u_lP8Rs"
 }
 ```
 

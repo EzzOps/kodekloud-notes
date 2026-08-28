@@ -125,7 +125,7 @@ This guide has walked you through the process of creating, configuring, and retr
 
 For further reading, explore these resources:
 
-* [AWS Secrets Manager Documentation](https://docs.aws.amazon.com/secretsmanager/latest/userguide/intro.html)
+* [AWS Secrets Manager Documentation](https://docs.aws.amazon.[SECRET_REDACTED].html)
 * [AWS SDK for Java](https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/home.html)
 * [AWS SDK for JavaScript](https://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/home.html)
 

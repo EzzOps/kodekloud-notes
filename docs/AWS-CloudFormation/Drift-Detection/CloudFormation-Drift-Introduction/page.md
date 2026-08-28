@@ -35,7 +35,7 @@ Running drift detection
 aws cloudformation detect-stack-drift --stack-name my-stack
 ```
 
-Reference: [detect-stack-drift (AWS CLI)](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/detect-stack-drift.html)
+Reference: [detect-stack-drift (AWS CLI)](https://docs.aws.amazon.[AWS_SECRET_ACCESS_KEY]detect-stack-drift.html)
 
 * Poll the detection job status using the returned detection ID:
 
@@ -43,7 +43,7 @@ Reference: [detect-stack-drift (AWS CLI)](https://docs.aws.amazon.com/cli/latest
 aws cloudformation describe-stack-drift-detection-status --stack-drift-detection-id <id>
 ```
 
-Reference: [describe-stack-drift-detection-status (AWS CLI)](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/describe-stack-drift-detection-status.html)
+Reference: [describe-stack-drift-detection-status (AWS CLI)](https://docs.aws.amazon.[AWS_SECRET_ACCESS_KEY]describe-stack-drift-detection-status.html)
 
 Supported drift states (resource and stack level)
 
@@ -59,7 +59,7 @@ Supported drift states (resource and stack level)
 </Callout>
 
 <Callout icon="warning">
-  Not all resource types and properties are supported for drift detection. Some generated values or sensitive attributes are intentionally excluded. Before relying on drift detection for compliance, consult the CloudFormation drift documentation for the list of supported resources and properties: [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-drift.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-drift.html)
+  Not all resource types and properties are supported for drift detection. Some generated values or sensitive attributes are intentionally excluded. Before relying on drift detection for compliance, consult the CloudFormation drift documentation for the list of supported resources and properties: [https://docs.aws.amazon.com/[AWS_SECRET_ACCESS_KEY]-drift.html](https://docs.aws.amazon.com/[AWS_SECRET_ACCESS_KEY]-drift.html)
 </Callout>
 
 When to run drift detection
@@ -81,9 +81,9 @@ Practical guidance and next steps
 
 Links and references
 
-* [CloudFormation Drift Detection documentation](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-drift.html)
-* [detect-stack-drift (AWS CLI)](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/detect-stack-drift.html)
-* [describe-stack-drift-detection-status (AWS CLI)](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/describe-stack-drift-detection-status.html)
+* [CloudFormation Drift Detection documentation](https://docs.aws.amazon.com/[AWS_SECRET_ACCESS_KEY]-drift.html)
+* [detect-stack-drift (AWS CLI)](https://docs.aws.amazon.[AWS_SECRET_ACCESS_KEY]detect-stack-drift.html)
+* [describe-stack-drift-detection-status (AWS CLI)](https://docs.aws.amazon.[AWS_SECRET_ACCESS_KEY]describe-stack-drift-detection-status.html)
 
 Summary
 CloudFormation Drift detection helps you identify configuration divergence between your stack templates and the actual deployed resources. Use the console or AWS CLI to run detection, inspect resource-level differences, and then decide whether to update templates, revert manual changes, or redeploy resources via CloudFormation to restore the desired state.

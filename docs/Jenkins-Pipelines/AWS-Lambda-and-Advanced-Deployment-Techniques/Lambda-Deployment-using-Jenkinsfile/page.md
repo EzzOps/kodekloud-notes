@@ -304,7 +304,7 @@ Once the Jenkins job is triggered on the main branch, the Lambda S3 Upload & Dep
        "OptimizationStatus": "Off"
      },
      "RuntimeVersionConfig": {
-       "RuntimeVersionArn": "arn:aws:lambda:us-east-2::runtime:ad9b28ae231dfc4c3235e183024ccb4d9de1saa1479d98295f898140041247f7"
+       "RuntimeVersionArn": "arn:aws:lambda:us-east-2::runtime:[SECRET_REDACTED]"
      },
      "LoggingConfig": {
        "LogFormat": "Text",

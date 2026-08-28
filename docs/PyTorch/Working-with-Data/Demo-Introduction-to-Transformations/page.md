@@ -340,9 +340,9 @@ In this guide, we demonstrated techniques for working with preloaded datasets an
 </Callout>
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/pytorch/module/f9d4b50b-328e-4cf7-a22a-3b236bf0abcd/lesson/d5f6d294-6a83-4f19-8182-fa85c98fa487" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[AWS_SECRET_ACCESS_KEY]-328e-4cf7-a22a-3b236bf0abcd/lesson/d5f6d294-6a83-4f19-8182-fa85c98fa487" />
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/pytorch/module/f9d4b50b-328e-4cf7-a22a-3b236bf0abcd/lesson/84df5a52-c34c-4810-8c04-4f5a504f88b7" />
+  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.[AWS_SECRET_ACCESS_KEY]-328e-4cf7-a22a-3b236bf0abcd/lesson/84df5a52-c34c-4810-8c04-4f5a504f88b7" />
 </CardGroup>
 
 

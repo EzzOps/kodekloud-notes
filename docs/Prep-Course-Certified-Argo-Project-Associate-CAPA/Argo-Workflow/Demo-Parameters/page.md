@@ -213,7 +213,7 @@ Key points
 Submit the workflow and watch the run (example using a public manifest URL):
 
 ```bash theme={null}
-argo -n argo submit https://gist.githubusercontent.com/sidd-harth/d8e60353a95606b13f9c41f6fb59bf34/raw/66ae1738a05943a9ef7a220f3d49425d59993c90/workflow-2.yml --watch
+argo -n argo submit https://gist.githubusercontent.com/sidd-[SECRET_REDACTED]/[AWS_SECRET_ACCESS_KEY]/workflow-2.yml --watch
 ```
 
 Sample CLI output while the workflow is running:

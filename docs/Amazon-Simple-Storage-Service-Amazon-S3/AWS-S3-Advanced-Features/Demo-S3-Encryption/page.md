@@ -163,7 +163,7 @@ To separate S3 permissions from decryption rights, create and use your own KMS C
   <Code>AccessDenied</Code>
   <Message>The ciphertext refers to a customer master key that does not exist, does not exist in this region, or you are not allowed to access.</Message>
   <RequestId>45V16V31G01DFAB5</RequestId>
-  <HostId>1kv(0M+PFX6f0xACL7kpxnmxFkHerBHM2xYJWFT6uBiBkbPqbV6YBUOzVwViTRkbIDhk=</HostId>
+  <HostId>1kv([SECRET_REDACTED]=</HostId>
 </Error>
 ```
 
@@ -203,7 +203,7 @@ To enforce your CMK on all future uploads:
   </Message>
   <RequestId>37V63DWBW8NS8FMT</RequestId>
   <HostId>
-    4THW1yNqrLpqxTPMR3ZMBPTiGfQlf19eYGDKu1g1u3F1qPClUs22s1UxYtDADWCRDB=
+    [SECRET_REDACTED]=
   </HostId>
 </Error>
 ```

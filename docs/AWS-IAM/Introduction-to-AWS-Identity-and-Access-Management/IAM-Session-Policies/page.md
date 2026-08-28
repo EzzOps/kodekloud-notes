@@ -117,8 +117,8 @@ This returns temporary credentials:
 {
   "Credentials": {
     "AccessKeyId": "ASIAXXXX...",
-    "SecretAccessKey": "wJalrXUtnFEMI/K7MDENG/bPxRfiCYzEXAMPLEKEY",
-    "SessionToken": "IQoJb3JpZ2luX2VjEO3//////////wEaCXVzLWVhc3QtMSJGMEQCH3...",
+    "SecretAccessKey": "[SECRET_REDACTED]",
+    "SessionToken": "[SECRET_REDACTED]...",
     "Expiration": "2023-08-01T12:34:56Z"
   }
 }
@@ -128,8 +128,8 @@ This returns temporary credentials:
 
 ```bash theme={null}
 export AWS_ACCESS_KEY_ID="ASIAXXXX..."
-export AWS_SECRET_ACCESS_KEY="wJalrXUtnFEMI/K7MDENG/bPxRfiCYzEXAMPLEKEY"
-export AWS_SESSION_TOKEN="IQoJb3JpZ2luX2VjEO3//////////wEaCXVzLWVhc3QtMSJGMEQCH3..."
+export AWS_SECRET_ACCESS_KEY="[SECRET_REDACTED]"
+export AWS_SESSION_TOKEN="[SECRET_REDACTED]..."
 ```
 
 <Callout icon="triangle-alert">

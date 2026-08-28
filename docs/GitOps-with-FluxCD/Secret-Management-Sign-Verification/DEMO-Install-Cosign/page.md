@@ -149,7 +149,7 @@ By integrating Bitnami Sealed Secrets with FluxCD and Kustomize, you can store e
 ## Links and References
 
 * [Bitnami Sealed Secrets GitHub](https://github.com/bitnami-labs/sealed-secrets)
-* [FluxCD Kustomization Documentation](https://fluxcd.io/docs/components/kustomize/kustomization/)
+* [FluxCD Kustomization Documentation](https://fluxcd.io[AWS_SECRET_ACCESS_KEY]/)
 * [Kustomize Tooling](https://kubectl.docs.kubernetes.io/guides/introduction/kustomization/)
 * [Kubernetes Secrets](https://kubernetes.io/docs/concepts/configuration/secret/)
 

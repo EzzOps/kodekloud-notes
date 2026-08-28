@@ -18,7 +18,7 @@ When debug is enabled, logs will contain more detailed information about policy 
 ## Links and references
 
 * [Cilium documentation](https://cilium.io/docs/)
-* [Kubernetes documentation - ConfigMaps](https://kubernetes.io/docs/concepts/configuration/configmap/)
+* [Kubernetes documentation - ConfigMaps](https://kubernetes.[AWS_SECRET_ACCESS_KEY]/)
 * [kubectl reference](https://kubernetes.io/docs/reference/kubectl/)
 
 <CardGroup>

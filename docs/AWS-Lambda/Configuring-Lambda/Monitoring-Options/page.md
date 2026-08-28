@@ -32,7 +32,7 @@ If you need an aggregated view across all functions, CloudWatch dashboards can d
 
 ## Lambda Insights
 
-[Lambda Insights](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Lambda-Insights.html) extends CloudWatch with deeper visibility into function behavior, resource utilization, and performance anomalies.
+[Lambda Insights](https://docs.aws.amazon.[SECRET_REDACTED]-Insights.html) extends CloudWatch with deeper visibility into function behavior, resource utilization, and performance anomalies.
 
 Key benefits:
 
@@ -84,7 +84,7 @@ Steps to enable:
 
 * [AWS Lambda Documentation](https://docs.aws.amazon.com/lambda/latest/dg/welcome.html)
 * [Amazon CloudWatch Metrics](https://docs.aws.amazon.com/lambda/latest/dg/monitoring-metrics.html)
-* [Lambda Insights Overview](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Lambda-Insights.html)
+* [Lambda Insights Overview](https://docs.aws.amazon.[SECRET_REDACTED]-Insights.html)
 * [AWS X-Ray Developer Guide](https://docs.aws.amazon.com/xray/latest/devguide/aws-xray.html)
 * [VPC Flow Logs User Guide](https://docs.aws.amazon.com/vpc/latest/userguide/flow-logs.html)
 

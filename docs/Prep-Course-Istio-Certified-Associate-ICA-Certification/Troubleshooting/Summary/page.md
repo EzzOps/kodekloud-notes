@@ -1,6 +1,6 @@
 # Summary
 
-Source: https://notes.kodekloud.com/docs/Prep-Course-Istio-Certified-Associate-ICA-Certification/Troubleshooting/Summary/page
+Source: https://notes.kodekloud.com/docs/Prep-Course-Istio-Certified-Associate-ICA-[SECRET_REDACTED]
 
 Overview of Istio troubleshooting and exam strategies for ICA including sidecar injection, Service and VirtualService validation, istioctl and kubectl diagnostics, logs, and SSH exam procedures
 
@@ -76,7 +76,7 @@ Use the following commands to quickly identify common Istio and Kubernetes issue
 
 * [Istio Documentation](https://istio.io/latest/docs/)
 * [Kubernetes Documentation](https://kubernetes.io/docs/)
-* [istioctl CLI reference](https://istio.io/latest/docs/reference/commands/istioctl/)
+* [istioctl CLI reference](https://istio.io[AWS_SECRET_ACCESS_KEY]/)
 * [ICA Course — KodeKloud](https://learn.kodekloud.com/user/courses/istio-service-mesh)
 
 Congratulations on completing this course — you should now be ready to attempt the mock exams and the real ICA exam. Good luck!

@@ -85,7 +85,7 @@ Probabilistic sampling (simple percentage-based sampling)
 * This sampler is fast and low-overhead but cannot inspect full trace content to preferentially keep errors or high-latency traces.
 
 Reference: Probabilistic Sampling Processor (GitHub)\
-[https://github.com/open-telemetry/opentelemetry-collector-contrib/tree/main/processor/probabilisticsamplerprocessor](https://github.com/open-telemetry/opentelemetry-collector-contrib/tree/main/processor/probabilisticsamplerprocessor)
+[https://github.com/open-telemetry/opentelemetry-collector-contrib/tree/main[AWS_SECRET_ACCESS_KEY]](https://github.com/open-telemetry/opentelemetry-collector-contrib/tree/main[AWS_SECRET_ACCESS_KEY])
 
 <Frame>
   <img alt="The image shows a GitHub page for the &#x22;Probabilistic Sampling Processor&#x22; within the OpenTelemetry collector contributions. It includes status details, code ownership, and a description of the processor's functionality." />
@@ -163,7 +163,7 @@ Tail sampling (sample after trace completion)
 * Useful when you must always keep errors, high-latency traces, or apply complex composite rules.
 
 Reference: tailsamplingprocessor docs\
-[https://github.com/open-telemetry/opentelemetry-collector-contrib/tree/main/processor/tailsamplingprocessor](https://github.com/open-telemetry/opentelemetry-collector-contrib/tree/main/processor/tailsamplingprocessor)
+[https://github.com/open-telemetry/opentelemetry-collector-[SECRET_REDACTED]](https://github.com/open-telemetry/opentelemetry-collector-[SECRET_REDACTED])
 
 Key configuration options
 
@@ -301,8 +301,8 @@ Comparison: Probabilistic vs Tail Sampling
 
 Links and references
 
-* Probabilistic Sampling Processor (GitHub): [https://github.com/open-telemetry/opentelemetry-collector-contrib/tree/main/processor/probabilisticsamplerprocessor](https://github.com/open-telemetry/opentelemetry-collector-contrib/tree/main/processor/probabilisticsamplerprocessor)
-* Tail Sampling Processor (GitHub): [https://github.com/open-telemetry/opentelemetry-collector-contrib/tree/main/processor/tailsamplingprocessor](https://github.com/open-telemetry/opentelemetry-collector-contrib/tree/main/processor/tailsamplingprocessor)
+* Probabilistic Sampling Processor (GitHub): [https://github.com/open-telemetry/opentelemetry-collector-contrib/tree/main[AWS_SECRET_ACCESS_KEY]](https://github.com/open-telemetry/opentelemetry-collector-contrib/tree/main[AWS_SECRET_ACCESS_KEY])
+* Tail Sampling Processor (GitHub): [https://github.com/open-telemetry/opentelemetry-collector-[SECRET_REDACTED]](https://github.com/open-telemetry/opentelemetry-collector-[SECRET_REDACTED])
 * telemetrygen (example generator): [https://github.com/open-telemetry/opentelemetry-collector-contrib/tree/main/cmd/telemetrygen](https://github.com/open-telemetry/opentelemetry-collector-contrib/tree/main/cmd/telemetrygen)
 * OpenTelemetry Collector docs: [https://opentelemetry.io/docs/collector/](https://opentelemetry.io/docs/collector/)
 

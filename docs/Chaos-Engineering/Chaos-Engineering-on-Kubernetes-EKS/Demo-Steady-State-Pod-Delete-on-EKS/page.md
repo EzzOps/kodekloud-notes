@@ -73,7 +73,7 @@ Analyze latency, throughput, and error rates to solidify your steady state basel
 
 * [AWS Fault Injection Simulator (FIS)](https://aws.amazon.com/fis/)
 * [Amazon EKS Documentation](https://docs.aws.amazon.com/eks/)
-* [CloudWatch Container Insights Overview](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/ContainerInsights.html)
+* [CloudWatch Container Insights Overview](https://docs.aws.amazon.[SECRET_REDACTED].html)
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/chaos-engineering/module/67947884-154a-43e4-a0cf-1137e1264eee/lesson/35627c0c-58bb-488a-8142-0c188eacb783" />

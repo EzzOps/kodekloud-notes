@@ -145,14 +145,14 @@ secretGenerator:
 
 ## References
 
-* [Kubernetes ConfigMap Documentation](https://kubernetes.io/docs/concepts/configuration/configmap/)
+* [Kubernetes ConfigMap Documentation](https://kubernetes.[AWS_SECRET_ACCESS_KEY]/)
 * [Kubernetes Secret Documentation](https://kubernetes.io/docs/concepts/configuration/secret/)
 * [Kustomize Generators](https://kubectl.docs.kubernetes.io/references/kustomize/generators/)
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kustomize/module/51823d3e-7be4-4792-836a-2c4690c0c547/lesson/4d922c66-e6da-4764-ba66-f5461ef566a3" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[SECRET_REDACTED]-7be4-4792-836a-2c4690c0c547/lesson/4d922c66-e6da-4764-ba66-f5461ef566a3" />
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/kustomize/module/51823d3e-7be4-4792-836a-2c4690c0c547/lesson/49973abe-d000-44cc-90ad-5802d6dedf73" />
+  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.[SECRET_REDACTED]-7be4-4792-836a-2c4690c0c547/lesson/49973abe-d000-44cc-90ad-5802d6dedf73" />
 </CardGroup>
 
 

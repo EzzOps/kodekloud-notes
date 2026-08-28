@@ -173,9 +173,9 @@ By mastering these fundamental concepts, you will be well-equipped to build and 
 Happy coding!
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/pytorch/module/5a59db15-2490-4be0-a894-4b3d3cc78fac/lesson/9a291e1f-8cd2-49f0-a4bf-e0ca16e0f3f7" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[AWS_SECRET_ACCESS_KEY]-2490-4be0-a894-4b3d3cc78fac/lesson/9a291e1f-8cd2-49f0-a4bf-e0ca16e0f3f7" />
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/pytorch/module/5a59db15-2490-4be0-a894-4b3d3cc78fac/lesson/16e0587e-3aba-47cb-a4b2-8ef26befd39e" />
+  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.[AWS_SECRET_ACCESS_KEY]-2490-4be0-a894-4b3d3cc78fac/lesson/16e0587e-3aba-47cb-a4b2-8ef26befd39e" />
 </CardGroup>
 
 
@@ -487,7 +487,7 @@ By following these steps, you ensure that your development environment is consis
 * [Understanding CUDA in PyTorch](https://pytorch.org/docs/stable/notes/cuda.html)
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/pytorch/module/5a59db15-2490-4be0-a894-4b3d3cc78fac/lesson/22b81745-1782-4121-8e27-2d1a632fda0f" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[AWS_SECRET_ACCESS_KEY]-2490-4be0-a894-4b3d3cc78fac/lesson/22b81745-1782-4121-8e27-2d1a632fda0f" />
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/pytorch/module/5a59db15-2490-4be0-a894-4b3d3cc78fac/lesson/c496c2d8-6495-4274-b1d9-53234081e334" />
+  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.[AWS_SECRET_ACCESS_KEY]-2490-4be0-a894-4b3d3cc78fac/lesson/c496c2d8-6495-4274-b1d9-53234081e334" />
 </CardGroup>

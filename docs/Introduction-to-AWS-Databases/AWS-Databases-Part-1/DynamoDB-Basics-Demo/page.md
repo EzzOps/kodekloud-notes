@@ -188,8 +188,8 @@ When you finish the demo, delete the table to avoid ongoing charges:
 
 ## Additional resources
 
-* DynamoDB Developer Guide: [https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/)
-* PartiQL reference: [https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/ql-reference.html](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/ql-reference.html)
+* DynamoDB Developer Guide: [https://docs.aws.amazon.[AWS_SECRET_ACCESS_KEY]/](https://docs.aws.amazon.[AWS_SECRET_ACCESS_KEY]/)
+* PartiQL reference: [https://docs.aws.amazon.[AWS_SECRET_ACCESS_KEY]/ql-reference.html](https://docs.aws.amazon.[AWS_SECRET_ACCESS_KEY]/ql-reference.html)
 * AWS CLI: [https://aws.amazon.com/cli/](https://aws.amazon.com/cli/)
 * AWS SDKs & Tools: [https://aws.amazon.com/tools/](https://aws.amazon.com/tools/)
 * CloudWatch: [https://aws.amazon.com/cloudwatch/](https://aws.amazon.com/cloudwatch/)

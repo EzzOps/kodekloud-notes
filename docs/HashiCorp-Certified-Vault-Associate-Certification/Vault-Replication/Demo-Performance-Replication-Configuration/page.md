@@ -1,11 +1,11 @@
 # 1. Enable performance replication on the primary
-vault write -f sys/replication/performance/primary/enable
+vault write -f [SECRET_REDACTED]
 
 # 2. Generate a secondary token on the primary
-vault write sys/replication/performance/primary/secondary-token id="secondary-id"
+vault write [SECRET_REDACTED]-token id="secondary-id"
 
 # 3. Activate the performance secondary with the token
-vault write sys/replication/performance/secondary/enable token="secondary-token"
+vault write sys/[AWS_SECRET_ACCESS_KEY] token="secondary-token"
 ```
 
 <Callout icon="triangle-alert">
@@ -61,8 +61,8 @@ In this guide, you’ll configure performance replication between two Vault clus
 
 | Cluster         | Address      | Root Token                     |
 | --------------- | ------------ | ------------------------------ |
-| Primary Vault   | 10.1.102.170 | `hvs.KYjTNrIdzAoPkriOuDStfClA` |
-| Secondary Vault | 10.1.102.156 | `hvs.AVecCoMzQSmLYTQ9ufdpRAZ`  |
+| Primary Vault   | 10.1.102.170 | `[VAULT_TOKEN]` |
+| Secondary Vault | 10.1.102.156 | `[VAULT_TOKEN]`  |
 
 * Both clusters must be initialized and unsealed.
 * Vault CLI installed and pointing to the correct `VAULT_ADDR`.
@@ -74,12 +74,12 @@ In this guide, you’ll configure performance replication between two Vault clus
 1. Authenticate to the primary cluster
    ```bash theme={null}
    export VAULT_ADDR=https://10.1.102.170:8200
-   vault login hvs.KYjTNrIdzAoPkriOuDStfClA
+   vault login [VAULT_TOKEN]
    ```
 
 2. Turn on performance replication
    ```bash theme={null}
-   vault write -f sys/replication/performance/primary/enable
+   vault write -f [SECRET_REDACTED]
    ```
 
 <Callout icon="triangle-alert">
@@ -93,7 +93,7 @@ In this guide, you’ll configure performance replication between two Vault clus
 Create a wrapped token to securely initialize the secondary:
 
 ```bash theme={null}
-vault write sys/replication/performance/primary/secondary-token \
+vault write [SECRET_REDACTED]-token \
     id=hcvop-performance
 ```
 
@@ -116,12 +116,12 @@ Copy the `wrapping_token` to use in the next step.
 1. Authenticate to the secondary cluster
    ```bash theme={null}
    export VAULT_ADDR=https://10.1.102.156:8200
-   vault login hvs.AVecCoMzQSmLYTQ9ufdpRAZ
+   vault login [VAULT_TOKEN]
    ```
 
 2. Enable performance replication on the secondary using the wrapped token
    ```bash theme={null}
-   vault write sys/replication/performance/secondary/enable \
+   vault write sys/[AWS_SECRET_ACCESS_KEY] \
        token=<WRAPPING_TOKEN>
    ```
 

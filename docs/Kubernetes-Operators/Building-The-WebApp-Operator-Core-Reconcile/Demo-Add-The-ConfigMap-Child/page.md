@@ -10,7 +10,7 @@ A ConfigMap is a Kubernetes object for storing small pieces of configuration tex
 
 Quick links and references
 
-* [Kubernetes ConfigMap](https://kubernetes.io/docs/concepts/configuration/configmap/)
+* [Kubernetes ConfigMap](https://kubernetes.[AWS_SECRET_ACCESS_KEY]/)
 * [controller-runtime documentation](https://pkg.go.dev/sigs.k8s.io/controller-runtime)
 * [Kubernetes API conventions](https://kubernetes.io/docs/reference/using-api/api-concepts/)
 

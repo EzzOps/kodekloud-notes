@@ -107,7 +107,7 @@ To SSH from your workstation, use the `.pem` file downloaded when you launched t
 
    ```plaintext theme={null}
    The authenticity of host 'ec2-54-85-134-101.compute-1.amazonaws.com (100.82.78.53)' can't be established.
-   ED25519 key fingerprint is SHA256:TTVrUr5IXAYZa2vFYtPx90hNGkphIpubYjaNHm9uYLs.
+   ED25519 key fingerprint is SHA256:[SECRET_REDACTED].
    Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
    ```
 
@@ -150,7 +150,7 @@ For troubleshooting boot or BIOS issues, use the EC2 Serial Console.
 
 * [Amazon EC2 Instance Connect](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Connect-using-EC2-Instance-Connect.html)
 * [AWS Systems Manager Session Manager](https://docs.aws.amazon.com/systems-manager/latest/userguide/session-manager.html)
-* [Connect to Your Linux Instance Using SSH](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AccessingInstancesLinux.html)
+* [Connect to Your Linux Instance Using SSH](https://docs.aws.amazon.com/AWSEC2/[AWS_SECRET_ACCESS_KEY].html)
 * [EC2 Serial Console](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-serial-console.html)
 
 <CardGroup>

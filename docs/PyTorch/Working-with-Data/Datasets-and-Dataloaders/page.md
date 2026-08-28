@@ -96,7 +96,7 @@ In the upcoming section, we will dive deeper into PyTorch by building custom dat
 Let’s begin our exploration of PyTorch by working with datasets and data loaders to facilitate efficient and scalable model training.
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/pytorch/module/f9d4b50b-328e-4cf7-a22a-3b236bf0abcd/lesson/f572da68-13e3-41f5-a25a-26a3b000e4e1" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[AWS_SECRET_ACCESS_KEY]-328e-4cf7-a22a-3b236bf0abcd/lesson/f572da68-13e3-41f5-a25a-26a3b000e4e1" />
 </CardGroup>
 
 

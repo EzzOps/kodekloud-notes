@@ -86,7 +86,7 @@ By the end of this section, the WebApp controller will still create and manage c
 
 Links and references
 
-* Kubernetes API conventions for `status` and `conditions`: [https://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api-conventions.md#typical-status-properties](https://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api-conventions.md#typical-status-properties)
+* Kubernetes API conventions for `status` and `conditions`: [https://github.com/kubernetes/[AWS_SECRET_ACCESS_KEY]/sig-architecture/api-conventions.md#typical-status-properties](https://github.com/kubernetes/[AWS_SECRET_ACCESS_KEY]/sig-architecture/api-conventions.md#typical-status-properties)
 * Best practices for kubectl and resource visibility: [https://kubernetes.io/docs/reference/kubectl/overview/](https://kubernetes.io/docs/reference/kubectl/overview/)
 
 <CardGroup>

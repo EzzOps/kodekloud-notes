@@ -148,7 +148,7 @@ Links and references
 * SageMaker VPC documentation: [https://docs.aws.amazon.com/sagemaker/latest/dg/amazon-sagemaker-vpc.html](https://docs.aws.amazon.com/sagemaker/latest/dg/amazon-sagemaker-vpc.html)
 * VPC endpoints (AWS PrivateLink & gateway endpoints): [https://docs.aws.amazon.com/vpc/latest/privatelink/what-is-privatelink.html](https://docs.aws.amazon.com/vpc/latest/privatelink/what-is-privatelink.html)
 * AWS KMS documentation: [https://docs.aws.amazon.com/kms/latest/developerguide/overview.html](https://docs.aws.amazon.com/kms/latest/developerguide/overview.html)
-* boto3 SageMaker client: [https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html)
+* boto3 SageMaker client: [https://boto3.amazonaws.com/v1/documentation[AWS_SECRET_ACCESS_KEY].html](https://boto3.amazonaws.com/v1/documentation[AWS_SECRET_ACCESS_KEY].html)
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/aws-machine-learning-associates/module/c3d1a3a2-07f8-4702-8653-061263bb5db2/lesson/3156c2cc-2590-4aa4-b602-b49b1cf5ed9d" />

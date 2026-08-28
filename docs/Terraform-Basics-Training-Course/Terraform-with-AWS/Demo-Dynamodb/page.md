@@ -152,7 +152,7 @@ This concludes the demo on how to create and manage a DynamoDB table using the A
 For additional information on AWS and DynamoDB, consider visiting:
 
 * [AWS Documentation](https://docs.aws.amazon.com/)
-* [DynamoDB Developer Guide](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/)
+* [DynamoDB Developer Guide](https://docs.aws.amazon.[AWS_SECRET_ACCESS_KEY]/)
 
 Enhance your cloud solutions by exploring these resources and leveraging AWS services in your infrastructure projects.
 

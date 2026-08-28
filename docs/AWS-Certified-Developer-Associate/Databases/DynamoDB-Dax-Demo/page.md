@@ -122,7 +122,7 @@ When you have completed testing or your demonstration, it is a best practice to 
   ![The image shows a confirmation dialog box for deleting a cluster named "cluster1" in an AWS DynamoDB interface, with an option to delete all CloudWatch alarms for the cluster. The user has typed "delete" to confirm the action.](https://kodekloud.com/kk-media/image/upload/v1752858738/notes-assets/images/AWS-Certified-Developer-Associate-DynamoDB-Dax-Demo/aws-dynamodb-delete-cluster-dialog.jpg)
 </Frame>
 
-This completes the demonstration of how to set up and manage a DAX cluster in DynamoDB. For further reading, visit the [AWS DynamoDB Documentation](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Introduction.html) to explore more advanced configurations and best practices.
+This completes the demonstration of how to set up and manage a DAX cluster in DynamoDB. For further reading, visit the [AWS DynamoDB Documentation](https://docs.aws.amazon.[AWS_SECRET_ACCESS_KEY]/Introduction.html) to explore more advanced configurations and best practices.
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/aws-certified-developer-associate/module/a1267c00-fc48-4a9b-8d41-fd642fa743ea/lesson/7dbec95b-192e-4727-b97b-913864038fe0" />

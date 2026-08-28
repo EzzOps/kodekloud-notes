@@ -160,7 +160,7 @@ Because of these limitations, teams commonly adopt packaging or templating tools
 Links and references
 
 * [Kubernetes Concepts — What is Kubernetes?](https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/)
-* [kubectl apply — Kubernetes CLI documentation](https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands#apply)
+* [kubectl apply — Kubernetes CLI documentation](https://kubernetes.io/[AWS_SECRET_ACCESS_KEY]-commands#apply)
 * [Helm — The Kubernetes Package Manager](https://helm.sh/)
 
 <CardGroup>

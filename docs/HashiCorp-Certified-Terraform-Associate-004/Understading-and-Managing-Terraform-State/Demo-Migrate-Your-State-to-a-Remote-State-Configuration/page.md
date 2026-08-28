@@ -168,7 +168,7 @@ terraform {
 * `region` — AWS region containing the bucket
 * `dynamodb_table` — optional DynamoDB table name to enable state locking
 
-For more details, see the Terraform backend documentation: [Backends](https://developer.hashicorp.com/terraform/language/settings/backends) and the S3 backend guide: [S3 Backend](https://developer.hashicorp.com/terraform/language/settings/backends/s3).
+For more details, see the Terraform backend documentation: [Backends](https://developer.hashicorp.[AWS_SECRET_ACCESS_KEY]) and the S3 backend guide: [S3 Backend](https://developer.hashicorp.[AWS_SECRET_ACCESS_KEY]/s3).
 
 <Callout icon="lightbulb">
   To enable safe concurrent operations, create a DynamoDB table and reference it via `dynamodb_table`. This ensures Terraform can lock state while applying changes to prevent concurrent modifications.
@@ -255,10 +255,10 @@ A minimal example of the top of a migrated state file looks like this:
 
 ## Links and references
 
-* [Terraform Backends](https://developer.hashicorp.com/terraform/language/settings/backends)
-* [Terraform S3 Backend](https://developer.hashicorp.com/terraform/language/settings/backends/s3)
+* [Terraform Backends](https://developer.hashicorp.[AWS_SECRET_ACCESS_KEY])
+* [Terraform S3 Backend](https://developer.hashicorp.[AWS_SECRET_ACCESS_KEY]/s3)
 * [State Locking](https://developer.hashicorp.com/terraform/language/state/locking)
-* [Amazon DynamoDB](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Introduction.html)
+* [Amazon DynamoDB](https://docs.aws.amazon.[AWS_SECRET_ACCESS_KEY]/Introduction.html)
 
 That's it — migrating between local and remote backends is straightforward: add or remove the backend configuration and use `terraform init -migrate-state` to copy the state to the target backend.
 

@@ -133,7 +133,7 @@ resources:
     - aescbc:
         keys:
           - name: key1
-            secret: y0xTt+U6xgRdNxe4nDYYsijOGgRDoUYC+wAwOKeNfPs=  # Replace with your generated key
+            secret: [SECRET_REDACTED]=  # Replace with your generated key
     - identity: {}
 ```
 

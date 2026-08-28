@@ -106,9 +106,9 @@ If a new Pod fails to reach the `Ready` state, the update halts. Existing Pods o
 ## Links and References
 
 * [GKE Rolling Updates Overview](https://cloud.google.com/kubernetes-engine/docs/concepts/rolling-updates)
-* [Kubernetes Deployment Strategy](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/#strategy)
-* [StatefulSet Rolling Updates](https://kubernetes.io/docs/concepts/workloads/controllers/statefulset/#update-strategies)
-* [DaemonSet Update Strategy](https://kubernetes.io/docs/concepts/workloads/controllers/daemonset/#update-strategy)
+* [Kubernetes Deployment Strategy](https://kubernetes.[SECRET_REDACTED]/#strategy)
+* [StatefulSet Rolling Updates](https://kubernetes.[SECRET_REDACTED]/#update-strategies)
+* [DaemonSet Update Strategy](https://kubernetes.io/docs/[AWS_SECRET_ACCESS_KEY]/#update-strategy)
 
 For more on Kubernetes fundamentals, visit the [Kubernetes Documentation](https://kubernetes.io/docs/).
 

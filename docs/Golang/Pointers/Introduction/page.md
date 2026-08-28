@@ -1,6 +1,6 @@
 # Introduction
 
-Source: https://notes.kodekloud.com/docs/Golang/Pointers/Introduction/page
+Source: https://notes.kodekloud.[SECRET_REDACTED]
 
 This lesson explores pointers and their essential role in memory management within the Go programming language.
 

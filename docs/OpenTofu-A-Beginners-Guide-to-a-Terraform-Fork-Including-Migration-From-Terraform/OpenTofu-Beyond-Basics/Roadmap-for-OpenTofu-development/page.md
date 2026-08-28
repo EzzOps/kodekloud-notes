@@ -42,7 +42,7 @@ OpenTofu thrives on community involvement. You can help by:
 * Suggesting new features directly in the Milestones section
 
 <Callout icon="triangle-alert">
-  Ensure your pull request follows the [OpenTofu CONTRIBUTING guide](https://github.com/opentofu/opentofu/blob/main/CONTRIBUTING.md) and passes all CI checks before submission.
+  Ensure your pull request follows the [OpenTofu CONTRIBUTING guide](https://github.com/[AWS_SECRET_ACCESS_KEY].md) and passes all CI checks before submission.
 </Callout>
 
 Every contribution—big or small—drives OpenTofu forward. Thank you for helping shape the future of this project!
@@ -50,7 +50,7 @@ Every contribution—big or small—drives OpenTofu forward. Thank you for helpi
 ## Links and References
 
 * [OpenTofu GitHub Milestones](https://github.com/opentofu/opentofu/issues/milestones)
-* [OpenTofu Contributing Guide](https://github.com/opentofu/opentofu/blob/main/CONTRIBUTING.md)
+* [OpenTofu Contributing Guide](https://github.com/[AWS_SECRET_ACCESS_KEY].md)
 * [Terraform State Documentation](https://www.terraform.io/docs/state/index.html)
 
 <CardGroup>

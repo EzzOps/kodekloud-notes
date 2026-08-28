@@ -9,7 +9,7 @@ This tutorial walks through a minimal LCEL (LangChain Core Execution Language) c
 Quick links:
 
 * LangChain Core docs: [https://python.langchain.com/en/latest/](https://python.langchain.com/en/latest/)
-* LangChain OpenAI integration: [https://python.langchain.com/en/latest/modules/llms/integrations/openai.html](https://python.langchain.com/en/latest/modules/llms/integrations/openai.html)
+* LangChain OpenAI integration: [https://python.langchain.[AWS_SECRET_ACCESS_KEY]openai.html](https://python.langchain.[AWS_SECRET_ACCESS_KEY]openai.html)
 
 ## 1 — Import components and define prompt, LLM, and output parser
 
@@ -206,8 +206,8 @@ Next steps:
 Further reading:
 
 * LangChain Core docs: [https://python.langchain.com/en/latest/](https://python.langchain.com/en/latest/)
-* LLM integration (OpenAI) docs: [https://python.langchain.com/en/latest/modules/llms/integrations/openai.html](https://python.langchain.com/en/latest/modules/llms/integrations/openai.html)
+* LLM integration (OpenAI) docs: [https://python.langchain.[AWS_SECRET_ACCESS_KEY]openai.html](https://python.langchain.[AWS_SECRET_ACCESS_KEY]openai.html)
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langchain/module/754457c5-1386-422b-98ad-3342dfc6aab3/lesson/add69dd3-2805-44d2-b67f-5198effe7e2b" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[SECRET_REDACTED]-1386-422b-98ad-3342dfc6aab3/lesson/add69dd3-2805-44d2-b67f-5198effe7e2b" />
 </CardGroup>

@@ -248,7 +248,7 @@ Gateways can configure:
 
 Refer to the official Gateway reference for details and examples:
 
-* Reference: [https://istio.io/latest/docs/reference/config/networking/gateway/](https://istio.io/latest/docs/reference/config/networking/gateway/)
+* Reference: [https://istio.io[AWS_SECRET_ACCESS_KEY]/gateway/](https://istio.io[AWS_SECRET_ACCESS_KEY]/gateway/)
 
 <Frame>
   <img alt="The image shows a diagram of &#x22;Gateway Options&#x22; related to server configurations, including sections on TLS mode, port, and server TLS settings, each with descriptive fields. It appears to be a reference guide from KodeKloud." />
@@ -268,9 +268,9 @@ Refer to the official Gateway reference for details and examples:
 
 Links and references:
 
-* Istio Gateway docs: [https://istio.io/latest/docs/reference/config/networking/gateway/](https://istio.io/latest/docs/reference/config/networking/gateway/)
-* VirtualService docs: [https://istio.io/latest/docs/reference/config/networking/virtual-service/](https://istio.io/latest/docs/reference/config/networking/virtual-service/)
-* DestinationRule docs: [https://istio.io/latest/docs/reference/config/networking/destination-rule/](https://istio.io/latest/docs/reference/config/networking/destination-rule/)
+* Istio Gateway docs: [https://istio.io[AWS_SECRET_ACCESS_KEY]/gateway/](https://istio.io[AWS_SECRET_ACCESS_KEY]/gateway/)
+* VirtualService docs: [https://istio.io[AWS_SECRET_ACCESS_KEY]/virtual-service/](https://istio.io[AWS_SECRET_ACCESS_KEY]/virtual-service/)
+* DestinationRule docs: [https://istio.io[AWS_SECRET_ACCESS_KEY]/destination-rule/](https://istio.io[AWS_SECRET_ACCESS_KEY]/destination-rule/)
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/istio-certified-associate/module/f3f5ca4b-b8d6-4788-9553-9ed765709933/lesson/0ebb40cd-28de-4216-9dc7-9aa26eb3640d" />

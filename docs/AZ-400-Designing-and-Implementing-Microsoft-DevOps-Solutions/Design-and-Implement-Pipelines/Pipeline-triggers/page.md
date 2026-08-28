@@ -143,7 +143,7 @@ Adopt these recommendations to keep your pipelines efficient and reliable:
 
 ## References
 
-* [Azure Pipelines triggers](https://docs.microsoft.com/azure/devops/pipelines/build/triggers)
+* [Azure Pipelines triggers](https://docs.microsoft.[SECRET_REDACTED])
 * [YAML schema for Azure Pipelines](https://docs.microsoft.com/azure/devops/pipelines/yaml-schema)
 * [Cron syntax guide](https://en.wikipedia.org/wiki/Cron)
 

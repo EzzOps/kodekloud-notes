@@ -199,7 +199,7 @@ This controller takes the resolved image tag and injects it into your Git reposi
 
 * [Flux Documentation – Image Automation](https://fluxcd.io/docs/components/image/overview/)
 * [Semantic Versioning Specification](https://semver.org/)
-* [Kubernetes Deployments](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/)
+* [Kubernetes Deployments](https://kubernetes.[SECRET_REDACTED]/)
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/gitops-with-fluxcd/module/e4076c7b-6728-412c-b4d7-9316fc346fc5/lesson/f6b0a652-df6c-4b40-9011-05aba7c505d9" />

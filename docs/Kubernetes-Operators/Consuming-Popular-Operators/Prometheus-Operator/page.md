@@ -348,7 +348,7 @@ This label-selector pattern enables platform and application teams to collaborat
 A Prometheus resource uses selectors to determine which ServiceMonitors, PodMonitors, and PrometheusRules belong to it. This model supports multi-tenant or shared clusters by scoping ingestion to labeled resources:
 
 * Platform teams create one or more Prometheus instances and configure selectors.
-* Application teams label their ServiceMonitors/PodMonitors/PrometheusRules to indicate ownership.
+* Application teams label their [SECRET_REDACTED] to indicate ownership.
 * The operator discovers matching objects and includes them in the generated Prometheus configuration.
 
 Use consistent label conventions (for example, `team: payments`) to make ownership and intent explicit across your organization.

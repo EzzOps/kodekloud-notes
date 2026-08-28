@@ -66,8 +66,8 @@ Example output:
 
 ```text theme={null}
 [default]
-aws_access_key_id = AKIAWFKYLURA4GFSSD70
-aws_secret_access_key = 5JG8kqNhMMSZMDbLjNJMYKqKS5rFxRPREqysVRPF
+aws_access_key_id = [AWS_ACCESS_KEY_ID]
+aws_secret_access_key = [AWS_SECRET_ACCESS_KEY]
 ```
 
 Region used in this lesson: `us-east-1`.

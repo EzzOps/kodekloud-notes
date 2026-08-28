@@ -42,7 +42,7 @@ Important best practices:
 Example `.env` file:
 
 ```text theme={null}
-OPENAI_API_KEY=sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+OPENAI_API_KEY=[OPENAI_API_KEY]
 ```
 
 Load it in Python:
@@ -159,7 +159,7 @@ Additional references
 * LangChain docs: [https://docs.langchain.com/](https://docs.langchain.com/)
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langgraph/module/11d0578c-2a76-40f7-be25-905be94f24f8/lesson/f9665406-3363-428f-9b22-b558cb0ddf71" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[SECRET_REDACTED]-2a76-40f7-be25-905be94f24f8/lesson/f9665406-3363-428f-9b22-b558cb0ddf71" />
 </CardGroup>
 
 

@@ -63,8 +63,8 @@ Initiate the configuration by running:
 
 ```bash theme={null}
 $ aws configure
-AWS Access Key ID [None]: AKIAI44QH8DHBEXAMPLE
-AWS Secret Access Key [None]: je7MtGbClwBF/2Zp9Utk/h3yCo8nvbEXAMPLEKEY
+AWS Access Key ID [None]: [AWS_ACCESS_KEY_ID]
+AWS Secret Access Key [None]: [AWS_SECRET_ACCESS_KEY]
 Default region name [None]: us-west-2
 Default output format [None]: json
 ```
@@ -81,8 +81,8 @@ output = text
 ```bash theme={null}
 $ cat ~/.aws/credentials
 [default]
-aws_access_key_id = AKIAI44QH8DHBEXAMPLE
-aws_secret_access_key = je7MtGbClwBF/2Zp9Utk/h3yCo8nvbEXAMPLEKEY
+aws_access_key_id = [AWS_ACCESS_KEY_ID]
+aws_secret_access_key = [AWS_SECRET_ACCESS_KEY]
 ```
 
 <Callout icon="lightbulb">

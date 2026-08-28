@@ -111,7 +111,7 @@ Only 'yes' will be accepted to approve.
 Enter a value: yes
 
 cdktf-project-builder local_file.package-json-file: Creating...
-cdktf-project-builder local_file.package-json-file: Creation complete after 0s [id=b60a2ad91f16e1bfeb7fe2aac36782e6a53n7797e]
+cdktf-project-builder local_file.package-json-file: Creation complete after 0s [[SECRET_REDACTED]]
 Apply complete! Resources: 1 added, 0 changed, 0 destroyed.
 
 Outputs:

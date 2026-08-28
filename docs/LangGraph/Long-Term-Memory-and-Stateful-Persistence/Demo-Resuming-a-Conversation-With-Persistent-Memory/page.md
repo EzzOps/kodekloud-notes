@@ -89,7 +89,7 @@ Further reading and references
 * LangGraph concepts and workflow patterns (see your LangGraph docs for implementation specifics)
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langgraph/module/e0cd494a-00a7-4c52-88e9-b3932b03ff9f/lesson/286ff108-f2af-457e-914f-5665501b7ec0" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[SECRET_REDACTED]-00a7-4c52-88e9-b3932b03ff9f/lesson/286ff108-f2af-457e-914f-5665501b7ec0" />
 </CardGroup>
 
 

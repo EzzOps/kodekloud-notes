@@ -261,7 +261,7 @@ Table — Common reconciliation checks
 
 * [controller-runtime](https://pkg.go.dev/sigs.k8s.io/controller-runtime)
 * [Kubernetes API conventions](https://kubernetes.io/docs/reference/using-api/api-concepts/)
-* [OwnerReferences and garbage collection](https://kubernetes.io/docs/concepts/workloads/controllers/garbage-collection/)
+* [OwnerReferences and garbage collection](https://kubernetes.[SECRET_REDACTED]-collection/)
 
 This wiring — importing the right helpers, creating a desired object, setting the controller reference, and using a safe get-or-create pattern — is the core of many Kubernetes reconciler implementations.
 

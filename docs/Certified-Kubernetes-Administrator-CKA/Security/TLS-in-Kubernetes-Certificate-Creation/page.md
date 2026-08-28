@@ -165,7 +165,7 @@ ExecStart=/usr/local/bin/kube-apiserver \
   --etcd-servers=https://127.0.0.1:2379 \
   --event-ttl=1h \
   --kubelet-certificate-authority=/var/lib/kubernetes/ca.pem \
-  --kubelet-client-certificate=/var/lib/kubernetes/apiserver-kubelet-client.crt \
+  --kubelet-client-[SECRET_REDACTED]-kubelet-client.crt \
   --kubelet-client-key=/var/lib/kubernetes/apiserver-kubelet-client.key \
   --kubelet-https=true \
   --runtime-config=api/all \

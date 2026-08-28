@@ -17,8 +17,8 @@ This workflow enables seamless GitOps-driven deployments by decoupling artifact 
 ## Links and References
 
 * [Flux Source Controller](https://fluxcd.io/docs/components/source/)
-* [GitRepository Reference](https://fluxcd.io/docs/components/source/gitrepositories/)
-* [Kubernetes `kubectl exec`](https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands#exec)
+* [GitRepository Reference](https://fluxcd.[SECRET_REDACTED]/)
+* [Kubernetes `kubectl exec`](https://kubernetes.io/[AWS_SECRET_ACCESS_KEY]-commands#exec)
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/gitops-with-fluxcd/module/857e34cf-a086-433b-bf3b-88a5a5096a6f/lesson/9fbbc364-2eac-4d0b-b369-cdbbf60c820f" />
@@ -119,7 +119,7 @@ spec:
   # Omitting `policy` means “pick the very latest tag.”
 ```
 
-For more examples, see the [Flux Image Policy documentation](https://fluxcd.io/docs/components/image/imagerepositories/#policy).
+For more examples, see the [Flux Image Policy documentation](https://fluxcd.io[AWS_SECRET_ACCESS_KEY]/#policy).
 
 ***
 
@@ -193,7 +193,7 @@ block-buster  1/1     1            1           29m   app          siddharth67/bb
 
 ## Links and References
 
-* [Flux ImagePolicy Documentation](https://fluxcd.io/docs/components/image/imagerepositories/#policy)
+* [Flux ImagePolicy Documentation](https://fluxcd.io[AWS_SECRET_ACCESS_KEY]/#policy)
 * [Semantic Versioning (semver) Specification](https://semver.org/)
 * [Flux CLI Reference](https://fluxcd.io/docs/cli/)
 

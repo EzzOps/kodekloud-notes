@@ -151,7 +151,7 @@ terraform {
 
 Links and references
 
-* Terraform Backends documentation: [https://developer.hashicorp.com/terraform/language/settings/backends](https://developer.hashicorp.com/terraform/language/settings/backends)
+* Terraform Backends documentation: [https://developer.hashicorp.[AWS_SECRET_ACCESS_KEY]](https://developer.hashicorp.[AWS_SECRET_ACCESS_KEY])
 * AWS S3: [https://aws.amazon.com/s3/](https://aws.amazon.com/s3/)
 * AWS DynamoDB: [https://aws.amazon.com/dynamodb/](https://aws.amazon.com/dynamodb/)
 * AWS KMS: [https://aws.amazon.com/kms/](https://aws.amazon.com/kms/)

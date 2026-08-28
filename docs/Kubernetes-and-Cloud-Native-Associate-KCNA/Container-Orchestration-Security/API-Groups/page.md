@@ -131,7 +131,7 @@ The response will include version details similar to the example below:
   "major": "1",
   "minor": "13",
   "gitVersion": "v1.13.0",
-  "gitCommit": "ddf47ac13c1a9483ea035a79cd7c10005ff21a6d",
+  "gitCommit": "[AWS_SECRET_ACCESS_KEY]",
   "gitTreeState": "clean",
   "buildDate": "2018-12-03T20:56:12Z",
   "goVersion": "go1.11.2",

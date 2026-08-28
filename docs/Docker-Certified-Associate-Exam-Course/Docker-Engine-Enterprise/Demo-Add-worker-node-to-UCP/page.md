@@ -45,7 +45,7 @@ UCP will generate a `docker swarm join` command similar to:
 
 ```bash theme={null}
 docker swarm join \
-  --token SWMTKN-1-4liabct184f4mxm03b2rwh0z02m1unv82p8fscdmp1pz1otwr-6ogugl8f0wmj5zmggid1hjuz \
+  --token SWMTKN-1-[SECRET_REDACTED]-6ogugl8f0wmj5zmggid1hjuz \
   172.31.32.217:2377
 ```
 
@@ -59,7 +59,7 @@ On your new CentOS host, copy and run the command provided by UCP:
 
 ```bash theme={null}
 sudo docker swarm join \
-  --token SWMTKN-1-4liabct184f4mxm03b2rwh0z02m1unv82p8fscdmp1pz1otwr-6ogugl8f0wmj5zmggid1hjuz \
+  --token SWMTKN-1-[SECRET_REDACTED]-6ogugl8f0wmj5zmggid1hjuz \
   172.31.32.217:2377
 ```
 

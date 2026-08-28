@@ -182,7 +182,7 @@ Important excerpt (trimmed for clarity):
 Containers:
   cilium-agent:
     Container ID:  containerd://c05cc9963bfe284e57...
-    Image:         quay.io/cilium/cilium:v1.17.2@sha256:3c4c9932b5d8368619cb922a497ff2ebc8def5f41c18e410bcc84025fcd385b1
+    Image:         quay.io/cilium/cilium:v1.17.2@sha256:[SECRET_REDACTED]
     Command:
       cilium-agent
     Args:

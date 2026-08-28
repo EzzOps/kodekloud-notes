@@ -70,7 +70,7 @@ aws ec2 attach-volume \
 
 ## Links and References
 
-* [AWS EC2 Instance Store Documentation](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html)
+* [AWS EC2 Instance Store Documentation](https://docs.aws.amazon.com[AWS_SECRET_ACCESS_KEY].html)
 * [Amazon EBS Documentation](https://docs.aws.amazon.com/ebs/latest/)
 * [Amazon EFS Documentation](https://docs.aws.amazon.com/efs/latest/)
 * [AWS Key Management Service](https://aws.amazon.com/kms/)

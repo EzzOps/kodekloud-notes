@@ -169,7 +169,7 @@ After switching to a theme like `funTheme`, the UI reflects your palette and fon
 * During development, the Backstage dev server typically picks up frontend changes without restarting — but sometimes a rebuild or refresh may be required.
 * For more details on theming primitives, see the `@backstage/theme` package documentation and the Backstage frontend docs:
   * [https://backstage.io/docs](https://backstage.io/docs)
-  * [https://github.com/backstage/backstage/tree/master/plugins/theme](https://github.com/backstage/backstage/tree/master/plugins/theme) (repository examples)
+  * [https://github.com[AWS_SECRET_ACCESS_KEY]/theme](https://github.com[AWS_SECRET_ACCESS_KEY]/theme) (repository examples)
 
 <Callout icon="lightbulb">
   Summary: create your theme file under the frontend app, export theme objects using `createBaseThemeOptions` + `createUnifiedTheme`, and register them in `createApp(...)` with a `Provider` that wraps children with `UnifiedThemeProvider`.

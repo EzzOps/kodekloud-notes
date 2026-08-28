@@ -176,10 +176,10 @@ A future lesson will show how to add an automated Deploy stage to CodePipeline t
 
 ## Links and references
 
-* [AWS CodePipeline Documentation](https://docs.aws.amazon.com/codepipeline/latest/userguide/welcome.html)
+* [AWS CodePipeline Documentation](https://docs.aws.amazon.[SECRET_REDACTED].html)
 * [AWS CodeBuild Documentation](https://docs.aws.amazon.com/codebuild/latest/userguide/welcome.html)
 * [AWS CodeCommit Documentation](https://docs.aws.amazon.com/codecommit/latest/userguide/welcome.html)
-* [Amazon ECS Documentation](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/Welcome.html)
+* [Amazon ECS Documentation](https://docs.aws.amazon.com[AWS_SECRET_ACCESS_KEY].html)
 
 This lesson demonstrated creating a CI pipeline with Source and Build stages, validating a build, and pushing code changes to automatically trigger pipeline executions.
 

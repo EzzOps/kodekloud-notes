@@ -92,8 +92,8 @@ References and further reading
 
 * Kubernetes documentation — Resource Management for Pods and Containers: [https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/](https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/)
 * Prometheus monitoring: [https://prometheus.io/](https://prometheus.io/)
-* kubectl top: [https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands#top](https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands#top)
-* Vertical Pod Autoscaler (VPA): [https://github.com/kubernetes/autoscaler/tree/master/vertical-pod-autoscaler](https://github.com/kubernetes/autoscaler/tree/master/vertical-pod-autoscaler)
+* kubectl top: [https://kubernetes.io/[AWS_SECRET_ACCESS_KEY]-commands#top](https://kubernetes.io/[AWS_SECRET_ACCESS_KEY]-commands#top)
+* Vertical Pod Autoscaler (VPA): [https://github.[SECRET_REDACTED]-pod-autoscaler](https://github.[SECRET_REDACTED]-pod-autoscaler)
 
 Right-sizing reduces waste, improves scheduling accuracy, and lowers the risk of performance regressions and production failures. Follow a measurement-first approach and iterate using data and observability.
 

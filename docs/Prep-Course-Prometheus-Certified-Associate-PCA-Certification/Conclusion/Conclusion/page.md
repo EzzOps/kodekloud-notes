@@ -1,6 +1,6 @@
 # Conclusion
 
-Source: https://notes.kodekloud.com/docs/Prep-Course-Prometheus-Certified-Associate-PCA-Certification/Conclusion/Conclusion/page
+Source: https://notes.kodekloud.com/docs/Prep-Course-Prometheus-Certified-Associate-PCA-[AWS_SECRET_ACCESS_KEY]
 
 Summary of a Prometheus course covering architecture, metric types, PromQL, deployment, alerting, best practices, and practical next steps for instrumenting services and configuring monitoring
 

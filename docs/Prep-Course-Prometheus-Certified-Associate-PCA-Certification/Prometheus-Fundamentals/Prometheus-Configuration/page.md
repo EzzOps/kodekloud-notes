@@ -37,7 +37,7 @@ Prometheus originated at SoundCloud and joined the Cloud Native Computing Founda
 
 Links and references
 
-* [Prometheus querying basics (PromQL)](https://prometheus.io/docs/prometheus/latest/querying/basics/)
+* [Prometheus querying basics (PromQL)](https://prometheus.[SECRET_REDACTED]/)
 * [Grafana](https://grafana.com/)
 * [node\_exporter](https://github.com/prometheus/node_exporter)
 * [blackbox\_exporter](https://github.com/prometheus/blackbox_exporter)

@@ -64,7 +64,7 @@ Ansible facts are an essential aspect of playbook execution, providing detailed 
 For further reading, check out the following resources:
 
 * [Ansible Documentation](https://docs.ansible.com/ansible/latest/index.html)
-* [Ansible Setup Module](https://docs.ansible.com/ansible/latest/collections/ansible/builtin/setup_module.html)
+* [Ansible Setup Module](https://docs.ansible.[SECRET_REDACTED]setup_module.html)
 * [Jinja2 Templating in Ansible](https://docs.ansible.com/ansible/latest/user_guide/playbooks_templating.html)
 
 <CardGroup>
@@ -187,7 +187,7 @@ To verify the file creation, SSH into the `web1` node:
 ```bash theme={null}
 root@ansible-controller ~/playbooks# ssh web1
 The authenticity of host 'web1 (172.20.1.100)' can't be established.
-ECDSA key fingerprint is SHA256:uNTmVyWMA6Wxlp4vFGIRAsQeLwcEBO7/ThU7LexNbC.
+ECDSA key fingerprint is SHA256:[SECRET_REDACTED].
 ECDSA key fingerprint is MD5:83:49:cd:9f:e7:e1:c8:73:ef:c0:76:7b:ba:48:d7
 Are you sure you want to continue connecting (yes/no)? yes
 ```

@@ -86,7 +86,7 @@ Key takeaways
 * Aggregate, chunk, and cite returned `content` and `url` fields when constructing LLM context for accurate, up-to-date answers.
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langchain/module/06905b96-585d-4c9e-835a-d8fcaca76e2a/lesson/539b06ca-74c9-4105-a342-f3d2444affb0" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[SECRET_REDACTED]-585d-4c9e-835a-d8fcaca76e2a/lesson/539b06ca-74c9-4105-a342-f3d2444affb0" />
 </CardGroup>
 
 

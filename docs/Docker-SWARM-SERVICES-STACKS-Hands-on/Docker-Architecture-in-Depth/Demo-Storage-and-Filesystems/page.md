@@ -84,7 +84,7 @@ root@Docker_Host_2:/root # docker pull hello-world
 Using default tag: latest
 latest: Pulling from library/hello-world
 5b0f327be733: Pull complete
-Digest: sha256:07d5f7800dfe378c2196c7b1c524c33808ce2e0f74e7aa00e603295ca9a0972
+Digest: sha256:[SECRET_REDACTED]
 Status: Downloaded newer image for hello-world:latest
 root@Docker_Host_2:/root #
 ```
@@ -220,15 +220,15 @@ After building an image, Docker stores the actual content in the AUFS diff direc
 
 ```bash theme={null}
 root@Docker_Host_2:/var/lib/docker/aufs/diff # du -sh *
-16K     23d6e141c6f1f8c7a182e0cbed825731adb8d8c847089aa0211c0b9a
-20K     9a4d479c548701ba3be18901d57fcb5dfd62c82926937afc09f839d
-16K     ae0f7a103872f03d56127012a3a0e49de854ba00b0e8423c
-8.0K    a6d6c743915d5b184615f4d32caa2a8f0a4d1794fbd389dbc1f8beb4
-16K     ae017a103872f03d56127012a3a0e49de854ba00b0e8423c
-84K     b07d12c1bc6a58354b6de2289ca5936262991190d92a5f9cffff0
+16K     [SECRET_REDACTED]
+20K     [SECRET_REDACTED]
+16K     [SECRET_REDACTED]
+8.0K    [SECRET_REDACTED]
+16K     [SECRET_REDACTED]
+84K     [SECRET_REDACTED]
 16K     9b774564e5f36cb0f464d75ff906c14a
 4.0K    0a4b2488473ad10fc26cd3bd197ecbc
-6.5M    ce6ac6784d5b2c8ccea0758753f393b49b9210f591f40ed1612f59efe6fc6
+6.5M    [SECRET_REDACTED]
 ```
 
 You might recognize the folder that contains your application code by its smaller size. For instance, if you suspect a directory holds your application files, navigate into it and inspect its contents:

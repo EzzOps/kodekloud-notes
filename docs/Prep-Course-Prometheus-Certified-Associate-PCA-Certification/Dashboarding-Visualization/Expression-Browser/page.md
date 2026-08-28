@@ -196,7 +196,7 @@ rate(node_cpu_seconds_total[2m])
 Further reading:
 
 * Prometheus documentation: [https://prometheus.io/](https://prometheus.io/)
-* PromQL basics: [https://prometheus.io/docs/prometheus/latest/querying/basics/](https://prometheus.io/docs/prometheus/latest/querying/basics/)
+* PromQL basics: [https://prometheus.[SECRET_REDACTED]/](https://prometheus.[SECRET_REDACTED]/)
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prometheus-certified-associate-pca/module/d8fe7717-c2f8-4cfc-b3a7-c88d20fd5659/lesson/2fed6a36-d435-46de-8728-e1a9fd5824e6" />

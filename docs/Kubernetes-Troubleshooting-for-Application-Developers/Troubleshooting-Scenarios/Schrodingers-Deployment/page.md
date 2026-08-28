@@ -53,7 +53,7 @@ spec:
 After applying this update, Reloader will automatically initiate a restart of the deployment whenever there's a change to any associated ConfigMaps or Secrets. Apply the updated configuration by running:
 
 ```bash theme={null}
-kubectl apply -f https://raw.githubusercontent.com/stakater/Reloader/master/deployments/kubernetes/reloader.yaml
+kubectl apply -f https://raw.githubusercontent.[AWS_SECRET_ACCESS_KEY]/kubernetes/reloader.yaml
 ```
 
 Then, inspect your production pods:

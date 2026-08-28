@@ -76,7 +76,7 @@ Links and references
 
 * [etcd Operator (CoreOS)](https://github.com/coreos/etcd-operator)
 * [Prometheus Operator](https://github.com/prometheus-operator/prometheus-operator)
-* [Kubernetes: Controllers and the control loop](https://kubernetes.io/docs/concepts/architecture/controller/)
+* [Kubernetes: Controllers and the control loop](https://kubernetes.[AWS_SECRET_ACCESS_KEY]/)
 * [Operator Framework](https://operatorframework.io/)
 * [Helm](https://helm.sh/)
 

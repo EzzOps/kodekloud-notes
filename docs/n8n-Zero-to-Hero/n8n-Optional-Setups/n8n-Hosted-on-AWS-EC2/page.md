@@ -90,7 +90,7 @@ On first connect you may see a host authenticity prompt; type `yes` to continue.
 
 ```text theme={null}
 The authenticity of host '<PUBLIC_IP> (<PUBLIC_IP>)' can't be established.
-ED25519 key fingerprint is SHA256:oc3mo7aChuiTyieEkiDuCvPTLBliSDNLMrXc9W0c.
+ED25519 key fingerprint is SHA256:[AWS_SECRET_ACCESS_KEY].
 Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
 ```
 

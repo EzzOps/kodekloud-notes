@@ -118,8 +118,8 @@ Use **metric filters** to extract numeric data from logs and trigger CloudWatch 
 
 ## Additional Resources
 
-* [Amazon CloudWatch User Guide](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html)
-* [CloudWatch Agent Setup Guide](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Install-CloudWatch-Agent.html)
+* [Amazon CloudWatch User Guide](https://docs.aws.amazon.[SECRET_REDACTED].html)
+* [CloudWatch Agent Setup Guide](https://docs.aws.amazon.[SECRET_REDACTED]-CloudWatch-Agent.html)
 * [AWS Monitoring, Logging, and Tracing](https://aws.amazon.com/monitoring/)
 
 <CardGroup>

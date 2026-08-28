@@ -112,7 +112,7 @@ On your first connection attempt, you might see a warning about the host's authe
 
 ```bash theme={null}
 The authenticity of host '3.97.9.249 (3.97.9.249)' can't be established.
-ECDSA key fingerprint is SHA256:mUC8nA+kT4mFnGx46Yda1CH7LsxGtQtHd6+miQvs6I.
+ECDSA key fingerprint is SHA256:[SECRET_REDACTED].
 Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
 Warning: Permanently added '3.97.9.249' (ECDSA) to the list of known hosts.
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@

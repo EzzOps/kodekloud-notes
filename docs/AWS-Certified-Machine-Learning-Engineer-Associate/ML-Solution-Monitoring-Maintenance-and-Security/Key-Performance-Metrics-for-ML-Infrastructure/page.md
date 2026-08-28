@@ -31,7 +31,7 @@ How these services integrate in an ML monitoring workflow
 * CloudWatch collects infrastructure and application metrics (CPU, network, latency, errors). Note: memory and some host-level metrics often require the CloudWatch agent or custom metrics.
 * SageMaker Model Monitor samples inference payloads, compares them to precomputed baselines, and produces monitoring reports. Model Monitor writes reports and alerts to `S3` and publishes metrics/logs to CloudWatch.
 * Application tracing with AWS X-Ray provides distributed traces of requests through your application; correlating CloudWatch metrics with X-Ray traces gives a unified view of both model and application health. See the AWS X-Ray developer guide for details: [https://docs.aws.amazon.com/xray/latest/devguide/aws-xray.html](https://docs.aws.amazon.com/xray/latest/devguide/aws-xray.html)
-* CI/CD pipelines (for example, [AWS CodePipeline](https://learn.kodekloud.com/user/courses/aws-codepipeline-ci-cd-pipeline)) automate safe deployments. AWS Trusted Advisor provides operational recommendations based on resource usage and best practices: [https://docs.aws.amazon.com/awssupport/latest/user/trustedadvisor/what-is-trusted-advisor.html](https://docs.aws.amazon.com/awssupport/latest/user/trustedadvisor/what-is-trusted-advisor.html)
+* CI/CD pipelines (for example, [AWS CodePipeline](https://learn.kodekloud.com/user/courses/aws-codepipeline-ci-cd-pipeline)) automate safe deployments. AWS Trusted Advisor provides operational recommendations based on resource usage and best practices: [https://docs.aws.amazon.[SECRET_REDACTED]-is-trusted-advisor.html](https://docs.aws.amazon.[SECRET_REDACTED]-is-trusted-advisor.html)
 
 These integrations enable a closed loop where monitoring signals drive automated or manual actions (retraining, redeploying, scaling, or incident investigation).
 
@@ -149,7 +149,7 @@ References and further reading
 * [Amazon CloudWatch](https://learn.kodekloud.com/user/courses/aws-cloudwatch)
 * [SageMaker Model Monitor](https://learn.kodekloud.com/user/courses/aws-sagemaker)
 * AWS X-Ray developer guide: [https://docs.aws.amazon.com/xray/latest/devguide/aws-xray.html](https://docs.aws.amazon.com/xray/latest/devguide/aws-xray.html)
-* AWS Trusted Advisor overview: [https://docs.aws.amazon.com/awssupport/latest/user/trustedadvisor/what-is-trusted-advisor.html](https://docs.aws.amazon.com/awssupport/latest/user/trustedadvisor/what-is-trusted-advisor.html)
+* AWS Trusted Advisor overview: [https://docs.aws.amazon.[SECRET_REDACTED]-is-trusted-advisor.html](https://docs.aws.amazon.[SECRET_REDACTED]-is-trusted-advisor.html)
 * SageMaker Model Registry: [https://docs.aws.amazon.com/sagemaker/latest/dg/model-registry.html](https://docs.aws.amazon.com/sagemaker/latest/dg/model-registry.html)
 * AWS KMS overview: [https://docs.aws.amazon.com/kms/latest/developerguide/overview.html](https://docs.aws.amazon.com/kms/latest/developerguide/overview.html)
 * Spot Instances: [https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-spot-instances.html](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-spot-instances.html)

@@ -106,7 +106,7 @@ That's it for this lesson.
 Links and references
 
 * [Kyverno Documentation](https://kyverno.io/docs/)
-* [kubectl patch reference](https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands#patch)
+* [kubectl patch reference](https://kubernetes.io/[AWS_SECRET_ACCESS_KEY]-commands#patch)
 * Kyverno autogen and mutate rule behavior — see the Kyverno docs for details on how autogen maps Pod-level patches to controllers.
 
 <CardGroup>

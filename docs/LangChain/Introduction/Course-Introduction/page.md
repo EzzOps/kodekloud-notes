@@ -234,7 +234,7 @@ Next steps: we will dive deeper into tokenization, prompt design, and cost optim
 * [Jupyter Documentation](https://jupyter.org/documentation)
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langchain/module/d5e8b9a9-2511-4d5a-881b-aeeedeb44a4d/lesson/66ce9135-5ded-4123-9234-cfb7335f37c1" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[SECRET_REDACTED]-2511-4d5a-881b-aeeedeb44a4d/lesson/66ce9135-5ded-4123-9234-cfb7335f37c1" />
 </CardGroup>
 
 

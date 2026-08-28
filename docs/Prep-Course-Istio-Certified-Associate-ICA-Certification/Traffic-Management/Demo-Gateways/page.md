@@ -306,8 +306,8 @@ spec:
 
 References
 
-* [Istio DestinationRule API](https://istio.io/latest/docs/reference/config/networking/destination-rule/)
-* [Istio VirtualService API](https://istio.io/latest/docs/reference/config/networking/virtual-service/)
+* [Istio DestinationRule API](https://istio.io[AWS_SECRET_ACCESS_KEY]/destination-rule/)
+* [Istio VirtualService API](https://istio.io[AWS_SECRET_ACCESS_KEY]/virtual-service/)
 * [Istio Traffic Management Concepts](https://istio.io/latest/docs/concepts/traffic-management/)
 
 <CardGroup>

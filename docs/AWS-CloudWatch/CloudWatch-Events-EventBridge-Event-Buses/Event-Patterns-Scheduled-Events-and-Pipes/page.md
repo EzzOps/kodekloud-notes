@@ -19,7 +19,7 @@ aws events put-targets \
 ## References
 
 * [AWS EventBridge User Guide](https://docs.aws.amazon.com/eventbridge/latest/userguide/)
-* [EventBridge Event Patterns](https://docs.aws.amazon.com/eventbridge/latest/userguide/eventbridge-and-event-patterns.html)
+* [EventBridge Event Patterns](https://docs.aws.amazon.com/[AWS_SECRET_ACCESS_KEY]-and-event-patterns.html)
 * [AWS Lambda Developer Guide](https://docs.aws.amazon.com/lambda/latest/dg/welcome.html)
 
 <CardGroup>
@@ -163,7 +163,7 @@ These three building blocks—Event Patterns, Scheduled Events, and Pipes—form
 ## Links and References
 
 * [AWS EventBridge Documentation](https://docs.aws.amazon.com/eventbridge/latest/userguide/)
-* [Scheduling Expressions in EventBridge](https://docs.aws.amazon.com/eventbridge/latest/userguide/scheduled-events.html)
+* [Scheduling Expressions in EventBridge](https://docs.aws.amazon.[SECRET_REDACTED]-events.html)
 * [EventBridge Pipes Overview](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-pipes.html)
 
 <CardGroup>

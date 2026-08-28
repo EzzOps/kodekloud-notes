@@ -136,7 +136,7 @@ Use the public IP address of a VM (such as workload-a-vm-1) to test connectivity
 ```plaintext theme={null}
 PS > ssh kodekloud@172.173.168.151
 The authenticity of host '172.173.168.151 (172.173.168.151)' can't be established.
-ED25519 key fingerprint is SHA256:FgaCDyU+yuqGbyz1RkWrhJTxIlyIZkJqg3P7QzelHyo.
+ED25519 key fingerprint is SHA256:[SECRET_REDACTED].
 This key is not known by any other names
 Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
 Warning: Permanently added '172.173.168.151' (ED25519) to the list of known hosts.

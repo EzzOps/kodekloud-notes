@@ -242,10 +242,10 @@ If the pipeline completed successfully and CloudFormation created the stack and 
 
 ## Links and references
 
-* [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html)
-* [AWS CodePipeline User Guide](https://docs.aws.amazon.com/codepipeline/latest/userguide/welcome.html)
-* [Amazon S3 Versioning](https://docs.aws.amazon.com/AmazonS3/latest/userguide/Versioning.html)
-* [IAM Roles for Amazon CloudFormation](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-iam-template.html)
+* [AWS CloudFormation User Guide](https://docs.aws.amazon.[SECRET_REDACTED].html)
+* [AWS CodePipeline User Guide](https://docs.aws.amazon.[SECRET_REDACTED].html)
+* [Amazon S3 Versioning](https://docs.aws.amazon.[AWS_SECRET_ACCESS_KEY].html)
+* [IAM Roles for Amazon CloudFormation](https://docs.aws.amazon.com/[AWS_SECRET_ACCESS_KEY]-iam-template.html)
 
 That’s it — you now have a continuous-delivery pipeline that deploys a CloudFormation template stored in S3.
 

@@ -33,7 +33,7 @@ CloudWatch automatically publishes metrics for over 70 AWS services. Examples in
 * DiskReadBytes / DiskWriteBytes
 
 <Callout icon="lightbulb">
-  Built-in metrics have a default 1-minute resolution. To enable 1-second (high-resolution) metrics for supported services, see the [CloudWatch detailed monitoring documentation](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html).
+  Built-in metrics have a default 1-minute resolution. To enable 1-second (high-resolution) metrics for supported services, see the [CloudWatch detailed monitoring documentation](https://docs.aws.amazon.[SECRET_REDACTED].html).
 </Callout>
 
 ### 1.2 Custom Metrics
@@ -95,14 +95,14 @@ With metrics in place, you can now:
 
 * Set up **CloudWatch Alarms** to get notified on thresholds
 * Build **CloudWatch Dashboards** for real-time visualization
-* Integrate with [AWS CloudWatch Logs](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/WhatIsCloudWatchLogs.html) for log monitoring
+* Integrate with [AWS CloudWatch Logs](https://docs.aws.amazon.[SECRET_REDACTED].html) for log monitoring
 
 ***
 
 ## Links and References
 
 * [AWS CloudWatch Metrics and Dimensions](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CW_Support_For_AWS.html)
-* [Amazon RDS Monitoring](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/MonitoringOverview.html)
+* [Amazon RDS Monitoring](https://docs.aws.amazon.[SECRET_REDACTED].html)
 * [CloudWatch Pricing](https://aws.amazon.com/cloudwatch/pricing/)
 * [AWS SDK for Go CloudWatch Guide](https://docs.aws.amazon.com/sdk-for-go/api/service/cloudwatch/)
 

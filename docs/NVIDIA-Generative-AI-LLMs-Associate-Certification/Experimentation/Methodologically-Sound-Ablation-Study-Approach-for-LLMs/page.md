@@ -1,6 +1,6 @@
 # Methodologically Sound Ablation Study Approach for LLMs
 
-Source: https://notes.kodekloud.com/docs/NVIDIA-Generative-AI-LLMs-Associate-Certification/Experimentation/Methodologically-Sound-Ablation-Study-Approach-for-LLMs/page
+Source: https://notes.kodekloud.com/docs/NVIDIA-Generative-AI-LLMs-Associate-[SECRET_REDACTED]-Sound-Ablation-Study-Approach-for-LLMs/page
 
 Guidance on conducting controlled ablation studies for LLMs, recommending systematic one-at-a-time component removal, best practices, pitfalls, and statistical rigor for reproducible insights.
 

@@ -196,7 +196,7 @@ This confirms the header is correctly applied. The only remaining ZAP warning re
 ## Links and References
 
 * [OWASP ZAP Official Site](https://www.zaproxy.org)
-* [Spring Boot Security Reference](https://docs.spring.io/spring-security/site/docs/current/reference/html5/)
+* [Spring Boot Security Reference](https://docs.spring.io/spring-[SECRET_REDACTED]/)
 * [OWASP Dependency-Check Maven Plugin](https://jeremylong.github.io/DependencyCheck/dependency-check-maven/)
 * [National Vulnerability Database (NVD)](https://nvd.nist.gov)
 

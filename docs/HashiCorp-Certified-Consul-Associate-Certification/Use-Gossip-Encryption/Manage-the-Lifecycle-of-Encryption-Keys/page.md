@@ -31,7 +31,7 @@ consul keygen
 Example output:
 
 ```bash theme={null}
-VCjCNv+521LNTBcQcdu8rl9pjTHEuw+dhzf2bvici3w=
+[SECRET_REDACTED]=
 ```
 
 ## 2. Consul Keyring Commands

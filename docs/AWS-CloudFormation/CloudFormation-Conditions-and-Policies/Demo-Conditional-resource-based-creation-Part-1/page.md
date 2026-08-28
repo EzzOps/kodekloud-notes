@@ -183,7 +183,7 @@ Open the uploaded object's public URL (e.g., in an incognito window) to verify i
 ```
 
 <Callout icon="lightbulb">
-  Validate templates and test different parameter combinations in a non-production account to ensure Conditions and !If branches behave as expected. Use the AWS CloudFormation documentation for intrinsic function details: [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference.html)
+  Validate templates and test different parameter combinations in a non-production account to ensure Conditions and !If branches behave as expected. Use the AWS CloudFormation documentation for intrinsic function details: [https://docs.aws.amazon.[SECRET_REDACTED]-function-reference.html](https://docs.aws.amazon.[SECRET_REDACTED]-function-reference.html)
 </Callout>
 
 * In the AWS Console to update the stack:
@@ -205,7 +205,7 @@ You can extend this pattern to other resource types (EC2, IAM, RDS, etc.) to enf
 Further reading and references:
 
 * [AWS CloudFormation documentation](https://docs.aws.amazon.com/cloudformation/index.html)
-* [CloudFormation intrinsic functions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference.html)
+* [CloudFormation intrinsic functions](https://docs.aws.amazon.[SECRET_REDACTED]-function-reference.html)
 * [Amazon S3 documentation](https://docs.aws.amazon.com/s3/index.html)
 
 <CardGroup>

@@ -77,5 +77,5 @@ In this lesson, you’ve gained a solid understanding of Kustomize and its role 
 * [Customization Patterns in Kubernetes](https://www.cncf.io/blog/2020/11/19/kustomize-building-and-maintaining-a-custom-kubernetes-configuration/)
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kustomize/module/8ee78739-877b-4e11-a7a6-82ef7210468b/lesson/6b0f71b0-af8d-4394-bf24-0952d3f8f787" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[SECRET_REDACTED]-877b-4e11-a7a6-82ef7210468b/lesson/6b0f71b0-af8d-4394-bf24-0952d3f8f787" />
 </CardGroup>

@@ -91,7 +91,7 @@ Operational notes
 * Offset storage history: Older Kafka consumer clients stored offsets in ZooKeeper. Since the 0.9 consumer API and later, offsets are stored in an internal Kafka topic named `__consumer_offsets`, reducing direct dependency on ZooKeeper for offset storage while ZooKeeper continued to manage cluster metadata in those releases.
 
 <Callout icon="lightbulb">
-  Note: Kafka is evolving. Newer Kafka architectures (the KRaft mode introduced as part of [KIP-500: Replace ZooKeeper with a Kafka based metadata quorum](https://cwiki.apache.org/confluence/display/KAFKA/KIP-500%3A+Replace+ZooKeeper+with+a+Kafka+based+metadata+quorum) and production-ready in later releases) remove the ZooKeeper dependency by integrating the metadata quorum into Kafka itself. Whether your cluster uses ZooKeeper or KRaft depends on the Kafka version and deployment choices.
+  Note: Kafka is evolving. Newer Kafka architectures (the KRaft mode introduced as part of [KIP-500: Replace ZooKeeper with a Kafka based metadata quorum](https://cwiki.apache.org/confluence/display/KAFKA/KIP-500%[AWS_SECRET_ACCESS_KEY]metadata+quorum) and production-ready in later releases) remove the ZooKeeper dependency by integrating the metadata quorum into Kafka itself. Whether your cluster uses ZooKeeper or KRaft depends on the Kafka version and deployment choices.
 </Callout>
 
 Recommended hands-on exercise

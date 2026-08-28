@@ -134,8 +134,8 @@ Best practices and security tips
 
 Links and references
 
-* [CloudFormation Outputs documentation](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/outputs-section-structure.html)
-* [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html)
+* [CloudFormation Outputs documentation](https://docs.aws.amazon.[SECRET_REDACTED]-section-structure.html)
+* [AWS CloudFormation User Guide](https://docs.aws.amazon.[SECRET_REDACTED].html)
 * [Amazon S3 documentation](https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html)
 * [AWS CLI documentation](https://docs.aws.amazon.com/cli/latest/userguide/)
 

@@ -38,7 +38,7 @@ In this guide, you’ll learn how to migrate an existing Terraform project to Op
 
    ```plaintext theme={null}
    local_file.file: Creating...
-   local_file.file: Creation complete after 0s [id=342bd3c96f4da9100a6360378942400b96bfb5]
+   local_file.file: Creation complete after 0s [[SECRET_REDACTED]]
    Apply complete! Resources: 1 added, 0 changed, 0 destroyed.
    ```
 

@@ -29,7 +29,7 @@ Key services typically combined for ML activity logging
 
 | Service            | Role in ML logging                                                | Reference                                                                                                                                                                |
 | ------------------ | ----------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| AWS CloudTrail     | Capture API calls and user activity across accounts               | [https://docs.aws.amazon.com/cloudtrail/latest/userguide/cloudtrail-user-guide.html](https://docs.aws.amazon.com/cloudtrail/latest/userguide/cloudtrail-user-guide.html) |
+| AWS CloudTrail     | Capture API calls and user activity across accounts               | [https://docs.aws.amazon.[SECRET_REDACTED]-user-guide.html](https://docs.aws.amazon.[SECRET_REDACTED]-user-guide.html) |
 | Amazon S3          | Durable, encrypted storage for raw CloudTrail logs                | [https://aws.amazon.com/s3/](https://aws.amazon.com/s3/)                                                                                                                 |
 | Amazon Athena      | SQL queries against logs in S3 for ad-hoc forensics and reporting | [https://aws.amazon.com/athena/](https://aws.amazon.com/athena/)                                                                                                         |
 | Amazon CloudWatch  | Extract metrics, build dashboards, and create alarms              | [https://aws.amazon.com/cloudwatch/](https://aws.amazon.com/cloudwatch/)                                                                                                 |
@@ -182,7 +182,7 @@ Recommended action checklist
 
 Further reading and references
 
-* AWS CloudTrail User Guide: [https://docs.aws.amazon.com/cloudtrail/latest/userguide/cloudtrail-user-guide.html](https://docs.aws.amazon.com/cloudtrail/latest/userguide/cloudtrail-user-guide.html)
+* AWS CloudTrail User Guide: [https://docs.aws.amazon.[SECRET_REDACTED]-user-guide.html](https://docs.aws.amazon.[SECRET_REDACTED]-user-guide.html)
 * Amazon SageMaker: [https://aws.amazon.com/sagemaker/](https://aws.amazon.com/sagemaker/)
 * Amazon S3 storage classes and lifecycle: [https://aws.amazon.com/s3/storage-classes/](https://aws.amazon.com/s3/storage-classes/)
 * Amazon Athena: [https://aws.amazon.com/athena/](https://aws.amazon.com/athena/)

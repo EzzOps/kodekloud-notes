@@ -68,7 +68,7 @@ Links and references
 
 * [OpenTelemetry Collector](https://opentelemetry.io/docs/collector/)
 * [OpenTelemetry Specification](https://opentelemetry.io/docs/reference/specs/)
-* [Kubernetes: DaemonSet](https://kubernetes.io/docs/concepts/workloads/controllers/daemonset/)
+* [Kubernetes: DaemonSet](https://kubernetes.io/docs/[AWS_SECRET_ACCESS_KEY]/)
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/f6507634-836f-4fe9-b29d-047d84bfcce7/lesson/7c1b7ae6-44ec-4b00-92be-95e3fc3c7015" />

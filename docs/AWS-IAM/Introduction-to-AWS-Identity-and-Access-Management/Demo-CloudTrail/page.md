@@ -188,7 +188,7 @@ At the bottom of each event record, CloudTrail provides management-level details
 
 ## Next Steps
 
-* Read the [AWS CloudTrail User Guide](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html) for advanced configurations.
+* Read the [AWS CloudTrail User Guide](https://docs.aws.amazon.[SECRET_REDACTED]-user-guide.html) for advanced configurations.
 * Integrate CloudTrail logs with [Amazon Athena](https://aws.amazon.com/athena/) to run custom queries.
 * Enable [AWS Config](https://aws.amazon.com/config/) to monitor resource configuration changes over time.
 

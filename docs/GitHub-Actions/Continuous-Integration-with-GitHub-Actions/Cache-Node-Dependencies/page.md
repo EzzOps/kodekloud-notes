@@ -193,7 +193,7 @@ Once installation completes, the cache is saved:
 /usr/bin/tar --posix -cf cache.tzst ...
 Cache Size: ~7 MB (7025093 B)
 Cache saved successfully
-Cache saved with key: Linux-node-modules-6224ef692577e18835ac17794c9dc34656c2d8679585a7255cee00452bc1ef7
+Cache saved with key: Linux-node-modules-[SECRET_REDACTED]
 ```
 
 You’ll now see separate cache entries for macOS and Linux:

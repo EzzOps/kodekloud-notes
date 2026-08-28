@@ -12,7 +12,7 @@
 ```yaml theme={null}
 # Using a commit SHA (most stable / immutable)
 - name: Checkout
-  uses: actions/checkout@a824008085750b8e136effc585c3cd6082bd575f
+  uses: actions/checkout@[AWS_SECRET_ACCESS_KEY]
 ```
 
 SHAs are immutable, making them the most dependable choice for reproducible workflows. Many teams adopt a practical compromise: pin to a stable major tag (for example `@v3`) or a specific release tag (for example `@v3.6.0`) and then periodically update to a new tag or SHA after validating the action in a test environment.

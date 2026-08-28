@@ -80,7 +80,7 @@ docker ps
 * [Docker Daemon Configuration][1]
 * [Docker Live Restore Deep Dive][3]
 
-[1]: https://docs.docker.com/engine/reference/commandline/dockerd/#live-restore
+[1]: https://docs.docker.[AWS_SECRET_ACCESS_KEY]/#live-restore
 
 [2]: https://docs.docker.com/config/containers/start-containers-automatically/
 

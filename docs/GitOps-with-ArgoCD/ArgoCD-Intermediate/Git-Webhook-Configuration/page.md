@@ -179,7 +179,7 @@ labels:
 spec:
   affinity:
     podAntiAffinity:
-      preferredDuringSchedulingIgnoredDuringExecution:
+      [SECRET_REDACTED]:
       - podAffinityTerm:
           labelSelector:
             matchLabels:

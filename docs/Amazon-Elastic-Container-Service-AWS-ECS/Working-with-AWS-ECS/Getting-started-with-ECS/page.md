@@ -172,8 +172,8 @@ Once you understand the defaults created by the wizard, tear down those resource
 ## Links and references
 
 * Amazon ECS documentation: [https://docs.aws.amazon.com/ecs/](https://docs.aws.amazon.com/ecs/)
-* AWS Fargate overview: [https://docs.aws.amazon.com/AmazonECS/latest/developerguide/Fargate.html](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/Fargate.html)
-* awsvpc networking mode: [https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task-networking.html](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task-networking.html)
+* AWS Fargate overview: [https://docs.aws.amazon.com[AWS_SECRET_ACCESS_KEY].html](https://docs.aws.amazon.com[AWS_SECRET_ACCESS_KEY].html)
+* awsvpc networking mode: [https://docs.aws.amazon.[AWS_SECRET_ACCESS_KEY]-networking.html](https://docs.aws.amazon.[AWS_SECRET_ACCESS_KEY]-networking.html)
 * AWS CloudWatch Logs: [https://docs.aws.amazon.com/cloudwatch/index.html](https://docs.aws.amazon.com/cloudwatch/index.html)
 * Docker Compose reference: [https://docs.docker.com/compose/](https://docs.docker.com/compose/)
 

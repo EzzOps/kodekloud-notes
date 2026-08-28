@@ -85,7 +85,7 @@ In summary, Amazon Route 53 is an advanced DNS service that offers:
 It supports multiple protocols including HTTP, HTTPS, and TCP, ensuring both the reliability and accessibility of your services.
 
 <Callout icon="lightbulb">
-  For more detailed information and best practices on using Route 53, please refer to the [AWS Documentation](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/Welcome.html).
+  For more detailed information and best practices on using Route 53, please refer to the [AWS Documentation](https://docs.aws.amazon.[SECRET_REDACTED].html).
 </Callout>
 
 Thank you for reading this overview. We look forward to exploring additional AWS topics with you in the next lesson.

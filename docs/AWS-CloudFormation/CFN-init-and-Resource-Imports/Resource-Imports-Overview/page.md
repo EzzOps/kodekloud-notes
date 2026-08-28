@@ -70,15 +70,15 @@ Best practices and tips
 
 * Validate templates before creating a change set. Use the CloudFormation template linter and the `aws cloudformation validate-template` API.
 * Confirm the required importable properties for your resource type in the CloudFormation documentation:
-  * [AWS CloudFormation Importing Resources](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/resource-import.html)
-  * Resource-specific docs (e.g., [AWS::S3::Bucket](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket.html))
+  * [AWS CloudFormation Importing Resources](https://docs.aws.amazon.[SECRET_REDACTED]-import.html)
+  * Resource-specific docs (e.g., [AWS::S3::Bucket](https://docs.aws.amazon.[SECRET_REDACTED]-properties-s3-bucket.html))
 * Use change sets to preview the import and confirm that only the adoption occurs (no unintended replacements).
 * If a resource is in use by other systems, schedule imports during a maintenance window to reduce risk.
 
 References
 
-* AWS CloudFormation import resources guide: [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/resource-import.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/resource-import.html)
-* AWS CloudFormation User Guide: [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html)
+* AWS CloudFormation import resources guide: [https://docs.aws.amazon.[SECRET_REDACTED]-import.html](https://docs.aws.amazon.[SECRET_REDACTED]-import.html)
+* AWS CloudFormation User Guide: [https://docs.aws.amazon.[SECRET_REDACTED].html](https://docs.aws.amazon.[SECRET_REDACTED].html)
 
 The following sections contain concrete, step-by-step examples and walkthroughs for typical imports (S3, RDS, EC2) so you can safely adopt resources into CloudFormation-managed stacks.
 

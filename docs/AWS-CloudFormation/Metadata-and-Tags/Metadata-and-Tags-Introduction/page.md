@@ -100,7 +100,7 @@ Analogy recap:
 
 ## Where to read more
 
-* [AWS CloudFormation Metadata documentation](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/metadata-section-structure.html)
+* [AWS CloudFormation Metadata documentation](https://docs.aws.amazon.[SECRET_REDACTED]-section-structure.html)
 * [AWS Tagging strategies and best practices](https://docs.aws.amazon.com/whitepapers/latest/tagging-best-practices/)
 
 Summary

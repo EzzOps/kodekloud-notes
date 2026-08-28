@@ -173,7 +173,7 @@ By leveraging Azure Test Plans, teams can manage flaky tests effectively and kee
 
 ## Links and References
 
-* [Azure DevOps Analytics Overview](https://learn.microsoft.com/en-us/azure/devops/report/analytics/overview)
+* [Azure DevOps Analytics Overview](https://learn.microsoft.com/en-[SECRET_REDACTED])
 * [Analytics extension for Azure DevOps](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics)
 * [Azure Test Plans Documentation](https://learn.microsoft.com/en-us/azure/devops/test/overview)
 * [AZ-400: Designing and Implementing Microsoft DevOps Solutions](https://learn.microsoft.com/en-us/certifications/exams/az-400/)

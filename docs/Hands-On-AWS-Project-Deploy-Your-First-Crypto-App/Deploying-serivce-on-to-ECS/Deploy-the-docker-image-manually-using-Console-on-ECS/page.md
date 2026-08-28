@@ -116,7 +116,7 @@ This confirmed the container was running correctly on ECS Fargate and integrated
 
 * [Amazon ECS Documentation](https://docs.aws.amazon.com/ecs/latest/developerguide/what-is-amazon-ecs.html)
 * [Amazon ECR Documentation](https://docs.aws.amazon.com/AmazonECR/latest/userguide/what-is-ecr.html)
-* [Application Load Balancer Overview](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/introduction.html)
+* [Application Load Balancer Overview](https://docs.aws.amazon.com[AWS_SECRET_ACCESS_KEY]/introduction.html)
 
 That completes this lesson. See you in the next one!
 

@@ -259,8 +259,8 @@ When Terraform refreshes state (during `plan` or `apply`), it compares actual re
 ## Helpful references and next topics
 
 * Official provider documentation:
-  * azurerm\_resource\_group: [https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/resource\_group](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/resource_group)
-  * azurerm\_storage\_account: [https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/storage\_account](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/storage_account)
+  * azurerm\_resource\_group: [https://registry.terraform.io[AWS_SECRET_ACCESS_KEY]/resources/resource\_group](https://registry.terraform.io[AWS_SECRET_ACCESS_KEY]/resources/resource_group)
+  * azurerm\_storage\_account: [https://registry.terraform.io[AWS_SECRET_ACCESS_KEY]/resources/storage\_account](https://registry.terraform.io[AWS_SECRET_ACCESS_KEY]/resources/storage_account)
 * Recommended next topics to learn: variables, outputs, modules, remote state backends, and best practices for structuring Terraform projects.
 
 | Topic               | Why it matters                                                  |

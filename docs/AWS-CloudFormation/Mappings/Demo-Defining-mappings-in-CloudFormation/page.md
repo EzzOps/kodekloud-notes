@@ -73,8 +73,8 @@ Best practices and tips:
 
 References and further reading:
 
-* [AWS CloudFormation intrinsic functions: Fn::FindInMap](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-findinmap.html)
-* [CloudFormation template anatomy and best practices](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/template-anatomy.html)
+* [AWS CloudFormation intrinsic functions: Fn::FindInMap](https://docs.aws.amazon.[SECRET_REDACTED]-function-reference-findinmap.html)
+* [CloudFormation template anatomy and best practices](https://docs.aws.amazon.[SECRET_REDACTED]-anatomy.html)
 * [cfn-lint GitHub repository](https://github.com/aws-cloudformation/cfn-lint)
 
 <CardGroup>

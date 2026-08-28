@@ -58,7 +58,7 @@ When you run the command, you will be prompted to verify the host authenticity a
 
 ```console theme={null}
 The authenticity of host '20.124.250.11 (20.124.250.11)' can't be established.
-ED25519 key fingerprint is SHA256:WF3fDk9RW5FBHx6A619YVajH2O27TNQGyGPdCZZU.
+ED25519 key fingerprint is SHA256:[AWS_SECRET_ACCESS_KEY].
 This key is not known by any other names.
 Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
 Warning: Permanently added '20.124.250.11' (ED25519) to the list of known hosts.

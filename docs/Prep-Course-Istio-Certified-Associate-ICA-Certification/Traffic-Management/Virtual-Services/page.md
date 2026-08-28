@@ -151,7 +151,7 @@ Important: VirtualServices only take effect when traffic passes through the Envo
 
 Most advanced Istio traffic-management features require a VirtualService. If you want mirroring, rewrites, fault injection, or any L7 policies, you will do it via VirtualService configuration. Become familiar with the Istio VirtualService reference so you can quickly craft the right rules:
 
-* Istio VirtualService reference: [https://istio.io/latest/docs/reference/config/networking/virtual-service/](https://istio.io/latest/docs/reference/config/networking/virtual-service/)
+* Istio VirtualService reference: [https://istio.io[AWS_SECRET_ACCESS_KEY]/virtual-service/](https://istio.io[AWS_SECRET_ACCESS_KEY]/virtual-service/)
 
 <Callout icon="lightbulb">
   Traffic management and VirtualServices are heavily tested topics on the Istio certification. Spend time practicing match conditions, routing rules, rewrites, retries, and fault injection scenarios. Many exam tasks involve creating or troubleshooting VirtualServices.

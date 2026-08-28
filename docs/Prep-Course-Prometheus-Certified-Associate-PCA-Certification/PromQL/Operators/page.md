@@ -55,8 +55,8 @@ These modifiers let you precisely inspect historical values and sample windows â
 
 ## Additional resources
 
-* Prometheus PromQL documentation: [https://prometheus.io/docs/prometheus/latest/querying/basics/](https://prometheus.io/docs/prometheus/latest/querying/basics/)
-* PromQL examples and timestamp usage: [https://prometheus.io/docs/prometheus/latest/querying/expression/](https://prometheus.io/docs/prometheus/latest/querying/expression/)
+* Prometheus PromQL documentation: [https://prometheus.[SECRET_REDACTED]/](https://prometheus.[SECRET_REDACTED]/)
+* PromQL examples and timestamp usage: [https://prometheus.[SECRET_REDACTED]/](https://prometheus.[SECRET_REDACTED]/)
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prometheus-certified-associate-pca/module/b4de09eb-de60-4a9d-a193-b6f74f9889a3/lesson/79b04571-939c-45cb-adf9-7e273e92da79" />

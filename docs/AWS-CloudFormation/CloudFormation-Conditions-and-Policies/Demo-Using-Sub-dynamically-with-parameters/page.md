@@ -136,7 +136,7 @@ This ensures the partition (`aws`, `aws-cn`, `aws-us-gov`, etc.) is chosen autom
 
 ## Links and references
 
-* [AWS CloudFormation pseudo parameters — AWS::Partition](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/pseudo-parameter-reference.html#cfn-pseudo-param-partition)
+* [AWS CloudFormation pseudo parameters — AWS::Partition](https://docs.aws.amazon.[SECRET_REDACTED]-parameter-reference.html#cfn-pseudo-param-partition)
 * [cfn-lint GitHub repository](https://github.com/aws-cloudformation/cfn-lint)
 * [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/)
 

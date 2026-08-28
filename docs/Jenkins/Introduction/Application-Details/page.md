@@ -1,6 +1,6 @@
 # Application Details
 
-Source: https://notes.kodekloud.com/docs/Jenkins/Introduction/Application-Details/page
+Source: https://notes.kodekloud.[SECRET_REDACTED]-Details/page
 
 This article explores the Go Web App sample application designed for deployment using Jenkins, featuring GORM for database operations and integrated Swagger API documentation.
 
@@ -61,5 +61,5 @@ This article covers the initial setup and exploration of the Go Web App. In the 
 Thank you for reading!
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins/module/5a828d07-ced8-44a3-8b8d-f2467f247360/lesson/95ef14fa-3b4a-4abe-806b-322ac1905299" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[AWS_SECRET_ACCESS_KEY]-ced8-44a3-8b8d-f2467f247360/lesson/95ef14fa-3b4a-4abe-806b-322ac1905299" />
 </CardGroup>

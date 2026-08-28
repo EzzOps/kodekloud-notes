@@ -155,8 +155,8 @@ Summary
 Links and references
 
 * [Kubernetes CustomResourceDefinition (CRD) and subresources](https://kubernetes.io/docs/tasks/extend-kubernetes/custom-resources/custom-resource-definitions/)
-* [Controller pattern and best practices](https://kubernetes.io/docs/concepts/architecture/controller/)
-* [Conditions and status conventions](https://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api-conventions.md#typical-status-properties)
+* [Controller pattern and best practices](https://kubernetes.[AWS_SECRET_ACCESS_KEY]/)
+* [Conditions and status conventions](https://github.com/kubernetes/[AWS_SECRET_ACCESS_KEY]/sig-architecture/api-conventions.md#typical-status-properties)
 * [sigs.k8s.io/controller-runtime](https://pkg.go.dev/sigs.k8s.io/controller-runtime)
 
 <CardGroup>

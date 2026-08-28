@@ -85,7 +85,7 @@ This pattern allows Kyverno to dynamically read `cost-center` from the `billing-
 Further resources and references
 
 * Kyverno documentation: [https://kyverno.io/docs/](https://kyverno.io/docs/)
-* Kubernetes ConfigMap docs: [https://kubernetes.io/docs/concepts/configuration/configmap/](https://kubernetes.io/docs/concepts/configuration/configmap/)
+* Kubernetes ConfigMap docs: [https://kubernetes.[AWS_SECRET_ACCESS_KEY]/](https://kubernetes.[AWS_SECRET_ACCESS_KEY]/)
 * Kyverno tutorial on external data sources: [https://kyverno.io/docs/writing-policies/external-data/](https://kyverno.io/docs/writing-policies/external-data/)
 
 By the end of this lesson, you’ll be able to author Kyverno policies that consult ConfigMaps, query the Kubernetes API, cache values via the global context, and use image registry metadata to make automated, accurate policy decisions.

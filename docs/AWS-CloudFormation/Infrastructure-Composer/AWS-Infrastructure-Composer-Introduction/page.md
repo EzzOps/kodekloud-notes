@@ -66,7 +66,7 @@ Links and references
 
 * [AWS CloudFormation overview](https://aws.amazon.com/cloudformation/)
 * [AWS Infrastructure Composer documentation](https://docs.aws.amazon.com/) (search for Infrastructure Composer in the AWS docs)
-* [CloudFormation template anatomy](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/template-anatomy.html)
+* [CloudFormation template anatomy](https://docs.aws.amazon.[SECRET_REDACTED]-anatomy.html)
 
 Summary
 AWS Infrastructure Composer accelerates prototyping and education by letting you assemble AWS resources visually while producing standard CloudFormation templates (YAML/JSON) you can inspect, customize, and deploy. Use it as a complementary tool to manual template authoring to speed up discovery and collaboration.

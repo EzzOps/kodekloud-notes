@@ -147,5 +147,5 @@ This guide covers the essentials of monitoring Jenkins by installing the Prometh
 </Callout>
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins/module/22de6dac-d594-40dc-a3fb-1cc8d20b8a61/lesson/2f4991ca-76a6-4845-95ba-43ca90bb361e" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[AWS_SECRET_ACCESS_KEY]-d594-40dc-a3fb-1cc8d20b8a61/lesson/2f4991ca-76a6-4845-95ba-43ca90bb361e" />
 </CardGroup>

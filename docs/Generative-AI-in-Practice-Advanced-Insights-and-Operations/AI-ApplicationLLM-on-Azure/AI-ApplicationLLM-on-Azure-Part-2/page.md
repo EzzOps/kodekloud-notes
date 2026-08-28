@@ -219,7 +219,7 @@ model:
 ```
 
 ```plaintext theme={null}
-2024-11-03 13:58:02.454 [info] Loading /Users/mohsen.amiribesheli/Desktop/test2/cschat2/contoso-chat/src/sandbox/.env
+2024-11-03 13:58:02.454 [info] Loading /Users/mohsen.[SECRET_REDACTED]-chat/src/sandbox/.env
 2024-11-03 13:58:02.472 [info] Calling https://aoai-xl7xok7h2igp4.openai.azure.com/openai/deployments/gpt-4-evals/chat/completions?api-version=2023-12-01-preview
 2024-11-03 13:58:06.418 [info] Hey folks, did you catch the latest political debate? It was like watching a game of hot potato, but instead of a potato, it’s accountability. One candidate says, "Look at the economy!" and tosses it over. The other one catches it and says, "Look at healthcare!" and tosses it back.
 ```

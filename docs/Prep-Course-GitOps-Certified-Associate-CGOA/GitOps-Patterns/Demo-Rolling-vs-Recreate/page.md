@@ -169,8 +169,8 @@ Quick comparison
 
 Further reading and references
 
-* Kubernetes Deployments: [https://kubernetes.io/docs/concepts/workloads/controllers/deployment/](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/)
-* Deployment strategy docs: [https://kubernetes.io/docs/concepts/workloads/controllers/deployment/#strategy](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/#strategy)
+* Kubernetes Deployments: [https://kubernetes.[SECRET_REDACTED]/](https://kubernetes.[SECRET_REDACTED]/)
+* Deployment strategy docs: [https://kubernetes.[SECRET_REDACTED]/#strategy](https://kubernetes.[SECRET_REDACTED]/#strategy)
 
 That's all for this lesson — you can repeat the experiment with different replica counts, readiness probes, and `maxSurge` / `maxUnavailable` values to explore more nuanced availability behavior.
 

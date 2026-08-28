@@ -135,7 +135,7 @@ the following directives are specified both as a flag and in the configuration f
 
 ## References
 
-* [Docker Daemon Configuration](https://docs.docker.com/engine/reference/commandline/dockerd/)
+* [Docker Daemon Configuration](https://docs.docker.[AWS_SECRET_ACCESS_KEY]/)
 * [Docker CLI Environment Variables](https://docs.docker.com/engine/reference/commandline/cli/#environment-variables)
 * [Systemd Service Files](https://www.freedesktop.org/software/systemd/man/systemd.unit.html)
 * [Docker Security Best Practices](https://docs.docker.com/engine/security/)
@@ -193,7 +193,7 @@ This outputs a JSON array. Example:
 ```json theme={null}
 [
   {
-    "Id": "59aa5eacd88c42970754cd6005ce315944a2efcd32288df998b29267ae54c152",
+    "Id": "[SECRET_REDACTED]",
     "Created": "2020-01-14T13:23:01.225868339Z",
     "Path": "/bin/bash",
     "Args": [],
@@ -319,7 +319,7 @@ All resource lifecycle events can be retrieved using `docker system events`.
 
 ## Links and References
 
-* [Docker Inspect Documentation](https://docs.docker.com/engine/reference/commandline/inspect/)
+* [Docker Inspect Documentation](https://docs.docker.[AWS_SECRET_ACCESS_KEY]/)
 * [Docker Stats Documentation](https://docs.docker.com/engine/reference/commandline/stats/)
 * [Docker Logs Documentation](https://docs.docker.com/engine/reference/commandline/logs/)
 * [Docker Events Documentation](https://docs.docker.com/engine/reference/commandline/events/)

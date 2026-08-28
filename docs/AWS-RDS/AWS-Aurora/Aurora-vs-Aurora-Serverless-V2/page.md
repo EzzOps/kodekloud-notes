@@ -36,7 +36,7 @@ Autoscaling is a core differentiator between provisioned Aurora and Serverless v
 
 * Provisioned Aurora
   * Compute capacity is tied to DB instance classes and replicas.
-  * You control scaling through instance resizing, adding replicas, or automation like [Amazon Aurora Auto Scaling](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-auto-scaling.html) for read replicas.
+  * You control scaling through instance resizing, adding replicas, or automation like [Amazon Aurora Auto Scaling](https://docs.aws.amazon.com[AWS_SECRET_ACCESS_KEY]-auto-scaling.html) for read replicas.
   * Best when you require predictable throughput, reserved capacity, or fine control over instance configurations.
 
 * Aurora Serverless v2
@@ -99,8 +99,8 @@ Choose Aurora Serverless v2 when:
 ## Links and References
 
 * [Amazon Aurora (provisioned)](https://aws.amazon.com/rds/aurora/)
-* [Aurora Serverless v2 documentation](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-serverless-v2.html)
-* [Aurora Auto Scaling (read replicas)](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-auto-scaling.html)
+* [Aurora Serverless v2 documentation](https://docs.aws.amazon.com[AWS_SECRET_ACCESS_KEY]-serverless-v2.html)
+* [Aurora Auto Scaling (read replicas)](https://docs.aws.amazon.com[AWS_SECRET_ACCESS_KEY]-auto-scaling.html)
 * [AWS RDS Documentation](https://docs.aws.amazon.com/rds/)
 
 ## Summary

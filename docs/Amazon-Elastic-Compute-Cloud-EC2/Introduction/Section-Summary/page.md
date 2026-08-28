@@ -108,7 +108,7 @@ Stateful virtual firewall at the instance level that controls inbound and outbou
 * [AWS EC2 Documentation](https://docs.aws.amazon.com/ec2/index.html)
 * [Amazon VPC User Guide](https://docs.aws.amazon.com/vpc/latest/userguide/)
 * [Auto Scaling Groups](https://docs.aws.amazon.com/autoscaling/ec2/userguide/what-is-amazon-ec2-auto-scaling.html)
-* [Elastic Load Balancing](https://docs.aws.amazon.com/elasticloadbalancing/latest/userguide/)
+* [Elastic Load Balancing](https://docs.aws.amazon.[SECRET_REDACTED]/)
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/amazon-elastic-compute-cloud-ec2/module/2f7acbdc-7cde-4d21-9c8d-e1095f159b48/lesson/922219c0-d558-467b-8052-3c955e0f6a30" />

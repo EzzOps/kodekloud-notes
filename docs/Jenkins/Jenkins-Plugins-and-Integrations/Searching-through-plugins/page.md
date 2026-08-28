@@ -131,5 +131,5 @@ For more information on Jenkins and its plugins, check out the following resourc
 Happy automating with Jenkins, and see you in the next article!
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins/module/34e95998-38e2-4735-a378-b466e6a5851c/lesson/e65ef85a-9cca-4ef1-b786-5d69bd0eb174" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[AWS_SECRET_ACCESS_KEY]-38e2-4735-a378-b466e6a5851c/lesson/e65ef85a-9cca-4ef1-b786-5d69bd0eb174" />
 </CardGroup>

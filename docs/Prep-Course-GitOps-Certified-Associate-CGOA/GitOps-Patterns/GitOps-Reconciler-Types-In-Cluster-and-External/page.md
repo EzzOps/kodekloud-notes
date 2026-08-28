@@ -65,7 +65,7 @@ Links and references
 
 * [GitOps with ArgoCD](https://learn.kodekloud.com/user/courses/gitops-with-argocd)
 * [Istio Service Mesh](https://learn.kodekloud.com/user/courses/istio-service-mesh)
-* Kubernetes docs — Deployments: [https://kubernetes.io/docs/concepts/workloads/controllers/deployment/](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/)
+* Kubernetes docs — Deployments: [https://kubernetes.[SECRET_REDACTED]/](https://kubernetes.[SECRET_REDACTED]/)
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/gitops-certified-associate-cgoa/module/f1538ace-dc97-454d-b894-15bdd35bcb64/lesson/6835080d-68dc-4c5e-aaab-cd8ec0323f72" />

@@ -105,5 +105,5 @@ For more detailed information and updates, visit [PyTorch.org](https://pytorch.o
 </Callout>
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/pytorch/module/5a59db15-2490-4be0-a894-4b3d3cc78fac/lesson/c4bbb303-1a12-4868-8bff-86d8b42d478b" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[AWS_SECRET_ACCESS_KEY]-2490-4be0-a894-4b3d3cc78fac/lesson/c4bbb303-1a12-4868-8bff-86d8b42d478b" />
 </CardGroup>

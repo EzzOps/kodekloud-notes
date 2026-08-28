@@ -29,7 +29,7 @@ How Amazon RDS backups work (high level)
 Useful links:
 
 * [Amazon RDS Documentation](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Welcome.html)
-* [Amazon Aurora Documentation](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Welcome.html)
+* [Amazon Aurora Documentation](https://docs.aws.amazon.com/[AWS_SECRET_ACCESS_KEY].html)
 * [Snapshot Export to Amazon S3](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_ExportSnapshot.html)
 * [Amazon S3](https://docs.aws.amazon.com/s3/index.html)
 
@@ -85,7 +85,7 @@ Summary and next steps
 Further reading and references
 
 * [Amazon RDS Documentation](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Welcome.html)
-* [Amazon Aurora User Guide](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Welcome.html)
+* [Amazon Aurora User Guide](https://docs.aws.amazon.com/[AWS_SECRET_ACCESS_KEY].html)
 * [Exporting DB Snapshot Data to Amazon S3](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_ExportSnapshot.html)
 * [Amazon S3 Documentation](https://docs.aws.amazon.com/s3/index.html)
 

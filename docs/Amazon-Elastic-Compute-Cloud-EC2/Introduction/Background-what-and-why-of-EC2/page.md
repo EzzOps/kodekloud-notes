@@ -20,7 +20,7 @@ stop_time = 20:00
 * [AWS Tagging Strategies](https://docs.aws.amazon.com/whitepapers/latest/tagging-best-practices/tagging-best-practices.html)
 * [Tagging Your Amazon EC2 Resources](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Using_Tags.html)
 * [AWS CLI: ec2 create-tags](https://docs.aws.amazon.com/cli/latest/reference/ec2/create-tags.html)
-* [Amazon CloudWatch User Guide](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html)
+* [Amazon CloudWatch User Guide](https://docs.aws.amazon.[SECRET_REDACTED].html)
 * [AWS Cost Explorer API Reference](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/Welcome.html)
 
 <CardGroup>

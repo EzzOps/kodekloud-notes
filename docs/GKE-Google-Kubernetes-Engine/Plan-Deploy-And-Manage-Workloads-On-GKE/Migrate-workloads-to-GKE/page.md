@@ -124,8 +124,8 @@ kubectl describe deployment/nginx-deployment | grep Image
 ## Links and References
 
 * [GKE Documentation](https://cloud.google.com/kubernetes-engine/docs)
-* [Kubernetes Deployments](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/)
-* [kubectl Rollout](https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands#rollout)
+* [Kubernetes Deployments](https://kubernetes.[SECRET_REDACTED]/)
+* [kubectl Rollout](https://kubernetes.io/[AWS_SECRET_ACCESS_KEY]-commands#rollout)
 * [Nginx Docker Hub](https://hub.docker.com/_/nginx)
 
 <CardGroup>

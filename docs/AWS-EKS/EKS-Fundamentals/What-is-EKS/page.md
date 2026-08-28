@@ -2,7 +2,7 @@
 brew tap weaveworks/tap && brew install weaveworks/tap/eksctl
 
 # Linux via curl
-curl --silent --location "https://github.com/weaveworks/eksctl/releases/latest/download/eksctl_$(uname -s)_amd64.tar.gz" \
+curl --silent --location "https://github.[SECRET_REDACTED]eksctl_$(uname -s)_amd64.tar.gz" \
   | tar xz -C /usr/local/bin
 ```
 

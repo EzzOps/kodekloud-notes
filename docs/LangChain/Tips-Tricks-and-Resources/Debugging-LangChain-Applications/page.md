@@ -113,7 +113,7 @@ chain = LLMChain(llm=llm, prompt=prompt, callbacks=[handler])
 Later, we’ll walk through additional resources and practical examples to build production-grade LangChain applications.
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langchain/module/b5f7771a-fdbc-45b1-a786-6c84bb7ffc76/lesson/4e795ffc-63cb-4935-b04e-fb4911326be5" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[SECRET_REDACTED]-fdbc-45b1-a786-6c84bb7ffc76/lesson/4e795ffc-63cb-4935-b04e-fb4911326be5" />
 </CardGroup>
 
 
@@ -289,5 +289,5 @@ The LLM output and the chain run often include metadata such as token usage and 
 If you need help interpreting a specific debug trace or want assistance instrumenting more complex multi-component chains (callbacks, transforms, or retrievers), share the trace and chain configuration and we can walk through it step by step.
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langchain/module/b5f7771a-fdbc-45b1-a786-6c84bb7ffc76/lesson/2306b896-2eb1-409b-84f6-f2c392dbd3c4" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[SECRET_REDACTED]-fdbc-45b1-a786-6c84bb7ffc76/lesson/2306b896-2eb1-409b-84f6-f2c392dbd3c4" />
 </CardGroup>

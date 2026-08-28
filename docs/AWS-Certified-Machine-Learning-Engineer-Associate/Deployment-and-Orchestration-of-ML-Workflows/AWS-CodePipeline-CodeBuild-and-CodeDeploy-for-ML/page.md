@@ -126,7 +126,7 @@ Common CI/CD anti-patterns to avoid
 </Frame>
 
 <Callout icon="warning">
-  Avoid these pitfalls: always include automated tests, store secrets in a secrets manager (for example, AWS Secrets Manager (`https://docs.aws.amazon.com/secretsmanager/latest/userguide/intro.html`) or `Systems Manager Parameter Store`), and keep all code and model artifacts in versioned storage.
+  Avoid these pitfalls: always include automated tests, store secrets in a secrets manager (for example, AWS Secrets Manager (`https://docs.aws.amazon.[SECRET_REDACTED].html`) or `Systems Manager Parameter Store`), and keep all code and model artifacts in versioned storage.
 </Callout>
 
 Quick reference: AWS components and responsibilities
@@ -159,7 +159,7 @@ Links and references
 * CodeDeploy: [https://learn.kodekloud.com/user/courses/aws-codepipeline-ci-cd-pipeline](https://learn.kodekloud.com/user/courses/aws-codepipeline-ci-cd-pipeline) (see CodeDeploy module)
 * IAM best practices: [https://learn.kodekloud.com/user/courses/aws-iam](https://learn.kodekloud.com/user/courses/aws-iam)
 * AWS KMS overview: [https://docs.aws.amazon.com/kms/latest/developerguide/overview.html](https://docs.aws.amazon.com/kms/latest/developerguide/overview.html)
-* AWS Secrets Manager: [https://docs.aws.amazon.com/secretsmanager/latest/userguide/intro.html](https://docs.aws.amazon.com/secretsmanager/latest/userguide/intro.html)
+* AWS Secrets Manager: [https://docs.aws.amazon.[SECRET_REDACTED].html](https://docs.aws.amazon.[SECRET_REDACTED].html)
 
 By combining CodePipeline, CodeBuild, SageMaker, and CodeDeploy with secure practices and automated validation, you can build an MLOps pipeline that enables repeatable training, safe deployments, and rapid model iteration.
 

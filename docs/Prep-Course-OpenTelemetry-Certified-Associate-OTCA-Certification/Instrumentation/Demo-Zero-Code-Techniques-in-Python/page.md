@@ -95,7 +95,7 @@ Links and references
 
 * OpenTelemetry: [https://opentelemetry.io/](https://opentelemetry.io/)
 * Jaeger Tracing: [https://www.jaegertracing.io/](https://www.jaegertracing.io/)
-* OpenTelemetry semantic conventions (HTTP): [https://opentelemetry.io/docs/reference/specification/trace/semantic\_conventions/http/](https://opentelemetry.io/docs/reference/specification/trace/semantic_conventions/http/)
+* OpenTelemetry semantic conventions (HTTP): [https://opentelemetry.[SECRET_REDACTED]\_conventions/http/](https://opentelemetry.io/docs/reference/specification/trace/semantic_conventions/http/)
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/d97970ef-6201-45c2-813e-e03bc75ad77a/lesson/b38469f5-8819-4aea-8538-63233d729256" />
@@ -119,7 +119,7 @@ Relevant links:
 
 * OpenTelemetry: [https://opentelemetry.io/](https://opentelemetry.io/)
 * Flask: [https://palletsprojects.com/p/flask/](https://palletsprojects.com/p/flask/)
-* OTLP spec: [https://opentelemetry.io/docs/reference/specification/protocol/otlp/](https://opentelemetry.io/docs/reference/specification/protocol/otlp/)
+* OTLP spec: [https://opentelemetry.[AWS_SECRET_ACCESS_KEY]/otlp/](https://opentelemetry.[AWS_SECRET_ACCESS_KEY]/otlp/)
 
 ## 1. Minimal Flask app (products.py)
 

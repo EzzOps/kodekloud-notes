@@ -14,8 +14,8 @@ Key concepts covered:
 
 Useful links:
 
-* [CloudFormation drift detection overview](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-stack-drift.html)
-* [StackSets concepts and management](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/stacksets-concepts.html)
+* [CloudFormation drift detection overview](https://docs.aws.amazon.com/[AWS_SECRET_ACCESS_KEY]-cfn-stack-drift.html)
+* [StackSets concepts and management](https://docs.aws.amazon.[SECRET_REDACTED]-concepts.html)
 * [S3 buckets documentation](https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html)
 
 ## Step 1 — Start drift detection on the StackSet
@@ -96,9 +96,9 @@ This confirms the live resources once again match the CloudFormation template.
 
 ## References
 
-* [CloudFormation drift detection](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-stack-drift.html)
-* [StackSets overview and management](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/stacksets-concepts.html)
-* [S3 bucket resource documentation](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket.html)
+* [CloudFormation drift detection](https://docs.aws.amazon.com/[AWS_SECRET_ACCESS_KEY]-cfn-stack-drift.html)
+* [StackSets overview and management](https://docs.aws.amazon.[SECRET_REDACTED]-concepts.html)
+* [S3 bucket resource documentation](https://docs.aws.amazon.[SECRET_REDACTED]-properties-s3-bucket.html)
 
 That completes this demo on using CloudFormation drift detection with a StackSet.
 

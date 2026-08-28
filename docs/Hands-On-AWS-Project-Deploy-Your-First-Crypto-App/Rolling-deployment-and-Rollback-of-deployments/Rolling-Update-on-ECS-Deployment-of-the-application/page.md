@@ -94,9 +94,9 @@ Failure scenarios and rollback
 Further reading and references
 
 * [Amazon ECS Best Practices](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/best_practices.html)
-* [ECS Service Scheduler Concepts](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/service-scheduler.html)
-* [ALB Target Groups and Health Checks](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/load-balancer-target-groups.html)
-* [AWS CodeDeploy Blue/Green Deployments with ECS](https://docs.aws.amazon.com/codedeploy/latest/userguide/deployments-ecs.html)
+* [ECS Service Scheduler Concepts](https://docs.aws.amazon.com[AWS_SECRET_ACCESS_KEY]-scheduler.html)
+* [ALB Target Groups and Health Checks](https://docs.aws.amazon.com[AWS_SECRET_ACCESS_KEY]/load-balancer-target-groups.html)
+* [AWS CodeDeploy Blue/Green Deployments with ECS](https://docs.aws.amazon.com[AWS_SECRET_ACCESS_KEY]-ecs.html)
 
 That concludes this lesson on rolling updates for an ECS service: what to expect, how to tune behavior, and how to plan rollback strategies.
 

@@ -76,9 +76,9 @@ Status:         Running
 IP:             10.42.0.12
 Containers:
   busybox:
-    Container ID:   containerd://b05cd692a1f13b433883f9a8ece19ec2e8c4fc861aa97ae6a82857ed6037a6d
+    Container ID:   containerd://[SECRET_REDACTED]
     Image:          busybox
-    Image ID:       docker.io/library/busybox@sha256:d2b535841580310186df7a2055ce3ff83cc0df6caacf1e3489bf
+    Image ID:       docker.io/library/busybox@sha256:[SECRET_REDACTED]
     Command:
       sleep
       1000

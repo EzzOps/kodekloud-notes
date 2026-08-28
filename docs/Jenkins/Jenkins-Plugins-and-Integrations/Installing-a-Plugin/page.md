@@ -42,5 +42,5 @@ For more information on Jenkins and its plugins, consider exploring the followin
 * [Jenkins Plugin Index](https://plugins.jenkins.io)
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins/module/34e95998-38e2-4735-a378-b466e6a5851c/lesson/412ca826-f527-4b02-b966-13f1ebbd6158" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[AWS_SECRET_ACCESS_KEY]-38e2-4735-a378-b466e6a5851c/lesson/412ca826-f527-4b02-b966-13f1ebbd6158" />
 </CardGroup>

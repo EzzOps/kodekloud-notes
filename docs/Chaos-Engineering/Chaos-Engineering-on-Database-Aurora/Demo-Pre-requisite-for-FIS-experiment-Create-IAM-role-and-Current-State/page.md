@@ -83,7 +83,7 @@ Your IAM role is now ready to be selected when you configure and run your FIS ex
 ## References
 
 * [AWS Fault Injection Simulator (FIS)](https://docs.aws.amazon.com/fis/latest/userguide/)
-* [Aurora PostgreSQL User Guide](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/AuroraPostgreSQL.html)
+* [Aurora PostgreSQL User Guide](https://docs.aws.amazon.com/AmazonRDS[AWS_SECRET_ACCESS_KEY].html)
 * [CloudWatch X-Ray Trace Map](https://docs.aws.amazon.com/xray/latest/devguide/xray-console.html)
 
 <CardGroup>

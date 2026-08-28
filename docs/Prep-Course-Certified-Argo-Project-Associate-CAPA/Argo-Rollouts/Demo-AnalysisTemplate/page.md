@@ -183,7 +183,7 @@ Key details:
 Apply the manifest to create the AnalysisTemplate in the target namespace:
 
 ```bash theme={null}
-kubectl -n argo-analysis-lab apply -f https://gist.githubusercontent.com/sidd-harth/07d93e0a96d0dc1e1601def53d0aa42b/raw/6f9acdf21b0297ea3b5110e37dc32a1e8a3988c0/health-check-analysis-template.yml
+kubectl -n argo-analysis-lab apply -f https://gist.githubusercontent.com/sidd-[SECRET_REDACTED]/[AWS_SECRET_ACCESS_KEY]/health-check-analysis-template.yml
 ```
 
 Expected response:

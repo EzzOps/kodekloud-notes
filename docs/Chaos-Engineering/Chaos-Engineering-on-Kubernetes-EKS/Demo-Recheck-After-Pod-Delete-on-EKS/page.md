@@ -98,7 +98,7 @@ This demo highlights Kubernetes’ resilience on Amazon EKS:
 
 * [Kubernetes Self-Healing](https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#pod-health)
 * [Amazon EKS Overview](https://docs.aws.amazon.com/eks/latest/userguide/what-is-eks.html)
-* [CloudWatch RUM Documentation](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-RUM.html)
+* [CloudWatch RUM Documentation](https://docs.aws.amazon.[SECRET_REDACTED]-RUM.html)
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/chaos-engineering/module/67947884-154a-43e4-a0cf-1137e1264eee/lesson/97f4341b-1902-483e-afad-4b4caee0bb30" />

@@ -38,7 +38,7 @@ CloudFormation StackSets require two specific IAM roles with exact names so the 
 
 | Role name                                   | Purpose                                                                                                                                         | Where to create |
 | ------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- | --------------- |
-| AWSCloudFormationStackSetAdministrationRole | Administration role — created in the account where you create the StackSet (the StackSet controller)                                            | Admin account   |
+| [SECRET_REDACTED] | Administration role — created in the account where you create the StackSet (the StackSet controller)                                            | Admin account   |
 | AWSCloudFormationStackSetExecutionRole      | Execution role — created in each target account (or the same account if deploying locally) that allows CloudFormation to create resources there | Target accounts |
 
 Create the administration role in the admin account:
@@ -46,11 +46,11 @@ Create the administration role in the admin account:
 * In the AWS console go to IAM > Roles > Create role.
 * Select AWS service → CloudFormation.
 * Attach AdministratorAccess or a scoped policy granting sufficient CloudFormation and resource permissions.
-* Name the role exactly: AWSCloudFormationStackSetAdministrationRole
+* Name the role exactly: [SECRET_REDACTED]
 * Add a helpful description like: "This role starts the StackSet process and tells CloudFormation where and what to deploy."
 
 <Frame>
-  <img alt="A screenshot of the AWS IAM &#x22;Create role&#x22; page showing Role details with the role name &#x22;AWSCloudFormationStackSetAdministrationRole&#x22; and a description being entered (&#x22;This role starts the process. Tell CloudFormation where to go and what to do&#x22;). The left sidebar shows the setup steps and the browser window and taskbar are visible." />
+  <img alt="A screenshot of the AWS IAM &#x22;Create role&#x22; page showing Role details with the role name &#x22;[SECRET_REDACTED]&#x22; and a description being entered (&#x22;This role starts the process. Tell CloudFormation where to go and what to do&#x22;). The left sidebar shows the setup steps and the browser window and taskbar are visible." />
 </Frame>
 
 Create the execution role in each target account (or in the same account if you only deploy locally):
@@ -69,7 +69,7 @@ Create the execution role in each target account (or in the same account if you 
 </Frame>
 
 <Callout icon="lightbulb">
-  Be sure to use the exact role names: AWSCloudFormationStackSetAdministrationRole and AWSCloudFormationStackSetExecutionRole. StackSets expect these names; mismatches will prevent deployments.
+  Be sure to use the exact role names: [SECRET_REDACTED] and AWSCloudFormationStackSetExecutionRole. StackSets expect these names; mismatches will prevent deployments.
 </Callout>
 
 After creating the execution role, update its trust relationship so the administration role can assume it. By default, the execution role trust policy allows the CloudFormation service principal. You must add an AWS principal that references the administration role's ARN.
@@ -100,7 +100,7 @@ Modify the trust policy to allow the administration role to assume the execution
     {
       "Effect": "Allow",
       "Principal": {
-        "AWS": "arn:aws:iam::<ADMIN_ACCOUNT_ID>:role/AWSCloudFormationStackSetAdministrationRole"
+        "AWS": "arn:aws:iam::<ADMIN_ACCOUNT_ID>:[SECRET_REDACTED]"
       },
       "Action": "sts:AssumeRole"
     },
@@ -120,7 +120,7 @@ This trust policy ensures the StackSet controller (running under the administrat
 You can confirm both roles appear in the IAM Roles console.
 
 <Frame>
-  <img alt="A screenshot of the AWS Identity and Access Management (IAM) console showing the Roles page with a list of roles (e.g., AWSCloudFormationStackSetAdministrationRole, AWSCloudFormationStackSetExecutionRole, AWSServiceRoleForAmazonSSM). The UI shows a search bar, Create role and Delete buttons, and the left-hand Access management navigation." />
+  <img alt="A screenshot of the AWS Identity and Access Management (IAM) console showing the Roles page with a list of roles (e.g., [SECRET_REDACTED], AWSCloudFormationStackSetExecutionRole, AWSServiceRoleForAmazonSSM). The UI shows a search bar, Create role and Delete buttons, and the left-hand Access management navigation." />
 </Frame>
 
 <Callout icon="warning">
@@ -133,7 +133,7 @@ You can confirm both roles appear in the IAM Roles console.
 
 1. Open the CloudFormation console and choose Create StackSet.
 2. Upload your `stackset.yaml` file or provide a template URL.
-3. For the administration role, select AWSCloudFormationStackSetAdministrationRole.
+3. For the administration role, select [SECRET_REDACTED].
 4. For the execution role name, enter AWSCloudFormationStackSetExecutionRole — CloudFormation will look for this role name in each target account.
 
 <Frame>
@@ -169,16 +169,16 @@ Use the CloudFormation console and CloudWatch logs (if configured) to troublesho
 
 * Create a CloudFormation template (example: S3 bucket using AWS::Region and AWS::AccountId for unique naming).
 * Create two IAM roles with exact names:
-  * AWSCloudFormationStackSetAdministrationRole (admin account)
+  * [SECRET_REDACTED] (admin account)
   * AWSCloudFormationStackSetExecutionRole (target accounts)
 * Update the execution role trust policy to allow assumption by the administration role.
 * Create the StackSet, specify target accounts and regions, and monitor stack instance creation via the CloudFormation console.
 
 Links and references
 
-* [AWS CloudFormation StackSets documentation](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/what-is-cfnstacksets.html)
+* [AWS CloudFormation StackSets documentation](https://docs.aws.amazon.com[AWS_SECRET_ACCESS_KEY]-is-cfnstacksets.html)
 * [AWS IAM roles and trust policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles.html)
-* [S3 bucket naming rules](https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucketnamingrules.html)
+* [S3 bucket naming rules](https://docs.aws.amazon.[SECRET_REDACTED].html)
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/aws-cloud-formation/module/13ed2c0a-3a8a-45b0-870a-6c267c392190/lesson/8e0f00c1-8ee8-4012-b8cc-95905d73246e" />

@@ -115,7 +115,7 @@ To create a post successfully, first obtain a token via the login route then inc
 
 ```json theme={null}
 {
-    "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxMjM0NTY3ODkwLCJleHBpcmF0aW9uX3RpbWUiOiIxNjA2Mjc3Njg3Iiwicm9sZSI6InVzZXIiLCJ1c2VyX25hbWUiOiJzYW5qZWV2QGdtYWlsLmNvbSIsImZpcnN0X25hbWUiOiJzYW5qZW92In0.F45sS4iRzFo5vdAcrH2lC01S15BE",
+    "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.[SECRET_REDACTED].F45sS4iRzFo5vdAcrH2lC01S15BE",
     "token_type": "bearer"
 }
 ```

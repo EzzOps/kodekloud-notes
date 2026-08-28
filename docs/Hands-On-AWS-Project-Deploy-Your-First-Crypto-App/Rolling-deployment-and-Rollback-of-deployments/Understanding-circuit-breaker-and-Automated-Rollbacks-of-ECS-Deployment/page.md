@@ -171,14 +171,14 @@ Recommended actions:
 
 * Use immutable image tags (commit-hash tags or digests) in task definitions.
 * Enable the ECS deployment circuit breaker to automatically stop unhealthy deployments:
-  * AWS docs: [https://docs.aws.amazon.com/AmazonECS/latest/developerguide/deployment-type-ecs.html](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/deployment-type-ecs.html)
+  * AWS docs: [https://docs.aws.amazon.[SECRET_REDACTED]-type-ecs.html](https://docs.aws.amazon.[SECRET_REDACTED]-type-ecs.html)
 * Implement health checks (load balancer and container-level) and CloudWatch alarms to detect failed deployments quickly.
 * Ensure CI/CD injects the immutable image identifier into the task definition that you register.
 
 Further reading and references:
 
-* Amazon ECS task definitions: [https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task\_definitions.html](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task_definitions.html)
-* ECS deployment circuit breaker: [https://docs.aws.amazon.com/AmazonECS/latest/developerguide/deployment-type-ecs.html#deployment-circuit-breaker](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/deployment-type-ecs.html#deployment-circuit-breaker)
+* Amazon ECS task definitions: [https://docs.aws.amazon.[AWS_SECRET_ACCESS_KEY]\_definitions.html](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task_definitions.html)
+* ECS deployment circuit breaker: [https://docs.aws.amazon.[SECRET_REDACTED]-type-ecs.html#deployment-circuit-breaker](https://docs.aws.amazon.[SECRET_REDACTED]-type-ecs.html#deployment-circuit-breaker)
 * Amazon ECR best practices for image tags and immutability: [https://docs.aws.amazon.com/AmazonECR/latest/userguide/image-tag-mutability.html](https://docs.aws.amazon.com/AmazonECR/latest/userguide/image-tag-mutability.html)
 
 That's all for now—apply immutable tagging and circuit-breaker protections to avoid similar deadlock-style failures in rolling updates.
@@ -206,7 +206,7 @@ What the circuit breaker solves
 
 * When you push code (for example, to [CodeCommit](https://aws.amazon.com/codecommit/)) and your CI/CD pipeline (for example, [CodePipeline](https://aws.amazon.com/codepipeline/) or [CodeDeploy](https://aws.amazon.com/codedeploy/)) deploys a new ECS task definition revision, ECS performs a rolling update by replacing old tasks with new ones.
 * If the new revision crashes on startup, fails container-level health checks, or cannot register with an associated load balancer, ECS will repeatedly try to start tasks in an attempt to meet the desired count. That can cause repeated restarts, resource waste, longer outages, and potentially leave the service in a non-working state.
-* The ECS deployment circuit breaker detects repeated, consecutive failures and halts further restarts. If automatic rollback is enabled, ECS then reverts the service to the last known good task set (previous revision). See Amazon ECS deployments for details: [https://docs.aws.amazon.com/AmazonECS/latest/developerguide/deployments.html](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/deployments.html)
+* The ECS deployment circuit breaker detects repeated, consecutive failures and halts further restarts. If automatic rollback is enabled, ECS then reverts the service to the last known good task set (previous revision). See Amazon ECS deployments for details: [https://docs.aws.amazon.[SECRET_REDACTED].html](https://docs.aws.amazon.[SECRET_REDACTED].html)
 
 High-level deployment flow
 
@@ -224,7 +224,7 @@ How the ECS deployment circuit breaker works (details)
 * Monitoring: ECS expects tasks to reach and stay in the RUNNING state. It observes status transitions and health-check results during the deployment window.
 * Failure detection: ECS counts repeated failures or consecutive unhealthy transitions for the new task set. When failures match the configured detection behavior, ECS stops attempting further restarts for that revision.
 * Health checks taken into account:
-  * Elastic Load Balancer (target group) health checks — see [target group health checks](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/target-group-health-checks.html)
+  * Elastic Load Balancer (target group) health checks — see [target group health checks](https://docs.aws.amazon.com[AWS_SECRET_ACCESS_KEY]/target-group-health-checks.html)
   * AWS Cloud Map registration failures — see [AWS Cloud Map](https://aws.amazon.com/cloud-map/)
   * Container-level health checks defined in the task definition
     Accurate and meaningful health checks are critical; misconfigured checks can cause false positives or false negatives.
@@ -275,11 +275,11 @@ Summary
 
 Links and references
 
-* Amazon ECS deployments: [https://docs.aws.amazon.com/AmazonECS/latest/developerguide/deployments.html](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/deployments.html)
+* Amazon ECS deployments: [https://docs.aws.amazon.[SECRET_REDACTED].html](https://docs.aws.amazon.[SECRET_REDACTED].html)
 * AWS CodeCommit: [https://aws.amazon.com/codecommit/](https://aws.amazon.com/codecommit/)
 * AWS CodePipeline: [https://aws.amazon.com/codepipeline/](https://aws.amazon.com/codepipeline/)
 * AWS CodeDeploy: [https://aws.amazon.com/codedeploy/](https://aws.amazon.com/codedeploy/)
-* Elastic Load Balancing target group health checks: [https://docs.aws.amazon.com/elasticloadbalancing/latest/application/target-group-health-checks.html](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/target-group-health-checks.html)
+* Elastic Load Balancing target group health checks: [https://docs.aws.amazon.com[AWS_SECRET_ACCESS_KEY]/target-group-health-checks.html](https://docs.aws.amazon.com[AWS_SECRET_ACCESS_KEY]/target-group-health-checks.html)
 * AWS EventBridge: [https://aws.amazon.com/eventbridge/](https://aws.amazon.com/eventbridge/)
 
 That is it for this article.

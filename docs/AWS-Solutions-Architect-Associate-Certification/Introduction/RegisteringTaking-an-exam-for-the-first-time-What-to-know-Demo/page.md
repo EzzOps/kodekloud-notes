@@ -1,6 +1,6 @@
 # RegisteringTaking an exam for the first time What to know Demo
 
-Source: https://notes.kodekloud.com/docs/AWS-Solutions-Architect-Associate-Certification/Introduction/RegisteringTaking-an-exam-for-the-first-time-What-to-know-Demo/page
+Source: https://notes.kodekloud.com/docs/AWS-Solutions-Architect-Associate-[SECRET_REDACTED]-an-exam-for-the-first-time-What-to-know-Demo/page
 
 This article provides a step-by-step guide for registering and preparing for the AWS Solutions Architect – Associate exam.
 

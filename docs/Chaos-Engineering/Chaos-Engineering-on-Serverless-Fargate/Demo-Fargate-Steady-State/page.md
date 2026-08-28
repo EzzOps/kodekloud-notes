@@ -49,7 +49,7 @@ After recording these steady-state values, we’ll inject the I/O stress fault i
 
 ## Links and References
 
-* [AWS CloudWatch Container Insights](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Container-Insights.html)
+* [AWS CloudWatch Container Insights](https://docs.aws.amazon.[SECRET_REDACTED]-Insights.html)
 * [ECS on AWS Fargate](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/AWS_Fargate.html)
 
 <CardGroup>

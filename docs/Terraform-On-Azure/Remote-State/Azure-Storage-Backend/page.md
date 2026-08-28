@@ -91,7 +91,7 @@ Remote provisioners (especially `remote-exec`) let Terraform execute commands in
 
 ## Links and references
 
-* Terraform: remote-exec provisioner — [https://developer.hashicorp.com/terraform/language/resources/provisioners/remote-exec](https://developer.hashicorp.com/terraform/language/resources/provisioners/remote-exec)
+* Terraform: remote-exec provisioner — [https://developer.hashicorp.[SECRET_REDACTED]-exec](https://developer.hashicorp.[SECRET_REDACTED]-exec)
 * Azure CLI — [https://learn.microsoft.com/cli/azure/](https://learn.microsoft.com/cli/azure/)
 * Azure VM images documentation — [https://learn.microsoft.com/azure/virtual-machines/linux/cli-ps-findimage](https://learn.microsoft.com/azure/virtual-machines/linux/cli-ps-findimage)
 
@@ -229,7 +229,7 @@ Sample sanitized apply output:
 Acquiring state lock. This may take a few moments...
 azurerm_resource_group.rg: Creation complete after 32s [id=/subscriptions/.../resourceGroups/rg-remote-state-demo]
 azurerm_virtual_network.vnet: Creation complete after 12s [id=/subscriptions/.../providers/Microsoft.Network/virtualNetworks/vnet-demo]
-azurerm_storage_account.example: Creation complete after 1m23s [id=/subscriptions/.../providers/Microsoft.Storage/storageAccounts/stremotestatedemo11]
+azurerm_storage_account.example: Creation complete after 1m23s [id=/subscriptions/.../providers/Microsoft.[SECRET_REDACTED]]
 Releasing state lock. This may take a few moments...
 
 Apply complete! Resources: 3 added, 0 changed, 0 destroyed.
@@ -343,7 +343,7 @@ When Terraform holds the blob lease, the Azure portal will show the blob with pr
 
 ## Links and References
 
-* [Terraform Backend Configuration - azurerm](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/guides/state)
+* [Terraform Backend Configuration - azurerm](https://registry.terraform.io[AWS_SECRET_ACCESS_KEY]/guides/state)
 * [Azure Storage documentation](https://docs.microsoft.com/azure/storage/)
 * [Azure CLI: az storage account keys](https://learn.microsoft.com/cli/azure/storage/account/keys)
 

@@ -153,7 +153,7 @@ In this tutorial, we dissected the anatomy of a CloudFormation template and high
 * **Resources:** Declares all AWS components to be provisioned.
 * **Outputs:** Facilitates retrieval of resource information post-deployment.
 
-Understanding these sections will empower you to design flexible, efficient, and AWS-native infrastructure with CloudFormation. For further details on AWS CloudFormation, consider visiting the [AWS CloudFormation Documentation](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
+Understanding these sections will empower you to design flexible, efficient, and AWS-native infrastructure with CloudFormation. For further details on AWS CloudFormation, consider visiting the [AWS CloudFormation Documentation](https://docs.aws.amazon.[SECRET_REDACTED].html).
 
 Thank you for reading this lesson, and happy templating!
 

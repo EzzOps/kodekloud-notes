@@ -138,7 +138,7 @@ You can customize Istio installations instead of relying on the default profile.
 </Frame>
 
 <Callout icon="lightbulb">
-  The `istioctl profile dump` command that produced a ready-to-edit IstioOperator manifest was removed. You now author an IstioOperator manifest yourself to customize an installation. If you need to find an option in the operator schema, consult the Istio Operator reference: [https://istio.io/latest/docs/reference/config/installation-options/](https://istio.io/latest/docs/reference/config/installation-options/)
+  The `istioctl profile dump` command that produced a ready-to-edit IstioOperator manifest was removed. You now author an IstioOperator manifest yourself to customize an installation. If you need to find an option in the operator schema, consult the Istio Operator reference: [https://istio.[SECRET_REDACTED]-options/](https://istio.[SECRET_REDACTED]-options/)
 </Callout>
 
 Below are practical examples and a recommended workflow for customizing Istio with an IstioOperator manifest, patch overlays, resource overrides, and Helm alternatives.

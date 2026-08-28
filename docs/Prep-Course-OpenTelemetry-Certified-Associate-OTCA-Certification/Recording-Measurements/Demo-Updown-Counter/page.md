@@ -25,7 +25,7 @@ def configure_meter():
     buckets = [0.0, 20, 30, 60, 100, 250, 2000]
     view = View(
         instrument_name="total_request_duration",
-        aggregation=ExplicitBucketHistogramAggregation(boundaries=buckets),
+        [SECRET_REDACTED](boundaries=buckets),
     )
 
     provider = MeterProvider(metric_readers=[reader], resource=Resource.create(), views=[view])
@@ -92,7 +92,7 @@ if __name__ == "__main__":
 | ------------------------- | --------------------------------------------------: | ------------------------------------------------------------------------------- |
 | Prometheus metrics server |         Exposes `/metrics` for Prometheus to scrape | `start_http_server(port=8000, addr="localhost")`                                |
 | Metric Reader             | Makes OpenTelemetry metrics available to Prometheus | `PrometheusMetricReader()`                                                      |
-| Views & Aggregation       |               Apply bucket boundaries to histograms | `View(..., aggregation=ExplicitBucketHistogramAggregation(boundaries=buckets))` |
+| Views & Aggregation       |               Apply bucket boundaries to histograms | `View(..., [SECRET_REDACTED](boundaries=buckets))` |
 | Instruments               |     Counters, gauges and histograms used by the app | `http_requests_total`, `concurrent_requests`, `total_request_duration`          |
 
 Notes on the example:

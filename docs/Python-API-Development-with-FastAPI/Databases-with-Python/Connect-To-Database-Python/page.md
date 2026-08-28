@@ -134,7 +134,7 @@ Transformations are essential for preparing image data and augmenting it to impr
 Integrating these transformations into the data loading process ensures that preprocessing is both seamless and efficient. With this understanding of image transformations in PyTorch, you are now ready to see these techniques in action in the upcoming demonstration.
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/pytorch/module/f9d4b50b-328e-4cf7-a22a-3b236bf0abcd/lesson/5fd8231b-b241-4785-a397-ca229e3695c5" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[AWS_SECRET_ACCESS_KEY]-328e-4cf7-a22a-3b236bf0abcd/lesson/5fd8231b-b241-4785-a397-ca229e3695c5" />
 </CardGroup>
 
 

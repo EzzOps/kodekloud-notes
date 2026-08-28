@@ -163,7 +163,7 @@ After committing and pushing your workflow, navigate to the **Actions** tab in G
 In the logs, you’ll find Docker commands demonstrating how GitHub Actions starts both the job and service containers:
 
 ```bash theme={null}
-/usr/bin/docker start 99621c88b3e11e3a36090a1a87149e466bf5e8479ab5a54185f073369248
+/usr/bin/docker start [SECRET_REDACTED]
 /usr/bin/docker create --name mongo --network github_network \
   -e GITHUB_ACTIONS=true -e CI=true sidharth67/mongo-db:non-prod
 ```

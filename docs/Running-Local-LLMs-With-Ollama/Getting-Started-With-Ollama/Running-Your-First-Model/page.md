@@ -12,7 +12,7 @@ The image features a yellow smiley face, which is likely the central focus of th
 $ curl http://localhost:11434/api/generate -d '{
   "model": "llava",
   "prompt": "What is in this picture?",
-  "images": ["iVBORw0KGgoAAAANSUhEUgAAAGAAABmCAYAAABxVAAAAAElFTkSuQmCC"]
+  "images": ["[SECRET_REDACTED]"]
 }'
 ```text
 

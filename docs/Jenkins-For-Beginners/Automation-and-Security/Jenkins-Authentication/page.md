@@ -87,7 +87,7 @@ For example, you can install a plugin by sending a POST request with XML data us
 ```bash theme={null}
 curl -s -X POST --data "<jenkins><install plugin='${plugin}' /></jenkins>" \
 -H 'Content-Type: text/xml' \
-http://localhost:8080/pluginManager/installNecessaryPlugins \
+http://localhost:[SECRET_REDACTED] \
 --user admin:$JENKINS_TOKEN
 ```
 

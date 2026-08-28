@@ -166,7 +166,7 @@ Adding repository directory to the temporary git global config as a safe directo
 Deleting the contents of '/home/runner/work/demo-repo/demo-repo'
 Initializing the repository
 ...
-`aae9bb4c3f81abbde20c406ecd9dfa19cdf06231`
+`[AWS_SECRET_ACCESS_KEY]`
 run command
 Post checkout
 ```

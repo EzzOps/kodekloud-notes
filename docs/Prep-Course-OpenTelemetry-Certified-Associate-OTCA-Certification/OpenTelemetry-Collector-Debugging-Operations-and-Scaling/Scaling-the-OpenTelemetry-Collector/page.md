@@ -150,7 +150,7 @@ Wrap-up
 References and further reading
 
 * [OpenTelemetry Collector Concepts](https://opentelemetry.io/docs/collector/)
-* [Prometheus Sharding and Scraping Patterns](https://prometheus.io/docs/prometheus/latest/configuration/configuration/#scrape_config)
+* [Prometheus Sharding and Scraping Patterns](https://prometheus.[AWS_SECRET_ACCESS_KEY]configuration/#scrape_config)
 * [Designing for Observability at Scale (patterns)](https://opentelemetry.io)
 
 This concludes the discussion on safe and effective scaling strategies for the OpenTelemetry Collector.

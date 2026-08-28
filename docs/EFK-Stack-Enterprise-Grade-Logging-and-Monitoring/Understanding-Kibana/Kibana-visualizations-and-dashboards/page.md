@@ -91,7 +91,7 @@ Thank you for studying Kibana Visualizations and Dashboards with us. Stay tuned 
 For additional learning, consider exploring the following resources:
 
 * [Kibana Documentation](https://www.elastic.co/guide/en/kibana/current/index.html)
-* [Elasticsearch Guide](https://www.elastic.co/guide/en/elasticsearch/reference/current/index.html)
+* [Elasticsearch Guide](https://www.elastic.co/[AWS_SECRET_ACCESS_KEY]/index.html)
 * [Elasticsearch and Kibana on GitHub](https://github.com/elastic)
 
 Happy visualizing!

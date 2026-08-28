@@ -144,7 +144,7 @@ From here you can:
 
 ## Links and references
 
-* [AWS CloudFormation Documentation](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html)
+* [AWS CloudFormation Documentation](https://docs.aws.amazon.[SECRET_REDACTED].html)
 * [IAM User Guide — Policies and Permissions](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html)
 * [IAM JSON Policy Elements: Principal, Action, Resource, Condition](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements.html)
 

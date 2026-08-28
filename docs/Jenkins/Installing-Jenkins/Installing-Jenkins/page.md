@@ -31,5 +31,5 @@ For more detailed instructions and best practices, consider reviewing the offici
 That concludes this installation guide. We look forward to seeing you in the next article where we further explore Jenkins configurations and advanced setups.
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins/module/d9ec3aa2-1c6e-4512-bee1-f1d811ec7b6e/lesson/3b2bcce8-9f64-4d3a-916c-c6f15e819f8f" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[AWS_SECRET_ACCESS_KEY]-1c6e-4512-bee1-f1d811ec7b6e/lesson/3b2bcce8-9f64-4d3a-916c-c6f15e819f8f" />
 </CardGroup>

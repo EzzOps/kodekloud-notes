@@ -17,7 +17,7 @@ At KodeKloud, we believe that practical experience is the key to mastering CI/CD
 We wish you the best of luck on this journey. Happy coding, and we'll see you on the other side!
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins/module/a4722e22-b92e-4de2-ac1f-2db3b5c79cb9/lesson/4d04fbde-ae61-4561-90c8-2d0310d1b2af" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[AWS_SECRET_ACCESS_KEY]-b92e-4de2-ac1f-2db3b5c79cb9/lesson/4d04fbde-ae61-4561-90c8-2d0310d1b2af" />
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/jenkins/module/a4722e22-b92e-4de2-ac1f-2db3b5c79cb9/lesson/19d6cb1f-584d-4b41-a811-2cdd67ecaccb" />
+  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.[AWS_SECRET_ACCESS_KEY]-b92e-4de2-ac1f-2db3b5c79cb9/lesson/19d6cb1f-584d-4b41-a811-2cdd67ecaccb" />
 </CardGroup>

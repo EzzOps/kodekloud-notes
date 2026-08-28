@@ -154,7 +154,7 @@ curl -s \
 ```json theme={null}
 {
   "_class": "hudson.security.csrf.DefaultCrumbIssuer",
-  "crumb": "628e6eb7b759cb388daec3a44de4e1fcde5da95edcbd779d8b9967c1239de5cff",
+  "crumb": "[SECRET_REDACTED]",
   "crumbRequestField": "Jenkins-Crumb"
 }
 ```
@@ -189,7 +189,7 @@ curl -s \
 ```json theme={null}
 {
   "_class": "hudson.security.csrf.DefaultCrumbIssuer",
-  "crumb": "28791665a0a7f47ecf03510ae3b0b2695e01d3e3f2d0ba96d1d230898051059a",
+  "crumb": "[SECRET_REDACTED]",
   "crumbRequestField": "Jenkins-Crumb"
 }
 ```

@@ -45,7 +45,7 @@ Furthermore, you can perform cluster-wide changes by making GET calls to Elastic
 
 In the following sections of this lesson, we will delve into each operation with detailed, practical examples—helping you harness the full potential of Elasticsearch in your projects.
 
-For additional resources and deeper insights into Elasticsearch and related tools, be sure to check out the [Elasticsearch Documentation](https://www.elastic.co/guide/en/elasticsearch/reference/current/index.html).
+For additional resources and deeper insights into Elasticsearch and related tools, be sure to check out the [Elasticsearch Documentation](https://www.elastic.co/[AWS_SECRET_ACCESS_KEY]/index.html).
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/efk-stack-enterprise-grade-logging-and-monitoring/module/a70164d0-faba-407d-a6e8-4e227044c3aa/lesson/00bdca18-79b7-476e-8712-1d868e080874" />

@@ -125,7 +125,7 @@ Warning — CRDs without controllers
 Further reading and references
 
 * Kubernetes CustomResourceDefinition docs: [https://kubernetes.io/docs/tasks/extend-kubernetes/custom-resources/custom-resource-definitions/](https://kubernetes.io/docs/tasks/extend-kubernetes/custom-resources/custom-resource-definitions/)
-* Kubernetes API conventions: [https://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api-conventions.md](https://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api-conventions.md)
+* Kubernetes API conventions: [https://github.com/kubernetes/[AWS_SECRET_ACCESS_KEY]/sig-architecture/api-conventions.md](https://github.com/kubernetes/[AWS_SECRET_ACCESS_KEY]/sig-architecture/api-conventions.md)
 * Operator pattern and controller-runtime: [https://sdk.operatorframework.io/](https://sdk.operatorframework.io/)
 
 This overview covers the essentials: CRDs let you teach Kubernetes new resource types and validate them. Pair a CRD with a controller to implement behavior, and you have a powerful extension mechanism for building platform APIs on top of Kubernetes.

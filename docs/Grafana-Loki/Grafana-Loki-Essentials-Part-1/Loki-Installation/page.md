@@ -16,7 +16,7 @@ Start by downloading the configuration files necessary for both Loki and Promtai
 
 ```bash theme={null}
 wget https://raw.githubusercontent.com/grafana/loki/main/cmd/loki/loki-local-config.yaml
-wget https://raw.githubusercontent.com/grafana/loki/main/clients/cmd/promtail/promtail-local
+wget https://raw.githubusercontent.com[AWS_SECRET_ACCESS_KEY]promtail-local
 ```
 
 These commands download a basic configuration for a local setup. Feel free to modify these files later according to your specific logging requirements.

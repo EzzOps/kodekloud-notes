@@ -269,7 +269,7 @@ This completes the demonstration of adding SageMaker Model Monitor data-quality 
 * SageMaker Model Monitor documentation: [https://docs.aws.amazon.com/sagemaker/latest/dg/model-monitor.html](https://docs.aws.amazon.com/sagemaker/latest/dg/model-monitor.html)
 * SageMaker Python SDK — Model Monitor: [https://sagemaker.readthedocs.io/en/stable/toolkit/model\_monitor.html](https://sagemaker.readthedocs.io/en/stable/toolkit/model_monitor.html)
 * Amazon S3 documentation: [https://docs.aws.amazon.com/s3/](https://docs.aws.amazon.com/s3/)
-* Cron expressions (AWS): [https://docs.aws.amazon.com/AmazonCloudWatch/latest/events/ScheduledEvents.html#CronExpressions](https://docs.aws.amazon.com/AmazonCloudWatch/latest/events/ScheduledEvents.html#CronExpressions)
+* Cron expressions (AWS): [https://docs.aws.amazon.[SECRET_REDACTED].html#CronExpressions](https://docs.aws.amazon.[SECRET_REDACTED].html#CronExpressions)
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/aws-sagemaker/module/772ec99e-54ee-4f4f-8b2a-08b5bc4d4a32/lesson/7784f252-7990-4988-ade1-46089473be7f" />

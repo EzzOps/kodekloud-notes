@@ -122,7 +122,7 @@ Dashboards, error budgets, and well-chosen SLOs form the backbone of modern reli
 ## Links and references
 
 * [Prometheus histograms and best practices](https://prometheus.io/docs/practices/histograms/)
-* [PromQL basics](https://prometheus.io/docs/prometheus/latest/querying/basics/)
+* [PromQL basics](https://prometheus.[SECRET_REDACTED]/)
 * [SRE and SLO fundamentals — further reading](https://sre.google/sre-book/table-of-contents/)
 
 <CardGroup>

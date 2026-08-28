@@ -96,7 +96,7 @@ To swap models, replace `ChatOpenAI()` with another LLM runnable at the stage yo
 In a future lesson we will explore memory, retrieval, and building more complex chains and integrations—stay tuned.
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langchain/module/754457c5-1386-422b-98ad-3342dfc6aab3/lesson/1f3becbf-1cff-4ffc-9082-6e462c0617b6" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[SECRET_REDACTED]-1386-422b-98ad-3342dfc6aab3/lesson/1f3becbf-1cff-4ffc-9082-6e462c0617b6" />
 </CardGroup>
 
 

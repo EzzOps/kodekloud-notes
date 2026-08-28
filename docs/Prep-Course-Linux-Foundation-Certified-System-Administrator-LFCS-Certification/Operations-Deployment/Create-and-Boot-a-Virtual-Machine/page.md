@@ -22,8 +22,8 @@ lxc launch ubuntu-minimal:noble
 For our purposes, we use `wget`:
 
 ```bash theme={null}
-jeremy@kodekloud:~$ wget https://cloud-images.ubuntu.com/minimal/releases/noble/release/ubuntu-24.04-minimal-cloudimg-amd64.img
---2024-06-05 17:49:43--  https://cloud-images.ubuntu.com/minimal/releases/noble/release/ubuntu-24.04-minimal-cloudimg-amd64.img
+jeremy@kodekloud:~$ wget https://cloud-images.ubuntu.[SECRET_REDACTED]-24.04-minimal-cloudimg-amd64.img
+--2024-06-05 17:49:43--  https://cloud-images.ubuntu.[SECRET_REDACTED]-24.04-minimal-cloudimg-amd64.img
 Resolving cloud-images.ubuntu.com (cloud-images.ubuntu.com)... 185.125.190.40, 185.125.190.37, ...
 Connecting to cloud-images.ubuntu.com (cloud-images.ubuntu.com)|185.125.190.40|:443... connected.
 HTTP request sent, awaiting response... 200 OK
@@ -44,8 +44,8 @@ jeremy@kodekloud:~$
 To ensure that the downloaded image is authentic and uncorrupted, verify its checksum using the SHA-256 checksum provided on the Ubuntu page. Two files are released: `SHA256SUMS` (which contains checksums for all images) and `SHA256SUMS.gpg` (which is used to verify the checksum file itself). First, download the checksum file:
 
 ```bash theme={null}
-jeremy@kodekloud:~$ wget https://cloud-images.ubuntu.com/minimal/releases/noble/release/SHA256SUMS
---2024-06-05 18:00:28--  https://cloud-images.ubuntu.com/minimal/releases/noble/release/SHA256SUMS
+jeremy@kodekloud:~$ wget https://cloud-images.ubuntu.[SECRET_REDACTED]
+--2024-06-05 18:00:28--  https://cloud-images.ubuntu.[SECRET_REDACTED]
 Resolving cloud-images.ubuntu.com (cloud-images.ubuntu.com)... 185.125.190.40, 185.125.190.37, ...
 Connecting to cloud-images.ubuntu.com (cloud-images.ubuntu.com)|185.125.190.40|:443... connected.
 HTTP request sent, awaiting response... 200 OK

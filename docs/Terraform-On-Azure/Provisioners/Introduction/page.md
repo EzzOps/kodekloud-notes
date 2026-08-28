@@ -156,7 +156,7 @@ If you must use a provisioner:
 
 ## Resources and further reading
 
-* [Terraform Provisioners Documentation](https://developer.hashicorp.com/terraform/language/resources/provisioners/syntax)
+* [Terraform Provisioners Documentation](https://developer.hashicorp.[SECRET_REDACTED])
 * [Terraform Best Practices](https://developer.hashicorp.com/terraform)
 * [Cloud-init documentation](https://cloud-init.io/)
 * [Ansible — Configuration Management](https://www.ansible.com/)

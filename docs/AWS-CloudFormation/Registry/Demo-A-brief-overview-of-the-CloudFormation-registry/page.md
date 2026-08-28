@@ -33,9 +33,9 @@ Additional security recommendations:
 
 ## Links and references
 
-* [CloudFormation Registry overview — AWS Docs](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/registry.html)
+* [CloudFormation Registry overview — AWS Docs](https://docs.aws.amazon.[SECRET_REDACTED].html)
 * [CloudFormation CLI (cloudformation-cli)](https://docs.aws.amazon.com/cloudformation-cli/latest/userguide/what-is-cloudformation-cli.html)
-* [CloudFormation template anatomy](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/template-anatomy.html)
+* [CloudFormation template anatomy](https://docs.aws.amazon.[SECRET_REDACTED]-anatomy.html)
 * [IAM documentation](https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html)
 * [Amazon S3](https://aws.amazon.com/s3/)
 
@@ -168,7 +168,7 @@ Registering as a publisher enables you to:
 
 Further reading:
 
-* [AWS CloudFormation Registry documentation](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/registry.html)
+* [AWS CloudFormation Registry documentation](https://docs.aws.amazon.[SECRET_REDACTED].html)
 * [IssueCertificate API (ACM PCA)](https://docs.aws.amazon.com/acm-pca/latest/APIReference/API_IssueCertificate.html)
 
 <CardGroup>

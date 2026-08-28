@@ -57,7 +57,7 @@ Datasets and Dataloaders are fundamental building blocks in PyTorch that simplif
 Now that you have a clear understanding of PyTorch's Datasets and Dataloaders, let's proceed to a demo to see these concepts in action.
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/pytorch/module/f9d4b50b-328e-4cf7-a22a-3b236bf0abcd/lesson/62df45f3-d356-4293-8462-2a7ec4878292" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[AWS_SECRET_ACCESS_KEY]-328e-4cf7-a22a-3b236bf0abcd/lesson/62df45f3-d356-4293-8462-2a7ec4878292" />
 </CardGroup>
 
 

@@ -114,10 +114,10 @@ YAML Pipelines provide full version control, modular templates, and better colla
 ## References
 
 * [Azure DevOps Pipelines Overview](https://learn.microsoft.com/azure/devops/pipelines/?view=azure-devops)
-* [Pipeline Concurrency in Azure Pipelines](https://learn.microsoft.com/azure/devops/pipelines/process/concurrency?view=azure-devops)
-* [Classic to YAML Migration Guide](https://learn.microsoft.com/azure/devops/pipelines/migrate/classic-to-yaml?view=azure-devops)
+* [Pipeline Concurrency in Azure Pipelines](https://learn.microsoft.[SECRET_REDACTED]?view=azure-devops)
+* [Classic to YAML Migration Guide](https://learn.microsoft.[SECRET_REDACTED]-to-yaml?view=azure-devops)
 * [Azure Test Plans](https://learn.microsoft.com/azure/devops/test/overview?view=azure-devops)
-* [Security Scanning Tasks](https://learn.microsoft.com/azure/devops/pipelines/tasks/security/?view=azure-devops)
+* [Security Scanning Tasks](https://learn.microsoft.[SECRET_REDACTED]/?view=azure-devops)
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/az-400/module/c3626b7f-1518-4df3-8499-73782a79b6fe/lesson/f08e12ec-0dd8-44fc-86c8-158eacb6a623" />

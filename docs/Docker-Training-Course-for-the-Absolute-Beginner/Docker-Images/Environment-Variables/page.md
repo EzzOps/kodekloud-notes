@@ -85,7 +85,7 @@ The output includes a section similar to the following:
 ```json theme={null}
 [
   {
-    "Id": "35505f7810d17291261a43391d4b6c0846594d415ce4f4d0a6ffbf9cc5109048",
+    "Id": "[SECRET_REDACTED]",
     "State": {
       "Status": "running",
       "Running": true
@@ -95,7 +95,7 @@ The output includes a section similar to the following:
       "Env": [
         "APP_COLOR=blue",
         "LANG=C.UTF-8",
-        "GPG_KEY=0D96DF4D4110E5C43FBFB17F2D347EA6AA65421D",
+        "GPG_KEY=[AWS_SECRET_ACCESS_KEY]",
         "PYTHON_VERSION=3.6.6",
         "PYTHON_PIP_VERSION=18.1"
       ],

@@ -200,7 +200,7 @@ Let’s now move on to demoing a Flask application designed to serve a PyTorch m
 </Frame>
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/pytorch/module/a958efa1-845c-4cdf-9261-7688050bd96c/lesson/94f6282a-76a1-47f1-a91f-37d38c086dff" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[AWS_SECRET_ACCESS_KEY]-845c-4cdf-9261-7688050bd96c/lesson/94f6282a-76a1-47f1-a91f-37d38c086dff" />
 </CardGroup>
 
 

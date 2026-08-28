@@ -29,8 +29,8 @@ To configure Vault with AWS API access, enable the engine and write the root cre
 
 ```bash theme={null}
 vault write aws/config/root \
-    access_key="AKIAIOSFODNN7EXAMPLE" \
-    secret_key="wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY" \
+    access_key="[AWS_ACCESS_KEY_ID]" \
+    secret_key="[AWS_SECRET_ACCESS_KEY]" \
     region="us-east-1"
 ```
 
@@ -152,8 +152,8 @@ Key               Value
 lease_id          aws/creds/data-scientist/123abc
 lease_duration    1h
 lease_renewable   true
-access_key        AKIAIOSFODNN7EXAMPLE
-secret_key        wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
+access_key        [AWS_ACCESS_KEY_ID]
+secret_key        [AWS_SECRET_ACCESS_KEY]
 security_token    <nil>
 ```
 

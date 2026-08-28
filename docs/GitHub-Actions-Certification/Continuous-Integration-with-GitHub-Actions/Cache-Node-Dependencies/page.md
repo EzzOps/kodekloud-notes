@@ -184,7 +184,7 @@ On the **second run**, cache hit reduces `npm install` to \~1 s:
 
 ```bash theme={null}
 Cache restored successfully
-Cache restored from key: Linux-node-modules-6224ef692577e18835ac17794c9dc34656c2d867685a7255cee004d52b1e7
+Cache restored from key: Linux-node-modules-[SECRET_REDACTED]
 
 $ npm install
 up to date, audited 366 packages in 1s
@@ -192,7 +192,7 @@ up to date, audited 366 packages in 1s
 
 ```bash theme={null}
 Cache restored successfully
-Cache restored from key: macOS-node-modules-6224ef69257718835ac17794g9dc34656785a7255cee00452bc1ef7
+Cache restored from key: macOS-node-modules-[SECRET_REDACTED]
 
 $ npm install
 up to date, audited 366 packages in 1s

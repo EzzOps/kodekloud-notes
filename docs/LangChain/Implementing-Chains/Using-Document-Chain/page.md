@@ -130,7 +130,7 @@ print(answer)
 * Overview on RAG patterns: [https://arxiv.org/abs/2005.11401](https://arxiv.org/abs/2005.11401)
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langchain/module/a4d85af7-bfc2-40d7-89fc-f537792272ff/lesson/83ce2c7c-a5ea-428f-8fec-a33a56c9d69e" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[SECRET_REDACTED]-bfc2-40d7-89fc-f537792272ff/lesson/83ce2c7c-a5ea-428f-8fec-a33a56c9d69e" />
 </CardGroup>
 
 
@@ -273,5 +273,5 @@ Links and references
 </Callout>
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langchain/module/a4d85af7-bfc2-40d7-89fc-f537792272ff/lesson/19ac7110-a87f-434a-aa15-a4fcb9e410b1" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[SECRET_REDACTED]-bfc2-40d7-89fc-f537792272ff/lesson/19ac7110-a87f-434a-aa15-a4fcb9e410b1" />
 </CardGroup>

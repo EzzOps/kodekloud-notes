@@ -142,7 +142,7 @@ Links and references
 * [LangGraph repository and docs](/)
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langgraph/module/e0cd494a-00a7-4c52-88e9-b3932b03ff9f/lesson/55b77569-eff2-40c3-859a-a5e5de30cbd9" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[SECRET_REDACTED]-00a7-4c52-88e9-b3932b03ff9f/lesson/55b77569-eff2-40c3-859a-a5e5de30cbd9" />
 </CardGroup>
 
 

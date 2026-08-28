@@ -91,7 +91,7 @@ After recording a sample passage:
 You can review your score and identify areas for improvement. For example, the following code snippet demonstrates how to initiate continuous pronunciation assessment:
 
 ```csharp theme={null}
-public static async Task PronunciationAssessmentContinuousWithFile()
+public static async Task [SECRET_REDACTED]()
 ```
 
 4. **Additional Speech Transcription:** Quickly test audio and perform real-time transcription for various use cases, including live chat avatars and post-call transcription analytics.

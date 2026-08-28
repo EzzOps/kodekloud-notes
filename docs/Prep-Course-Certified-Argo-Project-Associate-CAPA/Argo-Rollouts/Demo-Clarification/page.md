@@ -18,7 +18,7 @@ Example outputs (trimmed):
 # kubectl argo rollouts version
 kubectl-argo-rollouts: v1.8.3+49fa151
 BuildDate: 2025-06-04T22:15:54Z
-GitCommit: 49fa1516cf71672b69e265267da4e1d16e1fe114
+GitCommit: [AWS_SECRET_ACCESS_KEY]
 GoVersion: go1.23.9
 Platform: linux/amd64
 

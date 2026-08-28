@@ -103,7 +103,7 @@ Replace `LOCK_ID` with the identifier from the error message. This removes the l
 
 * [Terraform Remote State](https://www.terraform.io/language/state/remote)
 * [Terragrunt Documentation](https://terragrunt.gruntwork.io/docs/)
-* [AWS DynamoDB Developer Guide](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Introduction.html)
+* [AWS DynamoDB Developer Guide](https://docs.aws.amazon.[AWS_SECRET_ACCESS_KEY]/Introduction.html)
 * [Managing State Locking](https://www.terraform.io/language/state/locking)
 
 <CardGroup>

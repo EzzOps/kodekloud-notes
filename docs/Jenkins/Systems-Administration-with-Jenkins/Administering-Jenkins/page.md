@@ -38,5 +38,5 @@ To maintain a robust Jenkins environment, focus on:
 Thank you for reading, and see you in the next article!
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins/module/22de6dac-d594-40dc-a3fb-1cc8d20b8a61/lesson/e5db9f73-b364-499f-9b38-f478fd9dfafc" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[AWS_SECRET_ACCESS_KEY]-d594-40dc-a3fb-1cc8d20b8a61/lesson/e5db9f73-b364-499f-9b38-f478fd9dfafc" />
 </CardGroup>

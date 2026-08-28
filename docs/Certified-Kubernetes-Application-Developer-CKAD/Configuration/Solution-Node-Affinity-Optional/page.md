@@ -128,7 +128,7 @@ spec:
     spec:
       affinity:
         nodeAffinity:
-          requiredDuringSchedulingIgnoredDuringExecution:
+          [SECRET_REDACTED]:
             nodeSelectorTerms:
               - matchExpressions:
                   - key: color
@@ -194,7 +194,7 @@ spec:
     spec:
       affinity:
         nodeAffinity:
-          requiredDuringSchedulingIgnoredDuringExecution:
+          [SECRET_REDACTED]:
             nodeSelectorTerms:
               - matchExpressions:
                   - key: node-role.kubernetes.io/master

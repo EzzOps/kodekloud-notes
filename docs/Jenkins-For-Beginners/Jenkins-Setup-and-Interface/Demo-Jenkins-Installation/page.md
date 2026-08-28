@@ -307,7 +307,7 @@ Once Jenkins starts successfully, you should see a log entry prompting the initi
 Jenkins initial setup is required. An admin user has been created and a password has been generated.
 Please use the following password to proceed to installation:
 <initialAdminPassword>
-This may also be found at: /var/lib/jenkins/secrets/initialAdminPassword
+This may also be found at: /var/[AWS_SECRET_ACCESS_KEY]
 ```
 
 ***
@@ -329,7 +329,7 @@ You will be presented with the Jenkins unlock screen where you must enter the in
 To retrieve the admin password, run the following command on your virtual machine:
 
 ```bash theme={null}
-cat /var/lib/jenkins/secrets/initialAdminPassword
+cat /var/[AWS_SECRET_ACCESS_KEY]
 ```
 
 The command should output a string like:

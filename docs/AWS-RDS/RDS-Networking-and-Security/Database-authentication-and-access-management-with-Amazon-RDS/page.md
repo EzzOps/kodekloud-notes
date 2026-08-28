@@ -41,7 +41,7 @@ IAM Database Authentication (recommended for many modern AWS workloads)
 * How it works: clients request a short-lived authentication token from AWS and present that token as the database password. Tokens typically expire after 15 minutes.
 * Benefits:
   * Centralized user management via IAM (no long-lived DB passwords to store).
-  * Better integration with AWS identity controls and audit trails ([CloudTrail](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html)).
+  * Better integration with AWS identity controls and audit trails ([CloudTrail](https://docs.aws.amazon.[SECRET_REDACTED]-user-guide.html)).
   * Easier to revoke access by changing IAM policies or roles.
 * Requirements and typical steps:
   1. Enable IAM DB authentication on the DB instance or cluster.
@@ -128,8 +128,8 @@ Links and references
 * [Amazon RDS Documentation](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Welcome.html)
 * [AWS IAM Overview](https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html)
 * [AWS CLI generate-db-auth-token reference](https://docs.aws.amazon.com/cli/latest/reference/rds/generate-db-auth-token.html)
-* [Using SSL/TLS with Amazon RDS](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/UsingWithRDS.SSL.html)
-* [CloudTrail User Guide](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html)
+* [Using SSL/TLS with Amazon RDS](https://docs.aws.amazon.com[AWS_SECRET_ACCESS_KEY].SSL.html)
+* [CloudTrail User Guide](https://docs.aws.amazon.[SECRET_REDACTED]-user-guide.html)
 * [Microsoft Active Directory documentation](https://learn.microsoft.com/en-us/windows-server/identity/active-directory-domain-services)
 * [Kerberos (MIT)](https://web.mit.edu/kerberos/)
 

@@ -9,13 +9,13 @@ Understanding password attacks starts with the knowledge that systems do not sto
 For example, when "KodeKloud" is combined with the SHA-256 algorithm, the process is as follows:
 
 ```bash theme={null}
-KodeKloud + SHA-256 = 3800688bc894e114d7d2ce6a63221765d148fdb65219b5351fedb837ef799b52
+KodeKloud + SHA-256 = [SECRET_REDACTED]
 ```
 
 During a subsequent login attempt, the user’s input password is hashed using the same algorithm. The newly generated hash is then transmitted to the server, which compares it to the stored hash from the original password creation:
 
 ```bash theme={null}
-KodeKloud + SHA-256 = 3800688bc894e114d7d2ce6a63221765d148fdb65219b5351fedb837ef799b52
+KodeKloud + SHA-256 = [SECRET_REDACTED]
 ```
 
 If the two hashes match, the authentication is successful.

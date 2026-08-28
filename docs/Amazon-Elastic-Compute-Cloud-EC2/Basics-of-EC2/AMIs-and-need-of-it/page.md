@@ -1,5 +1,5 @@
 # commonly:
-# /var/lib/jenkins/secrets/initialAdminPassword
+# /var/[AWS_SECRET_ACCESS_KEY]
 ```
 
 There are many migration scenarios (master-to-master, containerized Jenkins, CloudBees-specific workflows). The steps below cover the common case for systemd-based, package-installed Jenkins instances.
@@ -247,7 +247,7 @@ Leveraging AMIs streamlines your AWS deployments and ensures consistency across 
 
 * [AWS AMI Documentation](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AMIs.html)
 * [Amazon EC2 Image Builder](https://docs.aws.amazon.com/image-builder/latest/userguide/what-is-image-builder.html)
-* [Amazon EBS Snapshots](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSSnapshots.html)
+* [Amazon EBS Snapshots](https://docs.aws.amazon.[AWS_SECRET_ACCESS_KEY].html)
 
 | Resource       | Use Case                             | Example CLI Command                                                           |
 | -------------- | ------------------------------------ | ----------------------------------------------------------------------------- |

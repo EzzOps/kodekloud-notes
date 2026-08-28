@@ -154,7 +154,7 @@ Next steps: experiment with these transforms in your own Composition to implemen
 
 * Crossplane docs: [https://crossplane.io/docs/](https://crossplane.io/docs/)
 * Crossplane Functions: [https://doc.crds.example.org/](https://doc.crds.example.org/) (replace with your function docs or internal reference)
-* Kubernetes ConfigMap: [https://kubernetes.io/docs/concepts/configuration/configmap/](https://kubernetes.io/docs/concepts/configuration/configmap/)
+* Kubernetes ConfigMap: [https://kubernetes.[AWS_SECRET_ACCESS_KEY]/](https://kubernetes.[AWS_SECRET_ACCESS_KEY]/)
 * Kubernetes API Extensions (CRDs/XRD): [https://kubernetes.io/docs/tasks/extend-kubernetes/custom-resources/custom-resource-definitions/](https://kubernetes.io/docs/tasks/extend-kubernetes/custom-resources/custom-resource-definitions/)
 
 <CardGroup>

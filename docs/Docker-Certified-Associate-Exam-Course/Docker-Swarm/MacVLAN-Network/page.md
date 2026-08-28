@@ -278,7 +278,7 @@ Each container will receive an IP from your defined subnet and appear as a physi
 
 * [Docker Network Drivers](https://docs.docker.com/network/)
 * [Linux VLAN Documentation](https://www.kernel.org/doc/Documentation/networking/vlan.txt)
-* [Kubernetes CNI MACVLAN Plugin](https://github.com/containernetworking/plugins/tree/main/plugins/main/macvlan)
+* [Kubernetes CNI MACVLAN Plugin](https://github.[SECRET_REDACTED])
 
 That concludes this lesson on Docker MACVLAN networks. Advanced multi-VLAN and trunking scenarios will be covered in a future guide.
 

@@ -106,7 +106,7 @@ In this article, we covered the essentials of Docker and its significance in mod
 By following these guidelines, you can enhance your model deployment process and fully harness the benefits of Docker for efficient, scalable, and secure application management. For more detailed information, refer to the [official Docker documentation](https://docs.docker.com/).
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/pytorch/module/a958efa1-845c-4cdf-9261-7688050bd96c/lesson/c686a7f3-2e4b-4c36-a212-dc9b95354760" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[AWS_SECRET_ACCESS_KEY]-845c-4cdf-9261-7688050bd96c/lesson/c686a7f3-2e4b-4c36-a212-dc9b95354760" />
 </CardGroup>
 
 

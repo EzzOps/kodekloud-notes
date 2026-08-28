@@ -1,6 +1,6 @@
 # AuthenticationEncryption
 
-Source: https://notes.kodekloud.com/docs/Prep-Course-Prometheus-Certified-Associate-PCA-Certification/Prometheus-Fundamentals/AuthenticationEncryption/page
+Source: https://notes.kodekloud.com/docs/Prep-Course-Prometheus-Certified-Associate-PCA-Certification/Prometheus-[SECRET_REDACTED]
 
 How to secure Prometheus scrapes to Node Exporter using TLS encryption and basic authentication, with configuration steps and best practices for testing and production.
 
@@ -31,7 +31,7 @@ Example OpenSSL command (run on the target host):
 sudo openssl req -new -newkey rsa:2048 -days 365 -nodes -x509 \
   -keyout node_exporter.key \
   -out node_exporter.crt \
-  -subj "/C=US/ST=California/L=Oakland/O=MyOrg/CN=node" \
+  -subj "/[AWS_SECRET_ACCESS_KEY]node" \
   -addext "subjectAltName = DNS:node"
 ```
 

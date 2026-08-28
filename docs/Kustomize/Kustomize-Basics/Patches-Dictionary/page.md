@@ -170,9 +170,9 @@ k8s/
 * [Kubernetes Concepts](https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/)
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kustomize/module/8b591384-c5e2-4411-afc1-443d3f2ba735/lesson/5feb97e6-536b-4eb9-adf9-f14ce520c327" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[SECRET_REDACTED]-c5e2-4411-afc1-443d3f2ba735/lesson/5feb97e6-536b-4eb9-adf9-f14ce520c327" />
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/kustomize/module/8b591384-c5e2-4411-afc1-443d3f2ba735/lesson/20de59f0-9654-405a-af9e-6ebb063c29e1" />
+  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.[SECRET_REDACTED]-c5e2-4411-afc1-443d3f2ba735/lesson/20de59f0-9654-405a-af9e-6ebb063c29e1" />
 </CardGroup>
 
 
@@ -404,5 +404,5 @@ spec:
 * [Strategic Merge Patch](https://kubernetes.io/docs/concepts/overview/working-with-objects/strategic-merge-patch/)
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kustomize/module/8b591384-c5e2-4411-afc1-443d3f2ba735/lesson/581f5ca5-823d-4415-9f90-3853ccf009ab" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[SECRET_REDACTED]-c5e2-4411-afc1-443d3f2ba735/lesson/581f5ca5-823d-4415-9f90-3853ccf009ab" />
 </CardGroup>

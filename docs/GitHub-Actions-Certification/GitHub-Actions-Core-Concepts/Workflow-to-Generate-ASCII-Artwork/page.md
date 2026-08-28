@@ -21,7 +21,7 @@ Pinning Actions to specific versions helps maintain stability and repeatability 
 | ----------------- | --------------------------- | ----------------------------------------------------------------- |
 | Tag               | Stable; semantic versioning | `uses: actions/checkout@v3.6.0`                                   |
 | Branch            | Rolling updates (risky)     | `uses: actions/checkout@main`                                     |
-| SHA               | Immutable commit            | `uses: actions/checkout@a824008085750b8e136effc585c3cd6082bd575f` |
+| SHA               | Immutable commit            | `uses: actions/checkout@[AWS_SECRET_ACCESS_KEY]` |
 
 <Callout icon="lightbulb">
   For production workflows, pin to a tagged release or a commit SHA to avoid unexpected breaking changes.

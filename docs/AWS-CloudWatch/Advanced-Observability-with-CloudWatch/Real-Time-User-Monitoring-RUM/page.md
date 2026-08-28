@@ -66,8 +66,8 @@ AWS CloudWatch RUM empowers development and operations teams with end-to-end vis
 
 ## Links and References
 
-* [AWS CloudWatch RUM Documentation](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-RUM.html)
-* [Getting Started with CloudWatch RUM](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-RUM-GettingStarted.html)
+* [AWS CloudWatch RUM Documentation](https://docs.aws.amazon.[SECRET_REDACTED]-RUM.html)
+* [Getting Started with CloudWatch RUM](https://docs.aws.amazon.[SECRET_REDACTED]-RUM-GettingStarted.html)
 * [Amazon CloudWatch Pricing](https://aws.amazon.com/cloudwatch/pricing/)
 
 <CardGroup>

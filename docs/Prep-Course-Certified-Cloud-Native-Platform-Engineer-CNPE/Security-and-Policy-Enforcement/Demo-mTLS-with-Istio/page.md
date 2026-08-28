@@ -559,8 +559,8 @@ Summary
 
 Links and references
 
-* [Istio PeerAuthentication docs](https://istio.io/latest/docs/reference/config/security/peer_authentication/)
-* [Istio AuthorizationPolicy docs](https://istio.io/latest/docs/reference/config/security/authorization-policy/)
+* [Istio PeerAuthentication docs](https://istio.[AWS_SECRET_ACCESS_KEY]/peer_authentication/)
+* [Istio AuthorizationPolicy docs](https://istio.[AWS_SECRET_ACCESS_KEY]/authorization-policy/)
 * [istioctl analyze](https://istio.io/latest/docs/ops/diagnostic-tools/istioctl-analyze/)
 * [SPIFFE and SPIRE](https://spiffe.io/)
 

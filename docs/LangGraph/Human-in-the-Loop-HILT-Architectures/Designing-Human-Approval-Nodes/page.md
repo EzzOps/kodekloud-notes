@@ -120,9 +120,9 @@ print("After resume:", state)
 This pattern is a practical approach to integrating manual approvals into automated workflows while maintaining clarity, auditability, and the ability to resume execution from a known state.
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langgraph/module/0512078c-4290-4d71-9531-0b12f54f10c6/lesson/aca8613b-e199-4adc-8d6e-668daecdd6be" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[SECRET_REDACTED]-4290-4d71-9531-0b12f54f10c6/lesson/aca8613b-e199-4adc-8d6e-668daecdd6be" />
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/langgraph/module/0512078c-4290-4d71-9531-0b12f54f10c6/lesson/5c16785f-b42f-4856-bd6c-ef1845fa1881" />
+  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.[SECRET_REDACTED]-4290-4d71-9531-0b12f54f10c6/lesson/5c16785f-b42f-4856-bd6c-ef1845fa1881" />
 </CardGroup>
 
 

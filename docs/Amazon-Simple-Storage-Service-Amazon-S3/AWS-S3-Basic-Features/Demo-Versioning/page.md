@@ -212,7 +212,7 @@ To tear down:
 
 ## Links and References
 
-* [AWS S3 Versioning User Guide](https://docs.aws.amazon.com/AmazonS3/latest/userguide/Versioning.html)
+* [AWS S3 Versioning User Guide](https://docs.aws.amazon.[AWS_SECRET_ACCESS_KEY].html)
 * [Amazon S3 Documentation](https://docs.aws.amazon.com/s3/)
 * [CLI: `aws s3api put-bucket-versioning`](https://docs.aws.amazon.com/cli/latest/reference/s3api/put-bucket-versioning.html)
 

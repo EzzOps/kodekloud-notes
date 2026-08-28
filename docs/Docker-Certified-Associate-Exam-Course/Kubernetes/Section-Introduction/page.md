@@ -11,7 +11,7 @@
 
 [secrets-doc]: https://kubernetes.io/docs/concepts/configuration/secret/
 
-[configmap-doc]: https://kubernetes.io/docs/concepts/configuration/configmap/
+[configmap-doc]: https://kubernetes.[AWS_SECRET_ACCESS_KEY]/
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/docker-certified-associate-exam-course/module/d9358627-4fc7-4acc-ab96-fa25232555c6/lesson/b1b5028f-3e44-4867-93a8-621308da3b56" />

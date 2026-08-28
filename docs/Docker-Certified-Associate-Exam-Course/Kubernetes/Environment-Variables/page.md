@@ -165,7 +165,7 @@ env:
 
 * [Kubernetes: Assign Environment Variables to Containers](https://kubernetes.io/docs/tasks/inject-data-application/define-environment-variable-container/)
 * [Docker Environment Variables](https://docs.docker.com/engine/reference/run/#env-environment-variables)
-* [ConfigMap Documentation](https://kubernetes.io/docs/concepts/configuration/configmap/)
+* [ConfigMap Documentation](https://kubernetes.[AWS_SECRET_ACCESS_KEY]/)
 * [Secrets Documentation](https://kubernetes.io/docs/concepts/configuration/secret/)
 
 <CardGroup>

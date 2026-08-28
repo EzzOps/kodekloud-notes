@@ -19,14 +19,14 @@ Next, generate a SHA-1 hash for this file using the following command. Notice ho
 
 ```bash theme={null}
 $ git hash-object first_story.txt
-bea8d7fee8e7b11c2235ca623935e6ccccd8bac3
+[AWS_SECRET_ACCESS_KEY]
 ```
 
 If you commit the `first_story.txt` file, Git will generate the same hash:
 
 ```bash theme={null}
 $ git hash-object first_story.txt
-bea8d7fee8e7b11c2235ca623935e6ccccd8bac3
+[AWS_SECRET_ACCESS_KEY]
 ```
 
 Git then creates a folder using the first two characters of the hash—in this case, "be". You can inspect the internal Git structure by navigating to the `.git` folder, which is created when you run `git init`. For instance, after adding and committing the file, you might see:
@@ -55,8 +55,8 @@ When you inspect a commit object, Git includes additional metadata along with th
 
 ```bash theme={null}
 $ git cat-file -p 4cdf4
-tree 2ea7de7ff3bd48cbb020b215b36feb67ee7f9a30
-parent f4e830485cc852686cf115e75a79cbb41a0de713
+tree [AWS_SECRET_ACCESS_KEY]
+parent [AWS_SECRET_ACCESS_KEY]
 author Lydia Hallie <e@mail.com> 1594547678 +0200
 committer Lydia Hallie <e@mail.com> 1594547678 +0200
 
@@ -292,7 +292,7 @@ gcloud container node-pools update default-pool \
 
 * [GKE Labels Documentation](https://cloud.google.com/kubernetes-engine/docs/concepts/labels)
 * [Kubernetes Labels and Selectors](https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/)
-* [gcloud container clusters](https://cloud.google.com/sdk/gcloud/reference/container/clusters)
+* [gcloud container clusters](https://cloud.google.com[AWS_SECRET_ACCESS_KEY])
 * [gcloud container node-pools](https://cloud.google.com/sdk/gcloud/reference/container/node-pools)
 
 <CardGroup>

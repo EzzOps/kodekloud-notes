@@ -71,8 +71,8 @@ Even if an IAM user lacks direct access to the bucket, they can still generate a
 
 ## References
 
-* [Amazon S3 Pre-Signed URLs](https://docs.aws.amazon.com/AmazonS3/latest/userguide/ShareObjectPreSignedURL.html)
-* [Boto3 S3 Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html)
+* [Amazon S3 Pre-Signed URLs](https://docs.aws.amazon.com/AmazonS3/[AWS_SECRET_ACCESS_KEY].html)
+* [Boto3 S3 Client](https://boto3.amazonaws.[SECRET_REDACTED].html)
 * [AWS Security Best Practices](https://docs.aws.amazon.com/whitepapers/latest/aws-security-best-practices/)
 
 <CardGroup>

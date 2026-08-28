@@ -8,11 +8,11 @@ notIpBlocks: ["203.0.113.4"]
   Exam tip: Understand how `from`, `to`, and `when` combine (OR vs AND), know the difference between L3/L4 NetworkPolicy and L7 AuthorizationPolicy, and be familiar with matching by `selector`, `principals`, and JWT claim keys such as `request.auth.claims[iss]`.
 </Callout>
 
-Authorization policies are more expressive than peer authentication (mTLS) alone—invest time in hands-on practice and review the [Istio AuthorizationPolicy reference](https://istio.io/latest/docs/reference/config/security/authorization-policy/) for all available fields.
+Authorization policies are more expressive than peer authentication (mTLS) alone—invest time in hands-on practice and review the [Istio AuthorizationPolicy reference](https://istio.[AWS_SECRET_ACCESS_KEY]/authorization-policy/) for all available fields.
 
 ## Links and references
 
-* [Istio AuthorizationPolicy reference](https://istio.io/latest/docs/reference/config/security/authorization-policy/)
+* [Istio AuthorizationPolicy reference](https://istio.[AWS_SECRET_ACCESS_KEY]/authorization-policy/)
 * [Kubernetes NetworkPolicy concepts](https://kubernetes.io/docs/concepts/services-networking/network-policies/)
 * [Envoy proxy docs](https://www.envoyproxy.io/docs/)
 

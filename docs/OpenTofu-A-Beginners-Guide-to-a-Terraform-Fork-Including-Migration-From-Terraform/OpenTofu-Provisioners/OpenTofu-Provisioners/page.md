@@ -205,7 +205,7 @@ resource "aws_instance" "webserver" {
 
 [terraform-provisioners]: https://www.terraform.io/language/resources/provisioners
 
-[aws-instance]: https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/instance
+[aws-instance]: https://registry.terraform.[SECRET_REDACTED]
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/98011198-b847-4ee1-a7bd-7593bfe5576c/lesson/373ac6fd-f67c-4596-9de4-1f158c1025bb" />

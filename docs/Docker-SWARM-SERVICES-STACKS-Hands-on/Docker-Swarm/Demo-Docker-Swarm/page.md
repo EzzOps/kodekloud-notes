@@ -199,7 +199,7 @@ root@DOCKER_MASTER:/root # docker swarm init --advertise-addr 192.168.56.101
 Swarm initialized: current node (uiddwelph55pjtk6vi97tsn5s) is now a manager.
 
 To add a worker to this swarm, run the following command:
-    docker swarm join --token SWMTKN-1-5hp18wx356c33n90tlyv40b4a68g9gylqbb3iz2xnk0fneu1-5a6525x9twuwpdg8v46jj29ul 192.168.56.101:2377
+    docker swarm join --token SWMTKN-1-[SECRET_REDACTED]-5a6525x9twuwpdg8v46jj29ul 192.168.56.101:2377
 
 To add a manager to this swarm, run 'docker swarm join-token manager' and follow the instructions.
 root@DOCKER_MASTER:/root #
@@ -221,7 +221,7 @@ To add worker nodes, follow these steps:
 For example, executing the join command on a worker node produces the following confirmation:
 
 ```bash theme={null}
-root@Docker_NODE1:/root # docker swarm join --token SWMTKN-1-5hp18wx356c33n90tlyv40b4a68g9gylqbb3iz2xnk0fneui4-5a6525x9tvwwpdg 
+root@Docker_NODE1:/root # docker swarm join --token SWMTKN-1-[SECRET_REDACTED]-5a6525x9tvwwpdg 
 This node joined a swarm as a worker.
 ```
 
@@ -270,13 +270,13 @@ A Docker Swarm cluster can support multiple manager nodes, which significantly i
 root@docker-master:/root # docker swarm join-token manager
 To add a manager to this swarm, run the following command:
 
-    docker swarm join --token SWMTKN-1-5hp18wx356c33n90tly40b4a68g9gy1qbb3iz2xnk0fneu4-7jbbj8kldn4jaj2naidz9lh7 192.168.56.101:2377
+    docker swarm join --token SWMTKN-1-[SECRET_REDACTED]-7jbbj8kldn4jaj2naidz9lh7 192.168.56.101:2377
 ```
 
 Next, run the provided command on the intended manager node (e.g., `docker-master2`):
 
 ```bash theme={null}
-root@docker-master2:/root # docker swarm join --token SWMTKN-1-5hp18wx356c33n90tlyv40b4a68g9gylqbb3i2zxnk0fneu4-7jbbjj8kldn4jaj2naidz9lh7 192.168.56.101:2377
+root@docker-master2:/root # docker swarm join --token SWMTKN-1-[SECRET_REDACTED]-7jbbjj8kldn4jaj2naidz9lh7 192.168.56.101:2377
 This node joined a swarm as a manager.
 ```
 

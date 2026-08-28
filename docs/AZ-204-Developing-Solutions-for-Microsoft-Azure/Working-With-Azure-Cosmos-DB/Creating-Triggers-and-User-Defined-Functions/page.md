@@ -117,7 +117,7 @@ Here is an example document post pre-trigger execution:
   "airport_name": "Aluik Airport",
   "country_code": "Philippines",
   "_rid": "MncaIngmawAAAAAAA==",
-  "_self": "dbs/MncaAA==/colls/MncaIngmaw=/docs/MncaIngmawBAAAAAAAAAA=/",
+  "_self": "[SECRET_REDACTED]=/",
   "_attachments": "attachments/",
   "_ts": 1725816364
 }
@@ -179,7 +179,7 @@ You can create post-triggers similarly by selecting the "Post" option and defini
   "country_code": "undetermined",
   "timestamp": "2024-09-10T18:29:25.136Z",
   "_rid": "McnIAqmW7uAAAAAAAM",
-  "_self": "dbs/McnCMAE=/colls/McnIAqmW4=/docs/McnIAqmW7uAAAAAAAM=/",
+  "_self": "dbs/McnCMAE=/[AWS_SECRET_ACCESS_KEY]=/",
   "_etag": "\"0002299-0000-0300-0000-66e549650800\"",
   "_attachments": "attachments/",
   "_ts": 1726382565

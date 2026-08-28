@@ -100,8 +100,8 @@ MyInstance:
 
 ## Links and references
 
-* [AWS CloudFormation User Guide — AWS::CloudFormation::Stack Policies and Signals](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties.html)
-* [cfn-signal documentation](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-signal.html)
+* [AWS CloudFormation User Guide — AWS::CloudFormation::Stack Policies and Signals](https://docs.aws.amazon.[SECRET_REDACTED]-properties.html)
+* [cfn-signal documentation](https://docs.aws.amazon.[SECRET_REDACTED]-signal.html)
 * [Amazon EC2 documentation](https://docs.aws.amazon.com/ec2/)
 * [Amazon S3 documentation](https://docs.aws.amazon.com/s3/)
 * [Amazon RDS documentation](https://docs.aws.amazon.com/rds/)

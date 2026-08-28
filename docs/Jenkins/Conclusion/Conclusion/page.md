@@ -1,6 +1,6 @@
 # Conclusion
 
-Source: https://notes.kodekloud.com/docs/Jenkins/Conclusion/Conclusion/page
+Source: https://notes.kodekloud.com[AWS_SECRET_ACCESS_KEY]
 
 This article summarizes a comprehensive journey into systems administration, Jenkins management, deployment strategies, and CI/CD implementations.
 
@@ -28,5 +28,5 @@ For additional resources and reference materials, be sure to check out:
 Keep learning and stay innovative!
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins/module/a4722e22-b92e-4de2-ac1f-2db3b5c79cb9/lesson/ebefa170-87db-4060-b322-10f9cc2ed084" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[AWS_SECRET_ACCESS_KEY]-b92e-4de2-ac1f-2db3b5c79cb9/lesson/ebefa170-87db-4060-b322-10f9cc2ed084" />
 </CardGroup>

@@ -234,7 +234,7 @@ The debugging pattern matters more than any single fix:
 ## Links and references
 
 * [Kubernetes API conventions – Object Metadata](https://kubernetes.io/docs/reference/using-api/api-concepts/#resources)
-* [Deployments — Immutable fields](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/#updating-a-deployment)
+* [Deployments — Immutable fields](https://kubernetes.[SECRET_REDACTED]/#updating-a-deployment)
 * Controller-runtime docs: [https://pkg.go.dev/sigs.k8s.io/controller-runtime](https://pkg.go.dev/sigs.k8s.io/controller-runtime)
 
 <CardGroup>

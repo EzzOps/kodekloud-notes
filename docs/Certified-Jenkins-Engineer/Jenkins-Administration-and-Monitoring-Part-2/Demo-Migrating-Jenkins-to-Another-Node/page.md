@@ -95,7 +95,7 @@ systemctl status jenkins
   On fresh installs, Jenkins displays a “Getting Started” page and prompts for an initial admin password. Retrieve it from:
 
   ```text theme={null}
-  /var/lib/jenkins/secrets/initialAdminPassword
+  /var/[AWS_SECRET_ACCESS_KEY]
   ```
 </Callout>
 

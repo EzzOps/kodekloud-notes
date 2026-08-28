@@ -90,11 +90,11 @@ vault operator init
 Sample output:
 
 ```text theme={null}
-Unseal Key 1: MxKr/oY8RKMd19gV75hNUK0ExE7JmZjeufCxTNCts+8W9
+Unseal Key 1: MxKr/[AWS_SECRET_ACCESS_KEY]
 Unseal Key 2: zy1sDEWUYqLAm8v9F1ukM0Mfs4AIdR3E3FhIZ
-Unseal Key 3: 78eRyYcIndlyP2hmOF5pfnAXD6g6d0Phwqxtbgi6
-Unseal Key 4: BbTvQb68JE1OlwIgfKFa1wsqRRIxZIlot5I838IzS
-Unseal Key 5: tMSPooLeVPBzxfbyMN1CvExInIcbshFJDUN06XnnC8b
+Unseal Key 3: [AWS_SECRET_ACCESS_KEY]
+Unseal Key 4: [SECRET_REDACTED]
+Unseal Key 5: [SECRET_REDACTED]
 
 Initial Root Token: s.EPAXM61G2egrqULVd61Stphx
 
@@ -138,13 +138,13 @@ vault operator unseal
 Repeat until `Unseal Progress` reaches `3/3`:
 
 ```text theme={null}
-Unseal Key (will be hidden): BbTvQb68JE1OlwIgfKFa1wsqRRIxZIlot5I838IzC
+Unseal Key (will be hidden): [SECRET_REDACTED]
 Unseal Progress                1/3
 ...
-Unseal Key (will be hidden): MxKr/oY8RKMd19gV75hNUK0ExE7JmZjeufCxTNCts+8W9
+Unseal Key (will be hidden): MxKr/[AWS_SECRET_ACCESS_KEY]
 Unseal Progress                2/3
 ...
-Unseal Key (will be hidden): tMSPooLeVPBzxfbyMN1CvExInIcbshFJDUN06XnnC8b
+Unseal Key (will be hidden): [SECRET_REDACTED]
 Sealed                         false
 Cluster Name                   vault-prod-us-east-1
 HA Mode                        standby

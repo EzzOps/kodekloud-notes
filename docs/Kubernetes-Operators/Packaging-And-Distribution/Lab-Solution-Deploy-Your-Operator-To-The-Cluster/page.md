@@ -1,7 +1,7 @@
 # example snippet
 containers:
   - name: manager
-    image: 127.0.0.1:5000/course/webapp-operator@sha256:db81233d7799521a10305a9e722847a1920e2ceec4f67fdd43bae2c23ba50086
+    image: 127.0.0.1:5000/course/webapp-operator@sha256:[SECRET_REDACTED]
 ```
 
 Using the digest above ensures the cluster pulls the exact content you pushed.
@@ -88,7 +88,7 @@ c172f21411df: Layer already exists
 2780902e5dbf: Layer already exists
 d6dbfd62d1f4: Layer already exists
 ebdcc565facc: Layer already exists
-lab: digest: sha256:d1075e75f27268a54cd2c67e1aeff7054cb26cb658316c64eca052c35f92 size: 856
+lab: digest: sha256:[SECRET_REDACTED] size: 856
 ```
 
 ## Deploy the operator manifests

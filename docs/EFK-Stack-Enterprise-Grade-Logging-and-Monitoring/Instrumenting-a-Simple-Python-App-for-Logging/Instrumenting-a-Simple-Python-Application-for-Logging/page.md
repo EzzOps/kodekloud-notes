@@ -114,7 +114,7 @@ That concludes this article. Thank you for reading, and we look forward to explo
 ## Additional Resources
 
 * [Kubernetes Documentation](https://kubernetes.io/docs/)
-* [Elasticsearch Reference](https://www.elastic.co/guide/en/elasticsearch/reference/current/index.html)
+* [Elasticsearch Reference](https://www.elastic.co/[AWS_SECRET_ACCESS_KEY]/index.html)
 * [Kibana User Guide](https://www.elastic.co/guide/en/kibana/current/index.html)
 
 <CardGroup>

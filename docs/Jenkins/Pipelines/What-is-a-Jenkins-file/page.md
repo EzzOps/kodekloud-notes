@@ -82,5 +82,5 @@ In a multistage pipeline, if one stage fails—say, during the development build
 That concludes our exploration of Jenkinsfiles and their role in structuring a pipeline. In the next lesson, we will delve deeper into build agents and examine how they execute your pipeline tasks.
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins/module/4eff829b-dd2c-4051-8090-35e8525b8874/lesson/22fc8930-a47c-48d7-9120-ff26d2dbc2a9" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[AWS_SECRET_ACCESS_KEY]-dd2c-4051-8090-35e8525b8874/lesson/22fc8930-a47c-48d7-9120-ff26d2dbc2a9" />
 </CardGroup>

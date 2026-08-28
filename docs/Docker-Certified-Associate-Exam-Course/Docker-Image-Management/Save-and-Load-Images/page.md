@@ -73,7 +73,7 @@ You can snapshot a running container’s filesystem and convert it into a new Do
    ```
    Docker returns a new image ID, e.g.:
    ```text theme={null}
-   sha256:8909b7da236bb21aa2e52e6e04dff4b7103753e4046e15457a3daf6dfa723a12
+   sha256:[SECRET_REDACTED]
    ```
 3. **List** local images to confirm the import:
    ```bash theme={null}

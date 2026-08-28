@@ -4,7 +4,7 @@ Source: https://notes.kodekloud.com/docs/Prep-Course-Kyverno-Certified-Associate
 
 Guide to using Kyverno apiCall to query the Kubernetes API with JMESPath to enforce stateful policies such as limiting LoadBalancer Services per namespace
 
-Previously we learned how to read static data from a [ConfigMap](https://kubernetes.io/docs/concepts/configuration/configmap/). That approach is powerful — but it breaks down when the data you need is dynamic. What if your policy must consider the current state of other cluster resources before allowing a request?
+Previously we learned how to read static data from a [ConfigMap](https://kubernetes.[AWS_SECRET_ACCESS_KEY]/). That approach is powerful — but it breaks down when the data you need is dynamic. What if your policy must consider the current state of other cluster resources before allowing a request?
 
 Consider Alex's problem: cloud costs are spiking because too many expensive LoadBalancer Services are being created.
 
@@ -57,7 +57,7 @@ Kubernetes groups resources into core and API-grouped resources. Use the followi
 | Resource type                               | API path prefix                                                               | Example                                                                                                                       |
 | ------------------------------------------- | ----------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
 | Core resources (Pods, Services, Namespaces) | `/api/v1`                                                                     | `/api/v1/namespaces/default/pods`                                                                                             |
-| Grouped resources (Deployments, CRDs)       | `/apis/<group>/<version>`                                                     | `/apis/apps/v1/namespaces/default/deployments`                                                                                |
+| Grouped resources (Deployments, CRDs)       | `/apis/<group>/<version>`                                                     | `/[SECRET_REDACTED]`                                                                                |
 | Namespaced vs cluster-scoped                | Namespaced resources include `/namespaces/<namespace>`; cluster-scoped do not | Namespaced: `/api/v1/namespaces/default/services` — Cluster-scoped: `/apis/apiextensions.k8s.io/v1/customresourcedefinitions` |
 
 If you need the entire collection, end the path with the plural resource name (for example, `pods` or `services`). To request a single resource, append `/names/<name>` or `/<resourceName>` as appropriate.
@@ -103,7 +103,7 @@ Putting it together: example for Deployments in `default`
 Final path:
 
 ```text theme={null}
-/apis/apps/v1/namespaces/default/deployments
+/[SECRET_REDACTED]
 ```
 
 <Frame>

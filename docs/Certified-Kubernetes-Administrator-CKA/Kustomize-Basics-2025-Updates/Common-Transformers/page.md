@@ -137,7 +137,7 @@ For example, run the following command on each worker node:
 
 ```bash theme={null}
 sudo kubeadm join 192.168.56.11:6443 --token ps4rl5.0ns9vwu9exjul8tg \
-    --discovery-token-ca-cert-hash sha256:fdb5c133b76f41d6d1f9ed72d90b7265de5e53a9156d7d48d83df65f3bde
+    --discovery-token-ca-cert-hash sha256:[SECRET_REDACTED]
 ```
 
 After joining, verify the nodes from the master node:

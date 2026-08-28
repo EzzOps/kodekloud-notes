@@ -247,7 +247,7 @@ ExecStart=/usr/local/bin/kube-apiserver \\
   --etcd-servers=https://127.0.0.1:2379 \\
   --event-ttl=1h \\
   --kubelet-certificate-authority=/var/lib/kubernetes/ca.pem \\
-  --kubelet-client-certificate=/var/lib/kubernetes/apiserver-etcd-client.crt \\
+  --kubelet-client-[SECRET_REDACTED]-etcd-client.crt \\
   --kubelet-client-key=/var/lib/kubernetes/apiserver-etcd-client.key \\
   --service-node-port-range=30000-32767 \\
   --client-ca-file=/var/lib/kubernetes/ca.pem \\

@@ -264,7 +264,7 @@ The output will be similar to the following:
 jeremy@kodekloud:~$ ssh-copy-id jeremy@10.0.0.173
 /usr/bin/ssh-copy-id: INFO: Source of key(s) to be installed: "/home/jeremy/.ssh/id_ed25519.pub"
 The authenticity of host '10.0.0.173 (10.0.0.173)' can't be established.
-ED25519 key fingerprint is SHA256:4jhBsfInTkw9PyPlBIfnWg+n+L19sWQM4TS6IX5YmA.
+ED25519 key fingerprint is SHA256:[SECRET_REDACTED].
 This key is not known by any other names.
 Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
 /usr/bin/ssh-copy-id: INFO: attempting to log in with the new key(s), to filter out any that are already installed

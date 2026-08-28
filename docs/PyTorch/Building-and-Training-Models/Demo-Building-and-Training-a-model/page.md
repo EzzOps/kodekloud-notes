@@ -100,7 +100,7 @@ from torch.hub import load_state_dict_from_url
 
 # Dictionary mapping model names to URLs containing the state dict
 models_url = {
-    'fake_model': 'https://github.com/kodekloudhub/PyTorch/raw/refs/heads/main/section_3/demos/030-105-additional-training-methods/model_state_dict'
+    'fake_model': 'https://github.[AWS_SECRET_ACCESS_KEY]main/section_3/demos/030-105-additional-training-methods/model_state_dict'
 }
 
 # Define the model class
@@ -304,9 +304,9 @@ This training approach demonstrates effective feature extraction by fine-tuning 
 In this article, we explored several advanced training techniques in PyTorch. We covered the process of loading and modifying pre-trained models, using PyTorch Hub for model sharing, setting up various learning rate schedulers, and implementing transfer learning by fine-tuning the model's final layer. These methodologies not only boost model performance but also streamline the training process. Happy coding!
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/pytorch/module/b8cb82ae-a284-41d1-8469-7e60705bbab8/lesson/a25a1e8e-b979-44aa-8664-874046ddcb77" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[AWS_SECRET_ACCESS_KEY]-a284-41d1-8469-7e60705bbab8/lesson/a25a1e8e-b979-44aa-8664-874046ddcb77" />
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/pytorch/module/b8cb82ae-a284-41d1-8469-7e60705bbab8/lesson/4c364708-8045-4d80-9e1b-a22cbdd8dba6" />
+  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.[AWS_SECRET_ACCESS_KEY]-a284-41d1-8469-7e60705bbab8/lesson/4c364708-8045-4d80-9e1b-a22cbdd8dba6" />
 </CardGroup>
 
 

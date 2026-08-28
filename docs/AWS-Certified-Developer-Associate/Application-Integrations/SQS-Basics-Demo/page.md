@@ -122,7 +122,7 @@ Once the message is deleted, the console will display a notification confirming 
 
 The SQS workflow consists of your client sending messages to the queue, while a consumer application pulls and processes these messages. This decoupled architecture not only enhances scalability but also ensures that each component of your application can evolve independently.
 
-For additional details on integrating SQS with your applications, consider exploring the [AWS SQS Documentation](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/Welcome.html).
+For additional details on integrating SQS with your applications, consider exploring the [AWS SQS Documentation](https://docs.aws.amazon.[SECRET_REDACTED].html).
 
 Happy queueing!
 

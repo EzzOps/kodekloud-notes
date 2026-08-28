@@ -4,7 +4,7 @@ resource "local_file" "pet" {
   directory_permission = "0777"
   file_permission      = "0777"
   filename             = "/root/pets.txt"
-  id                   = "cba595b7d9f94ba1107a46f3f731912d95fb3d2c"
+  id                   = "[AWS_SECRET_ACCESS_KEY]"
 }
 ```
 

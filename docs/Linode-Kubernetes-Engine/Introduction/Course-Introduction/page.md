@@ -103,7 +103,7 @@ cqlsh -u cassandra -p $CASSANDRA_PASSWORD 127.0.0.1 9042
 
 [lens-docs]: https://docs.k8slens.dev/
 
-[cassandra-helm]: https://github.com/bitnami/charts/tree/master/bitnami/cassandra
+[cassandra-helm]: https://github.[SECRET_REDACTED]
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/lens-kubernetes-ide/module/5612678e-a690-4e4e-b43d-966183dffdbf/lesson/9fc751f1-d8b5-4bd5-abb5-6c034f76da99" />

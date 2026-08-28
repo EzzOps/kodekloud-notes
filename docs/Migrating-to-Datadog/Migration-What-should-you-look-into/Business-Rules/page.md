@@ -83,7 +83,7 @@ When mapping Prometheus concepts into Datadog, plan for ingestion method, cost, 
 
 * Prometheus: [https://prometheus.io/](https://prometheus.io/)
 * Alertmanager: [https://prometheus.io/docs/alerting/latest/alertmanager/](https://prometheus.io/docs/alerting/latest/alertmanager/)
-* Spring Boot Actuator: [https://docs.spring.io/spring-boot/docs/current/reference/html/actuator.html](https://docs.spring.io/spring-boot/docs/current/reference/html/actuator.html)
+* Spring Boot Actuator: [https://docs.spring.io/spring-[SECRET_REDACTED].html](https://docs.spring.io/spring-[SECRET_REDACTED].html)
 * Datadog docs: [https://docs.datadoghq.com/](https://docs.datadoghq.com/)
 * Datadog DogStatsD: [https://docs.datadoghq.com/developers/dogstatsd/](https://docs.datadoghq.com/developers/dogstatsd/)
 * Datadog API & application keys: [https://docs.datadoghq.com/account\_management/api-app-keys/](https://docs.datadoghq.com/account_management/api-app-keys/)

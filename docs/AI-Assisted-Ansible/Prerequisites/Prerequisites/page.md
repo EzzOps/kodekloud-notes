@@ -10,7 +10,7 @@
 
 # Prerequisites
 
-Source: https://notes.kodekloud.com/docs/AI-Assisted-Ansible/Prerequisites/Prerequisites/page
+Source: https://notes.kodekloud.com/docs/AI-Assisted-[AWS_SECRET_ACCESS_KEY]
 
 Lists knowledge, lab environment, and account prerequisites plus checklist and next steps for running AI-assisted Ansible labs on RHEL 10.
 

@@ -57,7 +57,7 @@ Commit and push the YAML to your Git repository, then trigger reconciliation:
 ➜ flux reconcile source git flux-system
 ✔ GitRepository annotated
 ✔ waiting for GitRepository reconciliation
-✔ fetched revision main@sha1:dc9922e7f45b3bcd8d085e68766869b15a17919c
+✔ fetched revision main@sha1:[AWS_SECRET_ACCESS_KEY]
 ```
 
 Verify the repository registration and initial scan:

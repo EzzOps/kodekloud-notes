@@ -189,9 +189,9 @@ Summary
 Further reading and references
 
 * [Amazon SageMaker Documentation](https://docs.aws.amazon.com/sagemaker/latest/dg/whatis.html)
-* [Boto3 SageMaker client reference](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html)
+* [Boto3 SageMaker client reference](https://boto3.amazonaws.com/v1/documentation[AWS_SECRET_ACCESS_KEY].html)
 * [SageMaker Python SDK documentation](https://sagemaker.readthedocs.io/)
-* [SageMaker runtime (invoke\_endpoint) API](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-runtime.html)
+* [SageMaker runtime (invoke\_endpoint) API](https://boto3.amazonaws.com/v1/documentation[AWS_SECRET_ACCESS_KEY]-runtime.html)
 
 You can now inspect the created model, endpoint configuration, and endpoint status in the Management Console, or proceed to implement the same flow using the SageMaker SDK’s high-level APIs and the Predictor class.
 

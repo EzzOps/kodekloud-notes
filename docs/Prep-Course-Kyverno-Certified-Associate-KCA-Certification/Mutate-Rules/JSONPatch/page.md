@@ -209,7 +209,7 @@ Example: Adding a [Linkerd](https://linkerd.io) annotation whose key contains a 
 
 ```yaml theme={null}
 - op: add
-  path: "/spec/template/metadata/annotations/config.linkerd.io~1skip-outbound-ports"
+  path: "/[SECRET_REDACTED].linkerd.io~1skip-outbound-ports"
   value: "8200"
 ```
 

@@ -183,7 +183,7 @@ This returns a JSON list of matching events. Inspect the `Username`, `EventTime`
 
 * [AWS CloudTrail User Guide](https://docs.aws.amazon.com/cloudtrail/latest/userguide/)
 * [AWS CloudTrail API Reference](https://docs.aws.amazon.com/cloudtrail/latest/APIReference/)
-* [Monitoring CloudTrail with CloudWatch](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/WhatIsCloudWatchLogs.html)
+* [Monitoring CloudTrail with CloudWatch](https://docs.aws.amazon.[SECRET_REDACTED].html)
 * [Managing S3 Lifecycle Policies](https://docs.aws.amazon.com/AmazonS3/latest/userguide/lifecycle-configuration-examples.html)
 
 <CardGroup>

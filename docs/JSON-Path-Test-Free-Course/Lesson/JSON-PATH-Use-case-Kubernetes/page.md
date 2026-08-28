@@ -194,7 +194,7 @@ You now know how to extract, format, and sort Kubernetes data using JSONPath wit
 
 * [Kubernetes API Concepts](https://kubernetes.io/docs/concepts/overview/kubernetes-api/)
 * [kubectl Cheat Sheet](https://kubernetes.io/docs/reference/kubectl/cheatsheet/)
-* [Custom Columns Documentation](https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands#get)
+* [Custom Columns Documentation](https://kubernetes.io/[AWS_SECRET_ACCESS_KEY]-commands#get)
 * [jsonpath.com](https://jsonpath.com) for testing expressions
 
 Happy querying!

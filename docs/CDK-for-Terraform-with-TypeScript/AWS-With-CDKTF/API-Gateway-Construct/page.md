@@ -224,8 +224,8 @@ This pattern encapsulates all API Gateway wiring into a single, reusable constru
 
 ## References
 
-* API Gateway REST API (Terraform AWS Provider): [https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/api\_gateway\_rest\_api](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/api_gateway_rest_api)
-* Lambda Permission (Terraform AWS Provider): [https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/lambda\_permission](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/lambda_permission)
+* API Gateway REST API (Terraform AWS Provider): [https://registry.terraform.io/providers[AWS_SECRET_ACCESS_KEY]\_gateway\_rest\_api](https://registry.terraform.[SECRET_REDACTED]api_gateway_rest_api)
+* Lambda Permission (Terraform AWS Provider): [https://registry.terraform.[SECRET_REDACTED]\_permission](https://registry.terraform.[SECRET_REDACTED]lambda_permission)
 * CDK for Terraform (cdktf): [https://developer.hashicorp.com/terraform/cdktf](https://developer.hashicorp.com/terraform/cdktf)
 
 This construct is a straightforward approach to exposing Lambda functions via HTTP with CDK for Terraform and TypeScript, using Lambda proxy integration for flexible request handling.

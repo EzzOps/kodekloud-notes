@@ -181,9 +181,9 @@ Final notes and references
 With this configuration the agent combines web/factual search (Tavily) and exact computation (Python REPL) to answer complex, multi-step questions reliably.
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langchain/module/530ad7de-8948-4806-8824-19eb10923d1d/lesson/36589ae2-a513-4802-a9c4-7890498a4018" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[SECRET_REDACTED]-8948-4806-8824-19eb10923d1d/lesson/36589ae2-a513-4802-a9c4-7890498a4018" />
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/langchain/module/530ad7de-8948-4806-8824-19eb10923d1d/lesson/81d50dee-7ffb-4092-95c2-3f8b8b07686b" />
+  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.[SECRET_REDACTED]-8948-4806-8824-19eb10923d1d/lesson/81d50dee-7ffb-4092-95c2-3f8b8b07686b" />
 </CardGroup>
 
 

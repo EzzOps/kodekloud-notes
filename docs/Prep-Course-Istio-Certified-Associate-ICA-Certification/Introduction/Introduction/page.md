@@ -1,6 +1,6 @@
 # Introduction
 
-Source: https://notes.kodekloud.com/docs/Prep-Course-Istio-Certified-Associate-ICA-Certification/Introduction/Introduction/page
+Source: https://notes.kodekloud.com/docs/Prep-Course-Istio-Certified-Associate-ICA-[AWS_SECRET_ACCESS_KEY]page
 
 Hands-on course preparing learners for the Istio Certified Associate exam with labs, traffic management, security, resilience, installation, advanced scenarios, and mock exams
 

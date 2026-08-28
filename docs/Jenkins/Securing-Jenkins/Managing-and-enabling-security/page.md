@@ -64,7 +64,7 @@ Additional configuration options, such as agent protocols, legacy API tokens, AP
 This concludes our detailed overview of managing and enabling security in Jenkins. We encourage you to apply these concepts on your system to enhance your understanding and further secure your Jenkins environment.
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins/module/7c4c28a9-3607-46d4-920a-3f94ed6a7d5b/lesson/f1648f9d-b530-496b-b608-108c89981298" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[AWS_SECRET_ACCESS_KEY]-3607-46d4-920a-3f94ed6a7d5b/lesson/f1648f9d-b530-496b-b608-108c89981298" />
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/jenkins/module/7c4c28a9-3607-46d4-920a-3f94ed6a7d5b/lesson/fbdfd8e9-70b2-4fbf-b704-3259cbcfaa0f" />
+  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.[AWS_SECRET_ACCESS_KEY]-3607-46d4-920a-3f94ed6a7d5b/lesson/fbdfd8e9-70b2-4fbf-b704-3259cbcfaa0f" />
 </CardGroup>

@@ -174,7 +174,7 @@ For EBS details: [https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs.html](
 
 * AWS IAM overview: [https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html](https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html)
 * SageMaker documentation: [https://docs.aws.amazon.com/sagemaker/latest/dg/whatis.html](https://docs.aws.amazon.com/sagemaker/latest/dg/whatis.html)
-* CloudTrail user guide: [https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html)
+* CloudTrail user guide: [https://docs.aws.amazon.[SECRET_REDACTED]-user-guide.html](https://docs.aws.amazon.[SECRET_REDACTED]-user-guide.html)
 * SageMaker Neo: [https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-neo.html](https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-neo.html)
 * AWS KMS overview: [https://docs.aws.amazon.com/kms/latest/developerguide/overview.html](https://docs.aws.amazon.com/kms/latest/developerguide/overview.html)
 

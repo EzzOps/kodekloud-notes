@@ -44,7 +44,7 @@ CloudFront geographic restrictions enhance your content distribution strategy by
 | Whitelist        | Only allow specified countries                                | Greater security for sensitive regions   |
 | Blacklist        | Block selected countries while allowing all others by default | Broader reach with targeted restrictions |
 
-For more detailed information on CloudFront and content delivery strategies, consider reviewing the [CloudFront Developer Guide](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Introduction.html).
+For more detailed information on CloudFront and content delivery strategies, consider reviewing the [CloudFront Developer Guide](https://docs.aws.amazon.com[AWS_SECRET_ACCESS_KEY]Introduction.html).
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/aws-certified-developer-associate/module/d25d5e41-6379-4261-9036-c1d8017dbdab/lesson/c26e7a62-40b1-46dc-bc59-cc01de75b6e3" />

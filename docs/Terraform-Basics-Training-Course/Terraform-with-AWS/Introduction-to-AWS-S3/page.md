@@ -59,7 +59,7 @@ In this lesson, you learned how to create an IAM policy with Terraform and attac
 
 For more information on IAM policies and Terraform, refer to:
 
-* [Terraform AWS Provider - IAM Policy](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/iam_policy)
+* [Terraform AWS Provider - IAM Policy](https://registry.terraform.[SECRET_REDACTED]iam_policy)
 * [AWS IAM Documentation](https://docs.aws.amazon.com/iam/)
 
 <CardGroup>
@@ -89,7 +89,7 @@ When creating an S3 bucket, consider the following guidelines:
 * **DNS-Compliant Naming:** Bucket names cannot contain uppercase letters, underscores, or end with a dash. They must be between 3 to 63 characters.
 * **File Upload Limit:** Each individual file uploaded to S3 can be a maximum of 5 TB in size.
 
-For a comprehensive list of bucket naming restrictions, please refer to the [official AWS documentation](https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucketnamingrules.html).
+For a comprehensive list of bucket naming restrictions, please refer to the [official AWS documentation](https://docs.aws.amazon.[SECRET_REDACTED].html).
 
 Once created, the bucket is accessible via a unique DNS endpoint. For example, a bucket named "allpets" in the US West (N. California) region would be accessible at:
 

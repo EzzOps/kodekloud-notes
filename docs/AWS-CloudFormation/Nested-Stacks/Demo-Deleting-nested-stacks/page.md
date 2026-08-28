@@ -119,8 +119,8 @@ Best practices and checklist
 
 References
 
-* [AWS CloudFormation nested stacks](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-nested-stacks.html)
-* [AWS CloudFormation DeletionPolicy attribute](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-attribute-deletionpolicy.html)
+* [AWS CloudFormation nested stacks](https://docs.aws.amazon.com/[AWS_SECRET_ACCESS_KEY]-cfn-nested-stacks.html)
+* [AWS CloudFormation DeletionPolicy attribute](https://docs.aws.amazon.[SECRET_REDACTED]-attribute-deletionpolicy.html)
 * [Amazon S3 console — empty and delete buckets](https://docs.aws.amazon.com/AmazonS3/latest/userguide/delete-or-empty-bucket.html)
 
 That completes the cleanup: parent stack deleted, nested stacks removed (or retained if specified), resources terminated or preserved per policy, and the templates bucket emptied and deleted.

@@ -52,7 +52,7 @@ Response:
 ```text theme={null}
 Key          Value
 ---          -----
-ciphertext   vault:v1:Fpyph6C7r5MUILiEiFhCoJbxelQbsGeEahal15LhDPSoN6HkTOhwn79DCwt0mctlttLokqikArOPAopzm2jQAKJg=
+ciphertext   vault:v1:[SECRET_REDACTED]=
 key_version  1
 ```
 
@@ -71,7 +71,7 @@ Pass the ciphertext back to Vault to decrypt:
 
 ```bash theme={null}
 vault write transit/decrypt/vault_training \
-  ciphertext="vault:v1:Fpyph6C7r5MUILiEiFhCoJbxelQbsGeEahal15LhDPSoN6HkTOhwn79DCwt0mctlttLokqikArOPAopzm2jQAKJg="
+  ciphertext="vault:v1:[SECRET_REDACTED]="
 ```
 
 Response:
@@ -79,13 +79,13 @@ Response:
 ```text theme={null}
 Key        Value
 ---        -----
-plaintext  R2V0dGluZyBTdGFydGVkIHdpdGggSGFzaGlDb3JwIFZhdWx0Cg==
+plaintext  [SECRET_REDACTED]==
 ```
 
 Decode to reveal the original message:
 
 ```bash theme={null}
-echo "R2V0dGluZyBTdGFydGVkIHdpdGggSGFzaGlDb3JwIFZhdWx0Cg==" | base64 -d
+echo "[SECRET_REDACTED]==" | base64 -d
 # Getting Started with HashiCorp Vault
 ```
 
@@ -160,7 +160,7 @@ Rewrapping updates existing ciphertext to the newest key version without exposin
 
 ```bash theme={null}
 vault write transit/rewrap/vault_training \
-  ciphertext="vault:v1:Fpyph6C7r5MUILiEiFhCoJbxelQbsGeEahal15LhDPSoN6HkTOhwn79DCwt0mctlttLokqikArOPAopzm2jQAKJg="
+  ciphertext="vault:v1:[SECRET_REDACTED]="
 ```
 
 Response:

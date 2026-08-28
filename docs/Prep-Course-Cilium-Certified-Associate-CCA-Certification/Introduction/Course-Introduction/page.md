@@ -20,7 +20,7 @@ Key takeaway: treat the local CLI and the in-pod binaries as separate tools with
 Links and references
 
 * [Cilium Documentation — CLI](https://docs.cilium.io/en/stable/gettingstarted/cli/)
-* [kubectl exec reference](https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands#exec)
+* [kubectl exec reference](https://kubernetes.io/[AWS_SECRET_ACCESS_KEY]-commands#exec)
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/cilium-certified-associate-cca/module/2fded455-95ea-4183-8cce-f17de214691f/lesson/cc56f4b0-1780-44b2-8ead-8b4fbec08f5d" />

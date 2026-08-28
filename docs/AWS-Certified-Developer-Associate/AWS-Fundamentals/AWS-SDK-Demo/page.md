@@ -82,7 +82,7 @@ C:\Users\sanje\Documents\scratch\sdk>node sdkDemo.mjs
   $metadata: {
     httpStatusCode: 200,
     requestId: 'YWX6K8TXKZJ3YGE',
-    extendedRequestId: '2K0QC2UCHH3WcpJiovErQkX6eah48ocNvKEM2/Byti3We4Tcg47DFVJN0tH26SNx6sTXYP8LQc=',
+    extendedRequestId: '[SECRET_REDACTED]=',
     cfId: undefined,
     attempts: 1,
     totalRetryDelay: 0
@@ -94,7 +94,7 @@ C:\Users\sanje\Documents\scratch\sdk>node sdkDemo.mjs
   ],
   Owner: {
     DisplayName: 'sktdemo91',
-    ID: 'a343e01f12c18a7944ebc48e83af2b8608e270b3c72619a67e2dd6569ceec0'
+    ID: '[SECRET_REDACTED]'
   }
 }
 C:\Users\sanje\Documents\scratch\sdk>

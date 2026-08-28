@@ -115,8 +115,8 @@ Continuous improvement is key:
 
 * [Azure Pipelines Documentation](https://docs.microsoft.com/azure/devops/pipelines/)
 * [Agent Pools and Queues](https://docs.microsoft.com/azure/devops/pipelines/agents/pools-queues)
-* [Parallel Jobs in Azure DevOps](https://docs.microsoft.com/azure/devops/pipelines/licensing/concurrent-jobs)
-* [Matrix Strategy](https://docs.microsoft.com/azure/devops/pipelines/process/phases?tabs=yaml#matrix)
+* [Parallel Jobs in Azure DevOps](https://docs.microsoft.[SECRET_REDACTED]-jobs)
+* [Matrix Strategy](https://docs.microsoft.[SECRET_REDACTED]?tabs=yaml#matrix)
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/az-400/module/55cf24db-89bc-4b93-bb75-7350d1593073/lesson/eb5d21f2-4fb9-4f64-a206-ecad2845268e" />

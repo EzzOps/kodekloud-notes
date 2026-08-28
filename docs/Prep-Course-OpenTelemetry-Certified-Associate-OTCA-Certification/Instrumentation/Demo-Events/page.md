@@ -175,7 +175,7 @@ References and further reading
 
 * [OpenTelemetry Python Documentation](https://opentelemetry.io/docs/instrumentation/python/)
 * [Jaeger — Distributed Tracing](https://www.jaegertracing.io/)
-* [OTLP Exporter Specification](https://opentelemetry.io/docs/reference/specification/protocol/otlp/)
+* [OTLP Exporter Specification](https://opentelemetry.[AWS_SECRET_ACCESS_KEY]/otlp/)
 * [W3C Trace Context](https://www.w3.org/TR/trace-context/)
 
 <Callout icon="warning">

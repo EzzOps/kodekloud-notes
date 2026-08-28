@@ -11,9 +11,9 @@ The Istio operator provides flexible control over which components and settings 
 
 ## Useful links and references
 
-* Istio Installation Options (Operator schema): [https://istio.io/latest/docs/reference/config/installation-options/](https://istio.io/latest/docs/reference/config/installation-options/)
+* Istio Installation Options (Operator schema): [https://istio.[SECRET_REDACTED]-options/](https://istio.[SECRET_REDACTED]-options/)
 * Istioctl documentation: [https://istio.io/latest/docs/ops/diagnostic-tools/istioctl/](https://istio.io/latest/docs/ops/diagnostic-tools/istioctl/)
-* Helm charts for Istio: [https://github.com/istio/istio/tree/master/manifests/charts](https://github.com/istio/istio/tree/master/manifests/charts)
+* Helm charts for Istio: [https://github.com/[AWS_SECRET_ACCESS_KEY]](https://github.com/[AWS_SECRET_ACCESS_KEY])
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/istio-certified-associate/module/65ee174b-536e-4657-9b6f-85c90c7612da/lesson/3f6daee7-6e1d-485b-b175-97c15083d129" />
@@ -196,8 +196,8 @@ There are two common ways to move workloads to the new revision:
 Example: redeploy Bookinfo workloads by deleting and reapplying the sample:
 
 ```bash theme={null}
-kubectl delete -f https://raw.githubusercontent.com/istio/istio/release-1.11/samples/bookinfo/platform/kube/bookinfo.yaml
-kubectl apply  -f https://raw.githubusercontent.com/istio/istio/release-1.11/samples/bookinfo/platform/kube/bookinfo.yaml
+kubectl delete -f https://raw.githubusercontent.com/istio/istio/release-1.11[AWS_SECRET_ACCESS_KEY].yaml
+kubectl apply  -f https://raw.githubusercontent.com/istio/istio/release-1.11[AWS_SECRET_ACCESS_KEY].yaml
 ```
 
 Check pod status while pods initialize:

@@ -155,7 +155,7 @@ Links and references
 
 * [Terraform: Meta-arguments — for\_each and count](https://www.terraform.io/docs/language/meta-arguments/for_each.html)
 * [Terraform: Expressions — each object](https://www.terraform.io/docs/language/expressions/each.html)
-* [Azure Provider (azurerm) Documentation](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs)
+* [Azure Provider (azurerm) Documentation](https://registry.terraform.io[AWS_SECRET_ACCESS_KEY])
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-on-azure/module/fb5019bb-df21-4583-818e-6dae40fde2ec/lesson/316db583-71fc-4563-8f19-72bbf9be8a2b" />

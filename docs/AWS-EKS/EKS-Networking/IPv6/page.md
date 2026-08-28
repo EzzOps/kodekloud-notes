@@ -167,7 +167,7 @@ Enabling IPv6 in Amazon EKS provides a virtually unlimited address space per nod
 
 ## Links and References
 
-* [Amazon EKS VPC CNI IPv6 Support](https://docs.aws.amazon.com/eks/latest/userguide/networking/ipv6.html)
+* [Amazon EKS VPC CNI IPv6 Support](https://docs.aws.amazon.[AWS_SECRET_ACCESS_KEY].html)
 * [Kubernetes Dual-Stack Networking](https://kubernetes.io/docs/concepts/services-networking/dual-stack/)
 * [AWS CLI IPv6 Commands](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-instances.html)
 

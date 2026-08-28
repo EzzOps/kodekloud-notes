@@ -335,7 +335,7 @@ docker system events
 ## Further Reading
 
 * [Docker Engine overview](https://docs.docker.com/engine/)
-* [Docker daemon.json reference](https://docs.docker.com/engine/reference/commandline/dockerd/#daemon-configuration-file)
+* [Docker daemon.json reference](https://docs.docker.[AWS_SECRET_ACCESS_KEY]/#daemon-configuration-file)
 * [Docker CLI commands](https://docs.docker.com/engine/reference/commandline/cli/)
 * [Managing Docker storage](https://docs.docker.com/config/pruning/)
 

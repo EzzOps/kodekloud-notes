@@ -79,7 +79,7 @@ remote_state {
 * [Terraform Backend Configuration](https://www.terraform.io/language/settings/backends/s3)
 * [Terragrunt Documentation](https://terragrunt.gruntwork.io/docs/)
 * [AWS S3 User Guide](https://docs.aws.amazon.com/s3/latest/userguide/)
-* [DynamoDB Locking for Terraform](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.ReadWrite.html)
+* [DynamoDB Locking for Terraform](https://docs.aws.amazon.[AWS_SECRET_ACCESS_KEY]/HowItWorks.ReadWrite.html)
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terragrunt-for-beginners/module/2eef056a-8494-4e5d-acf0-25b04fad55c4/lesson/07f3ad60-7663-4a64-9601-90506adf61e2" />

@@ -34,7 +34,7 @@ IPs:
   IP: 172.17.0.3
 Containers:
   nginx:
-    Container ID:   docker://987785b312ad2e38c77132300f8709b8a027566462c2d18634ff13b34
+    Container ID:   docker://[SECRET_REDACTED]
     Image:          nginx
     Image ID:       docker-pullable://nginx@sha256:a23a9056789b968a186c5205f4
 ```

@@ -165,7 +165,7 @@ Next, install Alertmanager, create custom alert rules, and configure routing (Sl
 ## Links & References
 
 * [Kubernetes Services Overview](https://kubernetes.io/docs/concepts/services-networking/service/)
-* [Istio Metrics & Telemetry](https://istio.io/latest/docs/ops/integrations/prometheus/)
+* [Istio Metrics & Telemetry](https://istio.io[AWS_SECRET_ACCESS_KEY]/)
 * [Grafana Alerting](https://grafana.com/docs/grafana/latest/alerting/)
 * [Prometheus Alertmanager Guide](https://prometheus.io/docs/alerting/latest/alertmanager/)
 

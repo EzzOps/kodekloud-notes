@@ -4,7 +4,7 @@ Source: https://notes.kodekloud.com/docs/AWS-CodePipeline-CICD-Pipeline/Creating
 
 Set up a two-stage CI/CD pipeline on AWS using CodeCommit for source control and CodeDeploy for deployment of a sample web application.
 
-In this guide, you’ll set up a simple two-stage CI/CD pipeline on AWS using CodeCommit for source control and CodeDeploy for deployment. We’ll deploy a sample web application to an EC2 instance following the [AWS CodePipeline simple tutorial](https://docs.aws.amazon.com/codepipeline/latest/userguide/tutorials-simple-codepipeline.html).
+In this guide, you’ll set up a simple two-stage CI/CD pipeline on AWS using CodeCommit for source control and CodeDeploy for deployment. We’ll deploy a sample web application to an EC2 instance following the [AWS CodePipeline simple tutorial](https://docs.aws.amazon.com[AWS_SECRET_ACCESS_KEY]-simple-codepipeline.html).
 
 <Frame>
   ![The image shows a demonstration slide with an infinity loop labeled "Source" and "Deploy," alongside an AWS CodeCommit icon.](https://kodekloud.com/kk-media/image/upload/v1752862686/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-Demonstration-2-Create-2-Stage-Pipeline/infinity-loop-source-deploy-aws-codecommit.jpg)

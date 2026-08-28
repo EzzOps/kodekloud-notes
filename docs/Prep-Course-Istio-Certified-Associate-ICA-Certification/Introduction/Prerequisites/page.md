@@ -1,6 +1,6 @@
 # Prerequisites
 
-Source: https://notes.kodekloud.com/docs/Prep-Course-Istio-Certified-Associate-ICA-Certification/Introduction/Prerequisites/page
+Source: https://notes.kodekloud.com/docs/Prep-Course-Istio-Certified-Associate-ICA-[AWS_SECRET_ACCESS_KEY]/page
 
 Guidance on practical prerequisites and hands-on skills needed to prepare for the Istio Certified Associate exam, focusing on Kubernetes, kubectl, Linux, networking, Helm, and labs.
 

@@ -92,7 +92,7 @@ The drift detection process then compares the expected and actual configurations
         "SubnetId": "subnet-0f5c1220"
       }
     ],
-    "UserData": "IYEvYmlU23gLxhCnl1b81GRndUgLkXgYdzLWNmbiti290c3RyYXYAkJBn0YIWsMTrK0sB2A..."
+    "UserData": "[SECRET_REDACTED]..."
   },
   "Actual": {
     "ImageId": "ami-f5f41398",

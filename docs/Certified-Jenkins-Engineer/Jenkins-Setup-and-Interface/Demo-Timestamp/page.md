@@ -79,7 +79,7 @@ The default pattern is `HH:mm:ss`, but you can choose **Detailed** or enter your
 
 ## 4. Define a Custom Date-Time Pattern
 
-Jenkins uses Java’s [SimpleDateFormat](https://docs.oracle.com/javase/8/docs/api/java/text/SimpleDateFormat.html). Below is a quick reference:
+Jenkins uses Java’s [SimpleDateFormat](https://docs.oracle.[SECRET_REDACTED].html). Below is a quick reference:
 
 | Pattern | Description      | Example |
 | ------- | ---------------- | ------- |
@@ -130,7 +130,7 @@ Feel free to adjust the pattern to fit your organization’s logging standards.
 ## Links and References
 
 * [Jenkins Timestamper Plugin](https://plugins.jenkins.io/timestamper/)
-* [Oracle SimpleDateFormat Documentation](https://docs.oracle.com/javase/8/docs/api/java/text/SimpleDateFormat.html)
+* [Oracle SimpleDateFormat Documentation](https://docs.oracle.[SECRET_REDACTED].html)
 * [Jenkins Console Output Settings](https://www.jenkins.io/doc/book/managing/)
 
 <CardGroup>

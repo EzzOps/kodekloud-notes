@@ -126,9 +126,9 @@ CloudFront can publish detailed logs to Amazon S3, Amazon CloudWatch Logs, or th
 
 ## Links and References
 
-* [Amazon CloudFront Developer Guide](https://docs.aws.amazon.com/cloudfront/latest/DeveloperGuide/Introduction.html)
+* [Amazon CloudFront Developer Guide](https://docs.aws.amazon.[SECRET_REDACTED].html)
 * [AWS CDN Solutions](https://aws.amazon.com/cloudfront/)
-* [AWS CLI: create-distribution](https://docs.aws.amazon.com/cli/latest/reference/cloudfront/create-distribution.html)
+* [AWS CLI: create-distribution](https://docs.aws.amazon.[SECRET_REDACTED]-distribution.html)
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/aws-networking-fundamentals/module/d31cb856-303b-4a11-b280-b8729906670b/lesson/aeadb426-fcb0-433f-b1fa-75f0962e82b9" />

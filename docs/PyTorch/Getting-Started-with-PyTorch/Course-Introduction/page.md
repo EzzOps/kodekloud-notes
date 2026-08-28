@@ -178,7 +178,7 @@ We've explored several methods for saving and loading models in PyTorch:
 This comprehensive walkthrough of saving and loading models in PyTorch should provide you with the tools you need to manage your models effectively. Now, try out these techniques in your demo and optimize your workflow!
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/pytorch/module/b8cb82ae-a284-41d1-8469-7e60705bbab8/lesson/916cc3d9-f79d-425a-9a29-08ddc0f2a80a" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[AWS_SECRET_ACCESS_KEY]-a284-41d1-8469-7e60705bbab8/lesson/916cc3d9-f79d-425a-9a29-08ddc0f2a80a" />
 </CardGroup>
 
 
@@ -215,5 +215,5 @@ In the final phase, you will learn how to serve your trained models in productio
 By the end of this course, you will have built, trained, and deployed a complete image classification solution. Are you ready to make a significant impact in the fields of AI and healthcare? Let’s get started on this transformative journey to elevate your PyTorch expertise!
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/pytorch/module/5a59db15-2490-4be0-a894-4b3d3cc78fac/lesson/24f499b9-3958-4227-abe2-54dc3abf6433" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[AWS_SECRET_ACCESS_KEY]-2490-4be0-a894-4b3d3cc78fac/lesson/24f499b9-3958-4227-abe2-54dc3abf6433" />
 </CardGroup>

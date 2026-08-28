@@ -102,9 +102,9 @@ How this works (step-by-step)
 
 ## Links and references
 
-* [AWS CloudFormation Parameters — Documentation](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/parameters-section-structure.html)
-* [AWS S3 Bucket Naming Rules](https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucketnamingrules.html)
-* [Intrinsic function Ref — AWS CloudFormation](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-ref.html)
+* [AWS CloudFormation Parameters — Documentation](https://docs.aws.amazon.[SECRET_REDACTED]-section-structure.html)
+* [AWS S3 Bucket Naming Rules](https://docs.aws.amazon.[SECRET_REDACTED].html)
+* [Intrinsic function Ref — AWS CloudFormation](https://docs.aws.amazon.[SECRET_REDACTED]-function-reference-ref.html)
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/aws-cloud-formation/module/636db37e-4a51-4bb0-bcec-7ebf488a26b8/lesson/64b3cf45-e3a1-43fd-ad31-6cbf1100f76d" />

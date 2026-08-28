@@ -25,7 +25,7 @@ If you attempt to open the Object URL directly in a browser while unauthenticate
   <Code>AccessDenied</Code>
   <Message>Access Denied</Message>
   <RequestId>PFYXXA5Z2YWM9V0G</RequestId>
-  <HostId>thSb8Vh1okI3JHNeKNxvRFmJneWADU8sETiVRvB4pQ2KkVw6gSv0/RyLNkAWfXcHbtFQATgku/</HostId>
+  <HostId>[SECRET_REDACTED]/</HostId>
 </Error>
 ```
 
@@ -73,7 +73,7 @@ How Object URL vs Console Open works
 * Open (authenticated): uses your signed console session credentials, allowing you to view the object while signed in.
 
 <Callout icon="lightbulb">
-  By default, S3 buckets and objects are private. To serve assets publicly (for a website, for example), you must explicitly change the object or bucket settings (object ACL, bucket policy, or use a `signed URL` or a `CloudFront distribution`) to allow public or authorized access. See: [Pre-signed URLs](https://docs.aws.amazon.com/AmazonS3/latest/userguide/ShareObjectPreSignedURL.html) and [Amazon CloudFront](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Introduction.html).
+  By default, S3 buckets and objects are private. To serve assets publicly (for a website, for example), you must explicitly change the object or bucket settings (object ACL, bucket policy, or use a `signed URL` or a `CloudFront distribution`) to allow public or authorized access. See: [Pre-signed URLs](https://docs.aws.amazon.com/AmazonS3/[AWS_SECRET_ACCESS_KEY].html) and [Amazon CloudFront](https://docs.aws.amazon.com[AWS_SECRET_ACCESS_KEY]Introduction.html).
 </Callout>
 
 Creating a “folder” and uploading multiple objects
@@ -143,9 +143,9 @@ This lesson covered the practical S3 console workflows you’ll use most often:
 Further reading and references
 
 * [Amazon S3 Developer Guide](https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html)
-* [Working with Objects](https://docs.aws.amazon.com/AmazonS3/latest/userguide/UsingObjects.html)
-* [Pre-signed URLs](https://docs.aws.amazon.com/AmazonS3/latest/userguide/ShareObjectPreSignedURL.html)
-* [Amazon CloudFront](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Introduction.html)
+* [Working with Objects](https://docs.aws.amazon.[SECRET_REDACTED].html)
+* [Pre-signed URLs](https://docs.aws.amazon.com/AmazonS3/[AWS_SECRET_ACCESS_KEY].html)
+* [Amazon CloudFront](https://docs.aws.amazon.com[AWS_SECRET_ACCESS_KEY]Introduction.html)
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/crash-course-aws-basics/module/76d6cbfc-c16d-4f87-a93c-31cfa5f795f7/lesson/7a985991-7238-406a-aad7-75e86682e644" />

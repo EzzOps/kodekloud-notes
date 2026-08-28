@@ -120,5 +120,5 @@ This tutorial covered the setup of a CI pipeline for running tests on your Go ap
 </Callout>
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins/module/4eff829b-dd2c-4051-8090-35e8525b8874/lesson/a553290a-02af-46d1-a0cf-39938eeb9525" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[AWS_SECRET_ACCESS_KEY]-dd2c-4051-8090-35e8525b8874/lesson/a553290a-02af-46d1-a0cf-39938eeb9525" />
 </CardGroup>

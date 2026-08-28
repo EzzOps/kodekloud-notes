@@ -48,7 +48,7 @@ Note: APIs and LLms evolve—check your LangChain version docs for the most curr
 These references will help you implement agents that safely coordinate LLM reasoning with external capabilities and deliver robust, multi-step automation.
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langchain/module/5bedac05-3eaa-4d0d-9892-e05b80c528fb/lesson/db49466c-c5af-4c79-b889-cf31536588ca" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[SECRET_REDACTED]-3eaa-4d0d-9892-e05b80c528fb/lesson/db49466c-c5af-4c79-b889-cf31536588ca" />
 </CardGroup>
 
 

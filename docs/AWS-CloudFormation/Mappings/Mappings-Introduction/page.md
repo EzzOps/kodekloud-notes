@@ -126,8 +126,8 @@ Mappings are best for static, template-time lookups with predictable, constant v
 
 ## Links and references
 
-* [AWS CloudFormation: Mappings](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/mappings-section-structure.html)
-* [AWS CloudFormation Intrinsic Functions: Fn::FindInMap](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-findinmap.html)
+* [AWS CloudFormation: Mappings](https://docs.aws.amazon.[SECRET_REDACTED]-section-structure.html)
+* [AWS CloudFormation Intrinsic Functions: Fn::FindInMap](https://docs.aws.amazon.[SECRET_REDACTED]-function-reference-findinmap.html)
 * [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/)
 
 <CardGroup>

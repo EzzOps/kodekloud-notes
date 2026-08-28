@@ -83,7 +83,7 @@ In this tutorial, you’ll configure Vault Enterprise performance replication be
 1. Authenticate to the primary cluster:
 
    ```bash theme={null}
-   ec2-user@ip-10-1-102-170:~$ vault login hvs.KYjTNrIdZaOPkriOuD5tfClA
+   ec2-user@ip-10-1-102-170:~$ vault login [VAULT_TOKEN]
    Success! You are now authenticated. Future Vault clients will automatically use this token.
    ```
 
@@ -94,7 +94,7 @@ In this tutorial, you’ll configure Vault Enterprise performance replication be
 </Callout>
 
 ```bash theme={null}
-ec2-user@ip-10-1-102-170:~$ vault write -f sys/replication/performance/primary/enable
+ec2-user@ip-10-1-102-170:~$ vault write -f [SECRET_REDACTED]
 WARNING! The following warnings were returned from Vault:
 * This cluster is being enabled as a primary for replication. Vault will be unavailable for a brief period and will resume service shortly.
 ```
@@ -102,13 +102,13 @@ WARNING! The following warnings were returned from Vault:
 3. Generate a wrapped token for the secondary:
 
    ```bash theme={null}
-   ec2-user@ip-10-1-102-170:~$ vault write sys/replication/performance/primary/secondary-token id=hcvop-performance
+   ec2-user@ip-10-1-102-170:~$ vault write [SECRET_REDACTED]-token id=hcvop-performance
    Key                           Value
    ---                           -----
    wrapping_token                eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
    wrapping_token_ttl            30m
    wrapping_token_creation_time  2022-06-02T01:19:11.387715359Z +0000 UTC
-   wrapping_token_creation_path  sys/replication/performance/primary/secondary-token
+   wrapping_token_creation_path  [SECRET_REDACTED]-token
    ```
 
 <Callout icon="lightbulb">
@@ -122,15 +122,15 @@ WARNING! The following warnings were returned from Vault:
 1. Authenticate to the secondary cluster:
 
    ```bash theme={null}
-   ec2-user@ip-10-1-102-156:~$ vault login hvs.AVecCoMzQSmLYTQ9ufdpRAZ
+   ec2-user@ip-10-1-102-156:~$ vault login [VAULT_TOKEN]
    Success! You are now authenticated.
    ```
 
 2. Initialize the secondary with the wrapped token:
 
    ```bash theme={null}
-   ec2-user@ip-10-1-102-156:~$ vault write sys/replication/performance/secondary/enable \
-       token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
+   ec2-user@ip-10-1-102-156:~$ vault write sys/[AWS_SECRET_ACCESS_KEY] \
+       [SECRET_REDACTED]...
    WARNING! The following warnings were returned from Vault:
    * Vault has successfully found secondary information; it may take a while to perform setup tasks. Vault will be unavailable until these tasks and the initial sync complete.
    ```
@@ -168,7 +168,7 @@ Once performance replication is active, the secondary cluster adopts the primary
 * Attempting to log in with the old secondary root token fails:
 
   ```bash theme={null}
-  ec2-user@ip-10-1-102-156:~$ vault login hvs.AVecCoMzQSmYLytQ9ufdpRA2
+  ec2-user@ip-10-1-102-156:~$ vault login [VAULT_TOKEN]
   Error making API request.
   Code: 403. Errors:
   * permission denied
@@ -177,7 +177,7 @@ Once performance replication is active, the secondary cluster adopts the primary
 * Use the primary’s root token to authenticate on the secondary:
 
   ```bash theme={null}
-  ec2-user@ip-10-1-102-156:~$ vault login hvs.KYjTNrIdZaOPkriOuD5tfClA
+  ec2-user@ip-10-1-102-156:~$ vault login [VAULT_TOKEN]
   Success! You are now authenticated.
   ```
 

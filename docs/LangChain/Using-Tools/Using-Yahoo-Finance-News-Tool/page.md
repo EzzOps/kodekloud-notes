@@ -56,7 +56,7 @@ The returned `result` contains the text retrieved from Wikipedia (bounded by `do
 This demonstrates the basic usage of the Wikipedia tool. The next section will cover combining multiple tools into an agent for more advanced workflows.
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langchain/module/06905b96-585d-4c9e-835a-d8fcaca76e2a/lesson/dd8b1038-f63d-4623-9cac-2378b7808082" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[SECRET_REDACTED]-585d-4c9e-835a-d8fcaca76e2a/lesson/dd8b1038-f63d-4623-9cac-2378b7808082" />
 </CardGroup>
 
 
@@ -141,5 +141,5 @@ This tool scrapes the Yahoo Finance news pages for the provided ticker (for exam
 Use this tool as part of a balanced data strategy: combine headlines with authoritative APIs, price data, and internal models to make informed decisions.
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langchain/module/06905b96-585d-4c9e-835a-d8fcaca76e2a/lesson/4bc275cc-00ed-474e-b48c-dc83b001b510" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[SECRET_REDACTED]-585d-4c9e-835a-d8fcaca76e2a/lesson/4bc275cc-00ed-474e-b48c-dc83b001b510" />
 </CardGroup>

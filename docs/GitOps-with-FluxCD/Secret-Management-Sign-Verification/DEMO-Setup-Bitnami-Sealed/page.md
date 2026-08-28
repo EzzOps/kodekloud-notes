@@ -137,7 +137,7 @@ git commit -m "feat: enable SOPS decryption in Flux Kustomization"
 git push origin infrastructure
 ```
 
-For details, see [FluxCD Kustomization Documentation](https://fluxcd.io/docs/components/kustomize/kustomization/).
+For details, see [FluxCD Kustomization Documentation](https://fluxcd.io[AWS_SECRET_ACCESS_KEY]/).
 
 ***
 
@@ -162,7 +162,7 @@ You should see the original plaintext password, confirming that FluxCD decrypted
 
 * [Mozilla SOPS Releases](https://github.com/mozilla/sops/releases)
 * [GnuPG (GPG) Documentation](https://gnupg.org/documentation/)
-* [FluxCD Kustomization Docs](https://fluxcd.io/docs/components/kustomize/kustomization/)
+* [FluxCD Kustomization Docs](https://fluxcd.io[AWS_SECRET_ACCESS_KEY]/)
 * [Kubernetes Secrets](https://kubernetes.io/docs/concepts/configuration/secret/)
 
 <CardGroup>

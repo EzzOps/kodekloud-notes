@@ -146,7 +146,7 @@ Even if you pass `length=5`, OpenTofu generates an 8-character password. Passing
 ## References
 
 * [OpenTofu Documentation](https://docs.opentofu.org/)
-* [Random Provider: `random_password` Resource](https://registry.terraform.io/providers/hashicorp/random/latest/docs/resources/password)
+* [Random Provider: `random_password` Resource](https://registry.terraform.io[AWS_SECRET_ACCESS_KEY]resources/password)
 * [Terraform Expressions](https://www.terraform.io/docs/language/expressions/index.html)
 
 <CardGroup>

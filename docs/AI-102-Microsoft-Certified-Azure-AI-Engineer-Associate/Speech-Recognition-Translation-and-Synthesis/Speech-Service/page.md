@@ -74,7 +74,7 @@ recognizer.recognizeOnceAsync(result => {
 REST (Batch transcription) — POST audio file (pseudo-request)
 
 ```http theme={null}
-POST https://<your-region>.api.cognitive.microsoft.com/speech/recognition/conversation/cognitiveservices/v1?language=en-US
+POST https://<your-region>.api.cognitive.microsoft.[SECRET_REDACTED]?language=en-US
 Ocp-Apim-Subscription-Key: <YOUR_KEY>
 Content-Type: audio/wav
 

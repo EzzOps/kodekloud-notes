@@ -23,7 +23,7 @@ Verify your installation:
 
 ```powershell theme={null}
 PS C:\> vault version
-Vault v1.7.0 (4e222b85c040a810b74400ee3c544494494797e32bb9f)
+Vault v1.7.0 ([SECRET_REDACTED])
 ```
 
 ***
@@ -50,7 +50,7 @@ PowerShell:
 cmd.exe:
   set VAULT_ADDR=http://127.0.0.1:8200
 
-Unseal Key: ZEgZgHSEEmmlnRboqtY0A00TUpleaoxo8SqqtFP2Q=
+Unseal Key: [SECRET_REDACTED]=
 Root Token: s.d6931rVSdkpBINnnRvMHBRXR
 
 Development mode should NOT be used in production installations!

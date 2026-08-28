@@ -154,8 +154,8 @@ print(response.json())
 
 ## References
 
-* [Azure DevOps Service Connections](https://learn.microsoft.com/azure/devops/pipelines/library/service-endpoints)
-* [Create and use personal access tokens](https://learn.microsoft.com/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate)
+* [Azure DevOps Service Connections](https://learn.microsoft.[SECRET_REDACTED]-endpoints)
+* [Create and use personal access tokens](https://learn.microsoft.[AWS_SECRET_ACCESS_KEY]use-personal-access-tokens-to-authenticate)
 * [Azure DevOps REST API documentation](https://learn.microsoft.com/rest/api/azure/devops/)
 
 <CardGroup>

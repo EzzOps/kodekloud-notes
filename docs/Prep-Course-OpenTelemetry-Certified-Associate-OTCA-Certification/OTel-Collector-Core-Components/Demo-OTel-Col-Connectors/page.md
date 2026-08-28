@@ -133,8 +133,8 @@ Further reading and references
 
 * [OpenTelemetry Collector: Connectors](https://github.com/open-telemetry/opentelemetry-collector-contrib/tree/main/connector)
 * [OpenTelemetry Collector Documentation](https://opentelemetry.io/docs/collector/)
-* [OTLP protocol specification](https://opentelemetry.io/docs/reference/specification/protocol/otlp/)
-* [Prometheus remote write configuration](https://prometheus.io/docs/prometheus/latest/configuration/configuration/#remote_write)
+* [OTLP protocol specification](https://opentelemetry.[AWS_SECRET_ACCESS_KEY]/otlp/)
+* [Prometheus remote write configuration](https://prometheus.[AWS_SECRET_ACCESS_KEY]configuration/#remote_write)
 * [Jaeger Tracing](https://www.jaegertracing.io/docs/latest/)
 
 This example demonstrates a simple, practical use-case: turning traces into a span count metric using a connector. Connectors are flexible and can perform richer transformations or signal translations when needed.

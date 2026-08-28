@@ -209,7 +209,7 @@ That completes the demo. Practice installing the CloudNativePG operator and crea
 Links and references:
 
 * CloudNativePG documentation: [https://cloudnative-pg.io/](https://cloudnative-pg.io/)
-* Kubernetes StatefulSets: [https://kubernetes.io/docs/concepts/workloads/controllers/statefulset/](https://kubernetes.io/docs/concepts/workloads/controllers/statefulset/)
+* Kubernetes StatefulSets: [https://kubernetes.[SECRET_REDACTED]/](https://kubernetes.[SECRET_REDACTED]/)
 * Glasskube project: [https://github.com/traefik/glasskube](https://github.com/traefik/glasskube) (Glasskube UI/CLI)
 
 <CardGroup>

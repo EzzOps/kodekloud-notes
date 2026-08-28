@@ -14,7 +14,7 @@ This guide demonstrates how to add a Backstage community plugin to your instance
 
 ## Finding the plugin
 
-Community plugins are discoverable on the Backstage Plugins page and in the Backstage repository on GitHub. Searching for "GitHub Actions" leads you to the plugin folder and README in the [backstage/backstage/plugins](https://github.com/backstage/backstage/tree/master/plugins) area. Community plugins may include both frontend and backend packages (e.g., `plugin-name` and `plugin-name-backend`) or only frontend code. The GitHub Actions community plugin is primarily a frontend plugin but depends on backend auth/proxy support to perform authenticated requests.
+Community plugins are discoverable on the Backstage Plugins page and in the Backstage repository on GitHub. Searching for "GitHub Actions" leads you to the plugin folder and README in the [backstage/backstage/plugins](https://github.com[AWS_SECRET_ACCESS_KEY]) area. Community plugins may include both frontend and backend packages (e.g., `plugin-name` and `plugin-name-backend`) or only frontend code. The GitHub Actions community plugin is primarily a frontend plugin but depends on backend auth/proxy support to perform authenticated requests.
 
 <Frame>
   <img alt="A screenshot of a GitHub repository file view showing a folder tree on the left and a list of files (including README.md, package.json, CHANGELOG.md) on the right for a &#x22;GitHub Actions Plugin&#x22; workspace. The README content for the plugin is visible in the lower right." />
@@ -27,7 +27,7 @@ Many frontend-only community plugins require a backend to handle authentication,
 Example: adding a Dynatrace tab to an entity (JSX):
 
 ```jsx theme={null}
-// packages/app/src/components/catalog/EntityPage.tsx (example)
+// [SECRET_REDACTED].tsx (example)
 const serviceEntityPage = (
   <EntityLayout>
     [...]

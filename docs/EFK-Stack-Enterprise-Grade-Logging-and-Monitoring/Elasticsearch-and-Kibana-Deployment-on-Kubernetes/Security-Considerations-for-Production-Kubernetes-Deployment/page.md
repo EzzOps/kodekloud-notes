@@ -97,7 +97,7 @@ spec:
     spec:
       affinity:
         nodeAffinity:
-          requiredDuringSchedulingIgnoredDuringExecution:
+          [SECRET_REDACTED]:
             nodeSelectorTerms:
               - matchExpressions:
                   - key: kubernetes.io/hostname

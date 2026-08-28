@@ -18,7 +18,7 @@ In this lesson, you learned how to leverage Azure Kubernetes Service (AKS) for s
 * Scale replicas with `kubectl scale`
 * Adjust node pool size for capacity planning | [Scale AKS workloads](https://learn.microsoft.com/azure/aks/cluster-scale)               |
   \| Container Image Management              | Pushing images to Azure Container Registry (ACR) and granting pull permissions to AKS.     | [ACR integration](https://learn.microsoft.com/azure/container-registry/container-registry-auth-aks) |
-  \| Application Upgrades and Rollbacks      | Implementing rolling updates and rollback strategies using `kubectl rollout`.              | [Rollouts in Kubernetes](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/#rolling-back-a-deployment) |
+  \| Application Upgrades and Rollbacks      | Implementing rolling updates and rollback strategies using `kubectl rollout`.              | [Rollouts in Kubernetes](https://kubernetes.[SECRET_REDACTED]/#rolling-back-a-deployment) |
   \| Azure Kubernetes Fleet                  | Overview of multi-cluster management using Azure Fleet Manager.                            | [Azure Kubernetes Fleet](https://learn.microsoft.com/azure/fleet-manager/overview)       |
 
 <Callout icon="lightbulb">
@@ -38,7 +38,7 @@ In this lesson, you learned how to leverage Azure Kubernetes Service (AKS) for s
 * [Azure Kubernetes Service Documentation](https://learn.microsoft.com/azure/aks/)
 * [Kubernetes Official Documentation](https://kubernetes.io/docs/)
 * [Azure Container Registry](https://learn.microsoft.com/azure/container-registry/)
-* [Terraform Azure Provider](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs)
+* [Terraform Azure Provider](https://registry.terraform.io[AWS_SECRET_ACCESS_KEY])
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/azure-kubernetes-service/module/2e4891fe-2f53-4239-9ab9-8b15ba4c6369/lesson/c758601e-170d-42a3-b4af-568809e871b2" />

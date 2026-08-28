@@ -64,7 +64,7 @@ Modules overview
 Let's jump in and start building modern LLM applications with LangChain.
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langchain/module/d5e8b9a9-2511-4d5a-881b-aeeedeb44a4d/lesson/282a2855-f9c4-4bf3-a3ed-2a3a8d2762a1" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[SECRET_REDACTED]-2511-4d5a-881b-aeeedeb44a4d/lesson/282a2855-f9c4-4bf3-a3ed-2a3a8d2762a1" />
 </CardGroup>
 
 
@@ -170,5 +170,5 @@ Links and references
 Understanding these components sets the stage for practical patterns and code examples. Later sections will deep-dive into each building block with concrete integrations, sample code, and design patterns for production systems.
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langchain/module/5bedac05-3eaa-4d0d-9892-e05b80c528fb/lesson/ccb34a44-28e4-478d-ae1a-13df8ef583c4" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[SECRET_REDACTED]-3eaa-4d0d-9892-e05b80c528fb/lesson/ccb34a44-28e4-478d-ae1a-13df8ef583c4" />
 </CardGroup>

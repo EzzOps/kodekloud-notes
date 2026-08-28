@@ -49,7 +49,7 @@ This simple pattern powers many production retrieval pipelines: obtain relevant 
 * [OpenAI Embeddings Guide](https://platform.openai.com/docs/guides/embeddings)
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langchain/module/e47b44c9-65c3-46f8-8bed-b075a18ab12b/lesson/412c6d90-f6c8-4468-9287-9efce864fe74" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[SECRET_REDACTED]-65c3-46f8-8bed-b075a18ab12b/lesson/412c6d90-f6c8-4468-9287-9efce864fe74" />
 </CardGroup>
 
 

@@ -212,11 +212,11 @@ warning: The `tool.uv.dev-dependencies` field (used in pyproject.toml) is deprec
 Resolved 104 packages
 Starting MCP inspector...
 ⚙ Proxy server listening on 127.0.0.1:6277
-🔑 Session token: 46f50eb8951e5e501c94fffdec7a4dd39a1973a4c05c737e2e32e76aeed590a3
+🔑 Session token: [SECRET_REDACTED]
 Use this token to authenticate requests
 
 🔗 Open inspector with token pre-filled:
-http://localhost:6274/?MCP_PROXY_AUTH_TOKEN=46f50eb8951e5e501c94fffdec7a4dd39a1973a4c05c737e2e32e76aeed590a3
+http://localhost:6274/?MCP_PROXY_AUTH_TOKEN[SECRET_REDACTED]
 
 🟢 MCP Inspector is up and running at http://127.0.0.1:6274 🚀
 ```
@@ -230,10 +230,10 @@ Example inspector startup output:
 ```text theme={null}
 Starting MCP inspector...
 Proxy server listening on 127.0.0.1:6277
-Session token: d2e3a6e837cd46fbd3bf344186d490d9fb1e0808e0b9a6554afcd49fb5d8f04a
+Session token: [SECRET_REDACTED]
 
 Open inspector with token pre-filled:
-http://localhost:6274/?MCP_PROXY_AUTH_TOKEN=d2e3a6e837cd46fbd3bf344186d490d9fb1e0808e0b9a6554afcd49fb5d8f04a
+http://localhost:6274/?MCP_PROXY_AUTH_TOKEN[SECRET_REDACTED]
 
 MCP Inspector is up and running at http://127.0.0.1:6274 🚀
 Connection details saved to: /root/mcp-inspector-info.txt

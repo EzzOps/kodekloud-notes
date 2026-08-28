@@ -17,7 +17,7 @@ By the end of this lesson you will be able to:
 This lesson provides a reusable, production-oriented implementation pattern that you can adapt to your organization’s practices.
 
 <Callout icon="lightbulb">
-  Prerequisites: an [Azure DevOps project](https://learn.microsoft.com/azure/devops/?view=azure-devops), an [Azure service connection](https://learn.microsoft.com/azure/devops/pipelines/library/service-endpoints?view=azure-devops\&tabs=yaml) (or equivalent cloud provider connection), and a remote state backend such as an Azure Storage account or [Terraform Cloud](https://www.terraform.io/cloud). Ensure build agents have the [Terraform CLI](https://www.terraform.io/cli) available or use pipeline tasks that install Terraform. Keep secrets and backend credentials in secure pipeline variables or variable groups.
+  Prerequisites: an [Azure DevOps project](https://learn.microsoft.com/azure/devops/?view=azure-devops), an [Azure service connection](https://learn.microsoft.[SECRET_REDACTED]-endpoints?view=azure-devops\&tabs=yaml) (or equivalent cloud provider connection), and a remote state backend such as an Azure Storage account or [Terraform Cloud](https://www.terraform.io/cloud). Ensure build agents have the [Terraform CLI](https://www.terraform.io/cli) available or use pipeline tasks that install Terraform. Keep secrets and backend credentials in secure pipeline variables or variable groups.
 </Callout>
 
 ## High-level design
@@ -144,7 +144,7 @@ Notes about the example:
 
 * [Terraform CLI commands: plan](https://developer.hashicorp.com/terraform/cli/commands/plan)
 * [Azure Pipelines documentation](https://learn.microsoft.com/azure/devops/pipelines/?view=azure-devops)
-* [Azure DevOps service connections](https://learn.microsoft.com/azure/devops/pipelines/library/service-endpoints?view=azure-devops\&tabs=yaml)
+* [Azure DevOps service connections](https://learn.microsoft.[SECRET_REDACTED]-endpoints?view=azure-devops\&tabs=yaml)
 * [Remote state with Azure Storage](https://learn.microsoft.com/azure/storage/common/storage-account-overview)
 * [Terraform Cloud](https://www.terraform.io/cloud)
 

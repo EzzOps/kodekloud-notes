@@ -182,7 +182,7 @@ Your cluster is now running the specified master and node pool versions.
 ## Links and References
 
 * [GKE Upgrade Methodology](https://cloud.google.com/kubernetes-engine/docs/how-to/upgrading)
-* [gcloud container clusters upgrade](https://cloud.google.com/sdk/gcloud/reference/container/clusters/upgrade)
+* [gcloud container clusters upgrade](https://cloud.google.com[AWS_SECRET_ACCESS_KEY]/upgrade)
 * [Kubernetes Versioning](https://kubernetes.io/releases/version-skew-policy/)
 
 <CardGroup>

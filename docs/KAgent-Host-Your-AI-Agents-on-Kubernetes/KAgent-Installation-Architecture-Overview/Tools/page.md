@@ -55,7 +55,7 @@ Hands-on exercises typically show installing MCP adapters for providers like AWS
 Agents as tools
 K-Agent also supports treating an agent itself as a callable tool. One agent can expose capabilities that other agents invoke, enabling specialization and composition. For example, you might run a dedicated PromQL agent that translates natural-language questions into PromQL; another agent calls the PromQL agent as a tool to obtain a valid query, then executes it.
 
-* PromQL docs: [https://prometheus.io/docs/prometheus/latest/querying/basics/](https://prometheus.io/docs/prometheus/latest/querying/basics/)
+* PromQL docs: [https://prometheus.[SECRET_REDACTED]/](https://prometheus.[SECRET_REDACTED]/)
 
 Example composition YAML that references MCP tools and another agent:
 

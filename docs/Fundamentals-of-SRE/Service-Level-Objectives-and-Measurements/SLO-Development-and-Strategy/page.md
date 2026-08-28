@@ -28,8 +28,8 @@ http_requests_created{endpoint="/openapi.json",method="GET",status_code="200"} 1
 * Logs — timestamped event records that provide rich context: error stacks, request/response payloads, and state transitions. Logs validate metrics and are essential for root-cause analysis. Example log entries:
 
 ```text theme={null}
-> 2025-04-18 12:15:33.000 {"container_name":"/kodekloud-record-store-api","source":"stderr","log":"{\"message\": \"http_error\", \"level\": \"ERROR\", \"trace_id\": \"c7bfc8714e3720b74732fa905609705a\", \"span_id\": \"3fc595b17c3a83c8\", \"method\": \"GET\", \"endpoint\": \"/favicon.ico\", \"status_code\": 404, \"duration_ms\": 1.71}", "container_id":"2e81ab28c31116a274347a761369610ebe21e08103f2aa66cd86dd0570ac8d36"}
-> 2025-04-18 12:13:37.000 {"source":"stderr","log":"{\"message\": \"Test error log\", \"level\": \"ERROR\", \"trace_id\": \"d5050e46f1e150a21145fe58b15aff89\", \"span_id\": \"cb34a453a247be9b\", \"error_type\": \"SimulatedError\", \"operation\": \"error_test\"}", "container_id":"2e81ab28c31116a274347a761369610ebe21e08103f2aa66cd86dd0570ac8d36","container_name":"/kodekloud-record-store-api"}
+> 2025-04-18 12:15:33.000 {"container_name":"/kodekloud-record-store-api","source":"stderr","log":"{\"message\": \"http_error\", \"level\": \"ERROR\", \"trace_id\": \"c7bfc8714e3720b74732fa905609705a\", \"span_id\": \"3fc595b17c3a83c8\", \"method\": \"GET\", \"endpoint\": \"/favicon.ico\", \"status_code\": 404, \"duration_ms\": 1.71}", "container_id":"[SECRET_REDACTED]"}
+> 2025-04-18 12:13:37.000 {"source":"stderr","log":"{\"message\": \"Test error log\", \"level\": \"ERROR\", \"trace_id\": \"d5050e46f1e150a21145fe58b15aff89\", \"span_id\": \"cb34a453a247be9b\", \"error_type\": \"SimulatedError\", \"operation\": \"error_test\"}", "container_id":"[SECRET_REDACTED]","container_name":"/kodekloud-record-store-api"}
 ```
 
 <Frame>

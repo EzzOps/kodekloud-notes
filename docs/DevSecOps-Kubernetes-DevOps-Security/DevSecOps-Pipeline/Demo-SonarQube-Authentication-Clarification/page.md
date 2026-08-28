@@ -45,7 +45,7 @@ pipeline {
           sh "mvn sonar:sonar \
             -Dsonar.projectKey=numeric-application \
             -Dsonar.host.url=http://devsecops-demo.eastus.cloudapp.azure.com:9000 \
-            -Dsonar.login=0925129c435c63164d3e63c9fd988ea9f9fd705"
+            -Dsonar.login[AWS_SECRET_ACCESS_KEY]"
         }
         timeout(time: 2, unit: 'MINUTES') {
           script {

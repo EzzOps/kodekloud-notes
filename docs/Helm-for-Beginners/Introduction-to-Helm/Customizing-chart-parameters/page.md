@@ -218,7 +218,7 @@ In this lesson, we covered three primary ways to customize a WordPress Helm char
 
 These techniques give you the flexibility to tailor the Helm chart to meet your specific deployment requirements. Stay tuned for further lessons on advanced Helm chart customization.
 
-For more information, check out the [Helm documentation](https://helm.sh/docs/) and [WordPress Helm chart repository](https://github.com/bitnami/charts/tree/master/bitnami/wordpress).
+For more information, check out the [Helm documentation](https://helm.sh/docs/) and [WordPress Helm chart repository](https://github.[SECRET_REDACTED]).
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/helm-for-beginners/module/15e220ca-1229-4779-81f0-3bc9f804aa6b/lesson/45f37ed3-bd33-47e3-9721-3c1e361b800a" />

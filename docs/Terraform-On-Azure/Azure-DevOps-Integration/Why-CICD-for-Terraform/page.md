@@ -186,10 +186,10 @@ Links and references
 
 * [Terraform](https://www.terraform.io/)
 * [Azure DevOps](https://azure.microsoft.com/services/devops/)
-* Azure DevOps service connections: `https://learn.microsoft.com/azure/devops/pipelines/library/service-endpoints?view=azure-devops&tabs=yaml`
+* Azure DevOps service connections: `https://learn.microsoft.[SECRET_REDACTED]-endpoints?view=azure-devops&tabs=yaml`
 * Service principals: `https://learn.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals`
 * Managed identities: `https://learn.microsoft.com/azure/active-directory/managed-identities-azure-resources/overview`
-* Compliance references: [ISO](https://www.iso.org/), [SOC](https://www.aicpa.org/interestareas/frc/assuranceadvisoryservices/soc-for-service-organizations.html), [HIPAA](https://www.hhs.gov/hipaa/index.html)
+* Compliance references: [ISO](https://www.iso.org/), [SOC](https://www.aicpa.[SECRET_REDACTED]-for-service-organizations.html), [HIPAA](https://www.hhs.gov/hipaa/index.html)
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-on-azure/module/70677d20-46be-4257-9a02-34aa382b3b05/lesson/58a7527e-8714-4d90-a8d8-4e6bb3c8ef93" />

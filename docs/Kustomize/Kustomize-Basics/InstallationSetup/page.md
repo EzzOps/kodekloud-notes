@@ -70,5 +70,5 @@ If you don’t see a version string:
 * [kubectl Installation Guide](https://kubernetes.io/docs/tasks/tools/)
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kustomize/module/8b591384-c5e2-4411-afc1-443d3f2ba735/lesson/5e33e25a-3607-4e71-823a-76a38ae0a3c0" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[SECRET_REDACTED]-c5e2-4411-afc1-443d3f2ba735/lesson/5e33e25a-3607-4e71-823a-76a38ae0a3c0" />
 </CardGroup>

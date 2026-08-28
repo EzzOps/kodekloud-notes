@@ -86,11 +86,11 @@ This hierarchical layout keeps the root file concise and scales seamlessly.
 ## Links and References
 
 * [Kustomize Documentation](https://kubectl.docs.kubernetes.io/references/kustomize/)
-* [kubectl apply](https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands#apply)
+* [kubectl apply](https://kubernetes.io/[AWS_SECRET_ACCESS_KEY]-commands#apply)
 * [Kubernetes Manifests Guide](https://kubernetes.io/docs/concepts/overview/working-with-objects/kubernetes-objects/)
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kustomize/module/8b591384-c5e2-4411-afc1-443d3f2ba735/lesson/4b621de0-dbb3-4f3c-a60b-6abfe7ba9e83" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[SECRET_REDACTED]-c5e2-4411-afc1-443d3f2ba735/lesson/4b621de0-dbb3-4f3c-a60b-6abfe7ba9e83" />
 </CardGroup>
 
 

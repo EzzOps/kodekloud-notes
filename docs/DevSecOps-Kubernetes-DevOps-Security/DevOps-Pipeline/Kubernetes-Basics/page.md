@@ -154,8 +154,8 @@ In upcoming lessons, we'll integrate these Kubernetes resources into a CI/CD pip
 
 * [Kubernetes Concepts](https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/)
 * [Kubernetes Pods](https://kubernetes.io/docs/concepts/workloads/pods/)
-* [ReplicaSet Documentation](https://kubernetes.io/docs/concepts/workloads/controllers/replicaset/)
-* [Deployment Documentation](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/)
+* [ReplicaSet Documentation](https://kubernetes.[SECRET_REDACTED]/)
+* [Deployment Documentation](https://kubernetes.[SECRET_REDACTED]/)
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/devsecops-kubernetes-devops-security/module/6942848d-9481-472e-a8ec-47357cf8ceaa/lesson/a02c6427-e202-4307-989b-5d70cd252683" />

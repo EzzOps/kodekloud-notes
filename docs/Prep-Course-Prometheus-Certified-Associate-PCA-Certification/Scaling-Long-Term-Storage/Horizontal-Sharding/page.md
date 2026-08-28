@@ -363,7 +363,7 @@ Verification
 
 Links and references
 
-* [Prometheus relabeling documentation](https://prometheus.io/docs/prometheus/latest/configuration/configuration/#relabel_config)
+* [Prometheus relabeling documentation](https://prometheus.[AWS_SECRET_ACCESS_KEY]configuration/#relabel_config)
 * [Prometheus Status → Targets](https://prometheus.io/docs/operating/accessing/)
 * [Prometheus best practices for scaling](https://prometheus.io/docs/introduction/overview/)
 

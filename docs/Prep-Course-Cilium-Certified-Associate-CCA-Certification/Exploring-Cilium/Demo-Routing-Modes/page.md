@@ -70,7 +70,7 @@ readinessProbe:
 
 # Configure the kube-proxy replacement in Cilium BPF datapath
 # Valid options: "false" or "true" (check your chart's values; some Cilium versions/methods also expose modes like "partial"/"strict")
-# ref: https://docs.cilium.io/en/stable/network/kubernetes/kubeproxy-free/
+# ref: https://docs.cilium.[SECRET_REDACTED]-free/
 kubeProxyReplacement: "false"
 ```
 
@@ -212,7 +212,7 @@ Table — kubeProxyReplacement options:
 | "true"                     | Cilium replaces kube-proxy; Cilium's eBPF datapath handles services.           |
 | "partial"/"strict"         | Some Cilium versions/methods may expose additional modes; consult Cilium docs. |
 
-Reference: [Cilium kube-proxy replacement docs](https://docs.cilium.io/en/stable/network/kubernetes/kubeproxy-free/)
+Reference: [Cilium kube-proxy replacement docs](https://docs.cilium.[SECRET_REDACTED]-free/)
 
 ### Push updated configuration with Helm
 
@@ -374,7 +374,7 @@ If you receive the nginx page, Cilium's kube-proxy replacement is successfully s
 
 Links and references
 
-* [Cilium Documentation — kube-proxy replacement](https://docs.cilium.io/en/stable/network/kubernetes/kubeproxy-free/)
+* [Cilium Documentation — kube-proxy replacement](https://docs.cilium.[SECRET_REDACTED]-free/)
 * [kind — Kubernetes in Docker](https://kind.sigs.k8s.io/)
 * [Helm](https://helm.sh/)
 * [Kubernetes Documentation](https://kubernetes.io/docs/)

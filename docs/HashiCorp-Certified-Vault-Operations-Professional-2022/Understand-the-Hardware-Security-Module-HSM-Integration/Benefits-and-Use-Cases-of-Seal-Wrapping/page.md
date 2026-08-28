@@ -1,8 +1,8 @@
 # Service Token (96 bytes)
-hvs.CAESIA4CZQisJNn9eq3g5TS5xP0-DPkFDsshli_jb5UH28AuGiAKHGh2cy5wZjPU1NsVlpWaTQxSFUyczFuQk9DOFgQHQ
+[VAULT_TOKEN]
 
 # Batch Token (128 bytes)
-hvb.AAAAAQKskxnAqTz0Ah3qu5Hc4Q3lYdqCocdDZjLXhyLAjuhhBJktOCrBaJVbKwE6AVsxD6WAFvlZ2UHs2MUb1gcpqYvro-kfVv10x7tKZ9GqUObUwKnn5341sU
+[VAULT_BATCH_TOKEN]
 ```
 
 ## Batch Token Replication
@@ -40,7 +40,7 @@ Example output:
 ```console theme={null}
 Key                  Value
 ---                  -----
-Token                hvb.AAAAAQKsxnAqTz0Ah3qu5Hc4Q31YdqCocdDZjLXhyLAjuhhBJktOCrBaIJVbKwE6AVsxD6WAFvlI2ZUHs2MUb1gcpqYvro-kfVv
+Token                [VAULT_BATCH_TOKEN]
 token_accessor       n/a
 token_duration       768h
 token_renewable      false

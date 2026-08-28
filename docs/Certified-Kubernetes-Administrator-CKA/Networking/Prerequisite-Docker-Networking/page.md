@@ -77,7 +77,7 @@ A snippet of the output under "NetworkSettings" might appear as follows:
 ```json theme={null}
 "NetworkSettings": {
     "Bridge": "",
-    "SandboxID": "b3165c10a92b50edc4c8aa5f37273e180907ded31",
+    "SandboxID": "[SECRET_REDACTED]",
     "SandboxKey": "/var/run/docker/netns/b3165c10a92b"
 }
 ```

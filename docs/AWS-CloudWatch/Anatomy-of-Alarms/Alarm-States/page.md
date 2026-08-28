@@ -45,7 +45,7 @@ If the CPU then drops below 70% for three consecutive periods, the alarm returns
 
 ## References
 
-* [AWS CloudWatch Alarms Documentation](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/AlarmThatSendsEmail.html)
+* [AWS CloudWatch Alarms Documentation](https://docs.aws.amazon.[SECRET_REDACTED].html)
 * [AWS CloudWatch Metrics and Dimensions](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CW_Support_For_AWS.html)
 * [Working with Datapoints and Statistics](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/cloudwatch_concepts.html#Statistic)
 

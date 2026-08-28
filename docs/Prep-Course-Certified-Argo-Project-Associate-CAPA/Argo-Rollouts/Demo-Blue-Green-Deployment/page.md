@@ -19,7 +19,7 @@ Example output:
 ```bash theme={null}
 kubectl-argo-rollouts: v1.8.3+49fa151
     BuildDate: 2025-06-04T22:15:54Z
-    GitCommit: 49fa1516cf71672b69e265267da4e1d16e1fe114
+    GitCommit: [AWS_SECRET_ACCESS_KEY]
     GitTreeState: clean
     GoVersion: go1.23.9
     Compiler: gc

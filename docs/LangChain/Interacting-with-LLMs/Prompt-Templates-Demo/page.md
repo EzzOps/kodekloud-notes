@@ -47,7 +47,7 @@ Further reading and references
 These resources show alternative output parsers and transformation strategies you can use to safely and reliably consume model outputs across different languages and runtime environments.
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langchain/module/ae260750-791b-496c-991f-0d0333f61e40/lesson/ee38bab1-8189-4ab1-8b0e-8933a1ca8ab0" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[SECRET_REDACTED]-791b-496c-991f-0d0333f61e40/lesson/ee38bab1-8189-4ab1-8b0e-8933a1ca8ab0" />
 </CardGroup>
 
 

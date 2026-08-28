@@ -68,7 +68,7 @@ Quick comparison
 
 References and further reading
 
-* Kubernetes Controllers: [https://kubernetes.io/docs/concepts/workloads/controllers/deployment/](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/)
+* Kubernetes Controllers: [https://kubernetes.[SECRET_REDACTED]/](https://kubernetes.[SECRET_REDACTED]/)
 * Custom Resources & CRDs: [https://kubernetes.io/docs/concepts/extend-kubernetes/api-extension/custom-resources/](https://kubernetes.io/docs/concepts/extend-kubernetes/api-extension/custom-resources/)
 * cert-manager: [https://cert-manager.io/](https://cert-manager.io/)
 

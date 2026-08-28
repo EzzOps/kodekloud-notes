@@ -30,7 +30,7 @@ References and tooling
 </Callout>
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langchain/module/e47b44c9-65c3-46f8-8bed-b075a18ab12b/lesson/fa08ba22-b76f-4355-8a50-4a40dd49aba8" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[SECRET_REDACTED]-65c3-46f8-8bed-b075a18ab12b/lesson/fa08ba22-b76f-4355-8a50-4a40dd49aba8" />
 </CardGroup>
 
 

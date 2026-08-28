@@ -27,7 +27,7 @@ Add `.env` to `.gitignore` before committing:
 Example `.env` content (do not paste real keys into shared or public files):
 
 ```text theme={null}
-OPENAI_API_KEY=sk-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+OPENAI_API_KEY=[OPENAI_API_KEY]
 ```
 
 <Callout icon="warning">

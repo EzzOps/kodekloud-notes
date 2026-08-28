@@ -113,9 +113,9 @@ Notes
 * Always test with your target documents and queries to find the best chunk size, overlap, and retriever configuration for accuracy and latency.
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langchain/module/a4d85af7-bfc2-40d7-89fc-f537792272ff/lesson/0843457b-6b9d-427b-ab23-b10fd85e5d3a" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[SECRET_REDACTED]-bfc2-40d7-89fc-f537792272ff/lesson/0843457b-6b9d-427b-ab23-b10fd85e5d3a" />
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/langchain/module/a4d85af7-bfc2-40d7-89fc-f537792272ff/lesson/55070b59-13f6-499d-95e1-9dc34f3f681d" />
+  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.[SECRET_REDACTED]-bfc2-40d7-89fc-f537792272ff/lesson/55070b59-13f6-499d-95e1-9dc34f3f681d" />
 </CardGroup>
 
 

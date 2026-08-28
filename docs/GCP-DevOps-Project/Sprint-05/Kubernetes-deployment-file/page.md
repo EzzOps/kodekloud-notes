@@ -87,7 +87,7 @@ Below is a quick reference for the key fields in `GKE.yaml`:
 | spec.template.spec.containers | Container definitions including image, ports, and env variables | name, image URL, `containerPort: 5000`, env `PORT=5000` |
 
 <Callout icon="lightbulb">
-  * [Kubernetes Deployments](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/)
+  * [Kubernetes Deployments](https://kubernetes.[SECRET_REDACTED]/)
   * [Google Kubernetes Engine (GKE)](https://cloud.google.com/kubernetes-engine)
 </Callout>
 

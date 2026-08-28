@@ -74,8 +74,8 @@ When to use nested stacks
 
 Links and further reading
 
-* [AWS CloudFormation nested stacks documentation](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-nested-stacks.html)
-* [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html)
+* [AWS CloudFormation nested stacks documentation](https://docs.aws.amazon.com/[AWS_SECRET_ACCESS_KEY]-cfn-nested-stacks.html)
+* [AWS CloudFormation User Guide](https://docs.aws.amazon.[SECRET_REDACTED].html)
 
 Summary
 Nested stacks are a powerful modularization pattern in CloudFormation that make large templates easier to manage, promote reuse, and centralize lifecycle operations through a parent stack. Follow the parent-driven update pattern, keep nested templates scoped to a single concern, and be mindful that nested stacks cannot be reparented once created.

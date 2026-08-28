@@ -79,7 +79,7 @@ This article demonstrated how to build dashboards in Kibana using KQL with a str
 ## Further Reading
 
 * [Kibana Documentation](https://www.elastic.co/guide/en/kibana/current/index.html)
-* [Elasticsearch Guide](https://www.elastic.co/guide/en/elasticsearch/reference/current/index.html)
+* [Elasticsearch Guide](https://www.elastic.co/[AWS_SECRET_ACCESS_KEY]/index.html)
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/efk-stack-enterprise-grade-logging-and-monitoring/module/b1b021b3-26c0-4701-aa90-d98fd3d8dc49/lesson/06218a17-a219-4ab0-919e-15604e61fa3d" />

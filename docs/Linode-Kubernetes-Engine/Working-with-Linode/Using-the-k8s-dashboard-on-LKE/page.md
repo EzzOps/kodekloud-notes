@@ -58,7 +58,7 @@ current-context: lke61875-ctx
 ```
 
 ```plaintext theme={null}
-/HQTFVZEVRUU8KTUF50QNtDFZbV5YmlWFpYTxdEUVlKS29aWh2Y05BUUVMQ
+/[SECRET_REDACTED]
 ```
 
 <Callout icon="lightbulb">

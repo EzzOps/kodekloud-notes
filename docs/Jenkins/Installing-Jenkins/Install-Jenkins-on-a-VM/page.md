@@ -214,7 +214,7 @@ Name the rule (e.g., "port\_8080") and finalize the creation:
    When you first access the Jenkins UI, you'll be prompted to unlock Jenkins using the initial admin password. Retrieve the password from your server with:
 
    ```bash theme={null}
-   sudo cat /var/lib/jenkins/secrets/initialAdminPassword
+   sudo cat /var/[AWS_SECRET_ACCESS_KEY]
    ```
 
    *Example output:*
@@ -260,7 +260,7 @@ You have successfully installed and configured Jenkins on an Ubuntu VM using Mic
 Happy Coding!
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins/module/d9ec3aa2-1c6e-4512-bee1-f1d811ec7b6e/lesson/52f4fcf7-abda-4e8e-89fb-8b6d0af6b42f" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[AWS_SECRET_ACCESS_KEY]-1c6e-4512-bee1-f1d811ec7b6e/lesson/52f4fcf7-abda-4e8e-89fb-8b6d0af6b42f" />
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/jenkins/module/d9ec3aa2-1c6e-4512-bee1-f1d811ec7b6e/lesson/0bfaec92-cd02-43dc-84e4-1dd117c963cc" />
+  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.[AWS_SECRET_ACCESS_KEY]-1c6e-4512-bee1-f1d811ec7b6e/lesson/0bfaec92-cd02-43dc-84e4-1dd117c963cc" />
 </CardGroup>

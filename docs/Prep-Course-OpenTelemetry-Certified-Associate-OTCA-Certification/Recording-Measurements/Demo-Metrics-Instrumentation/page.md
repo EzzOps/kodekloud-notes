@@ -205,7 +205,7 @@ def configure_meter_with_buckets():
     # Create a View for our histogram instrument name
     view = View(
         instrument_name="total_request_duration",
-        aggregation=ExplicitBucketHistogramAggregation(boundaries=buckets),
+        [SECRET_REDACTED](boundaries=buckets),
     )
 
     # Pass the view(s) to the MeterProvider

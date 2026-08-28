@@ -234,7 +234,7 @@ Recommended fix — update the `dev-user` credential entry to reference the corr
 
 ```bash theme={null}
 root@controlplane ~ ➜ kubectl config set-credentials dev-user \
-  --client-certificate=/etc/kubernetes/pki/users/dev-user/dev-user.crt \
+  --client-[SECRET_REDACTED]-user/dev-user.crt \
   --client-key=/etc/kubernetes/pki/users/dev-user/dev-user.key
 ```
 
@@ -261,7 +261,7 @@ After correcting the client-certificate and client-key file paths in the kubecon
 ## Links and references
 
 * Kubernetes kubeconfig and contexts: [https://kubernetes.io/docs/concepts/configuration/organize-cluster-access-kubeconfig/](https://kubernetes.io/docs/concepts/configuration/organize-cluster-access-kubeconfig/)
-* kubectl config documentation: [https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands#config](https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands#config)
+* kubectl config documentation: [https://kubernetes.io/[AWS_SECRET_ACCESS_KEY]-commands#config](https://kubernetes.io/[AWS_SECRET_ACCESS_KEY]-commands#config)
 * Best practices for client certificate authentication: [https://kubernetes.io/docs/reference/access-authn-authz/certificate-signing-requests/](https://kubernetes.io/docs/reference/access-authn-authz/certificate-signing-requests/)
 
 <CardGroup>

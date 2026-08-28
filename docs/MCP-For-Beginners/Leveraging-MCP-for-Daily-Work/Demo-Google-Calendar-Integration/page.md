@@ -273,7 +273,7 @@ When the server starts, it will open a browser window asking you to choose an ac
 After allowing access you should see confirmation in the console that authentication succeeded and tokens were saved locally. Typical console output:
 
 ```bash theme={null}
-http://localhost:3500/oauth2callback?code=4/0AVMBsJiQmpdFfFIB1ArXnIZn8182nNKCBL72RB3A43btCF5c6ZP6Xg4mJtqWZeEE8xYkUw&scope=...
+http://localhost:3500/oauth2callback?[SECRET_REDACTED]&scope=...
 Authentication successful. Tokens saved to /Users/jeremy/.config/google-calendar-mcp/tokens.json
 ```
 

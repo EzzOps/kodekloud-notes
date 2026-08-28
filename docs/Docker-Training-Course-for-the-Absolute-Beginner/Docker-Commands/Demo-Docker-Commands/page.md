@@ -183,9 +183,9 @@ To remove an image, use the `docker rmi` command. For example, remove the busybo
 
 ```bash theme={null}
 root@Docker:/root # docker rmi busybox
-Untagged: busybox:d20a45477cbc98f3f111d0cdff28ef406ce2e2020ef971b14e4efc0
-Deleted: sha256:b82b57400c1cab8235962c07f81084ecd32fd25807207b99f52a3cb8692
-Deleted: sha256:26742d9d02d698f5696ca4dc4cbe87145d47e3bf6feea4025ab28f240f2
+Untagged: busybox:[SECRET_REDACTED]
+Deleted: sha256:[SECRET_REDACTED]
+Deleted: sha256:[SECRET_REDACTED]
 ```
 
 Similarly, remove the Ubuntu image with:
@@ -193,8 +193,8 @@ Similarly, remove the Ubuntu image with:
 ```bash theme={null}
 root@Docker:/root # docker rmi ubuntu
 Untagged: ubuntu:latest
-Untagged: ubuntu@sha256:344714871495f9e84096d37580d12b0e67b1a77fd6155ce001edad
-Deleted: sha256:ccc7a1d65b1785dab6a1c0c70119675476943d9cc95fae798
+Untagged: ubuntu@sha256:[SECRET_REDACTED]
+Deleted: sha256:[SECRET_REDACTED]
 ...
 ```
 
@@ -207,8 +207,8 @@ To remove a CentOS image used by a container, first delete all associated contai
 ```bash theme={null}
 root@Docker:/root # docker rmi centos
 Untagged: centos:latest
-Untagged: centos@sha256:b362758f4793674edb79ec5c7192074b2eacf200c006e127069856484526ccf2
-Deleted: sha256:b362758f4793674edb79ec5c7192074b2eacf200c006e127069856484526ccf2
+Untagged: centos@sha256:[SECRET_REDACTED]
+Deleted: sha256:[SECRET_REDACTED]
 ```
 
 After cleanup, you might only be left with the "centos" and "hello-world" images, which you can remove in a similar manner.

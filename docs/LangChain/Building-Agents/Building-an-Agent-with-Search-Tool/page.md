@@ -209,7 +209,7 @@ References and further reading
 This concludes the lesson on building a real-time flight agent using a custom LangChain tool and the Python REPL tool. Experiment by adding more tools to extend capabilities and support richer, multi-step queries.
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langchain/module/530ad7de-8948-4806-8824-19eb10923d1d/lesson/3835c8f5-0c1a-4581-8e62-8b1111b2b42c" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[SECRET_REDACTED]-8948-4806-8824-19eb10923d1d/lesson/3835c8f5-0c1a-4581-8e62-8b1111b2b42c" />
 </CardGroup>
 
 

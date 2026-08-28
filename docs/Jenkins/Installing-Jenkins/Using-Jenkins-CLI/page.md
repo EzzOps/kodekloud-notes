@@ -135,7 +135,7 @@ By practicing these commands, you will gain proficiency in Jenkins automation ta
 * [Jenkins CLI Overview](https://www.jenkins.io/doc/book/managing/cli/)
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins/module/d9ec3aa2-1c6e-4512-bee1-f1d811ec7b6e/lesson/1f392b27-d2d6-465c-8fea-d3f149fcc92b" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[AWS_SECRET_ACCESS_KEY]-1c6e-4512-bee1-f1d811ec7b6e/lesson/1f392b27-d2d6-465c-8fea-d3f149fcc92b" />
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/jenkins/module/d9ec3aa2-1c6e-4512-bee1-f1d811ec7b6e/lesson/a03c3b99-4095-4ab0-8dc2-ba306e48a0c8" />
+  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.[AWS_SECRET_ACCESS_KEY]-1c6e-4512-bee1-f1d811ec7b6e/lesson/a03c3b99-4095-4ab0-8dc2-ba306e48a0c8" />
 </CardGroup>

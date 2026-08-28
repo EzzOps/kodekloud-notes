@@ -204,7 +204,7 @@ That completes this AWS Lambda Insights walkthrough. Happy monitoring!
 ## References
 
 * [AWS Lambda Documentation](https://docs.aws.amazon.com/lambda/latest/dg/welcome.html)
-* [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html)
+* [AWS CloudFormation User Guide](https://docs.aws.amazon.[SECRET_REDACTED].html)
 * [Amazon CloudWatch Documentation](https://docs.aws.amazon.com/cloudwatch/index.html)
 
 <CardGroup>

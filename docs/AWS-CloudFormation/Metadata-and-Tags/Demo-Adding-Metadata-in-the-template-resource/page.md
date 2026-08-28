@@ -29,7 +29,7 @@ Common metadata entries:
 * Owner / Contact: person or team responsible for the resource.
 
 <Callout icon="lightbulb">
-  Metadata entries are arbitrary key/value pairs defined by you. They are stored in the template and do not, by themselves, change how CloudFormation creates or manages resources; tools or helper scripts (for example, [cfn-init](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-init.html)) can read metadata to affect instance configuration.
+  Metadata entries are arbitrary key/value pairs defined by you. They are stored in the template and do not, by themselves, change how CloudFormation creates or manages resources; tools or helper scripts (for example, [cfn-init](https://docs.aws.amazon.[SECRET_REDACTED]-init.html)) can read metadata to affect instance configuration.
 </Callout>
 
 Updating the stack with the modified template
@@ -67,9 +67,9 @@ Best practices
 
 Links and references
 
-* CloudFormation Metadata (concepts): [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-template-metadata.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-template-metadata.html)
-* CloudFormation Tags: [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-resource-tags.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-resource-tags.html)
-* cfn-init (example tool that reads Metadata): [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-init.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-init.html)
+* CloudFormation Metadata (concepts): [https://docs.aws.amazon.[SECRET_REDACTED]-template-metadata.html](https://docs.aws.amazon.[SECRET_REDACTED]-template-metadata.html)
+* CloudFormation Tags: [https://docs.aws.amazon.[SECRET_REDACTED]-properties-resource-tags.html](https://docs.aws.amazon.[SECRET_REDACTED]-properties-resource-tags.html)
+* cfn-init (example tool that reads Metadata): [https://docs.aws.amazon.[SECRET_REDACTED]-init.html](https://docs.aws.amazon.[SECRET_REDACTED]-init.html)
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/aws-cloud-formation/module/2e1502d5-8cc7-4b67-a56a-6d65018f5458/lesson/969262db-393a-4dc6-a886-94098d689729" />

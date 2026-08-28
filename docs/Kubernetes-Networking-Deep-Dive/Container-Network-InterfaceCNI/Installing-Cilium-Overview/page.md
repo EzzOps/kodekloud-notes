@@ -156,7 +156,7 @@ kubectl apply -f deny-ingress.yaml
 
 * [Kubernetes NetworkPolicy](https://kubernetes.io/docs/concepts/services-networking/network-policies/)
 * [Understanding Kubernetes Networking](https://kubernetes.io/blog/2018/07/24/announcing-granular-networking-policy-support/)
-* [NetworkPolicy Examples](https://github.com/kubernetes/examples/tree/master/staging/networkpolicy)
+* [NetworkPolicy Examples](https://github.com[AWS_SECRET_ACCESS_KEY]/networkpolicy)
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-networking/module/5eea49e6-caea-4e84-88a0-268ea6f263af/lesson/93daad7d-fdc9-49cb-b162-86b2efe14f72" />

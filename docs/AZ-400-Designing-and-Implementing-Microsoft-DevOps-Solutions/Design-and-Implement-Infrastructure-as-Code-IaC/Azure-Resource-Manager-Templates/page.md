@@ -42,7 +42,7 @@ Apply the new DSC configuration to your node:
 ## Links and References
 
 * [Azure Automation DSC Overview](https://docs.microsoft.com/azure/automation/automation-dsc-overview)
-* [PowerShell ScheduledTask DSC Resource](https://docs.microsoft.com/powershell/module/psdesiredstateconfiguration/scheduledtask)
+* [PowerShell ScheduledTask DSC Resource](https://docs.microsoft.[SECRET_REDACTED])
 * [Az.Automation PowerShell Module](https://www.powershellgallery.com/packages/Az.Automation)
 * [Azure Virtual Machine Agent](https://docs.microsoft.com/azure/virtual-machines/extensions/agent-windows)
 

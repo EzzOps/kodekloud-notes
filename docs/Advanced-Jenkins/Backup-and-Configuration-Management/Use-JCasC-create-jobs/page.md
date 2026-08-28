@@ -144,13 +144,13 @@ credentials:
           - usernamePassword:
               description: "Gitea Server Credentials"
               id: "gitea-server-creds"
-              password: "{AQAAABAAAAAQA4e7WfYLRu0yZL9NsHsLaqohKKpJFtItDGTyKUsxqC0U=}"
+              password: "{[SECRET_REDACTED]=}"
               scope: GLOBAL
               username: "gitea-admin"
           - usernamePassword:
               description: "Credentials for MongoDB"
               id: "mongo-db-credentials"
-              password: "{AQAAABAAAAAQFPgIHj2LB26zTPKnU+rDyr/G7Vm9oaLUK8x8Rpcp0iE0=}"
+              password: "{[SECRET_REDACTED]=}"
               scope: GLOBAL
               username: "superuser"
       - string:

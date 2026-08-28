@@ -10,7 +10,7 @@ Once you have the crumb token and session cookie, you can trigger a Jenkins job.
 ```bash theme={null}
 curl -s -u admin:password \
 --cookie /tmp/cookies \
--H "Jenkins-Crumb:28791665a0a7f47ecf03510ae3b0b2695e01d3e3f2d0ba96d1d230898051059a" \
+-H "Jenkins-Crumb:[SECRET_REDACTED]" \
 -X POST http://localhost:8080/job/parameterized-pipeline-job/buildWithParameters \
 -d BRANCH_NAME=test \
 -d APP_PORT=6767
@@ -322,7 +322,7 @@ When calling this endpoint, provide an XML payload and set the proper content ty
 
 ```bash theme={null}
 curl -u admin:1101616b94f4f3f2698451306fd8f8a7f26d6 \
--X POST http://localhost:8080/pluginManager/installNecessaryPlugins \
+-X POST http://localhost:[SECRET_REDACTED] \
 -H 'Content-Type: text/xml' \
 -d '<jenkins><install plugin="emotional-jenkins-plugin@1.2" /></jenkins>'
 ```

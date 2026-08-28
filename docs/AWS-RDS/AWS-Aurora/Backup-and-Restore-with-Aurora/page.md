@@ -118,8 +118,8 @@ When copying encrypted snapshots, ensure you have a KMS key in the destination r
 
 ## Links and references
 
-* [Amazon Aurora Backups and Restores](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-backup.html)
-* [Point-in-Time Recovery for Amazon Aurora](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/AuroraMySQL.Managing.Backups.html#aurora-pitr)
+* [Amazon Aurora Backups and Restores](https://docs.aws.amazon.com[AWS_SECRET_ACCESS_KEY]-backup.html)
+* [Point-in-Time Recovery for Amazon Aurora](https://docs.aws.amazon.[SECRET_REDACTED].Managing.Backups.html#aurora-pitr)
 * [AWS Key Management Service (KMS)](https://docs.aws.amazon.com/kms/latest/developerguide/overview.html)
 * [Copying DB Snapshots Across AWS Regions](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/USER_CopySnapshot.html)
 

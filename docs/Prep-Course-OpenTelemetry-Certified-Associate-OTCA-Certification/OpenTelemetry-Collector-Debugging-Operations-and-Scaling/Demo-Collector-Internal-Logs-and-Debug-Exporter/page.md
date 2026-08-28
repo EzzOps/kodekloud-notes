@@ -289,7 +289,7 @@ service:
 ## Links and References
 
 * OpenTelemetry Collector documentation: [https://opentelemetry.io/docs/collector/](https://opentelemetry.io/docs/collector/)
-* Prometheus scrape configs: [https://prometheus.io/docs/prometheus/latest/configuration/configuration/#scrape\_config](https://prometheus.io/docs/prometheus/latest/configuration/configuration/#scrape_config)
+* Prometheus scrape configs: [https://prometheus.[AWS_SECRET_ACCESS_KEY]configuration/#scrape\_config](https://prometheus.[AWS_SECRET_ACCESS_KEY]configuration/#scrape_config)
 * Dynatrace OTLP ingestion (reference your Dynatrace docs for the exact endpoint and headers)
 
 If you need an example to attach the `transform/fix_names` processor into a pipeline or want a sample `service` block with more pipelines (traces, logs, metrics) let me know and I’ll add a fully annotated example.

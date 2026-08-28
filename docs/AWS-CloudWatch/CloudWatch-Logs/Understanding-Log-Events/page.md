@@ -48,7 +48,7 @@ CloudWatch Logs supports both structured and unstructured log data:
 | Unstructured | Plain text      | Flexible, minimal setup                | Error stack traces, debug output        |
 
 <Callout icon="lightbulb">
-  Structured logs simplify querying with [CloudWatch Logs Insights](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/AnalyzingLogData.html) and help maintain consistent event schemas.
+  Structured logs simplify querying with [CloudWatch Logs Insights](https://docs.aws.amazon.[SECRET_REDACTED].html) and help maintain consistent event schemas.
 </Callout>
 
 ***
@@ -82,7 +82,7 @@ Key benefits of pre-ingestion filtering:
 * Improved performance when querying
 
 <Callout icon="lightbulb">
-  Use the AWS SDK or [CloudWatch Logs Agent](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/QuickStartEC2Instance.html) to configure filters before data is sent.
+  Use the AWS SDK or [CloudWatch Logs Agent](https://docs.aws.amazon.[SECRET_REDACTED].html) to configure filters before data is sent.
 </Callout>
 
 ***
@@ -95,9 +95,9 @@ By organizing log events into streams and groups, choosing structured or unstruc
 
 ## Links and References
 
-* [AWS CloudWatch Logs Documentation](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/WhatIsCloudWatchLogs.html)
-* [Analyzing Log Data with CloudWatch Logs Insights](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/AnalyzingLogData.html)
-* [CloudWatch Logs Agent Installation](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/QuickStartEC2Instance.html)
+* [AWS CloudWatch Logs Documentation](https://docs.aws.amazon.[SECRET_REDACTED].html)
+* [Analyzing Log Data with CloudWatch Logs Insights](https://docs.aws.amazon.[SECRET_REDACTED].html)
+* [CloudWatch Logs Agent Installation](https://docs.aws.amazon.[SECRET_REDACTED].html)
 * [Logging Best Practices on AWS](https://aws.amazon.com/architecture/logging-monitoring/)
 
 <CardGroup>

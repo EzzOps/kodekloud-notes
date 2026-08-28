@@ -206,7 +206,7 @@ Key takeaways
 
 Additional resources
 
-* Kubernetes controllers & reconciliation concepts: [https://kubernetes.io/docs/concepts/architecture/controller/](https://kubernetes.io/docs/concepts/architecture/controller/)
+* Kubernetes controllers & reconciliation concepts: [https://kubernetes.[AWS_SECRET_ACCESS_KEY]/](https://kubernetes.[AWS_SECRET_ACCESS_KEY]/)
 * controller-runtime (Reconcile signature and helpers): [https://github.com/kubernetes-sigs/controller-runtime](https://github.com/kubernetes-sigs/controller-runtime)
 * Kubebuilder book: [https://book.kubebuilder.io/](https://book.kubebuilder.io/)
 * Operator SDK docs: [https://sdk.operatorframework.io/](https://sdk.operatorframework.io/)

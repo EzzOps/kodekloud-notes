@@ -176,7 +176,7 @@ Example outputs for this demo
   * Saved checks: 4
 
 <Callout icon="lightbulb">
-  This toy index is intentionally simple to demonstrate pruning. Production vector databases use much more advanced indexing strategies (examples: [IVF](https://github.com/facebookresearch/faiss/wiki/Indexing), [HNSW](https://en.wikipedia.org/wiki/Hierarchical_navigable_small_world_graph), [PQ](https://en.wikipedia.org/wiki/Product_quantization)) and often manage indexing automatically behind the scenes.
+  This toy index is intentionally simple to demonstrate pruning. Production vector databases use much more advanced indexing strategies (examples: [IVF](https://github.[AWS_SECRET_ACCESS_KEY]), [HNSW](https://en.wikipedia.org/wiki/Hierarchical_navigable_small_world_graph), [PQ](https://en.wikipedia.org/wiki/Product_quantization)) and often manage indexing automatically behind the scenes.
 </Callout>
 
 Summary and takeaway

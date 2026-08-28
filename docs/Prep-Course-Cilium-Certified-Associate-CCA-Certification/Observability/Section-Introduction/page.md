@@ -338,7 +338,7 @@ hubble observe --from-namespaces default --to-ports 8080 --since 2m
 
 * [Cilium Documentation — Hubble](https://cilium.io/learning/hubble/)
 * [Cilium GitHub / releases](https://github.com/cilium/cilium)
-* [Prometheus Documentation — Configuration](https://prometheus.io/docs/prometheus/latest/configuration/configuration/)
+* [Prometheus Documentation — Configuration](https://prometheus.[AWS_SECRET_ACCESS_KEY]configuration/)
 * [Kubernetes Documentation — Service discovery in Prometheus](https://kubernetes.io/docs/tasks/debug-application-cluster/extend-prometheus/)
 
 <Callout icon="lightbulb">

@@ -49,7 +49,7 @@ To address these issues, add a provider block to your configuration. The provide
 ```hcl theme={null}
 provider "aws" {
   region     = "us-west-2"
-  access_key = "AKIAI44QH8DHBEXAMPLE"
+  access_key = "[AWS_ACCESS_KEY_ID]"
   secret_key = "je7MtGbClwBF/2tk/h3yCo8n..."
 }
 

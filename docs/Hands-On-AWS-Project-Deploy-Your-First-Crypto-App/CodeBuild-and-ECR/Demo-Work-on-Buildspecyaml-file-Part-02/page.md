@@ -144,7 +144,7 @@ The build then shows Docker building the image and pushing layers to ECR. Exampl
 ```text theme={null}
 #9 exporting to image
 #9 exporting layers 0.4 done
-#9 writing image sha256:0de72c70987a46f7676443bfe6e5e5d02283ca6eaf0a4d4b28d0a4208 done
+#9 writing image sha256:[SECRET_REDACTED] done
 #9 naming to 666234783044.dkr.ecr.eu-central-1.amazonaws.com/cryptoproject:latest done
 #9 DONE 0.4s
 ...
@@ -165,7 +165,7 @@ ca274c4711b: Pushed
 e6b364b54e: Pushed
 c8b3674b54e: Pushed
 1af9f76ba60b: Pushed
-latest: digest: sha256:8e110f19430ea193464746f8708d5d260cf5f8d8a07f1d8a7a3fe13eed896 size: 2001
+latest: digest: sha256:[SECRET_REDACTED] size: 2001
 ```
 
 <Frame>

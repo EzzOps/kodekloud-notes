@@ -167,7 +167,7 @@ Example output (trimmed):
 
 ```text theme={null}
 Pulled: ghcr.io/kagent-dev/kagent/helm/kagent-crds:0.7.7
-Digest: sha256:9e3a92d7636bf1485fb1de984d579543fd7c1bb8dc57312401e462edc209df91
+Digest: sha256:[SECRET_REDACTED]
 I1215 09:13:10.543041 47158 warnings.go:110] "Warning: unrecognized format \"int64\""
 NAME: kagent-crds
 LAST DEPLOYED: Mon Dec 15 09:13:10 2025

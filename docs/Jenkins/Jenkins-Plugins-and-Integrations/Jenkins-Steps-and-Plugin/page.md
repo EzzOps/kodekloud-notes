@@ -125,7 +125,7 @@ Keywords like `git`, `sh`, and `junit` within your pipeline scripts represent fu
 Happy automating!
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins/module/34e95998-38e2-4735-a378-b466e6a5851c/lesson/bb3eb718-7fc9-4b77-a436-26b2ead74f98" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[AWS_SECRET_ACCESS_KEY]-38e2-4735-a378-b466e6a5851c/lesson/bb3eb718-7fc9-4b77-a436-26b2ead74f98" />
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/jenkins/module/34e95998-38e2-4735-a378-b466e6a5851c/lesson/5d213d43-af76-453f-b03a-65e796751b22" />
+  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.[AWS_SECRET_ACCESS_KEY]-38e2-4735-a378-b466e6a5851c/lesson/5d213d43-af76-453f-b03a-65e796751b22" />
 </CardGroup>

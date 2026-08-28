@@ -208,7 +208,7 @@ Commit SHAs guarantee immutability by referencing a specific commit. This is the
 
 ```yaml theme={null}
 steps:
-  - uses: actions/checkout@a8240080885750b8e136effc585c3cd6082bd575f  # Specific commit SHA
+  - uses: actions/checkout@[SECRET_REDACTED]  # Specific commit SHA
 ```
 
 <Callout icon="lightbulb">

@@ -110,7 +110,7 @@ Karpenter brings dynamic, cost-optimized scaling to AWS EKS with minimal upfront
 
 * [AWS Karpenter GitHub Repository](https://github.com/aws/karpenter)
 * [AWS EKS Documentation](https://docs.aws.amazon.com/eks/latest/userguide/what-is-eks.html)
-* [Kubernetes Autoscaling SIG](https://github.com/kubernetes/autoscaler/tree/master/karpenter)
+* [Kubernetes Autoscaling SIG](https://github.[SECRET_REDACTED])
 * [EKS Best Practices Guide](https://docs.aws.amazon.com/eks/latest/userguide/best-practices.html)
 
 <CardGroup>

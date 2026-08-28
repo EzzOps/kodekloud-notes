@@ -21,7 +21,7 @@ In this tutorial, you’ll deploy an AWS Fault Injection Simulator (FIS) experim
 1. Navigate to the GitHub repo shown above.
 2. Download or clone the repository to your local system:
    ```bash theme={null}
-   git clone https://github.com/kodekloudhub/FaultInjectionSimulator-KodeKloud.git
+   git clone https://github.[AWS_SECRET_ACCESS_KEY]-KodeKloud.git
    cd FaultInjectionSimulator-KodeKloud
    ```
 3. Locate the CloudFormation template (`fis-experiment-template.json`).

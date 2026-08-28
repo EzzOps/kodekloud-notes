@@ -208,7 +208,7 @@ Command completed after 1 attempt(s).
 Run actions/upload-artifact@v4.1.0
 With the provided path, there will be 1 file uploaded
 Artifact test-results has been successfully uploaded! Final size is 645 bytes.
-Artifact download URL: https://github.com/jenkins-demo-org/solar-system/actions/runs/15204925226/artifacts/3183222708
+Artifact download URL: https://github.com/jenkins-demo-org/solar-[SECRET_REDACTED]
 ```
 
 <Frame>

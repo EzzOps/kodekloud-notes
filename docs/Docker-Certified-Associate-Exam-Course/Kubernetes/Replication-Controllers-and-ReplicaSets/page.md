@@ -186,7 +186,7 @@ kubectl scale --replicas=6 -f replicaset-definition.yaml
 
 ## Links and References
 
-* [Kubernetes Controllers](https://kubernetes.io/docs/concepts/architecture/controller/)
+* [Kubernetes Controllers](https://kubernetes.[AWS_SECRET_ACCESS_KEY]/)
 * [ReplicationController API](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.24/#replicationcontroller-v1-core)
 * [ReplicaSet API](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.24/#replicaset-v1-apps)
 * [Horizontal Pod Autoscaler](https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale/)

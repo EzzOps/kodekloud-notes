@@ -85,7 +85,7 @@ In Section 4, we’ll focus on Kubernetes security best practices: pod hardening
 
 ## Links and References
 
-* [Kubernetes Rollout Commands](https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands#rollout)
+* [Kubernetes Rollout Commands](https://kubernetes.io/[AWS_SECRET_ACCESS_KEY]-commands#rollout)
 * [Jenkins Slack Plugin](https://plugins.jenkins.io/slack/)
 * [GitHub Documentation](https://docs.github.com/)
 

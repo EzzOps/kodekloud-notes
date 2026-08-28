@@ -79,7 +79,7 @@ Links and references
 
 * [Terraform Expressions](https://www.terraform.io/docs/language/expressions/index.html)
 * [Terraform for Expressions](https://www.terraform.io/docs/language/expressions/for.html)
-* [Azure Provider (azurerm) Documentation](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs)
+* [Azure Provider (azurerm) Documentation](https://registry.terraform.io[AWS_SECRET_ACCESS_KEY])
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-on-azure/module/fb5019bb-df21-4583-818e-6dae40fde2ec/lesson/fda91ce8-39e6-4206-b1bb-9491f1b1753e" />
@@ -138,7 +138,7 @@ All of these patterns let your configurations adapt programmatically, reducing r
 * [Terraform documentation: count](https://www.terraform.io/docs/language/meta-arguments/count.html)
 * [Terraform documentation: for\_each](https://www.terraform.io/docs/language/meta-arguments/for_each.html)
 * [Terraform documentation: for expressions](https://www.terraform.io/docs/language/expressions/for.html)
-* [Terraform documentation: conditional expressions](https://www.terraform.io/docs/language/expressions/conditionals.html)
+* [Terraform documentation: conditional expressions](https://www.terraform.[SECRET_REDACTED].html)
 
 These topics will help you write Terraform configurations that are both concise and resilient as your infrastructure grows.
 

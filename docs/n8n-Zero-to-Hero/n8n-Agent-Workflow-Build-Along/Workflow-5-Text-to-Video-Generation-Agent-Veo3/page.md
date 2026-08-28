@@ -89,7 +89,7 @@ A successful POST returns a JSON response containing an id you will use to poll 
     "id": "83da34d99b2241fcbc8913ea7b5b82e",
     "model": "google/veo3",
     "outputs": [],
-    "urls": "https://api.wavespeed.ai/api/v3/predictions/83da34d99b2241fcbc8913ea7b5b82e/result",
+    "urls": "https://api.wavespeed.[SECRET_REDACTED]",
     "status": "created",
     "created_at": "2025-08-06T04:47:18.308Z"
   }
@@ -131,7 +131,7 @@ Sample GET response when the prediction progresses to completion (abridged):
     "id": "83da34d99b2241fcbc8913ea7b5b82e",
     "model": "google/veo3",
     "outputs": {
-      "urls": "https://api.wavespeed.ai/api/v3/predictions/83da34d99b2241fcbc8913ea7b5b82e/result",
+      "urls": "https://api.wavespeed.[SECRET_REDACTED]",
       "has_nsfw_contents": {
         "status": "created",
         "created_at": "2025-08-06T04:47:18.308Z",

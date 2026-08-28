@@ -98,7 +98,7 @@ In this lesson, we explore how to interact with Azure Policies using the Azure p
          "effect": "deny"
        }
      },
-     "$id": "/providers/Microsoft.Authorization/policyDefinitions/e569626a-4747-49cd-b67b-bfb01975c4c4",
+     "$id": "/providers/Microsoft.[AWS_SECRET_ACCESS_KEY]-4747-49cd-b67b-bfb01975c4c4",
      "type": "Microsoft.Authorization/policyDefinitions",
      "name": "e569626a-4747-49cd-b67b-bfb01975c4c4"
    }

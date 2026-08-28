@@ -7,7 +7,7 @@ Guide to building a compact Grafana platform dashboard using Prometheus metrics 
 So much telemetry goes unused without effective visualization. Grafana turns Prometheus metrics into dashboards that make platform health visible at a glance. In this lesson we'll build a compact "Platform Dashboard" with four panel types—each chosen for a specific class of metric.
 
 <Callout icon="lightbulb">
-  Before you begin, make sure a Prometheus data source is configured in Grafana. If you need setup guidance, see the [Grafana data source docs](https://grafana.com/docs/grafana/latest/datasources/prometheus/).
+  Before you begin, make sure a Prometheus data source is configured in Grafana. If you need setup guidance, see the [Grafana data source docs](https://grafana.[SECRET_REDACTED]/).
 </Callout>
 
 Start by opening Grafana, then go to the left-hand menu and click Dashboards.
@@ -118,7 +118,7 @@ Further reading and references
 
 * Grafana: [https://grafana.com/docs/](https://grafana.com/docs/)
 * Prometheus: [https://prometheus.io/docs/](https://prometheus.io/docs/)
-* PromQL basics: [https://prometheus.io/docs/prometheus/latest/querying/basics/](https://prometheus.io/docs/prometheus/latest/querying/basics/)
+* PromQL basics: [https://prometheus.[SECRET_REDACTED]/](https://prometheus.[SECRET_REDACTED]/)
 
 Save your dashboard once more to commit all panels. You now have a concise Platform Dashboard that supports troubleshooting, capacity planning, and traffic analysis.
 

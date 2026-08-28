@@ -159,7 +159,7 @@ By following this GitOps-style workflow, you can safely scale your GKE workloads
 
 ## References
 
-* [Kubernetes Deployment Documentation](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/)
+* [Kubernetes Deployment Documentation](https://kubernetes.[SECRET_REDACTED]/)
 * [Google Cloud Build](https://cloud.google.com/build)
 * [GitHub Actions for Kubernetes](https://github.com/google-github-actions/setup-gcloud)
 

@@ -196,7 +196,7 @@ Finally, tracking and versioning are emphasized so that you can reliably reprodu
 In the next demonstration, we will integrate these data preparation techniques into a complete workflow for PyTorch model training.
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/pytorch/module/f9d4b50b-328e-4cf7-a22a-3b236bf0abcd/lesson/38c436af-6837-416e-8195-f4a5342ef66f" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[AWS_SECRET_ACCESS_KEY]-328e-4cf7-a22a-3b236bf0abcd/lesson/38c436af-6837-416e-8195-f4a5342ef66f" />
 </CardGroup>
 
 

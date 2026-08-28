@@ -77,8 +77,8 @@ Helpful links:
 
 ## Authentication, secrets, and least privilege
 
-* Store DB credentials in [AWS Secrets Manager](https://docs.aws.amazon.com/secretsmanager/latest/userguide/intro.html) or [Systems Manager Parameter Store](https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-parameter-store.html) rather than hard‑coding secrets.
-* Use IAM for management‑plane operations and enable [IAM DB authentication](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/UsingWithRDS.IAMDBAuth.html) for supported engines (e.g., MySQL, PostgreSQL).
+* Store DB credentials in [AWS Secrets Manager](https://docs.aws.amazon.[SECRET_REDACTED].html) or [Systems Manager Parameter Store](https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-parameter-store.html) rather than hard‑coding secrets.
+* Use IAM for management‑plane operations and enable [IAM DB authentication](https://docs.aws.amazon.com[AWS_SECRET_ACCESS_KEY].IAMDBAuth.html) for supported engines (e.g., MySQL, PostgreSQL).
 * Implement least privilege for both AWS IAM roles and database accounts; avoid using a single, high‑privilege account for all operations.
 * Enforce Multi‑Factor Authentication (MFA) for privileged IAM users and require strong password policies.
 
@@ -92,15 +92,15 @@ Helpful links:
 Relevant documentation:
 
 * [Automated Backups](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_WorkingWithAutomatedBackups.html)
-* [Monitoring overview for RDS](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/MonitoringOverview.html)
+* [Monitoring overview for RDS](https://docs.aws.amazon.[SECRET_REDACTED].html)
 * [Database engine logs and audit](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_LogAccess.html)
-* [CloudWatch](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html)
+* [CloudWatch](https://docs.aws.amazon.[SECRET_REDACTED].html)
 
 ## Cross‑region networking and global deployments
 
 When spanning regions:
 
-* Understand replication options: cross‑region read replicas ([RDS Read Replicas](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_ReadRepl.html)) or [Aurora Global Database](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-global-database.html).
+* Understand replication options: cross‑region read replicas ([RDS Read Replicas](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_ReadRepl.html)) or [Aurora Global Database](https://docs.aws.amazon.com[AWS_SECRET_ACCESS_KEY]-global-database.html).
 * Choose networking strategies: inter‑region VPC peering, [AWS Transit Gateway](https://docs.aws.amazon.com/vpc/latest/tgw/what-is-transit-gateway.html), PrivateLink, or VPN/Direct Connect depending on latency and security needs.
 * Account for cross‑region data transfer and snapshot copy costs when designing global deployments.
 
@@ -109,7 +109,7 @@ Network/repl links:
 * [VPC Peering](https://docs.aws.amazon.com/vpc/latest/peering/what-is-vpc-peering.html)
 * [AWS Transit Gateway](https://docs.aws.amazon.com/vpc/latest/tgw/what-is-transit-gateway.html)
 * [AWS PrivateLink](https://docs.aws.amazon.com/privatelink/latest/userguide/what-is-aws-privatelink.html)
-* [AWS Direct Connect](https://docs.aws.amazon.com/directconnect/latest/UserGuide/Welcome.html)
+* [AWS Direct Connect](https://docs.aws.amazon.[SECRET_REDACTED].html)
 
 ## Operational security hygiene
 
@@ -136,14 +136,14 @@ Network/repl links:
 
 * [Amazon RDS User Guide](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Welcome.html)
 * [Amazon RDS encryption overview](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Overview.Encryption.html)
-* [RDS SSL/TLS guide](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/UsingWithRDS.SSL.html)
+* [RDS SSL/TLS guide](https://docs.aws.amazon.com[AWS_SECRET_ACCESS_KEY].SSL.html)
 * [AWS KMS developer guide](https://docs.aws.amazon.com/kms/latest/developerguide/)
-* [Secrets Manager overview](https://docs.aws.amazon.com/secretsmanager/latest/userguide/intro.html)
+* [Secrets Manager overview](https://docs.aws.amazon.[SECRET_REDACTED].html)
 * [Systems Manager Parameter Store](https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-parameter-store.html)
-* [IAM DB authentication for RDS](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/UsingWithRDS.IAMDBAuth.html)
+* [IAM DB authentication for RDS](https://docs.aws.amazon.com[AWS_SECRET_ACCESS_KEY].IAMDBAuth.html)
 * [RDS Multi‑AZ concept](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.MultiAZ.html)
 * [RDS Read Replicas](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_ReadRepl.html)
-* [Aurora Global Database](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-global-database.html)
+* [Aurora Global Database](https://docs.aws.amazon.com[AWS_SECRET_ACCESS_KEY]-global-database.html)
 * [AWS Organizations introduction](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_introduction.html)
 * [AWS Config overview](https://docs.aws.amazon.com/config/latest/developerguide/what-is-aws-config.html)
 

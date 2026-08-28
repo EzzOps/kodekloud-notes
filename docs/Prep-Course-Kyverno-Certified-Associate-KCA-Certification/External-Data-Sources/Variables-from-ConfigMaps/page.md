@@ -126,7 +126,7 @@ This approach centralizes configuration, removes hard-coded values from policies
 
 Links and references
 
-* [Kubernetes ConfigMap documentation](https://kubernetes.io/docs/concepts/configuration/configmap/)
+* [Kubernetes ConfigMap documentation](https://kubernetes.[AWS_SECRET_ACCESS_KEY]/)
 * [Kyverno documentation: Context](https://kyverno.io/docs/)
 
 <CardGroup>

@@ -97,7 +97,7 @@ This ensures stable resource addressing and prevents unnecessary updates.
 ## Links and References
 
 * [OpenTofu Documentation](https://docs.opentofu.org)
-* [AWS EC2 Instance Resource](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/instance)
+* [AWS EC2 Instance Resource](https://registry.terraform.[SECRET_REDACTED])
 * [Terraform `count` Meta-Argument](https://developer.hashicorp.com/terraform/meta-arguments/count)
 * [Terraform `for_each` Meta-Argument](https://developer.hashicorp.com/terraform/meta-arguments/for_each)
 
@@ -232,7 +232,7 @@ By default, `tofu plan` and `tofu apply` refresh the state before execution. To 
 ```bash theme={null}
 $ tofu refresh
 random_pet.cat: Refreshing state… [id=bold-coyote]
-local_file.pet: Refreshing state… [id=cba595b7d9f94ba1107a46f3f731912d95fb3d2c]
+local_file.pet: Refreshing state… [id=[AWS_SECRET_ACCESS_KEY]]
 ```
 
 This syncs your state with external changes. Then check for drift or planned changes:
@@ -240,7 +240,7 @@ This syncs your state with external changes. Then check for drift or planned cha
 ```bash theme={null}
 $ tofu plan
 random_pet.cat: Refreshing state… [id=bold-coyote]
-local_file.pet: Refreshing state… [id=cba595b7d9f94ba1107a46f3f731912d95fb3d2c]
+local_file.pet: Refreshing state… [id=[AWS_SECRET_ACCESS_KEY]]
 No changes. Your infrastructure matches the configuration.
 ```
 

@@ -72,7 +72,7 @@ Sample output:
 ```text theme={null}
 Key                           Value
 ---                           -----
-wrapping_token                hvs.CAESIDgPWW9ok_h4KHGh2cyObTJ4...
+wrapping_token                [VAULT_TOKEN]...
 wrapping_accessor             O5XSKsRf0c7CwXo996BJkYNi
 wrapping_token_ttl            5m
 wrapping_token_creation_time  2022-12-25T10:36:36.588947-04:00
@@ -82,7 +82,7 @@ wrapping_token_creation_path  secrets/certification/hcvop
 ### Inspecting the Wrapping Token
 
 ```bash theme={null}
-vault token lookup hvs.CAESIDgPWW9ok_h4KHGh2cyObTJ4WWO5XSKsRf0c7CwXo996BJkYNi
+vault token lookup [VAULT_TOKEN]
 ```
 
 Output fields include `creation_ttl`, `expire_time`, `num_uses`, and the original `path`.
@@ -106,7 +106,7 @@ In the Vault UI:
 ## CLI: Unwrapping a Secret
 
 ```bash theme={null}
-vault unwrap hvs.CAESIDgPWW9ok_h4KHGh2cyObTJ4WWO5XSKsRf0c7CwXo996BJkYNi
+vault unwrap [VAULT_TOKEN]
 ```
 
 Example response:
@@ -340,7 +340,7 @@ Sample response:
 ```text theme={null}
 Key                   Value
 ---                   -----
-token                 hvs.CAESlNhzOeu9SvYiHGAJBIt-Q-9-2Mrw...
+token                 [VAULT_TOKEN]...
 token_duration        24h
 token_renewable       true
 token_policies        ["kv-policy" "default"]

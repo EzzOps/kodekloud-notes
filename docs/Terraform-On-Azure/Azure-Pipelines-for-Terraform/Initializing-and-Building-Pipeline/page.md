@@ -120,7 +120,7 @@ By separating plan and apply and leveraging Azure DevOps approvals and environme
 * [Terraform: Getting Started](https://www.terraform.io/intro)
 * [Terraform CLI Documentation](https://developer.hashicorp.com/terraform/cli)
 * [Azure DevOps Pipelines documentation](https://learn.microsoft.com/azure/devops/pipelines/)
-* [Azure Provider for Terraform](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs)
+* [Azure Provider for Terraform](https://registry.terraform.io[AWS_SECRET_ACCESS_KEY])
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-on-azure/module/66c0006d-c716-4381-8b15-e4edb4f4fbe5/lesson/1b6f2b55-57ac-447e-ae59-b23ae44e74a6" />

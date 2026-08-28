@@ -104,7 +104,7 @@ Your CloudWatch alarm is now active. When the average CPU utilization exceeds 70
 
 ## References
 
-* [AWS CloudWatch Alarms](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/AlarmThatSendsEmail.html)
+* [AWS CloudWatch Alarms](https://docs.aws.amazon.[SECRET_REDACTED].html)
 * [Amazon EC2 Monitoring](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-cloudwatch.html)
 * [Amazon SNS Developer Guide](https://docs.aws.amazon.com/sns/latest/dg/welcome.html)
 

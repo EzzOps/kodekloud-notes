@@ -52,7 +52,7 @@ Cluster autoscaling increases the cluster’s total compute capacity (CPU, RAM, 
 
 Learn more:
 
-* Cluster Autoscaler documentation: [https://github.com/kubernetes/autoscaler/tree/master/cluster-autoscaler](https://github.com/kubernetes/autoscaler/tree/master/cluster-autoscaler)
+* Cluster Autoscaler documentation: [https://github.[SECRET_REDACTED]-autoscaler](https://github.[SECRET_REDACTED]-autoscaler)
 * Cloud provider-specific autoscalers: check your provider docs (GKE, EKS, AKS).
 
 ## Pod (Workload) Scaling
@@ -105,7 +105,7 @@ Further reading and references:
 
 * Kubernetes Basics: [https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/](https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/)
 * Horizontal Pod Autoscaler: [https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale/](https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale/)
-* Vertical Pod Autoscaler: [https://github.com/kubernetes/autoscaler/tree/master/vertical-pod-autoscaler](https://github.com/kubernetes/autoscaler/tree/master/vertical-pod-autoscaler)
+* Vertical Pod Autoscaler: [https://github.[SECRET_REDACTED]-pod-autoscaler](https://github.[SECRET_REDACTED]-pod-autoscaler)
 * KEDA: [https://keda.sh/](https://keda.sh/)
 
 This lesson introduced the "why" and "what" of autoscaling in Kubernetes. The course continues with practical configuration and operational examples for Cluster Autoscaler, HPA, VPA, and event-driven scalers.

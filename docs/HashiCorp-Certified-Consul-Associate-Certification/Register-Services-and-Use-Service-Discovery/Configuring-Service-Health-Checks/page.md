@@ -146,7 +146,7 @@ All health checks are defined alongside service registration so that Consul can 
 
 * [Consul HTTP API: Agent Checks](https://www.consul.io/api-docs/agent/checks)
 * [Consul Service Registration](https://www.consul.io/api-docs/agent/service)
-* [Terraform Consul Provider](https://registry.terraform.io/providers/hashicorp/consul/latest/docs)
+* [Terraform Consul Provider](https://registry.terraform.[SECRET_REDACTED])
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-consul-associate-certification/module/c93b029c-49ea-4720-b869-60ee503c5fce/lesson/fd0ab3ba-06f7-4508-8b79-c92bb5eb181e" />

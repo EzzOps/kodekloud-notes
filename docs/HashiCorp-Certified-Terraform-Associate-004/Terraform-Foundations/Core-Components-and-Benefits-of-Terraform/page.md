@@ -144,7 +144,7 @@ Module best practices:
 ## Links and References
 
 * Terraform documentation: [https://developer.hashicorp.com/terraform/](https://developer.hashicorp.com/terraform/)
-* S3 backend: [https://developer.hashicorp.com/terraform/language/settings/backends/s3](https://developer.hashicorp.com/terraform/language/settings/backends/s3)
+* S3 backend: [https://developer.hashicorp.[AWS_SECRET_ACCESS_KEY]/s3](https://developer.hashicorp.[AWS_SECRET_ACCESS_KEY]/s3)
 * Terraform Registry: [https://registry.terraform.io/](https://registry.terraform.io/)
 
 <CardGroup>

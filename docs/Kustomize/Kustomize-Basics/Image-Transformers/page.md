@@ -172,5 +172,5 @@ spec:
 * [kubectl Customization](https://kubectl.docs.kubernetes.io/guides/introduction/)
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kustomize/module/8b591384-c5e2-4411-afc1-443d3f2ba735/lesson/d01d540c-4e1c-45ad-aa72-2b0c46e8f68c" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[SECRET_REDACTED]-c5e2-4411-afc1-443d3f2ba735/lesson/d01d540c-4e1c-45ad-aa72-2b0c46e8f68c" />
 </CardGroup>

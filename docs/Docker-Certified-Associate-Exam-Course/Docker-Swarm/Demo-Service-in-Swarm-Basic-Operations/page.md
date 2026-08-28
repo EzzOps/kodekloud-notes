@@ -231,7 +231,7 @@ docker service inspect second-service --pretty | grep -i Image
 ## Links and References
 
 * [Docker Swarm Overview](https://docs.docker.com/engine/swarm/)
-* [Service Commands](https://docs.docker.com/engine/reference/commandline/service/)
+* [Service Commands](https://docs.docker.[AWS_SECRET_ACCESS_KEY]/)
 * [Rolling Updates](https://docs.docker.com/engine/swarm/how-swarm-mode-works/swarm-task-states/#rolling-updates)
 
 <CardGroup>

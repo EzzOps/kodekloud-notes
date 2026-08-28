@@ -354,7 +354,7 @@ Example output:
 ```text theme={null}
 Key                Value
 ---                -----
-token              hvs.CAESINq3yTGLYZofP7iZBStz3zAktvOHfWBigN
+token              [VAULT_TOKEN]
 token_accessor     fy9Jjse9SRTLIYLufysE6qP0
 token_duration     24h
 token_renewable    true

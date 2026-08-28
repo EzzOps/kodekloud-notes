@@ -23,7 +23,7 @@ jobs:
       DATABASE_PASSWORD: password123
       DATABASE_NAME: fastapi
       DATABASE_USERNAME: postgres
-      SECRET_KEY: 09d25e094faa6ca255c818166b7a9563b93f7099f6f0f4caa6cf63b88e8d3e7
+      SECRET_KEY: [SECRET_REDACTED]
       ALGORITHM: HS256
       ACCESS_TOKEN_EXPIRE_MINUTES: 30
     runs-on: ubuntu-latest
@@ -56,7 +56,7 @@ jobs:
       DATABASE_PASSWORD: password123
       DATABASE_NAME: fastapi
       DATABASE_USERNAME: postgres
-      SECRET_KEY: 09d25e094faa6ca255c818166b7a9563b93f7099f6f0f4caa6cf63b88e8d3e7
+      SECRET_KEY: [SECRET_REDACTED]
       ALGORITHM: HS256
       ACCESS_TOKEN_EXPIRE_MINUTES: 30
     runs-on: ubuntu-latest

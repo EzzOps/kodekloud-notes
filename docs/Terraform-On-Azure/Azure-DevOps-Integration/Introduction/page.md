@@ -68,7 +68,7 @@ A remote backend (e.g., Azure Storage with state locking via CosmosDB or using T
 
 * [Terraform Documentation](https://www.terraform.io/docs)
 * [Azure DevOps Pipelines](https://learn.microsoft.com/azure/devops/pipelines/?view=azure-devops)
-* [Configure backends](https://www.terraform.io/docs/language/settings/backends/index.html)
+* [Configure backends](https://www.terraform.[AWS_SECRET_ACCESS_KEY].html)
 * [Azure REST and Service Principals](https://learn.microsoft.com/azure/active-directory/develop/howto-create-service-principal-portal)
 
 <CardGroup>

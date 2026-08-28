@@ -81,10 +81,10 @@ Summary
 
 Links and references
 
-* [AWS CloudFormation StackSets documentation](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/what-is-stacksets.html)
+* [AWS CloudFormation StackSets documentation](https://docs.aws.amazon.com[AWS_SECRET_ACCESS_KEY]-is-stacksets.html)
 * [AWS CloudFormation documentation](https://docs.aws.amazon.com/cloudformation/)
 * [Amazon S3 documentation](https://docs.aws.amazon.com/s3/)
-* [CloudFormation template anatomy](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/template-anatomy.html)
+* [CloudFormation template anatomy](https://docs.aws.amazon.[SECRET_REDACTED]-anatomy.html)
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/aws-cloud-formation/module/13ed2c0a-3a8a-45b0-870a-6c267c392190/lesson/41f5fcbd-9cd0-4c00-8460-b341e974efa6" />

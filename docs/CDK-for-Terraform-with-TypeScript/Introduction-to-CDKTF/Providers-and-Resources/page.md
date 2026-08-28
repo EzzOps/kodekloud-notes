@@ -182,7 +182,7 @@ new file.File(this, 'package-json', {
 
 ## References
 
-* [Terraform local\_file resource](https://registry.terraform.io/providers/hashicorp/local/latest/docs/resources/file)
+* [Terraform local\_file resource](https://registry.terraform.[AWS_SECRET_ACCESS_KEY]/resources/file)
 * [CDK for Terraform (CDKTF) Docs](https://developer.hashicorp.com/terraform/cdktf)
 * [constructs - npm package](https://www.npmjs.com/package/constructs)
 

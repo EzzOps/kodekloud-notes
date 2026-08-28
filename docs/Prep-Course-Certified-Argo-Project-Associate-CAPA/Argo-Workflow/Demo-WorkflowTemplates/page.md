@@ -113,7 +113,7 @@ Notes:
 
 * Create the WorkflowTemplate using the Argo UI (Workflows → WorkflowTemplates → Create new) or with kubectl apply:
   * kubectl apply -f cowsay-template.yaml
-  * For more kubectl guidance, see: [kubectl apply](https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands#apply)
+  * For more kubectl guidance, see: [kubectl apply](https://kubernetes.io/[AWS_SECRET_ACCESS_KEY]-commands#apply)
 * Submit a Workflow that references the template either from the UI (select the WorkflowTemplate and provide parameters) or by applying the Workflow YAML shown above.
 * Monitor workflow execution and status in the Argo Workflows UI.
 
@@ -153,7 +153,7 @@ You can also view the resolved manifest used to run the Workflow in the UI, whic
 * Argo Workflows: [https://argoproj.github.io/argo-workflows/](https://argoproj.github.io/argo-workflows/)
 * WorkflowTemplates docs: [https://argoproj.github.io/argo-workflows/workflow-templates/](https://argoproj.github.io/argo-workflows/workflow-templates/)
 * ClusterWorkflowTemplate: [https://argoproj.github.io/argo-workflows/workflow-templates/#clusterworkflowtemplate](https://argoproj.github.io/argo-workflows/workflow-templates/#clusterworkflowtemplate)
-* Kubernetes kubectl apply: [https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands#apply](https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands#apply)
+* Kubernetes kubectl apply: [https://kubernetes.io/[AWS_SECRET_ACCESS_KEY]-commands#apply](https://kubernetes.io/[AWS_SECRET_ACCESS_KEY]-commands#apply)
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/44223b5d-ccc3-4dcb-8292-66036e2ea023/lesson/7fd60c67-290c-4eb8-a6d6-47ad6a9ea72c" />

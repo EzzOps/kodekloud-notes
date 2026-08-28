@@ -96,7 +96,7 @@ Microsoft Windows [Version 10.0.19045.3324]
 
 C:\Users\sanje\Documents\scratch\aws-demo>ssh -i aws-demo.pem ec2-user@34.201.6.109
 The authenticity of host '34.201.6.109 (34.201.6.109)' can't be established.
-ECDSA key fingerprint is SHA256:faOCPuuMP2Fvn9aHeAeW56Eei94znaTnFefIDRd1mE.
+ECDSA key fingerprint is SHA256:[SECRET_REDACTED].
 Are you sure you want to continue connecting (yes/no)? yes
 Warning: Permanently added '34.201.6.109' (ECDSA) to the list of known hosts.
 

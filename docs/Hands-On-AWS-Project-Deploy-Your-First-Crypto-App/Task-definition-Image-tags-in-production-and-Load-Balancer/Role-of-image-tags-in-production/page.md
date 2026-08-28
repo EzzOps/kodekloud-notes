@@ -196,7 +196,7 @@ This ensures the cluster pulls the image built from the commit you specified.
 * AWS Elastic Container Registry (ECR): [https://docs.aws.amazon.com/AmazonECR/latest/userguide/what-is-ecr.html](https://docs.aws.amazon.com/AmazonECR/latest/userguide/what-is-ecr.html)
 * Docker image tag best practices: [https://docs.docker.com/engine/reference/commandline/tag/](https://docs.docker.com/engine/reference/commandline/tag/)
 * AWS CodeBuild buildspec reference: [https://docs.aws.amazon.com/codebuild/latest/userguide/build-spec-ref.html](https://docs.aws.amazon.com/codebuild/latest/userguide/build-spec-ref.html)
-* AWS ECS task definitions: [https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task\_definitions.html](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task_definitions.html)
+* AWS ECS task definitions: [https://docs.aws.amazon.[AWS_SECRET_ACCESS_KEY]\_definitions.html](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task_definitions.html)
 
 Thanks for reading — use immutable tags alongside human-friendly tags to balance convenience, safety, and auditability in your CI/CD pipelines.
 

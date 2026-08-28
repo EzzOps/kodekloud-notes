@@ -91,7 +91,7 @@ scrape_configs:
 
 # Configuration
 
-Source: https://notes.kodekloud.com/docs/Prep-Course-Prometheus-Certified-Associate-PCA-Certification/Alerting/Configuration/page
+Source: https://notes.kodekloud.com/docs/Prep-Course-Prometheus-Certified-Associate-PCA-[SECRET_REDACTED]
 
 Guide to Alertmanager configuration explaining routing trees, matchers, receivers, grouping, and reload practices for delivering alerts to appropriate notification channels.
 

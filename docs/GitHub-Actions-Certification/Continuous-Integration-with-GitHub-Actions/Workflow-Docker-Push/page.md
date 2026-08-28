@@ -99,7 +99,7 @@ During the push step, the logs will indicate cache reuse and the push command:
 ```bash theme={null}
 /usr/bin/docker buildx build \
   --iidfile /tmp/docker-actions-toolkit/iidfile \
-  --tag siddharth67/solar-system:e8095fb98a5b01249540a95eaf3a9c371c274430 \
+  --tag siddharth67/solar-system:[AWS_SECRET_ACCESS_KEY] \
   --push .
 ```
 
@@ -110,7 +110,7 @@ The `build-push-action` automatically leverages layers from the testing job to s
 After completion, navigate to your Docker Hub repository. You should find a new tag matching the commit SHA, for example:
 
 ```text theme={null}
-siddharth67/solar-system:e8095fb98a5b01249540a95eaf3a9c371c274430
+siddharth67/solar-system:[AWS_SECRET_ACCESS_KEY]
 ```
 
 This confirms that your GitHub Actions workflow has successfully built, tested, and published your image.

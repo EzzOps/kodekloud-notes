@@ -175,7 +175,7 @@ That covers the Metrics API and SDK: how Meters and Instruments are structured, 
 
 ## Links and references
 
-* [OTLP Protocol](https://opentelemetry.io/docs/reference/specification/protocol/otlp/)
+* [OTLP Protocol](https://opentelemetry.[AWS_SECRET_ACCESS_KEY]/otlp/)
 * [OpenTelemetry Metrics SDK & API docs](https://opentelemetry.io/docs/)
 
 <CardGroup>

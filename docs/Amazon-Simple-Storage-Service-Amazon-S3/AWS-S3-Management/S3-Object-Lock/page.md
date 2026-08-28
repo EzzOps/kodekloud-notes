@@ -85,7 +85,7 @@ Once both settings are enabled, you can configure retention periods, switch mode
 ## References
 
 * [Amazon S3 Object Lock Overview](https://docs.aws.amazon.com/AmazonS3/latest/userguide/object-lock.html)
-* [Using S3 Versioning](https://docs.aws.amazon.com/AmazonS3/latest/userguide/Versioning.html)
+* [Using S3 Versioning](https://docs.aws.amazon.[AWS_SECRET_ACCESS_KEY].html)
 * [AWS CLI put-object-legal-hold](https://docs.aws.amazon.com/cli/latest/reference/s3api/put-object-legal-hold.html)
 
 <CardGroup>

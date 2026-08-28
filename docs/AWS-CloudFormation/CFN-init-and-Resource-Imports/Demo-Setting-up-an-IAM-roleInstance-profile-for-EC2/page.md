@@ -21,10 +21,10 @@ Summary
 
 Links and References
 
-* [AWS CloudFormation init (cfn-init)](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-init.html)
-* [cfn-hup daemon](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-hup.html)
-* [cfn-signal reference](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-signal.html)
-* [CloudFormation helper scripts (aws-cfn-bootstrap)](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-helper-scripts-reference.html)
+* [AWS CloudFormation init (cfn-init)](https://docs.aws.amazon.[SECRET_REDACTED]-init.html)
+* [cfn-hup daemon](https://docs.aws.amazon.[SECRET_REDACTED]-hup.html)
+* [cfn-signal reference](https://docs.aws.amazon.[SECRET_REDACTED]-signal.html)
+* [CloudFormation helper scripts (aws-cfn-bootstrap)](https://docs.aws.amazon.[SECRET_REDACTED]-helper-scripts-reference.html)
 * [Amazon S3 Documentation](https://docs.aws.amazon.com/AmazonS3/latest/userguide/)
 * [Amazon EC2 Documentation](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/)
 

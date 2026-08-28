@@ -238,7 +238,7 @@ For a complete list of macros and filters, see the [Falco documentation][falco-d
 
 * [Falco Documentation][falco-docs]
 * [Kubernetes Concepts: What Is Kubernetes?](https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/)
-* [Sysdig Filters Reference](https://github.com/falcosecurity/falco/blob/master/rules/falco_rules.yaml)
+* [Sysdig Filters Reference](https://github.[SECRET_REDACTED]falco_rules.yaml)
 
 [falco-docs]: https://falco.org/docs/
 

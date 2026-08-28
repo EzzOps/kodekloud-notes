@@ -78,7 +78,7 @@ Define alerts to proactively notify your team when metrics cross thresholds. Her
 az monitor metrics alert create \
   --name HighCpuAlert \
   --resource-group MyResourceGroup \
-  --scopes /subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/MyResourceGroup/providers/Microsoft.Compute/virtualMachines/MyVM \
+  --scopes /subscriptions/00000000-0000-0000-0000-000000000000/[AWS_SECRET_ACCESS_KEY]/Microsoft.Compute/virtualMachines/MyVM \
   --condition "avg Percentage CPU > 80" \
   --evaluation-frequency 5m \
   --window-size 5m \

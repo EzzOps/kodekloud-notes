@@ -150,7 +150,7 @@ These logs are vital for forensic analysis and auditing.
 A sample log entry might look like this:
 
 ```text theme={null}
-79a59d9f900b949e55d96a1698bacedfd6e09d98acff8f8d5218e7cd47ef2be awsexamplebucket [06/Feb/2019:00:01:57 +0000] 192.0.2.3 79a59d9f900b949e55d96a1698bacedfd6e09d98acff8f8d5218e7cd47ef2be DD6CCT733EXAMPLE REST.PUT.OBJECT s3-dg.pdf "PUT /awsexamplebucket/s3-dg.pdf HTTP/1.1" 200 - 4406583 41754 20 "-" "S3Console/0.4" - 10S62zv81kBW7B6SX4XJA806kpc16LpwEoizZQ0xJd5qDSCTLX0Tgs37kYU BKQW3+PdRg1234- SigV4 ECDHE-RSA-AES128-SHA AuthHeader awsexamplebucket.s3.amazonaws.com TLSv1.1
+[SECRET_REDACTED] awsexamplebucket [06/Feb/2019:00:01:57 +0000] 192.0.2.3 [SECRET_REDACTED] DD6CCT733EXAMPLE REST.PUT.OBJECT s3-dg.pdf "PUT /awsexamplebucket/s3-dg.pdf HTTP/1.1" 200 - 4406583 41754 20 "-" "S3Console/0.4" - [SECRET_REDACTED] BKQW3+PdRg1234- SigV4 ECDHE-RSA-AES128-SHA AuthHeader awsexamplebucket.s3.amazonaws.com TLSv1.1
 ```
 
 ## Example Scenario: S3 Access Logging

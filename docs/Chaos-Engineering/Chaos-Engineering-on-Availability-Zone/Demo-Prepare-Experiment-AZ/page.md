@@ -107,8 +107,8 @@ Align these durations with your application’s RPO (Recovery Point Objective) a
 ## Links and References
 
 * [AWS Fault Injection Simulator User Guide](https://docs.aws.amazon.com/fis/latest/userguide/)
-* [Amazon RDS Aurora High Availability](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-best-practices.html)
-* [Amazon CloudWatch Logs](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/WhatIsCloudWatchLogs.html)
+* [Amazon RDS Aurora High Availability](https://docs.aws.amazon.com[AWS_SECRET_ACCESS_KEY]-best-practices.html)
+* [Amazon CloudWatch Logs](https://docs.aws.amazon.[SECRET_REDACTED].html)
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/chaos-engineering/module/e28ed74d-a0c9-4dbd-9950-2b6f83cd8511/lesson/70e53d2c-c40a-4a83-b2da-212da6c516bf" />

@@ -117,13 +117,13 @@ Plan capacity around predictable load patterns. For example, increase desired ca
 
 An Auto Scaling Group requires a launch template defining the AMI, instance type, network settings, security groups, and key pairs. This template ensures consistency across all instances launched by ASG.
 
-For detailed steps, refer to the [EC2 Launch Templates documentation](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/LaunchTemplates.html).
+For detailed steps, refer to the [EC2 Launch Templates documentation](https://docs.aws.amazon.com[AWS_SECRET_ACCESS_KEY].html).
 
 ## References
 
 * AWS Auto Scaling Groups: [https://docs.aws.amazon.com/autoscaling/ec2/userguide/what-is-amazon-ec2-auto-scaling.html](https://docs.aws.amazon.com/autoscaling/ec2/userguide/what-is-amazon-ec2-auto-scaling.html)
-* Application Load Balancer: [https://docs.aws.amazon.com/elasticloadbalancing/latest/application/introduction.html](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/introduction.html)
-* CloudWatch Alarms: [https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/AlarmThatSendsEmail.html](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/AlarmThatSendsEmail.html)
+* Application Load Balancer: [https://docs.aws.amazon.com[AWS_SECRET_ACCESS_KEY]/introduction.html](https://docs.aws.amazon.com[AWS_SECRET_ACCESS_KEY]/introduction.html)
+* CloudWatch Alarms: [https://docs.aws.amazon.[SECRET_REDACTED].html](https://docs.aws.amazon.[SECRET_REDACTED].html)
 * EC2 AMIs: [https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AMIs.html](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AMIs.html)
 
 <CardGroup>

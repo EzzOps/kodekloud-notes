@@ -113,7 +113,7 @@ S3 never purges prior versions automatically. To remove old versions, you must d
 
 ## Links and References
 
-* [Amazon S3 Versioning Overview](https://docs.aws.amazon.com/AmazonS3/latest/userguide/Versioning.html)
+* [Amazon S3 Versioning Overview](https://docs.aws.amazon.[AWS_SECRET_ACCESS_KEY].html)
 * [AWS CLI S3API Reference](https://docs.aws.amazon.com/cli/latest/reference/s3api/index.html)
 * [Managing Object Lifecycle](https://docs.aws.amazon.com/AmazonS3/latest/userguide/object-lifecycle-mgmt.html)
 

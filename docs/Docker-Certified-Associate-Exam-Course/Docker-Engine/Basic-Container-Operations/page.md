@@ -69,7 +69,7 @@ Unable to find image 'httpd:latest' locally
 latest: Pulling from library/httpd
 …
 Status: Downloaded newer image for httpd:latest
-36a391532e10d45f772f2c9430c2cc38dad4b441aa7a1c444d59f6fa3d78c6b6
+[SECRET_REDACTED]
 ```
 
 On Linux, Docker stores images and container metadata under `/var/lib/docker/`:

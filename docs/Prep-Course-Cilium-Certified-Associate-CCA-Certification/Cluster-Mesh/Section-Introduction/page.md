@@ -46,7 +46,7 @@ Recommended references
 
 * [Kubernetes Networking](https://kubernetes.io/docs/concepts/cluster-administration/networking/)
 * [Kubernetes NetworkPolicy](https://kubernetes.io/docs/concepts/services-networking/network-policies/)
-* [Cilium Cluster Mesh (multi-cluster) documentation](https://docs.cilium.io/en/stable/gettingstarted/multicluster/)
+* [Cilium Cluster Mesh (multi-cluster) documentation](https://docs.cilium.[AWS_SECRET_ACCESS_KEY]/)
 
 In the following sections we will step through how Cluster Mesh establishes connections, how service and traffic distribution work across clusters, and how to enforce inter-cluster network policies with concrete configuration examples and patterns.
 

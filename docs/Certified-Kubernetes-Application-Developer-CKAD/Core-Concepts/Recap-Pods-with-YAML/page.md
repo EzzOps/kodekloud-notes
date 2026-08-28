@@ -94,9 +94,9 @@ Status:            Running
 IP:                172.17.0.24
 Containers:
   nginx-container:
-    Container ID:   docker://830bb56c8c42a860b4b70e9c1488fae1bc38663e4918b6c2f5a78e768b8c9d
+    Container ID:   docker://[SECRET_REDACTED]
     Image:          nginx
-    Image ID:       docker-pullable://nginx@sha256:4771d09578c7ca65299e110b3ee1c0a2592f5ea2618d32e4ffe7a4cab1c5de
+    Image ID:       docker-pullable://nginx@sha256:[SECRET_REDACTED]
     Port:           <none>
     State:          Running
       Started:      Sat, 03 Mar 2018 14:26:21 +0800

@@ -72,7 +72,7 @@ In summary, understanding the roles of nodes and clusters is key to leveraging E
 
 Thank you for reading this article on nodes and clusters in Elasticsearch. Stay tuned for our next lesson where we dive deeper into advanced configurations and performance optimization techniques.
 
-For more insights, visit the [Elasticsearch Documentation](https://www.elastic.co/guide/en/elasticsearch/reference/current/index.html) and explore further resources on distributed systems and search technologies.
+For more insights, visit the [Elasticsearch Documentation](https://www.elastic.co/[AWS_SECRET_ACCESS_KEY]/index.html) and explore further resources on distributed systems and search technologies.
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/efk-stack-enterprise-grade-logging-and-monitoring/module/a70164d0-faba-407d-a6e8-4e227044c3aa/lesson/e5930d7d-c47a-4ed9-9d82-b2735ba72ec6" />

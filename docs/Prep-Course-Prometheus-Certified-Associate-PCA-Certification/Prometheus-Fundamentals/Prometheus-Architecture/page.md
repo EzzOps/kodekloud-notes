@@ -267,7 +267,7 @@ Summary: core components and where they fit
 Links and references
 
 * [Prometheus documentation](https://prometheus.io/docs/)
-* [PromQL basics](https://prometheus.io/docs/prometheus/latest/querying/basics/)
+* [PromQL basics](https://prometheus.[SECRET_REDACTED]/)
 * [Grafana – official site](https://grafana.com/)
 * Courses referenced (examples):
   * [Kubernetes for the Absolute Beginners - Hands-on Tutorial](https://learn.kodekloud.com/user/courses/kubernetes-for-the-absolute-beginners-hands-on-tutorial)

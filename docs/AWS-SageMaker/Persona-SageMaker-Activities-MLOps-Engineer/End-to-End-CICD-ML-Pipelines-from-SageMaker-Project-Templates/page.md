@@ -192,10 +192,10 @@ Links and references
 * SageMaker Projects & Templates: [https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-projects.html](https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-projects.html)
 * SageMaker Pipelines: [https://docs.aws.amazon.com/sagemaker/latest/dg/pipelines.html](https://docs.aws.amazon.com/sagemaker/latest/dg/pipelines.html)
 * SageMaker Model Registry: [https://docs.aws.amazon.com/sagemaker/latest/dg/model-registry.html](https://docs.aws.amazon.com/sagemaker/latest/dg/model-registry.html)
-* AWS CodePipeline: [https://docs.aws.amazon.com/codepipeline/latest/userguide/welcome.html](https://docs.aws.amazon.com/codepipeline/latest/userguide/welcome.html)
+* AWS CodePipeline: [https://docs.aws.amazon.[SECRET_REDACTED].html](https://docs.aws.amazon.[SECRET_REDACTED].html)
 * AWS CodeBuild: [https://docs.aws.amazon.com/codebuild/latest/userguide/welcome.html](https://docs.aws.amazon.com/codebuild/latest/userguide/welcome.html)
 * AWS CloudFormation: [https://docs.aws.amazon.com/cloudformation/index.html](https://docs.aws.amazon.com/cloudformation/index.html)
-* CodeStar Connections (Git integrations): [https://docs.aws.amazon.com/dtconsole/latest/userguide/connections.html](https://docs.aws.amazon.com/dtconsole/latest/userguide/connections.html)
+* CodeStar Connections (Git integrations): [https://docs.aws.amazon.[SECRET_REDACTED].html](https://docs.aws.amazon.[SECRET_REDACTED].html)
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/aws-sagemaker/module/772ec99e-54ee-4f4f-8b2a-08b5bc4d4a32/lesson/93134cea-b5a8-4352-8fe1-0a76c58699bb" />

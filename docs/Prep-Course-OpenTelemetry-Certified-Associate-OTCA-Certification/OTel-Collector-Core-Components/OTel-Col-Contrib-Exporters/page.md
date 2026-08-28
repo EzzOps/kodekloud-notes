@@ -266,7 +266,7 @@ Links and references
 
 * OpenTelemetry Collector contrib repository: [https://github.com/open-telemetry/opentelemetry-collector-contrib](https://github.com/open-telemetry/opentelemetry-collector-contrib)
 * Prometheus: [https://prometheus.io/](https://prometheus.io/)
-* PromQL basics: [https://prometheus.io/docs/prometheus/latest/querying/basics/](https://prometheus.io/docs/prometheus/latest/querying/basics/)
+* PromQL basics: [https://prometheus.[SECRET_REDACTED]/](https://prometheus.[SECRET_REDACTED]/)
 * Cortex: [https://cortexmetrics.io/](https://cortexmetrics.io/)
 * Thanos: [https://thanos.io/](https://thanos.io/)
 * Kafka: [https://kafka.apache.org/](https://kafka.apache.org/)

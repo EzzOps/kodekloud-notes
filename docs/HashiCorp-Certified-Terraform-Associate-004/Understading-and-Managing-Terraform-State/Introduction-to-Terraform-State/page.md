@@ -115,7 +115,7 @@ Further reading and references
 
 * [Terraform State CLI](https://www.terraform.io/cli/commands/state)
 * [State & Backends - Terraform](https://www.terraform.io/docs/language/state/index.html)
-* [Remote State Backends](https://www.terraform.io/docs/language/settings/backends/index.html)
+* [Remote State Backends](https://www.terraform.[AWS_SECRET_ACCESS_KEY].html)
 
 In short, Terraform state is the single source of truth that bridges your configuration and the real infrastructure. Proper state handling—remote backends, locking, access control, and safe use of state commands—ensures predictable, collaborative, and secure infrastructure management.
 

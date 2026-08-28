@@ -157,7 +157,7 @@ Best practices and deployment tips
 Additional resources
 
 * [NGINX official documentation — Server Blocks (server context)](https://nginx.org/en/docs/http/ngx_http_core_module.html#server)
-* [NGINX Beginner’s Guide — How to Set Up Server Blocks](https://www.nginx.com/resources/wiki/start/topics/examples/server_blocks/)
+* [NGINX Beginner’s Guide — How to Set Up Server Blocks](https://www.nginx.[AWS_SECRET_ACCESS_KEY]/server_blocks/)
 * [Debian/Ubuntu NGINX packaging — sites-available and sites-enabled pattern](https://wiki.debian.org/Nginx)
 
 You can now create a demo environment: add site files under `/var/www/`, create per-site server block files, test configuration, and reload NGINX to see multiple virtual servers served from a single NGINX instance.

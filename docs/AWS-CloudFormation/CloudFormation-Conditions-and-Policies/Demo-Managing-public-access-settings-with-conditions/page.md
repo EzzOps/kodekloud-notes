@@ -89,7 +89,7 @@ Resources:
 ```
 
 <Callout icon="lightbulb">
-  New AWS accounts enable S3 Block Public Access by default; account-level or existing bucket-level settings may differ. The PublicAccessBlockConfiguration flags (BlockPublicAcls, BlockPublicPolicy, IgnorePublicAcls, RestrictPublicBuckets) are boolean. Setting a flag to true enforces blocking behavior; setting it to false permits that type of public access. For CloudFormation docs, see [Template Anatomy](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/template-anatomy.html).
+  New AWS accounts enable S3 Block Public Access by default; account-level or existing bucket-level settings may differ. The PublicAccessBlockConfiguration flags (BlockPublicAcls, BlockPublicPolicy, IgnorePublicAcls, RestrictPublicBuckets) are boolean. Setting a flag to true enforces blocking behavior; setting it to false permits that type of public access. For CloudFormation docs, see [Template Anatomy](https://docs.aws.amazon.[SECRET_REDACTED]-anatomy.html).
 </Callout>
 
 Explanation and workflow
@@ -136,8 +136,8 @@ Testing and expected S3 console behavior
 
 Quick references and further reading
 
-* CloudFormation template anatomy: [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/template-anatomy.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/template-anatomy.html)
-* S3 PublicAccessBlockConfiguration: [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-publicaccessblockconfiguration.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-publicaccessblockconfiguration.html)
+* CloudFormation template anatomy: [https://docs.aws.amazon.[SECRET_REDACTED]-anatomy.html](https://docs.aws.amazon.[SECRET_REDACTED]-anatomy.html)
+* S3 PublicAccessBlockConfiguration: [https://docs.aws.amazon.[SECRET_REDACTED]-properties-s3-bucket-publicaccessblockconfiguration.html](https://docs.aws.amazon.[SECRET_REDACTED]-properties-s3-bucket-publicaccessblockconfiguration.html)
 * S3 Block Public Access (console docs): [https://docs.aws.amazon.com/AmazonS3/latest/userguide/access-control-block-public-access.html](https://docs.aws.amazon.com/AmazonS3/latest/userguide/access-control-block-public-access.html)
 
 This pattern provides a secure default (block public access) while allowing a controlled, auditable override for environments that require public-read buckets.

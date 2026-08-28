@@ -186,7 +186,7 @@ Apply complete! Resources: 0 added, 0 changed, 0 destroyed.
 
 ## Further Reading
 
-* [OpenTofu Documentation on Lifecycle Rules](https://github.com/opentofu/opentofu/blob/main/docs/lifecycle.md)
+* [OpenTofu Documentation on Lifecycle Rules](https://github.[SECRET_REDACTED].md)
 * [Terraform Meta-Arguments: Lifecycle](https://developer.hashicorp.com/terraform/language/meta-arguments/lifecycle)
 
 <CardGroup>

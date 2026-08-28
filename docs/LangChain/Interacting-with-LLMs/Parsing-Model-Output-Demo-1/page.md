@@ -35,7 +35,7 @@ In the following sections we will demonstrate how to construct, manage, and reus
 * [Introduction to OpenAI course](https://learn.kodekloud.com/user/courses/introduction-to-openai)
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langchain/module/ae260750-791b-496c-991f-0d0333f61e40/lesson/677506d8-0d22-4c90-bee6-b358e5f08e30" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[SECRET_REDACTED]-791b-496c-991f-0d0333f61e40/lesson/677506d8-0d22-4c90-bee6-b358e5f08e30" />
 </CardGroup>
 
 
@@ -192,5 +192,5 @@ India
 </Callout>
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langchain/module/ae260750-791b-496c-991f-0d0333f61e40/lesson/1d5a8e19-7bfd-497d-8e3e-8ffd23c70eb3" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[SECRET_REDACTED]-791b-496c-991f-0d0333f61e40/lesson/1d5a8e19-7bfd-497d-8e3e-8ffd23c70eb3" />
 </CardGroup>

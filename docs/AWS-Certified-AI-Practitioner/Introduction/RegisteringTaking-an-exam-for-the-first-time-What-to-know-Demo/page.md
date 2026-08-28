@@ -1,6 +1,6 @@
 # RegisteringTaking an exam for the first time What to know Demo
 
-Source: https://notes.kodekloud.com/docs/AWS-Certified-AI-Practitioner/Introduction/RegisteringTaking-an-exam-for-the-first-time-What-to-know-Demo/page
+Source: https://notes.kodekloud.com/docs/AWS-Certified-AI-[SECRET_REDACTED]-an-exam-for-the-first-time-What-to-know-Demo/page
 
 This article provides a step-by-step guide for registering for the AWS AI Practitioner exam for first-time candidates.
 

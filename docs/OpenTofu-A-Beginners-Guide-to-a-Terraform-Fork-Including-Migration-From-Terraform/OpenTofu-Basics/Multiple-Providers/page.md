@@ -36,7 +36,7 @@ Here, `alpha` appears in **us-east-1** (default) and `beta` in **ca-central-1** 
 
 * [OpenTofu Provider Aliases](https://docs.opentofu.io/configuration/providers/#provider-aliases)
 * [AWS Regions and Availability Zones](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-regions-availability-zones.html)
-* [Terraform Providers Documentation](https://www.terraform.io/docs/language/providers/configuration.html)
+* [Terraform Providers Documentation](https://www.terraform.[AWS_SECRET_ACCESS_KEY].html)
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/c3586b29-e450-4c95-bad9-91bdf332eb24/lesson/8c04d4c3-0f65-454a-95b3-b95dcdc21e6a" />

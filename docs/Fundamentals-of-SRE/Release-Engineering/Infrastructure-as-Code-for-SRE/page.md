@@ -1,7 +1,7 @@
 # config.py
 # (accidentally public!)
 DATABASE_PASSWORD = "super_secret_123"
-AWS_ACCESS_KEY = "AKIAIOSFODNN7EXAMPLE"
+AWS_ACCESS_KEY = "[AWS_ACCESS_KEY_ID]"
 ```
 
 Environment inconsistency example (three environment documents):

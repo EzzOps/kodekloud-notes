@@ -111,7 +111,7 @@ makeDuckQuack(daffy, 2);
 Further reading:
 
 * TypeScript function documentation: [https://www.typescriptlang.org/docs/handbook/functions.html](https://www.typescriptlang.org/docs/handbook/functions.html)
-* MDN: Nullish coalescing operator (`??`): [https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Nullish\_coalescing\_operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Nullish_coalescing_operator)
+* MDN: Nullish coalescing operator (`??`): [https://developer.mozilla.org/en-US[AWS_SECRET_ACCESS_KEY]/Nullish\_coalescing\_operator](https://developer.mozilla.org/en-US[AWS_SECRET_ACCESS_KEY]/Nullish_coalescing_operator)
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/cdk-for-terraform-with-typescript/module/eb523de4-1aeb-429a-820a-20d9f6426562/lesson/3102a69a-afd3-46c1-b297-07c2a8cd4c62" />

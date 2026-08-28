@@ -101,7 +101,7 @@ With these steps complete, all workshop resources are cleaned up.
 * [Deleting Amazon RDS Snapshots](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_DeleteSnapshot.html)
 * [AWS CDK CLI Reference](https://docs.aws.amazon.com/cdk/v2/guide/cli.html#cli-destroy)
 * [Deleting Auto Scaling Groups](https://docs.aws.amazon.com/autoscaling/ec2/userguide/deleting-asg.html)
-* [Deleting CloudWatch Log Groups](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/Working-with-log-groups-and-streams.html#delete-log-group)
+* [Deleting CloudWatch Log Groups](https://docs.aws.amazon.[AWS_SECRET_ACCESS_KEY]-with-log-groups-and-streams.html#delete-log-group)
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/chaos-engineering/module/141fe614-4e37-4e09-901b-dd914d7cd6e1/lesson/2a31854b-9ab2-410b-a718-a8cf188274d9" />

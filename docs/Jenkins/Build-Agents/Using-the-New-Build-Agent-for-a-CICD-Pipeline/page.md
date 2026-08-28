@@ -55,7 +55,7 @@ After the build is initiated, inspect the console output to verify that the buil
 ```bash theme={null}
 Started by user mike
 Running as SYSTEM
-Building remotely on ubuntuagent in workspace /home/newuser/workspace/ubuntutestpipeline
+Building remotely on ubuntuagent in workspace /[SECRET_REDACTED]
 [ubuntutestpipeline] $ /bin/sh -xe /tmp/jenkins1094049092160565796.sh
 + echo "testing to confirm the build agent works"
 testing to confirm the build agent works
@@ -69,7 +69,7 @@ This output confirms that the build agent is correctly configured and functionin
 </Callout>
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins/module/1abff4aa-214c-48a2-98f1-2188e2e446bd/lesson/f1007797-2386-4f55-8534-2e59f58b48ec" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[AWS_SECRET_ACCESS_KEY]-214c-48a2-98f1-2188e2e446bd/lesson/f1007797-2386-4f55-8534-2e59f58b48ec" />
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/jenkins/module/1abff4aa-214c-48a2-98f1-2188e2e446bd/lesson/887f1f29-e6bf-41f0-83c4-3e8391207821" />
+  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.[AWS_SECRET_ACCESS_KEY]-214c-48a2-98f1-2188e2e446bd/lesson/887f1f29-e6bf-41f0-83c4-3e8391207821" />
 </CardGroup>

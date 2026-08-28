@@ -55,7 +55,7 @@ References:
 Now that the handbook is loaded and split into page-level Documents, you can proceed to embedding, indexing, and building your RAG-powered Q\&A or chat application. Similar loader patterns apply to web pages and other document formats (use appropriate loaders and OCR tools where necessary).
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langchain/module/e47b44c9-65c3-46f8-8bed-b075a18ab12b/lesson/18155e0f-cc83-4438-ac30-051e60337344" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[SECRET_REDACTED]-65c3-46f8-8bed-b075a18ab12b/lesson/18155e0f-cc83-4438-ac30-051e60337344" />
 </CardGroup>
 
 

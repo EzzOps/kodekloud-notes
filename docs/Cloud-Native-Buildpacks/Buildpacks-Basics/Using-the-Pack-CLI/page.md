@@ -86,8 +86,8 @@ REMOTE:
 LOCAL:
 Stack: io.buildpacks.samples.stacks.jammy
 Base Image:
-  Reference: 758d79de4a1c70f3e53634fb2f9af4a05af19e705d1cf6230b91706117939c0
-  Top Layer: sha256:115b6a185d688fbb39d771faa8aae0aa2eb1e3b0f5c3ea47e2dfc25a831764
+  Reference: [SECRET_REDACTED]
+  Top Layer: sha256:[SECRET_REDACTED]
 
 Run Images:
   cnbs/sample-base-run:jammy
@@ -96,7 +96,7 @@ Rebasable: true
 
 Buildpacks:
   ID                  VERSION  HOMEPAGE
-  samples/java-maven  0.0.2    https://github.com/buildpacks/samples/tree/main/buildpacks/java-maven
+  samples/java-maven  0.0.2    https://github.com[AWS_SECRET_ACCESS_KEY]/java-maven
 
 Processes:
   TYPE  SHELL      COMMAND   ARGS                                    WORK DIR

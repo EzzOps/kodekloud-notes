@@ -37,7 +37,7 @@ from torch.hub import load_state_dict_from_url
 
 # Dictionary pointing to the URL of the models
 models_url = {
-    'fake_model': 'https://github.com/kodekcloudhub/PyTorch/raw/refs/heads/main/'
+    'fake_model': 'https://github.[AWS_SECRET_ACCESS_KEY]/main/'
 }
 
 # Model class definition
@@ -98,7 +98,7 @@ For further reading and more resources, check out the following:
 * [Visual Studio Code Documentation](https://code.visualstudio.com/docs)
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/pytorch/module/5a59db15-2490-4be0-a894-4b3d3cc78fac/lesson/c75e932d-fe2f-4f2d-874b-4bee72227c2f" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[AWS_SECRET_ACCESS_KEY]-2490-4be0-a894-4b3d3cc78fac/lesson/c75e932d-fe2f-4f2d-874b-4bee72227c2f" />
 </CardGroup>
 
 

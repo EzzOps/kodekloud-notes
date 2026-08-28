@@ -69,7 +69,7 @@ Continue to the quiz to test your understanding of Linux hardware configuration 
 
 # Conclusion
 
-Source: https://notes.kodekloud.com/docs/Prep-Course-Linux-Foundation-Certified-System-Administrator-LFCS-Certification/Conclusion/Conclusion/page
+Source: https://notes.kodekloud.com/docs/Prep-Course-Linux-Foundation-Certified-System-Administrator-LFCS-[AWS_SECRET_ACCESS_KEY]
 
 This article concludes a Linux System Administration course, highlighting skills learned and encouraging further exploration in the field.
 

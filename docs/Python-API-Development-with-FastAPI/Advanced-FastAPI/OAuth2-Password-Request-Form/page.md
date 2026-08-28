@@ -123,7 +123,7 @@ An example successful response might look like:
 
 ```json theme={null}
 {
-  "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxMTE2MTU1MTAzODMwMTc5NzE4LCJzdWIiOiJzYW5qZWV2QGdtYWlsLmNvbSIsImlhdCI6MTYyNzEyMDQwMSwiZXhwIjoxNjI3MTI0MDAxfQ.6I8HwvPCyVexRqXlW1IDGTo",
+  "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.[SECRET_REDACTED].6I8HwvPCyVexRqXlW1IDGTo",
   "token_type": "bearer"
 }
 ```

@@ -11,7 +11,7 @@ Summary
 Links and references
 
 * [OpenTelemetry Collector](https://opentelemetry.io/docs/collector/)
-* [OTLP protocol specification](https://opentelemetry.io/docs/reference/specification/protocol/otlp/)
+* [OTLP protocol specification](https://opentelemetry.[AWS_SECRET_ACCESS_KEY]/otlp/)
 * [Jaeger Tracing](https://www.jaegertracing.io/)
 * telemetrygen (generate telemetry): [https://github.com/open-telemetry/opentelemetry-collector-contrib/tree/main/cmd/telemetrygen](https://github.com/open-telemetry/opentelemetry-collector-contrib/tree/main/cmd/telemetrygen)
 

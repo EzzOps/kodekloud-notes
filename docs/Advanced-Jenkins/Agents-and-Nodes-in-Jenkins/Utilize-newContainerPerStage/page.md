@@ -173,7 +173,7 @@ Controller logs for such a run show the Docker image build and the container sta
 
 ```console theme={null}
 [Pipeline] sh
-+ docker build -t 0f559f3f6ac2e220b616594d407b50bd36d83f74 -f Dockerfile.cowsay .
++ docker build -t [AWS_SECRET_ACCESS_KEY] -f Dockerfile.cowsay .
 #1 [internal] load build definition from Dockerfile.cowsay
 #1 DONE 0.0s
 #2 [internal] load metadata for docker.io/library/node:18-alpine
@@ -185,7 +185,7 @@ Controller logs for such a run show the Docker image build and the container sta
 #6 exporting to image
 #6 writing image sha256:d76b723... done
 [Pipeline] withDockerContainer
-$ docker run -t -d -u 0:0 -w /home/jenkins-agent/workspace/pipeline-external-agent -v /home/jenkins-agent/workspace/pipeline-external-agent:/home/jenkins-agent/workspace/pipeline-external-agent:rw,z 0f559f3f6ac2e220b616594d407b50bd36d83f74 cat
+$ docker run -t -d -u 0:0 -w /home/jenkins-agent/workspace/pipeline-external-agent -v /home/jenkins-agent/workspace/pipeline-external-agent:/home/jenkins-agent/workspace/pipeline-external-agent:rw,z [AWS_SECRET_ACCESS_KEY] cat
 ```
 
 ### Sharing files via the container filesystem

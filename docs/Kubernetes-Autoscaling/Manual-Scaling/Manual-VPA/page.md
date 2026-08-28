@@ -93,7 +93,7 @@ kubectl get vpa -o yaml
 Links and references
 
 * [Kubernetes: Pods](https://kubernetes.io/docs/concepts/workloads/pods/)
-* [Kubernetes: Vertical Pod Autoscaler (VPA) GitHub](https://github.com/kubernetes/autoscaler/tree/master/vertical-pod-autoscaler)
+* [Kubernetes: Vertical Pod Autoscaler (VPA) GitHub](https://github.[SECRET_REDACTED]-pod-autoscaler)
 * [Kubernetes Documentation](https://kubernetes.io/docs/)
 
 This lab demonstrates the core behavior of VPA-driven resizing: resource request changes result in Pod recreation so the scheduler can place the new Pod with appropriate resources.

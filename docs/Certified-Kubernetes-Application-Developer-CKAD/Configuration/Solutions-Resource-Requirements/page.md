@@ -73,7 +73,7 @@ In the output, locate the **Last State** section. You might observe output simil
 
 ```plaintext theme={null}
 Image: polinux/stress
-Image ID: docker.io/polinux/stress@sha256:b6144f84f9c15dac80deb48d3a646b55c7043ab1d83ea0a697c09097aaad21aa
+Image ID: docker.io/polinux/stress@sha256:[SECRET_REDACTED]
 Port: <none>
 Host Port: <none>
 Command:

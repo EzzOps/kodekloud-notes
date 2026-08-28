@@ -8,7 +8,7 @@
 ## References and Further Reading
 
 * [Ansible CLI Options](https://docs.ansible.com/ansible/latest/cli/ansible-playbook.html#cmdoption-ansible-playbook-check)
-* [kubectl dry-run Documentation](https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands#apply)
+* [kubectl dry-run Documentation](https://kubernetes.io/[AWS_SECRET_ACCESS_KEY]-commands#apply)
 * [Puppet noop Mode](https://puppet.com/docs/puppet/latest/applying_catalogs.html#noop)
 
 For more on advanced Bash scripting patterns and best practices, visit the [Advanced Bash-Scripting Guide](https://tldp.org/LDP/abs/html/).

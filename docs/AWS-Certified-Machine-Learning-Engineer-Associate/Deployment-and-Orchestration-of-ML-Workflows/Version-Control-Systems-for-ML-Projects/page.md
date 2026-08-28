@@ -109,7 +109,7 @@ Summary
 Links and references
 
 * [AWS CodeCommit documentation](https://docs.aws.amazon.com/codecommit/latest/userguide/welcome.html)
-* [Amazon S3 Versioning](https://docs.aws.amazon.com/AmazonS3/latest/userguide/Versioning.html)
+* [Amazon S3 Versioning](https://docs.aws.amazon.[AWS_SECRET_ACCESS_KEY].html)
 * [SageMaker Model Registry](https://docs.aws.amazon.com/sagemaker/latest/dg/model-registry.html)
 * [CI/CD for ML on AWS — reference architectures and best practices](https://aws.amazon.com/solutions/implementations/machine-learning-ci-cd/)
 

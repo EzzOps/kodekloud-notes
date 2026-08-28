@@ -237,8 +237,8 @@ You’ve successfully deployed a static website with S3 and CloudFront. In futur
 ## References
 
 * [Amazon S3 Documentation](https://docs.aws.amazon.com/s3/index.html)
-* [Amazon CloudFront Developer Guide](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/)
-* [How CloudFront Caching Works](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Expiration.html)
+* [Amazon CloudFront Developer Guide](https://docs.aws.amazon.[SECRET_REDACTED]/)
+* [How CloudFront Caching Works](https://docs.aws.amazon.com[AWS_SECRET_ACCESS_KEY]Expiration.html)
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/aws-networking-fundamentals/module/d31cb856-303b-4a11-b280-b8729906670b/lesson/bdbb21b3-aeb7-4e93-bee5-b0f6143c3d31" />

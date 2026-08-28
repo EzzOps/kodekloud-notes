@@ -28,9 +28,9 @@ The goal of this section is to point you to authoritative resources and give pra
 That concludes this section on tips, tricks, and resources. The next section introduces LCEL, the LangChain Expression Language.
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langchain/module/b5f7771a-fdbc-45b1-a786-6c84bb7ffc76/lesson/376f67ca-6dca-40d9-9d3a-830470975c42" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[SECRET_REDACTED]-fdbc-45b1-a786-6c84bb7ffc76/lesson/376f67ca-6dca-40d9-9d3a-830470975c42" />
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/langchain/module/b5f7771a-fdbc-45b1-a786-6c84bb7ffc76/lesson/eaabef57-b4d7-4497-aa1d-3bc1724723f4" />
+  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.[SECRET_REDACTED]-fdbc-45b1-a786-6c84bb7ffc76/lesson/eaabef57-b4d7-4497-aa1d-3bc1724723f4" />
 </CardGroup>
 
 

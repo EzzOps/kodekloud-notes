@@ -32,7 +32,7 @@ The virt-install command begins by downloading necessary installation files and 
 
 ```bash theme={null}
 jeremy@kodekloud:~$ virt-install --osinfo debian12 --name debian1 --memory 1024 --vcpus 1 --disk size=1 \
---location https://deb.debian.org/debian/dists/bookworm/main/installer-amd64/ --graphics none --extra-args "console=ttyS0"
+--location https://deb.debian.[AWS_SECRET_ACCESS_KEY]-amd64/ --graphics none --extra-args "console=ttyS0"
 Starting install...
 Retrieving 'linux'          
 Retrieving 'initrd.gz'     

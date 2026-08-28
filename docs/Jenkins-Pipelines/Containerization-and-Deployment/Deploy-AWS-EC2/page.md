@@ -33,7 +33,7 @@ The environment variables printed include key information such as job URL, build
 For instance, a [GitHub](https://github.com) log may display:
 
 ```bash theme={null}
-* docker build -t siddharth67/solar-system:9dc4ba421562f14b04dec2141938fd02a5ac0ad1 .
+* docker build -t siddharth67/solar-system:[AWS_SECRET_ACCESS_KEY] .
 #0 building with "default" instance using docker driver
 #1 [internal] load build definition from Dockerfile
 #1 transferring dockerfile: 282B done
@@ -41,7 +41,7 @@ For instance, a [GitHub](https://github.com) log may display:
 #2 DONE 1.8s
 #3 [internal] load .dockerignore
 #3 transferring context: 754B done
-#4 [5/5] FROM docker.io/library/node:18-alpine3.17@sha256:6293c86a33900ed145ae71957411b2c2e37e839a5632beff8292a579102cdf2
+#4 [5/5] FROM docker.io/library/node:18-alpine3.17@sha256:[SECRET_REDACTED]
 #5 [internal] load build context
 #5 transferring context: 169.77kB 0.0s
 # DONE 0.1s
@@ -62,7 +62,7 @@ docker build -t siddharth67/solar-system:$GIT_COMMIT - < Dockerfile
 #2 DONE 1.8s
 #3 [internal] load .dockerignore
 #3 DONE 0.0s
-#4 [1/5] FROM docker.io/library/node:18-alpine3.17@sha256:6293c8a63890ed145ae719574112bc2e3e7389a56328f8d292a579102dcf2
+#4 [1/5] FROM docker.io/library/node:18-alpine3.17@sha256:[SECRET_REDACTED]
 #4 DONE 0.0s
 #5 [internal] load build context
 #5 transferring context: 169.77kB 0.1s done
@@ -77,8 +77,8 @@ docker build -t siddharth67/solar-system:$GIT_COMMIT - < Dockerfile
 #9 DONE 0.1s
 #10 exporting to image
 #10 exporting layers 0.0s done
-#10 writing image sha256:378b62314367eb1bb48ef99115cfa621af16b0445453964cf743af57b42cf done
-#10 naming to docker.io/siddharth67/solar-system:94bcab44b21562f410bdec214193f8fd2a5ac0bad1 done
+#10 writing image sha256:[SECRET_REDACTED] done
+#10 naming to docker.io/siddharth67/solar-system:[SECRET_REDACTED] done
 #10 DONE 0.0s
 ```
 

@@ -30,7 +30,7 @@ template:
   spec:
     affinity:
       podAntiAffinity:
-        requiredDuringSchedulingIgnoredDuringExecution:
+        [SECRET_REDACTED]:
           - labelSelector:
               matchExpressions:
                 - key: app
@@ -107,7 +107,7 @@ Below is a snippet of the updated Deployment configuration, which also includes 
 ```yaml theme={null}
 affinity:
   podAntiAffinity:
-    requiredDuringSchedulingIgnoredDuringExecution:
+    [SECRET_REDACTED]:
       - labelSelector:
           matchExpressions:
             - key: app

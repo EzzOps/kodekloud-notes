@@ -114,8 +114,8 @@ Both CloudFront Functions and Lambda\@Edge extend your CDN with programmable log
 
 ## References
 
-* [AWS CloudFront Functions Documentation](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/cloudfront-functions.html)
-* [AWS Lambda@Edge Developer Guide](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/lambda-at-the-edge.html)
+* [AWS CloudFront Functions Documentation](https://docs.aws.amazon.com[AWS_SECRET_ACCESS_KEY]cloudfront-functions.html)
+* [AWS Lambda@Edge Developer Guide](https://docs.aws.amazon.com[AWS_SECRET_ACCESS_KEY]lambda-at-the-edge.html)
 * [Amazon CloudFront Overview](https://aws.amazon.com/cloudfront/)
 
 <CardGroup>

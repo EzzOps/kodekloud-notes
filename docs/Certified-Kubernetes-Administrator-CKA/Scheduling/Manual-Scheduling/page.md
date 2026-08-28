@@ -109,7 +109,7 @@ If a pod is already running and you need to change its node assignment, you cann
 3. Convert the YAML binding to JSON (e.g., save it as `binding.json`) and send a POST request to the pod’s binding API using curl:
 
    ```bash theme={null}
-   curl --header "Content-Type: application/json" --request POST --data @binding.json http://$SERVER/api/v1/namespaces/default/pods/nginx/binding
+   curl --header "Content-Type: application/json" --request POST --data @binding.json http://$SERVER/api/[AWS_SECRET_ACCESS_KEY]
    ```
 
 This binding instructs Kubernetes to assign the existing pod to the specified node without altering its original manifest.

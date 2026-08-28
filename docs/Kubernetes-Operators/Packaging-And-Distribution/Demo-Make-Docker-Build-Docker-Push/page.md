@@ -160,9 +160,9 @@ The project uses a multi-stage Dockerfile. The build usually compiles a `manager
 => CACHED [stage-1 2/3] COPY --from=builder /workspace/manager .
 exporting to image
 => exporting layers
-=> exporting manifest sha256:8a81b15d6d50b0094af375f659be04fdcb422a84ccd50d7e5b5968dcf220ab6a
-=> exporting config sha256:31b190ab9c56c6b65483f180bbce9c28a5f51b8eafc8ee78608f35f47675f90e
-=> exporting attestation manifest sha256:5adf21588e94c411886136fcad009a7cfa809ab043dd059a09e22b
+=> exporting manifest sha256:[SECRET_REDACTED]
+=> exporting config sha256:[SECRET_REDACTED]
+=> exporting attestation manifest sha256:[SECRET_REDACTED]
 => naming to 127.0.0.1:5000/course/webapp-operator:v0.1.0
 => unpacking to 127.0.0.1:5000/course/webapp-operator:v0.1.0
 ```
@@ -193,7 +193,7 @@ d6b1b89eccac: Pushed
 b839dfae016f: Pushed
 99ba982a9142: Pushed
 ebdc5f54cdc: Pushed
-v0.1.0: digest: sha256:db81233d7799521a10305a9e722847a1920e2ceec4f67fdd43bae2c23ba50086 size: 856
+v0.1.0: digest: sha256:[SECRET_REDACTED] size: 856
 ```
 
 The registry manifest written for `v0.1.0` is what Kubernetes later uses when resolving the image reference during deployment.
@@ -209,15 +209,15 @@ docker buildx imagetools inspect $IMG
 Example output shows the tag's digest and the platform manifests it references:
 
 ```console theme={null}
-Digest: sha256:db81233d7799521a10305a9e722847a1920e2ceec4f67fdd43bae2c23ba50086
+Digest: sha256:[SECRET_REDACTED]
 
 Manifests:
-  Name: 127.0.0.1:5000/course/webapp-operator:v0.1.0@sha256:8a81b15d6d50b0094af375f659be04fdcb422a84ccd50d7e5b5968dcf220ab6a
+  Name: 127.0.0.1:5000/course/webapp-operator:v0.1.0@sha256:[SECRET_REDACTED]
   MediaType: application/vnd.oci.image.manifest.v1+json
   Platform:
     linux/amd64
 
-  Name: 127.0.0.1:5000/course/webapp-operator:v0.1.0@sha256:5adf21588e94c411886136fcad009a7cfa809ab043dd059a09e22b
+  Name: 127.0.0.1:5000/course/webapp-operator:v0.1.0@sha256:[SECRET_REDACTED]
   MediaType: application/vnd.oci.image.manifest.v1+json
   Platform: unknown/unknown
 ```

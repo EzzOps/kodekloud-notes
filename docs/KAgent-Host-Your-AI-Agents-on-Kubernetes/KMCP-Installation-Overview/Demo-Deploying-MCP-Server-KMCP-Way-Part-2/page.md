@@ -196,7 +196,7 @@ Additional patterns
 ## References and further reading
 
 * [Kubernetes Basics](https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/)
-* [AWS Pricing API / Pricing List API](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/price-changes.html)
+* [AWS Pricing API / Pricing List API](https://docs.aws.amazon.[SECRET_REDACTED]-changes.html)
 * KAgent documentation (see your platform’s KAgent docs for agent manifest details and modelConfig options)
 
 That’s it for this lab-style lesson. Experiment with different tool combinations, regions, instance families, and purchase options to explore the full capabilities of agents + MCP servers.

@@ -144,7 +144,7 @@ Best practices and tips
 Links and references
 
 * AWS CloudFormation Documentation: [https://docs.aws.amazon.com/cloudformation/](https://docs.aws.amazon.com/cloudformation/)
-* CloudFormation Best Practices: [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/best-practices.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/best-practices.html)
+* CloudFormation Best Practices: [https://docs.aws.amazon.com[AWS_SECRET_ACCESS_KEY]-practices.html](https://docs.aws.amazon.com[AWS_SECRET_ACCESS_KEY]-practices.html)
 * [Kubernetes Documentation](https://kubernetes.io/docs/) (concept reference)
 * [Docker Hub](https://hub.docker.com/)
 * [Terraform Registry](https://registry.terraform.io/)

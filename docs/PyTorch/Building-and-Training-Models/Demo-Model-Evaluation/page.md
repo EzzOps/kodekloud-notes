@@ -265,9 +265,9 @@ For more information on neural networks and model training, consider exploring t
 * [FashionMNIST Dataset](https://github.com/zalandoresearch/fashion-mnist)
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/pytorch/module/b8cb82ae-a284-41d1-8469-7e60705bbab8/lesson/638a0372-15c1-4a36-a17e-8a29e4914f08" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[AWS_SECRET_ACCESS_KEY]-a284-41d1-8469-7e60705bbab8/lesson/638a0372-15c1-4a36-a17e-8a29e4914f08" />
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/pytorch/module/b8cb82ae-a284-41d1-8469-7e60705bbab8/lesson/8462ddce-ac18-4e06-b701-2d315b1bdc77" />
+  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.[AWS_SECRET_ACCESS_KEY]-a284-41d1-8469-7e60705bbab8/lesson/8462ddce-ac18-4e06-b701-2d315b1bdc77" />
 </CardGroup>
 
 

@@ -65,7 +65,7 @@ Sample trimmed output (success):
 ```bash theme={null}
 latest: Pulling from azure-cognitive-services/textanalytics/sentiment
 ...
-Digest: sha256:2588b79b18513da0917ff6cc53ef6d8292985d8b1bf83d4f98739f08bb94207f
+Digest: sha256:[SECRET_REDACTED]
 Status: Downloaded newer image for mcr.microsoft.com/azure-cognitive-services/textanalytics/sentiment:latest
 ```
 

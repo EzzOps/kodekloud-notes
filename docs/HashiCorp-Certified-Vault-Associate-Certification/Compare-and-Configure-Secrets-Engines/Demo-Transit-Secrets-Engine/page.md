@@ -162,7 +162,7 @@ vault write transit/decrypt/training \
 Decode the Base64 plaintext:
 
 ```bash theme={null}
-echo R2V0dGluZyBTdGFydGVkIHdpdGggSGFzaGlDb3JjIFZhdWx0 \
+echo [SECRET_REDACTED] \
   | base64 --decode
 ```
 

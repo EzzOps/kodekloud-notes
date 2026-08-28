@@ -50,7 +50,7 @@ References
 
 * CDKTF documentation: [https://developer.hashicorp.com/terraform/cdktf](https://developer.hashicorp.com/terraform/cdktf)
 * AWS Lambda docs: [https://docs.aws.amazon.com/lambda/latest/dg/welcome.html](https://docs.aws.amazon.com/lambda/latest/dg/welcome.html)
-* Amazon API Gateway docs (REST APIs): [https://docs.aws.amazon.com/apigateway/latest/developerguide/rest-api.html](https://docs.aws.amazon.com/apigateway/latest/developerguide/rest-api.html)
+* Amazon API Gateway docs (REST APIs): [https://docs.aws.amazon.[SECRET_REDACTED]-api.html](https://docs.aws.amazon.[SECRET_REDACTED]-api.html)
 * Terraform AWS provider: [https://registry.terraform.io/providers/hashicorp/aws/latest/docs](https://registry.terraform.io/providers/hashicorp/aws/latest/docs)
 
 We'll now expand the CDKTF stack to create the Lambda deployment package, Lambda resource, API Gateway resources, and the necessary IAM policies — all as code so Arthur can share the project and reproduce the setup reliably.

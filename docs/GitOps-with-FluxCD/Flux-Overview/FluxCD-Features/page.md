@@ -16,7 +16,7 @@ flux create image automation my-app \
 
 * [FluxCD Documentation](https://fluxcd.io/docs/)
 * [GitOps with Flux](https://github.com/fluxcd/flux2)
-* [Kubernetes Controllers](https://kubernetes.io/docs/concepts/architecture/controller/)
+* [Kubernetes Controllers](https://kubernetes.[AWS_SECRET_ACCESS_KEY]/)
 * [Helm Charts in Flux](https://fluxcd.io/docs/components/helm/)
 
 <CardGroup>

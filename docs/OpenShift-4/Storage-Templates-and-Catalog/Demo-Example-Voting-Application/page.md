@@ -254,7 +254,7 @@ triggers:
       type: GitHub
   - imageChange:
       lastTriggeredImageID: >
-        docker.io/centos/httpd-24-centos7@sha256:d47bd682139adc7af6fcf684163abb8f8fc53196e4ec285357989a837b300abf62
+        docker.io/centos/httpd-24-centos7@sha256:[SECRET_REDACTED]
       type: ImageChange
 status:
   lastVersion: 1

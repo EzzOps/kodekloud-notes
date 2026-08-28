@@ -107,7 +107,7 @@ stages {
     }
     stage('Install KubeLinter') {
         steps {
-            sh 'curl -sSfL https://raw.githubusercontent.com/stackrox/kubelinter/main/scripts/install.sh | sh -'
+            sh 'curl -sSfL https://raw.githubusercontent.com/[AWS_SECRET_ACCESS_KEY].sh | sh -'
         }
     }
     stage('Lint Kubernetes Manifests') {

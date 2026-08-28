@@ -33,7 +33,7 @@ AWS uses JSON-formatted policy documents to define permissions. Below is an exam
 
 ## Defining Resources in Terraform
 
-To add permissions via Terraform, you will use the `aws_iam_policy` resource. According to the [AWS Terraform Provider Documentation](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/iam_policy), the only mandatory argument for this resource is the policy document in JSON format.
+To add permissions via Terraform, you will use the `aws_iam_policy` resource. According to the [AWS Terraform Provider Documentation](https://registry.terraform.[SECRET_REDACTED]iam_policy), the only mandatory argument for this resource is the policy document in JSON format.
 
 ### Step 1: Declare the IAM User and IAM Policy
 

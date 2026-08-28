@@ -41,7 +41,7 @@ resource "aws_instance" "cerberus" {
 </Frame>
 
 <Callout icon="lightbulb">
-  Check the AWS Provider Data Sources documentation for all available arguments and attributes: [https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/key\_pair](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/key_pair)
+  Check the AWS Provider Data Sources documentation for all available arguments and attributes: [https://registry.terraform.io/[AWS_SECRET_ACCESS_KEY]-sources/key\_pair](https://registry.terraform.io/[AWS_SECRET_ACCESS_KEY]-sources/key_pair)
 </Callout>
 
 ## Filtering Data Sources by Tags
@@ -82,7 +82,7 @@ resource "aws_instance" "cerberus" {
 ## Links and References
 
 * [OpenTofu Documentation](https://opentofu.io/)
-* [Terraform AWS Provider Data Sources](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/)
+* [Terraform AWS Provider Data Sources](https://registry.terraform.io/[AWS_SECRET_ACCESS_KEY]-sources/)
 * [AWS CloudFormation](https://docs.aws.amazon.com/cloudformation/)
 * [Ansible](https://www.ansible.com/)
 

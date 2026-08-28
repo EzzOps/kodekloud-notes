@@ -137,9 +137,9 @@ Conditions:
 
 ## Links and references
 
-* [AWS CloudFormation – Conditions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/conditions-section-structure.html)
-* [CloudFormation Intrinsic Functions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference.html)
-* [AWS::NoValue pseudo parameter](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/pseudo-parameter-reference.html)
+* [AWS CloudFormation – Conditions](https://docs.aws.amazon.[SECRET_REDACTED]-section-structure.html)
+* [CloudFormation Intrinsic Functions](https://docs.aws.amazon.[SECRET_REDACTED]-function-reference.html)
+* [AWS::NoValue pseudo parameter](https://docs.aws.amazon.[SECRET_REDACTED]-parameter-reference.html)
 
 Conditions are a powerful way to make your CloudFormation templates reusable and environment-aware. Start by adding simple parameter-driven Conditions, then combine them with intrinsic functions as your template logic grows.
 

@@ -197,7 +197,7 @@ First, manually verify SSH connectivity from the Ansible controller to the targe
 ```bash theme={null}
 [osboxes@ansiblecontroller ~]$ ssh 192.168.1.114
 The authenticity of host '192.168.1.114 (192.168.1.114)' can't be established.
-ECDSA key fingerprint is SHA256:7s4hRBL0E0qffgA/2J/p2QH0mJTY/qHInXJ802LE.
+ECDSA key fingerprint is SHA256:[AWS_SECRET_ACCESS_KEY].
 ECDSA key fingerprint is MD5:84:26:6d:a0:87:34:cf:17:f8:8f:1b:6b:7e:ba.
 Are you sure you want to continue connecting (yes/no)?
 ```

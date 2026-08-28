@@ -65,7 +65,7 @@ console.log(listResponse);
 * The `CreateBucketCommand` is executed using `client.send()`, followed by a command to list all S3 buckets.
 * The resulting list of buckets is printed to the console.
 
-For additional details about available commands and configurations, refer to the [AWS SDK for JavaScript v3 documentation for S3](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/clients/client-s3/).
+For additional details about available commands and configurations, refer to the [AWS SDK for JavaScript v3 documentation for S3](https://docs.aws.amazon.[SECRET_REDACTED]-s3/).
 
 <Frame>
   ![The image shows a webpage from AWS SDK for JavaScript v3 documentation, detailing S3Client configuration and operations, including multipart upload commands.](https://kodekloud.com/kk-media/image/upload/v1752861822/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-SDK-Demo/frame_190.jpg)
@@ -88,7 +88,7 @@ Executing the script will display an output similar to the following, which conf
   "$metadata": {
     "httpStatusCode": 200,
     "requestId": "YmX6I8TKX7Z3YGE",
-    "extendedRequestId": "2K0QC2UCHH3WcpjovErQkX6eaH48ocNvkEM2/Byti3We4Tcg47DFVJN0tH26SNx6sTXPY98LQc-",
+    "extendedRequestId": "[SECRET_REDACTED]-",
     "cfId": undefined,
     "attempts": 1,
     "totalRetryDelay": 0
@@ -109,7 +109,7 @@ Executing the script will display an output similar to the following, which conf
   ],
   "Owner": {
     "DisplayName": "sktdem091",
-    "ID": "a343e01f12c18a7944ebc48e8b3af2b86082e70b3c72619a67e2dd6569cece0"
+    "ID": "[SECRET_REDACTED]"
   }
 }
 ```

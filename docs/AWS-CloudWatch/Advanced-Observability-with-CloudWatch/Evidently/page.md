@@ -62,7 +62,7 @@ Integrate Evidently with other AWS services for a seamless workflow:
 | AWS Service     | Integration Pattern                    | Reference                                                                           |
 | --------------- | -------------------------------------- | ----------------------------------------------------------------------------------- |
 | AWS Lambda      | Run experiment logic in functions      | [Lambda Docs](https://docs.aws.amazon.com/lambda/latest/dg/welcome.html)            |
-| Amazon DynamoDB | Store feature metadata and results     | [DynamoDB Guide](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/) |
+| Amazon DynamoDB | Store feature metadata and results     | [DynamoDB Guide](https://docs.aws.amazon.[AWS_SECRET_ACCESS_KEY]/) |
 | Amazon SNS      | Notify teams on experiment events      | [SNS Overview](https://docs.aws.amazon.com/sns/latest/dg/welcome.html)              |
 | AWS CloudWatch  | Collect and visualize logs and metrics | [CloudWatch Docs](https://docs.aws.amazon.com/cloudwatch/)                          |
 
@@ -97,15 +97,15 @@ Evidently is ideal for applications with large user bases and frequent feature r
 4. Launch experiments or deployments via the AWS Management Console or AWS CLI.
 5. Monitor results and roll out the winning variation.
 
-For detailed steps, see the [AWS CloudWatch Evidently User Guide](https://docs.aws.amazon.com/cloudwatchevidently/latest/userguide/).
+For detailed steps, see the [AWS CloudWatch Evidently User Guide](https://docs.aws.amazon.[AWS_SECRET_ACCESS_KEY]/).
 
 ***
 
 ## References
 
-* [AWS CloudWatch Evidently Documentation](https://docs.aws.amazon.com/cloudwatchevidently/latest/userguide/)
+* [AWS CloudWatch Evidently Documentation](https://docs.aws.amazon.[AWS_SECRET_ACCESS_KEY]/)
 * [AWS CloudWatch Overview](https://docs.aws.amazon.com/cloudwatch/)
-* [AWS CLI Reference](https://docs.aws.amazon.com/cli/latest/reference/cloudwatchevidently/)
+* [AWS CLI Reference](https://docs.aws.amazon.com/[AWS_SECRET_ACCESS_KEY]/)
 * [Kubernetes Basics](https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/)
 * [Terraform Registry](https://registry.terraform.io/)
 

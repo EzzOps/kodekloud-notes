@@ -27,14 +27,14 @@ steps:
     uses: actions/checkout@main
 
   - name: Checkout using a commit SHA
-    uses: actions/checkout@a824008085750b8e136effc585c3cd6082bd575f
+    uses: actions/checkout@[AWS_SECRET_ACCESS_KEY]
 ```
 
 | Strategy   | Syntax Example                                              | Pros                                        | Cons                                  |
 | ---------- | ----------------------------------------------------------- | ------------------------------------------- | ------------------------------------- |
 | Tag        | `actions/checkout@v3.6.0`                                   | Controlled upgrades between versions        | Requires manual version updates       |
 | Branch     | `actions/checkout@main`                                     | Automatically uses the latest code          | May introduce breaking changes        |
-| Commit SHA | `actions/checkout@a824008085750b8e136effc585c3cd6082bd575f` | Immutable reference for reproducible builds | Harder to benefit from upstream fixes |
+| Commit SHA | `actions/checkout@[AWS_SECRET_ACCESS_KEY]` | Immutable reference for reproducible builds | Harder to benefit from upstream fixes |
 
 <Callout icon="lightbulb">
   Tags strike a balance between stability and ease of upgrades. Use SHAs when you need fully reproducible builds.

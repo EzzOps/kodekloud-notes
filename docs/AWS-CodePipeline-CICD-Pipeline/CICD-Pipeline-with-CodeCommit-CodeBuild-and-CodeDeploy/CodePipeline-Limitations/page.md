@@ -57,7 +57,7 @@ Below are the default CodePipeline quotas you should plan for in each region:
 * Manual approval actions will time out after 7 days without a decision.
 * Artifacts are typically stored in Amazon S3. While S3 supports virtually unlimited objects, general S3 limits still apply.
 
-For the full list of quotas and best practices, see the [AWS CodePipeline Limits](https://docs.aws.amazon.com/codepipeline/latest/userguide/limits.html) documentation.
+For the full list of quotas and best practices, see the [AWS CodePipeline Limits](https://docs.aws.amazon.[AWS_SECRET_ACCESS_KEY].html) documentation.
 
 ## Links and References
 

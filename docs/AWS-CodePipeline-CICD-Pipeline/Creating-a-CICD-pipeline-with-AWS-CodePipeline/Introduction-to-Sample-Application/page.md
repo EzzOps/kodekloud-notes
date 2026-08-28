@@ -102,7 +102,7 @@ Ready to dive into Lab 1? Proceed to [Lab 1: S3 → CodeDeploy](#lab-1-s3--coded
 
 ### Links and References
 
-* [AWS CodePipeline Documentation](https://docs.aws.amazon.com/codepipeline/latest/userguide/welcome.html)
+* [AWS CodePipeline Documentation](https://docs.aws.amazon.[SECRET_REDACTED].html)
 * [AWS CodeCommit User Guide](https://docs.aws.amazon.com/codecommit/latest/userguide/what-is-codecommit.html)
 * [AWS CodeBuild Overview](https://docs.aws.amazon.com/codebuild/latest/userguide/welcome.html)
 * [AWS CodeDeploy Developer Guide](https://docs.aws.amazon.com/codedeploy/latest/userguide/welcome.html)

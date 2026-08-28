@@ -26,7 +26,7 @@ After installation, the plugin components are available under `@backstage-commun
 | ----------------------------- | --------------------------------------------------------------------------------------- |
 | Install frontend plugin       | `yarn --cwd packages/app add @backstage-community/plugin-github-actions`                |
 | Install backend auth provider | `yarn --cwd packages/backend add @backstage/plugin-auth-backend-module-github-provider` |
-| Frontend entity page          | `packages/app/src/components/catalog/EntityPage.tsx`                                    |
+| Frontend entity page          | `[SECRET_REDACTED].tsx`                                    |
 | Backend entrypoint            | `packages/backend/src/index.ts`                                                         |
 
 ## Back to the UI: the catalog and the entity page
@@ -59,10 +59,10 @@ If an entity is missing CI/CD annotations, the CI/CD tab will show an empty stat
 
 ## Adding the plugin UI to an entity page
 
-Import the plugin components and add a route to your entity layout. Edit `packages/app/src/components/catalog/EntityPage.tsx` and insert the GitHub Actions route:
+Import the plugin components and add a route to your entity layout. Edit `[SECRET_REDACTED].tsx` and insert the GitHub Actions route:
 
 ```tsx theme={null}
-// In packages/app/src/components/catalog/EntityPage.tsx
+// In [SECRET_REDACTED].tsx
 import {
   EntityGithubActionsContent,
   isGithubActionsAvailable,
@@ -88,7 +88,7 @@ The plugin exports an availability helper (`isGithubActionsAvailable`) to condit
 You can also combine multiple CI/CD providers using `EntitySwitch` to show the correct provider or an empty state:
 
 ```tsx theme={null}
-// packages/app/src/components/catalog/EntityPage.tsx (excerpt)
+// [SECRET_REDACTED].tsx (excerpt)
 import { EntitySwitch } from '@backstage/plugin-catalog-react';
 import { EntityGithubActionsContent, isGithubActionsAvailable } from '@backstage-community/plugin-github-actions';
 
@@ -244,7 +244,7 @@ Explore the community plugins repository and each plugin’s README for provider
 ## Links and references
 
 * Backstage plugins: [https://backstage.io/plugins](https://backstage.io/plugins)
-* Backstage community plugins repository: [https://github.com/backstage/backstage/tree/master/plugins](https://github.com/backstage/backstage/tree/master/plugins)
+* Backstage community plugins repository: [https://github.com[AWS_SECRET_ACCESS_KEY]](https://github.com[AWS_SECRET_ACCESS_KEY])
 * Backstage authentication docs: [https://backstage.io/docs/auth](https://backstage.io/docs/auth)
 * GitHub OAuth apps: [https://github.com/settings/developers](https://github.com/settings/developers)
 

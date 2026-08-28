@@ -99,7 +99,7 @@ Adjust `--engine` to your database engine (postgres, aurora, sqlserver, etc.).
 
 * [Amazon RDS instance classes — AWS Documentation](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.DBInstanceClass.html)
 * [Amazon RDS pricing and instance types](https://aws.amazon.com/rds/instance-types/)
-* [Amazon CloudWatch metrics for RDS](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/monitoring-cloudwatch.html)
+* [Amazon CloudWatch metrics for RDS](https://docs.aws.amazon.[SECRET_REDACTED]-cloudwatch.html)
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/aws-rds/module/e87c8f86-0a01-4b91-ad95-23e570a8bb2e/lesson/d2156646-db93-4256-9643-83f5d28bb181" />

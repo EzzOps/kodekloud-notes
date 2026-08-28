@@ -56,7 +56,7 @@ Helm should pull the chart and install the release. Example Helm output:
 
 ```bash theme={null}
 Pulled: ghcr.io/kagent-dev/kagent/helm/kagent:0.7.7
-Digest: sha256:070edef55214da5c8a964c21ee58869bc887e23a2dad37bf2922f1685fc7514c
+Digest: sha256:[SECRET_REDACTED]
 ```
 
 ### Expose the KAgent UI (local access)

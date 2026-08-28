@@ -58,14 +58,14 @@ Example (condensed) output:
 
 ```text theme={null}
 Pulled: ghcr.io/kserve/charts/kserve-crd:v0.17.0
-Digest: sha256:0a0ec0cdffd297ce9154ca02dedb544cb797d2ba9ee08009dc06582f2c53e22
+Digest: sha256:[SECRET_REDACTED]
 NAME: kserve-crd
 LAST DEPLOYED: Wed May 27 09:32:01 2026
 NAMESPACE: default
 STATUS: deployed
 
 Pulled: ghcr.io/kserve/charts/kserve-llmisvc-crd:v0.17.0
-Digest: sha256:702f93b1b1975808f8cb2db6586eb4979f06ecbcfe943a994ebd95b0ddfa02b
+Digest: sha256:[SECRET_REDACTED]
 NAME: kserve-llmisvc-crd
 LAST DEPLOYED: Wed May 27 09:32:15 2026
 NAMESPACE: default

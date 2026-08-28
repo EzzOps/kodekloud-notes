@@ -47,7 +47,7 @@ Consider the following excerpt as an example of an SBOM. It showcases key compon
     "downloadLocation": "NOASSERTION",
     "filesAnalyzed": true,
     "packageVerificationCode": {
-      "packageVerificationCodeValue": "6dab867e2a9f53bf5faee39422e2c82e551ca7d8d"
+      "packageVerificationCodeValue": "[SECRET_REDACTED]"
     },
     "sourceInfo": "acquired package info from DPKG DB: /usr/share/doc/grep/copyright, /var/lib/dpkg/info/grep.list",
     "licenseConcluded": "NOASSERTION",

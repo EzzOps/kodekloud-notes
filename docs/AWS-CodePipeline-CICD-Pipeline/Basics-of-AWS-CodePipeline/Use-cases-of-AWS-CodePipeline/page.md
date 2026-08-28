@@ -74,7 +74,7 @@ Whether you’re migrating to AWS or enhancing an existing DevOps workflow, Code
 
 ## Links and References
 
-* [AWS CodePipeline Documentation](https://docs.aws.amazon.com/codepipeline/latest/userguide/welcome.html)
+* [AWS CodePipeline Documentation](https://docs.aws.amazon.[SECRET_REDACTED].html)
 * [AWS CodeBuild User Guide](https://docs.aws.amazon.com/codebuild/latest/userguide/welcome.html)
 * [AWS CodeDeploy Developer Guide](https://docs.aws.amazon.com/codedeploy/latest/userguide/welcome.html)
 * [AWS CodeArtifact User Guide](https://docs.aws.amazon.com/codeartifact/latest/ug/what-is-codeartifact.html)

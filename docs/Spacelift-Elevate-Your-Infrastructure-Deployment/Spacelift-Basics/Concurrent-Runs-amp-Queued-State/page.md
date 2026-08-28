@@ -29,11 +29,11 @@ Next, verify that your AWS credentials are correctly stored on your local system
 space lift-demo on main via default
 > cat ~/.aws/credentials
 [default]
-aws_access_key_id = AKIAIAAWSJ5UTC5X42CU
-aws_secret_access_key = pqShHczzZPHyzozyN5+0gIHpntqd1VDOSnkfB09w
+aws_access_key_id = [AWS_ACCESS_KEY_ID]
+aws_secret_access_key = [AWS_SECRET_ACCESS_KEY]
 
 space lift-demo on main via default
-> AKIAIAAWSJ5UTC5X42CU
+> [AWS_ACCESS_KEY_ID]
 ```
 
 ## Creating a VPC

@@ -339,7 +339,7 @@ All telemetry was produced automatically by the instrumentation libraries that w
 
 # Instrumentation Libraries
 
-Source: https://notes.kodekloud.com/docs/Prep-Course-OpenTelemetry-Certified-Associate-OTCA-Certification/Instrumentation/Instrumentation-Libraries/page
+Source: https://notes.kodekloud.com/docs/Prep-Course-OpenTelemetry-Certified-Associate-OTCA-[SECRET_REDACTED]-Libraries/page
 
 Explains OpenTelemetry instrumentation libraries for Python, comparing manual and automatic tracing, auto-instrumentation with RequestsInstrumentor, and design goals for SDK-agnostic reusable instrumentations
 

@@ -139,7 +139,7 @@ aws fis delete-experiment-template \
 
 * [AWS Fault Injection Simulator Developer Guide](https://docs.aws.amazon.com/fis/latest/userguide/)
 * [AWS CLI Command Reference: FIS](https://docs.aws.amazon.com/cli/latest/reference/fis/index.html)
-* [Creating CloudWatch Alarms](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/AlarmThatSendsEmail.html)
+* [Creating CloudWatch Alarms](https://docs.aws.amazon.[SECRET_REDACTED].html)
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/chaos-engineering/module/d49a2b6d-60a1-4603-965d-7e8292688875/lesson/ce5778e0-60f3-4445-92db-12a89be03cad" />

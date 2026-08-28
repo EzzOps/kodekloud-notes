@@ -96,7 +96,7 @@ Concise summary of the manual deployment steps:
 Links and references
 
 * [AWS Lambda Function URLs](https://docs.aws.amazon.com/lambda/latest/dg/lambda-urls.html)
-* [AWS Secrets Manager](https://docs.aws.amazon.com/secretsmanager/latest/userguide/intro.html)
+* [AWS Secrets Manager](https://docs.aws.amazon.[SECRET_REDACTED].html)
 * [AWS Systems Manager Parameter Store](https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-parameter-store.html)
 * [AWS CLI Lambda Commands](https://docs.aws.amazon.com/cli/latest/reference/lambda/index.html)
 * [serverless-http on npm](https://www.npmjs.com/package/serverless-http)

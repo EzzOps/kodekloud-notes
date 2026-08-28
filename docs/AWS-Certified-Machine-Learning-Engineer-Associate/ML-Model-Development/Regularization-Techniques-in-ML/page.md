@@ -64,7 +64,7 @@ Best practices
 
 Links and references
 
-* [NumPy SVD documentation](https://numpy.org/doc/stable/reference/generated/numpy.linalg.svd.html)
+* [NumPy SVD documentation](https://numpy.[AWS_SECRET_ACCESS_KEY].linalg.svd.html)
 * [SageMaker Neo documentation](https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-neo.html)
 * [Kubernetes Documentation (for deploying model servers)](https://kubernetes.io/docs/)
 * [Edge AI and On-Device ML resources](https://www.tensorflow.org/lite)

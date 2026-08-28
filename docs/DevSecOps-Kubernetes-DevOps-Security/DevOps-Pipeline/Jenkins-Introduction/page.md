@@ -68,7 +68,7 @@ http://<your-vm-dns-name>:8080
 On first access, Jenkins prompts for the initial admin password. Retrieve it from the VM:
 
 ```bash theme={null}
-sudo cat /var/lib/jenkins/secrets/initialAdminPassword
+sudo cat /var/[AWS_SECRET_ACCESS_KEY]
 ```
 
 Copy the output and paste it into the **Unlock Jenkins** screen.

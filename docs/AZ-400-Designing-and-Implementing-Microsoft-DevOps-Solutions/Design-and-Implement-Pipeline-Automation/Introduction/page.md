@@ -71,7 +71,7 @@ Ensuring that your codebase is free from vulnerable or outdated dependencies is 
 
 | Tool             | Purpose                              | Documentation                                                                                                                                                  |
 | ---------------- | ------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| WhiteSource Bolt | Open-source vulnerability scanning   | [https://docs.microsoft.com/azure/devops/pipelines/ecosystems/whitesource-bolt](https://docs.microsoft.com/azure/devops/pipelines/ecosystems/whitesource-bolt) |
+| WhiteSource Bolt | Open-source vulnerability scanning   | [https://docs.microsoft.com/azure[AWS_SECRET_ACCESS_KEY]-bolt](https://docs.microsoft.com/azure[AWS_SECRET_ACCESS_KEY]-bolt) |
 | SonarCloud       | Code quality & security analysis     | [https://sonarcloud.io/documentation](https://sonarcloud.io/documentation)                                                                                     |
 | OWASP ZAP        | Dynamic application security testing | [https://owasp.org/www-project-zap/](https://owasp.org/www-project-zap/)                                                                                       |
 | Dependabot       | Automated dependency updates         | [https://github.com/dependabot/dependabot-core](https://github.com/dependabot/dependabot-core)                                                                 |
@@ -155,9 +155,9 @@ Proceed to the next lesson to build and deploy your first containerized applicat
 ## References
 
 * [Azure DevOps Documentation](https://docs.microsoft.com/azure/devops/)
-* [Azure Pipelines Security Scanning](https://docs.microsoft.com/azure/devops/pipelines/ecosystems/security)
+* [Azure Pipelines Security Scanning](https://docs.microsoft.[SECRET_REDACTED])
 * [Azure Test Plans](https://docs.microsoft.com/azure/devops/pipelines/test/)
-* [Code Coverage in Azure DevOps](https://docs.microsoft.com/azure/devops/pipelines/test/coverage)
+* [Code Coverage in Azure DevOps](https://docs.microsoft.[AWS_SECRET_ACCESS_KEY])
 * [Azure DevOps Marketplace](https://marketplace.visualstudio.com/azuredevops)
 
 <CardGroup>

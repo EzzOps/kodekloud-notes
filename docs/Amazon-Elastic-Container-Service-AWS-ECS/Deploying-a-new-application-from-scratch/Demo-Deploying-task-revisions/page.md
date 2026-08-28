@@ -49,7 +49,7 @@ a5186a09280a: Layer already exists
 5cbc21d1985: Layer already exists
 07b905e91599: Layer already exists
 20833a96725e: Layer already exists
-latest: digest: sha256:98216dd964fd5bb910fb23a527ed9e9d804b5cedaaa47fb45264cebe664006b size: 3261
+latest: digest: sha256:[SECRET_REDACTED] size: 3261
 user1 on user1 in ecs-project1 [!] is v1.0.0 via took 4s
 ```
 

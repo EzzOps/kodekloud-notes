@@ -187,7 +187,7 @@ Terraform provisioners, such as remote-exec and local-exec, provide flexibility 
 ## Useful Links and References
 
 * [Terraform Provisioners Documentation](https://www.terraform.io/docs/provisioners/index.html)
-* [AWS EC2 User Data](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/instancedata.html)
+* [AWS EC2 User Data](https://docs.aws.amazon.[AWS_SECRET_ACCESS_KEY].html)
 * [Terraform Documentation](https://www.terraform.io/docs)
 
 <CardGroup>

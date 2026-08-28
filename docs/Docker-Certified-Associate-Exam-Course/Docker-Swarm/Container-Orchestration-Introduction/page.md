@@ -10,7 +10,7 @@ Example output:
 ```text theme={null}
 Swarm updated.
 To unlock a swarm manager after it restarts, run the `docker swarm unlock` command and provide the following key:
-SWMKEY-1-7K9wg5n85QeC4Zh7rZ0vSV0b5MteDsUvpVhG/lQnbl0
+SWMKEY-1-[SECRET_REDACTED]
 Please remember to store this key in a password manager, since without it you will not be able to restart the manager.
 ```
 
@@ -28,7 +28,7 @@ To resume normal operation, unlock the manager:
 
 ```bash theme={null}
 $ docker swarm unlock
-Enter unlock key: SWMKEY-1-7K9wg5n85QeC4Zh7rZ0vSV0b5MteDsUvpVhG/lQnbl0
+Enter unlock key: SWMKEY-1-[SECRET_REDACTED]
 ```
 
 Once the manager is unlocked, it will rejoin disconnected nodes automatically.

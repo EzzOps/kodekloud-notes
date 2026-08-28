@@ -40,7 +40,7 @@ Use IAM policies and roles to restrict who can create, modify, or execute FIS ex
 
 * [AWS Fault Injection Simulator Documentation](https://docs.aws.amazon.com/fis/)
 * [Chaos Engineering Concepts](https://chaosengineering.org/)
-* [Amazon CloudWatch Alarms](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/AlarmThatSendsEmail.html)
+* [Amazon CloudWatch Alarms](https://docs.aws.amazon.[SECRET_REDACTED].html)
 * [AWS X-Ray Overview](https://docs.aws.amazon.com/xray/latest/devguide/aws-xray.html)
 
 <CardGroup>

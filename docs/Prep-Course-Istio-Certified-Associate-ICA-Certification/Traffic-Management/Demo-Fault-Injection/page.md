@@ -307,7 +307,7 @@ spec:
 
 Links and references:
 
-* Istio DestinationRule docs: [https://istio.io/latest/docs/reference/config/networking/destination-rule/](https://istio.io/latest/docs/reference/config/networking/destination-rule/)
+* Istio DestinationRule docs: [https://istio.io[AWS_SECRET_ACCESS_KEY]/destination-rule/](https://istio.io[AWS_SECRET_ACCESS_KEY]/destination-rule/)
 * Fortio: [https://github.com/fortio/fortio](https://github.com/fortio/fortio)
 * Envoy stats and cluster metrics: [https://www.envoyproxy.io/docs/envoy/latest/metrics/overview](https://www.envoyproxy.io/docs/envoy/latest/metrics/overview)
 

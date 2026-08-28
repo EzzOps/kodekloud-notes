@@ -16,7 +16,7 @@ Once you are satisfied with the execution plan, apply the configuration using Te
 ```bash theme={null}
 $ terraform apply
 local_file.pet: Refreshing state...
-[id=d1a31467f206d6ea8ab1cad382bc106bf46df69e]
+[id=[AWS_SECRET_ACCESS_KEY]]
 
 An execution plan has been generated and is shown below.
 Resource actions are indicated with the following symbols:

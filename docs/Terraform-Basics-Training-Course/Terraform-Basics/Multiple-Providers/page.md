@@ -81,6 +81,6 @@ The refreshed state will be used to calculate this plan, but
 will not be persisted to local or remote state storage.
 
 local_file.pet: Refreshing state...
-[id=d1a31467f206d6ea8ab1cad382bc106bf46df69e]
+[id=[AWS_SECRET_ACCESS_KEY]]
 .
 .

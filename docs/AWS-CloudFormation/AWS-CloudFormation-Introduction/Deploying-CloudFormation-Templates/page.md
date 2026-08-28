@@ -93,7 +93,7 @@ For continuous delivery, integrate CloudFormation with CodePipeline (or another 
 ## Links and references
 
 * [AWS CloudFormation Documentation](https://docs.aws.amazon.com/cloudformation/index.html)
-* [AWS CodePipeline Documentation](https://docs.aws.amazon.com/codepipeline/latest/userguide/welcome.html)
+* [AWS CodePipeline Documentation](https://docs.aws.amazon.[SECRET_REDACTED].html)
 * [AWS IAM Documentation](https://docs.aws.amazon.com/iam/)
 * [Kubernetes Basics](https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/) (for multi-cloud orchestration patterns)
 

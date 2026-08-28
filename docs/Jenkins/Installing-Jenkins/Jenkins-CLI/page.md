@@ -48,5 +48,5 @@ This command provides a list of commands along with detailed usage information, 
 </Callout>
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins/module/d9ec3aa2-1c6e-4512-bee1-f1d811ec7b6e/lesson/d6e27cfd-48a2-4125-a634-525ad941d905" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[AWS_SECRET_ACCESS_KEY]-1c6e-4512-bee1-f1d811ec7b6e/lesson/d6e27cfd-48a2-4125-a634-525ad941d905" />
 </CardGroup>

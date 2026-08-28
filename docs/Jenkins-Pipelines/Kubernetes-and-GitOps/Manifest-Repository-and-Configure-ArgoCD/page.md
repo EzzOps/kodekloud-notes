@@ -30,7 +30,7 @@ spec:
         app: solar-system
     spec:
       containers:
-      - image: siddharth67/solar-system:3e906e3be059342b1916f020c34d344fb267ddca
+      - image: siddharth67/solar-system:[AWS_SECRET_ACCESS_KEY]
         name: solar-system
         imagePullPolicy: Always
 ```
@@ -188,9 +188,9 @@ metadata:
   namespace: solar-system
 spec:
   encryptedData:
-    MONGO_PASSWORD: AgAo/wX0BYu3m7Yoyj6UAGmQXYEv+/mybwcyJWMk3V5NfR0JAAekYyiU+8S0t2ivkTnkvyyrssjP7c6feGhKz34WqCUKy5cWQJ15XfyB8kFuy5HkEpMkPaf7fS9VSjhy1fQL8=...
-    MONGO_URI: AgBNSlDismkdHjpE1ZMD9yej9e9N1B06kubBJQVnJz3ZFv920IV0oDifkm6sIszS/p2KXy9/clz8ue/S4Xanvwy4Z/tVpbRXj6n60WapdlXQSchJNDM/Y9RCO5VqE1w34kSXhr=...
-    MONGO_USERNAME: AgBzXwc5Ue006LBFqU2i6J9w6X5XZ5Vi+/zDPQF6b/ikQe2FrTDORX0tX51ygcIPgunx1fkgr0hchHAsbdhzJcdMj0zWubruUsPLn6gYgrcmI=...
+    MONGO_PASSWORD: [SECRET_REDACTED]=...
+    MONGO_URI: [SECRET_REDACTED]=...
+    MONGO_USERNAME: [SECRET_REDACTED]=...
   template:
     metadata:
       annotations:

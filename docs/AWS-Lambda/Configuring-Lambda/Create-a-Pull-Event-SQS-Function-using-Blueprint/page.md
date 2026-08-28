@@ -142,7 +142,7 @@ Extend this workflow by integrating with SNS, writing to DynamoDB, or chaining a
 
 [lambda-docs]: https://docs.aws.amazon.com/lambda/latest/dg/welcome.html
 
-[sqs-docs]: https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/welcome.html
+[sqs-docs]: https://docs.aws.amazon.[SECRET_REDACTED].html
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/aws-lambda/module/8fef3e34-137a-46d4-8dec-61fb5bae4e0e/lesson/908bd671-d0ff-45d8-a722-3d039b839e0e" />

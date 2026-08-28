@@ -85,7 +85,7 @@ This article demonstrates how AWS CloudTrail provides a detailed logging mechani
 
 For more detailed information on AWS CloudTrail and related security practices, consider exploring the following resources:
 
-* [AWS CloudTrail Documentation](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html)
+* [AWS CloudTrail Documentation](https://docs.aws.amazon.[SECRET_REDACTED]-user-guide.html)
 * [AWS Security Blog](https://aws.amazon.com/blogs/security/)
 
 By mastering CloudTrail, you strengthen your ability to maintain a secure and compliant AWS environment.

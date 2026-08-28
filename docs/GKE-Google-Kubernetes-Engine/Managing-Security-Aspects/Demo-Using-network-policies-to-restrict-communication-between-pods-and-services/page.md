@@ -239,7 +239,7 @@ gcloud container clusters delete gke-deep-dive \
 
 * [Kubernetes Network Policies](https://kubernetes.io/docs/concepts/services-networking/network-policies/)
 * [GKE Networking Overview](https://cloud.google.com/kubernetes-engine/docs/concepts/network-overview)
-* [kubectl run](https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands#run)
+* [kubectl run](https://kubernetes.io/[AWS_SECRET_ACCESS_KEY]-commands#run)
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/gke-google-kubernetes-engine/module/225743c4-eb6e-4393-a51e-4ed7d41dbe51/lesson/f4fb84f3-d34f-4da3-87be-b80ecae717fa" />

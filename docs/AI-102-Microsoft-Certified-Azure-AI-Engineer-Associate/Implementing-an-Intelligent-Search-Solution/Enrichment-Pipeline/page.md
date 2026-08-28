@@ -240,7 +240,7 @@ Example search result (sample)
 ```json theme={null}
 {
   "@search.score": 1.8703225,
-  "id": "aHR0cHM6Ly9hemExMDIxaW1hZ2VzdG9yZS5ibG9iLmNvcmUud2luZG93cy5uZXQvcmVzdW1lL0Fpc2hhX0toYW5fUmVzdW1lLnBkZg==",
+  "id": "[SECRET_REDACTED]==",
   "metadata_storage_name": "Aisha_Khan_Resume.pdf",
   "metadata_storage_path": "https://azai102imagestore.blob.core.windows.net/resume/Aisha_Khan_Resume.pdf",
   "document_text": "Name: Aisha Khan\nTitle: Data Scientist\nLocation: Dubai, UAE\n\nSkills: Python, Machine Learning, ...",

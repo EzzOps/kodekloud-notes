@@ -1,6 +1,6 @@
 # Certification Details
 
-Source: https://notes.kodekloud.com/docs/Updated-AZ-104-Microsoft-Azure-Administrator/Introduction/Certification-Details/page
+Source: https://notes.kodekloud.com/docs/Updated-AZ-104-Microsoft-Azure-[AWS_SECRET_ACCESS_KEY]-Details/page
 
 Overview of AZ-104 exam objectives and key study topics for managing Azure identities, governance, storage, compute, networking, monitoring, backups, and troubleshooting
 

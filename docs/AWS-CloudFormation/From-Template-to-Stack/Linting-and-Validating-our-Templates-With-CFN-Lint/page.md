@@ -138,7 +138,7 @@ repos:
 ## Links and references
 
 * cfn-lint (GitHub): [https://github.com/aws-cloudformation/cfn-lint](https://github.com/aws-cloudformation/cfn-lint)
-* CloudFormation concepts: [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html)
+* CloudFormation concepts: [https://docs.aws.amazon.[SECRET_REDACTED].html](https://docs.aws.amazon.[SECRET_REDACTED].html)
 * VS Code extension: search for "AWS CloudFormation Linter" in the Visual Studio Marketplace
 * Pre-commit framework: [https://pre-commit.com/](https://pre-commit.com/)
 

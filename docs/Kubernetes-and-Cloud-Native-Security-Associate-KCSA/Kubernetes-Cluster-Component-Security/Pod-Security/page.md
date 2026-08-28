@@ -38,7 +38,7 @@ You can also reach Services of type `ClusterIP` inside the cluster through the p
 </Frame>
 
 ```bash theme={null}
-curl http://localhost:8001/api/v1/namespaces/default/services/nginx/proxy/
+curl http://localhost:[AWS_SECRET_ACCESS_KEY]nginx/proxy/
 ```
 
 You’ll receive the standard NGINX welcome page:
@@ -73,8 +73,8 @@ Now, visiting `http://localhost:8080` sends traffic through the API server to th
 
 * [Kubernetes API Concepts](https://kubernetes.io/docs/concepts/overview/kubernetes-api/)
 * [kubeconfig File Format](https://kubernetes.io/docs/concepts/configuration/organize-cluster-access-kubeconfig/)
-* [kubectl proxy Reference](https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands#proxy)
-* [kubectl port-forward Reference](https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands#port-forward)
+* [kubectl proxy Reference](https://kubernetes.io/[AWS_SECRET_ACCESS_KEY]-commands#proxy)
+* [kubectl port-forward Reference](https://kubernetes.io/[AWS_SECRET_ACCESS_KEY]-commands#port-forward)
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-security-associate-kcsa/module/ca772db3-53aa-44c1-b424-3d32a046b683/lesson/50710279-96bd-47b6-a146-9527b3f8187c" />

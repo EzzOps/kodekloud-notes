@@ -178,7 +178,7 @@ To debug RBAC:
 ## Links and references
 
 * [Kubernetes RBAC docs](https://kubernetes.io/docs/reference/access-authn-authz/rbac/)
-* [kubectl auth can-i documentation](https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands#auth)
+* [kubectl auth can-i documentation](https://kubernetes.io/[AWS_SECRET_ACCESS_KEY]-commands#auth)
 * [Managing Service Accounts](https://kubernetes.io/docs/tasks/configure-pod-container/configure-service-account/)
 
 Practice these principles in a safe lab environment by creating Roles, ClusterRoles, RoleBindings, and ClusterRoleBindings and validating access with `kubectl auth can-i`.

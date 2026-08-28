@@ -62,7 +62,7 @@ Summary table — behavior comparison
 
 Links and references
 
-* [Kubernetes Controllers and Operators](https://kubernetes.io/docs/concepts/architecture/controller/)
+* [Kubernetes Controllers and Operators](https://kubernetes.[AWS_SECRET_ACCESS_KEY]/)
 * [Kubebuilder book — Writing a Controller](https://book.kubebuilder.io/)
 * [Reconciliation Pattern (controller-runtime)](https://pkg.go.dev/sigs.k8s.io/controller-runtime)
 
@@ -207,7 +207,7 @@ By following identity, motion, and intent vs. reality, you can convert noisy log
 
 Further references
 
-* [Kubernetes Concepts: Controllers](https://kubernetes.io/docs/concepts/architecture/controller/)
+* [Kubernetes Concepts: Controllers](https://kubernetes.[AWS_SECRET_ACCESS_KEY]/)
 * [kubectl Cheat Sheet](https://kubernetes.io/docs/reference/kubectl/cheatsheet/)
 * For designing operator logs, see best practices in structured logging and correlate entries with object keys (namespace/name) to maintain clear timelines.
 

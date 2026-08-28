@@ -31,7 +31,7 @@ Insert your preferred snippet with `Tab`.
 ## Links and References
 
 * [GitHub Copilot Documentation](https://docs.github.com/copilot)
-* [GitHub Copilot Labs](https://github.com/github/feedback/discussions/categories/copilot-labs)
+* [GitHub Copilot Labs](https://github.com[AWS_SECRET_ACCESS_KEY]copilot-labs)
 * [Python Official Website](https://www.python.org/)
 
 <CardGroup>

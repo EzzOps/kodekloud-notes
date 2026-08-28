@@ -104,5 +104,5 @@ This article demonstrated how to use Docker containers as ephemeral build agents
 In the next lesson, we will explore further enhancements to containerized build processes and additional customization options for your pipelines.
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins/module/1abff4aa-214c-48a2-98f1-2188e2e446bd/lesson/0a379185-c7ce-45c1-a08f-e21b8b6d12b1" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[AWS_SECRET_ACCESS_KEY]-214c-48a2-98f1-2188e2e446bd/lesson/0a379185-c7ce-45c1-a08f-e21b8b6d12b1" />
 </CardGroup>

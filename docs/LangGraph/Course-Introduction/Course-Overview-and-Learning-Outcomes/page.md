@@ -124,5 +124,5 @@ Links and references
 Welcome to LangGraph — by the end of this series you'll be able to design modular, conditional graphs that handle real-world complexity with controllable, observable behavior.
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langgraph/module/11d0578c-2a76-40f7-be25-905be94f24f8/lesson/6a20cbba-80d0-4d07-bc5f-186c6b4a5394" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[SECRET_REDACTED]-2a76-40f7-be25-905be94f24f8/lesson/6a20cbba-80d0-4d07-bc5f-186c6b4a5394" />
 </CardGroup>

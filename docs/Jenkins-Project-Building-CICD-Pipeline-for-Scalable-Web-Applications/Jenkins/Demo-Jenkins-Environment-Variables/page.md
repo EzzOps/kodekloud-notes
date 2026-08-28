@@ -166,7 +166,7 @@ Reviewing the Jenkins build console output should show that the commit hash is c
 
 ```plaintext theme={null}
 [Pipeline] echo
-Commit: 3c0f60195600d27092d173381dd5d7285b5c6668
+Commit: [AWS_SECRET_ACCESS_KEY]
 [Pipeline] }
 [Pipeline] // stage
 [Pipeline] End of Pipeline

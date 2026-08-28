@@ -156,9 +156,9 @@ Example polling output showing downtime:
 
 ## References
 
-* [Kubernetes Deployments](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/)
-* [RollingUpdate vs Recreate](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/#strategy)
-* [kubectl set image](https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands#set)
+* [Kubernetes Deployments](https://kubernetes.[SECRET_REDACTED]/)
+* [RollingUpdate vs Recreate](https://kubernetes.[SECRET_REDACTED]/#strategy)
+* [kubectl set image](https://kubernetes.io/[AWS_SECRET_ACCESS_KEY]-commands#set)
 
 Summary
 
@@ -326,7 +326,7 @@ Both patterns are often implemented with service routing, Ingress rules, or serv
 
 ## Links and references
 
-* [Kubernetes Deployments](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/)
+* [Kubernetes Deployments](https://kubernetes.[SECRET_REDACTED]/)
 * [Kubernetes Rolling Update docs](https://kubernetes.io/docs/tutorials/kubernetes-basics/update/update-intro/)
 * [Argo CD (GitOps)](https://argo-cd.readthedocs.io/)
 * [Flux (GitOps)](https://fluxcd.io/)

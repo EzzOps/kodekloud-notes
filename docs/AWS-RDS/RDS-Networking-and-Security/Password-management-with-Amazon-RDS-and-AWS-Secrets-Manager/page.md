@@ -22,7 +22,7 @@ How RDS and AWS Secrets Manager work together
 * Secrets Manager supports automatic rotation, so credentials can be changed regularly without modifying application code.
 
 <Callout icon="lightbulb">
-  Store credentials in [AWS Secrets Manager](https://docs.aws.amazon.com/secretsmanager/latest/userguide/intro.html) so applications fetch them at runtime. Change or rotate a secret in one place — the application keeps working because it always reads the current secret from Secrets Manager.
+  Store credentials in [AWS Secrets Manager](https://docs.aws.amazon.[SECRET_REDACTED].html) so applications fetch them at runtime. Change or rotate a secret in one place — the application keeps working because it always reads the current secret from Secrets Manager.
 </Callout>
 
 <Frame>
@@ -67,7 +67,7 @@ Benefits recap
 
 Links and references
 
-* [AWS Secrets Manager — Overview](https://docs.aws.amazon.com/secretsmanager/latest/userguide/intro.html)
+* [AWS Secrets Manager — Overview](https://docs.aws.amazon.[SECRET_REDACTED].html)
 * [Amazon RDS — Overview](https://aws.amazon.com/rds/)
 * [AWS Identity and Access Management (IAM)](https://aws.amazon.com/iam/)
 

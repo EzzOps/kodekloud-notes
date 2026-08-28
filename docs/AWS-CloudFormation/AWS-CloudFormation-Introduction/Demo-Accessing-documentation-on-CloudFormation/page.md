@@ -50,8 +50,8 @@ This lesson references the KodeKloud course: [https://learn.kodekloud.com/user/c
 ## Useful links and references
 
 * AWS CloudFormation User Guide — [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/)
-* Resource and Property Reference — [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-template-resource-type-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-template-resource-type-ref.html)
-* AWS CLI Reference for CloudFormation — [https://docs.aws.amazon.com/cli/latest/reference/cloudformation/index.html](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/index.html)
+* Resource and Property Reference — [https://docs.aws.amazon.[SECRET_REDACTED]-template-resource-type-ref.html](https://docs.aws.amazon.[SECRET_REDACTED]-template-resource-type-ref.html)
+* AWS CLI Reference for CloudFormation — [https://docs.aws.amazon.[AWS_SECRET_ACCESS_KEY]index.html](https://docs.aws.amazon.[AWS_SECRET_ACCESS_KEY]index.html)
 * CloudFormation sample templates (AWS GitHub) — [https://github.com/awslabs/aws-cloudformation-templates](https://github.com/awslabs/aws-cloudformation-templates)
 * [Kubernetes Basics](https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/) (for container orchestration context)
 * KodeKloud CloudFormation course — [https://learn.kodekloud.com/user/courses/aws-cloud-formation](https://learn.kodekloud.com/user/courses/aws-cloud-formation)

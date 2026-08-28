@@ -328,7 +328,7 @@ If the UI or backend returns an InputError indicating an unrecognized kind or ap
   "error": {
     "name": "InputError",
     "message": "InputError: No processor recognized the entity component:default/shopping-cart as valid, possibly caused by a foreign kind or apiVersion",
-    "stack": "InputError: InputError: No processor recognized the entity component:default/shopping-cart as valid, possibly caused by a foreign kind or apiVersion\n at DefaultLocationService.processEntities (/root/demo/backstage/node_modules/@backstage/plugin-catalog-backend/src/service/DefaultLocationService.ts:110:15)\n at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n at DefaultLocationService.dryRunCreateLocation (/root/demo/backstage/node_modules/@backstage/plugin-catalog-backend/src/service/DefaultLocationService.ts:148:32)\n at <anonymous> (/root/demo/backstage/node_modules/@backstage/plugin-catalog-backend/src/service/createRouter.ts:322:24)"
+    "stack": "InputError: InputError: No processor recognized the entity component:default/shopping-cart as valid, possibly caused by a foreign kind or apiVersion\n at DefaultLocationService.processEntities (/root/demo/backstage/node_modules/@backstage/plugin-catalog-[SECRET_REDACTED].ts:110:15)\n at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n at DefaultLocationService.dryRunCreateLocation (/root/demo/backstage/node_modules/@backstage/plugin-catalog-[SECRET_REDACTED].ts:148:32)\n at <anonymous> (/root/demo/backstage/node_modules/@backstage/plugin-catalog-backend/src/service/createRouter.ts:322:24)"
   },
   "request": { "method": "POST", "url": "/locations?dryRun=true" },
   "response": { "statusCode": 400 }

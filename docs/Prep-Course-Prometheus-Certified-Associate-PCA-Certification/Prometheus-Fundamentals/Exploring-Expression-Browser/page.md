@@ -110,7 +110,7 @@ htpasswd -nBC 12 "" | tr -d ':\n'
 Example bcrypt output (single line):
 
 ```text theme={null}
-$2y$12$gfAopKVO008KK063rJe0Z9efGRx30qJEZ9vC8IxBP9.cXkurgucc6
+$2y$12$[SECRET_REDACTED].cXkurgucc6
 ```
 
 Add `basic_auth_users` to `/etc/node_exporter/config.yml` and include the hash (quote the string to preserve characters):
@@ -121,7 +121,7 @@ tls_server_config:
   key_file: node_exporter.key
 
 basic_auth_users:
-  prometheus: "$2y$12$gfAopKVO008KK063rJe0Z9efGRx30qJEZ9vC8IxBP9.cXkurgucc6"
+  prometheus: "$2y$12$[SECRET_REDACTED].cXkurgucc6"
 ```
 
 Restart Node Exporter:
@@ -351,7 +351,7 @@ Best practices and next steps
 Links and references
 
 * Prometheus: [https://prometheus.io/](https://prometheus.io/)
-* PromQL basics: [https://prometheus.io/docs/prometheus/latest/querying/basics/](https://prometheus.io/docs/prometheus/latest/querying/basics/)
+* PromQL basics: [https://prometheus.[SECRET_REDACTED]/](https://prometheus.[SECRET_REDACTED]/)
 * Grafana: [https://grafana.com/](https://grafana.com/)
 
 Summary

@@ -139,7 +139,7 @@ After deployment, continuous monitoring ensures your application stays healthy a
 ## Links and References
 
 * [Azure Pipelines documentation](https://docs.microsoft.com/azure/devops/pipelines/)
-* [Manual Validation task](https://docs.microsoft.com/azure/devops/pipelines/tasks/utility/manual-validation)
+* [Manual Validation task](https://docs.microsoft.[AWS_SECRET_ACCESS_KEY]/manual-validation)
 * [Azure Monitor overview](https://docs.microsoft.com/azure/azure-monitor/)
 * [Application Insights deep dive](https://docs.microsoft.com/azure/azure-monitor/app/app-insights-overview)
 * [AZ-400: Designing and Implementing Microsoft DevOps Solutions](https://docs.microsoft.com/learn/certifications/exams/az-400)

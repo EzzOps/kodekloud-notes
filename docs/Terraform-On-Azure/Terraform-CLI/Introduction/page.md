@@ -64,7 +64,7 @@ Use `terraform validate` and `terraform fmt` to ensure code quality before plann
 
 With your environment configured and authentication in place, proceed to create a simple Terraform configuration that provisions a resource group and a storage account. Refer to the official Terraform Azure Provider documentation for resource examples and provider configuration:
 
-* [Terraform Azure Provider docs](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs)
+* [Terraform Azure Provider docs](https://registry.terraform.io[AWS_SECRET_ACCESS_KEY])
 * [Azure CLI documentation](https://learn.microsoft.com/cli/azure/)
 
 This prepares you for the hands-on modules where we’ll initialize a Terraform project, configure the AzureRM provider, and deploy basic infrastructure.

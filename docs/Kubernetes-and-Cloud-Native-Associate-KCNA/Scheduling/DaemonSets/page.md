@@ -51,7 +51,7 @@ profiles:
 Under the plugins section for each profile, you can specify which extension points to modify and choose to selectively enable or disable plugins by name or using a pattern.
 
 <Callout icon="lightbulb">
-  For more information on multi-scheduling profiles, refer to the [Kubernetes enhancement proposal CAP-1451](https://github.com/kubernetes/enhancements/tree/master/keps/sig-scheduling/1451-kube-scheduler-multiple-profiles) and other related scheduling framework articles.
+  For more information on multi-scheduling profiles, refer to the [Kubernetes enhancement proposal CAP-1451](https://github.[AWS_SECRET_ACCESS_KEY]keps/sig-scheduling/1451-kube-scheduler-multiple-profiles) and other related scheduling framework articles.
 </Callout>
 
 <Frame>

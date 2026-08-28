@@ -146,7 +146,7 @@ Further reading and references
 
 * [Terraform Input Variables](https://www.terraform.io/language/values/variables)
 * [Terraform CLI - var files](https://www.terraform.io/cli/commands#apply)
-* [Azure Provider (azurerm) on Terraform Registry](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs)
+* [Azure Provider (azurerm) on Terraform Registry](https://registry.terraform.io[AWS_SECRET_ACCESS_KEY])
 
 A deeper dive into the `variable` block would cover advanced topics such as type constraints, `validation` blocks, `sensitive` attributes, and multiple ways to provide variable values across CI/CD and team workflows.
 

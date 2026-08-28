@@ -549,7 +549,7 @@ That completes this lab. Thank you for following along!
 
 * [OpenTofu CLI Repository](https://github.com/opentofu/opentofu)
 * [AWS EC2 Documentation](https://docs.aws.amazon.com/ec2/index.html)
-* [Terraform Provisioners](https://www.terraform.io/docs/language/resources/provisioners/syntax.html)
+* [Terraform Provisioners](https://www.terraform.[AWS_SECRET_ACCESS_KEY]syntax.html)
 * [SSH Key Management](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-key-pairs.html)
 
 <CardGroup>

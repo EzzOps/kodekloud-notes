@@ -66,7 +66,7 @@ mkdir sec_files && cd sec_files
 echo "username=siddharth"                                > file1
 echo "secure-password123"                               > password.txt
 echo "apikey=iz5yCqhjgrPtr_La56sdukjfav_laCqhjgrPtr_2s"  > file2
-echo "base64encodedsecret=cGFzc3dvcmx0aXMtcXdlcnR5MTIzCg==" > file3
+echo "[SECRET_REDACTED]==" > file3
 
 cd ..
 ```
@@ -109,7 +109,7 @@ To exempt certain files from scanning, create a `.talismanrc` in your project ro
 ```yaml theme={null}
 fileignoreconfig:
   - filename: sec_files/file3
-    checksum: b058bbb495454d508634e7d508163ad962c3ec699bc676db38a5
+    checksum: [SECRET_REDACTED]
 ```
 
 Then commit and push again:
@@ -149,7 +149,7 @@ By integrating Talisman as a pre-push (or pre-commit) hook, you ensure that sens
 
 [talisman-github]: https://github.com/thoughtworks/talisman
 
-[talisman-readme]: https://github.com/thoughtworks/talisman/blob/master/README.md
+[talisman-readme]: https://github.com/[AWS_SECRET_ACCESS_KEY].md
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/devsecops-kubernetes-devops-security/module/877bd662-968c-40a5-bda6-a42b600ea957/lesson/4d7a5ddd-8915-4c81-9707-aad8bebb3d1c" />

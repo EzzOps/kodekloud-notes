@@ -43,9 +43,9 @@ IPs:
   IP: 10.42.0.11
 Init Containers:
   init-myservice:
-    Container ID: containerd://06b2eef4bb35af6bbd7d436785fa8988bbe43617def32fb320bb1cc0f9d88708
+    Container ID: containerd://[SECRET_REDACTED]
     Image: busybox
-    Image ID: docker.io/library/busybox@sha256:ef320ff10026a50cf5f0213d35537ce0041ac1d96e9b78
+    Image ID: docker.io/library/busybox@sha256:[SECRET_REDACTED]
     Port: <none>
     Host Port: <none>
     Command:
@@ -64,7 +64,7 @@ Init Containers:
       /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-wqxmr (ro)
 Containers:
   green-container-1:
-    Container ID: containerd://0124061f1d72bf48f8b8692e2a68c39962c53a43e639eb4f27cabcfb4637b51
+    Container ID: containerd://[SECRET_REDACTED]
     Image: busybox:1.28
 ```
 
@@ -79,9 +79,9 @@ IP:
   IP: 10.42.0.9
 Containers:
   red-container:
-    Container ID: containerd://73700f570a1c0df8222bd892b67bf9c9b37f5747a800a0bd9623e8db3fbfb
+    Container ID: containerd://[SECRET_REDACTED]
     Image: busybox:1.28
-    Image ID: docker.io/library/busybox@sha256:141c253bc4c3fd0a201d32dc1f493bcf3fff03b6d416dea4f41046e0f37d47
+    Image ID: docker.io/library/busybox@sha256:[SECRET_REDACTED]
     Port: <none>
     Host Port: <none>
     Command:
@@ -118,9 +118,9 @@ IP:
   IP: 10.42.0.10
 Containers:
   green-container-1:
-    Container ID: containerd://2c091a018044c1d3a06dfae0056a7715c7469cc353d2314651b967661ff8086a
+    Container ID: containerd://[SECRET_REDACTED]
     Image: busybox:1.28
-    Image ID: docker.io/library/busybox@sha256:141c253bc4c3fd0a201d32dc1f493bcf3fff003b6d6f416dea4f410460e0f37d47
+    Image ID: docker.io/library/busybox@sha256:[SECRET_REDACTED]
     Port: <none>
     Host Port: <none>
     Command:
@@ -136,9 +136,9 @@ Containers:
       /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-2kr6f (ro)
 Init Containers:
   init-myservice:
-    Container ID: containerd://06b2eef4bb35a6fbbd7d436785fa8988bbe43617def32fb320bb1cc0f9d88708
+    Container ID: containerd://[SECRET_REDACTED]
     Image: busybox
-    Image ID: docker.io/library/busybox@sha256:ef320ff10026a50cf5f021d35537ce0041ac1d96e9b79800bafd8c9eff6c693
+    Image ID: docker.io/library/busybox@sha256:[SECRET_REDACTED]
     Port: <none>
     Host Port: <none>
     Command:
@@ -183,7 +183,7 @@ IPs:
   IP:           10.42.0.12
 Init Containers:
   warm-up-1:
-    Container ID:   containerd://86f76be333d14dcd7ff161cab46d35fddb2e22fcd4867b8f25848f386beabb10
+    Container ID:   containerd://[SECRET_REDACTED]
     Image:          busybox:1.28
     Command:
       sh

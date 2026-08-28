@@ -58,7 +58,7 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; iwr -useb https://aka.ms/insta
 Linux (standalone binary example):
 
 ```bash theme={null}
-curl -Lo bicep https://github.com/Azure/bicep/releases/latest/download/bicep-linux-x64
+curl -Lo bicep https://github.[AWS_SECRET_ACCESS_KEY]/bicep-linux-x64
 chmod +x ./bicep
 sudo mv ./bicep /usr/local/bin/bicep
 ```

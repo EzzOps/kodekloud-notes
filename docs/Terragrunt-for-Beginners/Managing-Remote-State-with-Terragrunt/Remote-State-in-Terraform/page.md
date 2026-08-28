@@ -34,9 +34,9 @@ Terraform supports multiple backends, letting you choose the storage solution th
 
 | Backend            | Use Case                                | Documentation                                                                                                                                                                                       |
 | ------------------ | --------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| AWS S3             | Scalable, cost-effective object storage | [https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/s3\_bucket](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/s3_bucket)                     |
-| Azure Blob Storage | Native Azure integration with RBAC      | [https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/storage\_account](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/storage_account) |
-| HashiCorp Consul   | Highly-available, on-premise KV store   | [https://registry.terraform.io/providers/hashicorp/consul/latest/docs](https://registry.terraform.io/providers/hashicorp/consul/latest/docs)                                                        |
+| AWS S3             | Scalable, cost-effective object storage | [https://registry.terraform.[SECRET_REDACTED]\_bucket](https://registry.terraform.[SECRET_REDACTED]s3_bucket)                     |
+| Azure Blob Storage | Native Azure integration with RBAC      | [https://registry.terraform.io[AWS_SECRET_ACCESS_KEY]/resources/storage\_account](https://registry.terraform.io[AWS_SECRET_ACCESS_KEY]/resources/storage_account) |
+| HashiCorp Consul   | Highly-available, on-premise KV store   | [https://registry.terraform.[SECRET_REDACTED]](https://registry.terraform.[SECRET_REDACTED])                                                        |
 
 <Frame>
   ![The image shows icons for Amazon S3, Azure Storage, and HashiCorp Consul under the title "Terraform – Remote State."](https://kodekloud.com/kk-media/image/upload/v1752884268/notes-assets/images/Terragrunt-for-Beginners-Remote-State-in-Terraform/terraform-remote-state-amazon-azure-hashicorp.jpg)

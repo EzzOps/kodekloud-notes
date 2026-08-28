@@ -1,5 +1,5 @@
 # Download the Cosign binary
-wget "https://github.com/sigstore/cosign/releases/download/v2.0.0/cosign-linux-amd64"
+wget "https://github.[AWS_SECRET_ACCESS_KEY].0.0/cosign-linux-amd64"
 
 # Move into your PATH and make executable
 sudo mv cosign-linux-amd64 /usr/local/bin/cosign
@@ -9,14 +9,14 @@ sudo chmod +x /usr/local/bin/cosign
 ### 2. RPM Package
 
 ```bash theme={null}
-wget "https://github.com/sigstore/cosign/releases/download/v2.0.0/cosign-2.0.0.x86_64.rpm"
+wget "https://github.[AWS_SECRET_ACCESS_KEY].0.0/cosign-2.0.0.x86_64.rpm"
 sudo rpm -Uvh cosign-2.0.0.x86_64.rpm
 ```
 
 ### 3. DEB Package
 
 ```bash theme={null}
-wget "https://github.com/sigstore/cosign/releases/download/v2.0.0/cosign_2.0.0_amd64.deb"
+wget "https://github.[AWS_SECRET_ACCESS_KEY].0.0/cosign_2.0.0_amd64.deb"
 sudo dpkg -i cosign_2.0.0_amd64.deb
 ```
 
@@ -28,7 +28,7 @@ After installation, check your Cosign version:
 root@host:~# cosign version
 cosign: A tool for Container Signing, Verification and Storage in an OCI registry.
 GitVersion:    v2.0.0
-GitCommit:     d6b9001f8e6ed745fb845849d623274c897d55f2
+GitCommit:     [AWS_SECRET_ACCESS_KEY]
 BuildDate:     2023-02-23T19:26:35Z
 GoVersion:     go1.20.1
 Compiler:      gc

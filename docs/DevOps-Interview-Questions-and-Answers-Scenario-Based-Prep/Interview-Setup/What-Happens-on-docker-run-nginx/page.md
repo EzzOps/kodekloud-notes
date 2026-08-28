@@ -100,7 +100,7 @@ In this walkthrough we’ll follow the exact sequence of events that occur when 
 * The `docker` CLI sends your request to the Docker daemon (`dockerd`). The daemon manages images, containers, storage, and networking.
 * Dockerd delegates low-level operations to components such as `containerd` and an OCI runtime (for example, `runc`) to create, prepare, and start the container environment.
 * Relevant links:
-  * Docker daemon: [https://docs.docker.com/engine/reference/commandline/dockerd/](https://docs.docker.com/engine/reference/commandline/dockerd/)
+  * Docker daemon: [https://docs.docker.[AWS_SECRET_ACCESS_KEY]/](https://docs.docker.[AWS_SECRET_ACCESS_KEY]/)
   * containerd: [https://containerd.io/](https://containerd.io/)
   * runc: [https://github.com/opencontainers/runc](https://github.com/opencontainers/runc)
 

@@ -84,7 +84,7 @@ Links and References
 
 * [Kubernetes Documentation](https://kubernetes.io/docs/)
 * [Horizontal Pod Autoscaler (HPA)](https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale/)
-* [Vertical Pod Autoscaler (VPA)](https://github.com/kubernetes/autoscaler/tree/master/vertical-pod-autoscaler)
+* [Vertical Pod Autoscaler (VPA)](https://github.[SECRET_REDACTED]-pod-autoscaler)
 * [Cluster Proportional Autoscaler (CPA) — autoscaler repo](https://github.com/kubernetes/autoscaler)
 * [KEDA documentation](https://keda.sh/docs/)
 * [metrics-server](https://github.com/kubernetes-sigs/metrics-server)

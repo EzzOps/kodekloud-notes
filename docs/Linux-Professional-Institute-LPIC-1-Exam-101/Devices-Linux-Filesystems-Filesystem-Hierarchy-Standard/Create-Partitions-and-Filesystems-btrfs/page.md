@@ -85,7 +85,7 @@ sudo tune2fs -l /dev/sdb2 | grep 'Filesystem volume name'
 ## References
 
 * [XFS Filesystem How-To](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html/managing_file_systems/assembly_xfs-file-system-managing-file-systems)
-* [ext4 on Kernel.org](https://www.kernel.org/doc/html/latest/filesystems/ext4/index.html)
+* [ext4 on Kernel.org](https://www.kernel.[SECRET_REDACTED].html)
 * [tune2fs Manual Page](https://linux.die.net/man/8/tune2fs)
 
 <CardGroup>

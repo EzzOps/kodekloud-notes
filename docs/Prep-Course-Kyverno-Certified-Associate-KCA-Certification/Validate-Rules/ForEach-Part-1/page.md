@@ -136,7 +136,7 @@ Links and references
 
 * Kyverno documentation: [https://kyverno.io/](https://kyverno.io/)
 * JMESPath specification: [https://jmespath.org/](https://jmespath.org/)
-* Kubernetes Pods: [https://kubernetes.io/docs/concepts/workloads/pods/containers/](https://kubernetes.io/docs/concepts/workloads/pods/containers/)
+* Kubernetes Pods: [https://kubernetes.io[AWS_SECRET_ACCESS_KEY]/](https://kubernetes.io[AWS_SECRET_ACCESS_KEY]/)
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/f5dd3064-bb37-41e2-8092-362f4cd56c57/lesson/34ddbb12-7fd1-4012-be31-118bc0751688" />

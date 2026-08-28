@@ -49,7 +49,7 @@ Switch context to your **DR secondary** cluster to create a one-time operation t
    ```
    Output:
    ```text theme={null}
-   DR Operation Token: hvs.vjJaqI8ACON0@FlUQeKHDIJO
+   DR Operation Token: [VAULT_TOKEN]
    ```
 
 <Callout icon="lightbulb">
@@ -64,7 +64,7 @@ Using the decoded token, promote the DR secondary:
 
 ```bash theme={null}
 vault write sys/replication/dr/secondary/promote \
-  dr_operation_token="hvs.vjJaqI8ACON0@FlUQeKHDIJO"
+  dr_operation_token="[VAULT_TOKEN]"
 ```
 
 You’ll see:
@@ -80,7 +80,7 @@ WARNING! The following warnings were returned from Vault:
 
 1. **Authenticate** (if needed):
    ```bash theme={null}
-   vault login hvs.Y9MwsvPOH3zIZpBUymLF6Dk
+   vault login [VAULT_TOKEN]
    ```
 
 2. **List Raft peers**:

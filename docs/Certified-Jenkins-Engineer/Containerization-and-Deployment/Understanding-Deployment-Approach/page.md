@@ -1,5 +1,5 @@
 # Install via script
-curl -sL https://raw.githubusercontent.com/aquasecurity/trivy/main/contrib/install.sh | sh
+curl -sL https://raw.githubusercontent.com[AWS_SECRET_ACCESS_KEY].sh | sh
 
 # Or build from GitHub
 git clone --depth 1 --branch v0.55.2 https://github.com/aquasecurity/trivy

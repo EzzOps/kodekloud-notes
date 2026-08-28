@@ -193,7 +193,7 @@ print("PySpark processing job submitted!")
 You can monitor jobs in the AWS Console (SageMaker > Processing) to view job status, container image, role, entry point script, timestamps, and logs. Logs are available via CloudWatch — streaming them during runs is helpful for debugging.
 
 <Callout icon="lightbulb">
-  You can stream processing job logs via [CloudWatch Logs](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/WhatIsCloudWatchLogs.html). Open the Processing job details in the console to find the CloudWatch log group and observe real-time output for troubleshooting.
+  You can stream processing job logs via [CloudWatch Logs](https://docs.aws.amazon.[SECRET_REDACTED].html). Open the Processing job details in the console to find the CloudWatch log group and observe real-time output for troubleshooting.
 </Callout>
 
 Example console output you may see for a job:
@@ -234,7 +234,7 @@ Key takeaways:
 * [SageMaker processing jobs documentation](https://docs.aws.amazon.com/sagemaker/latest/dg/processing-job.html)
 * [SageMaker Python SDK documentation](https://sagemaker.readthedocs.io/en/stable/)
 * [Amazon S3](https://aws.amazon.com/s3/)
-* [AWS CloudWatch Logs](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/WhatIsCloudWatchLogs.html)
+* [AWS CloudWatch Logs](https://docs.aws.amazon.[SECRET_REDACTED].html)
 
 Next steps
 A hands-on lab walks through creating and running SageMaker data processing jobs end-to-end.

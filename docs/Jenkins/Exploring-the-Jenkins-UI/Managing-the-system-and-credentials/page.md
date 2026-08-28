@@ -106,7 +106,7 @@ For further details, consider reviewing additional resources:
 Happy configuring!
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins/module/a04dd614-ac4a-452f-b42a-c7f7086c5897/lesson/0f5ed8ca-f26e-417d-9351-daac48521b60" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[AWS_SECRET_ACCESS_KEY]-ac4a-452f-b42a-c7f7086c5897/lesson/0f5ed8ca-f26e-417d-9351-daac48521b60" />
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/jenkins/module/a04dd614-ac4a-452f-b42a-c7f7086c5897/lesson/166fa542-0082-446f-8411-16bdb58d7e18" />
+  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.[AWS_SECRET_ACCESS_KEY]-ac4a-452f-b42a-c7f7086c5897/lesson/166fa542-0082-446f-8411-16bdb58d7e18" />
 </CardGroup>

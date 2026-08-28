@@ -102,7 +102,7 @@ Enter a value: yes
 
 local_file.pet: Creating...
 local_file.pet: Creation complete after 0s
-[id=7e4db4fbfddb108bdd046926202bae3e9bd1e168]
+[id=[AWS_SECRET_ACCESS_KEY]]
 ```
 
 Upon confirmation, Terraform creates the resource, generates a unique ID for it, and creates the file `/root/pets.txt` with the content "I love pets!" If you run `terraform apply` again, Terraform refreshes the state, detects that the resource already exists, and confirms that no further actions are needed:
@@ -113,7 +113,7 @@ I love pets!
 
 [terraform-local-file]$ terraform apply
 local_file.pet: Refreshing state...
-[id=7e4db4fbfdbb108bdd04692602bae3e9bd1e1b68]
+[id=[AWS_SECRET_ACCESS_KEY]]
 Apply complete! Resources: 0 added, 0 changed, 0 destroyed.
 ```
 
@@ -183,6 +183,6 @@ After this change, running `terraform apply` causes Terraform to refresh the sta
 
 ```bash theme={null}
 $ terraform apply
-local_file.pet: Refreshing state... [id=7e4db4fbfdb108ddb04692602bae3e9bd1e1b68]
+local_file.pet: Refreshing state... [id[AWS_SECRET_ACCESS_KEY]]
 
 Terraform will perform the following actions:

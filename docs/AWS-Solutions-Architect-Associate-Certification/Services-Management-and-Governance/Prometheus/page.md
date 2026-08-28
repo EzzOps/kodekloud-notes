@@ -72,7 +72,7 @@ For further reading and related topics, explore the following resources:
 * [Kubernetes Basics](https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/)
 * [AWS CloudWatch](https://learn.kodekloud.com/user/courses/aws-cloudwatch)
 * [Amazon Elastic Compute Cloud (EC2)](https://learn.kodekloud.com/user/courses/amazon-elastic-compute-cloud-ec2)
-* [PromQL Documentation](https://prometheus.io/docs/prometheus/latest/querying/basics/)
+* [PromQL Documentation](https://prometheus.[SECRET_REDACTED]/)
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/aws-solutions-architect-associate-certification/module/3c1ec40a-853a-4bf0-a4de-d53993e309f0/lesson/96df4bd0-5a64-4733-8a96-05911228ac6f" />

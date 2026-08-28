@@ -141,7 +141,7 @@ resources:
       - secretbox:
           keys:
             - name: key1
-              secret: YWjjZGVnZ2hpamtsbW5vcHyc3R1nd4eXoXMjM0NTY=
+              secret: [SECRET_REDACTED]=
 ```
 
 You must pass this file to the Kubernetes API server. Here is an example of modifying the kube-apiserver pod configuration to make use of the encryption configuration:

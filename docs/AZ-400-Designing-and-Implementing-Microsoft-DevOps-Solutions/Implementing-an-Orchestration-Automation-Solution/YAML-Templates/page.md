@@ -12,7 +12,7 @@ Azure DevOps pipelines use YAML to define build and release workflows in a human
 
 ## Example: ASP.NET CI/CD Pipeline
 
-Use the following ASP.NET pipeline to build, test, and package your web application. For full task details, see the [Azure DevOps ASP.NET docs](https://docs.microsoft.com/azure/devops/pipelines/apps/aspnet/build-aspnet-4).
+Use the following ASP.NET pipeline to build, test, and package your web application. For full task details, see the [Azure DevOps ASP.NET docs](https://docs.microsoft.com/[AWS_SECRET_ACCESS_KEY]-aspnet-4).
 
 ```yaml theme={null}
 trigger:
@@ -311,7 +311,7 @@ Experiment with these patterns to streamline your Azure DevOps workflows.
 
 * [Azure DevOps Pipelines](https://docs.microsoft.com/azure/devops/pipelines/)
 * [YAML Official Site](https://yaml.org/)
-* [Azure DevOps ASP.NET Pipeline Docs](https://docs.microsoft.com/azure/devops/pipelines/apps/aspnet/build-aspnet-4)
+* [Azure DevOps ASP.NET Pipeline Docs](https://docs.microsoft.com/[AWS_SECRET_ACCESS_KEY]-aspnet-4)
 * [Azure Pipelines YAML Schema](https://aka.ms/yaml)
 
 <CardGroup>

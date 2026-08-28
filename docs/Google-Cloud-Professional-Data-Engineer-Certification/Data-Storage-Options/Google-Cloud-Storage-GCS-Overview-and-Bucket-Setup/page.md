@@ -120,7 +120,7 @@ Next steps and references
   * [Google Cloud Storage Documentation](https://cloud.google.com/storage/docs)
   * [BigQuery and Cloud Storage integration](https://cloud.google.com/bigquery/docs/loading-data-cloud-storage)
   * [Cloud KMS documentation for CMEK](https://cloud.google.com/kms/docs)
-  * [Terraform Google Cloud Storage module](https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/storage_bucket)
+  * [Terraform Google Cloud Storage module](https://registry.terraform.io[AWS_SECRET_ACCESS_KEY]resources/storage_bucket)
 
 This lesson prepares you to set up a GCS bucket and apply the options and settings demonstrated here.
 

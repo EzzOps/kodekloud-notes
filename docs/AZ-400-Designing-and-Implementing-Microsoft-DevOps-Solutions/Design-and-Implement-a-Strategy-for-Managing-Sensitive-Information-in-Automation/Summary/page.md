@@ -137,7 +137,7 @@ By centralizing your secrets in Azure Key Vault, integrating vault access into y
 
 * [Azure Key Vault Documentation](https://docs.microsoft.com/azure/key-vault/)
 * [GitHub Actions Encrypted Secrets](https://docs.github.com/actions/security-guides/encrypted-secrets)
-* [Azure Pipelines Service Connections](https://docs.microsoft.com/azure/devops/pipelines/library/service-endpoints)
+* [Azure Pipelines Service Connections](https://docs.microsoft.[SECRET_REDACTED]-endpoints)
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/az-400/module/2f8974b7-9aa9-46b8-a562-d7ed568269af/lesson/c13e0d3f-3eb8-4943-be34-eedbcb7e7f36" />

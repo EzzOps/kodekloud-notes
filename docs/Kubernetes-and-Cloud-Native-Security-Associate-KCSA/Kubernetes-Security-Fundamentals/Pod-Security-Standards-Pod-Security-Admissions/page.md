@@ -4,7 +4,7 @@ Source: https://notes.kodekloud.com/docs/Kubernetes-and-Cloud-Native-Security-As
 
 This article explains Pod Security Admission and Pod Security Standards in Kubernetes, detailing their features, profiles, and configuration for enhanced security.
 
-In this lesson, we’ll dive into [Pod Security Admission (PSA)](https://kubernetes.io/docs/concepts/security/pod-security-admission/) and [Pod Security Standards (PSS)](https://kubernetes.io/docs/concepts/security/pod-security-standards/). Introduced via [KEP 2579](https://github.com/kubernetes/enhancements/tree/master/keps/sig-auth/2579-psp-migration), PSA replaces Pod Security Policies (PSP) with a safer, simpler, and extensible solution. For advanced checks, you can integrate external tools like [OPA Gatekeeper](https://open-policy-agent.github.io/gatekeeper/).
+In this lesson, we’ll dive into [Pod Security Admission (PSA)](https://kubernetes.io/docs/concepts/security/pod-security-admission/) and [Pod Security Standards (PSS)](https://kubernetes.io/docs/concepts/security/pod-security-standards/). Introduced via [KEP 2579](https://github.[AWS_SECRET_ACCESS_KEY]keps/sig-auth/2579-psp-migration), PSA replaces Pod Security Policies (PSP) with a safer, simpler, and extensible solution. For advanced checks, you can integrate external tools like [OPA Gatekeeper](https://open-policy-agent.github.io/gatekeeper/).
 
 <Frame>
   ![The image lists the "Pod Security Requirements" for Kubernetes, including points like validation, safety in clusters, built-in controller, Windows support, API responsiveness, ease of use, and extensibility. It also references KEP 2579 for PSP replacement.](https://kodekloud.com/kk-media/image/upload/v1752880794/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Pod-Security-Standards-Pod-Security-Admissions/pod-security-requirements-kubernetes.jpg)
@@ -108,7 +108,7 @@ kubectl label namespace dev     pod-security.kubernetes.io/warn=restricted
 * [Kubernetes Documentation: Pod Security Admission](https://kubernetes.io/docs/concepts/security/pod-security-admission/)
 * [Kubernetes Documentation: Pod Security Standards](https://kubernetes.io/docs/concepts/security/pod-security-standards/)
 * [OPA Gatekeeper](https://open-policy-agent.github.io/gatekeeper/)
-* [KEP 2579: PSP Migration](https://github.com/kubernetes/enhancements/tree/master/keps/sig-auth/2579-psp-migration)
+* [KEP 2579: PSP Migration](https://github.[AWS_SECRET_ACCESS_KEY]keps/sig-auth/2579-psp-migration)
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-security-associate-kcsa/module/0148994b-9ccc-4725-a77b-a4a63592152f/lesson/2adaacf7-51b1-4675-ba47-5b5818cbd2e3" />

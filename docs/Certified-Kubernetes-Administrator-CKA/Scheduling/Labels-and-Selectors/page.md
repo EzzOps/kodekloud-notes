@@ -65,7 +65,7 @@ DaemonSets provide an efficient mechanism to ensure that key services are unifor
 For further reading, explore these resources:
 
 * [Kubernetes Documentation](https://kubernetes.io/docs/)
-* [DaemonSets Concept](https://kubernetes.io/docs/concepts/workloads/controllers/daemonset/)
+* [DaemonSets Concept](https://kubernetes.io/docs/[AWS_SECRET_ACCESS_KEY]/)
 
 Happy clustering!
 

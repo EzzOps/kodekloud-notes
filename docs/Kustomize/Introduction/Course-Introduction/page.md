@@ -46,5 +46,5 @@ Ready to customize your first Kubernetes manifest? Let’s jump in!
 * [Kubectl Plugin: kustomize](https://kubernetes.io/docs/tasks/manage-kubernetes-objects/kustomization/)
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kustomize/module/a9725b74-2c5d-4eac-9063-caddf9d52e5a/lesson/7d0459bc-850c-4a98-ba40-2b89102ef54e" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[SECRET_REDACTED]-2c5d-4eac-9063-caddf9d52e5a/lesson/7d0459bc-850c-4a98-ba40-2b89102ef54e" />
 </CardGroup>

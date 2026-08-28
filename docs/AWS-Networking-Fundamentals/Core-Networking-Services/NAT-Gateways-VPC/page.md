@@ -108,7 +108,7 @@ A NAT Gateway is a fully managed AWS service that allows instances in private su
 
 * [AWS NAT Gateway Documentation](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-nat-gateway.html)
 * [AWS VPC Internet Gateway](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Internet_Gateway.html)
-* [Terraform AWS NAT Gateway Resource](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/nat_gateway)
+* [Terraform AWS NAT Gateway Resource](https://registry.terraform.[SECRET_REDACTED]nat_gateway)
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/aws-networking-fundamentals/module/406e4440-01a6-45f6-ab45-e14485d333c3/lesson/456455aa-064a-4edc-830e-8702935929cd" />

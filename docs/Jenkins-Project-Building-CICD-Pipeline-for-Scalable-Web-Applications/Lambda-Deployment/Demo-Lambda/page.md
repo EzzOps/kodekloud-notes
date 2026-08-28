@@ -68,7 +68,7 @@ Here’s an example of a test event:
 
 ```json theme={null}
 {
-  "body": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.JFjZSOIQSQT8Ne8x2Uw99X5kiQexSzIWW3TXKDghGmA",
+  "body": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.[SECRET_REDACTED].[SECRET_REDACTED]",
   "resource": "/proxy*",
   "path": "/path/to/resource",
   "httpMethod": "POST",
@@ -265,7 +265,7 @@ This guide has demonstrated how to create, test, and configure an AWS Lambda fun
 For further reading, check out:
 
 * [AWS Lambda Documentation](https://docs.aws.amazon.com/lambda/latest/dg/welcome.html)
-* [CloudWatch Logs Documentation](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/WhatIsCloudWatchLogs.html)
+* [CloudWatch Logs Documentation](https://docs.aws.amazon.[SECRET_REDACTED].html)
 
 Happy coding!
 

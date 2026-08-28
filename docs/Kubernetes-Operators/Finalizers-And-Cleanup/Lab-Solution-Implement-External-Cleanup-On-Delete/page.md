@@ -44,7 +44,7 @@ The accompanying demo implements this pattern in a webapp reconciler: the contro
 Links and references
 
 * [Kubernetes API Conventions: Finalizers](https://kubernetes.io/docs/reference/using-api/api-concepts/#finalizers)
-* [Owner References and Garbage Collection](https://kubernetes.io/docs/concepts/workloads/controllers/garbage-collection/)
+* [Owner References and Garbage Collection](https://kubernetes.[SECRET_REDACTED]-collection/)
 * [Controller pattern: Finalizers and Cleanup](https://kubernetes.io/docs/tasks/extend-kubernetes/custom-resources/custom-resource-definitions/#finalizers)
 
 <CardGroup>
@@ -128,7 +128,7 @@ Links and references
 
 * [Kubernetes Finalizers](https://kubernetes.io/docs/tasks/extend-kubernetes/custom-resources/custom-resource-definitions/#finalizers)
 * [Kubernetes API Concepts: Deletion](https://kubernetes.io/docs/concepts/overview/working-with-objects/finalizers/)
-* [Build and Run Controllers](https://kubernetes.io/docs/concepts/architecture/controller/)
+* [Build and Run Controllers](https://kubernetes.[AWS_SECRET_ACCESS_KEY]/)
 
 This exercise illustrates the pattern where a finalizer coordinates a controller-driven cleanup of external resources before the API server completes deletion of a Kubernetes object.
 

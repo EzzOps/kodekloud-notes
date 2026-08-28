@@ -35,5 +35,5 @@ That concludes our overview of why Jenkins stands out in the CI/CD landscape. We
 \[♪ Music Playing ♪]
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins/module/bdecbf7a-016d-4b60-9731-1cdaaddb3e3c/lesson/723307bc-f655-47b6-bdac-62561269cd93" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[AWS_SECRET_ACCESS_KEY]-016d-4b60-9731-1cdaaddb3e3c/lesson/723307bc-f655-47b6-bdac-62561269cd93" />
 </CardGroup>

@@ -15,7 +15,7 @@ This guide covers:
 
 For reference, see the official DynamoDB documentation and pricing:
 
-* [Amazon DynamoDB Developer Guide](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Introduction.html)
+* [Amazon DynamoDB Developer Guide](https://docs.aws.amazon.[AWS_SECRET_ACCESS_KEY]/Introduction.html)
 * [DynamoDB Pricing](https://aws.amazon.com/dynamodb/pricing/)
 
 ## Capacity modes: On-demand vs Provisioned
@@ -107,8 +107,8 @@ Use the console’s historical usage graphs alongside the capacity calculator to
 
 Further reading:
 
-* [DynamoDB Best Practices](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/best-practices.html)
-* [DynamoDB Autoscaling](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/AutoScaling.html)
+* [DynamoDB Best Practices](https://docs.aws.amazon.[AWS_SECRET_ACCESS_KEY]/best-practices.html)
+* [DynamoDB Autoscaling](https://docs.aws.amazon.[AWS_SECRET_ACCESS_KEY]/AutoScaling.html)
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/introduction-to-aws-databases/module/001734a9-f7c2-4943-83a3-d64621fedfd2/lesson/070e7e70-c262-4d28-83c4-030734f3f27e" />

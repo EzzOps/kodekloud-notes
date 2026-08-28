@@ -9,7 +9,7 @@ Recording rules let Prometheus periodically evaluate a PromQL expression and per
 Key links:
 
 * Prometheus: [https://prometheus.io/](https://prometheus.io/)
-* PromQL basics: [https://prometheus.io/docs/prometheus/latest/querying/basics/](https://prometheus.io/docs/prometheus/latest/querying/basics/)
+* PromQL basics: [https://prometheus.[SECRET_REDACTED]/](https://prometheus.[SECRET_REDACTED]/)
 * Grafana: [https://grafana.com/](https://grafana.com/)
 
 <Frame>

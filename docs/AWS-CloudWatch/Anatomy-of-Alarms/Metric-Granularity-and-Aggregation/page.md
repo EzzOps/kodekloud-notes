@@ -75,9 +75,9 @@ Common aggregation functions:
 
 ## Links and References
 
-* [Amazon CloudWatch Concepts](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html)
-* [AWS RDS Monitoring](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/MonitoringOverview.html)
-* [CloudWatch Metric Math](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/using-metric-math.html)
+* [Amazon CloudWatch Concepts](https://docs.aws.amazon.[SECRET_REDACTED].html)
+* [AWS RDS Monitoring](https://docs.aws.amazon.[SECRET_REDACTED].html)
+* [CloudWatch Metric Math](https://docs.aws.amazon.com/[AWS_SECRET_ACCESS_KEY]-metric-math.html)
 * [AWS Pricing Calculator](https://calculator.aws/#/)
 
 Build a robust monitoring strategy by combining the right granularity with effective aggregation—ensuring you never miss critical performance signals.

@@ -37,7 +37,7 @@ Another example:
 | aws  | Potential secret pattern: pikey=5589 4513 5412 4562 | low      |
 
 filename: aws\
-checksum: 14e3763161c3485181806245883bf1cebfa4f241dd23f4f01a5f9793ba45
+checksum: [SECRET_REDACTED]
 
 When prompted:
 

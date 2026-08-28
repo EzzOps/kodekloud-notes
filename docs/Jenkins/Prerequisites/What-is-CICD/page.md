@@ -69,5 +69,5 @@ This lesson provided an overview of the CI/CD process, detailing the role of Con
 Thank you for reading, and see you in the next lesson.
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins/module/bdecbf7a-016d-4b60-9731-1cdaaddb3e3c/lesson/7042dcbd-f254-4601-a08a-969df70e9e7f" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[AWS_SECRET_ACCESS_KEY]-016d-4b60-9731-1cdaaddb3e3c/lesson/7042dcbd-f254-4601-a08a-969df70e9e7f" />
 </CardGroup>

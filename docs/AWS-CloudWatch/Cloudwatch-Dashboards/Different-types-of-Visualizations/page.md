@@ -291,9 +291,9 @@ To avoid ongoing charges, delete:
 
 ## References
 
-* [AWS CloudFormation Documentation](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html)
+* [AWS CloudFormation Documentation](https://docs.aws.amazon.[SECRET_REDACTED].html)
 * [AWS Session Manager](https://docs.aws.amazon.com/systems-manager/latest/userguide/session-manager.html)
-* [Boto3 DynamoDB](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html)
+* [Boto3 DynamoDB](https://boto3.amazonaws.[SECRET_REDACTED].html)
 * [Amazon CloudWatch Dashboards](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch_Dashboards.html)
 
 <CardGroup>
@@ -390,7 +390,7 @@ By selecting the right combination of these visualization types, you can tailor 
 
 [2]: https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CWL_QuerySyntax.html
 
-[3]: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html
+[3]: https://docs.aws.amazon.[SECRET_REDACTED].html
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/aws-cloudwatch/module/70f56d00-7ac5-4c9a-868a-f3817e7f348b/lesson/93da922b-818f-46a3-b2d8-14651ea1bab8" />

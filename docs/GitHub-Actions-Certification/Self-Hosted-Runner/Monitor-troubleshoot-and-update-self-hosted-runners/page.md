@@ -6,7 +6,7 @@ curl -L -o actions-runner-linux-x64-2.310.2.tar.gz \
   https://github.com/actions/runner/releases/download/v2.310.2/actions-runner-linux-x64-2.310.2.tar.gz
 
 # (Optional) Validate the SHA-256 checksum
-echo "bf28a83175a60e551fa6e31b9e2ece6bf280278f949f3  actions-runner-linux-x64-2.310.2.tar.gz" \
+echo "[SECRET_REDACTED]  actions-runner-linux-x64-2.310.2.tar.gz" \
   | sha256sum -c -
 
 # Extract the archive
@@ -341,7 +341,7 @@ Keep your runner and Docker up-to-date to avoid unexpected failures:
 ## Links and References
 
 * [GitHub Actions: Hosting your own runners](https://docs.github.com/en/actions/hosting-your-own-runners)
-* [Runner update documentation](https://github.com/actions/runner/blob/main/docs/runner-update.md)
+* [Runner update documentation](https://github.[AWS_SECRET_ACCESS_KEY]-update.md)
 * [Monitor self-hosted runners](https://docs.github.com/en/actions/hosting-your-own-runners/monitoring-self-hosted-runners)
 * [Docker Engine installation](https://docs.docker.com/engine/install/)
 

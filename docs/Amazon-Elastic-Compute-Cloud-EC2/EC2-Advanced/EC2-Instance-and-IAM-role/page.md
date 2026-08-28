@@ -121,7 +121,7 @@ Under the hood:
 ## Links and References
 
 * [AWS IAM Roles Documentation](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles.html)
-* [EC2 Instance Metadata Service](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/instancedata-data-retrieval.html)
+* [EC2 Instance Metadata Service](https://docs.aws.amazon.[AWS_SECRET_ACCESS_KEY]-data-retrieval.html)
 * [AWS CLI Reference](https://docs.aws.amazon.com/cli/latest/reference/)
 * [AWS Security Best Practices](https://aws.amazon.com/whitepapers/security/)
 

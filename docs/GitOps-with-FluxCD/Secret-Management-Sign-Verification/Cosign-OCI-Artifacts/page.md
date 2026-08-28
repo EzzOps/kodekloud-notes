@@ -182,7 +182,7 @@ Expected output:
 Download the latest Cosign release and make it executable:
 
 ```bash theme={null}
-wget https://github.com/sigstore/cosign/releases/latest/download/cosign-linux-amd64 \
+wget https://github.com/[AWS_SECRET_ACCESS_KEY]/cosign-linux-amd64 \
   -O /usr/local/bin/cosign \
   && chmod +x /usr/local/bin/cosign
 ```

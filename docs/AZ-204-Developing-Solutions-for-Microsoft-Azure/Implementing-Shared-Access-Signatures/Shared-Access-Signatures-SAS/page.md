@@ -212,7 +212,7 @@ class Program
     static void Main(string[] args)
     {
         string storageAccountName = "a2045t8899";
-        string storageAccountKey = "7Mw4j4xVhss68PBXICd0t85Du9cwZ4Qttyh9PdRvzjW9I3du/+Xl2pUc80gimSpvtZ0QW+ASftwfxNg==";
+        string storageAccountKey = "[SECRET_REDACTED]==";
 
         StorageSharedKeyCredential sharedKeyCredential = new StorageSharedKeyCredential(storageAccountName, storageAccountKey);
 
@@ -246,7 +246,7 @@ This example uses the storage account key to generate an Account SAS token. Be s
 
 Shared Access Signatures (SAS) provide a flexible and secure method to grant temporary access to Azure resources while maintaining strict security controls. By using User Delegation SAS, Service SAS, or Account SAS in accordance with best practices—such as enforcing HTTPS, limiting token lifespans, and applying the principle of least privilege—you can effectively manage secure access to your resources.
 
-We encourage you to experiment with these techniques using the Azure portal as well as SDKs like .NET to build a robust understanding of SAS token generation and management. For further details, check out relevant [Azure Documentation](https://docs.microsoft.com/azure/storage/common/storage-sas-overview) and additional [security best practices](https://docs.microsoft.com/azure/security/fundamentals/identity-management-best-practices).
+We encourage you to experiment with these techniques using the Azure portal as well as SDKs like .NET to build a robust understanding of SAS token generation and management. For further details, check out relevant [Azure Documentation](https://docs.microsoft.com/azure/storage/common/storage-sas-overview) and additional [security best practices](https://docs.microsoft.[AWS_SECRET_ACCESS_KEY]-management-best-practices).
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/az-204-developing-solutions-for-microsoft-azure/module/00cea585-8945-49f2-bd87-be0ce9c88985/lesson/820189a8-4b39-4b17-a106-cb3701d3c709" />

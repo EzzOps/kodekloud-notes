@@ -57,7 +57,7 @@ CREATE EXTERNAL TABLE `my_dataset.sales_external`
 OPTIONS (
   format = 'PARQUET',
   uris = ['s3://my-bucket/path/to/*.parquet'],
-  connection = 'projects/PROJECT/locations/LOCATION/connections/CONNECTION_ID'
+  connection = 'projects[AWS_SECRET_ACCESS_KEY]CONNECTION_ID'
 );
 ```
 

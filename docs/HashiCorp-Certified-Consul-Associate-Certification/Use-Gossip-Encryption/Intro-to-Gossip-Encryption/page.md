@@ -1,5 +1,5 @@
 # Example output:
-wlVkhlSnyl7SEy63/XsXMJ/48gIQSghShhUqn/05C4=
+[SECRET_REDACTED]=
 ```
 
 ## 3. Distribute the New Key Across the Cluster
@@ -7,13 +7,13 @@ wlVkhlSnyl7SEy63/XsXMJ/48gIQSghShhUqn/05C4=
 Install the newly generated key into the cluster keyring:
 
 ```bash theme={null}
-consul keyring -install wlVkhlSnyl7SEy63/XsXMJ/48gIQSghShhUqn/05C4=
+consul keyring -install [SECRET_REDACTED]=
 ```
 
 You should see:
 
 ```text theme={null}
-Installing new key "wlVkhlSnyl7SEy63/XsXMJ/48gIQSghShhUqn/05C4="
+Installing new key "[SECRET_REDACTED]="
 ```
 
 ### 3.1. Verify Key Distribution
@@ -29,8 +29,8 @@ Expected output:
 ```text theme={null}
 ==> Gathering installed encryption keys...
 us-east-1 (LAN):
-  62qD/DH15Ax0lMRUpMKvttP53p4FAvu+FgARDU4MzA=  [2/2]
-  wlVkhlSnyl7SEy63/XsXMJ/48gIQSghShhUqn/05C4=  [2/2]
+  [SECRET_REDACTED]=  [2/2]
+  [SECRET_REDACTED]=  [2/2]
 ```
 
 ## 4. Promote the New Key to Primary
@@ -38,13 +38,13 @@ us-east-1 (LAN):
 Switch the cluster’s primary gossip encryption key:
 
 ```bash theme={null}
-consul keyring -use wlVkhlSnyl7SEy63/XsXMJ/48gIQSghShhUqn/05C4=
+consul keyring -use [SECRET_REDACTED]=
 ```
 
 You’ll see:
 
 ```text theme={null}
-Changing primary gossip encryption key to "wlVkhlSnyl7SEy63/XsXMJ/48gIQSghShhUqn/05C4="
+Changing primary gossip encryption key to "[SECRET_REDACTED]="
 ```
 
 Confirm the change:
@@ -60,13 +60,13 @@ Should display the new key first under both WAN and LAN segments.
 Once every node is using the new key, remove the old one:
 
 ```bash theme={null}
-consul keyring -remove 62qD/DH15Ax0lMRUpMKvttP53p4FAvu+FgARDU4MzA=
+consul keyring -remove [SECRET_REDACTED]=
 ```
 
 Output:
 
 ```text theme={null}
-Removing encryption key "62qD/DH15Ax0lMRUpMKvttP53p4FAvu+FgARDU4MzA="
+Removing encryption key "[SECRET_REDACTED]="
 ```
 
 Verify only the new key remains:
@@ -78,9 +78,9 @@ consul keyring -list
 ```text theme={null}
 ==> Gathering installed encryption keys...
 WAN:
-  wlVkhlSnyl7SEy63/XsXMJ/48gIQSghShhUqn/05C4=  [2/2]
+  [SECRET_REDACTED]=  [2/2]
 us-east-1 (LAN):
-  wlVkhlSnyl7SEy63/XsXMJ/48gIQSghShhUqn/05C4=  [2/2]
+  [SECRET_REDACTED]=  [2/2]
 ```
 
 <Callout icon="triangle-alert">
@@ -157,14 +157,14 @@ consul keygen
 Example output:
 
 ```bash theme={null}
-hDqYxqqepKyRADn4Zn+u+D9vLge8Wm+LpFAPLGhtco=
+[SECRET_REDACTED]=
 ```
 
 Then add the Base64 string to every agent’s configuration file:
 
 ```json theme={null}
 {
-  "encrypt": "hDqYxqqepKyRADn4Zn+u+D9vLge8Wm+LpFAPLGhtco="
+  "encrypt": "[SECRET_REDACTED]="
 }
 ```
 

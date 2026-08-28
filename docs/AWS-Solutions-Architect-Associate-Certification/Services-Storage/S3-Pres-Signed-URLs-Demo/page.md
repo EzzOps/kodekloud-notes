@@ -92,7 +92,7 @@ Below is an example error response when attempting to access the object via a pr
     <Code>AccessDenied</Code>
     <Message>Access Denied</Message>
     <RequestId>348F7B3F19D916A7V</RequestId>
-    <HostId>AHmIbdweQpZyPcoVo2t5fMcp4jSywbWtlAkYdLXoADepHMfM1v1Zk9aCKBW0=</HostId>
+    <HostId>[SECRET_REDACTED]=</HostId>
 </Error>
 ```
 

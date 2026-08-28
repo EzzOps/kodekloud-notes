@@ -2,7 +2,7 @@
 resource "local_file" "classics" {
   content               = "<<EOT\n1. DragonBall\nEOT"
   content_base64sha256  = "61ybEEB9hy2PJuJ30dyB1jDrngh76EV9R9KSA4="
-  content_base64sha512  = "lKrYdMr2TokTZk1xL17LfPlLxUld8Z7uGL4vFq/Ko1Bq0yJ6w="
+  content_base64sha512  = "[SECRET_REDACTED]="
   content_md5           = "content_md5"
   content_sha1          = "content_sha1"
   content_sha256        = "content_sha256"
@@ -31,7 +31,7 @@ tofu state show local_file.top10
 Look for the `id =` line. It might appear as:
 
 ```text theme={null}
-id = "961e7f431c2b8a09f1b2d3a4e5b6c7d8e9f0a1b2"
+id = "[AWS_SECRET_ACCESS_KEY]"
 ```
 
 ***
@@ -184,7 +184,7 @@ Thank you for following this tutorial on OpenTofu state management!
 
 * [OpenTofu Documentation](https://opentofu.io/docs)
 * [Terraform State Management](https://developer.hashicorp.com/terraform/cli/commands/state)
-* [AWS S3 Backend](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/s3_bucket)
+* [AWS S3 Backend](https://registry.terraform.[SECRET_REDACTED]s3_bucket)
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/dd54768d-8454-44bd-bab2-99f8f7b5f145/lesson/baf21805-46cd-4e5a-8c54-c0f7077c60c8" />

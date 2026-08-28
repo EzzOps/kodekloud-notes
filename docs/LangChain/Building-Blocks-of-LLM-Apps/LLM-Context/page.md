@@ -80,5 +80,5 @@ Further reading and references
 This lesson will cover chunking strategies, embedding model selection, vector storage patterns, prompt construction best practices, and response verification techniques to build robust, low-hallucination LLM applications.
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langchain/module/bb8afda8-9de9-4865-aabf-bc71786440b2/lesson/710cf4ad-299d-49bb-86f0-6b06a41502f7" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[SECRET_REDACTED]-9de9-4865-aabf-bc71786440b2/lesson/710cf4ad-299d-49bb-86f0-6b06a41502f7" />
 </CardGroup>

@@ -4,7 +4,7 @@
 #1 DONE 0.0s
 #2 [internal] load metadata for docker.io/library/python:3.12.0b3-alpine3.18
 #2 DONE 0.1s
-#3 [1/5] FROM docker.io/library/python:3.12.0b3-alpine3.18@sha256:f25344e7b996d66770c4e08aed2c51d1778288fd45884669f6a6d68af46c
+#3 [1/5] FROM docker.io/library/python:3.12.0b3-alpine3.18@sha256:[SECRET_REDACTED]
 #3 CACHED
 #4 [internal] load .dockerignore
 #4 transferring context: 1398 done

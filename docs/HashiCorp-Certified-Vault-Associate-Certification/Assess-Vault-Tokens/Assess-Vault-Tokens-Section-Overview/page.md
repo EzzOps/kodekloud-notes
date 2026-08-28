@@ -29,7 +29,7 @@ Vault 1.10 replaces the previous one-letter prefixes with more descriptive three
 Service tokens are the most common token type. In Vault 1.10, they now start with `hvs.` followed by at least 95 random bytes:
 
 ```text theme={null}
-hvs.QRx4pz2RIka7RhhrjiVRBNjq...   # ≥95 bytes after “hvs.”
+[VAULT_TOKEN]...   # ≥95 bytes after “hvs.”
 ```
 
 * `hvs.` indicates a **HashiCorp Vault Service** token.

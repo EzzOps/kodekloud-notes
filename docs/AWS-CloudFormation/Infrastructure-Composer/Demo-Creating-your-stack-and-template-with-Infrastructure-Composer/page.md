@@ -30,7 +30,7 @@ Select the resource to open the resource properties in the right-hand sidebar. T
 * Override the bucket name to supply a specific globally unique name
 
 <Callout icon="lightbulb">
-  S3 bucket names must be unique across the entire AWS global namespace and must follow [S3 bucket naming rules](https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucketnamingrules.html). If you supply a custom bucket name, ensure it’s globally unique.
+  S3 bucket names must be unique across the entire AWS global namespace and must follow [S3 bucket naming rules](https://docs.aws.amazon.[SECRET_REDACTED].html). If you supply a custom bucket name, ensure it’s globally unique.
 </Callout>
 
 In this demonstration a custom bucket name was used: `eden-kodekloud-vbnc-bkt`. Infrastructure Composer fills in reasonable defaults for security and encryption, such as blocking public access and enabling server-side encryption. You can preview and edit the generated template before exporting.
@@ -128,8 +128,8 @@ Using Infrastructure Composer you can:
 
 Links and references:
 
-* [Infrastructure Composer — CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/infrastructure-composer.html)
-* [S3 bucket naming rules](https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucketnamingrules.html)
+* [Infrastructure Composer — CloudFormation User Guide](https://docs.aws.amazon.[SECRET_REDACTED]-composer.html)
+* [S3 bucket naming rules](https://docs.aws.amazon.[SECRET_REDACTED].html)
 * [AWS CloudFormation documentation](https://docs.aws.amazon.com/cloudformation/)
 
 <CardGroup>

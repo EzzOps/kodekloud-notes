@@ -58,10 +58,10 @@ Grant the `eks-fis-role` permissions to manage EKS clusters, EC2 instances, Syst
 
 | Policy Name                             | Purpose                                | AWS CLI Example                                                                |
 | --------------------------------------- | -------------------------------------- | ------------------------------------------------------------------------------ |
-| AWSFaultInjectionSimulatorNetworkAccess | VPC and networking operations          | `arn:aws:iam::aws:policy/service-role/AWSFaultInjectionSimulatorNetworkAccess` |
-| AWSFaultInjectionSimulatorEKSAccess     | EKS API actions                        | `arn:aws:iam::aws:policy/service-role/AWSFaultInjectionSimulatorEKSAccess`     |
-| AWSFaultInjectionSimulatorEC2Access     | EC2 instance management                | `arn:aws:iam::aws:policy/service-role/AWSFaultInjectionSimulatorEC2Access`     |
-| AWSFaultInjectionSimulatorSSMAccess     | Systems Manager for remote commands    | `arn:aws:iam::aws:policy/service-role/AWSFaultInjectionSimulatorSSMAccess`     |
+| AWSFaultInjectionSimulatorNetworkAccess | VPC and networking operations          | `arn:aws:iam::aws:policy/service-role[AWS_SECRET_ACCESS_KEY]` |
+| AWSFaultInjectionSimulatorEKSAccess     | EKS API actions                        | `arn:aws:iam::aws:policy/service-[AWS_SECRET_ACCESS_KEY]`     |
+| AWSFaultInjectionSimulatorEC2Access     | EC2 instance management                | `arn:aws:iam::aws:policy/service-[AWS_SECRET_ACCESS_KEY]`     |
+| AWSFaultInjectionSimulatorSSMAccess     | Systems Manager for remote commands    | `arn:aws:iam::aws:policy/service-[AWS_SECRET_ACCESS_KEY]`     |
 | CloudWatchLogsFullAccess                | CloudWatch Logs for experiment logging | `arn:aws:iam::aws:policy/CloudWatchLogsFullAccess`                             |
 | CloudWatchAgentServerPolicy             | CloudWatch Agent metrics push          | `arn:aws:iam::aws:policy/CloudWatchAgentServerPolicy`                          |
 
@@ -70,7 +70,7 @@ Example of attaching one policy:
 ```bash theme={null}
 aws iam attach-role-policy \
   --role-name eks-fis-role \
-  --policy-arn arn:aws:iam::aws:policy/service-role/AWSFaultInjectionSimulatorNetworkAccess
+  --policy-arn arn:aws:iam::aws:policy/service-role[AWS_SECRET_ACCESS_KEY]
 ```
 
 Repeat for each policy listed above.
@@ -168,7 +168,7 @@ In this lesson, we’ll establish a steady-state baseline for our Amazon EKS app
 
 ## 1. CloudWatch Container Insights
 
-To begin, navigate to the [CloudWatch Container Insights](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/ContainerInsights.html) dashboard and select your EKS cluster. Here you can view overall CPU and memory utilization, cluster state summaries, and alarm statuses.
+To begin, navigate to the [CloudWatch Container Insights](https://docs.aws.amazon.[SECRET_REDACTED].html) dashboard and select your EKS cluster. Here you can view overall CPU and memory utilization, cluster state summaries, and alarm statuses.
 
 <Frame>
   ![The image shows an AWS CloudWatch Container Insights dashboard for Amazon EKS, displaying cluster state summaries, performance metrics, and alarm states.](https://kodekloud.com/kk-media/image/upload/v1752871865/notes-assets/images/Chaos-Engineering-Demo-Memory-Stress-on-EKS-Part-2/aws-cloudwatch-eks-container-insights-dashboard.jpg)
@@ -200,7 +200,7 @@ Inspect the time-series graphs to see how these values evolve in real time.
 
 ## 3. Real User Monitoring (RUM)
 
-For end-user experience, use [CloudWatch RUM](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-RUM.html). Select your PetSite RUM app monitor to view session quality:
+For end-user experience, use [CloudWatch RUM](https://docs.aws.amazon.[SECRET_REDACTED]-RUM.html). Select your PetSite RUM app monitor to view session quality:
 
 * **Positive**
 * **Tolerable**
@@ -230,8 +230,8 @@ In the next demo, we’ll execute our FIS memory‐stress experiment and revisit
 
 ## Links and References
 
-* [AWS CloudWatch Container Insights Documentation](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/ContainerInsights.html)
-* [AWS CloudWatch RUM Documentation](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-RUM.html)
+* [AWS CloudWatch Container Insights Documentation](https://docs.aws.amazon.[SECRET_REDACTED].html)
+* [AWS CloudWatch RUM Documentation](https://docs.aws.amazon.[SECRET_REDACTED]-RUM.html)
 * [AWS Fault Injection Simulator (FIS)](https://docs.aws.amazon.com/fis/latest/userguide/)
 * [Amazon EKS User Guide](https://docs.aws.amazon.com/eks/latest/userguide/)
 

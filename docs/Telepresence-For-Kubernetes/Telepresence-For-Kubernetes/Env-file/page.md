@@ -30,8 +30,8 @@ Adjust your application or use symbolic links to consume these local files seaml
 ## References
 
 * [Telepresence Documentation](https://www.telepresence.io/docs/)
-* [Kubernetes ConfigMap](https://kubernetes.io/docs/concepts/configuration/configmap/)
-* [Kubernetes Deployments](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/)
+* [Kubernetes ConfigMap](https://kubernetes.[AWS_SECRET_ACCESS_KEY]/)
+* [Kubernetes Deployments](https://kubernetes.[SECRET_REDACTED]/)
 * [Express.js Guide](https://expressjs.com/en/starter/installing.html)
 
 <CardGroup>

@@ -100,11 +100,11 @@ Inspect the pod's events:
 ```plaintext theme={null}
 Events:
   Normal   Scheduled   9m56s  default-scheduler  Successfully assigned production/notifications to node01
-  Normal   Pulling     8m24s  kubelet    Pulling image "ghcr.io/testuser177/solar-system:3cd635a2ae17224806363eb3a4d565623650efb1"
-  Warning  Failed      8m24s  kubelet    Failed to pull image "ghcr.io/testuser177/solar-system:3cd635a2ae17224806363eb3a4d565623650efb1": failed to resolve reference "ghcr.io/testuser177/solar-system:3cd635a2ae17224806363eb3a4d565623650efb1": failed to authorize: failed to fetch anonymous token: unexpected status from GET request to https://ghcr.io/token?scope=repository%3Atestuser177%2Fsolar-system%3Apull&service=ghcr.io: 401 Unauthorized
+  Normal   Pulling     8m24s  kubelet    Pulling image "ghcr.io/testuser177/solar-system:[AWS_SECRET_ACCESS_KEY]"
+  Warning  Failed      8m24s  kubelet    Failed to pull image "ghcr.io/testuser177/solar-system:[AWS_SECRET_ACCESS_KEY]": failed to resolve reference "ghcr.io/testuser177/solar-system:[AWS_SECRET_ACCESS_KEY]": failed to authorize: failed to fetch anonymous token: unexpected status from GET request to https://ghcr.io/token?scope=repository%3Atestuser177%2Fsolar-system%3Apull&service=ghcr.io: 401 Unauthorized
   Warning  Failed      8m24s  kubelet    Error: ErrImagePull
   Warning  Failed      8m12s  kubelet    Error: ImagePullBackOff
-  Normal   Backoff     4m47s  kubelet    Back-off pulling image "ghcr.io/testuser177/solar-system:3cd635a2ae17224806363eb3a4d565623650efb1"
+  Normal   Backoff     4m47s  kubelet    Back-off pulling image "ghcr.io/testuser177/solar-system:[AWS_SECRET_ACCESS_KEY]"
 ```
 
 A quick check confirms that the required secret for ghcr.io (named "ghcr-secret") does exist:
@@ -128,7 +128,7 @@ kind: Pod
 metadata:
   annotations:
     kubectl.kubernetes.io/last-applied-configuration: |
-      {"apiVersion":"v1","kind":"Pod","metadata":{"annotations":{},"labels":{"app":"notifications"},"name":"notifications","namespace":"production"},"spec":{"containers":[{"image":"ghcr.io/testuser177/solar-system:3cd635a2ae17224806363eb3a4d565623650efb1","name":"notifications","imagePullPolicy":"IfNotPresent","resources":{},"terminationMessagePath":"/dev/termination-log","terminationMessagePolicy":"File","volumeMounts":[{"mountPath":"/var/run/secrets/kubernetes.io/serviceaccount","name":"kube-api-access-mh4xz","readOnly":true}]}]}}
+      {"apiVersion":"v1","kind":"Pod","metadata":{"annotations":{},"labels":{"app":"notifications"},"name":"notifications","namespace":"production"},"spec":{"containers":[{"image":"ghcr.io/testuser177/solar-system:[AWS_SECRET_ACCESS_KEY]","name":"notifications","imagePullPolicy":"IfNotPresent","resources":{},"terminationMessagePath":"/dev/termination-log","terminationMessagePolicy":"File","volumeMounts":[{"mountPath":"/var/run/secrets/kubernetes.io/serviceaccount","name":"kube-api-access-mh4xz","readOnly":true}]}]}}
   labels:
     app: notifications
   name: notifications
@@ -137,7 +137,7 @@ spec:
   imagePullSecrets:
   - name: ghcr-secret
   containers:
-  - image: ghcr.io/testuser177/solar-system:3cd635a2ae17224806363eb3a4d565623650efb1
+  - image: ghcr.io/testuser177/solar-system:[AWS_SECRET_ACCESS_KEY]
     imagePullPolicy: IfNotPresent
     name: notifications
     resources: {}

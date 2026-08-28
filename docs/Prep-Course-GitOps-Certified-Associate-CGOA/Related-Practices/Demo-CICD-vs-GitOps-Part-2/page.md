@@ -146,8 +146,8 @@ Example build steps observed during execution
 
 ```shell theme={null}
 docker build -t highway-animation-jenkins:latest .
-docker tag highway-animation-jenkins:latest siddharth67/highway-animation-jenkins:2-508f3ed33b6b6876749a0f1140204afa72766719
-docker push siddharth67/highway-animation-jenkins:2-508f3ed33b6b6876749a0f1140204afa72766719
+docker tag highway-animation-jenkins:latest siddharth67/highway-animation-jenkins:2-[AWS_SECRET_ACCESS_KEY]
+docker push siddharth67/highway-animation-jenkins:2-[AWS_SECRET_ACCESS_KEY]
 ```
 
 A successful pipeline run appears like other Jenkins jobs in the dashboard:
@@ -203,7 +203,7 @@ spec:
     spec:
       containers:
         - name: highway-animation
-          image: siddharth67/highway-animation-jenkins:2-508f3ed33b6b6876749a0f1140204afa72766719
+          image: siddharth67/highway-animation-jenkins:2-[AWS_SECRET_ACCESS_KEY]
           ports:
             - containerPort: 3000
           env:

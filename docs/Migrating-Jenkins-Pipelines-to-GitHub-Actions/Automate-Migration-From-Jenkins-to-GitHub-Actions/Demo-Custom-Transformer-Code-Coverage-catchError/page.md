@@ -1,5 +1,5 @@
 # Example placeholder (replace with the actual token you generated)
-GITHUB_PAT=ghp_XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+GITHUB_PAT=[GITHUB_PAT]
 ```
 
 ## Create a Jenkins API token

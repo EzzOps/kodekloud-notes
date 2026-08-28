@@ -49,20 +49,20 @@ Below is an example of what the metadata JSON might look like:
 {
   "header": {
     "algorithm": "AES_256_GCM_HKDF_SHA512_COMMIT_KEY_ECDSA_P384",
-    "commitment_key": "JeK8VKo7y50+6z4y2Rpi2J3Px+ER7KMeb2B+4jCMDRk=",
+    "commitment_key": "[SECRET_REDACTED]=",
     "content_type": 2,
     "encrypted_data_keys": [
       {
-        "encrypted_data_key": "AQIBAhhIPn5jWlokyhTrOUNemva4jMiIw9RNFBBjMDPJwNggh3TTk7ntCDURimak35c55DA3bddPIqrk10Nbk6VeFp2m7P0R/xhRGrvE5MrjQ1BRZi0rI71Fn46TQpnYkunSduA==",
+        "encrypted_data_key": "[SECRET_REDACTED]==",
         "key_provider": {
-          "key_info": "YXJuUmFzczprbk6XMtZWZcdxOjg0MTg2MDkyNzMzNzprZXkwNWU2Njk2YzUtZGU0Ni00ZDU2LWI=",
+          "key_info": "[SECRET_REDACTED]=",
           "provider_id": "YxdzLWttcw=="
         }
       }
     ]
   },
   "encryption_context": {
-    "aws-crypto-public": "A664LzkW6MAlgfbJ3BtD7Ic+fEyTscr4K9it0rHSZ0V22D3rI9d0Rs511PrB+E7w==",
+    "aws-crypto-public": "A664LzkW6MAlgfbJ3BtD7Ic+[AWS_SECRET_ACCESS_KEY]==",
     "purpose": "test"
   },
   "frame_length": 4096
@@ -146,7 +146,7 @@ The command returns output similar to this:
 
 ```json theme={null}
 {
-  "CiphertextBlob": "AQIDAHhPIn5jWlOkyhcTrOUNemva4jMiIW9RNFBBMjDPJwngHbFmSd7rWYRpzC32pUfq/AAAAfjfERTNoj8WtmQvDnN+ahOOU/1CB9U8odPg+UoEfgjdRiwahNNYgki76w==",
+  "CiphertextBlob": "[SECRET_REDACTED][AWS_SECRET_ACCESS_KEY]+UoEfgjdRiwahNNYgki76w==",
   "Plaintext": "2gy7bq/apUh36hT39xYkEy+gHVA2yM2Y9RHM=",
   "KeyId": "arn:aws:us-east-1:841869029733:key/5e6696c5-de46-4d56-bb50-a9b71e187cad"
 }
@@ -159,7 +159,7 @@ echo '2gy7bp/qPhuH36NTR9xYKY+VHG+0VaM2Y9n/RHM=' | base64 -d > plaintext.key
 ```
 
 ```bash theme={null}
-echo 'AQIdAHIpIn5jWLoKhyTrOUNemva4jMiIwi9NRFBMjMDPJwNgBHF5dr7wRhp3zC32pFuHlxZxUz80Qo/fERTNoj8wtmQvDnN+a+oOUb/1C9bU8odPG+uOefgXlDrwsGiahNNYgki76w==' | base64 -d > encrypted-key
+echo '[SECRET_REDACTED]+[AWS_SECRET_ACCESS_KEY]==' | base64 -d > encrypted-key
 ```
 
 This diagram from the AWS KMS console displays your customer-managed keys, including the "demo" key:
@@ -209,7 +209,7 @@ To decrypt the encrypted data file later, follow these steps:
    ```json theme={null}
    {
      "KeyId": "arn:aws:kms:us-east-1:841860927337:key/5e6696c5-de46-4d56-bb50-a9b71e187cad",
-     "Plaintext": "2gyy7bp/qPhuH36N3T9xKY+VHG+0BVaM2Y9n/RHM=",
+     "Plaintext": "[AWS_SECRET_ACCESS_KEY]=",
      "EncryptionAlgorithm": "SYMMETRIC_DEFAULT"
    }
    ```
@@ -219,7 +219,7 @@ To decrypt the encrypted data file later, follow these steps:
    Decode the returned plaintext key and save it:
 
    ```bash theme={null}
-   echo '2gyy7bp/qPhuH36N3T9xKY+VHG+0BVaM2Y9n/RHM=' | base64 -d > plaintext.key
+   echo '[AWS_SECRET_ACCESS_KEY]=' | base64 -d > plaintext.key
    ```
 
 3. **Decrypt the Data Using OpenSSL**

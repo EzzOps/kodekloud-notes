@@ -185,7 +185,7 @@ docker rmi nginx
 Example error message:
 
 ```plaintext theme={null}
-Error: image used by 92a87f978de328e0ec460a3775006b394459fa9f043da39179d6693416e976f2: image is in use by a container
+Error: image used by [SECRET_REDACTED]: image is in use by a container
 ```
 
 To force the removal of an image (this will stop and remove any dependent containers), add the `--force` option:
@@ -309,7 +309,7 @@ The output will include information similar to:
 ```json theme={null}
 {
   "Name": "registry.fedoraproject.org/fedora",
-  "Digest": "sha256:655721ff6163ee7664126b5e05ae81598e1b0c3bcf7017c36c4472cb092fef9",
+  "Digest": "sha256:[SECRET_REDACTED]",
   "RepoTags": [
     "24",
     "25",
@@ -326,7 +326,7 @@ The output will include information similar to:
   "Architecture": "amd64",
   "OS": "linux",
   "Layers": [
-    "sha256:30887217d7b674cfobe64cd3fc00c25aab921cacf35fa0e7b1578500a3e1653"
+    "sha256:[SECRET_REDACTED]"
   ],
   "Env": [
     "DISTTAG=f32container",
@@ -369,7 +369,7 @@ This command outputs a detailed JSON summary of the container's configuration, i
   "rootfs": {
     "type": "layers",
     "diff_ids": [
-      "sha256:4ac0fa2b217d3fd63d51e5a6fd59432e543d499cdf2b1ac48fbe424f2ddd1"
+      "sha256:[SECRET_REDACTED]"
     ]
   },
   "history": [

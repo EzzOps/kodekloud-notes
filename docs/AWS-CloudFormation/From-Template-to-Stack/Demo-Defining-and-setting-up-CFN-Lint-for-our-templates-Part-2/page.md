@@ -217,7 +217,7 @@ Resources:
 
 ## Links and References
 
-* [AWS CloudFormation Concepts](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html)
+* [AWS CloudFormation Concepts](https://docs.aws.amazon.[SECRET_REDACTED].html)
 * [cfn-lint GitHub Repository](https://github.com/aws-cloudformation/cfn-lint)
 * [cfn-lint PyPI Package](https://pypi.org/project/cfn-lint/)
 

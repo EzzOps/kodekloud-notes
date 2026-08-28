@@ -13,7 +13,7 @@ Before you begin, make sure you have the following:
 | Resource                     | Purpose                                       | Link/Notes                                                                                                                                                                                     |
 | ---------------------------- | --------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Azure SQL Database           | Holds your sample data (e.g., AdventureWorks) | Deploy via Azure Portal or [Azure CLI](https://docs.microsoft.com/azure/azure-sql/)                                                                                                            |
-| Sample Data (AdventureWorks) | Demo dataset for sales and customer info      | [https://github.com/microsoft/sql-server-samples/tree/master/samples/databases/adventure-works](https://github.com/microsoft/sql-server-samples/tree/master/samples/databases/adventure-works) |
+| Sample Data (AdventureWorks) | Demo dataset for sales and customer info      | [https://github.com/microsoft/sql-server-samples[AWS_SECRET_ACCESS_KEY]-works](https://github.com/microsoft/sql-server-samples[AWS_SECRET_ACCESS_KEY]-works) |
 | Power BI Desktop             | Authoring tool for reports and visualizations | Download from [Microsoft Store](https://powerbi.microsoft.com/desktop/) or [Microsoft Download Center](https://aka.ms/pbidesktop)                                                              |
 
 <Frame>

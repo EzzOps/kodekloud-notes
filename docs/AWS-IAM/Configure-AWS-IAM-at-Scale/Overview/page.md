@@ -42,7 +42,7 @@ Scaling your AWS Identity and Access Management (IAM) strategy across multiple a
 
 * [AWS Organizations User Guide](https://docs.aws.amazon.com/organizations/latest/userguide/)
 * [AWS IAM Best Practices](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html)
-* [Logging AWS API Calls with CloudTrail](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html)
+* [Logging AWS API Calls with CloudTrail](https://docs.aws.amazon.[SECRET_REDACTED]-user-guide.html)
 * [AWS Config Developer Guide](https://docs.aws.amazon.com/config/latest/developerguide/)
 * [AWS Identity Center (SSO) Documentation](https://docs.aws.amazon.com/singlesignon/latest/userguide/)
 

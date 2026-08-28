@@ -93,15 +93,15 @@ The build output confirms the successful creation of the image:
     registry: acraz204kodekloud.azure.io
     repository: airportcodes
     tag: v1
-    digest: sha256:2f9367cb9c6b266246a44fd6b6c6781e871c43e53dc63847b7c53b9
+    digest: sha256:[SECRET_REDACTED]
   runtime-dependency:
     registry: mcr.microsoft.com
     tag: "8.0"
-    digest: sha256:a4913d84b919bd83d61b0c2fa1f9d25d90279938e1c4d
+    digest: sha256:[SECRET_REDACTED]
   buildtime-dependency:
     registry: mcr.microsoft.com
     tag: "8.0"
-    digest: sha256:1c451c88cad4b8c372ea49058a3900a2a1c8e364c6
+    digest: sha256:[SECRET_REDACTED]
   git: {}
 Run ID: ca3 was successful after 44s
 ```
@@ -137,12 +137,12 @@ Additional run logs provide further confirmation of the build:
     registry: acrza3204kodekoud.azurecr.io
     repository: airportcodes
     tag: v1
-    digest: sha256:9f2367b9cd6bc266a434fbc376cb6d16c781c2f3d3c6b8c9b7e4c83a36d36d
+    digest: sha256:[SECRET_REDACTED]
 runtime-dependency:
     registry: mcr.microsoft.com
     repository: dotnet/aspnet
     tag: "8.0"
-    digest: sha256:da256:1916978842f8b84b8b6c2fa1d25d90279938e1c4d
+    digest: sha256:da256:[SECRET_REDACTED]
 buildid=dependency:
     registry: mcr.microsoft.com
     repository: dotnet/sdk
@@ -197,7 +197,7 @@ After running the command, verify the container app’s status in the Azure Port
 Create a second container app as follows:
 
 ```bash theme={null}
-az containerapp create --name airportcodeapiapp2 -g rg-az204-containerapps --environment airportapienvironment --image acraz204kodekloud.azurecr.io/airportcodes:v1 --target-port 80 --ingress external --registry-server acraz204kodekloud.azurecr.io --registry-username acraz204kodekloud --registry-password 'Maz089IIXYjE0+Iu3I4oN2S1rqnKxS8n60xj8C+ACRCPDYnH' --cpu 0.5 --memory 1.0Gi
+az containerapp create --name airportcodeapiapp2 -g rg-az204-containerapps --environment airportapienvironment --image acraz204kodekloud.azurecr.io/airportcodes:v1 --target-port 80 --ingress external --registry-server acraz204kodekloud.azurecr.io --registry-username acraz204kodekloud --registry-password '[SECRET_REDACTED]' --cpu 0.5 --memory 1.0Gi
 ```
 
 After deployment, verify that the container app revisions and replicas are running correctly in the Azure Portal. Access the application URL with the appropriate API path (e.g., /api/airport-codes) to display the list of airport codes:

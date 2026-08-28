@@ -106,7 +106,7 @@ You can convert arbitrary Python functions into runnable components (for example
 * [OpenAI Chat Models (ChatOpenAI)](https://platform.openai.com/docs/models)
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langchain/module/754457c5-1386-422b-98ad-3342dfc6aab3/lesson/18f5c92b-a25c-4449-ae23-6c65658209d5" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[SECRET_REDACTED]-1386-422b-98ad-3342dfc6aab3/lesson/18f5c92b-a25c-4449-ae23-6c65658209d5" />
 </CardGroup>
 
 

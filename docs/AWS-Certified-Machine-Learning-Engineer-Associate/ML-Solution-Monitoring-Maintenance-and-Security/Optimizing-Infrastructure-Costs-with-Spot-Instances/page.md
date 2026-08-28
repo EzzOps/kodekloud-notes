@@ -192,7 +192,7 @@ Treat Spot resources the same way you treat On-Demand resources from an IAM and 
 * [Amazon SageMaker Spot Training overview](https://docs.aws.amazon.com/sagemaker/latest/dg/managed-spot-training.html)
 * [AWS CloudWatch & EventBridge](https://docs.aws.amazon.com/cloudwatch/)
 * [AWS Lambda](https://docs.aws.amazon.com/lambda/)
-* [AWS Cost Explorer API (Boto3)](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html)
+* [AWS Cost Explorer API (Boto3)](https://boto3.amazonaws.[SECRET_REDACTED].html)
 * [SageMaker Neo compilation](https://docs.aws.amazon.com/sagemaker/latest/dg/neo.html)
 
 <CardGroup>

@@ -147,8 +147,8 @@ Summary
 ## Links and References
 
 * [OpenTelemetry Python Instrumentation](https://opentelemetry.io/docs/instrumentation/python/)
-* [OpenTelemetry Python Exporters — Console and OTLP](https://opentelemetry.io/docs/instrumentation/python/exporters/)
-* [OTLP exporter configuration](https://opentelemetry.io/docs/reference/specification/protocol/otlp/)
+* [OpenTelemetry Python Exporters — Console and OTLP](https://opentelemetry.[AWS_SECRET_ACCESS_KEY]/)
+* [OTLP exporter configuration](https://opentelemetry.[AWS_SECRET_ACCESS_KEY]/otlp/)
 * [OpenTelemetry Tracing SDK for Python](https://github.com/open-telemetry/opentelemetry-python)
 
 <CardGroup>

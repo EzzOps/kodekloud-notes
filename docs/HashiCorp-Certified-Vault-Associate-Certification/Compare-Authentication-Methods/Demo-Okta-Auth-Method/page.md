@@ -65,7 +65,7 @@ Provide Vault with your Okta **base URL**, **organization name**, and the **API 
 vault write auth/okta/config \
   base_url="okta.com" \
   org_name="your-org-name" \
-  api_token="00SkFU6jMj8HkcuH03AUs6zdiGzQFTOBebVbbP9K"
+  api_token="[AWS_SECRET_ACCESS_KEY]"
 ```
 
 Verify the settings:

@@ -45,7 +45,7 @@ set -e
 
 JENKINS_URL="http://localhost:8080"
 ADMIN_USER="admin"
-ADMIN_PASSWORD=$(sudo cat /var/lib/jenkins/secrets/initialAdminPassword)
+ADMIN_PASSWORD=$(sudo cat /var/[AWS_SECRET_ACCESS_KEY])
 
 # Fetch CRSF protection crumb
 JENKINS_CRUMB=$(

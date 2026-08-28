@@ -150,7 +150,7 @@ flux uninstall
 
 [flux-install]: https://fluxcd.io/install.sh
 
-[flux-homebrew]: https://github.com/fluxcd/flux2/tree/main/manifests/install/helm
+[flux-homebrew]: https://github.com/[AWS_SECRET_ACCESS_KEY]/helm
 
 [flux-releases]: https://github.com/fluxcd/flux2/releases
 

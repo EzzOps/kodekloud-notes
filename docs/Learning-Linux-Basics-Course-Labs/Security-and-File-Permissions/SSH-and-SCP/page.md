@@ -96,7 +96,7 @@ Enter same passphrase again:
 Your identification has been saved in /home/bob/.ssh/id_rsa.
 Your public key has been saved in /home/bob/.ssh/id_rsa.pub.
 The key fingerprint is:
-SHA256:PCRTdbxzzffzmi8uunjn5V/1LZCG0BvhVJYXBr9gYsE bob@caleston-lp10
+SHA256:[SECRET_REDACTED] bob@caleston-lp10
 The key's randomart image is:
 +---[RSA 2048]----+
 |          o oo   |

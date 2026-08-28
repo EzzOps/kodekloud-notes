@@ -101,9 +101,9 @@ PromptInput -> ChatPromptTemplate -> ChatOpenAI -> StrOutputParser -> RunnableLa
 * [grandalf (graph visualization)](https://pypi.org/project/grandalf/)
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langchain/module/754457c5-1386-422b-98ad-3342dfc6aab3/lesson/bd770c51-e411-479e-89f1-5c6fd2762abd" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[SECRET_REDACTED]-1386-422b-98ad-3342dfc6aab3/lesson/bd770c51-e411-479e-89f1-5c6fd2762abd" />
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/langchain/module/754457c5-1386-422b-98ad-3342dfc6aab3/lesson/d51c42c5-aefd-4edd-a892-ad0294da5d82" />
+  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.[SECRET_REDACTED]-1386-422b-98ad-3342dfc6aab3/lesson/d51c42c5-aefd-4edd-a892-ad0294da5d82" />
 </CardGroup>
 
 
@@ -217,5 +217,5 @@ What’s next in this lesson
 If you’re ready to build modular, composable LLM applications, LCEL is a foundational concept to master.
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langchain/module/754457c5-1386-422b-98ad-3342dfc6aab3/lesson/59a17ad6-cdd8-42a5-868b-d7b47163d130" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[SECRET_REDACTED]-1386-422b-98ad-3342dfc6aab3/lesson/59a17ad6-cdd8-42a5-868b-d7b47163d130" />
 </CardGroup>

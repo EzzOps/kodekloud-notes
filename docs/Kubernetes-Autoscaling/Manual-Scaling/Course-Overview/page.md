@@ -46,7 +46,7 @@ Autoscaler summary
 | Autoscaler                            |                                             What it changes | Typical use case                                                                    | Docs / Notes                                                                                 |
 | ------------------------------------- | ----------------------------------------------------------: | ----------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- |
 | Horizontal Pod Autoscaler (HPA)       |       Replica count of Deployments/ReplicaSets/StatefulSets | Scale application instances based on metrics (CPU/memory/custom/external)           | [HPA docs](https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale/)       |
-| Vertical Pod Autoscaler (VPA)         |                          Container resource requests/limits | Right-size container resources for stable workloads (not for sudden replica bursts) | [VPA overview](https://github.com/kubernetes/autoscaler/tree/master/vertical-pod-autoscaler) |
+| Vertical Pod Autoscaler (VPA)         |                          Container resource requests/limits | Right-size container resources for stable workloads (not for sudden replica bursts) | [VPA overview](https://github.[SECRET_REDACTED]-pod-autoscaler) |
 | Cluster Proportional Autoscaler (CPA) |                    Replica counts for cluster-level add-ons | Scale DNS, monitoring, or other control-plane add-ons relative to node count        | Useful for system components                                                                 |
 | Cluster Autoscaler                    |                           Node pool size (add/remove nodes) | Ensure pending Pods can be scheduled by adjusting node count                        | [Cluster Autoscaler](https://cluster-autoscaler.kubernetes.io/)                              |
 | KEDA                                  | Triggers for scaling (integrates with HPA or ScaledObjects) | Event-driven scaling based on queue/message lengths or custom event sources         | [KEDA](https://keda.sh/)                                                                     |
@@ -75,7 +75,7 @@ Links and references
 * [Cluster Autoscaler](https://cluster-autoscaler.kubernetes.io/)
 * [Karpenter (AWS alternative)](https://karpenter.sh/)
 * [KEDA — Event-Driven Autoscaling](https://keda.sh/)
-* [Vertical Pod Autoscaler (VPA) repo](https://github.com/kubernetes/autoscaler/tree/master/vertical-pod-autoscaler)
+* [Vertical Pod Autoscaler (VPA) repo](https://github.[SECRET_REDACTED]-pod-autoscaler)
 
 Ready to get started with the first hands-on lesson?
 

@@ -1,6 +1,6 @@
 # Introduction
 
-Source: https://notes.kodekloud.com/docs/Prep-Course-Prometheus-Certified-Associate-PCA-Certification/Alerting/Introduction/page
+Source: https://notes.kodekloud.com/docs/Prep-Course-Prometheus-Certified-Associate-PCA-[AWS_SECRET_ACCESS_KEY]
 
 Explains Prometheus alerting using PromQL, alert rule structure, lifecycle states, and Alertmanager's role in grouping routing and delivering notifications.
 

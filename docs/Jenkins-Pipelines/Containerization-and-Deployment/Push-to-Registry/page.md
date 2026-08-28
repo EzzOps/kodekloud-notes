@@ -95,7 +95,7 @@ sh docker push siddharth67/solar_system:$GIT_COMMIT
 Upon successful execution, log entries will confirm that the image has been pushed. An example log output might be:
 
 ```bash theme={null}
-docker push siddharth67/solar-system:cf1715460f1c4495bc02618528326bd8f37f06fa0
+docker push siddharth67/solar-system:[SECRET_REDACTED]
 The push refers to repository [docker.io/siddharth67/solar-system]
 40dc352d35f4: Preparing
 0a471d685734: Preparing
@@ -139,7 +139,7 @@ f67a532f2a54: Layer already exists
 1c2c8b8acf96: Layer already exists
 61f7dc29e2c8: Layer already exists
 321437c2753: Pushed
-4cf115a4f6101459bc02618528326bdb3f706fa0: digest: sha256:3c93824067fe9a7ca92749f318eaf3095eb11b3c834af1025e8da374a3c28cd size: 1995
+[AWS_SECRET_ACCESS_KEY]: digest: sha256:[SECRET_REDACTED] size: 1995
 ```
 
 You can also verify the associated commit in GitHub:

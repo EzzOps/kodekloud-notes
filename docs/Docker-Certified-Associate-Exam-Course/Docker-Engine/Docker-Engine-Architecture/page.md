@@ -138,7 +138,7 @@ Happy logging!
 
 * [Docker Logging Drivers Documentation](https://docs.docker.com/config/containers/logging/configure/)
 * [Docker System Info](https://docs.docker.com/engine/reference/commandline/system_info/)
-* [Docker Container Inspect](https://docs.docker.com/engine/reference/commandline/inspect/)
+* [Docker Container Inspect](https://docs.docker.[AWS_SECRET_ACCESS_KEY]/)
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/docker-certified-associate-exam-course/module/871494af-49f8-42e9-95e9-cb0df80c2b21/lesson/575ffa85-12fe-4501-85ac-e2236cbddbcf" />

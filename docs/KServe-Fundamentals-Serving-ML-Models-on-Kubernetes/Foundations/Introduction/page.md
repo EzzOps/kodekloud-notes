@@ -6,7 +6,7 @@ After a successful install you should see output like:
 
 ```text theme={null}
 Pulled: ghcr.io/kserve/charts/kserve-resources
-Digest: sha256:9f2139d744e728b09ecd0f6775c9d0afde43a24329a63196baae7733d74f5fbd
+Digest: sha256:[SECRET_REDACTED]
 NAME: kserve
 LAST DEPLOYED: Wed May 27 09:35:25 2026
 NAMESPACE: kserve
@@ -118,7 +118,7 @@ Links and references
 
 # Introduction
 
-Source: https://notes.kodekloud.com/docs/KServe-Fundamentals-Serving-ML-Models-on-Kubernetes/Foundations/Introduction/page
+Source: https://notes.kodekloud.com/docs/KServe-Fundamentals-Serving-ML-Models-on-[AWS_SECRET_ACCESS_KEY]
 
 Guide to deploying and operating generative and predictive ML models on Kubernetes using KServe, including installation, InferenceService and LLMISvc, serving patterns, and troubleshooting
 

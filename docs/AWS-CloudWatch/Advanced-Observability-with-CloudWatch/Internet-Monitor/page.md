@@ -68,7 +68,7 @@ aws internetmonitor create-monitor \
 
 ## References
 
-* [AWS CloudWatch Internet Monitor Documentation](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-Internet-Monitor.html)
+* [AWS CloudWatch Internet Monitor Documentation](https://docs.aws.amazon.[SECRET_REDACTED]-Internet-Monitor.html)
 * [CloudWatch Metrics and Dimensions](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CW_Support_For_AWS.html)
 * [VPC Flow Logs Overview](https://docs.aws.amazon.com/vpc/latest/userguide/flow-logs.html)
 

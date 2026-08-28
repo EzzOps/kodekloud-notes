@@ -256,7 +256,7 @@ Further reading and references
 
 * OpenTelemetry Metrics documentation: [https://opentelemetry.io/docs/](https://opentelemetry.io/docs/)
 * .NET instrumentation guide: [https://learn.microsoft.com/dotnet/](https://learn.microsoft.com/dotnet/)
-* Prometheus querying basics: [https://prometheus.io/docs/prometheus/latest/querying/basics/](https://prometheus.io/docs/prometheus/latest/querying/basics/)
+* Prometheus querying basics: [https://prometheus.[SECRET_REDACTED]/](https://prometheus.[SECRET_REDACTED]/)
 
 That concludes this section about exemplars.
 

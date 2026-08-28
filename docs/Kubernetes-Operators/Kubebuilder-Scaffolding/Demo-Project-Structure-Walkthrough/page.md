@@ -20,7 +20,7 @@ Confirm both Kubebuilder and Go are installed and reporting compatible versions.
 $ kubebuilder version && go version
 KubeBuilder:        v4.14.0
 Kubernetes:         1.35.0
-Git Commit:         505d63f3b272472b5556ff650f03ba64d885cf3a
+Git Commit:         [AWS_SECRET_ACCESS_KEY]
 Build Date:         2026-04-29T07:19:23Z
 Go OS/Arch:         linux/amd64
 go version go1.26.3 linux/amd64

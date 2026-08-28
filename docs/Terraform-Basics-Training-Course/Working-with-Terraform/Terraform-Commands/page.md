@@ -11,7 +11,7 @@ Do you want to perform these actions?
 Terraform will perform the actions described above. Only 'yes' will be accepted to approve.
 Enter a value: yes
 local_file.pet: Destroying...
-[id=5f8fb950ac60f7f23ef968097cda01fd3c11bdf]
+[id[AWS_SECRET_ACCESS_KEY]]
 Destroy complete after 0s
 ```
 
@@ -82,15 +82,15 @@ $ terraform apply
     directory_permission  = "0777"
   ~ file_permission       = "0777" -> "0700" # forces replacement
     filename              = "/root/pet.txt"
-    ~ id                  = "5f8fb950ac60f7f23ef968097cda0a1fd3c11bdf" -> (known after apply)
+    ~ id                  = "[AWS_SECRET_ACCESS_KEY]" -> (known after apply)
 }
 Plan: 1 to add, 0 to change, 1 to destroy.
 
 local_file.pet: Destroying...
-[id=5f8fb950ac60f7f23ef968097cda0a1fd3c11bdf]
+[id=[AWS_SECRET_ACCESS_KEY]]
 local_file.pet: Destruction complete after 0s
 local_file.pet: Creating...
-[id=5f8fb950ac60f7f23ef968097cda0a1fd3c11bdf]
+[id=[AWS_SECRET_ACCESS_KEY]]
 Apply complete! Resources: 1 added, 0 changed, 1 destroyed.
 ```
 

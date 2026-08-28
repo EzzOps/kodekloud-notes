@@ -188,7 +188,7 @@ Below is an additional snippet showcasing an ImageStreamTag configuration:
         type: GitHub
     - imageChange:
         lastTriggeredImageID: >-
-          docker.io/centos/nodejs-8-centos7@sha256:8d144d0e2a7d57b537e83ff68a6a4aef495850788c6dd5173d1c75fbd45e5ca0b
+          docker.io/centos/nodejs-8-centos7@sha256:[SECRET_REDACTED]
 ```
 
 ## Adding ImageStreams
@@ -280,7 +280,7 @@ For Services, here is an example configuration for the worker application:
     name: worker
   spec:
     containers:
-      - image: 172.30.1.1:5000/voting-application/worker@sha256:0417be4bd34d5414d378e1751d2b52b66e8bff3f83e2bd7dc68f11e893da04f7
+      - image: 172.30.1.1:5000/voting-application/worker@sha256:[SECRET_REDACTED]
         imagePullPolicy: Always
         name: worker
         ports:

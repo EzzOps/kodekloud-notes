@@ -17,7 +17,7 @@ docker swarm update --autolock=true
 This outputs a one-time unlock key, for example:
 
 ```text theme={null}
-SWMKEY-1-izfTZG1yXBjIOY3VBkIHFDI+WcnpqeJKYV6daZW3o
+SWMKEY-1-[SECRET_REDACTED]
 ```
 
 <Callout icon="lightbulb">
@@ -33,7 +33,7 @@ SWMKEY-1-izfTZG1yXBjIOY3VBkIHFDI+WcnpqeJKYV6daZW3o
 Save the key in a safe location. For demo purposes we’ll use `/tmp/swarm-unlock.key`. In production, consider a secrets manager or vault.
 
 ```bash theme={null}
-echo "SWMKEY-1-izfTZG1yXBjIOY3VBkIHFDI+WcnpqeJKYV6daZW3o" > /tmp/swarm-unlock.key
+echo "SWMKEY-1-[SECRET_REDACTED]" > /tmp/swarm-unlock.key
 chmod 600 /tmp/swarm-unlock.key
 ```
 

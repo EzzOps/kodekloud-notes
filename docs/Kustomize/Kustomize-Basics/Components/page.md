@@ -166,7 +166,7 @@ By combining these four settings in a single `kustomization.yaml`, you can trans
 * [Managing Kubernetes with Kustomize](https://kubernetes.io/docs/tasks/manage-kubernetes-objects/kustomization/)
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kustomize/module/8b591384-c5e2-4411-afc1-443d3f2ba735/lesson/d3956634-6fe0-4c41-b8bf-bfed87fc99dd" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[SECRET_REDACTED]-c5e2-4411-afc1-443d3f2ba735/lesson/d3956634-6fe0-4c41-b8bf-bfed87fc99dd" />
 </CardGroup>
 
 
@@ -342,7 +342,7 @@ With Kustomize components, you can define optional feature logic once and enable
 * [Postgres Official Image](https://hub.docker.com/_/postgres)
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kustomize/module/8b591384-c5e2-4411-afc1-443d3f2ba735/lesson/baa7cfb7-7316-4be4-88c5-acfe45f59d8e" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[SECRET_REDACTED]-c5e2-4411-afc1-443d3f2ba735/lesson/baa7cfb7-7316-4be4-88c5-acfe45f59d8e" />
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/kustomize/module/8b591384-c5e2-4411-afc1-443d3f2ba735/lesson/bb1ad6fa-3980-4462-bdf4-4fe87d267fe7" />
+  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.[SECRET_REDACTED]-c5e2-4411-afc1-443d3f2ba735/lesson/bb1ad6fa-3980-4462-bdf4-4fe87d267fe7" />
 </CardGroup>

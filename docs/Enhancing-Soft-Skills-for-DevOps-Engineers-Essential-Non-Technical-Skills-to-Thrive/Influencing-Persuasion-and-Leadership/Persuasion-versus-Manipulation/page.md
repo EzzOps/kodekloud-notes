@@ -121,7 +121,7 @@ In DevOps leadership, persuasion fosters collaboration and trust, whereas manipu
 
 * [Ethical Leadership in DevOps](https://devops.com/ethical-leadership-in-devops/)
 * [Building Trust in Remote Teams](https://www.atlassian.com/blog/teamwork/remote-team-trust)
-* [Data-Driven Decision Making](https://www.forbes.com/sites/forbestechcouncil/2020/02/10/data-driven-decisions-in-2020/)
+* [Data-Driven Decision Making](https://www.forbes.com[AWS_SECRET_ACCESS_KEY]-driven-decisions-in-2020/)
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/enhancing-soft-skills-for-devops-engineers-essential-non-technical-skills-to-thrive/module/228ecdf7-8cfd-413f-875e-adfacc3ff0d6/lesson/8cd63a5d-7fc4-44d0-96e8-cef219d4bfc7" />

@@ -39,7 +39,7 @@ Below is an example of the original Promtail configuration snippet:
 
 ```yaml theme={null}
 scrape_configs:
-  # See https://github.com/grafana/loki/blob/master/production/ksonnet/promtail/scrape_config.libsonnet for reference
+  # See https://github.[AWS_SECRET_ACCESS_KEY]ksonnet/promtail/scrape_config.libsonnet for reference
   - job_name: kubernetes-pods
     pipeline_stages:
       - cri: {}
@@ -64,7 +64,7 @@ Now, integrate a new pipeline stage that uses the "match" stage to target pods b
 
 ```yaml theme={null}
 scrape_configs:
-  # Reference: https://github.com/grafana/loki/blob/master/production/ksonnet/promtail/scrape_config.libsonnet
+  # Reference: https://github.[AWS_SECRET_ACCESS_KEY]ksonnet/promtail/scrape_config.libsonnet
   - job_name: kubernetes-pods
     pipeline_stages:
       - cri: {}
@@ -180,7 +180,7 @@ This confirms that Promtail successfully extracts and assigns the desired log pr
 
 By following these detailed steps, you have enhanced your logging pipeline by converting essential log properties into labels. This improved configuration not only streamlines the log analysis process but also boosts the efficiency of your monitoring setup using Grafana and Loki.
 
-For additional guidance, check out the official [Loki Documentation](https://grafana.com/docs/loki/latest/) and [Promtail Repository](https://github.com/grafana/loki/tree/main/clients/cmd/promtail).
+For additional guidance, check out the official [Loki Documentation](https://grafana.com/docs/loki/latest/) and [Promtail Repository](https://github.[SECRET_REDACTED]).
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/grafana-loki/module/bcacc3b5-9868-4ee5-9a59-a2b73b2c500f/lesson/6057681f-cdf8-40f9-ae2b-0730caebecc6" />

@@ -114,7 +114,7 @@ A complete incident plan covers containment, evidence collection, communication,
 ## References and links
 
 * AWS S3 Block Public Access: [https://docs.aws.amazon.com/AmazonS3/latest/userguide/access-control-block-public-access.html](https://docs.aws.amazon.com/AmazonS3/latest/userguide/access-control-block-public-access.html)
-* AWS CloudTrail data events: [https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-data-events-with-cloudtrail.html](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-data-events-with-cloudtrail.html)
+* AWS CloudTrail data events: [https://docs.aws.amazon.[SECRET_REDACTED]-data-events-with-cloudtrail.html](https://docs.aws.amazon.[SECRET_REDACTED]-data-events-with-cloudtrail.html)
 * GDPR overview: [https://gdpr.eu/](https://gdpr.eu/)
 
 Keep answers factual and process-driven in interviews: demonstrate that you can both stop further exposure immediately and run a thorough investigation and remediation that addresses legal, technical, and operational concerns.

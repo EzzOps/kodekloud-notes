@@ -73,7 +73,7 @@ ExecStart=/usr/local/bin/kube-apiserver \
   --tls-cert-file=/var/lib/kubernetes/apiserver.crt \
   --tls-private-key-file=/var/lib/kubernetes/apiserver.key \
   --kubelet-certificate-authority=/var/lib/kubernetes/ca.crt \
-  --kubelet-client-certificate=/var/lib/kubernetes/apiserver-kubelet-client.crt \
+  --kubelet-client-[SECRET_REDACTED]-kubelet-client.crt \
   --kubelet-client-key=/var/lib/kubernetes/apiserver-kubelet-client.key \
   --service-account-key-file=/var/lib/kubernetes/service-account.pem \
   --authorization-mode=Node,RBAC \
@@ -193,7 +193,7 @@ spec:
       - --etcd-cafile=/etc/kubernetes/pki/etcd/ca.crt
       - --etcd-certfile=/etc/kubernetes/pki/apiserver-etcd-client.crt
       - --etcd-keyfile=/etc/kubernetes/pki/apiserver-etcd-client.key
-      - --kubelet-client-certificate=/etc/kubernetes/pki/apiserver-kubelet-client.crt
+      - --kubelet-client-[SECRET_REDACTED]-kubelet-client.crt
       - --kubelet-client-key=/etc/kubernetes/pki/apiserver-kubelet-client.key
       - --tls-cert-file=/etc/kubernetes/pki/apiserver.crt
       - --tls-private-key-file=/etc/kubernetes/pki/apiserver.key

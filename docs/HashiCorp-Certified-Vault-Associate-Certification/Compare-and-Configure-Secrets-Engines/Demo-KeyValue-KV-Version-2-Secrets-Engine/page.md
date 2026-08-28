@@ -492,7 +492,7 @@ Note: CLI helper commands (e.g., `vault kv put/get/list`) hide these prefixes fo
 When interacting with KV v2 via the HTTP API, include the `data/` prefix for reading secret data:
 
 ```bash theme={null}
-bk@Bryans-MBP ~ % curl --header "X-Vault-Token: hvs.QRx4pz2RIka7RhhrjiVRBNjq" \
+bk@Bryans-MBP ~ % curl --header "X-Vault-Token: [VAULT_TOKEN]" \
     http://127.0.0.1:8200/v1/kvv2/data/apps/artifactory
 {"request_id":"813e1862-d9e1-b563-a12f-991628a44213","lease_id":"","renewable":false,"lease_duration":0,"data":{"data":{"artifact":"jenkins"},"metadata":{"created_time":"2022-03-25T14:33:10.525712Z","custom_metadata":null,"deletion_time":"","destroyed":false,"version":1}},"wrap_info":null,"warnings":null,"auth":null}
 bk@Bryans-MBP ~ %
@@ -501,7 +501,7 @@ bk@Bryans-MBP ~ %
 Pretty-print the response with `jq`:
 
 ```bash theme={null}
-bk@Bryans-MBP ~ % curl --header "X-Vault-Token: hvs.QRx4pz2RIka7RhhrjiVRBNjq" \
+bk@Bryans-MBP ~ % curl --header "X-Vault-Token: [VAULT_TOKEN]" \
     http://127.0.0.1:8200/v1/kvv2/data/apps/artifactory | jq
 {
   "request_id": "ac5ea7c2-e8d4-858c-3c41-bda42b1fb8bf",

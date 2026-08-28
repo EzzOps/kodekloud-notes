@@ -39,7 +39,7 @@ Wrapping up — best practices checklist
 Further reading and references
 
 * [Terraform Documentation — Configuration Language](https://www.terraform.io/docs/language/index.html)
-* [Terraform Backend Configuration](https://www.terraform.io/docs/language/settings/backends/index.html)
+* [Terraform Backend Configuration](https://www.terraform.[AWS_SECRET_ACCESS_KEY].html)
 * [Best Practices for Terraform State](https://developer.hashicorp.com/terraform/tutorials/state/local-state)
 
 <CardGroup>

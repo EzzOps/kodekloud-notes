@@ -91,5 +91,5 @@ That wraps up this session. We look forward to exploring more Jenkins functional
 For more useful guides and tips on Jenkins, visit [Jenkins Documentation](https://www.jenkins.io/doc/).
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins/module/a04dd614-ac4a-452f-b42a-c7f7086c5897/lesson/83c00654-e27e-4fd5-a931-a37554148e58" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[AWS_SECRET_ACCESS_KEY]-ac4a-452f-b42a-c7f7086c5897/lesson/83c00654-e27e-4fd5-a931-a37554148e58" />
 </CardGroup>

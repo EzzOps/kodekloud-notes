@@ -114,7 +114,7 @@ To enable the `v1alpha1` version for the `RBAC.authorization.k8s.io` API group o
    ```yaml theme={null}
    --etcd-key-file=/etc/kubernetes/pki/apiserver-etcd-client.key
    --etcd-servers=https://127.0.0.1:2379
-   --kubelet-client-certificate=/etc/kubernetes/pki/apiserver-kubelet-client.crt
+   --kubelet-client-[SECRET_REDACTED]-kubelet-client.crt
    --kubelet-client-key=/etc/kubernetes/pki/apiserver-kubelet-client.key
    --kubelet-preferred-address-types=InternalIP,ExternalIP,Hostname
    --proxy-client-cert-file=/etc/kubernetes/pki/front-proxy-client.crt

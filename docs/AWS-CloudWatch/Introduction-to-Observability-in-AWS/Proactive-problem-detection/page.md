@@ -21,7 +21,7 @@ By implementing these components, you can:
 * Execute self-healing scripts or scale resources automatically
 
 <Callout icon="lightbulb">
-  Choose monitoring tools that support anomaly detection and customizable dashboards. For example, [AWS CloudWatch Anomaly Detection](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-Anomaly-Detection.html) can help you identify unusual patterns without manual threshold tuning.
+  Choose monitoring tools that support anomaly detection and customizable dashboards. For example, [AWS CloudWatch Anomaly Detection](https://docs.aws.amazon.[SECRET_REDACTED]-Anomaly-Detection.html) can help you identify unusual patterns without manual threshold tuning.
 </Callout>
 
 ## Why Proactive Problem Detection Matters

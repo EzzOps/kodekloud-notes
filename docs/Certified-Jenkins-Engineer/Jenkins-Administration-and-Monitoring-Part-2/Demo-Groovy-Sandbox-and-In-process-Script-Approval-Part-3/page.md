@@ -25,7 +25,7 @@ Welcome to the third installment of our Jenkins Groovy Sandbox series. In this d
 ## Understanding Whitelists & Blacklists
 
 Jenkins uses the [script-security plugin](https://github.com/jenkinsci/script-security-plugin) to sandbox Groovy scripts.\
-Under `src/main/resources/org/jenkinsci/plugins/scriptsecurity/sandbox/whitelists` you’ll find files that list allowed methods. The same folder contains a `blacklist` file defining methods that are blocked by default and require admin approval.
+Under `[AWS_SECRET_ACCESS_KEY]/scriptsecurity/sandbox/whitelists` you’ll find files that list allowed methods. The same folder contains a `blacklist` file defining methods that are blocked by default and require admin approval.
 
 | List Type | Purpose                                             | Sample Entry                                 |
 | --------- | --------------------------------------------------- | -------------------------------------------- |

@@ -70,7 +70,7 @@ Choose a seal backend to protect the master key. Examples:
 ```hcl theme={null}
 seal "aws_kms" {
   region     = "us-east-1"
-  access_key = "AKIAIOSFODNN7EXAMPLE"
+  access_key = "[AWS_ACCESS_KEY_ID]"
   secret_key = "xutxfEHTKZM6DN9Pr1fI0CEXAMPLE"
   key_id     = "1g9c8b4c-4d97-816d-6ec6example"
   endpoint   = "https://example.vpce.us-east-1.vpce.amazonaws.com"
@@ -225,7 +225,7 @@ vault secrets enable aws
 
 vault write aws/config/root \
     access_key="AKIAIW3MSV4ZOTFT7TNLNA" \
-    secret_key="wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY" \
+    secret_key="[AWS_SECRET_ACCESS_KEY]" \
     region="us-east-1"
 
 vault write aws/roles/my-role \

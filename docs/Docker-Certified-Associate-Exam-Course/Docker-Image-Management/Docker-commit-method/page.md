@@ -74,7 +74,7 @@ latest: Pulling from library/httpd
 27298e4c749a: Pull complete
 10e27104ba69: Pull complete
 36412f6b2f6e: Pull complete
-Digest: sha256:769018135ba22d3a7a2b91cb898de711562cdf51ad6621b2b13e95f3798de
+Digest: sha256:[SECRET_REDACTED]
 Status: Downloaded newer image for httpd:latest
 docker.io/library/httpd:latest
 ```

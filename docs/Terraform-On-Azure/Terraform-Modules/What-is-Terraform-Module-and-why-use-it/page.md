@@ -145,7 +145,7 @@ Links and references:
 
 * [Terraform Modules - Official Docs](https://www.terraform.io/language/modules)
 * [Terraform Registry](https://registry.terraform.io/)
-* [Azure Provider for Terraform](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs)
+* [Azure Provider for Terraform](https://registry.terraform.io[AWS_SECRET_ACCESS_KEY])
 
 Let's take a closer look next at module composition patterns and how to manage inputs/outputs for large projects.
 

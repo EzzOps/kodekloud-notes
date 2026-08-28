@@ -23,7 +23,7 @@ AWS CloudWatch provides a free tier that may cover most basic monitoring needs:
 
 * Use **default metrics** (CPU, network, disk) before adding custom metrics.
 * Stick to the **built-in dashboards and alarms**; avoid unnecessary custom dashboards.
-* Install the [CloudWatch Agent](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Install-CloudWatch-Agent.html) only if you require memory or swap metrics.
+* Install the [CloudWatch Agent](https://docs.aws.amazon.[SECRET_REDACTED]-CloudWatch-Agent.html) only if you require memory or swap metrics.
 
 ## 2. Optimize Metrics and Alarms
 
@@ -96,7 +96,7 @@ Implementing even a few of these strategies can significantly lower your CloudWa
 ## Links and References
 
 * [AWS CloudWatch](https://aws.amazon.com/cloudwatch/)
-* [CloudWatch Agent Installation](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Install-CloudWatch-Agent.html)
+* [CloudWatch Agent Installation](https://docs.aws.amazon.[SECRET_REDACTED]-CloudWatch-Agent.html)
 * [EventBridge User Guide](https://docs.aws.amazon.com/eventbridge/latest/userguide/what-is-amazon-eventbridge.html)
 * [CloudWatch Logs Insights](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CWL_QuerySyntax.html)
 * [AWS Budgets Documentation](https://docs.aws.amazon.com/cost-management/latest/userguide/budgets-managing-costs.html)

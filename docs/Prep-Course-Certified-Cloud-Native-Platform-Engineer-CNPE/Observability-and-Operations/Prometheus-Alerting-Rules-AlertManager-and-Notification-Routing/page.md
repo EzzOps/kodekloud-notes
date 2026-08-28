@@ -181,7 +181,7 @@ Further reading and references
 
 * Prometheus docs: [https://prometheus.io/docs/](https://prometheus.io/docs/)
 * Alertmanager docs: [https://prometheus.io/docs/alerting/latest/alertmanager/](https://prometheus.io/docs/alerting/latest/alertmanager/)
-* PromQL reference: [https://prometheus.io/docs/prometheus/latest/querying/basics/](https://prometheus.io/docs/prometheus/latest/querying/basics/)
+* PromQL reference: [https://prometheus.[SECRET_REDACTED]/](https://prometheus.[SECRET_REDACTED]/)
 * Best practices for alerting (PagerDuty): [https://www.pagerduty.com/blog/alerting-best-practices/](https://www.pagerduty.com/blog/alerting-best-practices/)
 
 This lesson covered the end-to-end alerting flow and practical guidance for implementing reliable, actionable alerts.

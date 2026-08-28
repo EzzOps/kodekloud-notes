@@ -213,7 +213,7 @@ Tip: baseline selection and scheduling
 Links and references
 
 * [SageMaker Model Monitor documentation](https://docs.aws.amazon.com/sagemaker/latest/dg/model-monitor.html)
-* [Amazon CloudWatch alarms](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/AlarmThatSendsEmail.html)
+* [Amazon CloudWatch alarms](https://docs.aws.amazon.[SECRET_REDACTED].html)
 * [AWS CI/CD documentation (CodeCommit, CodeBuild, CodePipeline)](https://aws.amazon.com/devops/continuous-delivery/)
 
 <Callout icon="lightbulb">

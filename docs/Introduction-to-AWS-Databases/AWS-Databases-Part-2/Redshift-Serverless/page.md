@@ -88,7 +88,7 @@ RPUs provide a transparent way to forecast and control costs while giving Redshi
 Additional resources
 
 * Amazon Redshift Serverless documentation: [https://docs.aws.amazon.com/redshift/latest/mgmt/serverless.html](https://docs.aws.amazon.com/redshift/latest/mgmt/serverless.html)
-* AWS CLI reference: [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/redshift-serverless/index.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/redshift-serverless/index.html)
+* AWS CLI reference: [https://awscli.amazonaws.[SECRET_REDACTED]-serverless/index.html](https://awscli.amazonaws.[SECRET_REDACTED]-serverless/index.html)
 * Amazon S3: [https://aws.amazon.com/s3/](https://aws.amazon.com/s3/)
 * Parquet: [https://parquet.apache.org/](https://parquet.apache.org/)
 * ORC: [https://orc.apache.org/](https://orc.apache.org/)

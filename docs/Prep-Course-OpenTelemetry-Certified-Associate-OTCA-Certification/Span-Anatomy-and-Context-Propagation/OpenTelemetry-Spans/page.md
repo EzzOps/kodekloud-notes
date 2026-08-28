@@ -110,7 +110,7 @@ Further lessons will dive deeper into context and propagation mechanisms, includ
 ## Links and references
 
 * W3C Baggage: [https://www.w3.org/TR/baggage/](https://www.w3.org/TR/baggage/)
-* OpenTelemetry Propagation: [https://opentelemetry.io/docs/reference/specification/context/api/](https://opentelemetry.io/docs/reference/specification/context/api/)
+* OpenTelemetry Propagation: [https://opentelemetry.[AWS_SECRET_ACCESS_KEY]api/](https://opentelemetry.[AWS_SECRET_ACCESS_KEY]api/)
 * OpenTelemetry Python docs: [https://opentelemetry.io/docs/instrumentation/python/](https://opentelemetry.io/docs/instrumentation/python/)
 
 <CardGroup>
@@ -263,7 +263,7 @@ A span marked with `status.status_code: "OK"` indicates success. When an excepti
 ## Links and References
 
 * OpenTelemetry Specification: [https://opentelemetry.io/docs/](https://opentelemetry.io/docs/)
-* OpenTelemetry Trace Semantic Conventions: [https://opentelemetry.io/docs/reference/specification/trace/semantic\_conventions/](https://opentelemetry.io/docs/reference/specification/trace/semantic_conventions/)
+* OpenTelemetry Trace Semantic Conventions: [https://opentelemetry.[SECRET_REDACTED]\_conventions/](https://opentelemetry.io/docs/reference/specification/trace/semantic_conventions/)
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/2708459f-e4ca-4659-9878-5769d439a274/lesson/24ed6d32-cf1a-4c47-936f-697e3ebb7617" />

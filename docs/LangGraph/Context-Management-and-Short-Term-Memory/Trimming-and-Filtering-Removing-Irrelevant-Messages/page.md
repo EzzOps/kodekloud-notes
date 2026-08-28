@@ -92,9 +92,9 @@ References and links
 </Callout>
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langgraph/module/372c4db3-b58a-4c3e-9e5e-851e67d45b06/lesson/ae40e239-a2a4-459d-afe4-91a46fd9e673" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[SECRET_REDACTED]-b58a-4c3e-9e5e-851e67d45b06/lesson/ae40e239-a2a4-459d-afe4-91a46fd9e673" />
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/langgraph/module/372c4db3-b58a-4c3e-9e5e-851e67d45b06/lesson/5c0a78aa-ee9f-4204-8e63-9f3c04e1c746" />
+  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.[SECRET_REDACTED]-b58a-4c3e-9e5e-851e67d45b06/lesson/5c0a78aa-ee9f-4204-8e63-9f3c04e1c746" />
 </CardGroup>
 
 
@@ -231,5 +231,5 @@ Links and references
 * [Best practices for prompt engineering and cost optimization](https://platform.openai.com/docs/guides/cost-and-latency)
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langgraph/module/372c4db3-b58a-4c3e-9e5e-851e67d45b06/lesson/11578f67-d4df-41d9-9e5d-f9ba745d553b" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[SECRET_REDACTED]-b58a-4c3e-9e5e-851e67d45b06/lesson/11578f67-d4df-41d9-9e5d-f9ba745d553b" />
 </CardGroup>

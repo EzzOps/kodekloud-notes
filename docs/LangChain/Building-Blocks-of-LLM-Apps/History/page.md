@@ -59,5 +59,5 @@ Links and references
 * [Best practices for prompt engineering and history management](https://platform.openai.com/docs/guides/prompts)
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langchain/module/bb8afda8-9de9-4865-aabf-bc71786440b2/lesson/e76a9074-ea53-468a-8ccf-c22fb4d1758c" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[SECRET_REDACTED]-9de9-4865-aabf-bc71786440b2/lesson/e76a9074-ea53-468a-8ccf-c22fb4d1758c" />
 </CardGroup>

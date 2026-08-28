@@ -105,14 +105,14 @@ These fields help control lifecycle behavior, attach metadata, or gate resource 
 * Resources are the core building blocks of a CloudFormation template.
 * Each resource requires a logical ID, a Type, and typically a Properties block.
 * Connect resources with intrinsic functions (!Ref, !GetAtt, !Sub) so CloudFormation can determine dependency order.
-* Use DependsOn for explicit ordering, and DeletionPolicy/UpdatePolicy/Metadata/Condition to manage lifecycle and behavior.
+* Use DependsOn for explicit ordering, and [SECRET_REDACTED] to manage lifecycle and behavior.
 
 ## Links and references
 
-* [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html)
+* [AWS CloudFormation User Guide](https://docs.aws.amazon.[SECRET_REDACTED].html)
 * [Amazon S3 Documentation](https://docs.aws.amazon.com/s3/index.html)
 * [AWS RDS Documentation](https://docs.aws.amazon.com/rds/index.html)
-* [Amazon DynamoDB Developer Guide](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Introduction.html)
+* [Amazon DynamoDB Developer Guide](https://docs.aws.amazon.[AWS_SECRET_ACCESS_KEY]/Introduction.html)
 
 This lesson introduced CloudFormation resources, their structure, and how to connect and manage them inside templates. Subsequent material covers common resource types and practical multi-resource templates.
 

@@ -44,7 +44,7 @@ Next, we’ll inspect the CloudWatch RUM dashboard over the last ten minutes to 
 | Frustrated Sessions | 0     | 0         |
 
 <Callout icon="lightbulb">
-  An Apdex score above 0.85 and zero frustrated sessions confirm a smooth user experience. For more details, see the [CloudWatch RUM User Guide](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-RUM.html).
+  An Apdex score above 0.85 and zero frustrated sessions confirm a smooth user experience. For more details, see the [CloudWatch RUM User Guide](https://docs.aws.amazon.[SECRET_REDACTED]-RUM.html).
 </Callout>
 
 ***
@@ -77,7 +77,7 @@ Our AWS Fargate service demonstrated robust performance under concurrent I/O str
 ## Links and References
 
 * [AWS Fargate Documentation](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/AWS_Fargate.html)
-* [CloudWatch RUM User Guide](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-RUM.html)
+* [CloudWatch RUM User Guide](https://docs.aws.amazon.[SECRET_REDACTED]-RUM.html)
 * [Chaos Engineering Best Practices](https://www.gremlin.com/chaos-engineering/)
 
 <CardGroup>

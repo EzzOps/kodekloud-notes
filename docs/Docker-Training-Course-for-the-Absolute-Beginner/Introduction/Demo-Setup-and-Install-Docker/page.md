@@ -152,10 +152,10 @@ Server: Docker Engine - Community
   Experimental:     false
  containerd:
   Version:          1.2.6
-  GitCommit:        894b81a4b802e4eb2a91d1ce216b8817763c29fb
+  GitCommit:        [AWS_SECRET_ACCESS_KEY]
  runc:
   Version:          1.0.0-rc8
-  GitCommit:        425e105d5a03fabd737a126ad93d62a9eeede87f
+  GitCommit:        [AWS_SECRET_ACCESS_KEY]
  docker-init:
   Version:          0.18.0
   GitCommit:        fec3683
@@ -206,7 +206,7 @@ To confirm Docker is running correctly, try launching a simple container. Docker
    c57b6bcc83e3: Pull complete
    897f867892ef: Pull complete
    8eed3712d2cf: Pull complete
-   Digest: sha256:178598e51a26abbc958b8a2e48825c90bc22e641de3d31e18aaf55f3258ba93b
+   Digest: sha256:[SECRET_REDACTED]
    Status: Downloaded newer image for docker/whalesay:latest
 
      __________

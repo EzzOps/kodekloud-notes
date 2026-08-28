@@ -102,7 +102,7 @@ Useful references:
 A solid understanding of chunking helps ensure your RAG pipeline retrieves coherent, contextually complete passages and produces higher-quality responses from LLMs.
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langchain/module/e47b44c9-65c3-46f8-8bed-b075a18ab12b/lesson/fc020e0a-7253-4445-8fff-d30d8d639315" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[SECRET_REDACTED]-65c3-46f8-8bed-b075a18ab12b/lesson/fc020e0a-7253-4445-8fff-d30d8d639315" />
 </CardGroup>
 
 
@@ -212,5 +212,5 @@ For vector storage and retrieval, consider vector databases or specialized libra
 In the next part of this lesson we'll introduce a vector database and demonstrate a simple similarity search. After covering retrieval and storage, we'll continue building the Q\&A chatbot for the PDF.
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langchain/module/e47b44c9-65c3-46f8-8bed-b075a18ab12b/lesson/187f5776-2d66-4326-bee6-86ba7569e581" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[SECRET_REDACTED]-65c3-46f8-8bed-b075a18ab12b/lesson/187f5776-2d66-4326-bee6-86ba7569e581" />
 </CardGroup>

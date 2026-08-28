@@ -115,7 +115,7 @@ Node Groups—whether unmanaged or AWS-managed—are the standard way to run Kub
 * [Amazon EKS User Guide](https://docs.aws.amazon.com/eks/latest/userguide/what-is-eks.html)
 * [Kubernetes Taints and Tolerations](https://kubernetes.io/docs/concepts/scheduling-eviction/taint-and-toleration/)
 * [AWS Auto Scaling Groups](https://docs.aws.amazon.com/autoscaling/ec2/userguide/what-is-amazon-ec2-auto-scaling.html)
-* [Cluster Autoscaler on AWS](https://github.com/kubernetes/autoscaler/tree/master/cluster-autoscaler/cloudprovider/aws)
+* [Cluster Autoscaler on AWS](https://github.[SECRET_REDACTED]-autoscaler/cloudprovider/aws)
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/aws-eks/module/1210661b-7eda-423b-b5f3-b758257d1221/lesson/676e0107-bb0a-43c5-8dbc-6a0a1d4bc6b4" />

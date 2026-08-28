@@ -171,7 +171,7 @@ Return to the **Properties** tab and check the **Static website hosting** sectio
 
 This concludes the lesson on hosting a static website with Amazon S3. By following these steps, you can create a secure and publicly accessible static website with ease.
 
-For more detailed information about AWS and static website hosting, refer to the [Amazon S3 Documentation](https://docs.aws.amazon.com/AmazonS3/latest/userguide/WebsiteHosting.html).
+For more detailed information about AWS and static website hosting, refer to the [Amazon S3 Documentation](https://docs.aws.amazon.com/[AWS_SECRET_ACCESS_KEY].html).
 
 Happy hosting!
 

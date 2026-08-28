@@ -76,9 +76,9 @@ You can further analyze your Jenkins data by experimenting with different querie
 This lesson has provided an overview of how Prometheus scrapes and displays Jenkins metrics. We hope this helps you effectively monitor and analyze your Jenkins environment. See you in the next lesson!
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins/module/22de6dac-d594-40dc-a3fb-1cc8d20b8a61/lesson/3ef58d56-5d32-4bd6-8222-40baaf41f995" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[AWS_SECRET_ACCESS_KEY]-d594-40dc-a3fb-1cc8d20b8a61/lesson/3ef58d56-5d32-4bd6-8222-40baaf41f995" />
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/jenkins/module/22de6dac-d594-40dc-a3fb-1cc8d20b8a61/lesson/4891b2af-2b54-482e-84d8-3d833702834c" />
+  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.[AWS_SECRET_ACCESS_KEY]-d594-40dc-a3fb-1cc8d20b8a61/lesson/4891b2af-2b54-482e-84d8-3d833702834c" />
 </CardGroup>
 
 
@@ -151,7 +151,7 @@ We hope this step-by-step guide helps ease your Jenkins maintenance routines. Lo
 Happy building!
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins/module/22de6dac-d594-40dc-a3fb-1cc8d20b8a61/lesson/a7a0109d-d799-4892-ab7e-c3a76b8b535e" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[AWS_SECRET_ACCESS_KEY]-d594-40dc-a3fb-1cc8d20b8a61/lesson/a7a0109d-d799-4892-ab7e-c3a76b8b535e" />
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/jenkins/module/22de6dac-d594-40dc-a3fb-1cc8d20b8a61/lesson/ae200556-c3aa-46e9-b14f-9d261cfae24b" />
+  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.[AWS_SECRET_ACCESS_KEY]-d594-40dc-a3fb-1cc8d20b8a61/lesson/ae200556-c3aa-46e9-b14f-9d261cfae24b" />
 </CardGroup>

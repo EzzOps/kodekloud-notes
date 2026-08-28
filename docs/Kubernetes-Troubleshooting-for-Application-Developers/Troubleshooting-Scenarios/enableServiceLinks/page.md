@@ -127,7 +127,7 @@ controlplane ~ ➜ curl 10.109.243.168/kanye
 
 ```bash theme={null}
 controlplane ~ ➜ curl 10.109.243.168/useless
-{"id":"6df415f6379dc42d110a6e5353b1da41","text":"Obsession is the most popular boat name.","source":"djtech.net","source_url":"http://www.djtech.net/humor/useless_facts.htm","language":"en","permalink":"https://uselessfacts.jsph.pl/api/v2/facts/6df415f6379dc42d110a6e5353b1da41"}
+{"id":"6df415f6379dc42d110a6e5353b1da41","text":"Obsession is the most popular boat name.","source":"djtech.net","source_url":"http://www.djtech.net/humor/useless_facts.htm","language":"en","permalink":"https://uselessfacts.jsph.[SECRET_REDACTED]"}
 ```
 
 This demonstrates the importance of both correctly defining an Ingress resource and understanding how request path rewrites impact backend service behavior.

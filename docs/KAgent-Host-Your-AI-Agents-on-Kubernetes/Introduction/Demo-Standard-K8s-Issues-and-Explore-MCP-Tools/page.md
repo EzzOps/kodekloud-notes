@@ -14,7 +14,7 @@ Task summary
 | `inventory-service` HPA not scaling to `minReplicas` | `backend-apps` | HPA shows `minReplicas=3` but only 1 pod runs; events show pod creation failures |
 
 <Callout icon="lightbulb">
-  Follow a reproducible troubleshooting pattern: observe symptoms, gather cluster state (svc/pods/endpoints/events/metrics/quotas), link evidence to possible causes, and apply the smallest safe remediation. Use `kubectl` + events + metrics to avoid misdirection.
+  Follow a reproducible troubleshooting pattern: observe symptoms, gather cluster state ([AWS_SECRET_ACCESS_KEY]), link evidence to possible causes, and apply the smallest safe remediation. Use `kubectl` + events + metrics to avoid misdirection.
 </Callout>
 
 ***

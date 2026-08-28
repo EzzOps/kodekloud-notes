@@ -1,6 +1,6 @@
 # Motherboard
 
-Source: https://notes.kodekloud.com/docs/Computer-Architecture/Motherboard/Motherboard/page
+Source: https://notes.kodekloud.com/docs/Computer-[SECRET_REDACTED]
 
 Overview of motherboard functions including power delivery, cooling, ports and slots, controllers and buses, and practical RAM installation and boot initialization
 

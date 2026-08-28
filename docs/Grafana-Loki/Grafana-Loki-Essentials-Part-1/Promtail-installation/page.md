@@ -20,7 +20,7 @@ If you haven't already obtained the configuration file, download it by running:
 
 ```bash theme={null}
 wget https://raw.githubusercontent.com/grafana/loki/main/cmd/loki/loki-local-config.yaml
-wget https://raw.githubusercontent.com/grafana/loki/main/clients/cmd/promtail/promtail-local-config.yaml
+wget https://raw.githubusercontent.com[AWS_SECRET_ACCESS_KEY]promtail-local-config.yaml
 ```
 
 You can open and inspect the configuration file using your preferred text editor. For example:
@@ -217,7 +217,7 @@ Promtail requires a configuration file to determine how logs are collected and w
 1. **Download the example configuration file from GitHub:**
 
    ```bash theme={null}
-   vagrant@node-2:~$ wget https://raw.githubusercontent.com/grafana/loki/main/clients/cmd/promtail/promtail-local-config.yaml
+   vagrant@node-2:~$ wget https://raw.githubusercontent.com[AWS_SECRET_ACCESS_KEY]promtail-local-config.yaml
    ```
 
 2. **Open the configuration file for review:**

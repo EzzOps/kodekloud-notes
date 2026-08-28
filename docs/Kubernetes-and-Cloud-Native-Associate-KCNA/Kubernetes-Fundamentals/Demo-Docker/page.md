@@ -86,7 +86,7 @@ root@osboxes:/home/osboxes# docker run hello-world
 Unable to find image 'hello-world:latest' locally
 latest: Pulling from library/hello-world
 ca4f61b1923c: Pull complete
-Digest: sha256:083de497cff944f969d8499ab94f07134c50bcf5e6b9559b27182d3fa80ce3f7
+Digest: sha256:[SECRET_REDACTED]
 Status: Downloaded newer image for hello-world:latest
 
 Hello from Docker!
@@ -124,7 +124,7 @@ Once the image is pulled, the container runs and produces the following output:
 root@osboxes:/home/osboxes# docker run docker/whalesay cowsay boo
 Unable to find image 'docker/whalesay:latest' locally
 latest: Pulling from docker/whalesay
-Digest: sha256:178598e51a26abbc958b8a2e48825c90bc22e641de3d31e18aaf55f3258ba93b
+Digest: sha256:[SECRET_REDACTED]
 Status: Downloaded newer image for docker/whalesay:latest
 < boo >
  -----

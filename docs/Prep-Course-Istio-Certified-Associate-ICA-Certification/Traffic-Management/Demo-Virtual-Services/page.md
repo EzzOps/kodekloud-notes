@@ -298,7 +298,7 @@ This shows how Sidecars with `workloadSelector` allow per-workload egress contro
 kubectl get ns --show-labels
 
 # Deploy Bookinfo (example)
-kubectl apply -f https://raw.githubusercontent.com/istio/istio/release-1.11/samples/bookinfo/platform/kube/bookinfo.yaml
+kubectl apply -f https://raw.githubusercontent.com/istio/istio/release-1.11[AWS_SECRET_ACCESS_KEY].yaml
 
 # Create namespace
 kubectl create ns test
@@ -329,8 +329,8 @@ kubectl apply -f sidecar_default_namespace.yaml
 <Callout icon="lightbulb">
   Helpful resources:
 
-  * Istio Sidecar reference: [https://istio.io/latest/docs/reference/config/networking/sidecar/](https://istio.io/latest/docs/reference/config/networking/sidecar/)
-  * Istio PeerAuthentication reference: [https://istio.io/latest/docs/reference/config/security/peer\_authentication/](https://istio.io/latest/docs/reference/config/security/peer_authentication/)
+  * Istio Sidecar reference: [https://istio.io[AWS_SECRET_ACCESS_KEY]/sidecar/](https://istio.io[AWS_SECRET_ACCESS_KEY]/sidecar/)
+  * Istio PeerAuthentication reference: [https://istio.[AWS_SECRET_ACCESS_KEY]/peer\_authentication/](https://istio.[AWS_SECRET_ACCESS_KEY]/peer_authentication/)
 </Callout>
 
 ***
@@ -395,7 +395,7 @@ kube-system       Active   15m   kubernetes.io/metadata.name=kube-system
 Deploy the httpbin sample from the Istio repository:
 
 ```bash theme={null}
-kubectl apply -f https://raw.githubusercontent.com/istio/istio/refs/heads/master/samples/httpbin/httpbin.yaml
+kubectl apply -f https://raw.githubusercontent.com/istio[AWS_SECRET_ACCESS_KEY]/httpbin.yaml
 ```
 
 Confirm the `httpbin` pod is running and has a sidecar (2/2 ready):

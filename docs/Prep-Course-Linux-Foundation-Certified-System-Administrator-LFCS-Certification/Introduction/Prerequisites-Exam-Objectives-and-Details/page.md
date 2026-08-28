@@ -1,6 +1,6 @@
 # Prerequisites Exam Objectives and Details
 
-Source: https://notes.kodekloud.com/docs/Prep-Course-Linux-Foundation-Certified-System-Administrator-LFCS-Certification/Introduction/Prerequisites-Exam-Objectives-and-Details/page
+Source: https://notes.kodekloud.com/docs/Prep-Course-Linux-Foundation-Certified-System-Administrator-LFCS-[AWS_SECRET_ACCESS_KEY]-Exam-Objectives-and-Details/page
 
 This article provides essential information to prepare for the Linux Foundation Certified System Administrator exam, including objectives, details, and registration guidelines.
 

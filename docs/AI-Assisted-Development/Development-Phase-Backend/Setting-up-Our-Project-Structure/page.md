@@ -155,7 +155,7 @@ Initialize a Git repository for the project from the root folder (which contains
 
 ```bash theme={null}
 (venv) jeremy@Jeremys-Mac-Studio imageoptimizer % git init
-Initialized empty Git repository in /Users/jeremy/Projects/genaicourse/imageoptimizer/.git/
+Initialized empty Git repository in /[SECRET_REDACTED]/.git/
 ```
 
 Next, add a remote origin that points to your GitHub repository:

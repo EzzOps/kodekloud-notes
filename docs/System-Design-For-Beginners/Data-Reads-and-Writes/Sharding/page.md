@@ -93,7 +93,7 @@ Links and references
 
 * [MongoDB Sharding](https://www.mongodb.com/docs/manual/sharding/)
 * [Apache Cassandra Documentation](https://cassandra.apache.org/doc/latest/)
-* [Amazon DynamoDB Introduction](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Introduction.html)
+* [Amazon DynamoDB Introduction](https://docs.aws.amazon.[AWS_SECRET_ACCESS_KEY]/Introduction.html)
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/system-design-for-beginners/module/3ee9409c-c2ff-4102-9a76-af9840dc6e23/lesson/defd8a34-b63f-4232-8736-37d5a04eefa1" />

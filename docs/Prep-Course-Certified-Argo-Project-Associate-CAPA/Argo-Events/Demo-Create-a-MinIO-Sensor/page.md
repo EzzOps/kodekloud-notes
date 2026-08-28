@@ -55,7 +55,7 @@ roleRef:
 Apply the manifest:
 
 ```bash theme={null}
-kubectl apply -f https://gist.github.com/sidd-harth/e68c477696c7972fafb52171f5ce5a0f/raw/1e1104271876b953ed1592a8dc6553c80b2f86a9/sensor-rbac.yaml
+kubectl apply -f https://gist.github.com/sidd-[SECRET_REDACTED]/[AWS_SECRET_ACCESS_KEY]/sensor-rbac.yaml
 ```
 
 Expected apply output:

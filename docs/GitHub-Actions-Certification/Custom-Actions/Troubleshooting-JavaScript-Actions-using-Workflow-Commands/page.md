@@ -109,7 +109,7 @@ The **package.json** file lists dependencies for your action bundle:
   ![The image shows a GitHub repository interface with a file directory on the left and a list of files and folders on the right, focusing on the core package.](https://kodekloud.com/kk-media/image/upload/v1752876065/notes-assets/images/GitHub-Actions-Certification-Troubleshooting-JavaScript-Actions-using-Workflow-Commands/github-repo-core-package-interface.jpg)
 </Frame>
 
-Refer to the [actions toolkit documentation](https://github.com/actions/toolkit/tree/main/packages/core) for examples such as:
+Refer to the [actions toolkit documentation](https://github.com[AWS_SECRET_ACCESS_KEY]) for examples such as:
 
 ```javascript theme={null}
 const core = require('@actions/core');
@@ -334,7 +334,7 @@ Apply these techniques to create maintainable, self-documented, and debuggable G
 
 ## 11. Links & References
 
-* [GitHub Actions Toolkit – core](https://github.com/actions/toolkit/tree/main/packages/core)
+* [GitHub Actions Toolkit – core](https://github.com[AWS_SECRET_ACCESS_KEY])
 * [GitHub Actions Exit Codes](https://docs.github.com/en/actions/using-workflows/workflow-commands-for-github-actions#exit-codes)
 * [ncc Bundler by Vercel](https://github.com/vercel/ncc)
 * [GitHub Workflow Syntax](https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions)

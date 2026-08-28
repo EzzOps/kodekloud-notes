@@ -224,7 +224,7 @@ You do **not** need to append `/index.html`—the index document is served autom
 
 ## References
 
-* [Amazon S3 Static Website Hosting](https://docs.aws.amazon.com/AmazonS3/latest/userguide/WebsiteHosting.html)
+* [Amazon S3 Static Website Hosting](https://docs.aws.amazon.com/[AWS_SECRET_ACCESS_KEY].html)
 * [AWS S3 Bucket Policies](https://docs.aws.amazon.com/AmazonS3/latest/userguide/example-bucket-policies.html)
 * [AWS CLI S3 Commands](https://docs.aws.amazon.com/cli/latest/reference/s3/index.html)
 

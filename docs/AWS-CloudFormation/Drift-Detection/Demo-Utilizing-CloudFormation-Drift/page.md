@@ -87,7 +87,7 @@ After making this out-of-band change, run **Detect stack drift** again. CloudFor
 | 4    | Reconcile                           | Update resource to match template or update template and perform stack update |
 
 <Callout icon="lightbulb">
-  Drift detection helps identify configuration differences but not every resource property is supported for drift detection. Always consult the CloudFormation documentation on Resources that support drift detection for details on which properties are checked: [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-stack-drift.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-stack-drift.html)
+  Drift detection helps identify configuration differences but not every resource property is supported for drift detection. Always consult the CloudFormation documentation on Resources that support drift detection for details on which properties are checked: [https://docs.aws.amazon.com/[AWS_SECRET_ACCESS_KEY]-cfn-stack-drift.html](https://docs.aws.amazon.com/[AWS_SECRET_ACCESS_KEY]-cfn-stack-drift.html)
 </Callout>
 
 ## Clean up
@@ -100,7 +100,7 @@ When you finish the demo, delete the stack from the CloudFormation console. Dele
 
 ## References
 
-* AWS CloudFormation — Drift detection: [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-stack-drift.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-stack-drift.html)
+* AWS CloudFormation — Drift detection: [https://docs.aws.amazon.com/[AWS_SECRET_ACCESS_KEY]-cfn-stack-drift.html](https://docs.aws.amazon.com/[AWS_SECRET_ACCESS_KEY]-cfn-stack-drift.html)
 * Amazon EC2 — Instances documentation: [https://docs.aws.amazon.com/ec2/index.html](https://docs.aws.amazon.com/ec2/index.html)
 
 That concludes the demo on using CloudFormation drift detection to find and reconcile out-of-band changes so your infrastructure remains aligned with your templates.

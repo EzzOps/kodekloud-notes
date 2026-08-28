@@ -64,7 +64,7 @@ The detailed output from the port-forward command might reveal an error such as:
 controlplane ~ ➜  k port-forward svc/nyancat-service 3000:80
 Forwarding from 127.0.0.1:3000 -> 8000
 Handling connection for 3000
-E0629 20:33:07.147258   27861 portforward.go:413] an error occurred forwarding 3000 -> 8000: error forwarding port 8000 to pod 974be1c7dcce7935a477faa4051ee8d3d61ebe8f112fc112701515331e672a9, uid : failed to execute portforward in network namespace "/var/run/netns/cni-0d9dad6a-e4c8-5a477faa4051ee8d3d61ebe8f112fc112701515331e672a9": dial tcp4 127.0.0.1:8000 inside namespace "974be1c7dcce7935a477faa4051ee8d3d61ebe8f112fc112701515331e672a9": connect: connection refused
+E0629 20:33:07.147258   27861 portforward.go:413] an error occurred forwarding 3000 -> 8000: error forwarding port 8000 to pod [SECRET_REDACTED], uid : failed to execute portforward in network namespace "/var/run/netns/cni-0d9dad6a-e4c8-[SECRET_REDACTED]": dial tcp4 127.0.0.1:8000 inside namespace "[SECRET_REDACTED]": connect: connection refused
 error: lost connection to pod
 ```
 

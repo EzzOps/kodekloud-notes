@@ -100,7 +100,7 @@ You can also inspect logs to confirm build arguments, container startup, and end
 
 ```bash theme={null}
 /usr/bin/docker build --iidfile /tmp/docker-actions-toolkit/iidfile \
-  --tag siddharth67/solar-system:f61272158d890b757e9a4639ed60f6de393edf228 .
+  --tag siddharth67/solar-system:[SECRET_REDACTED] .
 
 docker images
 docker run --name solar-system-app -d \

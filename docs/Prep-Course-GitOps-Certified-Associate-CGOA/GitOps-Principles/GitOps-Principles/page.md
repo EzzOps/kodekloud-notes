@@ -202,7 +202,7 @@ After synchronization, Argo CD will revert the cluster to the Git desired state 
 ## Links and references
 
 * Argo CD documentation: [https://argo-cd.readthedocs.io/](https://argo-cd.readthedocs.io/)
-* Kubernetes: Deployments — [https://kubernetes.io/docs/concepts/workloads/controllers/deployment/](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/)
+* Kubernetes: Deployments — [https://kubernetes.[SECRET_REDACTED]/](https://kubernetes.[SECRET_REDACTED]/)
 * GitOps principles: [https://www.weave.works/technologies/gitops/](https://www.weave.works/technologies/gitops/)
 
 <CardGroup>

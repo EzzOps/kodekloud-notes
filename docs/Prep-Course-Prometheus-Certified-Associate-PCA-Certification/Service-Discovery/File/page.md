@@ -92,8 +92,8 @@ Summary
 
 Links and references
 
-* [Prometheus configuration documentation](https://prometheus.io/docs/prometheus/latest/configuration/configuration/)
-* [Prometheus service discovery options](https://prometheus.io/docs/prometheus/latest/configuration/configuration/#service-discovery)
+* [Prometheus configuration documentation](https://prometheus.[AWS_SECRET_ACCESS_KEY]configuration/)
+* [Prometheus service discovery options](https://prometheus.[AWS_SECRET_ACCESS_KEY]configuration/#service-discovery)
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prometheus-certified-associate-pca/module/20a3a57d-ee2d-4096-888e-de1166cf7e3a/lesson/96ec38a8-4de5-4064-8c6a-2a9edbd22fac" />

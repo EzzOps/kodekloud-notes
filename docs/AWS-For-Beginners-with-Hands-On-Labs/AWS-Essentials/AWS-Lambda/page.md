@@ -245,7 +245,7 @@ Example log metadata snapshot:
 
 Useful links:
 
-* API Gateway docs: [https://docs.aws.amazon.com/apigateway/latest/developerguide/welcome.html](https://docs.aws.amazon.com/apigateway/latest/developerguide/welcome.html)
+* API Gateway docs: [https://docs.aws.amazon.com/[AWS_SECRET_ACCESS_KEY].html](https://docs.aws.amazon.com/[AWS_SECRET_ACCESS_KEY].html)
 * Lambda Layers: [https://docs.aws.amazon.com/lambda/latest/dg/configuration-layers.html](https://docs.aws.amazon.com/lambda/latest/dg/configuration-layers.html)
 * CloudWatch docs: [https://learn.kodekloud.com/user/courses/aws-cloudwatch](https://learn.kodekloud.com/user/courses/aws-cloudwatch)
 

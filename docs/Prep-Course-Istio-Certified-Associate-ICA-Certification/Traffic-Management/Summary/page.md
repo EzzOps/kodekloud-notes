@@ -183,8 +183,8 @@ http:
 Further reading:
 
 * [Istio Traffic Management Concepts](https://istio.io/latest/docs/concepts/traffic-management/)
-* [Istio Peer Authentication (mTLS)](https://istio.io/latest/docs/tasks/security/authentication/peer-auth/)
-* [Istio Gateways and ServiceEntry docs](https://istio.io/latest/docs/reference/config/networking/)
+* [Istio Peer Authentication (mTLS)](https://istio.io/latest[AWS_SECRET_ACCESS_KEY]-auth/)
+* [Istio Gateways and ServiceEntry docs](https://istio.io[AWS_SECRET_ACCESS_KEY]/)
 
 Great job getting through the material. Take a break — you deserve it. I’ll see you in the next section where we’ll continue with the remaining topics.
 

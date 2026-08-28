@@ -54,7 +54,7 @@ And similarly:
 ```bash theme={null}
 C:\Users\sanje\Documents\scratch\aws-demo>ssh -i main.pem ec2-user@3.82.5.183
 The authenticity of host '3.82.5.183 (3.82.5.183)' can't be established.
-ECDSA key fingerprint is SHA256:BDxdgWyu32+mHHW5/8xQ409708P4CHRwRBn+oSeBmM.
+ECDSA key fingerprint is SHA256:[SECRET_REDACTED].
 Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
 Warning: Permanently added '3.82.5.183' (ECDSA) to the list of known hosts.
              #

@@ -81,7 +81,7 @@ ls /var/lib/registry/docker/registry/
 This should display a directory named `v2`. Look inside this directory:
 
 ```bash theme={null}
-ls /var/lib/registry/docker/registry/v2/repositories/
+ls /var/lib/[AWS_SECRET_ACCESS_KEY]/
 ```
 
 You will find a folder corresponding to the "hello-world" repository along with additional subdirectories (such as `_layers`, `_manifests`, `_uploads`) that store all the image data. Exit the container shell when you are finished inspecting.

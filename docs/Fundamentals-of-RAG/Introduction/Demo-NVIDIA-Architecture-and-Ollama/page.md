@@ -17,7 +17,7 @@ A representative neofetch output from the example system:
          -+sssssssssssssssssssssssssssss+-        
        .ossssssssssssssssssssssssssssssssssso.      
       /sssssssssssssssssssssssssssssssssssssss/     
-     /ssssssssssssssssssssssssssssssssssssssssss/    
+     /[SECRET_REDACTED]/    
     /sssssssssso-````````````````````-ossssssssss/    
    /ssssssssss/                  `-sssssssssss/   
    /ssssssssss:                   /ssssssssss/    

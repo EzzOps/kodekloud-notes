@@ -147,7 +147,7 @@ And a sample payload for the email trigger:
 {
   "BodyPreview": "please process.",
   "importance": "normal.",
-  "conversationId": "AAQAGQZzJk4OTQkLWFmZDQ2NGIyNC04NTRlTM2Yjk4",
+  "conversationId": "[SECRET_REDACTED]",
   "isRead": false,
   "isHtml": true,
   "body": "<html><head><meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\"></head><body>",

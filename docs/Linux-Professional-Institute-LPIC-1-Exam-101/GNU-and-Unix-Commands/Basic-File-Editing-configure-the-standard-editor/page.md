@@ -166,7 +166,7 @@ $ chmod 640 family_dog.jpg  # rw-r-----
 
 ## Further Reading
 
-* [Linux File Permissions – Official Documentation](https://www.kernel.org/doc/html/latest/filesystems/permissions.html)
+* [Linux File Permissions – Official Documentation](https://www.kernel.org[AWS_SECRET_ACCESS_KEY].html)
 * [chmod Command Tutorial](https://linux.die.net/man/1/chmod)
 * [chown and chgrp Usage](https://linux.die.net/man/1/chown)
 

@@ -105,7 +105,7 @@ Key takeaways:
 Following these principles lets your LangGraph system scale from prototypes to thousands of concurrent users while preserving correctness, auditability, and observability.
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langgraph/module/e0cd494a-00a7-4c52-88e9-b3932b03ff9f/lesson/99515dd9-9046-41d3-9a0a-9d14a007f870" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[SECRET_REDACTED]-00a7-4c52-88e9-b3932b03ff9f/lesson/99515dd9-9046-41d3-9a0a-9d14a007f870" />
 </CardGroup>
 
 

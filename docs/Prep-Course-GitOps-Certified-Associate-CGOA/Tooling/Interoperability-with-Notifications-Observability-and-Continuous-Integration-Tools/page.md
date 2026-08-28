@@ -110,7 +110,7 @@ Example Alertmanager Slack configuration (in Alertmanager YAML):
 ```yaml theme={null}
 global:
   resolve_timeout: 1m
-  slack_api_url: 'https://hooks.slack.com/services/TSUJ1MIHQ/BT7J5TR5/5eZMpDbKk8wk2'
+  slack_api_url: 'https://hooks.slack.[SECRET_REDACTED]'
 route:
   receiver: 'slack-notifications'
 receivers:
@@ -153,7 +153,7 @@ Useful references:
 * [Argo CD metrics & monitoring](https://argo-cd.readthedocs.io/en/stable/operator-manual/metrics/)
 * [Alertmanager configuration guide](https://prometheus.io/docs/alerting/latest/alertmanager/)
 * [Kubernetes Basics](https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/)
-* Grafana Slack notifications: [https://grafana.com/docs/grafana/latest/alerting/notifications/notification-channels/slack/](https://grafana.com/docs/grafana/latest/alerting/notifications/notification-channels/slack/)
+* Grafana Slack notifications: [https://grafana.[SECRET_REDACTED]-channels/slack/](https://grafana.[SECRET_REDACTED]-channels/slack/)
 
 That’s how you create an alert for Argo CD application drift, see it in Alertmanager, and route notifications to external systems like Slack.
 

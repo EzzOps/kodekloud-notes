@@ -101,7 +101,7 @@ Links and references
 * Thanos: [https://thanos.io](https://thanos.io)
 * Grafana: [https://grafana.com](https://grafana.com)
 * Amazon S3: [https://aws.amazon.com/s3/](https://aws.amazon.com/s3/)
-* PromQL basics: [https://prometheus.io/docs/prometheus/latest/querying/basics/](https://prometheus.io/docs/prometheus/latest/querying/basics/)
+* PromQL basics: [https://prometheus.[SECRET_REDACTED]/](https://prometheus.[SECRET_REDACTED]/)
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/devops-interview-prep/module/ef53ec43-96e9-4d1b-8a6e-e6eb97b0d0dc/lesson/4c1d9c1d-8fe7-4812-826d-f96feec2c731" />

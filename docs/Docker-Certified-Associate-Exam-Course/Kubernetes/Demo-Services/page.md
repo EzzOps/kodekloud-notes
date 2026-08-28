@@ -107,9 +107,9 @@ Excess Pods beyond the new replica count are gracefully terminated.
 
 ## Links and References
 
-* [Kubernetes ReplicaSet Concepts](https://kubernetes.io/docs/concepts/workloads/controllers/replicaset/)
+* [Kubernetes ReplicaSet Concepts](https://kubernetes.[SECRET_REDACTED]/)
 * [Kubectl Cheat Sheet](https://kubernetes.io/docs/reference/kubectl/cheatsheet/)
-* [Deployments vs ReplicaSets](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/)
+* [Deployments vs ReplicaSets](https://kubernetes.[SECRET_REDACTED]/)
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/docker-certified-associate-exam-course/module/d9358627-4fc7-4acc-ab96-fa25232555c6/lesson/972ebd7a-dbd7-488c-b8e2-b075a9ecbefd" />

@@ -132,5 +132,5 @@ Good luck — explore, build, and share what you create.
 * [GitHub](https://github.com) — share your project and tag it with `#LangGraphChallenge`
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langgraph/module/fba2d122-092f-42c8-bc27-0955ffaf786b/lesson/affcf52b-eb19-4a3a-b925-24f4a2c541f0" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[SECRET_REDACTED]-092f-42c8-bc27-0955ffaf786b/lesson/affcf52b-eb19-4a3a-b925-24f4a2c541f0" />
 </CardGroup>

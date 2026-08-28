@@ -207,7 +207,7 @@ Because a disallowed resource prevented synchronization, the application tree wi
 ## Troubleshooting Tips
 
 * If application creation fails with InvalidSpecError, confirm the project's `destinations` include the requested `server` and `namespace`.
-* If sync fails and the UI shows a blocked resource, check the project's clusterResourceWhitelist/clusterResourceBlacklist for the resource's API group/kind.
+* If sync fails and the UI shows a blocked resource, check the project's [SECRET_REDACTED] for the resource's API group/kind.
 * Use `argocd proj role list` and `argocd proj role get` to debug role and policy settings when tokens fail.
 
 ## Summary

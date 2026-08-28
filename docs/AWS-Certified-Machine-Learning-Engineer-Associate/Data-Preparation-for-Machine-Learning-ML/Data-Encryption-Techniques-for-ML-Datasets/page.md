@@ -33,7 +33,7 @@ Protect stored datasets, feature stores, model artifacts, and backups using stor
   * You can also configure S3 Default Encryption so that newly uploaded objects are encrypted automatically.
   * Documentation: [https://docs.aws.amazon.com/AmazonS3/latest/userguide/default-bucket-encryption.html](https://docs.aws.amazon.com/AmazonS3/latest/userguide/default-bucket-encryption.html)
 
-* Amazon EBS: Use AWS KMS-backed encryption for volumes and snapshots. Encryption is transparent to the instance and applies to data at rest and data moving between the instance and volume. Enable encryption at volume creation or create an encrypted copy of an unencrypted snapshot. Docs: [https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSEncryption.html](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSEncryption.html)
+* Amazon EBS: Use AWS KMS-backed encryption for volumes and snapshots. Encryption is transparent to the instance and applies to data at rest and data moving between the instance and volume. Enable encryption at volume creation or create an encrypted copy of an unencrypted snapshot. Docs: [https://docs.aws.amazon.[SECRET_REDACTED].html](https://docs.aws.amazon.[SECRET_REDACTED].html)
 
 * Amazon RDS: RDS supports storage encryption using AWS KMS for supported engines (MySQL, MariaDB, PostgreSQL, Oracle, SQL Server, and Amazon Aurora). Encryption applies to underlying storage, automated backups, read replicas, and snapshots. Encryption must be enabled at instance creation. See RDS docs: [https://learn.kodekloud.com/user/courses/aws-rds](https://learn.kodekloud.com/user/courses/aws-rds)
 
@@ -71,7 +71,7 @@ Note: For existing unencrypted RDS or EBS resources, create snapshots and restor
 Centralized, auditable key management is essential for secure ML pipelines.
 
 * AWS KMS provides managed keys (AWS-managed) and customer-managed CMKs for finer-grained control.
-* Use CMKs when you need to apply specific IAM and key policies, enable automatic rotation, or audit usage through [CloudTrail](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html).
+* Use CMKs when you need to apply specific IAM and key policies, enable automatic rotation, or audit usage through [CloudTrail](https://docs.aws.amazon.[SECRET_REDACTED]-user-guide.html).
 * Integrations: When services like S3, EBS, and RDS use KMS, the services call KMS on behalf of the service principal while enforcing IAM and KMS policies.
 
 <Frame>
@@ -148,7 +148,7 @@ Protect data in use by limiting plaintext exposure during training and inference
 
 * [AWS KMS Developer Guide](https://docs.aws.amazon.com/kms/latest/developerguide/overview.html)
 * [S3 Default Encryption docs](https://docs.aws.amazon.com/AmazonS3/latest/userguide/default-bucket-encryption.html)
-* [EBS Encryption docs](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSEncryption.html)
+* [EBS Encryption docs](https://docs.aws.amazon.[SECRET_REDACTED].html)
 * [SageMaker documentation](https://docs.aws.amazon.com/sagemaker/latest/dg/what-is-sagemaker.html)
 * [AWS Encryption SDK](https://docs.aws.amazon.com/encryption-sdk/latest/developer-guide/)
 

@@ -51,7 +51,7 @@ Further adjustments can be made directly in the method's override settings:
 
 By following these steps, you can effectively set up and customize caching in AWS API Gateway. This configuration not only enhances your API performance by reducing response times but also helps in managing traffic by efficiently handling repeated requests.
 
-For additional details and advanced configurations, consider reviewing the [AWS API Gateway Documentation](https://docs.aws.amazon.com/apigateway/latest/developerguide/welcome.html).
+For additional details and advanced configurations, consider reviewing the [AWS API Gateway Documentation](https://docs.aws.amazon.com/[AWS_SECRET_ACCESS_KEY].html).
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/aws-certified-developer-associate/module/628f3688-9475-4368-90bb-89dc572f86d0/lesson/43710cfa-7b9e-4f9e-b84a-a2e9c8249b9f" />

@@ -61,7 +61,7 @@ Once activated, CloudWatch will continuously evaluate the metric and send an ema
 
 ## Further Reading & References
 
-* [AWS CloudWatch Documentation](https://docs.aws.amazon.com/cloudwatch/latest/monitoring/WhatIsCloudWatch.html)
+* [AWS CloudWatch Documentation](https://docs.aws.amazon.[SECRET_REDACTED].html)
 * [Managing Amazon SNS Topics](https://docs.aws.amazon.com/sns/latest/dg/sns-create-topic.html)
 * [AWS Well-Architected Monitoring and Observability](https://docs.aws.amazon.com/wellarchitected/latest/mon-in-op/overview.html)
 

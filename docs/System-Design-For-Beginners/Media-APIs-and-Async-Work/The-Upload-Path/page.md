@@ -100,7 +100,7 @@ Putting it all together: simplified process summary
 
 Further reading and references
 
-* Amazon S3 pre-signed URLs: [https://docs.aws.amazon.com/AmazonS3/latest/userguide/PresignedUrlUploadObject.html](https://docs.aws.amazon.com/AmazonS3/latest/userguide/PresignedUrlUploadObject.html)
+* Amazon S3 pre-signed URLs: [https://docs.aws.amazon.[SECRET_REDACTED].html](https://docs.aws.amazon.[SECRET_REDACTED].html)
 * PostgreSQL documentation: [https://www.postgresql.org](https://www.postgresql.org)
 * Object storage design patterns and best practices: search for “object storage vs relational database for media” for architecture guides and examples.
 

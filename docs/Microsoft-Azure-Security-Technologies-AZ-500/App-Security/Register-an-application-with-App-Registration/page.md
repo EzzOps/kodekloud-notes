@@ -131,7 +131,7 @@ A successful response returns a JSON payload containing an access token:
   "token_type": "Bearer",
   "expires_in": 3599,
   "ext_expires_in": 3599,
-  "access_token": "eyJ0eXAiOiJKV1QiLCJub25jZSI6InFuU1ltbU1lWldoalEwWmFhM1F0T1E9IiwidmVy..."
+  "access_token": "[SECRET_REDACTED]..."
 }
 ```
 

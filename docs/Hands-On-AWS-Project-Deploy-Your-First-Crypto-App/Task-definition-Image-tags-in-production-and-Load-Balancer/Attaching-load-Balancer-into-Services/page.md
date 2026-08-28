@@ -9,7 +9,7 @@ With this approach, every task definition revision will reference an immutable i
 Further reading and references
 
 * Amazon ECR: [https://docs.aws.amazon.com/AmazonECR/latest/userguide/what-is-ecr.html](https://docs.aws.amazon.com/AmazonECR/latest/userguide/what-is-ecr.html)
-* Amazon ECS task definition registration: [https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task\_definitions.html](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task_definitions.html)
+* Amazon ECS task definition registration: [https://docs.aws.amazon.[AWS_SECRET_ACCESS_KEY]\_definitions.html](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task_definitions.html)
 
 That is it for this article.
 

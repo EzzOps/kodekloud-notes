@@ -110,7 +110,7 @@ When to choose `batch`:
 * [LangChain — Chat Models & Streaming Patterns](https://github.com/langchain-ai/langchain)
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langchain/module/754457c5-1386-422b-98ad-3342dfc6aab3/lesson/73409062-5bca-4e9b-86cf-48d797f1050b" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[SECRET_REDACTED]-1386-422b-98ad-3342dfc6aab3/lesson/73409062-5bca-4e9b-86cf-48d797f1050b" />
 </CardGroup>
 
 

@@ -185,7 +185,7 @@ These patterns align well with large organizations, regulated industries, or mul
 ## Links and references
 
 * [Terraform Workspaces — HashiCorp Documentation](https://www.terraform.io/docs/state/workspaces.html)
-* [Terraform Backends — HashiCorp Documentation](https://www.terraform.io/docs/language/settings/backends/index.html)
+* [Terraform Backends — HashiCorp Documentation](https://www.terraform.[AWS_SECRET_ACCESS_KEY].html)
 * [Best practices for managing Terraform state](https://www.terraform.io/docs/cloud/guides/recommended-practices/state.html)
 
 <CardGroup>

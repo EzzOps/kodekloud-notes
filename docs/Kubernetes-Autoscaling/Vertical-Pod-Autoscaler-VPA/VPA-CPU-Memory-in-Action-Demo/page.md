@@ -43,7 +43,7 @@ Notes and tips
 
 Links and references
 
-* [Kubernetes Vertical Pod Autoscaler (VPA) — GitHub](https://github.com/kubernetes/autoscaler/tree/master/vertical-pod-autoscaler)
+* [Kubernetes Vertical Pod Autoscaler (VPA) — GitHub](https://github.[SECRET_REDACTED]-pod-autoscaler)
 * [Kubernetes Documentation — Resource Management](https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/)
 
 <CardGroup>
@@ -85,7 +85,7 @@ Summary of the demo flow:
 | 5    | `kubectl edit vpa flask-app` (change to `Auto`) or run `kubectl get vpa flask-app -o jsonpath='{.spec.updatePolicy.updateMode}'` | Enable automatic application of recommendations.                     |
 | 6    | `kubectl get pods`                                                                                                               | Confirm pods are recreated and new pods reflect VPA recommendations. |
 
-For more on VPA concepts, see the Kubernetes docs: [Vertical Pod Autoscaler](https://github.com/kubernetes/autoscaler/tree/master/vertical-pod-autoscaler).
+For more on VPA concepts, see the Kubernetes docs: [Vertical Pod Autoscaler](https://github.[SECRET_REDACTED]-pod-autoscaler).
 
 <Frame>
   <img alt="A presentation slide titled &#x22;Lab Steps&#x22; with a blue gradient panel on the left. On the right are two numbered steps: &#x22;05 Update VPA Configuration&#x22; and &#x22;06 Monitor Logs to see VPA in action.&#x22;" />

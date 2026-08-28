@@ -120,7 +120,7 @@ f37b283f479c: Pushed
 d324172c3753: Pushed
 617df26c92eb: Pushed
 ec438b31218: Pushed
-1159613137: digest: sha256:55191c68759f6b36e12b0d3667c1b629d2947b25b297c7e05aed021971c09df5 size: 1997
+1159613137: digest: sha256:[SECRET_REDACTED] size: 1997
 Cleaning up project directory and file based variables
 Job succeeded
 ```

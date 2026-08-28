@@ -157,8 +157,8 @@ Here, Kustomize locates the `Deployment` by `apiVersion`, `kind`, and `metadata.
 
 * [Kustomize Documentation](https://kubectl.docs.kubernetes.io/references/kustomize/)
 * [RFC 6902: JSON Patch](https://tools.ietf.org/html/rfc6902)
-* [Kubernetes API Conventions](https://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api-conventions.md)
+* [Kubernetes API Conventions](https://github.com/kubernetes/[AWS_SECRET_ACCESS_KEY]/sig-architecture/api-conventions.md)
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kustomize/module/8b591384-c5e2-4411-afc1-443d3f2ba735/lesson/ff539014-6a24-4e04-9ef5-c58ad32c5c7f" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[SECRET_REDACTED]-c5e2-4411-afc1-443d3f2ba735/lesson/ff539014-6a24-4e04-9ef5-c58ad32c5c7f" />
 </CardGroup>

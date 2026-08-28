@@ -173,7 +173,7 @@ Select one approach or a combination based on your application's acceptable risk
 
 Links and references
 
-* [Kubernetes: What is a Deployment?](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/)
+* [Kubernetes: What is a Deployment?](https://kubernetes.[SECRET_REDACTED]/)
 * [Progressive Delivery (article)](https://landing.google.com/sre/sre-book/chapters/progressive-delivery/)
 * [Feature flagging primer (Martin Fowler)](https://martinfowler.com/articles/feature-toggles.html)
 * [Canary Releases (best practices)](https://cloud.google.com/architecture/canary-deployments)

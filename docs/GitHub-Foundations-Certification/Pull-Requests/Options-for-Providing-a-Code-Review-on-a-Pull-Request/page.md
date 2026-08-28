@@ -27,8 +27,8 @@ Common commit reference types:
 
 | Reference style   |                                Use case | Example                                                                                  |
 | ----------------- | --------------------------------------: | ---------------------------------------------------------------------------------------- |
-| Direct commit URL |       Copying directly from the browser | `https://github.com/octocat/Hello-World/commit/7fd1a604d4f2b3d2f3c9a9f1b6c2e5a6f7d8c9b0` |
-| Full SHA          |            Exact, unambiguous reference | `7fd1a604d4f2b3d2f3c9a9f1b6c2e5a6f7d8c9b0`                                               |
+| Direct commit URL |       Copying directly from the browser | `https://github.com/octocat/Hello-World/commit/[AWS_SECRET_ACCESS_KEY]` |
+| Full SHA          |            Exact, unambiguous reference | `[AWS_SECRET_ACCESS_KEY]`                                               |
 | Short SHA         |     Readable, commonly used in comments | `7fd1a60`                                                                                |
 | Username + SHA    |                Clarifies author context | `octocat@7fd1a60`                                                                        |
 | Cross-repo commit | Reference commits in other repositories | `octocat/Hello-World@7fd1a60`                                                            |
@@ -41,10 +41,10 @@ Examples
 
 ```text theme={null}
 # Direct commit URL (UI shortens this)
-https://github.com/octocat/Hello-World/commit/7fd1a604d4f2b3d2f3c9a9f1b6c2e5a6f7d8c9b0
+https://github.com/octocat/Hello-World/commit/[AWS_SECRET_ACCESS_KEY]
 
 # Full SHA (40 chars)
-7fd1a604d4f2b3d2f3c9a9f1b6c2e5a6f7d8c9b0
+[AWS_SECRET_ACCESS_KEY]
 
 # Shortened (displayed by GitHub as 7 chars)
 7fd1a60

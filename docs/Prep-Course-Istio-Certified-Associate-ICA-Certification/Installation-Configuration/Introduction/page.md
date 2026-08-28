@@ -128,7 +128,7 @@ Note: Both `istioctl install` and Helm produce functionally equivalent installat
 Apply the Bookinfo sample for Istio release `1.26`:
 
 ```bash theme={null}
-$ kubectl apply -f https://raw.githubusercontent.com/istio/istio/release-1.26/samples/bookinfo/platform/kube/bookinfo.yaml
+$ kubectl apply -f https://raw.githubusercontent.com/istio/istio/release-1.26[AWS_SECRET_ACCESS_KEY].yaml
 $ kubectl get pods
 NAME                                   READY   STATUS    RESTARTS   AGE
 details-v1-7c5d957895-mkf1q           1/1     Running   0          8s
@@ -157,8 +157,8 @@ After labeling, existing pods must be restarted (recreated) to receive the sidec
 Recreate Bookinfo pods to pick up injected sidecars:
 
 ```bash theme={null}
-$ kubectl delete -f https://raw.githubusercontent.com/istio/istio/release-1.26/samples/bookinfo/platform/kube/bookinfo.yaml
-$ kubectl apply -f https://raw.githubusercontent.com/istio/istio/release-1.26/samples/bookinfo/platform/kube/bookinfo.yaml
+$ kubectl delete -f https://raw.githubusercontent.com/istio/istio/release-1.26[AWS_SECRET_ACCESS_KEY].yaml
+$ kubectl apply -f https://raw.githubusercontent.com/istio/istio/release-1.26[AWS_SECRET_ACCESS_KEY].yaml
 $ kubectl get pods
 NAME                                   READY   STATUS    RESTARTS   AGE
 details-v1-7c5d957895-pss97           2/2     Running   0          8s
@@ -195,7 +195,7 @@ Containers:
 If you prefer to inject sidecars only for selected manifests, use manual injection (note that commands and tooling have evolved across versions):
 
 ```bash theme={null}
-$ wget https://raw.githubusercontent.com/istio/istio/release-1.26/samples/bookinfo/platform/kube/bookinfo.yaml -O bookinfo.yaml
+$ wget https://raw.githubusercontent.com/istio/istio/release-1.26[AWS_SECRET_ACCESS_KEY].yaml -O bookinfo.yaml
 $ istioctl kube-inject -f bookinfo.yaml | kubectl apply -f -
 $ kubectl get pods
 NAME                                   READY   STATUS    RESTARTS   AGE

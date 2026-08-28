@@ -264,7 +264,7 @@ Links and References
 Memory design is one of the most important architectural choices for production conversational systems: it directly impacts cost, latency, and session lifetime. Use periodic summarization (or other memory management strategies) to avoid the token crisis and keep conversations scalable.
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langgraph/module/372c4db3-b58a-4c3e-9e5e-851e67d45b06/lesson/5a5fa6eb-9e6a-4515-8e62-ad114796993b" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[SECRET_REDACTED]-b58a-4c3e-9e5e-851e67d45b06/lesson/5a5fa6eb-9e6a-4515-8e62-ad114796993b" />
 </CardGroup>
 
 

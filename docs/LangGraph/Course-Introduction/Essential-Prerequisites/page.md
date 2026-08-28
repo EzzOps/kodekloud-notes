@@ -66,5 +66,5 @@ You don’t need graph theory, heavy math, or advanced deployment experience to 
 If you’re comfortable writing functions, manipulating dictionaries and lists, and calling external APIs, you’re ready to proceed.
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langgraph/module/11d0578c-2a76-40f7-be25-905be94f24f8/lesson/efa6ec57-c17b-46a5-9802-82ed26f647ab" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[SECRET_REDACTED]-2a76-40f7-be25-905be94f24f8/lesson/efa6ec57-c17b-46a5-9802-82ed26f647ab" />
 </CardGroup>

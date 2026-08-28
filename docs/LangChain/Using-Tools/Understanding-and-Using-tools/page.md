@@ -78,9 +78,9 @@ Next steps
 By following this pattern you can develop robust tool-backed chains that keep the LLM focused on reasoning while delegating data retrieval and structured logic to external functions.
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langchain/module/06905b96-585d-4c9e-835a-d8fcaca76e2a/lesson/f564445e-f3df-4cae-9d49-986dc4a02a02" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[SECRET_REDACTED]-585d-4c9e-835a-d8fcaca76e2a/lesson/f564445e-f3df-4cae-9d49-986dc4a02a02" />
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/langchain/module/06905b96-585d-4c9e-835a-d8fcaca76e2a/lesson/a39008e8-97e9-4813-a404-3c1006e6e97c" />
+  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.[SECRET_REDACTED]-585d-4c9e-835a-d8fcaca76e2a/lesson/a39008e8-97e9-4813-a404-3c1006e6e97c" />
 </CardGroup>
 
 
@@ -197,5 +197,5 @@ Links and references
 * [Python](https://www.python.org/)
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langchain/module/06905b96-585d-4c9e-835a-d8fcaca76e2a/lesson/aa3a1783-f92e-417b-9352-d18c1784a501" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[SECRET_REDACTED]-585d-4c9e-835a-d8fcaca76e2a/lesson/aa3a1783-f92e-417b-9352-d18c1784a501" />
 </CardGroup>

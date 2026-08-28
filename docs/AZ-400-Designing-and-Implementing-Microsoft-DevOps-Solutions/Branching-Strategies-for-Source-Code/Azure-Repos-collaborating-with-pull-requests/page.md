@@ -21,7 +21,7 @@ Whether you’re preparing for AZ-400 certification labs or improving your CI/CD
 Start by branching off **master** so your changes remain isolated.
 
 ```bash theme={null}
-cd ~/mnt/c/Users/jeremy/Projects/KodeKloudGifts
+cd ~/[SECRET_REDACTED]
 git checkout -b ChangeFrontPage     # Create a feature branch
 ```
 

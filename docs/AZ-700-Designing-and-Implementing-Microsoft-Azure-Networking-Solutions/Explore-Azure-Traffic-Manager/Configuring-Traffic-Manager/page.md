@@ -41,7 +41,7 @@ Follow these steps in the Azure portal to create a Traffic Manager profile and p
    * Select a routing method:
      * Performance, Weighted, Priority, Geographic, Multivalue, Subnet
      * Notes:
-       * Performance/Weighted/Priority/Geographic typically return a single endpoint per DNS response.
+       * [AWS_SECRET_ACCESS_KEY] typically return a single endpoint per DNS response.
        * Multivalue can return multiple healthy endpoints in one response.
        * Subnet maps client source subnets to specific endpoints.
    * Choose the subscription and resource group. (Traffic Manager is a global resource; the region you pick is only for metadata/storage.)

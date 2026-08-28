@@ -4,7 +4,7 @@
       directory_permission = "0777"
   ~ file_permission      = "0777" -> "0700" # forces replacement
       filename            = "/root/pets.txt"
-  ~ id                   = "5f8fb950ac60f7f23ef968097cda0a1fd3c11bdf" -> (known after apply)
+  ~ id                   = "[AWS_SECRET_ACCESS_KEY]" -> (known after apply)
 }
 
 Plan: 1 to add, 0 to change, 1 to destroy.
@@ -26,7 +26,7 @@ $ terraform apply
     directory_permission = "0777"
     ~ file_permission    = "0777" -> "0700" # forces replacement
     filename             = "/root/pets.txt"
-    ~ id                 = "5f8fb950ac60f7f23ef968097cda0a1fd3c11bdf" -> (known after apply)
+    ~ id                 = "[AWS_SECRET_ACCESS_KEY]" -> (known after apply)
 }
 Plan: 1 to add, 0 to change, 1 to destroy.
 
@@ -35,7 +35,7 @@ Terraform will perform the actions described above.
 Only 'yes' will be accepted to approve.
 
 Enter a value: yes
-local_file.pet: Destroying... [id=5f8fb950ac60f7f23ef968097cda0a1fd3c11bdf]
+local_file.pet: Destroying... [id=[AWS_SECRET_ACCESS_KEY]]
 local_file.pet: Destruction complete after 0s
 local_file.pet: Creating...
 local_file.pet: Creation complete after 0s
@@ -50,7 +50,7 @@ Below is an example output from the Terraform destroy command:
 
 ```bash theme={null}
 $ terraform destroy
-local_file.pet: Refreshing state... [id=5f8fb950ac60f7f23ef968097cda0a1fd3c11bdf]
+local_file.pet: Refreshing state... [id=[AWS_SECRET_ACCESS_KEY]]
 
 An execution plan has been generated and is shown below.
 Resource actions are indicated with the following symbols:
@@ -64,7 +64,7 @@ Terraform will perform the following actions:
     directory_permission = "0777" -> null
     file_permission     = "0700" -> null
     filename            = "/root/pets.txt" -> null
-    id                  = "5f8fb950ac60f7f23ef968097cda0a1fd3c11bdf" -> null
+    id                  = "[AWS_SECRET_ACCESS_KEY]" -> null
 }
 
 Plan: 0 to add, 0 to change, 1 to destroy.
@@ -75,7 +75,7 @@ There is no undo. Only 'yes' will be accepted to confirm.
 
 Enter a value: yes
 
-local_file.pet: Destroying... [id=5f8fb950ac60f7f23ef968097cda0a1fd3c11bdf]
+local_file.pet: Destroying... [id=[AWS_SECRET_ACCESS_KEY]]
 local_file.pet: Destruction complete after 0s
 
 Destroy complete! Resources: 1 destroyed.

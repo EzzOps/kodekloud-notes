@@ -172,7 +172,7 @@ vault kv get -wrap-ttl=60m secret/training
 ```text theme={null}
 Key                           Value
 ---                           -----
-wrapping_token                hvs.CAESIHHiPSBDnG75y4hN...  
+wrapping_token                [VAULT_TOKEN]...  
 wrapping_token_ttl            1h
 wrapping_token_creation_path  secret/data/training
 ```
@@ -180,7 +180,7 @@ wrapping_token_creation_path  secret/data/training
 ### 6.2 Inspect the Wrapping Token
 
 ```bash theme={null}
-vault token lookup hvs.CAESIHHiPSBDnG75y4hN...
+vault token lookup [VAULT_TOKEN]...
 ```
 
 ```text theme={null}
@@ -200,7 +200,7 @@ num_uses   1
    ```
 2. Unwrap the secret:
    ```bash theme={null}
-   vault unwrap hvs.CAESIHHiPSBDnG75y4hN...
+   vault unwrap [VAULT_TOKEN]...
    ```
    ```text theme={null}
    Key      Value

@@ -68,7 +68,7 @@ Route 53 offers:
 ## Links and References
 
 * [Amazon Route 53 Documentation](https://docs.aws.amazon.com/Route53/)
-* [Amazon Route 53 Developer Guide](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/Welcome.html)
+* [Amazon Route 53 Developer Guide](https://docs.aws.amazon.[SECRET_REDACTED].html)
 * [AWS DNS Concepts and FAQs](https://aws.amazon.com/route53/faqs/)
 
 <CardGroup>

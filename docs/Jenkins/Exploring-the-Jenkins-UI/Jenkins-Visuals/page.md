@@ -17,5 +17,5 @@ Let's dive into the visuals and start exploring Jenkins UI in detail.
 That’s it for this lesson. We look forward to seeing you in the next article.
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins/module/a04dd614-ac4a-452f-b42a-c7f7086c5897/lesson/3aa413bf-0f15-4367-aebc-20de624534b9" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[AWS_SECRET_ACCESS_KEY]-ac4a-452f-b42a-c7f7086c5897/lesson/3aa413bf-0f15-4367-aebc-20de624534b9" />
 </CardGroup>

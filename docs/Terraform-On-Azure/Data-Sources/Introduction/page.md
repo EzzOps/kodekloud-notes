@@ -76,7 +76,7 @@ Best practices
 Further reading
 
 * [Terraform: Data Sources](https://www.terraform.io/docs/language/data-sources/index.html)
-* [Azure Provider Documentation](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs)
+* [Azure Provider Documentation](https://registry.terraform.io[AWS_SECRET_ACCESS_KEY])
 
 This article will next cover concrete data source examples for Azure, patterns for composing values safely, and techniques to avoid accidental lifecycle control.
 

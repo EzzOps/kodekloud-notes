@@ -86,5 +86,5 @@ That concludes this guide on creating a pipeline with Blue Ocean. Happy coding, 
 * [Blue Ocean User Guide](https://www.jenkins.io/projects/blueocean/)
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins/module/77db3006-93f7-42b0-90d0-6fd961631d1f/lesson/c3cb11e3-7286-4b79-ad01-574f2bca3d0d" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[AWS_SECRET_ACCESS_KEY]-93f7-42b0-90d0-6fd961631d1f/lesson/c3cb11e3-7286-4b79-ad01-574f2bca3d0d" />
 </CardGroup>

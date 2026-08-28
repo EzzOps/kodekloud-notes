@@ -12,7 +12,7 @@ docker inspect 942d70e585b2 \
 ```json theme={null}
 {
   "Bridge": "",
-  "SandboxID": "b3165c10a92b50edc4c8aa5f37273e180907ded31",
+  "SandboxID": "[SECRET_REDACTED]",
   "SandboxKey": "/var/run/docker/netns/b3165c10a92b"
 }
 ```

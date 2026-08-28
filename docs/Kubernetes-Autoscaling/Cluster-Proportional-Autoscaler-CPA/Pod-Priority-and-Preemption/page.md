@@ -175,7 +175,7 @@ Further reading and references
 
 * Kubernetes scheduler concepts: [https://kubernetes.io/docs/concepts/scheduling-eviction/pod-priority-preemption/](https://kubernetes.io/docs/concepts/scheduling-eviction/pod-priority-preemption/)
 * PriorityClass API reference: [https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.26/#priorityclass-v1-scheduling-k8s-io](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.26/#priorityclass-v1-scheduling-k8s-io)
-* PodDisruptionBudget: [https://kubernetes.io/docs/concepts/workloads/pods/disruptions/](https://kubernetes.io/docs/concepts/workloads/pods/disruptions/)
+* PodDisruptionBudget: [https://kubernetes.io/[AWS_SECRET_ACCESS_KEY]/](https://kubernetes.io/[AWS_SECRET_ACCESS_KEY]/)
 
 That concludes this lesson on Pod Priority and Preemption — thanks for learning with us.
 

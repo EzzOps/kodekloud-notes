@@ -9,7 +9,7 @@ Here's an example public key from the bundle:
 ```plaintext theme={null}
 -----BEGIN PUBLIC KEY-----
 MIGeMA0GCSqGSIb3DQEBAQUAA4GNADCB
-9M7C1cfPReZIrCrypItIh4V127f1UARf78B8iWa/2HZfSmKx24QDyCFRDoA=
+[AWS_SECRET_ACCESS_KEY]2HZfSmKx24QDyCFRDoA=
 -----END PUBLIC KEY-----
 ```
 

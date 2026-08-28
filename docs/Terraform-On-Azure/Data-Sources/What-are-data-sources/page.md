@@ -39,7 +39,7 @@ data "azurerm_virtual_network" "existing_vnet" {
 
 * [Terraform: Resources](https://www.terraform.io/docs/language/resources/index.html)
 * [Terraform: Data Sources](https://www.terraform.io/docs/language/data-sources/index.html)
-* [Azure Provider — azurerm Virtual Network](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/virtual_network)
+* [Azure Provider — azurerm Virtual Network](https://registry.terraform.io[AWS_SECRET_ACCESS_KEY]/resources/virtual_network)
 
 Summary: resources manage lifecycle and are tracked in state; data sources read and expose attributes from existing infrastructure without taking ownership.
 

@@ -52,7 +52,7 @@ For the complete list of log fields, see **Monitoring Amazon S3 > Log Format** i
 A typical S3 access log record begins with the bucket owner and bucket name, followed by the timestamp and requester details:
 
 ```text theme={null}
-1e69f8cfa4d16e09c88f48d218e7c47fe2be DOC-EXAMPLE-BUCKET1 [06/Feb/2019:00:00:38 +0000] 192.0.2.3 79d59f4b900b49e95d5e1a69f8f8c49c8e9e09b0c8af8d218e7c47fe2be 3571 0 0
+1e69f8cfa4d16e09c88f48d218e7c47fe2be DOC-EXAMPLE-BUCKET1 [06/Feb/2019:00:00:38 +0000] 192.0.2.3 [SECRET_REDACTED] 3571 0 0
 ```
 
 Subsequent fields describe the operation, request line, status, bytes, and user agent:
@@ -76,7 +76,7 @@ All generated log files are delivered as plain text to your designated logging b
 * [Analyzing S3 access logs with Amazon Athena](https://docs.aws.amazon.com/athena/latest/ug/querying-s3-logs.html)
 * [AWS S3 CLI Reference](https://docs.aws.amazon.com/cli/latest/reference/s3/index.html)
 
-[aws-logs]: https://docs.aws.amazon.com/AmazonS3/latest/userguide/ServerLogs.html#logging-record-contents
+[aws-logs]: https://docs.aws.amazon.[AWS_SECRET_ACCESS_KEY].html#logging-record-contents
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/amazon-simple-storage-service-amazon-s3/module/985e08bc-a007-4d29-9e60-fe90b52410ae/lesson/033f6708-8d7f-4b4c-939c-e0453b8d2179" />

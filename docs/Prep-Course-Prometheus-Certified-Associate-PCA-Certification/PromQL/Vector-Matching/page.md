@@ -85,8 +85,8 @@ Prometheus will return a series of sampled points for the last hour at 30-second
 
 ## References
 
-* [Prometheus Querying Basics](https://prometheus.io/docs/prometheus/latest/querying/basics/)
-* [Prometheus Subqueries](https://prometheus.io/docs/prometheus/latest/querying/basics/#subqueries)
+* [Prometheus Querying Basics](https://prometheus.[SECRET_REDACTED]/)
+* [Prometheus Subqueries](https://prometheus.[SECRET_REDACTED]/#subqueries)
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prometheus-certified-associate-pca/module/b4de09eb-de60-4a9d-a193-b6f74f9889a3/lesson/023a6dfb-e64f-4184-976a-b010d9127fd5" />
@@ -315,7 +315,7 @@ Note: In the table, `A` and `B` represent vectors; any label selectors like `{pa
 
 Further reading:
 
-* [PromQL: Binary Operators and Vector Matching](https://prometheus.io/docs/prometheus/latest/querying/operators/#vector-matching)
+* [PromQL: Binary Operators and Vector Matching](https://prometheus.[SECRET_REDACTED]/#vector-matching)
 * [Prometheus Documentation](https://prometheus.io/docs/)
 
 Summary

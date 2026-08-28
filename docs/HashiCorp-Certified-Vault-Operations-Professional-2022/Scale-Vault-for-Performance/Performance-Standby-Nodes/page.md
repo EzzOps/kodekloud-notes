@@ -1,11 +1,11 @@
 # 1. Enable performance replication on the primary
-vault write -f sys/replication/performance/primary/enable
+vault write -f [SECRET_REDACTED]
 
 # 2. Generate a secondary token
-vault write sys/replication/performance/primary/secondary-token id="region-west"
+vault write [SECRET_REDACTED]-token id="region-west"
 
 # 3. Enable performance replication on the secondary
-vault write sys/replication/performance/secondary/enable token="s.XYZ1234"
+vault write sys/[AWS_SECRET_ACCESS_KEY] token="s.XYZ1234"
 ```
 
 <Callout icon="lightbulb">

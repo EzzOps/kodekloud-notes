@@ -82,7 +82,7 @@ VPA provides continuous right-sizing of pod resource requests to match real work
 
 Links and References
 
-* [Vertical Pod Autoscaler (VPA) GitHub](https://github.com/kubernetes/autoscaler/tree/master/vertical-pod-autoscaler)
+* [Vertical Pod Autoscaler (VPA) GitHub](https://github.[SECRET_REDACTED]-pod-autoscaler)
 * [Kubernetes Documentation](https://kubernetes.io/docs/)
 * `metrics-server` — [https://github.com/kubernetes-sigs/metrics-server](https://github.com/kubernetes-sigs/metrics-server)
 

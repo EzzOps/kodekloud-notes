@@ -82,7 +82,7 @@ cbdeb7a5b2a2: Pull complete
 dd0e5d8c62a1: Pull complete
 34d5e986175: Pull complete
 13eefddf168: Pull complete
-Digest: sha256:5dab61268c18da56feb585b6189161cd806dbc49a22a36128ca26f0bfd94
+Digest: sha256:[SECRET_REDACTED]
 Status: Downloaded newer image for rancher/cowsay:latest
 
 < kode-kow >

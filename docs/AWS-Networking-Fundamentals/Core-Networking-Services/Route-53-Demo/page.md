@@ -130,7 +130,7 @@ You should see your web server’s default page.
 ## Links & References
 
 * [AWS Route 53 Documentation](https://docs.aws.amazon.com/route53/)
-* [Domain Registration Guide](https://docs.aws.amazon.com/route53/latest/DeveloperGuide/domain-register.html)
+* [Domain Registration Guide](https://docs.aws.amazon.[AWS_SECRET_ACCESS_KEY]-register.html)
 * [Route 53 Pricing](https://aws.amazon.com/route53/pricing/)
 * [AWS Certified Solutions Architect – Associate](https://aws.amazon.com/certification/certified-solutions-architect-associate/)
 

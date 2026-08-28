@@ -191,7 +191,7 @@ Tokenization underpins the success of NLP and multimodal AI systems. By selectin
 ## References
 
 * [Byte Pair Encoding (BPE)](https://en.wikipedia.org/wiki/Byte_pair_encoding)
-* [WordPiece Tokenization](https://huggingface.co/docs/tokenizers/python/latest/algorithms.html)
+* [WordPiece Tokenization](https://huggingface.co/[AWS_SECRET_ACCESS_KEY].html)
 * [Hugging Face Tokenizers](https://huggingface.co/docs/tokenizers/)
 * [Kubernetes Basics](https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/)
 

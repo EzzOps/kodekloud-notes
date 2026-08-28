@@ -9,8 +9,8 @@ Welcome to the next lesson. In this lesson we’ll review the optional CloudForm
 Key optional attributes covered here:
 
 * Properties — Defines the resource configuration (size, tags, names, and resource-specific settings).
-* Metadata — Arbitrary data attached to a resource for tooling or helper scripts (for example, [cfn-init](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-init.html)).
-* [DependsOn](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-attribute-dependson.html) — Ensures a creation or deletion order by specifying one or more resources that must be processed first.
+* Metadata — Arbitrary data attached to a resource for tooling or helper scripts (for example, [cfn-init](https://docs.aws.amazon.[SECRET_REDACTED]-init.html)).
+* [DependsOn](https://docs.aws.amazon.[SECRET_REDACTED]-attribute-dependson.html) — Ensures a creation or deletion order by specifying one or more resources that must be processed first.
 
 <Frame>
   <img alt="A presentation slide titled &#x22;Optional Attributes for Resources.&#x22; It lists three attributes—Properties, Metadata, and DependsOn—with brief descriptions about resource configuration, additional information, and controlling creation order in CloudFormation." />
@@ -18,11 +18,11 @@ Key optional attributes covered here:
 
 Other important optional attributes:
 
-* [DeletionPolicy](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-attribute-deletionpolicy.html) — Controls what happens to a resource when its stack is deleted. Common values:
+* [DeletionPolicy](https://docs.aws.amazon.[SECRET_REDACTED]-attribute-deletionpolicy.html) — Controls what happens to a resource when its stack is deleted. Common values:
   * Delete — removes the resource (default).
   * Retain — keeps the resource after stack deletion.
-  * Snapshot — creates a snapshot for snapshot-capable resources (for example, [RDS DB instances](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-database.html) and [EBS volumes](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-volume.html)) before deletion.
-* [UpdatePolicy](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-attribute-updatepolicy.html) — Controls how CloudFormation updates certain resources during stack updates (for example, AutoScaling rolling updates).
+  * Snapshot — creates a snapshot for snapshot-capable resources (for example, [RDS DB instances](https://docs.aws.amazon.[SECRET_REDACTED]-resource-rds-database.html) and [EBS volumes](https://docs.aws.amazon.[SECRET_REDACTED]-properties-ec2-volume.html)) before deletion.
+* [UpdatePolicy](https://docs.aws.amazon.[SECRET_REDACTED]-attribute-updatepolicy.html) — Controls how CloudFormation updates certain resources during stack updates (for example, AutoScaling rolling updates).
 * Condition — Only creates a resource if a named condition (defined under the template’s Conditions section) evaluates to true. Useful for region-specific or parameter-driven resource inclusion.
 
 Summary table of optional resource attributes
@@ -177,10 +177,10 @@ Best practices
 
 Further reading and references
 
-* [AWS CloudFormation User Guide — Resource attributes](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-attribute-dependson.html)
-* [CloudFormation DeletionPolicy attribute](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-attribute-deletionpolicy.html)
-* [UpdatePolicy attribute details](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-attribute-updatepolicy.html)
-* [CloudFormation resource type reference](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-template-resource-type-ref.html)
+* [AWS CloudFormation User Guide — Resource attributes](https://docs.aws.amazon.[SECRET_REDACTED]-attribute-dependson.html)
+* [CloudFormation DeletionPolicy attribute](https://docs.aws.amazon.[SECRET_REDACTED]-attribute-deletionpolicy.html)
+* [UpdatePolicy attribute details](https://docs.aws.amazon.[SECRET_REDACTED]-attribute-updatepolicy.html)
+* [CloudFormation resource type reference](https://docs.aws.amazon.[SECRET_REDACTED]-template-resource-type-ref.html)
 
 <Callout icon="lightbulb">
   Properties are generally required for most resources; Metadata is optional and intended for tooling. DependsOn accepts a single resource name or a list of names. Always consult the resource type reference for the exact required and optional properties for each resource type.

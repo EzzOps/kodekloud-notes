@@ -125,7 +125,7 @@ The router is the brain of a LangGraph: it decides which work to run next but do
 * LangGraph conditional routing concepts and best practices (internal docs and examples)
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langgraph/module/2e37c751-0429-43c9-8ecf-2df222ce0663/lesson/a4054bd2-0a1b-4889-a3a9-da9d04fa34a4" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[SECRET_REDACTED]-0429-43c9-8ecf-2df222ce0663/lesson/a4054bd2-0a1b-4889-a3a9-da9d04fa34a4" />
 </CardGroup>
 
 

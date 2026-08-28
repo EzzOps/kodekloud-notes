@@ -77,7 +77,7 @@ serviceAccountName: "cilium-operator"
 automountServiceAccountToken: true
 affinity:
   podAntiAffinity:
-    requiredDuringSchedulingIgnoredDuringExecution:
+    [SECRET_REDACTED]:
     - labelSelector:
         matchLabels:
           io.cilium/app: operator

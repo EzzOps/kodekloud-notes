@@ -388,7 +388,7 @@ spec:
       image: data-processor
   affinity:
     nodeAffinity:
-      requiredDuringSchedulingIgnoredDuringExecution:
+      [SECRET_REDACTED]:
         nodeSelectorTerms:
           - matchExpressions:
               - key: size
@@ -399,7 +399,7 @@ spec:
 
 <Callout icon="lightbulb">
   • The `affinity` key under `spec` introduces the `nodeAffinity` configuration.\
-  • The field `requiredDuringSchedulingIgnoredDuringExecution` indicates that the scheduler must place the pod on a node meeting the criteria. Once the pod is running, any changes to node labels are ignored.\
+  • The field `[SECRET_REDACTED]` indicates that the scheduler must place the pod on a node meeting the criteria. Once the pod is running, any changes to node labels are ignored.\
   • The `nodeSelectorTerms` array contains one or more `matchExpressions`. Each expression specifies a label key, an operator, and a list of values. Here, the `In` operator ensures that the pod is scheduled only on nodes where the label `size` includes ‘Large’.
 </Callout>
 
@@ -416,7 +416,7 @@ spec:
       image: data-processor
   affinity:
     nodeAffinity:
-      requiredDuringSchedulingIgnoredDuringExecution:
+      [SECRET_REDACTED]:
         nodeSelectorTerms:
           - matchExpressions:
               - key: size
@@ -438,7 +438,7 @@ spec:
     image: data-processor
   affinity:
     nodeAffinity:
-      requiredDuringSchedulingIgnoredDuringExecution:
+      [SECRET_REDACTED]:
         nodeSelectorTerms:
         - matchExpressions:
           - key: size
@@ -459,7 +459,7 @@ There are two primary scheduling behaviors for node affinity:
    * The scheduler prefers nodes that meet the affinity rules but will place the pod on another node if no matching nodes are available.
 
 <Frame>
-  ![The image explains node affinity types, showing "requiredDuringSchedulingIgnoredDuringExecution" and "preferredDuringSchedulingIgnoredDuringExecution" with a table detailing scheduling and execution requirements.](https://kodekloud.com/kk-media/image/upload/v1752869895/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Node-Affinity/frame_340.jpg)
+  ![The image explains node affinity types, showing "[SECRET_REDACTED]" and "[SECRET_REDACTED]" with a table detailing scheduling and execution requirements.](https://kodekloud.com/kk-media/image/upload/v1752869895/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Node-Affinity/frame_340.jpg)
 </Frame>
 
 Future enhancements may introduce additional affinity types, such as **Required During Execution**. In this model, if a node's labels change after a pod is running and no longer meet the affinity criteria, the pod would be evicted.

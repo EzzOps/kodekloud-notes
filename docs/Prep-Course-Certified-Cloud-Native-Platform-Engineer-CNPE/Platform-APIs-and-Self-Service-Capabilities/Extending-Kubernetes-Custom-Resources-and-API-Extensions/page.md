@@ -242,7 +242,7 @@ Before CRDs, answering “which databases do we have?” required custom scripts
 
 Kubernetes APIs follow a consistent URL pattern: group, version, namespace (if namespaced), and resource. For built-in Deployments the path is:
 
-/apis/apps/v1/namespaces/default/deployments
+/[SECRET_REDACTED]
 
 Custom resources follow the same pattern. For example, a Database custom resource could be served at:
 

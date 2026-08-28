@@ -98,7 +98,7 @@ When you run the pipeline, you will see output in the Jenkins console similar to
 ```bash theme={null}
 > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
 > git config core.sparsecheckout # timeout=10
-> git checkout -f 09b607224df9bb27580dafc7ec249fe2e805cbfbb # timeout=10
+> git checkout -f [SECRET_REDACTED] # timeout=10
 ...
 + go test ./...
 ?  	github.com/ybkuroki/go-webapp-sample	[no test files]
@@ -142,7 +142,7 @@ For more detailed guidance on Jenkins and Go application deployment, refer to th
 Happy deploying!
 
 <CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins/module/4eff829b-dd2c-4051-8090-35e8525b8874/lesson/c690654f-bd91-4c3d-b419-b1ffed2b4060" />
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.[AWS_SECRET_ACCESS_KEY]-dd2c-4051-8090-35e8525b8874/lesson/c690654f-bd91-4c3d-b419-b1ffed2b4060" />
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/jenkins/module/4eff829b-dd2c-4051-8090-35e8525b8874/lesson/65b8dbb5-a926-4538-8fd4-3c1cda5ed5db" />
+  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.[AWS_SECRET_ACCESS_KEY]-dd2c-4051-8090-35e8525b8874/lesson/65b8dbb5-a926-4538-8fd4-3c1cda5ed5db" />
 </CardGroup>

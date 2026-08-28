@@ -138,13 +138,13 @@ The refreshed state will be used to calculate this plan, but will not be
 persisted to local or remote state storage.
 
 random_pet.cat: Refreshing state... [id-huge-owl]
-local_file.pet: Refreshing state... [id=cba595b7d9f94ba1107a46f3f731912d95fb3d2c]
+local_file.pet: Refreshing state... [id=[AWS_SECRET_ACCESS_KEY]]
 --------------------------------------------------------------------------
 No changes. Infrastructure is up-to-date.
 
 $ terraform apply -refresh-only
 random_pet.cat: Refreshing state... [id-huge-owl]
-local_file.pet: Refreshing state... [id=cba595b7d9f94ba1107a46f3f731912d95fb3d2c]
+local_file.pet: Refreshing state... [id=[AWS_SECRET_ACCESS_KEY]]
 ```
 
 This command updates the state file without altering your actual infrastructure, helping you determine the next steps for your deployment.

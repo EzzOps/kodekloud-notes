@@ -95,7 +95,7 @@ This writes a `providers.tf` file in each subdirectory, ensuring all modules use
 
 * [Terragrunt Documentation](https://terragrunt.gruntwork.io/docs/)
 * [Terraform Remote State](https://www.terraform.io/language/state/remote)
-* [AWS S3 Backend](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/s3_bucket)
+* [AWS S3 Backend](https://registry.terraform.[SECRET_REDACTED]s3_bucket)
 
 <CardGroup>
   <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terragrunt-for-beginners/module/07066843-7439-443b-b2d4-d31be3c50c97/lesson/8b756ac1-22b4-4c8e-970a-bb4763d4207f" />

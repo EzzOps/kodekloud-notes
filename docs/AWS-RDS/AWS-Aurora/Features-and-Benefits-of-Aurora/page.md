@@ -56,7 +56,7 @@ Links and references
 
 * Amazon Aurora — official docs: [https://docs.aws.amazon.com/aurora/](https://docs.aws.amazon.com/aurora/)
 * Amazon RDS overview: [https://docs.aws.amazon.com/rds/](https://docs.aws.amazon.com/rds/)
-* Backup and restore for Aurora: [https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/CHAP\_AuroraBackup.html](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/CHAP_AuroraBackup.html)
+* Backup and restore for Aurora: [https://docs.aws.amazon.[SECRET_REDACTED]\_AuroraBackup.html](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/CHAP_AuroraBackup.html)
 * Migrating to Amazon Aurora: [https://aws.amazon.com/dms/](https://aws.amazon.com/dms/)
 
 <CardGroup>

@@ -57,7 +57,7 @@ Disaggregated evaluation using stratified test sets and group-level metrics is t
 
 # Evaluating LLM Quality Without Single Correct Answer
 
-Source: https://notes.kodekloud.com/docs/NVIDIA-Generative-AI-LLMs-Associate-Certification/Experimentation/Evaluating-LLM-Quality-Without-Single-Correct-Answer/page
+Source: https://notes.kodekloud.com/docs/NVIDIA-Generative-AI-LLMs-Associate-[AWS_SECRET_ACCESS_KEY]-LLM-Quality-Without-Single-Correct-Answer/page
 
 Evaluating open-ended language model quality when no single correct answer exists, advocating RLHF with human preference-based reward modeling, workflow, comparisons, and practical trade-offs.
 

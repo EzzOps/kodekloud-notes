@@ -1,0 +1,155 @@
+# Solution Labels and Selectors optional
+
+Source: https://notes.kodekloud.com/docs/Certified-Kubernetes-Application-Developer-CKAD/POD-Design/Solution-Labels-and-Selectors-optional/page
+
+This lesson covers techniques for using labels and selectors to manage Kubernetes objects, including filtering Pods and troubleshooting configuration issues.
+
+In this lesson, we explore practical techniques for using labels and selectors to manage Kubernetes objects. You will learn how to filter Pods, count resources, and troubleshoot configuration issues using real-world examples.
+
+***
+
+## Step 1: Count Pods in the Dev Environment
+
+Begin by listing all the Pods:
+
+```bash theme={null}
+kubectl get pods
+```
+
+To filter Pods running in the dev environment, assume the environment label key is `env` and the value is `"dev"`:
+
+```bash theme={null}
+kubectl get pods --selector env=dev
+```
+
+For a manual count, you might simply observe the output if there are few Pods. However, for larger sets, use the following command to count Pods, excluding the header line by adding the `--no-headers` option:
+
+```bash theme={null}
+kubectl get pods --selector env=dev --no-headers | wc -l
+```
+
+<Callout icon="lightbulb">
+  The command above returns the number of Pods in the dev environment. In our example, the output shows there are seven Pods.
+</Callout>
+
+***
+
+## Step 2: Count Pods in the Finance Business Unit
+
+To count the Pods that belong to the finance business unit, assume the business unit label key is `bu` and filter by the value `"finance"`. Run:
+
+```bash theme={null}
+kubectl get pods --selector bu=finance --no-headers | wc -l
+```
+
+The result indicates that there are six Pods associated with the finance business unit.
+
+***
+
+## Step 3: Count All Objects in the Prod Environment
+
+In this step, you'll count all Kubernetes objects (including Pods, Services, ReplicaSets, etc.) in the prod environment. Replace the Pod-specific command with `kubectl get all`:
+
+```bash theme={null}
+kubectl get all --selector env=prod --no-headers | wc -l
+```
+
+This command returns the total number of objects in the prod environment. In our case, the output is seven.
+
+***
+
+## Step 4: Identify a Specific Pod in the Prod Environment
+
+Next, identify the Pod that meets all of the following criteria:
+
+* It is in the prod environment.
+* It belongs to the finance business unit.
+* It is part of the frontend tier.
+
+Combine multiple labels by separating them with commas:
+
+```bash theme={null}
+kubectl get all --selector env=prod,bu=finance,tier=frontend
+```
+
+This command returns the specific Pod. In our example, the Pod name begins with "ZZ XDF…".
+
+***
+
+## Step 5: Fixing a ReplicaSet Definition
+
+The final task involves troubleshooting an issue with a ReplicaSet definition. Below is the original YAML file:
+
+```yaml theme={null}
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: replicaset-1
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      tier: front-end
+  template:
+    metadata:
+      labels:
+        tier: nginx
+    spec:
+      containers:
+        - name: nginx
+          image: nginx
+```
+
+When attempting to create this ReplicaSet:
+
+```bash theme={null}
+kubectl create -f replicaset-definition-1.yaml
+```
+
+You receive the following error:
+
+```text theme={null}
+The ReplicaSet "replicaset-1" is invalid: spec.template.metadata.labels: Invalid value: map[string]string{"tier":"nginx"}: selector does not match template labels
+```
+
+<Callout icon="triangle-alert">
+  The error occurs because the `matchLabels` in the selector (`tier: front-end`) do not match the label defined in the Pod template (`tier: nginx`). Ensure that the selector and the template labels are identical.
+</Callout>
+
+To resolve the error, update the template labels to match the selector:
+
+```yaml theme={null}
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: replicaset-1
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      tier: front-end
+  template:
+    metadata:
+      labels:
+        tier: front-end
+    spec:
+      containers:
+      - name: nginx
+        image: nginx
+```
+
+After updating the YAML file, create the ReplicaSet again:
+
+```bash theme={null}
+kubectl create -f replicaset-definition-1.yaml
+```
+
+The ReplicaSet should now be created successfully. Verify its creation by listing the ReplicaSets.
+
+***
+
+That concludes this lesson on using labels and selectors with Kubernetes. For more advanced topics and troubleshooting, refer to the [Kubernetes Documentation](https://kubernetes.io/docs/).
+
+<CardGroup>
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/certified-kubernetes-application-developer-ckad/module/c44b5e7c-5854-4c65-87bf-7e07cb026e71/lesson/68847a8b-90cf-4360-a6e9-ff07a551d04a" />
+</CardGroup>

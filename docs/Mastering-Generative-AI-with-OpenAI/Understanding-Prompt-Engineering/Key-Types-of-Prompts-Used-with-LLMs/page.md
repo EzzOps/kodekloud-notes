@@ -1,0 +1,107 @@
+# Key Types of Prompts Used with LLMs
+
+Source: https://notes.kodekloud.com/docs/Mastering-Generative-AI-with-OpenAI/Understanding-Prompt-Engineering/Key-Types-of-Prompts-Used-with-LLMs/page
+
+This article explores seven core prompt categories for large language models to enhance output precision, relevance, and neutrality.
+
+Prompt engineering is essential for guiding large language models (LLMs) toward precise, relevant, and unbiased outputs. In this article, we explore seven core prompt categories—each optimized for different use cases and outcomes.
+
+<Frame>
+  ![The image lists different types of prompts, including explicit, conversational, instructional, context-based, open-ended, bias-mitigating, and code-generation prompts. Each type is represented with an icon and a colored border.](https://kodekloud.com/kk-media/image/upload/v1752881553/notes-assets/images/Mastering-Generative-AI-with-OpenAI-Key-Types-of-Prompts-Used-with-LLMs/prompt-types-icons-list.jpg)
+</Frame>
+
+| Prompt Type     | Purpose                                             | Example Use Case                   |
+| --------------- | --------------------------------------------------- | ---------------------------------- |
+| Explicit        | Clearly defines format & content                    | Story writing, summaries           |
+| Conversational  | Simulates chat with follow-ups                      | Interactive Q\&A, customer support |
+| Instructional   | Provides structured requirements                    | Blog posts, reports                |
+| Context-Based   | Supplies background then asks a question            | Travel plans, project planning     |
+| Open-Ended      | Broad queries for creative or comprehensive answers | Opinion pieces, research overviews |
+| Bias-Mitigating | Directs neutrality and factual balance              | Sensitive topics, policy analysis  |
+| Code-Generation | Generates programming snippets                      | Utility functions, scripts         |
+
+## 1. Explicit Prompts
+
+Explicit prompts specify the exact format, style, and content you need. The more details you provide, the closer the output matches your expectations.
+
+Example:
+“Write a short story about a young girl who discovers a magical key that unlocks a hidden door to another world.”
+
+<Frame>
+  ![The image shows a prompt and response from a writing application. The prompt asks for a short story about a young girl who finds a magical key, and the response begins a story about a girl named Lily in a bustling city.](https://kodekloud.com/kk-media/image/upload/v1752881554/notes-assets/images/Mastering-Generative-AI-with-OpenAI-Key-Types-of-Prompts-Used-with-LLMs/short-story-prompt-response-lily.jpg)
+</Frame>
+
+## 2. Conversational Prompts
+
+These prompts mimic a chat dialogue, allowing follow-up questions, clarifications, or variations—just like talking to an assistant.
+
+User: “Can you tell me a funny joke about cats?”\
+Assistant: “Why did the cat sit on the computer? Because there were too many cheetahs!”
+
+<Frame>
+  ![The image shows a chat interface with a joke about cats, where the punchline is "Because there's too many cheetahs!"](https://kodekloud.com/kk-media/image/upload/v1752881555/notes-assets/images/Mastering-Generative-AI-with-OpenAI-Key-Types-of-Prompts-Used-with-LLMs/chat-interface-cat-joke-punchline.jpg)
+</Frame>
+
+## 3. Instructional Prompts
+
+Also known as prescriptive prompts, these guide the model with explicit structure—sections, tone, length, or formatting rules.
+
+Example:
+“Write a detailed blog post discussing the benefits and drawbacks of renewable energy. Structure it with an introduction, a benefits section, a drawbacks section, and a conclusion.”
+
+## 4. Context-Based Prompts
+
+Start by supplying background information or a scenario, then pose a targeted question. This combination yields richer, more relevant responses.
+
+Context:\
+“I’m planning a week-long trip to Paris next month.”\
+Prompt:\
+“Suggest must-visit tourist attractions and local restaurants based on my itinerary.”
+
+<Frame>
+  ![The image shows a conversation about planning a trip to Paris, with recommendations for popular tourist attractions like the Eiffel Tower, Louvre Museum, and Notre-Dame Cathedral. It includes a prompt and response format with icons representing the user and assistant.](https://kodekloud.com/kk-media/image/upload/v1752881557/notes-assets/images/Mastering-Generative-AI-with-OpenAI-Key-Types-of-Prompts-Used-with-LLMs/trip-planning-paris-tourist-attractions.jpg)
+</Frame>
+
+## 5. Open-Ended Prompts
+
+Open-ended prompts are intentionally broad, inviting creativity or comprehensive exploration without tight constraints.
+
+Example:
+“What is the impact of AI on society?”
+
+<Frame>
+  ![The image is a slide titled "Open-Ended Prompts" discussing the impact of AI on society, focusing on automation, labor displacement, and healthcare. It includes text about AI's transformative potential and challenges.](https://kodekloud.com/kk-media/image/upload/v1752881558/notes-assets/images/Mastering-Generative-AI-with-OpenAI-Key-Types-of-Prompts-Used-with-LLMs/open-ended-prompts-ai-impact-society.jpg)
+</Frame>
+
+## 6. Bias-Mitigating Prompts
+
+To counteract biases in training data, explicitly instruct the model to present balanced, fact-based information and avoid partisanship.
+
+<Callout icon="triangle-alert">
+  When covering sensitive or controversial topics, always ensure your prompt requests neutrality and evidence-based responses to minimize unintended bias.
+</Callout>
+
+Example:
+“Discuss caste-based reservations in India. Avoid favoring any group or ideology. Present factual information supported by reliable sources, striving for inclusivity and fairness.”
+
+<Frame>
+  ![The image is a screenshot of a text discussing bias-mitigating prompts related to caste-based reservations in India, highlighting the need for balanced perspectives and historical context.](https://kodekloud.com/kk-media/image/upload/v1752881559/notes-assets/images/Mastering-Generative-AI-with-OpenAI-Key-Types-of-Prompts-Used-with-LLMs/bias-mitigating-prompts-caste-reservations.jpg)
+</Frame>
+
+## 7. Code-Generation Prompts
+
+LLMs excel at producing code snippets, algorithms, or scripts. Simply describe the functionality you need, and then test and refine the output.
+
+<Frame>
+  ![The image shows a code-generation prompt asking to write a Python function that sums even numbers in a list of integers. It also features a chat interface with a green icon.](https://kodekloud.com/kk-media/image/upload/v1752881560/notes-assets/images/Mastering-Generative-AI-with-OpenAI-Key-Types-of-Prompts-Used-with-LLMs/code-generation-python-sum-even-numbers.jpg)
+</Frame>
+
+Example Python function:
+
+```python theme={null}
+def sum_even_numbers(numbers):
+    even_sum = 0
+    for num in numbers:
+        if num % 2 == 0:
+            even_sum += num
+    return even_sum

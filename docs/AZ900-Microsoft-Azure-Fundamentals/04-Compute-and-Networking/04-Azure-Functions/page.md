@@ -1,0 +1,115 @@
+# Azure Functions
+
+Source: https://notes.kodekloud.com/docs/AZ900-Microsoft-Azure-Fundamentals/Compute-and-Networking/Azure-Functions/page
+
+Azure Functions is a serverless compute service for running event-triggered code without managing infrastructure, exploring features, benefits, and creating Function Apps.
+
+Azure Functions is a serverless compute service that enables you to run event-triggered code without needing to manage infrastructure. This guide explores how Azure Functions works, highlights its key features and benefits, and provides step-by-step instructions to create your first Function App using the Azure Portal.
+
+Functions are activated by events. For example, an HTTP request can invoke a function, or an uploaded file can trigger code execution.
+
+<Frame>
+  ![The image is an illustration about Azure Functions, describing it as a serverless compute service for running event-triggered code without managing infrastructure.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868279/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Azure-Functions/azure-functions-serverless-illustration.jpg)
+</Frame>
+
+When an event triggers your function, the code is executed and the output is returned. Let’s dive into the prominent features of Azure Functions.
+
+## Key Features
+
+### Event-Driven Architecture
+
+Azure Functions is built on an event-driven model where your code reacts to triggers such as HTTP requests, database changes, and queue messages. This design ensures your applications are responsive and scalable in real time.
+
+### Multi-Language Support
+
+Azure Functions supports a variety of programming languages including C#, JavaScript, Java, Python, and PowerShell. This flexibility lets you choose the language that best meets your project needs.
+
+### Integration Capabilities
+
+Seamless integration is at the core of Azure Functions. It easily connects with other Azure services and external systems, enabling you to build a cohesive, end-to-end application ecosystem.
+
+<Frame>
+  ![The image outlines the key features of Azure Functions, highlighting event-driven architecture, support for multiple languages (C#, JavaScript, Java, Python, PowerShell), and integration capabilities.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868281/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Azure-Functions/azure-functions-key-features-diagram.jpg)
+</Frame>
+
+## Benefits
+
+### Scalability
+
+Azure Functions automatically adjusts compute resources to handle varying loads, ensuring that your application remains efficient and responsive regardless of demand.
+
+### Pay-Per-Execution
+
+With the pay-per-execution model, you pay only for the compute time that your code runs. This means you only incur costs when your function is active, leading to significant savings.
+
+### Fully Managed Platform
+
+Azure Functions is a fully managed service, often referred to as a Platform as a Service (PaaS) or Functions-as-a-Service (FaaS). This abstraction of the underlying infrastructure frees you from server management tasks.
+
+<Frame>
+  ![The image lists the benefits of Azure Functions, highlighting scalability, pay per execution, and being fully managed.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868282/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Azure-Functions/azure-functions-benefits-scalability.jpg)
+</Frame>
+
+## Common Use Cases
+
+Azure Functions is highly versatile. It is suitable for various tasks such as processing orders, managing IoT data streams, automating workflows, and building APIs.
+
+<Frame>
+  ![The image illustrates common use cases for Azure Functions, including processing orders, managing IoT data, and automating workflows, with icons of a computer and a smartphone.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868282/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Azure-Functions/azure-functions-use-cases-icons.jpg)
+</Frame>
+
+## Creating a Function App in Azure Portal
+
+Follow these steps to create a new Function App within the Azure Portal:
+
+1. **Sign in to the Azure Portal** and search for "Function App".
+
+<Frame>
+  ![The image shows the Microsoft Azure portal interface with a search bar open, displaying recent services and resources.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868284/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Azure-Functions/azure-portal-interface-search-bar.jpg)
+</Frame>
+
+2. **Select the Function App option** and choose to create a new Azure Function App.
+
+3. **Create a New Resource Group:**\
+   For example, use "AZ900-function-rg". Then, choose a unique name for your Function App, which will be registered under azurewebsites.net.
+
+<Frame>
+  ![The image shows the "Create Function App" page on the Microsoft Azure portal, where users can configure settings such as subscription, resource group, and instance details for a new function app.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868285/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Azure-Functions/create-function-app-azure-portal.jpg)
+</Frame>
+
+4. **Configure Your Function App:**\
+   Enter a unique name (e.g., "AZ900-function-demo" with random numbers appended), select the runtime stack (e.g., .NET Core), set the region to East US, and choose the consumption-based model to pay only when an event is triggered.
+
+5. **Review and Create:**\
+   Click on "Review and create" and wait for the validation to complete. Once validated, create your Function App.
+
+<Frame>
+  ![The image shows the "Create Function App" page on the Microsoft Azure portal, displaying details and settings for a function app deployment.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868286/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Azure-Functions/create-function-app-azure-portal-2.jpg)
+</Frame>
+
+## Creating Your First Function
+
+After deploying your Function App, follow these steps to create your first function:
+
+1. **Navigate to Your Function App and Click "Create Function":**
+
+2. **Select a Trigger:**\
+   For example, choose the HTTP trigger and name your function (e.g., "trigger").
+
+<Frame>
+  ![The image shows a Microsoft Azure portal interface where a user is creating a new function. The "Create Function" panel is open, displaying options for selecting a development environment and template, such as an HTTP trigger.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868287/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Azure-Functions/azure-portal-create-function-panel.jpg)
+</Frame>
+
+3. **Review the Base Code:**\
+   Azure provides default code which you can modify as needed. Click on "Create" to proceed with the base code.
+
+4. **Edit Your Function Code:**\
+   Go to the "Code + Test" section to examine and make changes to your function's code.
+
+<Callout icon="lightbulb">
+  If you prefer PowerShell, here is an example of an HTTP-triggered function. It checks for a "name" parameter in the URL query string or the request body and returns a personalized greeting if provided:
+</Callout>
+
+```powershell theme={null}
+using namespace System.Net
+param($Request, $TriggerMetadata)

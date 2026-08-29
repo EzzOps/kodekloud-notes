@@ -1,0 +1,89 @@
+# Create Dev Environment Secrets Environment Rules
+
+Source: https://notes.kodekloud.com/docs/GitHub-Actions/Continuous-Deployment-with-GitHub-Actions/Create-Dev-Environment-Secrets-Environment-Rules/page
+
+This guide explains how to set up a development environment in GitHub for GitHub Actions workflows, including protection rules, secrets, and variables.
+
+In this guide, you’ll learn how to set up a **development** environment in GitHub for use with your GitHub Actions workflows. While we focus on a development namespace, you can follow the same steps to create environments for UAT, SIT, production, or any other stage.
+
+## 1. Configure the Development Environment
+
+1. Navigate to your repository’s **Settings**.
+2. Select **Environments** in the sidebar.
+3. Click **New environment**, then enter `development` as the name.
+
+Once created, you can add protection rules, secrets, and variables.
+
+### 1.1 Define Deployment Protection Rules
+
+Enforce a 60-second pause before deployments and allow administrators to bypass the delay.
+
+<Frame>
+  ![The image shows a GitHub settings page for configuring environment deployment protection rules, including options for required reviewers, wait timers, and environment secrets.](../../../../images/kodekloud.com/kk-media/image/upload/v1752876444/notes-assets/images/GitHub-Actions-Create-Dev-Environment-Secrets-Environment-Rules/github-settings-environment-deployment-rules.jpg)
+</Frame>
+
+* Set **Wait timer** to **60 seconds**
+* Enable **Allow administrators to bypass this rule**
+* Leave branch and tag restrictions at **No restrictions**
+* Click **Save protection rules**
+
+<Callout icon="lightbulb">
+  You can also require specific reviewers or restrict deployments to certain branches or tags for tighter control.
+</Callout>
+
+### 1.2 Verify the Environment Overview
+
+After saving, confirm that the `development` environment appears with the configured protection rule.
+
+<Frame>
+  ![The image shows a GitHub repository settings page, specifically the "Environments" section, where a "development" environment is configured with protection rules, secrets, and variables.](../../../../images/kodekloud.com/kk-media/image/upload/v1752876445/notes-assets/images/GitHub-Actions-Create-Dev-Environment-Secrets-Environment-Rules/github-repo-settings-environments-development.jpg)
+</Frame>
+
+## 2. Add Environment Secrets and Variables
+
+GitHub Actions lets you scope secrets and variables to specific environments for improved security and flexibility.
+
+### 2.1 Add a Kubeconfig Secret
+
+1. Under the **Secrets and variables** section of the `development` environment, click **Add secret**.
+2. Name it `Kubeconfig`.
+3. Paste your kubeconfig content and click **Save secret**.
+
+### 2.2 Define Environment Variables
+
+Create key/value pairs that your workflows can consume:
+
+<Frame>
+  ![The image shows a GitHub repository settings page focused on "Secrets and variables" for actions, displaying environment and repository variables.](../../../../images/kodekloud.com/kk-media/image/upload/v1752876446/notes-assets/images/GitHub-Actions-Create-Dev-Environment-Secrets-Environment-Rules/github-repo-settings-secrets-variables.jpg)
+</Frame>
+
+| Variable    | Value         | Description                    |
+| ----------- | ------------- | ------------------------------ |
+| `NAMESPACE` | `development` | Target Kubernetes namespace    |
+| `REPLICAS`  | `1`           | Desired number of pod replicas |
+
+<Callout icon="triangle-alert">
+  Environment-level secrets and variables override any repository-level entries with the same name.
+</Callout>
+
+## 3. Next Steps
+
+In your GitHub Actions workflow, specify:
+
+```yaml theme={null}
+jobs:
+  deploy:
+    environment: development
+    # … rest of your job
+```
+
+This ensures your deployment respects the environment’s protection rules, secrets, and variables.
+
+## References
+
+* [GitHub Environments documentation](https://docs.github.com/en/actions/deployment/targeting-different-environments/using-environments-for-deployment)
+* [GitHub Secrets documentation](https://docs.github.com/en/actions/security-guides/encrypted-secrets)
+
+<CardGroup>
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/github-actions/module/92928734-1d5a-462d-9414-2d3865f5ef79/lesson/fe69efd0-3928-47f0-8dc0-d9ff9a19663b" />
+</CardGroup>

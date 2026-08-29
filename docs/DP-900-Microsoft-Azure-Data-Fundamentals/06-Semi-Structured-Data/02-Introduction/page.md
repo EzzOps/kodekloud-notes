@@ -1,0 +1,110 @@
+# Introduction
+
+Source: https://notes.kodekloud.com/docs/DP-900-Microsoft-Azure-Data-Fundamentals/Semi-Structured-Data/Introduction/page
+
+This article discusses the advantages and limitations of semi-structured data in e-commerce, highlighting its benefits for handling high-volume transactions.
+
+Modern e-commerce platforms like Amazon handle millions of transactions per day across a global customer base. Traditional relational databases often struggle under this load due to:
+
+1. Multiple table updates per transaction, which adds latency when enforcing ACID constraints.
+2. A rigid schema requiring every row to share the same columns, which doesn’t adapt well to a diverse product catalog.
+
+<Frame>
+  ![The image discusses the challenges of using structured data for online transactions, highlighting issues like the need for uniform table rows and the complexity of maintaining transaction integrity. It suggests that semi-structured data can address these issues by reducing the need for frequent updates and speeding up processing.](../../../../images/kodekloud.com/kk-media/image/upload/v1752873032/notes-assets/images/DP-900-Microsoft-Azure-Data-Fundamentals-Introduction/structured-data-online-transactions-challenges.jpg)
+</Frame>
+
+## What Is Semi-Structured Data?
+
+Semi-structured data models store each transaction—including customer, order items, and shipping details—in a single record. This approach:
+
+* Requires only one insert per transaction.
+* Eliminates foreign-key joins and multi-step ACID enforcement.
+* Scales effortlessly to millions of transactions daily.
+
+<Frame>
+  ![The image illustrates a solution for handling semi-structured data, highlighting benefits such as storing all data for a transaction in a single row, fewer updates, no relationships to maintain, no transaction integrity issues, and no table schemas.](../../../../images/kodekloud.com/kk-media/image/upload/v1752873033/notes-assets/images/DP-900-Microsoft-Azure-Data-Fundamentals-Introduction/semi-structured-data-solution-benefits.jpg)
+</Frame>
+
+Each record is self-describing (similar to JSON or XML), allowing fields to vary by record. For example, digital goods can omit shipping address fields.
+
+## Benefits of Semi-Structured Storage
+
+* **Schema Flexibility:** Add or remove fields per record without downtime.
+* **Single-Row Transactions:** Faster inserts, no complex joins.
+* **High Throughput:** Ideal for high-volume, write-heavy workloads.
+
+***
+
+## Trade-offs and Limitations
+
+While semi-structured storage (e.g., [Azure Table Storage](https://docs.microsoft.com/azure/storage/tables/)) improves write performance, it introduces key limitations:
+
+<Callout icon="triangle-alert">
+  Azure Table Storage is a NoSQL (non-relational) database. It **does not** support SQL joins, rich secondary indexes, or transactions across multiple entities.
+</Callout>
+
+| Feature          | Relational Database    | Azure Table Storage        |
+| ---------------- | ---------------------- | -------------------------- |
+| Schema           | Fixed, enforced        | Flexible, per-entity       |
+| Joins            | Supported              | Not supported              |
+| Query Language   | SQL                    | OData/NoSQL REST APIs      |
+| Indexing         | Rich secondary indexes | PartitionKey & RowKey only |
+| Data Duplication | Minimal                | Higher (denormalization)   |
+
+<Frame>
+  ![The image illustrates a concept of semi-structured data with three entities: Customer, Sales Order, and Product, highlighting the lack of relationships between them and noting it as less flexible than a relational database.](../../../../images/kodekloud.com/kk-media/image/upload/v1752873034/notes-assets/images/DP-900-Microsoft-Azure-Data-Fundamentals-Introduction/semi-structured-data-customer-order-product.jpg)
+</Frame>
+
+<Frame>
+  ![The image illustrates semi-structured data categories (Customer, Sales Order, Product) and notes that SQL cannot be used for querying or updating, referring to Microsoft's Table Storage as a "NoSQL" database solution.](../../../../images/kodekloud.com/kk-media/image/upload/v1752873035/notes-assets/images/DP-900-Microsoft-Azure-Data-Fundamentals-Introduction/semi-structured-data-categories-nosql.jpg)
+</Frame>
+
+***
+
+## Hybrid Data Architecture
+
+To balance performance and query flexibility, most organizations adopt a hybrid approach:
+
+* **NoSQL tables** (e.g., Azure Table Storage) for high-volume, schema-flexible transactions.
+* **Relational databases** for shared entities requiring rich querying and indexing (customer profiles, product catalogs).
+
+<Frame>
+  ![The image illustrates an ideal solution combining companies, a relational database, and a customer table to handle shared information. It emphasizes using relational databases to store customer information.](../../../../images/kodekloud.com/kk-media/image/upload/v1752873036/notes-assets/images/DP-900-Microsoft-Azure-Data-Fundamentals-Introduction/ideal-solution-relational-database-customer-table.jpg)
+</Frame>
+
+### Example Record
+
+Below is a sample semi-structured transaction stored in Azure Table Storage:
+
+```json theme={null}
+{
+  "PartitionKey": "Orders",
+  "RowKey": "2023-10-01_0001",
+  "order": {
+    "customer": {
+      "Name": "Peter Vogel",
+      "Address": "London, Ontario"
+    },
+    "product": {
+      "Name": "Widget",
+      "Price": 15.10
+    }
+  }
+}
+```
+
+<Callout icon="lightbulb">
+  In Azure Table Storage, you use `PartitionKey` and `RowKey` to distribute and query your data efficiently.
+</Callout>
+
+***
+
+## Links and References
+
+* [Azure Table Storage Documentation](https://docs.microsoft.com/azure/storage/tables/)
+* [NoSQL Overview on Microsoft Docs](https://docs.microsoft.com/azure/architecture/data-guide/big-data/nosql)
+* [Azure Storage pricing](https://azure.microsoft.com/pricing/details/storage/)<br />
+
+<CardGroup>
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/dp-900-microsoft-azure-data-fundamentals/module/cf08821c-abc1-43a0-b8aa-a294849914c0/lesson/dd98363b-2cd8-4a5a-b559-86e9c73d9e6d" />
+</CardGroup>

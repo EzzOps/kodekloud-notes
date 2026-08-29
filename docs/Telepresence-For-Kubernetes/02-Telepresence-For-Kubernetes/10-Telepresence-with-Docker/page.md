@@ -1,0 +1,92 @@
+# Telepresence with Docker
+
+Source: https://notes.kodekloud.com/docs/Telepresence-For-Kubernetes/Telepresence-For-Kubernetes/Telepresence-with-Docker/page
+
+This guide explains running the Telepresence daemon in Docker for local Kubernetes development without admin privileges.
+
+In this guide, you’ll discover how to run the Telepresence daemon inside a Docker container, enabling local development against your Kubernetes cluster without requiring admin privileges on your machine. By isolating the daemon’s networking stack and filesystem, Docker eliminates the need to modify host network routes or DNS, making Telepresence accessible on corporate laptops and environments with restricted permissions.
+
+<Frame>
+  ![The image illustrates a "Telepresence daemon in Docker" setup, highlighting that it provides an independent networking stack and its own filesystem without requiring admin privileges on the machine.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884095/notes-assets/images/Telepresence-For-Kubernetes-Telepresence-with-Docker/telepresence-daemon-docker-setup.jpg)
+</Frame>
+
+<Callout icon="lightbulb">
+  * Docker Engine installed and running
+  * Kubernetes cluster context configured (`kubectl config current-context`)
+  * Telepresence CLI installed (see [Telepresence Docs][telepresence-docs])
+</Callout>
+
+## 1. Starting the Telepresence Daemon in Docker
+
+Launch Telepresence with the `--docker` flag to spin up its daemon inside a container:
+
+```bash theme={null}
+telepresence connect --docker
+```
+
+<Callout icon="lightbulb">
+  Using `--docker` gives the Telepresence daemon its own network namespace, avoiding any host‐level network or DNS changes.
+</Callout>
+
+## 2. Key Docker Flags
+
+| Flag                   | Purpose                                                                  |
+| ---------------------- | ------------------------------------------------------------------------ |
+| `--docker`             | Run the Telepresence daemon in a Docker container                        |
+| `--docker-run <image>` | Start your intercepted service inside the specified Docker image         |
+| `--docker-build <dir>` | Build a Docker image from `<dir>` (containing Dockerfile or source code) |
+| `--docker-build-opt`   | Additional build options (e.g., `tag=new-image-name`)                    |
+
+## 3. Intercepting a Service Normally
+
+With the daemon running, you can intercept a Kubernetes service and route its traffic to your machine:
+
+```bash theme={null}
+telepresence intercept products-depl --port 8000
+```
+
+<Frame>
+  ![The image illustrates a setup for intercepting with a Docker container, showing a laptop connected via a tunnel to a Kubernetes environment with a traffic manager and a product deployment.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884097/notes-assets/images/Telepresence-For-Kubernetes-Telepresence-with-Docker/docker-container-kubernetes-setup.jpg)
+</Frame>
+
+## 4. Running the Intercepted Service in Docker
+
+Instead of running your code locally, you can launch the intercepted service inside a container:
+
+```bash theme={null}
+telepresence intercept products-depl \
+  --port 8000 \
+  --docker-run your-image-name
+```
+
+Replace `your-image-name` with the Docker image you’ve built for the `products` service.
+
+## 5. Building and Running in One Command
+
+Skip manual builds by letting Telepresence build and run your image in a single step:
+
+```bash theme={null}
+telepresence intercept products-depl \
+  --port 8000 \
+  --docker-build products/src \
+  --docker-build-opt tag=new-image-name \
+  --docker-run new-image-name
+```
+
+* `--docker-build products/src` points to the directory with your `Dockerfile` or source code.
+* `--docker-build-opt tag=new-image-name` sets the image tag.
+* `--docker-run new-image-name` runs the freshly built container and establishes the intercept.
+
+This command compiles your code into a Docker image, starts the container locally, and directs Kubernetes cluster traffic to your container.
+
+## Links and References
+
+* [Telepresence Documentation][telepresence-docs]
+* [Docker Engine Overview](https://docs.docker.com/engine/)
+* [Kubernetes Concepts](https://kubernetes.io/docs/concepts/)
+
+[telepresence-docs]: https://www.telepresence.io/docs/installation/telepresence-cli/
+
+<CardGroup>
+  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/telepresence-for-kubernetes/module/0eb5dcb6-2e2a-40d9-9caa-bd3149741aeb/lesson/2d3612c3-fef3-40ed-8533-af05ab280e53" />
+</CardGroup>

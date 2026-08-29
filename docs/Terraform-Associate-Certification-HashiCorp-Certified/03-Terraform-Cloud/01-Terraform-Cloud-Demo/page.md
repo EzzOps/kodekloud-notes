@@ -1,0 +1,323 @@
+# Terraform Cloud Demo
+
+Source: https://notes.kodekloud.com/docs/Terraform-Associate-Certification-HashiCorp-Certified/Terraform-Cloud/Terraform-Cloud-Demo/page
+
+This comprehensive guide demonstrates using Terraform Cloud, covering account creation, workspace setup, execution plans, and compliance enforcement with Sentinel policies.
+
+In this lesson, we will demonstrate how to use Terraform Cloud—from creating an account and setting up a workspace to executing plans and enforcing compliance with Sentinel policies. This comprehensive guide is designed to help you understand and optimize your Terraform Cloud workflow.
+
+***
+
+## 1. Creating a Terraform Cloud Account
+
+Begin by visiting [Terraform Cloud](https://app.terraform.io) and creating your free account. You can choose to sign in or register a new account by clicking "Free Account." Provide your username, email, and password, and be sure to accept the Terms of Use and Privacy Policy.
+
+<Frame>
+  ![The image shows a Terraform Cloud account creation page with fields for username, email, and password, alongside features and benefits of using Terraform Cloud.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884106/notes-assets/images/Terraform-Associate-Certification-HashiCorp-Certified-Terraform-Cloud-Demo/frame_50.jpg)
+</Frame>
+
+After registration, check your email for a confirmation message. Open the link provided to verify your email address.
+
+<Frame>
+  ![The image shows a web page for confirming an email address on Terraform's platform, with options to resend the confirmation link.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884108/notes-assets/images/Terraform-Associate-Certification-HashiCorp-Certified-Terraform-Cloud-Demo/frame_60.jpg)
+</Frame>
+
+Once confirmed, log in to Terraform Cloud. The dashboard initially shows your user settings such as username, email, and other profile details. Click the Terraform icon in the top left corner to access the main dashboard.
+
+<Frame>
+  ![The image shows a Terraform Cloud profile settings page, displaying options for username, email address, and avatar, with navigation links for user settings.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884109/notes-assets/images/Terraform-Associate-Certification-HashiCorp-Certified-Terraform-Cloud-Demo/frame_80.jpg)
+</Frame>
+
+If this is your first login, you will see the "Welcome to Terraform Cloud" page.
+
+<Frame>
+  ![The image shows a "Welcome to Terraform Cloud" page offering setup workflow options: "Try an example configuration" and "Start from scratch."](../../../../images/kodekloud.com/kk-media/image/upload/v1752884110/notes-assets/images/Terraform-Associate-Certification-HashiCorp-Certified-Terraform-Cloud-Demo/frame_90.jpg)
+</Frame>
+
+***
+
+## 2. Setting Up a New Organization and Workspace
+
+### 2.1 Create an Organization
+
+Select **"Start from scratch"** to create your first organization. Provide a globally unique organization name. In this demo, we use:
+
+KodeKloud-terraform-cloud-demo-01
+
+The same email you registered with is used for the organization.
+
+<Frame>
+  ![The image shows a web interface for creating a new organization in Terraform Cloud, with fields for organization name and email address.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884112/notes-assets/images/Terraform-Associate-Certification-HashiCorp-Certified-Terraform-Cloud-Demo/frame_120.jpg)
+</Frame>
+
+### 2.2 Create a Workspace
+
+After your organization is set up, create a workspace. A workspace in Terraform Cloud serves as your configuration directory (root module) where you manage configuration files, states, and variables. Choose from these workflow options:
+
+1. **Version Control Workflow** – Integrate directly with repositories from GitHub, GitLab, or Bitbucket.
+2. **CLI-driven Workflow** – Execute Terraform runs locally while operations are coordinated remotely.
+3. **API-driven Workflow** – Run Terraform operations using API integrations.
+
+For this demo, select the **Version Control Workflow**.
+
+<Frame>
+  ![The image shows a Terraform Cloud interface for creating a new workspace, offering workflow options like version control, CLI-driven, and API-driven workflows.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884113/notes-assets/images/Terraform-Associate-Certification-HashiCorp-Certified-Terraform-Cloud-Demo/frame_170.jpg)
+</Frame>
+
+Terraform Cloud will prompt you to connect a version control provider (defaulting to GitHub if already logged in).
+
+<Frame>
+  ![The image shows a Terraform Cloud interface for creating a new workspace, with options to connect to version control providers like GitHub, GitLab, Bitbucket, and Azure DevOps.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884114/notes-assets/images/Terraform-Associate-Certification-HashiCorp-Certified-Terraform-Cloud-Demo/frame_200.jpg)
+</Frame>
+
+Select your GitHub account, then choose the repository containing your Terraform configuration files (for example, a repository named "Terraform Cloud Repository" with files such as `main.tf`, `provider.tf`, and Sentinel policy files).
+
+<Frame>
+  ![The image shows a Terraform Cloud interface for creating a new workspace, with options to choose a repository and connect to version control.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884116/notes-assets/images/Terraform-Associate-Certification-HashiCorp-Certified-Terraform-Cloud-Demo/frame_220.jpg)
+</Frame>
+
+Review the following example from your `main.tf` file, which provisions an AWS EC2 instance using predefined variables:
+
+```hcl theme={null}
+variable "ami" {}
+variable "region" {}
+variable "instance_type" {}
+variable "access_key" {}
+variable "secret_key" {}
+variable "subnet_id" {}
+
+resource "aws_instance" "terraform-cloud-demo-server" {
+  ami           = var.ami
+  instance_type = var.instance_type
+  subnet_id     = var.subnet_id
+  tags = {
+    Name = "terraform-cloud-demo-server"
+  }
+}
+```
+
+Similarly, the `provider.tf` file configures the AWS provider with the same variables. After selecting the repository, name the workspace (for example, "Terraform Cloud") and click **Create Workspace**.
+
+<Frame>
+  ![The image shows a Terraform Cloud interface indicating successful configuration upload and workspace creation, with options to configure variables or start a new plan.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884117/notes-assets/images/Terraform-Associate-Certification-HashiCorp-Certified-Terraform-Cloud-Demo/frame_310.jpg)
+</Frame>
+
+***
+
+## 3. Configuring Variables and Running Execution Plans
+
+Within the workspace, navigate through the following tabs: **Overview**, **Runs**, **State**, and **Variables**. The Overview displays workspace status, VCS integration details, and the current Terraform version (default is 1.1.1, although you can change it).
+
+Since the configuration files only declare variables, set their values in the **Variables** tab. For example, add the following:
+
+* ami: `ami-04505e74c0741db8d`
+* region: `us-east-1`
+* instance\_type: `t2.micro`
+* subnet\_id: `subnet-0344bed8d8e0f1384`
+
+Also, add AWS access and secret keys as sensitive variables—this ensures that once entered, they will remain masked.
+
+<Frame>
+  ![The image shows a Terraform Cloud workspace variables page with five variables listed, including "ami," "region," "instance\_type," "subnet\_id," and a sensitive "access\_key."](../../../../images/kodekloud.com/kk-media/image/upload/v1752884118/notes-assets/images/Terraform-Associate-Certification-HashiCorp-Certified-Terraform-Cloud-Demo/frame_510.jpg)
+</Frame>
+
+### 3.1 Execute an Execution Plan
+
+After configuring the variables, start your first execution plan:
+
+1. Click the **Actions** button.
+2. Select **Start New Plan**.
+3. Choose **Plan (most common)**.
+
+Terraform Cloud will generate an execution plan similar to running `terraform plan` on your local machine.
+
+<Frame>
+  ![The image shows a Terraform Cloud interface where a user is starting a new plan, selecting "Plan (most common)" as the plan type.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884119/notes-assets/images/Terraform-Associate-Certification-HashiCorp-Certified-Terraform-Cloud-Demo/frame_560.jpg)
+</Frame>
+
+Review the plan and then choose to either confirm and apply or discard it. If you discard, the Overview tab will update to reflect this choice. You can then create a new plan if desired, and confirm to apply it to provision the EC2 instance.
+
+<Frame>
+  ![The image shows a Terraform Cloud interface with a completed plan for creating an AWS instance, triggered by a user, indicating successful resource creation.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884121/notes-assets/images/Terraform-Associate-Certification-HashiCorp-Certified-Terraform-Cloud-Demo/frame_660.jpg)
+</Frame>
+
+When the plan is applied, the EC2 instance is created, and its resource details, including the provider and outputs, are displayed.
+
+### 3.2 Destroying Resources
+
+If you wish to destroy the resource, navigate to **Workspace Settings > Destruction & Deletion** to queue a destroy plan. This plan is equivalent to running `terraform destroy` on the command line. For example, the execution plan might include details such as:
+
+```yaml theme={null}
+ami: "ami-04505e74c0741db8d"
+arn: "arn:aws:ec2:us-east-1:938059356357:instance/i-082d7c78db7ddc761"
+associate_public_ip_address: false
+availability_zone: "us-east-1a"
+cpu_core_count: 1
+cpu_threads_per_core: 1
+disable_api_termination: false
+ebs_optimized: false
+get_password_data: false
+hibernation: false
+iam_instance_profile: ""
+id: "i-082d7c78db7ddc761"
+instance_initiated_shutdown_behavior: "stop"
+instance_state: "running"
+instance_type: "t2.micro"
+ipv6_address_count: 0
+ipv6_addresses: []
+```
+
+After the destroy plan is applied, the Overview tab will confirm that no resources remain.
+
+### 3.3 Handling GitHub Repository Changes
+
+Terraform Cloud automatically triggers a new execution plan upon changes pushed to your GitHub repository. For instance, if you modify the resource name in `main.tf`:
+
+```hcl theme={null}
+variable "ami" {}
+variable "region" {}
+variable "instance_type" {}
+variable "access_key" {}
+variable "secret_key" {}
+variable "subnet_id" {}
+
+resource "aws_instance" "terraform-cloud-demo-server" {
+  ami           = var.ami
+  instance_type = var.instance_type
+  subnet_id     = var.subnet_id
+  tags = {
+    Name = "terraform-cloud-demo-server"
+  }
+}
+```
+
+A new plan is triggered by GitHub commits to the main branch. Once confirmed and applied, the updated state is reflected in the **State** tab where you can review the current `terraform.tfstate` stored remotely.
+
+A sample state snippet might look like:
+
+```json theme={null}
+{
+  "volume_size": 8,
+  "volume_type": "gp2",
+  "secondary_private_ips": [],
+  "security_groups": [
+    "default"
+  ],
+  "source_dest_check": true,
+  "subnet_id": "subnet-0344bed8d8e0f1384",
+  "tags": {
+    "Name": "terraform-cloud-demo-server"
+  },
+  "tags_all": {
+    "Name": "terraform-cloud-demo-server"
+  },
+  "default": ""
+}
+```
+
+<Frame>
+  ![The image shows a Terraform Cloud workspace interface displaying current and past runs, with details like branch, status, and trigger source.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884122/notes-assets/images/Terraform-Associate-Certification-HashiCorp-Certified-Terraform-Cloud-Demo/frame_830.jpg)
+</Frame>
+
+***
+
+## 4. Workspace Settings and Account Upgrades
+
+Within your workspace settings, you can modify:
+
+* **Execution Mode:** Choose between remote and local execution.
+* **Apply Method:** Select manual or auto-apply.
+* **Terraform Version:** Change the version (default is 1.1.1).
+
+Locking a workspace prevents concurrent plans, and version control settings display which repository is connected.
+
+<Frame>
+  ![The image shows a Terraform Cloud settings page for version control, connected to a GitHub repository, with options for automatic run triggering and speculative plans.](https://kodekloud.com/kk-media/image/upload/v1752884123/notes-assetshttps://kodekloud.com/kk-media/image/upload/v1752884123/notes-assets/images/Terraform-Associate-Certification-HashiCorp-Certified-Terraform-Cloud-Demo/frame_1000.jpg)
+</Frame>
+
+To manage your organization, access the user settings on the left to update organization details (like password changes and two-factor authentication). Organization-specific settings allow you to review the organization name and manage deletion if necessary.
+
+<Frame>
+  ![The image shows the general settings page of a Terraform Cloud organization, with options to update organization details or delete the organization.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884124/notes-assets/images/Terraform-Associate-Certification-HashiCorp-Certified-Terraform-Cloud-Demo/frame_1050.jpg)
+</Frame>
+
+The **Plan & Billing** tab displays your current free plan (supporting up to five users) and offers comparisons for upgrading to more advanced plans. Upgrading to a trial plan for team accounts is available without requiring a credit card.
+
+<Frame>
+  ![The image shows a "Plan & Billing" page for Terraform Cloud, offering a 30-day free trial and displaying a current free plan with one active user.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884125/notes-assets/images/Terraform-Associate-Certification-HashiCorp-Certified-Terraform-Cloud-Demo/frame_1060.jpg)
+</Frame>
+
+You can manage teams under the **Teams** section—by default, an "owners" team exists. You can add new users and create API tokens as necessary.
+
+<Frame>
+  ![The image shows a settings page for a team named "owners" in a cloud platform, with options for visibility and API token management.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884126/notes-assets/images/Terraform-Associate-Certification-HashiCorp-Certified-Terraform-Cloud-Demo/frame_1080.jpg)
+</Frame>
+
+Manage individual users in the **Users** section, and assign them to teams such as "owners."
+
+<Frame>
+  ![The image shows a user management interface in Terraform Cloud, displaying one active user with the email "terraform-cloud-demo-user@kodekloud.com" under the "Users" section.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884127/notes-assets/images/Terraform-Associate-Certification-HashiCorp-Certified-Terraform-Cloud-Demo/frame_1090.jpg)
+</Frame>
+
+Upgrade via the plan comparisons page to access additional features like creating extra teams and integrations.
+
+<Frame>
+  ![The image shows a pricing plan page for Terraform Cloud, detailing Free, Trial, Team, and Team & Governance options with features and costs.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884129/notes-assets/images/Terraform-Associate-Certification-HashiCorp-Certified-Terraform-Cloud-Demo/frame_1120.jpg)
+</Frame>
+
+After upgrading to a trial plan, you gain access to features such as additional team creation and cost estimation capabilities.
+
+<Frame>
+  ![The image shows a "Team Management" page from Terraform Cloud, allowing users to create and manage teams with specific access control settings.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884130/notes-assets/images/Terraform-Associate-Certification-HashiCorp-Certified-Terraform-Cloud-Demo/frame_1170.jpg)
+</Frame>
+
+***
+
+## 5. Cost Estimation and Policy Enforcement with Sentinel
+
+### 5.1 Cost Estimation
+
+Terraform Cloud offers a cost estimation feature to help you monitor resource expenditure. To explore this:
+
+1. Queue a destroy plan for the existing EC2 instance and confirm the action.
+2. During the destroy run, check the cost estimation tab, which might indicate savings (e.g., saving \$9.43 by destroying the resource).
+
+Once the resource is destroyed, create a new plan to provision the instance. The cost estimation stage will now display the estimated monthly cost (for example, \$8.63).
+
+<Frame>
+  ![The image shows a Terraform Cloud interface with a destroy run triggered, indicating one AWS instance to be destroyed. The plan and cost estimation are finished.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884131/notes-assets/images/Terraform-Associate-Certification-HashiCorp-Certified-Terraform-Cloud-Demo/frame_1220.jpg)
+</Frame>
+
+After confirming and applying the plan, the instance is created. The Overview tab will then display updated resource details, including cost estimations.
+
+<Frame>
+  ![The image shows a Terraform Cloud interface with a completed run for "test cost estimation," indicating successful planning, cost estimation, and application of resources.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884133/notes-assets/images/Terraform-Associate-Certification-HashiCorp-Certified-Terraform-Cloud-Demo/frame_1290.jpg)
+</Frame>
+
+<Frame>
+  ![The image shows a Terraform Cloud workspace overview, displaying details of the latest run, including cost estimation, resources changed, and execution metrics.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884134/notes-assets/images/Terraform-Associate-Certification-HashiCorp-Certified-Terraform-Cloud-Demo/frame_1310.jpg)
+</Frame>
+
+### 5.2 Enforcing Compliance with Sentinel Policies
+
+Terraform Sentinel allows you to enforce compliance constraints as code. In this demo, we restrict the allowed EC2 instance type.
+
+Follow these steps:
+
+1. Go to **Settings** in your workspace and select **Policies and Policy Sets**.
+2. Click **Connect a New Policy Set**.
+3. Choose GitHub as your VCS provider and select the repository containing your Sentinel policy files (this example repository includes Terraform Sentinel policy examples for AWS).
+
+<Frame>
+  ![The image shows a Terraform Cloud interface for connecting a policy set to a version control provider, with options for GitHub and other VCS connections.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884135/notes-assets/images/Terraform-Associate-Certification-HashiCorp-Certified-Terraform-Cloud-Demo/frame_1370.jpg)
+</Frame>
+
+After connecting, name your policy set (for example, "policy set one") and select your desired workspace scope (either all workspaces or selected ones).
+
+<Frame>
+  ![The image shows a Terraform Cloud interface for connecting a policy set, allowing users to choose a repository for hosting Terraform source code.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884137/notes-assets/images/Terraform-Associate-Certification-HashiCorp-Certified-Terraform-Cloud-Demo/frame_1390.jpg)
+</Frame>
+
+Within your GitHub repository, create a Sentinel policy file (`restrict-ec2-instance-type.sentinel`) with the following content:
+
+```sentinel theme={null}
